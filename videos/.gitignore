@@ -1,5 +1,8 @@
 node_modules/
 out/
+# OMNA project media: source footage, brand assets (trial fonts) and generated
+# clips/music — rebuilt from Google Drive by scripts/omna-prepare.sh
+public/omna/
 # source footage — keep raw videos out of git (download from Drive per session)
 public/**/*.mov
 public/**/*.mp4

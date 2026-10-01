@@ -1,0 +1,122 @@
+[
+ {
+  "clip": "s1",
+  "from": 0.08,
+  "to": 1.6,
+  "text": "Hola, bienvenido a OMNA."
+ },
+ {
+  "clip": "s1",
+  "from": 1.62,
+  "to": 4.54,
+  "text": "Primero que nada, mil gracias por confiar en nosotros."
+ },
+ {
+  "clip": "s1",
+  "from": 4.56,
+  "to": 7.16,
+  "text": "De verdad que tomaste una muy buena decisión."
+ },
+ {
+  "clip": "s1",
+  "from": 7.18,
+  "to": 9.74,
+  "text": "Desde hoy no tienes un proveedor más."
+ },
+ {
+  "clip": "s1",
+  "from": 9.76,
+  "to": 13.85,
+  "text": "Tienes un equipo que va a pensar en tu negocio como si fuera el nuestro."
+ },
+ {
+  "clip": "s2",
+  "from": 0.08,
+  "to": 3.6,
+  "text": "Te presento al equipo que va a estar trabajando contigo y te contamos qué sigue."
+ },
+ {
+  "clip": "s3",
+  "from": 0.08,
+  "to": 1.38,
+  "text": "Hola, yo soy Pamela."
+ },
+ {
+  "clip": "s3",
+  "from": 1.4,
+  "to": 5.42,
+  "text": "Llevo operaciones y me aseguro de que tu experiencia con nosotros esté increíble."
+ },
+ {
+  "clip": "s3",
+  "from": 5.44,
+  "to": 9.1,
+  "text": "Si algo no te queda claro o algo se atora, me escribes y lo resolvemos."
+ },
+ {
+  "clip": "s4",
+  "from": 0.08,
+  "to": 3.36,
+  "text": "Hola, yo soy Lizy, experta en la creación de contenido con IA."
+ },
+ {
+  "clip": "s4",
+  "from": 3.38,
+  "to": 5.3,
+  "text": "Un gusto tenerlos aquí, bienvenidos."
+ },
+ {
+  "clip": "s5",
+  "from": 0.08,
+  "to": 1.98,
+  "text": "¿Qué tal? Yo soy Joel, cofundador de OMNA,"
+ },
+ {
+  "clip": "s5",
+  "from": 2.0,
+  "to": 4.7,
+  "text": "y voy a ser tu persona de contacto durante todo el proyecto."
+ },
+ {
+  "clip": "s5",
+  "from": 4.72,
+  "to": 6.26,
+  "text": "Vamos a trabajar muy de la mano"
+ },
+ {
+  "clip": "s5",
+  "from": 6.28,
+  "to": 10.38,
+  "text": "y nuestro objetivo es siempre que en cada etapa veas resultados concretos."
+ },
+ {
+  "clip": "s6",
+  "from": 0.08,
+  "to": 1.34,
+  "text": "Agenda tu llamada de inicio."
+ },
+ {
+  "clip": "s6",
+  "from": 1.36,
+  "to": 3.84,
+  "text": "Ahí vamos a platicar a fondo de cómo opera tu empresa"
+ },
+ {
+  "clip": "s6",
+  "from": 3.86,
+  "to": 7.17,
+  "text": "y arrancar con el proceso de diagnóstico y exploración."
+ },
+ {
+  "clip": "s6",
+  "from": 7.4,
+  "to": 8.98,
+  "text": "Nos vemos en tu llamada."
+ },
+ {
+  "clip": "s6",
+  "from": 9.0,
+  "to": 9.55,
+  "text": "Bienvenido."
+ }
+]

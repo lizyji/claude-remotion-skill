@@ -38,3 +38,16 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   `@remotion/fonts` in `Root.tsx` (see existing Space Grotesk / Inter setup).
 - **ffmpeg** is installed system-wide; `ffprobe` works for reading clip duration/fps.
 - Dependencies are installed by `.claude/hooks/session-start.sh` at session start.
+
+## Projects in videos/
+- **OmnaBienvenida** (`src/omna/`) — 57 s client welcome video for OMNA, built from the Drive
+  footage "INTRO AL EQUIPO OMNA" and the "OMNA Design System" folder. Media is gitignored;
+  run `npm run omna:prepare` (downloads from Drive, cuts/flips/upscales the six clips,
+  synthesizes the music), then `npm run render:omna`.
+  - Edit decisions: `src/omna/timeline.json` (clip lengths + joins), `src/omna/captions.json`
+    (verbatim phrases, seconds relative to each clip), names/roles in `OmnaBienvenida.tsx`.
+  - Brand tokens live in `src/omna/omnaTheme.ts`. The SFT Schrifted Sans files are the foundry
+    TRIAL build — a licensed copy is needed before publishing.
+- Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
+  environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
+- Rendered files over ~30 MB can't be sent in chat: encode a delivery copy (2-pass ~3.5 Mbps).

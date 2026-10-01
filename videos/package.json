@@ -7,11 +7,14 @@
     "studio": "remotion studio src/index.ts",
     "typecheck": "tsc --noEmit",
     "render:test": "remotion render src/index.ts HolaRemotion out/hola-remotion.mp4 --codec h264 --crf 17 --overwrite",
-    "still": "remotion still src/index.ts"
+    "still": "remotion still src/index.ts",
+    "omna:prepare": "bash scripts/omna-prepare.sh",
+    "render:omna": "remotion render src/index.ts OmnaBienvenida out/omna-bienvenida.mp4 --codec h264 --crf 18"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",
     "@remotion/fonts": "^4.0.0",
+    "@remotion/transitions": "^4.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "remotion": "^4.0.0"
