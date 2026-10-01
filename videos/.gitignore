@@ -1,2 +1,5 @@
 node_modules/
 out/
+# source footage — keep raw videos out of git (download from Drive per session)
+public/**/*.mov
+public/**/*.mp4
