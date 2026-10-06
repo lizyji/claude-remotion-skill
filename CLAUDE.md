@@ -69,3 +69,9 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
 - **Turnaround matters as much as polish:** keep the quality bar but aim for half the time —
   analyse once, build, verify with one still sheet + one full render, and avoid re-render loops
   for cosmetic tweaks that can be checked on stills.
+- **Every video ships with a cover (portada)** in the same style as `MncPortada` (`src/mnc/MncPortada.tsx`):
+  speaker photo full-bleed, three-line title — small white lead, giant orange keyword, white line
+  on an orange plate — soft offset shadow, "manuel <no code>" top-right, lowercase, title kept
+  inside the 3:4 grid crop. Render it as a still and send it together with the video.
+- **Cover decorations:** the orange spark/star is used **only when the video mentions Claude**;
+  otherwise no extra shapes or figures at all.
