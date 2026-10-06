@@ -8,6 +8,7 @@ import { FPS as OMNA_FPS } from "./omna/timeline";
 import { omna } from "./omna/omnaTheme";
 import { MncReel, MNC_FPS, MNC_TOTAL_F } from "./mnc/MncReel";
 import { mnc } from "./mnc/mncTheme";
+import { MncPortada } from "./mnc/MncPortada";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -51,6 +52,7 @@ export const Root: React.FC = () => (
       width={1920}
       height={1080}
     />
+    <Composition id="MncPortada" component={MncPortada} durationInFrames={1} fps={30} width={1080} height={1920} />
     <Composition
       id="MncDashboardWhatsApp"
       component={MncReel}
