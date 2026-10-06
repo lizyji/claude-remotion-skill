@@ -60,3 +60,12 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Rendered files over ~30 MB can't be sent in chat: encode a delivery copy (2-pass ~3.5 Mbps).
+
+## Client preferences (from feedback)
+- **Reels: the speaker on screen ≥45% of the runtime.** Don't replace long stretches with
+  graphics-only scenes — prefer graphics layered over the speaker's footage (top band / side
+  cards that never cover the face), and use full-screen graphics only as short beats.
+- **Crop browser chrome** (tabs, bookmarks bar) from any screen capture.
+- **Turnaround matters as much as polish:** keep the quality bar but aim for half the time —
+  analyse once, build, verify with one still sheet + one full render, and avoid re-render loops
+  for cosmetic tweaks that can be checked on stills.
