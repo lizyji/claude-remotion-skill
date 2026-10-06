@@ -6,6 +6,8 @@ import { HolaRemotion, HOLA_TOTAL_S } from "./scenes/HolaRemotion";
 import { OmnaBienvenida, OMNA_TOTAL_F } from "./omna/OmnaBienvenida";
 import { FPS as OMNA_FPS } from "./omna/timeline";
 import { omna } from "./omna/omnaTheme";
+import { MncReel, MNC_FPS, MNC_TOTAL_F } from "./mnc/MncReel";
+import { mnc } from "./mnc/mncTheme";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -20,6 +22,13 @@ for (const [file, weight] of [
   ["Bold", "700"],
 ] as const) {
   loadFont({ family: omna.fonts.sans, url: staticFile(`omna/brand/fonts/SFTSchriftedSans-${file}.ttf`), weight });
+}
+// MNC: Poppins (titulares) + Readex Pro (marca, cuerpo, subtítulos)
+for (const [file, weight] of [["SemiBold", "600"], ["Bold", "700"], ["ExtraBold", "800"]] as const) {
+  loadFont({ family: mnc.fonts.title, url: staticFile(`mnc/brand/fonts/Poppins-${file}.woff2`), weight });
+}
+for (const [file, weight] of [["ExtraLight", "200"], ["Regular", "400"], ["Medium", "500"], ["SemiBold", "600"]] as const) {
+  loadFont({ family: mnc.fonts.body, url: staticFile(`mnc/brand/fonts/ReadexPro-${file}.woff2`), weight });
 }
 
 const FPS = 30;
@@ -41,6 +50,14 @@ export const Root: React.FC = () => (
       fps={OMNA_FPS}
       width={1920}
       height={1080}
+    />
+    <Composition
+      id="MncDashboardWhatsApp"
+      component={MncReel}
+      durationInFrames={MNC_TOTAL_F}
+      fps={MNC_FPS}
+      width={1080}
+      height={1920}
     />
   </>
 );

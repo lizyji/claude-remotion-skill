@@ -6,3 +6,6 @@ public/omna/
 # source footage — keep raw videos out of git (download from Drive per session)
 public/**/*.mov
 public/**/*.mp4
+# MNC reel media (source footage and generated base cut) — scripts/mnc-prepare.sh
+public/mnc/src/
+public/mnc/clips/

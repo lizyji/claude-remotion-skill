@@ -48,6 +48,15 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
     (verbatim phrases, seconds relative to each clip), names/roles in `OmnaBienvenida.tsx`.
   - Brand tokens live in `src/omna/omnaTheme.ts`. The SFT Schrifted Sans files are the foundry
     TRIAL build — a licensed copy is needed before publishing.
+- **MncDashboardWhatsApp** (`src/mnc/`) — 1080×1920 Reel for Manuel NoCode, styled only with the
+  MNC Carousel Design System (Manual Maestro MNC, `ds-mnc` skill): variante negro, Poppins titles,
+  Readex Pro body/brand/captions, accent #FD6623, white cards, 6-point sparks, hand-drawn arrows.
+  `npm run mnc:prepare` downloads the Drive source and builds `public/mnc/clips/base.mp4`
+  (one aside removed), then `npm run render:mnc`.
+  - `src/mnc/transcript.txt` is the verbatim script; `words.json` holds its word timings on the
+    base cut. Captions (`captions.ts`) chunk it by clause and highlight one keyword per chunk.
+  - Footage modes and scene beats live in `MncReel.tsx` (`CUTS`, `at("word")` timings).
+  - Reel safe area: brand at Y=200, captions at Y≈1450–1600 (IG UI covers top ~200 / bottom ~320).
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Rendered files over ~30 MB can't be sent in chat: encode a delivery copy (2-pass ~3.5 Mbps).
