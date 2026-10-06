@@ -67,6 +67,16 @@ const T = {
   zapierCard: at("aquí", 0, 67) - 0.02, // after the logo has settled above
 };
 
+// Hide the browser chrome (tabs + bookmarks bar) in the handheld zapier.com shot.
+// The phone drifts, so the cut line follows the measured bottom of the bookmarks
+// bar (+ margin), in source pixels.
+const ZAP_CROP: [number, number][] = [
+  [67.4, 215], [67.9, 165], [68.4, 105], [68.9, 110], [69.4, 105],
+  [69.9, 120], [70.4, 140], [70.9, 205], [71.2, 245], [71.45, 260], [71.7, 275],
+];
+const zapierCrop = (t: number) =>
+  interpolate(t, ZAP_CROP.map((k) => k[0]), ZAP_CROP.map((k) => k[1]), { easing: mnc.ease.inOut, ...clamp });
+
 const Footage: React.FC = () => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -135,7 +145,7 @@ const Footage: React.FC = () => {
           ...rise(p, 60, exit),
         }}
       >
-        {video({ position: "absolute", left: 0, top: 0, width: 888, height: 1920 * s })}
+        {video({ position: "absolute", left: 0, top: -zapierCrop(t) * s, width: 888, height: 1920 * s })}
       </div>
     );
   }
