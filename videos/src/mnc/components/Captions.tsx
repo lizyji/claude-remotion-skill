@@ -1,7 +1,8 @@
 import React from "react";
 import { interpolate, useCurrentFrame, useVideoConfig } from "remotion";
 import { mnc } from "../mncTheme";
-import { CHUNKS } from "../captions";
+import { CHUNKS as MNC_CHUNKS } from "../captions";
+import type { Chunk } from "../captionsCore";
 
 const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 
@@ -9,12 +10,17 @@ const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 // (above the Instagram UI, below the speaker's face). One concept per chunk in
 // orange. Words not yet spoken sit at reduced opacity so the line reads along
 // with the voice — no bouncing, no per-word pops.
-export const Captions: React.FC<{ offset?: number }> = ({ offset = 0 }) => {
+export const Captions: React.FC<{ offset?: number; chunks?: Chunk[]; hidden?: [number, number][] }> = ({
+  offset = 0,
+  chunks = MNC_CHUNKS,
+  hidden = [],
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = frame / fps + offset;
-  const c = CHUNKS.find((x) => t >= x.from && t < x.to);
-  if (!c) return null;
+  const c = chunks.find((x) => t >= x.from && t < x.to);
+  // statements that already say the line on screen replace the caption
+  if (!c || hidden.some(([a, b]) => t >= a && t < b)) return null;
   const local = t - c.from;
   const p = interpolate(local, [0, 0.16], [0, 1], { easing: mnc.ease.out, ...clamp });
   const out = interpolate(t, [c.to - 0.08, c.to], [1, 0], clamp);

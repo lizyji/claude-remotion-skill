@@ -9,6 +9,7 @@ import { omna } from "./omna/omnaTheme";
 import { MncReel, MNC_FPS, MNC_TOTAL_F } from "./mnc/MncReel";
 import { mnc } from "./mnc/mncTheme";
 import { MncPortada } from "./mnc/MncPortada";
+import { Mnc4Reel, MNC4_FPS, MNC4_TOTAL_F } from "./mnc4/Mnc4Reel";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -52,7 +53,25 @@ export const Root: React.FC = () => (
       width={1920}
       height={1080}
     />
-    <Composition id="MncPortada" component={MncPortada} durationInFrames={1} fps={30} width={1080} height={1920} />
+    <Composition
+      id="MncPortada"
+      component={MncPortada}
+      durationInFrames={1}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{ photo: "mnc/src/portada.webp", lead: "tu", leadShift: -380, big: "dashboard", plate: "está en tu WhatsApp", spark: true }}
+    />
+    <Composition
+      id="Mnc4Portada"
+      component={MncPortada}
+      durationInFrames={1}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{ photo: "mnc4/src/portada.png", zoom: 1.08, lead: "4 cosas que sigues haciendo", leadSize: 80, big: "a mano", bigSize: 230, plate: "que la IA ya hace", top: 1250 }}
+    />
+    <Composition id="Mnc4CosasAMano" component={Mnc4Reel} durationInFrames={MNC4_TOTAL_F} fps={MNC4_FPS} width={1080} height={1920} />
     <Composition
       id="MncDashboardWhatsApp"
       component={MncReel}

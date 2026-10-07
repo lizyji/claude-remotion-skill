@@ -23,9 +23,22 @@ const line: React.CSSProperties = {
   whiteSpace: "nowrap",
 };
 
-export const MncPortada: React.FC = () => (
+export type PortadaProps = {
+  photo: string; // staticFile path of the speaker still
+  zoom?: number;
+  lead: string;
+  leadSize?: number;
+  leadShift?: number; // px, nudges the short lead line left like the reference covers
+  big: string;
+  bigSize?: number;
+  plate: string;
+  top?: number;
+  spark?: boolean; // only when the video mentions Claude (client rule)
+};
+
+export const MncPortada: React.FC<PortadaProps> = ({ photo, zoom = 1.14, lead, leadSize = 104, leadShift = 0, big, bigSize = 206, plate, top = 1290, spark }) => (
   <AbsoluteFill style={{ background: mnc.colors.black }}>
-    <Img src={staticFile("mnc/src/portada.webp")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 30%", transform: "scale(1.14)", transformOrigin: "50% 100%" }} />
+    <Img src={staticFile(photo)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 30%", transform: `scale(${zoom})`, transformOrigin: "50% 100%" }} />
     {/* bottom darkening so the white lines hold on the grey shirt */}
     <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 55%, rgba(0,0,0,0.38) 100%)" }} />
 
@@ -34,13 +47,13 @@ export const MncPortada: React.FC = () => (
       <span style={{ fontSize: 19 }}>{"<no code>"}</span>
     </div>
 
-    <Spark size={170} x={850} y={1150} rot={12} />
+    {spark ? <Spark size={170} x={850} y={top - 140} rot={12} /> : null}
 
-    <div style={{ position: "absolute", left: 0, right: 0, top: 1290, display: "flex", flexDirection: "column", alignItems: "center" }}>
-      <div style={{ ...line, fontSize: 104, fontWeight: mnc.weight.medium, letterSpacing: "-0.03em", marginLeft: -380 }}>tu</div>
-      <div style={{ ...line, fontSize: 206, fontWeight: mnc.weight.medium, letterSpacing: "-0.055em", color: mnc.colors.accent, marginTop: -34 }}>dashboard</div>
+    <div style={{ position: "absolute", left: 0, right: 0, top, display: "flex", flexDirection: "column", alignItems: "center" }}>
+      <div style={{ ...line, fontSize: leadSize, fontWeight: mnc.weight.medium, letterSpacing: "-0.03em", marginLeft: leadShift }}>{lead}</div>
+      <div style={{ ...line, fontSize: bigSize, fontWeight: mnc.weight.medium, letterSpacing: "-0.055em", color: mnc.colors.accent, marginTop: -34 }}>{big}</div>
       <div style={{ marginTop: -22, background: mnc.colors.accent, padding: "6px 44px 22px" }}>
-        <div style={{ ...line, fontSize: 92, fontWeight: mnc.weight.medium, letterSpacing: "-0.035em" }}>está en tu WhatsApp</div>
+        <div style={{ ...line, fontSize: 92, fontWeight: mnc.weight.medium, letterSpacing: "-0.035em" }}>{plate}</div>
       </div>
     </div>
   </AbsoluteFill>

@@ -11,7 +11,9 @@
     "omna:prepare": "bash scripts/omna-prepare.sh",
     "render:omna": "remotion render src/index.ts OmnaBienvenida out/omna-bienvenida.mp4 --codec h264 --crf 18",
     "mnc:prepare": "bash scripts/mnc-prepare.sh",
-    "render:mnc": "remotion render src/index.ts MncDashboardWhatsApp out/mnc/mnc-dashboard-whatsapp.mp4 --codec h264 --crf 18"
+    "render:mnc": "remotion render src/index.ts MncDashboardWhatsApp out/mnc/mnc-dashboard-whatsapp.mp4 --codec h264 --crf 18",
+    "mnc4:prepare": "bash scripts/mnc4-prepare.sh",
+    "render:mnc4": "remotion render src/index.ts Mnc4CosasAMano out/mnc4/mnc-4-cosas-a-mano.mp4 --codec h264 --crf 17"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",

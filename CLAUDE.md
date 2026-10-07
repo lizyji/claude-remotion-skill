@@ -57,6 +57,15 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
     base cut. Captions (`captions.ts`) chunk it by clause and highlight one keyword per chunk.
   - Footage modes and scene beats live in `MncReel.tsx` (`CUTS`, `at("word")` timings).
   - Reel safe area: brand at Y=200, captions at Y≈1450–1600 (IG UI covers top ~200 / bottom ~320).
+- **Mnc4CosasAMano** (`src/mnc4/`) — 1080×1920 Reel "4 cosas que tu empresa sigue haciendo a mano
+  que la IA ya hace", same MNC system. `npm run mnc4:prepare` (download + loudnorm, no cuts — the
+  source is already jump-cut), then `npm run render:mnc4`. Cover: `Mnc4Portada` still.
+  - `src/mnc4/Kit.tsx` is the reusable reel kit, timed in absolute seconds: `Win`/`In` (mount +
+    animate), `Cam` (shots list, face lifted with y=-150), `CaptureCard` (screen capture with the
+    browser chrome cropped), `Statement` (cover-style 3-line text), `Eyebrow`, `CaseIntro`, `Pill`,
+    `Arrow`, `Stat`. Start the next reel from it.
+  - Captions come from `src/mnc/captionsCore.ts` (`makeCaptions(words, keywords)`), shared by all reels.
+  - Covers: `MncPortada` takes props (photo, lead, big, plate, spark) — one `<Composition>` per video.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Rendered files over ~30 MB can't be sent in chat: encode a delivery copy (2-pass ~3.5 Mbps).

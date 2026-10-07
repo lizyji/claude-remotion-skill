@@ -189,4 +189,35 @@ export const Icon = {
       <path d="M20 22a17 17 0 0 0 0 24M44 22a17 17 0 0 1 0 24M12 14a28 28 0 0 0 0 40M52 14a28 28 0 0 1 0 40" />
     </I>
   ),
+  clock: (
+    <I>
+      <circle cx="32" cy="32" r="23" />
+      <path d="M32 19v14l9 6" />
+    </I>
+  ),
+  bank: (
+    <I>
+      <path d="M8 24 32 10l24 14H8z" />
+      <path d="M14 28v18M25 28v18M39 28v18M50 28v18M8 52h48" />
+    </I>
+  ),
+  truck: (
+    <I>
+      <path d="M6 16h32v28H6zM38 26h11l9 10v8H38z" />
+      <circle cx="17" cy="47" r="5" />
+      <circle cx="47" cy="47" r="5" />
+    </I>
+  ),
+  grid: (
+    <I>
+      <rect x="8" y="10" width="48" height="44" rx="5" />
+      <path d="M8 24h48M8 38h48M24 10v44M40 10v44" />
+    </I>
+  ),
+  warehouse: (
+    <I>
+      <path d="M6 26 32 12l26 14v28H6z" />
+      <path d="M18 54V36h28v18M18 44h28" />
+    </I>
+  ),
 };

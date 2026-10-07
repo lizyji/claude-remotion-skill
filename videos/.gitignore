@@ -9,3 +9,5 @@ public/**/*.mp4
 # MNC reel media (source footage and generated base cut) — scripts/mnc-prepare.sh
 public/mnc/src/
 public/mnc/clips/
+public/mnc4/src/
+public/mnc4/clips/
