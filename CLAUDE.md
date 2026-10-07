@@ -72,6 +72,7 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   - Covers: `MncPortada` takes props (photo, lead, big, plate, spark) — one `<Composition>` per video.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
+- Brand mark in videos: "<nocode>" sits tucked right UNDER "manuel" (right-aligned), not beside it.
 - Rendered files over ~30 MB can't be sent in chat: encode a delivery copy (2-pass ~3.5 Mbps).
 
 ## Client preferences (from feedback)
@@ -84,7 +85,7 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   for cosmetic tweaks that can be checked on stills.
 - **Every video ships with a cover (portada)** in the same style as `MncPortada` (`src/mnc/MncPortada.tsx`):
   speaker photo full-bleed, three-line title — small white lead, giant orange keyword, white line
-  on an orange plate — soft offset shadow, "manuel" with "<no code>" tucked right under it, top-right, lowercase, title kept
+  on an orange plate — soft offset shadow, "manuel <no code>" top-right, lowercase, title kept
   inside the 3:4 grid crop. Render it as a still and send it together with the video.
 - **Cover decorations:** the orange spark/star is used **only when the video mentions Claude**;
   otherwise no extra shapes or figures at all.
