@@ -7,7 +7,7 @@ import { BrandMark, Card } from "../mnc/components/Primitives";
 import { Icon } from "../mnc/components/Icons";
 import { Flow } from "../mnc/components/Flow";
 import words from "./words.json";
-import { Arrow, CaptureCard, CaseIntro, Cam, Eyebrow, HoldFrame, In, Pill, Stat, Statement, Title, Win, useOn, useT, type Shot } from "./Kit";
+import { Arrow, CaptureCard, CaseIntro, Cam, Eyebrow, HoldFrame, In, Pill, Sfx, Stat, Statement, Title, Win, useOn, useT, type Shot, type SfxKind } from "./Kit";
 
 // "4 cosas que tu empresa sigue haciendo a mano que la IA ya hace" — MNC reel.
 // The source is one already jump-cut take (selfie camera + phone pointed at a
@@ -79,14 +79,16 @@ const NO_CAPTION: [number, number][] = [
 ];
 
 // ---------------- band (overlays above Manuel's head) ----------------
-const BAND = 270;
+// overlays over Manuel live under the captions, on the black falloff
+const CAP_TOP = 1380;
+const BAND = 1548;
 
 const Chain: React.FC<{ steps: [React.ReactNode, string, number][]; perRow: number; top?: number }> = ({ steps, perRow, top = BAND }) => {
   const t = useT();
   const rows: (typeof steps)[] = [];
   for (let i = 0; i < steps.length; i += perRow) rows.push(steps.slice(i, i + perRow));
   return (
-    <div style={{ position: "absolute", left: 40, right: 40, top, display: "flex", flexDirection: "column", alignItems: "center", gap: 22 }}>
+    <div style={{ position: "absolute", left: 40, right: 40, top, display: "flex", flexDirection: "column", alignItems: "center", gap: 16 }}>
       {rows.map((r, ri) => (
         <div key={ri} style={{ display: "flex", alignItems: "center", gap: 10 }}>
           {r.map(([ic, l, s], i) => {
@@ -94,7 +96,7 @@ const Chain: React.FC<{ steps: [React.ReactNode, string, number][]; perRow: numb
             return (
               <React.Fragment key={l}>
                 <InFlow at={s}>
-                  <Pill icon={ic} label={l} size={30} on={t >= s && t < s + 0.9} />
+                  <Pill icon={ic} label={l} size={34} on={t >= s && t < s + 0.9} />
                 </InFlow>
                 {!last ? (
                   <InFlow at={s + 0.15}>
@@ -194,13 +196,13 @@ const DataBand: React.FC = () => {
   return (
     <>
       <In at={at("datos") - 0.1} dist={14} kind="snappy" style={{ left: 0, right: 0, top: BAND, textAlign: "center" }}>
-        <div style={{ fontFamily: mnc.fonts.body, fontWeight: mnc.weight.semibold, fontSize: 28, letterSpacing: mnc.tracking.label, color: mnc.colors.white, textShadow: "0 1px 10px rgba(0,0,0,0.6)" }}>
+        <div style={{ fontFamily: mnc.fonts.body, fontWeight: mnc.weight.semibold, fontSize: 30, letterSpacing: mnc.tracking.label, color: mnc.colors.white, textShadow: "0 1px 10px rgba(0,0,0,0.6)" }}>
           DATOS QUE AHORA TIENES
         </div>
       </In>
       {items.map(([l, s], i) => (
-        <In key={l} at={s} dist={20} kind="pop" style={{ left: i % 2 ? 556 : 96, top: BAND + 60 + Math.floor(i / 2) * 100 }}>
-          <Pill icon={Icon.chart} label={l} size={28} />
+        <In key={l} at={s} dist={20} kind="pop" style={{ left: i % 2 ? 560 : 96, top: BAND + 56 + Math.floor(i / 2) * 104 }}>
+          <Pill icon={Icon.chart} label={l} size={32} />
         </In>
       ))}
     </>
@@ -213,10 +215,10 @@ const ExcelBand: React.FC = () => {
   const t = useT();
   const tick = at("producto", 0, 47);
   return (
-    <In at={t0} dist={30} style={{ left: 250, top: BAND }}>
-      <Card style={{ width: 580, padding: "18px 22px 14px" }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 12, fontFamily: mnc.fonts.body, fontWeight: mnc.weight.semibold, fontSize: 26 }}>
-          <div style={{ width: 34, height: 34, color: mnc.colors.accent }}>{Icon.grid}</div>
+    <In at={t0} dist={30} style={{ left: 170, top: BAND }}>
+      <Card style={{ width: 740, padding: "18px 22px 14px" }}>
+        <div style={{ display: "flex", alignItems: "center", gap: 12, fontFamily: mnc.fonts.body, fontWeight: mnc.weight.semibold, fontSize: 32 }}>
+          <div style={{ width: 40, height: 40, color: mnc.colors.accent }}>{Icon.grid}</div>
           Excel · promedio por producto
         </div>
         {[0, 1, 2, 3].map((i) => {
@@ -336,7 +338,7 @@ const Sources: React.FC = () => {
 };
 
 const AnswerChips: React.FC = () => (
-  <div style={{ position: "absolute", left: 96, right: 96, top: BAND + 10, display: "flex", gap: 16, justifyContent: "center" }}>
+  <div style={{ position: "absolute", left: 96, right: 96, top: BAND, display: "flex", gap: 16, justifyContent: "center" }}>
     {(
       [
         ["Qué pedir", at("pedir,", 0, 77)],
@@ -345,7 +347,7 @@ const AnswerChips: React.FC = () => (
       ] as [string, number][]
     ).map(([l, s]) => (
       <InFlow key={l} at={s - 0.1}>
-        <Pill icon={Icon.check} label={l} size={30} dark />
+        <Pill icon={Icon.check} label={l} size={36} dark />
       </InFlow>
     ))}
   </div>
@@ -422,9 +424,9 @@ const ReminderBand: React.FC = () => {
   return (
     <>
       <In at={at("recordatorios") - 0.1} dist={20} kind="pop" style={{ left: 0, right: 0, top: BAND, display: "flex", justifyContent: "center" }}>
-        <Pill icon={Icon.chat} label="Recordatorio por WhatsApp" size={30} dark />
+        <Pill icon={Icon.chat} label="Recordatorio por WhatsApp" size={36} dark />
       </In>
-      <In at={tA - 0.1} dist={16} style={{ left: 96, right: 96, top: BAND + 110 }}>
+      <In at={tA - 0.1} dist={16} style={{ left: 96, right: 96, top: BAND + 100 }}>
         <div style={{ position: "relative", height: 120 }}>
           <div style={{ position: "absolute", left: 0, right: 0, top: 30, height: 6, borderRadius: 3, background: mnc.colors.white, opacity: 0.85 }} />
           <Tick x={150} label="Antes" at={tA} />
@@ -450,7 +452,7 @@ const Tick: React.FC<{ x: number; label: string; at: number; big?: boolean }> = 
           border: `4px solid ${mnc.colors.white}`,
         }}
       />
-      <div style={{ fontFamily: mnc.fonts.body, fontWeight: mnc.weight.semibold, fontSize: 28, color: mnc.colors.white, textShadow: "0 1px 10px rgba(0,0,0,0.7)" }}>{label}</div>
+      <div style={{ fontFamily: mnc.fonts.body, fontWeight: mnc.weight.semibold, fontSize: 32, color: mnc.colors.white, textShadow: "0 1px 10px rgba(0,0,0,0.7)" }}>{label}</div>
     </div>
   );
 };
@@ -475,7 +477,7 @@ const WhereBand: React.FC = () => (
           background: mnc.colors.card,
           fontFamily: mnc.fonts.body,
           fontWeight: mnc.weight.medium,
-          fontSize: 38,
+          fontSize: 44,
           color: mnc.colors.ink,
           boxShadow: "0 20px 50px rgba(0,0,0,0.45)",
         }}
@@ -483,7 +485,7 @@ const WhereBand: React.FC = () => (
         ¿Dónde está mi pedido?
       </div>
     </In>
-    <In at={at("nadie")} dist={24} kind="pop" style={{ left: 560, top: BAND + 130 }}>
+    <In at={at("nadie")} dist={24} kind="pop" style={{ left: 600, top: BAND + 140 }}>
       <div
         style={{
           padding: "14px 26px",
@@ -493,7 +495,7 @@ const WhereBand: React.FC = () => (
           color: mnc.colors.accent,
           fontFamily: mnc.fonts.body,
           fontWeight: mnc.weight.semibold,
-          fontSize: 30,
+          fontSize: 36,
         }}
       >
         Sin respuesta
@@ -555,6 +557,36 @@ const Tracker: React.FC = () => {
   );
 };
 
+// ---------------- sound effects ----------------
+// whooshes (pre-rolled 0.2 s) land on scene changes; pops/clicks on the numbers and key lines
+const SFX = (): [number, SfxKind][] => [
+  [at("mano") - 0.1, "pop"],
+  [4.333, "whoosh"],
+  [at("8") - 0.1, "click"],
+  [at("4") - 0.1, "click"],
+  [at("1") - 0.1, "pop"],
+  [22.667, "whoosh"],
+  [37.4, "swoosh-soft"],
+  [at("Soy") - 0.15, "click"],
+  [44.167, "whoosh"],
+  [50.467, "swoosh-soft"],
+  [at("pierdes"), "click"],
+  [at("capital"), "pop"],
+  [56.3, "whoosh"],
+  [57.9, "swoosh-soft"],
+  [76.433, "swoosh-soft"],
+  [at("dinero") - 0.1, "pop"],
+  [83.233, "whoosh"],
+  [at("Con", 0, 89.5) - 0.05, "swoosh-soft"],
+  [at("pedidos.", 0, 92) + 0.45, "click"],
+  [99.9, "swoosh-soft"],
+  [104.15, "whoosh"],
+  [at("nadie"), "click"],
+  [109.5, "swoosh-soft"],
+  [at("notificaciones.") - 0.2, "pop"],
+  [113.75, "pop"],
+];
+
 // ---------------- composition ----------------
 export const Mnc4Reel: React.FC = () => (
   <AbsoluteFill style={{ background: mnc.colors.black }}>
@@ -566,7 +598,7 @@ export const Mnc4Reel: React.FC = () => (
 
     {/* HOOK */}
     <Win from={0} to={4.333}>
-      <Statement top={1250} lead="4 cosas que sigues haciendo" big="a mano" plate="que la IA ya hace" at={[0.05, at("mano") - 0.1, at("IA") - 0.1]} />
+      <Statement top={1330} lead="4 cosas que sigues haciendo" big="a mano" plate="que la IA ya hace" at={[0.05, at("mano") - 0.1, at("IA") - 0.1]} />
     </Win>
 
     {/* 01 · PEDIDOS */}
@@ -577,7 +609,7 @@ export const Mnc4Reel: React.FC = () => (
       <Eyebrow label="01 · Pedidos" at={6.2} />
     </Win>
     <Win from={6.2} to={at("8") - 0.1}>
-      <Chain steps={Antes()} perRow={3} />
+      <Chain steps={Antes()} perRow={2} />
     </Win>
     <Win from={at("8") - 0.1} to={at("1") - 0.1}>
       <In at={at("8") - 0.1} kind="pop" style={{ left: 96, top: BAND }}>
@@ -605,9 +637,9 @@ export const Mnc4Reel: React.FC = () => (
       <DataBand />
     </Win>
     <Win from={37.4} to={41.933}>
-      <CaptureCard src={SRC} from={37.4} crop={330} />
-      <In at={at("Soy") - 0.15} kind="pop" style={{ left: 96, top: BAND + 10 }}>
-        <Pill icon={Icon.bolt} label="Soy Galo · startup" size={32} dark />
+      <CaptureCard src={SRC} from={37.4} crop={330} top={300} h={1000} />
+      <In at={at("Soy") - 0.15} kind="pop" style={{ left: 0, right: 0, top: BAND, display: "flex", justifyContent: "center" }}>
+        <Pill icon={Icon.bolt} label="Soy Galo · startup" size={38} dark />
       </In>
     </Win>
 
@@ -631,13 +663,13 @@ export const Mnc4Reel: React.FC = () => (
       <Sources />
     </Win>
     <Win from={76.433} to={79.867}>
-      <CaptureCard src={SRC} from={76.433} crop={300} top={420} h={980} />
+      <CaptureCard src={SRC} from={76.433} crop={300} top={300} h={1000} />
       <AnswerChips />
     </Win>
 
     {/* 03 · COBRANZA */}
     <Win from={79.867} to={83.233}>
-      <Statement top={1270} lead="el que te cuesta" big="dinero diario" plate="03 · cobranza" at={[79.9, at("dinero") - 0.1, at("cobranza.") - 0.1]} bigSize={150} />
+      <Statement top={1340} lead="el que te cuesta" big="dinero diario" plate="03 · cobranza" at={[79.9, at("dinero") - 0.1, at("cobranza.") - 0.1]} bigSize={150} />
     </Win>
     <Win from={83.233} to={104.1}>
       <Eyebrow label="03 · Cobranza" at={83.233} />
@@ -652,9 +684,9 @@ export const Mnc4Reel: React.FC = () => (
       <ReminderBand />
     </Win>
     <Win from={99.9} to={104.1}>
-      <CaptureCard src={SRC} from={99.9} crop={260} />
-      <In at={at("flujo") - 0.15} kind="pop" style={{ left: 96, top: BAND + 10 }}>
-        <Pill icon={Icon.chart} label="Flujo de caja enfrente" size={32} dark />
+      <CaptureCard src={SRC} from={99.9} crop={260} top={300} h={1000} />
+      <In at={at("flujo") - 0.15} kind="pop" style={{ left: 0, right: 0, top: BAND, display: "flex", justifyContent: "center" }}>
+        <Pill icon={Icon.chart} label="Flujo de caja enfrente" size={38} dark />
       </In>
     </Win>
 
@@ -674,10 +706,11 @@ export const Mnc4Reel: React.FC = () => (
 
     {/* CTA */}
     <Win from={113.267} to={BASE_DUR + END_HOLD}>
-      <Statement top={1250} lead="¿qué otro proceso sigues" big="a mano?" plate="te leo en comentarios ↓" at={[113.3, 113.75, at("leo") - 0.1]} bigSize={200} />
+      <Statement top={1330} lead="¿qué otro proceso sigues" big="a mano?" plate="te leo en comentarios ↓" at={[113.3, 113.75, at("leo") - 0.1]} bigSize={200} />
     </Win>
 
-    <Captions chunks={CHUNKS} hidden={NO_CAPTION} />
+    <Sfx cues={SFX()} />
+    <Captions chunks={CHUNKS} hidden={NO_CAPTION} top={CAP_TOP} />
     <BrandMark shadow />
   </AbsoluteFill>
 );

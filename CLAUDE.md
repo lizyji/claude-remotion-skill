@@ -65,6 +65,10 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
     browser chrome cropped), `Statement` (cover-style 3-line text), `Eyebrow`, `CaseIntro`, `Pill`,
     `Arrow`, `Stat`. Start the next reel from it.
   - Captions come from `src/mnc/captionsCore.ts` (`makeCaptions(words, keywords)`), shared by all reels.
+  - Layout (client feedback): captions at Y=1380 just under the chin (face lifted with `Cam` y=-200);
+    overlays over Manuel go UNDER the captions (Y≈1548–1810) on the bottom black falloff.
+  - SFX: `scripts/gen-sfx.sh` synthesizes `public/sfx/*.wav` (click, pop, whoosh, swoosh-soft);
+    `<Sfx cues>` in Kit places them at low volume — whoosh on scene changes, pop/click on key numbers.
   - Covers: `MncPortada` takes props (photo, lead, big, plate, spark) — one `<Composition>` per video.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
@@ -80,7 +84,7 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   for cosmetic tweaks that can be checked on stills.
 - **Every video ships with a cover (portada)** in the same style as `MncPortada` (`src/mnc/MncPortada.tsx`):
   speaker photo full-bleed, three-line title — small white lead, giant orange keyword, white line
-  on an orange plate — soft offset shadow, "manuel <no code>" top-right, lowercase, title kept
+  on an orange plate — soft offset shadow, "manuel" with "<no code>" tucked right under it, top-right, lowercase, title kept
   inside the 3:4 grid crop. Render it as a still and send it together with the video.
 - **Cover decorations:** the orange spark/star is used **only when the video mentions Claude**;
   otherwise no extra shapes or figures at all.

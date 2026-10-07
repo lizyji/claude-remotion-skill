@@ -1,5 +1,5 @@
 import React, { createContext, useContext } from "react";
-import { Freeze, interpolate, OffthreadVideo, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
+import { Audio, Freeze, interpolate, OffthreadVideo, Sequence, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { mnc } from "../mnc/mncTheme";
 
 // Reusable MNC reel kit. Everything is timed in ABSOLUTE seconds of the reel
@@ -72,7 +72,7 @@ export const Cam: React.FC<{ src: string; shots: Shot[] }> = ({ src, shots }) =>
           position: "absolute",
           width: 1080,
           height: 1920,
-          transform: `translateY(${s.y ?? -150}px) scale(${(s.scale ?? 1) * punch})`,
+          transform: `translateY(${s.y ?? -200}px) scale(${(s.scale ?? 1) * punch})`,
           transformOrigin: "50% 40%",
         }}
       />
@@ -82,7 +82,7 @@ export const Cam: React.FC<{ src: string; shots: Shot[] }> = ({ src, shots }) =>
           position: "absolute",
           inset: 0,
           background:
-            "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 24%, rgba(0,0,0,0) 64%, rgba(0,0,0,0.7) 80%, #000 92%)",
+            "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 64%, rgba(0,0,0,0.55) 71%, rgba(0,0,0,0.82) 78%, #000 88%)",
         }}
       />
     </div>
@@ -127,11 +127,11 @@ export const CaptureCard: React.FC<{ src: string; from: number; crop: number; to
 };
 
 // Last frame of the take held under the end card.
-export const HoldFrame: React.FC<{ src: string; frame: number; y?: number }> = ({ src, frame, y = -150 }) => (
+export const HoldFrame: React.FC<{ src: string; frame: number; y?: number }> = ({ src, frame, y = -200 }) => (
   <Freeze frame={frame}>
     <div style={{ position: "absolute", inset: 0, overflow: "hidden" }}>
       <OffthreadVideo src={staticFile(src)} muted style={{ position: "absolute", width: 1080, height: 1920, transform: `translateY(${y}px)` }} />
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 24%, rgba(0,0,0,0) 64%, rgba(0,0,0,0.7) 80%, #000 92%)" }} />
+      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 64%, rgba(0,0,0,0.55) 71%, rgba(0,0,0,0.82) 78%, #000 88%)" }} />
     </div>
   </Freeze>
 );
@@ -293,3 +293,22 @@ export const Stat: React.FC<{ value: string; label: string; w?: number; size?: n
 
 // light up a step once it is spoken
 export const useOn = (at: number) => useT() >= at;
+
+// ---------------- sound ----------------
+// Subtle UI sound effects (scripts/gen-sfx.sh), placed at absolute seconds and kept
+// well under the voice: whooshes on scene changes, pops/clicks on key entrances.
+export type SfxKind = "whoosh" | "swoosh-soft" | "pop" | "click";
+const SFX_VOL: Record<SfxKind, number> = { whoosh: 0.22, "swoosh-soft": 0.2, pop: 0.2, click: 0.16 };
+
+export const Sfx: React.FC<{ cues: [number, SfxKind][] }> = ({ cues }) => {
+  const { fps } = useVideoConfig();
+  return (
+    <>
+      {cues.map(([t, k], i) => (
+        <Sequence key={i} from={Math.max(0, Math.round(t * fps) - (k === "whoosh" ? 6 : 0))} durationInFrames={Math.round(fps * 0.7)} layout="none">
+          <Audio src={staticFile(`sfx/${k}.wav`)} volume={SFX_VOL[k]} />
+        </Sequence>
+      ))}
+    </>
+  );
+};
