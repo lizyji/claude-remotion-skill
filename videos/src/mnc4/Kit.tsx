@@ -16,9 +16,11 @@ export const useT = () => {
   return frame / fps;
 };
 
+// windows compare whole frames (seconds → nearest frame) so a cut never leaks a stray frame
 export const Win: React.FC<{ from: number; to: number; children: React.ReactNode }> = ({ from, to, children }) => {
-  const t = useT();
-  if (t < from || t >= to) return null;
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (frame < Math.round(from * fps) || frame >= Math.round(to * fps)) return null;
   return <WinCtx.Provider value={{ from, to }}>{children}</WinCtx.Provider>;
 };
 
@@ -60,7 +62,9 @@ export type Shot = { from: number; to: number; y?: number; scale?: number; punch
 // Manuel's camera, framed so the face sits between the top band and the captions.
 export const Cam: React.FC<{ src: string; shots: Shot[] }> = ({ src, shots }) => {
   const t = useT();
-  const s = shots.find((x) => t >= x.from && t < x.to);
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const s = shots.find((x) => frame >= Math.round(x.from * fps) && frame < Math.round(x.to * fps));
   if (!s) return null;
   const punch = s.punch ? interpolate(t, [s.punch[0], s.punch[0] + 0.25], [1, s.punch[1]], { easing: mnc.ease.out, ...clamp }) : 1;
   return (
@@ -237,8 +241,9 @@ export const CaseIntro: React.FC<{ n: string; title: React.ReactNode; at: number
 // ---------------- diagram parts ----------------
 // White pill with an orange line icon. `on` lights it with an orange ring
 // (the step being described), `dim` greys it (the old, manual way).
-export const Pill: React.FC<{ icon?: React.ReactNode; label: string; on?: boolean; dim?: boolean; size?: number; dark?: boolean }> = ({
+export const Pill: React.FC<{ icon?: React.ReactNode; label: string; on?: boolean; dim?: boolean; size?: number; dark?: boolean; n?: number }> = ({
   icon,
+  n,
   label,
   on,
   dim,
@@ -262,6 +267,26 @@ export const Pill: React.FC<{ icon?: React.ReactNode; label: string; on?: boolea
       whiteSpace: "nowrap",
     }}
   >
+    {n ? (
+      <div
+        style={{
+          width: size * 1.25,
+          height: size * 1.25,
+          borderRadius: "50%",
+          flex: "none",
+          background: mnc.colors.accent,
+          color: mnc.colors.white,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontFamily: mnc.fonts.title,
+          fontWeight: mnc.weight.bold,
+          fontSize: size * 0.75,
+        }}
+      >
+        {n}
+      </div>
+    ) : null}
     {icon ? <div style={{ width: size * 1.3, height: size * 1.3, color: dark ? mnc.colors.white : mnc.colors.accent, flex: "none" }}>{icon}</div> : null}
     {label}
   </div>

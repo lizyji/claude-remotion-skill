@@ -43,8 +43,8 @@ export const BrandMark: React.FC<{ color?: string; shadow?: boolean }> = ({
       right: 1080 - mnc.safe.right,
       top: mnc.layout.brandTop,
       display: "flex",
-      flexDirection: "column",
-      alignItems: "flex-end",
+      alignItems: "flex-start",
+      gap: 6,
       fontFamily: mnc.fonts.body,
       fontWeight: mnc.weight.regular,
       color,
@@ -53,7 +53,7 @@ export const BrandMark: React.FC<{ color?: string; shadow?: boolean }> = ({
     }}
   >
     <span style={{ fontSize: 42 }}>manuel</span>
-    <span style={{ fontSize: 18, marginTop: 1 }}>{"<nocode>"}</span>
+    <span style={{ fontSize: 18, marginTop: 38 }}>{"<nocode>"}</span>
   </div>
 );
 

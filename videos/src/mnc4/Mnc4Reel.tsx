@@ -83,7 +83,12 @@ const NO_CAPTION: [number, number][] = [
 const CAP_TOP = 1380;
 const BAND = 1548;
 
-const Chain: React.FC<{ steps: [React.ReactNode, string, number][]; perRow: number; top?: number }> = ({ steps, perRow, top = BAND }) => {
+const Chain: React.FC<{ steps: [React.ReactNode, string, number][]; perRow: number; top?: number; numbered?: boolean }> = ({
+  steps,
+  perRow,
+  top = BAND,
+  numbered,
+}) => {
   const t = useT();
   const rows: (typeof steps)[] = [];
   for (let i = 0; i < steps.length; i += perRow) rows.push(steps.slice(i, i + perRow));
@@ -96,7 +101,7 @@ const Chain: React.FC<{ steps: [React.ReactNode, string, number][]; perRow: numb
             return (
               <React.Fragment key={l}>
                 <InFlow at={s}>
-                  <Pill icon={ic} label={l} size={34} on={t >= s && t < s + 0.9} />
+                  <Pill icon={ic} label={l} size={34} n={numbered ? ri * perRow + i + 1 : undefined} on={t >= s && t < s + 0.9} />
                 </InFlow>
                 {!last ? (
                   <InFlow at={s + 0.15}>
@@ -134,8 +139,8 @@ const Antes = (): [React.ReactNode, string, number][] => [
 const Versus: React.FC<{ t0: number }> = ({ t0 }) => {
   const old = ["WhatsApp / correo", "Captura", "Almacén", "Existencias", "Ventas", "Cliente"];
   const ia: [React.ReactNode, string][] = [
-    [Icon.chat, "Pedido"],
     [Icon.sparkle, "Agente IA"],
+    [Icon.chat, "Pedido"],
     [Icon.box, "Inventario"],
     [Icon.check, "Confirmación"],
   ];
@@ -161,7 +166,7 @@ const Versus: React.FC<{ t0: number }> = ({ t0 }) => {
       {ia.map(([ic, l], i) => (
         <React.Fragment key={l}>
           <In at={t0 + 0.35 + i * 0.14} dist={24} kind="pop" style={{ left: 590, top: 410 + i * 190 }}>
-            <Pill icon={ic} label={l} size={32} dark={i === 1} />
+            <Pill icon={ic} label={l} size={32} dark={i === 0} />
           </In>
           {i < 3 ? (
             <In at={t0 + 0.45 + i * 0.14} dist={10} style={{ left: 640, top: 500 + i * 190 }}>
@@ -174,12 +179,14 @@ const Versus: React.FC<{ t0: number }> = ({ t0 }) => {
   );
 };
 
+// in the order Manuel narrates it: the agent reads the WhatsApp, takes the order, checks stock, confirms
 const IaFlowBand: React.FC = () => (
   <Chain
     perRow={2}
+    numbered
     steps={[
-      [Icon.chat, "Pedido", at("pedido,", 0, 24)],
       [Icon.sparkle, "Agente IA", at("agente")],
+      [Icon.chat, "Pedido", at("pedido,", 0, 24)],
       [Icon.box, "Inventario", at("inventario")],
       [Icon.check, "Confirmación", at("confirmación.")],
     ]}

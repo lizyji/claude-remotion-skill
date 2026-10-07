@@ -72,7 +72,10 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   - Covers: `MncPortada` takes props (photo, lead, big, plate, spark) — one `<Composition>` per video.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
-- Brand mark in videos: "<nocode>" sits tucked right UNDER "manuel" (right-aligned), not beside it.
+- Brand mark in videos: keep the original lockup (gap 6 after "manuel") but drop "<nocode>" just below
+  the baseline of "manuel" — stepped down, not centered or right-aligned under it.
+- Window/shot timing in the reel kit compares whole frames (`Math.round(s * fps)`), so cuts never leak
+  a stray source frame.
 - Rendered files over ~30 MB can't be sent in chat: encode a delivery copy (2-pass ~3.5 Mbps).
 
 ## Client preferences (from feedback)
