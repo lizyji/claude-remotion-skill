@@ -3,7 +3,7 @@ import { AbsoluteFill, Audio, staticFile } from "remotion";
 import { mnc } from "../mnc/mncTheme";
 import { makeCaptions, type Word } from "../mnc/captionsCore";
 import { Captions } from "../mnc/components/Captions";
-import { BrandMark, Card } from "../mnc/components/Primitives";
+import { Card } from "../mnc/components/Primitives";
 import { Icon } from "../mnc/components/Icons";
 import { Flow } from "../mnc/components/Flow";
 import words from "./words.json";
@@ -718,6 +718,5 @@ export const Mnc4Reel: React.FC = () => (
 
     <Sfx cues={SFX()} />
     <Captions chunks={CHUNKS} hidden={NO_CAPTION} top={CAP_TOP} />
-    <BrandMark shadow />
   </AbsoluteFill>
 );
