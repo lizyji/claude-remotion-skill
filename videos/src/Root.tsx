@@ -10,6 +10,7 @@ import { MncReel, MNC_FPS, MNC_TOTAL_F } from "./mnc/MncReel";
 import { mnc } from "./mnc/mncTheme";
 import { MncPortada } from "./mnc/MncPortada";
 import { Mnc4Reel, MNC4_FPS, MNC4_TOTAL_F } from "./mnc4/Mnc4Reel";
+import { Mnc5Reel, MNC5_FPS, MNC5_TOTAL_F } from "./mnc5/Mnc5Reel";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -72,6 +73,16 @@ export const Root: React.FC = () => (
       defaultProps={{ photo: "mnc4/src/portada.png", zoom: 1.08, lead: "4 cosas que sigues haciendo", leadSize: 80, big: "a mano", bigSize: 230, plate: "que la IA ya hace", top: 1250 }}
     />
     <Composition id="Mnc4CosasAMano" component={Mnc4Reel} durationInFrames={MNC4_TOTAL_F} fps={MNC4_FPS} width={1080} height={1920} />
+    <Composition id="Mnc5Cotizador" component={Mnc5Reel} durationInFrames={MNC5_TOTAL_F} fps={MNC5_FPS} width={1080} height={1920} />
+    <Composition
+      id="Mnc5Portada"
+      component={MncPortada}
+      durationInFrames={1}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{ photo: "mnc5/src/portada.png", zoom: 1.08, lead: "crea tu", leadShift: -330, big: "cotizador", bigSize: 200, plate: "con IA, sin programar", top: 1250 }}
+    />
     <Composition
       id="MncDashboardWhatsApp"
       component={MncReel}

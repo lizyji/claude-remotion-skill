@@ -70,6 +70,12 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   - SFX: `scripts/gen-sfx.sh` synthesizes `public/sfx/*.wav` (click, pop, whoosh, swoosh-soft);
     `<Sfx cues>` in Kit places them at low volume — whoosh on scene changes, pop/click on key numbers.
   - Covers: `MncPortada` takes props (photo, lead, big, plate, spark) — one `<Composition>` per video.
+- **Mnc5Cotizador** (`src/mnc5/`) — tutorial Reel "crea tu cotizador con IA (sin programar)", built on
+  the mnc4 kit. `npm run mnc5:prepare` (download, loudnorm, upscale 720→1080), `npm run render:mnc5`.
+  Cover: `Mnc5Portada`. Screen shots are full-screen, zoomed from the bottom (`scr()` in SHOTS) so the
+  browser chrome falls off the top; captions move per shot (`capTop`). Steps 01–06 use `Step`
+  (banner → eyebrow), `Trail` (pills that grow as items are named, in narration order) and `Checklist`.
+  No top-right brand mark in the video (latest client preference).
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Mnc4CosasAMano ships WITHOUT the top-right brand mark (client request). Where a brand mark is used,

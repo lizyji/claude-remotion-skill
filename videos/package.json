@@ -13,7 +13,9 @@
     "mnc:prepare": "bash scripts/mnc-prepare.sh",
     "render:mnc": "remotion render src/index.ts MncDashboardWhatsApp out/mnc/mnc-dashboard-whatsapp.mp4 --codec h264 --crf 18",
     "mnc4:prepare": "bash scripts/mnc4-prepare.sh",
-    "render:mnc4": "remotion render src/index.ts Mnc4CosasAMano out/mnc4/mnc-4-cosas-a-mano.mp4 --codec h264 --crf 17"
+    "render:mnc4": "remotion render src/index.ts Mnc4CosasAMano out/mnc4/mnc-4-cosas-a-mano.mp4 --codec h264 --crf 17",
+    "mnc5:prepare": "bash scripts/mnc5-prepare.sh",
+    "render:mnc5": "remotion render src/index.ts Mnc5Cotizador out/mnc5/mnc-cotizador.mp4 --codec h264 --crf 17"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",

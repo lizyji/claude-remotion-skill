@@ -57,7 +57,15 @@ export const In: React.FC<{
 };
 
 // ---------------- footage ----------------
-export type Shot = { from: number; to: number; y?: number; scale?: number; punch?: [number, number] };
+export type Shot = {
+  from: number;
+  to: number;
+  y?: number;
+  scale?: number;
+  punch?: [number, number];
+  origin?: string; // transform origin, default "50% 40%" (camera); screens zoom from the bottom to crop browser chrome
+  fade?: "cam" | "screen"; // screens get a lighter falloff so the UI stays readable
+};
 
 // Manuel's camera, framed so the face sits between the top band and the captions.
 export const Cam: React.FC<{ src: string; shots: Shot[] }> = ({ src, shots }) => {
@@ -77,7 +85,7 @@ export const Cam: React.FC<{ src: string; shots: Shot[] }> = ({ src, shots }) =>
           width: 1080,
           height: 1920,
           transform: `translateY(${s.y ?? -200}px) scale(${(s.scale ?? 1) * punch})`,
-          transformOrigin: "50% 40%",
+          transformOrigin: s.origin ?? "50% 40%",
         }}
       />
       {/* legibility: soft falloff behind the top band and the captions, solid under the IG UI */}
@@ -86,7 +94,9 @@ export const Cam: React.FC<{ src: string; shots: Shot[] }> = ({ src, shots }) =>
           position: "absolute",
           inset: 0,
           background:
-            "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 64%, rgba(0,0,0,0.55) 71%, rgba(0,0,0,0.82) 78%, #000 88%)",
+            s.fade === "screen"
+              ? "linear-gradient(180deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0) 14%, rgba(0,0,0,0) 70%, rgba(0,0,0,0.5) 78%, rgba(0,0,0,0.85) 90%)"
+              : "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 64%, rgba(0,0,0,0.55) 71%, rgba(0,0,0,0.82) 78%, #000 88%)",
         }}
       />
     </div>
