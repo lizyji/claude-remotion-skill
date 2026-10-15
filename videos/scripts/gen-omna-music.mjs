@@ -9,7 +9,10 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const tl = JSON.parse(readFileSync(join(ROOT, "src/omna/timeline.json"), "utf8"));
-const OUT = join(ROOT, "public/omna/audio");
+// MUSIC_SPEC='{"groove":1.2,"outro":101.7,"total":104.5,"out":"public/omna2/audio/music.wav"}' reuses
+// this bed for another OMNA video; default = the welcome video timeline.
+const SPEC = process.env.MUSIC_SPEC ? JSON.parse(process.env.MUSIC_SPEC) : null;
+const OUT = join(ROOT, SPEC ? dirname(SPEC.out) : "public/omna/audio");
 mkdirSync(OUT, { recursive: true });
 
 // --- timeline (mirrors src/omna/timeline.ts) ---
@@ -17,9 +20,9 @@ let t = tl.intro.frames;
 for (const c of tl.clips) t += c.frames - (c.join === "fade" ? c.joinFrames : 0);
 const outroStartF = t - tl.outro.fadeIn;
 const FPS = tl.fps;
-const GROOVE_AT = tl.intro.frames / FPS; // first downbeat = first full frame of Manuel
-const OUTRO_AT = outroStartF / FPS;
-const TOTAL = (outroStartF + tl.outro.frames) / FPS + 0.2;
+const GROOVE_AT = SPEC ? SPEC.groove : tl.intro.frames / FPS; // first downbeat = first full frame of Manuel
+const OUTRO_AT = SPEC ? SPEC.outro : outroStartF / FPS;
+const TOTAL = SPEC ? SPEC.total : (outroStartF + tl.outro.frames) / FPS + 0.2;
 
 const BARS = Math.round((OUTRO_AT - GROOVE_AT) / 2.4); // ~100 BPM
 const BAR = (OUTRO_AT - GROOVE_AT) / BARS;

@@ -5,12 +5,14 @@
 export type Word = { w: string; s: number; e: number; hl?: boolean };
 export type Chunk = { from: number; to: number; words: Word[] };
 
-const MAX_WORDS = 6;
-const MAX_CHARS = 32;
-const MAX_MERGED = 40; // two lines at caption size
-const MIN_DUR = 0.55; // s
+// defaults fit a vertical reel (two lines at caption size); landscape videos pass wider limits
+export type CaptionOpts = { maxWords?: number; maxChars?: number; maxMerged?: number; minDur?: number };
 
-export const makeCaptions = (W: Word[], KEYWORDS: string[][]) => {
+export const makeCaptions = (W: Word[], KEYWORDS: string[][], opts: CaptionOpts = {}) => {
+  const MAX_WORDS = opts.maxWords ?? 6;
+  const MAX_CHARS = opts.maxChars ?? 32;
+  const MAX_MERGED = opts.maxMerged ?? 40;
+  const MIN_DUR = opts.minDur ?? 0.55; // s
   const norm = (s: string) => s.toLowerCase().replace(/[^a-z0-9áéíóúñü]/g, "");
 
   const highlight = (ws: Word[]): Word[] => {

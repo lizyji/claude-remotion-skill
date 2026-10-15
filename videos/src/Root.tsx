@@ -11,6 +11,7 @@ import { mnc } from "./mnc/mncTheme";
 import { MncPortada } from "./mnc/MncPortada";
 import { Mnc4Reel, MNC4_FPS, MNC4_TOTAL_F } from "./mnc4/Mnc4Reel";
 import { Mnc5Reel, MNC5_FPS, MNC5_TOTAL_F } from "./mnc5/Mnc5Reel";
+import { OmnaManuel, OMNA2_FPS, OMNA2_TOTAL_F } from "./omna2/OmnaManuel";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -83,6 +84,7 @@ export const Root: React.FC = () => (
       height={1920}
       defaultProps={{ photo: "mnc5/src/portada.png", zoom: 1.08, lead: "crea tu", leadShift: -330, big: "cotizador", bigSize: 200, plate: "con IA, sin programar", top: 1250 }}
     />
+    <Composition id="OmnaManuelCeo" component={OmnaManuel} durationInFrames={OMNA2_TOTAL_F} fps={OMNA2_FPS} width={1920} height={1080} />
     <Composition
       id="MncDashboardWhatsApp"
       component={MncReel}

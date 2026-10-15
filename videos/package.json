@@ -15,7 +15,9 @@
     "mnc4:prepare": "bash scripts/mnc4-prepare.sh",
     "render:mnc4": "remotion render src/index.ts Mnc4CosasAMano out/mnc4/mnc-4-cosas-a-mano.mp4 --codec h264 --crf 17",
     "mnc5:prepare": "bash scripts/mnc5-prepare.sh",
-    "render:mnc5": "remotion render src/index.ts Mnc5Cotizador out/mnc5/mnc-cotizador.mp4 --codec h264 --crf 17"
+    "render:mnc5": "remotion render src/index.ts Mnc5Cotizador out/mnc5/mnc-cotizador.mp4 --codec h264 --crf 17",
+    "omna2:prepare": "bash scripts/omna2-prepare.sh && MUSIC_SPEC='{\"groove\":1.2,\"outro\":101.72,\"total\":104.9,\"out\":\"public/omna2/audio/music.wav\"}' node scripts/gen-omna-music.mjs",
+    "render:omna2": "remotion render src/index.ts OmnaManuelCeo out/omna2/omna-manuel-guerrero.mp4 --codec h264 --crf 17"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",

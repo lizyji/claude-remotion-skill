@@ -48,6 +48,15 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
     (verbatim phrases, seconds relative to each clip), names/roles in `OmnaBienvenida.tsx`.
   - Brand tokens live in `src/omna/omnaTheme.ts`. The SFT Schrifted Sans files are the foundry
     TRIAL build — a licensed copy is needed before publishing.
+- **OmnaManuelCeo** (`src/omna2/`) — 1920×1080 video of Manuel Guerrero (CEO de Omna), styled with the
+  OMNA Design System in Claude Design (artifact "OMNA Design System (Remix)"; same tokens as `omnaTheme.ts`).
+  `npm run omna2:prepare`: downloads the take, fixes its orientation (`transpose=2,hflip` — the phone
+  stored it rotated AND mirrored; check the "omna" shirt print reads correctly), keeps the good take from
+  12.5 s and trims the long pauses (segment list in `scripts/omna2-prepare.sh`), and synthesizes the
+  music bed (`gen-omna-music.mjs` with `MUSIC_SPEC`). Then `npm run render:omna2`.
+  - `words.json` = the client's reference transcript aligned to the audio, remapped onto the cut.
+  - Camera framings full / close / side (`KEYS`); in "side" Manuel eases left and a frosted OMNA panel
+    explains the idea on the right, so he is never covered. Joins of the trimmed take land on a framing cut.
 - **MncDashboardWhatsApp** (`src/mnc/`) — 1080×1920 Reel for Manuel NoCode, styled only with the
   MNC Carousel Design System (Manual Maestro MNC, `ds-mnc` skill): variante negro, Poppins titles,
   Readex Pro body/brand/captions, accent #FD6623, white cards, 6-point sparks, hand-drawn arrows.
