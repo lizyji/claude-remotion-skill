@@ -12,6 +12,7 @@ import { MncPortada } from "./mnc/MncPortada";
 import { Mnc4Reel, MNC4_FPS, MNC4_TOTAL_F } from "./mnc4/Mnc4Reel";
 import { Mnc5Reel, MNC5_FPS, MNC5_TOTAL_F } from "./mnc5/Mnc5Reel";
 import { OmnaManuel, OMNA2_FPS, OMNA2_TOTAL_F } from "./omna2/OmnaManuel";
+import { Mnc6Reel, MNC6_FPS, MNC6_TOTAL_F } from "./mnc6/Mnc6Reel";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -85,6 +86,16 @@ export const Root: React.FC = () => (
       defaultProps={{ photo: "mnc5/src/portada.png", zoom: 1.08, lead: "crea tu", leadShift: -330, big: "cotizador", bigSize: 200, plate: "con IA, sin programar", top: 1250 }}
     />
     <Composition id="OmnaManuelCeo" component={OmnaManuel} durationInFrames={OMNA2_TOTAL_F} fps={OMNA2_FPS} width={1920} height={1080} />
+    <Composition id="Mnc6AgentesGrokBot" component={Mnc6Reel} durationInFrames={MNC6_TOTAL_F} fps={MNC6_FPS} width={1080} height={1920} />
+    <Composition
+      id="Mnc6Portada"
+      component={MncPortada}
+      durationInFrames={1}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{ photo: "mnc6/src/portada.png", zoom: 1.08, lead: "crea tu equipo de", leadSize: 84, big: "agentes IA", bigSize: 190, plate: "más fácil de lo que imaginas", plateSize: 66, top: 1250 }}
+    />
     <Composition
       id="MncDashboardWhatsApp"
       component={MncReel}

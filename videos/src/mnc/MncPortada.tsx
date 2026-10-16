@@ -32,11 +32,12 @@ export type PortadaProps = {
   big: string;
   bigSize?: number;
   plate: string;
+  plateSize?: number;
   top?: number;
   spark?: boolean; // only when the video mentions Claude (client rule)
 };
 
-export const MncPortada: React.FC<PortadaProps> = ({ photo, zoom = 1.14, lead, leadSize = 104, leadShift = 0, big, bigSize = 206, plate, top = 1290, spark }) => (
+export const MncPortada: React.FC<PortadaProps> = ({ photo, zoom = 1.14, lead, leadSize = 104, leadShift = 0, big, bigSize = 206, plate, plateSize = 92, top = 1290, spark }) => (
   <AbsoluteFill style={{ background: mnc.colors.black }}>
     <Img src={staticFile(photo)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 30%", transform: `scale(${zoom})`, transformOrigin: "50% 100%" }} />
     {/* bottom darkening so the white lines hold on the grey shirt */}
@@ -53,7 +54,7 @@ export const MncPortada: React.FC<PortadaProps> = ({ photo, zoom = 1.14, lead, l
       <div style={{ ...line, fontSize: leadSize, fontWeight: mnc.weight.medium, letterSpacing: "-0.03em", marginLeft: leadShift }}>{lead}</div>
       <div style={{ ...line, fontSize: bigSize, fontWeight: mnc.weight.medium, letterSpacing: "-0.055em", color: mnc.colors.accent, marginTop: -34 }}>{big}</div>
       <div style={{ marginTop: -22, background: mnc.colors.accent, padding: "6px 44px 22px" }}>
-        <div style={{ ...line, fontSize: 92, fontWeight: mnc.weight.medium, letterSpacing: "-0.035em" }}>{plate}</div>
+        <div style={{ ...line, fontSize: plateSize, fontWeight: mnc.weight.medium, letterSpacing: "-0.035em" }}>{plate}</div>
       </div>
     </div>
   </AbsoluteFill>

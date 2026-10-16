@@ -85,6 +85,13 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   browser chrome falls off the top; captions move per shot (`capTop`). Steps 01–06 use `Step`
   (banner → eyebrow), `Trail` (pills that grow as items are named, in narration order) and `Checklist`.
   No top-right brand mark in the video (latest client preference).
+- **Mnc6AgentesGrokBot** (`src/mnc6/`) — Reel "cómo crear agentes de IA extremadamente fácil" about
+  **Grok Bot** (xAI's agent product — the on-screen UI says "Grok Bot"; whisper mis-hears it as Clawdbot /
+  Glockbot, fixed in `words.json`). No verified official logo could be downloaded (x.ai is behind
+  Cloudflare), so the name is set as type only. `npm run mnc6:prepare`, `npm run render:mnc6`; cover
+  `Mnc6Portada`. Camera framing `y=-300, scale=1.1` (face sits low in this take); overlays in the band
+  above the head (`BAND`), captions under the chin. The agent team is shown as a PLAN, the 15 → 50–60
+  pieces as a META. Kit now exports `Trail`, and `Statement`/`MncPortada` take `plateSize`; SFX adds `tick`.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Mnc4CosasAMano ships WITHOUT the top-right brand mark (client request). Where a brand mark is used,

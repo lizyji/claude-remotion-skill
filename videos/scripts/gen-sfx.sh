@@ -16,3 +16,5 @@ ffmpeg -nostdin -v error -y -f lavfi -i "anoisesrc=d=0.55:c=pink:a=0.9:r=48000" 
 ffmpeg -nostdin -v error -y -f lavfi -i "anoisesrc=d=0.35:c=brown:a=0.9:r=48000" \
   -af "highpass=f=200,lowpass=f=2400,afade=t=in:d=0.12,afade=t=out:st=0.15:d=0.2,volume=2.0" $A "$O/swoosh-soft.wav"
 ls -la "$O"
+# tick: soft digital tick for agent activation / state changes
+ffmpeg -nostdin -v error -y -f lavfi -i "aevalsrc='0.5*sin(2*PI*1800*t)*exp(-t*260)+0.3*sin(2*PI*3600*t)*exp(-t*400)':d=0.05:s=48000" $A "$O/tick.wav"

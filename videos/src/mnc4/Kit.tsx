@@ -170,7 +170,8 @@ export const Statement: React.FC<{
   at: [number, number, number?];
   top: number;
   bigSize?: number;
-}> = ({ lead, big, plate, at, top, bigSize = 190 }) => (
+  plateSize?: number;
+}> = ({ lead, big, plate, at, top, bigSize = 190, plateSize = 76 }) => (
   <div style={{ position: "absolute", left: 0, right: 0, top, display: "flex", flexDirection: "column", alignItems: "center" }}>
     <Line at={at[0]}>
       <div style={{ ...coverLine, fontSize: 70, letterSpacing: "-0.03em" }}>{lead}</div>
@@ -181,7 +182,7 @@ export const Statement: React.FC<{
     {plate ? (
       <Line at={at[2] ?? at[1]} kind="pop">
         <div style={{ marginTop: -bigSize * 0.08, background: mnc.colors.accent, padding: "4px 36px 16px" }}>
-          <div style={{ ...coverLine, fontSize: 76, letterSpacing: "-0.035em" }}>{plate}</div>
+          <div style={{ ...coverLine, fontSize: plateSize, letterSpacing: "-0.035em" }}>{plate}</div>
         </div>
       </Line>
     ) : null}
@@ -332,8 +333,8 @@ export const useOn = (at: number) => useT() >= at;
 // ---------------- sound ----------------
 // Subtle UI sound effects (scripts/gen-sfx.sh), placed at absolute seconds and kept
 // well under the voice: whooshes on scene changes, pops/clicks on key entrances.
-export type SfxKind = "whoosh" | "swoosh-soft" | "pop" | "click";
-const SFX_VOL: Record<SfxKind, number> = { whoosh: 0.22, "swoosh-soft": 0.2, pop: 0.2, click: 0.16 };
+export type SfxKind = "whoosh" | "swoosh-soft" | "pop" | "click" | "tick";
+const SFX_VOL: Record<SfxKind, number> = { whoosh: 0.22, "swoosh-soft": 0.2, pop: 0.2, click: 0.16, tick: 0.14 };
 
 export const Sfx: React.FC<{ cues: [number, SfxKind][] }> = ({ cues }) => {
   const { fps } = useVideoConfig();
@@ -347,3 +348,37 @@ export const Sfx: React.FC<{ cues: [number, SfxKind][] }> = ({ cues }) => {
     </>
   );
 };
+
+// A row of pills that grows as Manuel names each item (centered, wraps), in narration order.
+export const Trail: React.FC<{ items: [string, number, React.ReactNode?][]; top: number; size?: number; arrows?: boolean; dark?: number[] }> = ({
+  items,
+  top,
+  size = 34,
+  arrows = true,
+  dark = [],
+}) => {
+  const t = useT();
+  return (
+    <div style={{ position: "absolute", left: 60, right: 60, top, display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", rowGap: 16, columnGap: 10 }}>
+      {items.map(([l, s, ic], i) => (
+        <React.Fragment key={l}>
+          {arrows && i > 0 ? (
+            <TrailSlot at={s}>
+              <Arrow size={34} />
+            </TrailSlot>
+          ) : null}
+          <TrailSlot at={s}>
+            <Pill icon={ic} label={l} size={size} dark={dark.includes(i)} on={t >= s && t < s + 0.9} />
+          </TrailSlot>
+        </React.Fragment>
+      ))}
+    </div>
+  );
+};
+const TrailSlot: React.FC<{ at: number; children: React.ReactNode }> = ({ at: a, children }) => (
+  <div style={{ position: "relative", display: "flex" }}>
+    <In at={a} dist={18} kind="pop" style={{ position: "relative" }}>
+      {children}
+    </In>
+  </div>
+);
