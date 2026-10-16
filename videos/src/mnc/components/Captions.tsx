@@ -10,11 +10,12 @@ const clamp = { extrapolateLeft: "clamp", extrapolateRight: "clamp" } as const;
 // (above the Instagram UI, below the speaker's face). One concept per chunk in
 // orange. Words not yet spoken sit at reduced opacity so the line reads along
 // with the voice — no bouncing, no per-word pops.
-export const Captions: React.FC<{ offset?: number; chunks?: Chunk[]; hidden?: [number, number][]; top?: number | ((t: number) => number) }> = ({
+export const Captions: React.FC<{ offset?: number; chunks?: Chunk[]; hidden?: [number, number][]; top?: number | ((t: number) => number); size?: number }> = ({
   offset = 0,
   top = mnc.layout.captionTop,
   chunks = MNC_CHUNKS,
   hidden = [],
+  size = 56,
 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -44,7 +45,7 @@ export const Captions: React.FC<{ offset?: number; chunks?: Chunk[]; hidden?: [n
           textWrap: "balance",
           fontFamily: mnc.fonts.body,
           fontWeight: mnc.weight.semibold,
-          fontSize: 56,
+          fontSize: size,
           lineHeight: 1.16,
           letterSpacing: "-0.005em",
           color: mnc.colors.white,

@@ -5,7 +5,7 @@ import { makeCaptions, type Word } from "../mnc/captionsCore";
 import { Captions } from "../mnc/components/Captions";
 import { Card } from "../mnc/components/Primitives";
 import { Icon } from "../mnc/components/Icons";
-import { Arrow, Cam, Eyebrow, HoldFrame, In, Pill, Sfx, Stat, Statement, Trail, Win, useT, type SfxKind, type Shot } from "../mnc4/Kit";
+import { Arrow, Cam, HoldFrame, In, Pill, Sfx, Stat, Statement, Trail, Win, useT, type SfxKind, type Shot } from "../mnc4/Kit";
 import words from "./words.json";
 
 // "Cómo crear agentes de IA extremadamente fácil" — MNC reel about Grok Bot.
@@ -42,35 +42,56 @@ const { CHUNKS, at } = makeCaptions(words as Word[], KEYWORDS);
 // camera: face lifted so captions fit under the chin and the band above the head is free
 const cam = (from: number, to: number, punch?: [number, number]): Shot => ({ from, to, y: -380, scale: 1.1, punch });
 // screens: zoom from the bottom so the browser chrome falls off the top
-const scr = (from: number, to: number, scale = 1.12): Shot => ({ from, to, y: 0, scale, origin: "50% 100%", fade: "screen" });
+const scr = (from: number, to: number, scale = 1.0): Shot => ({ from, to, y: -250, scale, origin: "50% 0%" });
 const SHOTS: Shot[] = [
-  scr(0, 3.7, 1.06),
+  scr(0, 3.7, 1.0),
   cam(3.7, 10.967),
   cam(10.967, 14.1, [11.3, 1.06]),
-  scr(14.1, 16.267, 1.1),
-  scr(16.267, 19.133, 1.1),
-  scr(19.133, 21.9, 1.1),
-  scr(21.9, 29.633, 1.14),
+  scr(14.1, 16.267, 1.04),
+  scr(16.267, 19.133, 1.04),
+  scr(19.133, 21.9, 1.04),
+  scr(21.9, 29.633, 1.06),
   cam(29.633, 37.1),
   cam(37.1, 56.267, [43.4, 1.06]),
-  scr(56.267, 62.5, 1.2),
-  scr(62.5, 65.667, 1.2),
+  scr(56.267, 62.5, 1.12),
+  scr(62.5, 65.667, 1.12),
   cam(65.667, 68.933),
   cam(68.933, 76.967, [70.8, 1.06]),
-  scr(76.967, 81.067, 1.1),
+  scr(76.967, 81.067, 1.0),
   cam(81.067, 96.367),
   cam(96.367, BASE_DUR, [101.9, 1.05]),
 ];
-const isScreen = (t: number) => SHOTS.find((x) => t >= x.from && t < x.to)?.fade === "screen";
 // Protected-face layout: face (top) → captions just under the chin → graphics in the low zone.
 // Screens keep their captions low (no face there), except where the team chart sits at the bottom.
-const CAP = 1290;
-const LOW = 1452; // top of the graphics zone (below two caption lines), ends ≤ ~1740
-const capTop = (t: number) => (isScreen(t) && !(t >= 76.967 && t < 81.067) ? 1470 : CAP);
+// ONE grid for the whole reel, camera and screen shots alike:
+// content (face / UI) 0–1250 → captions CAP → every graphic in the low zone LOW…LOW_END.
+const CAP = 1262;
+const CAP_SIZE = 52;
+const LOW = 1404; // section label row
+const G0 = LOW + 46; // graphics start under the label row
+const LOW_END = 1740; // IG bottom UI starts below this
+const capTop = () => CAP;
 const NO_CAPTION: [number, number][] = [[0, 3.7]];
-const BAND = 250;
 
 // ---------------- parts ----------------
+// Section label, first row of the low zone (was the top-left eyebrow).
+const Eyebrow: React.FC<{ label: string; at: number }> = ({ label, at: a }) => (
+  <In at={a} dist={10} kind="snappy" style={{ left: 96, top: LOW }}>
+    <div
+      style={{
+        fontFamily: mnc.fonts.body,
+        fontWeight: mnc.weight.semibold,
+        fontSize: 26,
+        letterSpacing: mnc.tracking.label,
+        textTransform: "uppercase",
+        color: mnc.colors.accent,
+        textShadow: "0 1px 8px rgba(0,0,0,0.6)",
+      }}
+    >
+      {label}
+    </div>
+  </In>
+);
 const Label: React.FC<{ children: React.ReactNode; color?: string }> = ({ children, color = mnc.colors.white }) => (
   <div style={{ fontFamily: mnc.fonts.body, fontWeight: mnc.weight.semibold, fontSize: 28, letterSpacing: mnc.tracking.label, color, textShadow: "0 1px 10px rgba(0,0,0,0.7)" }}>
     {children}
@@ -81,16 +102,16 @@ const Label: React.FC<{ children: React.ReactNode; color?: string }> = ({ childr
 // so we never draw one. The real Grok Bot UI appears in Manuel's screen shots.
 const BotName: React.FC<{ at: number; sub?: string; subAt?: number }> = ({ at: a, sub, subAt }) => (
   <>
-    <In at={a} dist={24} kind="pop" style={{ left: 0, right: 0, top: LOW, display: "flex", justifyContent: "center" }}>
+    <In at={a} dist={24} kind="pop" style={{ left: 96, width: 858, top: G0, display: "flex", justifyContent: "center" }}>
       <div
         style={{
-          padding: "14px 38px 18px",
+          padding: "12px 34px 16px",
           borderRadius: mnc.radius.card,
           background: mnc.colors.black,
           boxShadow: `0 24px 60px rgba(0,0,0,0.5), 0 0 0 3px ${mnc.colors.accent}`,
           fontFamily: mnc.fonts.title,
           fontWeight: mnc.weight.extrabold,
-          fontSize: 76,
+          fontSize: 68,
           letterSpacing: "-0.03em",
           color: mnc.colors.white,
           lineHeight: 1,
@@ -100,8 +121,8 @@ const BotName: React.FC<{ at: number; sub?: string; subAt?: number }> = ({ at: a
       </div>
     </In>
     {sub ? (
-      <In at={subAt ?? a + 0.4} dist={16} kind="pop" style={{ left: 0, right: 0, top: LOW + 136, display: "flex", justifyContent: "center" }}>
-        <Pill icon={Icon.user} label={sub} size={32} dark />
+      <In at={subAt ?? a + 0.4} dist={16} kind="pop" style={{ left: 96, width: 858, top: G0 + 116, display: "flex", justifyContent: "center" }}>
+        <Pill icon={Icon.user} label={sub} size={30} dark />
       </In>
     ) : null}
   </>
@@ -117,7 +138,7 @@ const GroupChat: React.FC = () => {
     ["Agente 03", at("sí") - 0.1, false],
   ];
   return (
-    <In at={29.7} dist={30} style={{ left: 170, right: 170, top: LOW - 6 }}>
+    <In at={29.7} dist={30} style={{ left: 180, right: 200, top: LOW + 6 }}>
       <Card style={{ padding: "14px 22px 14px" }}>
         <div style={{ display: "flex", alignItems: "center", gap: 12, paddingBottom: 8, borderBottom: "2px solid #EFEFEF" }}>
           <div style={{ width: 36, height: 36, color: mnc.colors.accent }}>{Icon.team}</div>
@@ -158,11 +179,11 @@ const OneToTeam: React.FC = () => {
   const k = interpolate(t, [tTeam, tTeam + 0.6], [0, 1], { easing: mnc.ease.out, extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   return (
     <>
-      <In at={at("insisto,") - 0.1} dist={20} kind="pop" style={{ left: 0, right: 0, top: LOW + 20, display: "flex", justifyContent: "center", alignItems: "center", gap: 14 }}>
-        <Pill icon={Icon.user} label="1 asistente" size={32} />
+      <In at={at("insisto,") - 0.1} dist={20} kind="pop" style={{ left: 96, width: 858, top: G0 + 10, display: "flex", justifyContent: "center", alignItems: "center", gap: 14 }}>
+        <Pill icon={Icon.user} label="1 asistente" size={30} />
         <div style={{ opacity: k, display: "flex", alignItems: "center", gap: 18 }}>
           <Arrow size={38} />
-          <Pill icon={Icon.team} label="Un equipo de agentes" size={32} dark />
+          <Pill icon={Icon.team} label="Un equipo de agentes" size={30} dark />
         </div>
       </In>
     </>
@@ -184,18 +205,18 @@ const Team: React.FC = () => {
     <>
       <Eyebrow label="Plan · Tu equipo de agentes" at={70.9} />
       {/* coordinator */}
-      <In at={tCoord - 0.2} dist={20} kind="pop" style={{ left: 96, width: 858, top: LOW - 8, display: "flex", justifyContent: "center" }}>
-        <Pill icon={Icon.sparkle} label="Agente coordinador" size={30} dark />
+      <In at={tCoord - 0.2} dist={20} kind="pop" style={{ left: 96, width: 858, top: G0 - 4, display: "flex", justifyContent: "center" }}>
+        <Pill icon={Icon.sparkle} label="Agente coordinador" size={26} dark />
       </In>
       {/* connectors */}
-      <svg width={1080} height={40} style={{ position: "absolute", left: 0, top: LOW + 56 }}>
+      <svg width={1080} height={30} style={{ position: "absolute", left: 0, top: G0 + 50 }}>
         {agents.map(([, , s], i) => {
           const p = line(s);
           const x = xs[i];
           return (
             <path
               key={i}
-              d={`M 525 0 C 525 22, ${x} 18, ${x} 40`}
+              d={`M 525 0 C 525 16, ${x} 14, ${x} 30`}
               fill="none"
               stroke={mnc.colors.accent}
               strokeWidth={4}
@@ -208,7 +229,7 @@ const Team: React.FC = () => {
         })}
       </svg>
       {agents.map(([n, l, s], i) => (
-        <In key={n} at={s - 0.1} dist={24} kind="pop" style={{ left: xs[i] - 135, top: LOW + 96, width: 270 }}>
+        <In key={n} at={s - 0.1} dist={24} kind="pop" style={{ left: xs[i] - 135, top: G0 + 80, width: 270 }}>
           <Card style={{ padding: "10px 14px 12px", boxShadow: t >= s && t < s + 1 ? `0 0 0 5px ${mnc.colors.accent}, 0 20px 50px rgba(0,0,0,0.5)` : "0 20px 50px rgba(0,0,0,0.5)" }}>
             <div style={{ fontFamily: mnc.fonts.title, fontWeight: mnc.weight.extrabold, fontSize: 26, color: mnc.colors.accent, lineHeight: 1 }}>{n}</div>
             <div style={{ marginTop: 4, fontFamily: mnc.fonts.title, fontWeight: mnc.weight.semibold, fontSize: 23, lineHeight: 1.1, color: mnc.colors.ink }}>{l}</div>
@@ -216,7 +237,7 @@ const Team: React.FC = () => {
         </In>
       ))}
       {/* what the hunter gets and where it writes */}
-      <In at={at("fuentes") - 0.1} dist={14} kind="pop" style={{ left: 96, width: 858, top: LOW + 218, display: "flex", justifyContent: "center", alignItems: "center", gap: 6 }}>
+      <In at={at("fuentes") - 0.1} dist={14} kind="pop" style={{ left: 96, width: 858, top: G0 + 196, display: "flex", justifyContent: "center", alignItems: "center", gap: 6 }}>
         <Pill icon={Icon.globe} label="Fuentes" size={21} />
         <Arrow size={24} />
         <Pill label="Cazador" size={21} />
@@ -253,14 +274,14 @@ const Goal: React.FC = () => {
   return (
     <>
       <Eyebrow label="Meta · piezas a la semana" at={96.5} />
-      <In at={t15} kind="pop" style={{ left: 110, top: LOW }}>
-        <Stat value="15" label="piezas / semana" w={300} size={96} />
+      <In at={t15} kind="pop" style={{ left: 120, top: G0 }}>
+        <Stat value="15" label="piezas / semana" w={290} size={86} />
       </In>
-      <In at={t60 - 0.2} dist={10} style={{ left: 428, top: LOW + 56 }}>
-        <Arrow size={60} />
+      <In at={t60 - 0.2} dist={10} style={{ left: 428, top: G0 + 48 }}>
+        <Arrow size={56} />
       </In>
-      <In at={t60} kind="pop" style={{ left: 506, top: LOW }}>
-        <Stat value={final ? "50–60" : String(n)} label="piezas / semana" w={410} size={96} />
+      <In at={t60} kind="pop" style={{ left: 500, top: G0 }}>
+        <Stat value={final ? "50–60" : String(n)} label="piezas / semana" w={400} size={86} />
       </In>
     </>
   );
@@ -269,16 +290,14 @@ const Goal: React.FC = () => {
 // Content process as it is today: in the top band over the screen shots (no face there),
 // in the low zone under the captions while Manuel is on camera.
 const ProcessTrail: React.FC = () => {
-  const t = useT();
-  const top = isScreen(t) ? BAND + 46 : LOW + 36;
   return (
     <>
-      <In at={46.6} dist={12} kind="snappy" style={{ left: 0, right: 0, top: top - 44, textAlign: "center" }}>
-        <Label>SU PROCESO HOY</Label>
-      </In>
+      <Eyebrow label="Su proceso hoy" at={46.6} />
       <Trail
-        top={top}
-        size={26}
+        top={G0}
+        left={96}
+        right={126}
+        size={24}
         dark={[1]}
         items={[
           ["Investigación", at("investigaciones") - 0.1, Icon.globe],
@@ -327,13 +346,15 @@ export const Mnc6Reel: React.FC = () => (
   <AbsoluteFill style={{ background: mnc.colors.black }}>
     <Audio src={staticFile(SRC)} />
     <Cam src={SRC} shots={SHOTS} />
+    {/* falloff behind the captions + graphics rows, same on camera and on screen shots */}
+    <AbsoluteFill style={{ background: "linear-gradient(180deg, rgba(0,0,0,0) 61%, rgba(0,0,0,0.6) 66%, rgba(0,0,0,0.85) 73%, #000 86%)" }} />
     <Win from={BASE_DUR} to={BASE_DUR + END_HOLD}>
       <HoldFrame src={SRC} frame={Math.round((BASE_DUR - 0.05) * MNC6_FPS)} y={-300} />
     </Win>
 
     {/* HOOK — over the real Grok Bot screen */}
     <Win from={0} to={3.7}>
-      <Statement top={1240} lead="crea tu equipo de" big="agentes IA" plate="más fácil de lo que imaginas" at={[0.15, 0.6, 1.8]} bigSize={190} />
+      <Statement top={LOW - 20} lead="crea tu equipo de" big="agentes IA" plate="más fácil de lo que imaginas" at={[0.15, 0.6, 1.8]} bigSize={150} plateSize={52} />
     </Win>
 
     {/* QUÉ ES GROK BOT */}
@@ -347,29 +368,29 @@ export const Mnc6Reel: React.FC = () => (
       <Eyebrow label="¿Qué es Grok Bot?" at={11.0} />
     </Win>
     <Win from={14.1} to={16.267}>
-      <In at={14.2} dist={18} kind="pop" style={{ left: 0, right: 0, top: BAND + 20, display: "flex", justifyContent: "center" }}>
+      <In at={14.2} dist={18} kind="pop" style={{ left: 96, width: 858, top: G0 + 10, display: "flex", justifyContent: "center" }}>
         <Pill icon={Icon.apps} label="Se conecta a tus aplicaciones" size={36} dark />
       </In>
     </Win>
     <Win from={16.267} to={19.133}>
-      <In at={16.35} dist={18} kind="pop" style={{ left: 0, right: 0, top: BAND + 20, display: "flex", justifyContent: "center" }}>
+      <In at={16.35} dist={18} kind="pop" style={{ left: 96, width: 858, top: G0 + 10, display: "flex", justifyContent: "center" }}>
         <Pill icon={Icon.bolt} label="Tiene su propia computadora" size={36} dark />
       </In>
     </Win>
     <Win from={19.133} to={21.9}>
-      <In at={19.25} dist={18} kind="pop" style={{ left: 0, right: 0, top: BAND + 20, display: "flex", justifyContent: "center" }}>
+      <In at={19.25} dist={18} kind="pop" style={{ left: 96, width: 858, top: G0 + 10, display: "flex", justifyContent: "center" }}>
         <Pill icon={Icon.check} label="Ves cómo la controla" size={36} dark />
       </In>
     </Win>
     <Win from={21.9} to={29.633}>
-      <Trail top={BAND + 20} items={[["Bots para tareas específicas", at("bots") - 0.1, Icon.bolt], ["En grupos", at("grupos,") - 0.1, Icon.team]]} dark={[1]} size={34} />
+      <Trail top={G0 + 10} left={96} right={126} items={[["Bots para tareas específicas", at("bots") - 0.1, Icon.bolt], ["En grupos", at("grupos,") - 0.1, Icon.team]]} dark={[1]} size={30} />
     </Win>
     <Win from={29.633} to={37.1}>
       <GroupChat />
     </Win>
 
     {/* CASO DE USO — tu proceso de contenido hoy */}
-    <Win from={40.1} to={70.7}>
+    <Win from={40.1} to={46.55}>
       <Eyebrow label="Caso de uso · Creación de contenido" at={40.1} />
     </Win>
     <Win from={43.3} to={46.5}>
@@ -391,10 +412,10 @@ export const Mnc6Reel: React.FC = () => (
 
     {/* CIERRE */}
     <Win from={101.9} to={BASE_DUR + END_HOLD}>
-      <Statement top={LOW - 4} lead="¿ya estás usando" big="agentes de IA?" plate="comparte tus tips en comentarios" at={[102.0, 102.35, at("tips") - 0.2]} bigSize={104} plateSize={44} />
+      <Statement top={LOW + 4} lead="¿ya estás usando" big="agentes de IA?" plate="comparte tus tips en comentarios" at={[102.0, 102.35, at("tips") - 0.2]} bigSize={100} plateSize={42} />
     </Win>
 
     <Sfx cues={SFX()} />
-    <Captions chunks={CHUNKS} hidden={NO_CAPTION} top={capTop} />
+    <Captions chunks={CHUNKS} hidden={NO_CAPTION} top={capTop} size={CAP_SIZE} />
   </AbsoluteFill>
 );

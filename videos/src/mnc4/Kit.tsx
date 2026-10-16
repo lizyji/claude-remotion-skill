@@ -350,16 +350,18 @@ export const Sfx: React.FC<{ cues: [number, SfxKind][] }> = ({ cues }) => {
 };
 
 // A row of pills that grows as Manuel names each item (centered, wraps), in narration order.
-export const Trail: React.FC<{ items: [string, number, React.ReactNode?][]; top: number; size?: number; arrows?: boolean; dark?: number[] }> = ({
+export const Trail: React.FC<{ items: [string, number, React.ReactNode?][]; top: number; size?: number; arrows?: boolean; dark?: number[]; left?: number; right?: number }> = ({
   items,
   top,
+  left = 60,
+  right = 60,
   size = 34,
   arrows = true,
   dark = [],
 }) => {
   const t = useT();
   return (
-    <div style={{ position: "absolute", left: 60, right: 60, top, display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", rowGap: 16, columnGap: 10 }}>
+    <div style={{ position: "absolute", left, right, top, display: "flex", flexWrap: "wrap", justifyContent: "center", alignItems: "center", rowGap: 16, columnGap: 10 }}>
       {items.map(([l, s, ic], i) => (
         <React.Fragment key={l}>
           {arrows && i > 0 ? (
