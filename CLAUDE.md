@@ -89,8 +89,9 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   **Grok Bot** (xAI's agent product — the on-screen UI says "Grok Bot"; whisper mis-hears it as Clawdbot /
   Glockbot, fixed in `words.json`). No verified official logo could be downloaded (x.ai is behind
   Cloudflare), so the name is set as type only. `npm run mnc6:prepare`, `npm run render:mnc6`; cover
-  `Mnc6Portada`. Camera framing `y=-300, scale=1.1` (face sits low in this take); overlays in the band
-  above the head (`BAND`), captions under the chin. The agent team is shown as a PLAN, the 15 → 50–60
+  `Mnc6Portada`. Camera framing `y=-380, scale=1.1`; protected-face layout: captions at `CAP`=1290 just under the
+  chin, every overlay over Manuel in the low zone from `LOW`=1452 (kept inside x 96–954, clear of the IG
+  icons); only screen shots use the top band. The agent team is shown as a PLAN, the 15 → 50–60
   pieces as a META. Kit now exports `Trail`, and `Statement`/`MncPortada` take `plateSize`; SFX adds `tick`.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
@@ -102,6 +103,9 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
 - Rendered files over ~30 MB can't be sent in chat: encode a delivery copy (2-pass ~3.5 Mbps).
 
 ## Client preferences (from feedback)
+- **Manuel's face is a protected zone.** No graphic, sticker, text or animation may cover it, in any
+  shot or during entrances/exits. Hierarchy: face on top → captions just under the chin → graphics
+  below the captions (inside the IG safe area). Shrink a graphic rather than move it up.
 - **Reels: the speaker on screen ≥45% of the runtime.** Don't replace long stretches with
   graphics-only scenes — prefer graphics layered over the speaker's footage (top band / side
   cards that never cover the face), and use full-screen graphics only as short beats.
