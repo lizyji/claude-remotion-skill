@@ -13,6 +13,7 @@ import { Mnc4Reel, MNC4_FPS, MNC4_TOTAL_F } from "./mnc4/Mnc4Reel";
 import { Mnc5Reel, MNC5_FPS, MNC5_TOTAL_F } from "./mnc5/Mnc5Reel";
 import { OmnaManuel, OMNA2_FPS, OMNA2_TOTAL_F } from "./omna2/OmnaManuel";
 import { Mnc6Reel, MNC6_FPS, MNC6_TOTAL_F } from "./mnc6/Mnc6Reel";
+import { Mnc7Reel, MNC7_FPS, MNC7_TOTAL_F } from "./mnc7/Mnc7Reel";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -95,6 +96,16 @@ export const Root: React.FC = () => (
       width={1080}
       height={1920}
       defaultProps={{ photo: "mnc6/src/portada.png", zoom: 1.08, lead: "crea tu equipo de", leadSize: 84, big: "agentes IA", bigSize: 190, plate: "más fácil de lo que imaginas", plateSize: 66, top: 1250 }}
+    />
+    <Composition id="Mnc7SistemasProcesos" component={Mnc7Reel} durationInFrames={MNC7_TOTAL_F} fps={MNC7_FPS} width={1080} height={1920} />
+    <Composition
+      id="Mnc7Portada"
+      component={MncPortada}
+      durationInFrames={1}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{ photo: "mnc7/src/portada.png", zoom: 1.08, lead: "construir", leadShift: -280, big: "sistemas", bigSize: 210, plate: "es mejor que construir procesos", plateSize: 58, top: 1300 }}
     />
     <Composition
       id="MncDashboardWhatsApp"

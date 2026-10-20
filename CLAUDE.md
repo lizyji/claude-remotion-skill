@@ -93,6 +93,11 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   so the chrome falls off and the UI sits in the content zone. ONE grid for every shot: content 0–1250 →
   captions `CAP`=1262 (52 px) → section label `LOW`=1404 → all graphics from `G0` to ~1740, x 96–954. The agent team is shown as a PLAN, the 15 → 50–60
   pieces as a META. Kit now exports `Trail`, and `Statement`/`MncPortada` take `plateSize`; SFX adds `tick`.
+- **Mnc7SistemasProcesos** (`src/mnc7/`) — Reel "sistemas y procesos" from a source that already has
+  BURNED-IN captions (fixed band, never above y≈1366). They are hidden by a crop, not erased: footage
+  shows down to `PANEL_TOP`=1350, an MNC black panel below holds the new captions (`CAP`=1374, 50 px),
+  section labels (`LOW`) and every graphic (`G0`…~1745). The source's own diagram inserts are kept.
+  `npm run mnc7:prepare` (download + loudnorm, no cuts), `npm run render:mnc7`; cover `Mnc7Portada`.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Mnc4CosasAMano ships WITHOUT the top-right brand mark (client request). Where a brand mark is used,
