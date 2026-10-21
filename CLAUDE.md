@@ -94,10 +94,11 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   captions `CAP`=1262 (52 px) → section label `LOW`=1404 → all graphics from `G0` to ~1740, x 96–954. The agent team is shown as a PLAN, the 15 → 50–60
   pieces as a META. Kit now exports `Trail`, and `Statement`/`MncPortada` take `plateSize`; SFX adds `tick`.
 - **Mnc7SistemasProcesos** (`src/mnc7/`) — Reel "sistemas y procesos" from a source that already has
-  BURNED-IN captions (fixed band, never above y≈1366). They are hidden by a crop, not erased: footage
-  shows down to `PANEL_TOP`=1350, an MNC black panel below holds the new captions (`CAP`=1374, 50 px),
-  section labels (`LOW`) and every graphic (`G0`…~1745). The source's own diagram inserts are kept.
-  `npm run mnc7:prepare` (download + loudnorm, no cuts), `npm run render:mnc7`; cover `Mnc7Portada`.
+  BURNED-IN captions (band ≈1366–1620). CLIENT RULE: keep the source video, framing and its captions
+  exactly as they are — no erasing, masks, black bands, darkening gradients, crops or reframing, and no
+  new captions on top. The MNC layer is only small graphics in the strip under the original captions
+  (`G0`=1648 … ~1760, x 96–954), never on the face or over screen UI. `Cam`/`HoldFrame` run with
+  `fade: "none"` / `plain`. `npm run mnc7:prepare`, `npm run render:mnc7`; cover `Mnc7Portada`.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Mnc4CosasAMano ships WITHOUT the top-right brand mark (client request). Where a brand mark is used,
@@ -116,6 +117,8 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   graphics-only scenes — prefer graphics layered over the speaker's footage (top band / side
   cards that never cover the face), and use full-screen graphics only as short beats.
 - **Crop browser chrome** (tabs, bookmarks bar) from any screen capture.
+- **Never hide burned-in captions with bands, masks, blur or crops.** If the source has its own captions,
+  keep them untouched and put graphics in the free space below them.
 - **Turnaround matters as much as polish:** keep the quality bar but aim for half the time —
   analyse once, build, verify with one still sheet + one full render, and avoid re-render loops
   for cosmetic tweaks that can be checked on stills.

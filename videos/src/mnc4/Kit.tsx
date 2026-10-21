@@ -64,7 +64,7 @@ export type Shot = {
   scale?: number;
   punch?: [number, number];
   origin?: string; // transform origin, default "50% 40%" (camera); screens zoom from the bottom to crop browser chrome
-  fade?: "cam" | "screen"; // screens get a lighter falloff so the UI stays readable
+  fade?: "cam" | "screen" | "none"; // screens get a lighter falloff so the UI stays readable
 };
 
 // Manuel's camera, framed so the face sits between the top band and the captions.
@@ -89,6 +89,7 @@ export const Cam: React.FC<{ src: string; shots: Shot[] }> = ({ src, shots }) =>
         }}
       />
       {/* legibility: soft falloff behind the top band and the captions, solid under the IG UI */}
+      {s.fade === "none" ? null : (
       <div
         style={{
           position: "absolute",
@@ -99,6 +100,7 @@ export const Cam: React.FC<{ src: string; shots: Shot[] }> = ({ src, shots }) =>
               : "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 64%, rgba(0,0,0,0.55) 71%, rgba(0,0,0,0.82) 78%, #000 88%)",
         }}
       />
+      )}
     </div>
   );
 };
@@ -141,11 +143,13 @@ export const CaptureCard: React.FC<{ src: string; from: number; crop: number; to
 };
 
 // Last frame of the take held under the end card.
-export const HoldFrame: React.FC<{ src: string; frame: number; y?: number }> = ({ src, frame, y = -200 }) => (
+export const HoldFrame: React.FC<{ src: string; frame: number; y?: number; plain?: boolean }> = ({ src, frame, y = -200, plain }) => (
   <Freeze frame={frame}>
     <div style={{ position: "absolute", inset: 0, overflow: "hidden" }}>
       <OffthreadVideo src={staticFile(src)} muted style={{ position: "absolute", width: 1080, height: 1920, transform: `translateY(${y}px)` }} />
-      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 64%, rgba(0,0,0,0.55) 71%, rgba(0,0,0,0.82) 78%, #000 88%)" }} />
+      {plain ? null : (
+        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 22%, rgba(0,0,0,0) 64%, rgba(0,0,0,0.55) 71%, rgba(0,0,0,0.82) 78%, #000 88%)" }} />
+      )}
     </div>
   </Freeze>
 );
