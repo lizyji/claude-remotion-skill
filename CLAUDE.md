@@ -119,6 +119,9 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
 - **Crop browser chrome** (tabs, bookmarks bar) from any screen capture.
 - **Never hide burned-in captions with bands, masks, blur or crops.** If the source has its own captions,
   keep them untouched and put graphics in the free space below them.
+- **Scripts/storyboards are a guide, not a rule:** when Manuel's audio differs from the script, the
+  subtitles follow the AUDIO; script timings are approximate — fit B-rolls to what he says and trim
+  silences as needed.
 - **Turnaround matters as much as polish:** keep the quality bar but aim for half the time —
   analyse once, build, verify with one still sheet + one full render, and avoid re-render loops
   for cosmetic tweaks that can be checked on stills.
