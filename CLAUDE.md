@@ -99,6 +99,17 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   new captions on top. The MNC layer is only small graphics in the strip under the original captions
   (`G0`=1648 … ~1760, x 96–954), never on the face or over screen UI. `Cam`/`HoldFrame` run with
   `fade: "none"` / `plain`. `npm run mnc7:prepare`, `npm run render:mnc7`; cover `Mnc7Portada`.
+- **Mnc8Klarna** (`src/mnc8/`) — Reel "Klarna: IA + personas", SPLIT SCREEN (@pablocasasa style): B-roll panel
+  on top (0–960, light green #E5EAE5), Manuel below (take shown from y=580, framing alternates 1.0/1.12 on each
+  join of the trimmed take), big Poppins captions on a black plate centred on the boundary (y=960). Own flat palette
+  in `k8Theme.ts` (green / #141414 / #FD6623 / white — NO gradients, blurs, purples, pinks, blues; titles Readex Pro,
+  text Poppins). Hook (logo) and "2.3 millones" go full screen ~1.4 s; fixed full-screen closing card.
+  TRUTH RULES: real brands only as REAL captures with the source underneath (`public/mnc8/captures`, scripts and
+  provenance in `scripts/mnc8-captures/`); missing ones → "[FALTA CAPTURA: …]" or an MNC quote card, never invented;
+  numbers exactly as the script; never say AI "replaced" 700 fired employees. `npm run mnc8:prepare` (download,
+  silence trims, upscale, loudnorm), `npm run render:mnc8`; separate B-roll files with `scripts/mnc8-brolls.sh`
+  (`Mnc8Broll` comp, windows printed by `mnc8-times.mjs` — keep in sync with `T`). Cover `Mnc8Portada`.
+  Gotcha: `at()` matches case-insensitively ("Es" = "es") — always pass an `after` time for common words.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Mnc4CosasAMano ships WITHOUT the top-right brand mark (client request). Where a brand mark is used,

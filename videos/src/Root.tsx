@@ -1,5 +1,5 @@
 import React from "react";
-import { Composition, staticFile } from "remotion";
+import { Composition, getStaticFiles, staticFile } from "remotion";
 import { loadFont } from "@remotion/fonts";
 import { theme } from "./theme";
 import { HolaRemotion, HOLA_TOTAL_S } from "./scenes/HolaRemotion";
@@ -14,6 +14,7 @@ import { Mnc5Reel, MNC5_FPS, MNC5_TOTAL_F } from "./mnc5/Mnc5Reel";
 import { OmnaManuel, OMNA2_FPS, OMNA2_TOTAL_F } from "./omna2/OmnaManuel";
 import { Mnc6Reel, MNC6_FPS, MNC6_TOTAL_F } from "./mnc6/Mnc6Reel";
 import { Mnc7Reel, MNC7_FPS, MNC7_TOTAL_F } from "./mnc7/Mnc7Reel";
+import { Mnc8Broll, Mnc8Reel, MNC8_FPS, MNC8_TOTAL_F } from "./mnc8/Mnc8Reel";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -27,13 +28,15 @@ for (const [file, weight] of [
   ["DemiBold", "600"],
   ["Bold", "700"],
 ] as const) {
-  loadFont({ family: omna.fonts.sans, url: staticFile(`omna/brand/fonts/SFTSchriftedSans-${file}.ttf`), weight });
+  // media is gitignored: skip the OMNA face when omna:prepare hasn't run in this checkout
+  const f = `omna/brand/fonts/SFTSchriftedSans-${file}.ttf`;
+  if (getStaticFiles().some((x) => x.name === f)) loadFont({ family: omna.fonts.sans, url: staticFile(f), weight });
 }
 // MNC: Poppins (titulares) + Readex Pro (marca, cuerpo, subtítulos)
-for (const [file, weight] of [["SemiBold", "600"], ["Bold", "700"], ["ExtraBold", "800"]] as const) {
+for (const [file, weight] of [["Medium", "500"], ["SemiBold", "600"], ["Bold", "700"], ["ExtraBold", "800"]] as const) {
   loadFont({ family: mnc.fonts.title, url: staticFile(`mnc/brand/fonts/Poppins-${file}.woff2`), weight });
 }
-for (const [file, weight] of [["ExtraLight", "200"], ["Regular", "400"], ["Medium", "500"], ["SemiBold", "600"]] as const) {
+for (const [file, weight] of [["ExtraLight", "200"], ["Regular", "400"], ["Medium", "500"], ["SemiBold", "600"], ["Bold", "700"]] as const) {
   loadFont({ family: mnc.fonts.body, url: staticFile(`mnc/brand/fonts/ReadexPro-${file}.woff2`), weight });
 }
 
@@ -96,6 +99,17 @@ export const Root: React.FC = () => (
       width={1080}
       height={1920}
       defaultProps={{ photo: "mnc6/src/portada.png", zoom: 1.08, lead: "crea tu equipo de", leadSize: 84, big: "agentes IA", bigSize: 190, plate: "más fácil de lo que imaginas", plateSize: 66, top: 1250 }}
+    />
+    <Composition id="Mnc8Klarna" component={Mnc8Reel} durationInFrames={MNC8_TOTAL_F} fps={MNC8_FPS} width={1080} height={1920} />
+    <Composition id="Mnc8Broll" component={Mnc8Broll} defaultProps={{ i: 0 }} durationInFrames={MNC8_TOTAL_F} fps={MNC8_FPS} width={1080} height={960} />
+    <Composition
+      id="Mnc8Portada"
+      component={MncPortada}
+      durationInFrames={1}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{ photo: "mnc8/src/portada.png", zoom: 1.08, lead: "klarna", leadShift: -300, big: "volvió", leadSize: 110, bigSize: 220, plate: "a contratar humanos", plateSize: 64, top: 1300 }}
     />
     <Composition id="Mnc7SistemasProcesos" component={Mnc7Reel} durationInFrames={MNC7_TOTAL_F} fps={MNC7_FPS} width={1080} height={1920} />
     <Composition

@@ -21,7 +21,9 @@
     "mnc6:prepare": "bash scripts/mnc6-prepare.sh",
     "render:mnc6": "remotion render src/index.ts Mnc6AgentesGrokBot out/mnc6/mnc-agentes-grok-bot.mp4 --codec h264 --crf 17",
     "mnc7:prepare": "bash scripts/mnc7-prepare.sh",
-    "render:mnc7": "remotion render src/index.ts Mnc7SistemasProcesos out/mnc7/mnc-sistemas-procesos.mp4 --codec h264 --crf 17"
+    "render:mnc7": "remotion render src/index.ts Mnc7SistemasProcesos out/mnc7/mnc-sistemas-procesos.mp4 --codec h264 --crf 17",
+    "mnc8:prepare": "bash scripts/mnc8-prepare.sh",
+    "render:mnc8": "remotion render src/index.ts Mnc8Klarna out/mnc8/mnc-klarna.mp4 --codec h264 --crf 17"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",
