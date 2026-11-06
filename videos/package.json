@@ -23,7 +23,9 @@
     "mnc7:prepare": "bash scripts/mnc7-prepare.sh",
     "render:mnc7": "remotion render src/index.ts Mnc7SistemasProcesos out/mnc7/mnc-sistemas-procesos.mp4 --codec h264 --crf 17",
     "mnc8:prepare": "bash scripts/mnc8-prepare.sh",
-    "render:mnc8": "remotion render src/index.ts Mnc8Klarna out/mnc8/mnc-klarna.mp4 --codec h264 --crf 17"
+    "render:mnc8": "remotion render src/index.ts Mnc8Klarna out/mnc8/mnc-klarna.mp4 --codec h264 --crf 17",
+    "mnc9:prepare": "bash scripts/mnc9-prepare.sh",
+    "render:mnc9": "remotion render src/index.ts Mnc9Ups out/mnc9/mnc-ups.mp4 --codec h264 --crf 17"
   },
   "dependencies": {
     "@remotion/cli": "^4.0.0",

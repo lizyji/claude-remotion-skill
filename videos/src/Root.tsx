@@ -15,6 +15,7 @@ import { OmnaManuel, OMNA2_FPS, OMNA2_TOTAL_F } from "./omna2/OmnaManuel";
 import { Mnc6Reel, MNC6_FPS, MNC6_TOTAL_F } from "./mnc6/Mnc6Reel";
 import { Mnc7Reel, MNC7_FPS, MNC7_TOTAL_F } from "./mnc7/Mnc7Reel";
 import { Mnc8Broll, Mnc8Reel, MNC8_FPS, MNC8_TOTAL_F } from "./mnc8/Mnc8Reel";
+import { Mnc9Broll, Mnc9Reel, MNC9_FPS, MNC9_TOTAL_F } from "./mnc9/Mnc9Reel";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -99,6 +100,17 @@ export const Root: React.FC = () => (
       width={1080}
       height={1920}
       defaultProps={{ photo: "mnc6/src/portada.png", zoom: 1.08, lead: "crea tu equipo de", leadSize: 84, big: "agentes IA", bigSize: 190, plate: "más fácil de lo que imaginas", plateSize: 66, top: 1250 }}
+    />
+    <Composition id="Mnc9Ups" component={Mnc9Reel} durationInFrames={MNC9_TOTAL_F} fps={MNC9_FPS} width={1080} height={1920} />
+    <Composition id="Mnc9Broll" component={Mnc9Broll} defaultProps={{ i: 0 }} durationInFrames={MNC9_TOTAL_F} fps={MNC9_FPS} width={1080} height={960} />
+    <Composition
+      id="Mnc9Portada"
+      component={MncPortada}
+      durationInFrames={1}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{ photo: "mnc9/src/portada.png", zoom: 1.08, lead: "1 milla menos =", big: "hasta $50 M", bigSize: 160, plate: "al año, según ups", plateSize: 64, top: 1300 }}
     />
     <Composition id="Mnc8Klarna" component={Mnc8Reel} durationInFrames={MNC8_TOTAL_F} fps={MNC8_FPS} width={1080} height={1920} />
     <Composition id="Mnc8Broll" component={Mnc8Broll} defaultProps={{ i: 0 }} durationInFrames={MNC8_TOTAL_F} fps={MNC8_FPS} width={1080} height={960} />

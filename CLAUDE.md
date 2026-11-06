@@ -110,6 +110,14 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   silence trims, upscale, loudnorm), `npm run render:mnc8`; separate B-roll files with `scripts/mnc8-brolls.sh`
   (`Mnc8Broll` comp, windows printed by `mnc8-times.mjs` — keep in sync with `T`). Cover `Mnc8Portada`.
   Gotcha: `at()` matches case-insensitively ("Es" = "es") — always pass an `after` time for common words.
+- **Mnc9Ups** (`src/mnc9/`) — Reel "UPS: una milla al día", same split-screen format as Mnc8 (copy its structure).
+  Differences: captions white with a black OUTLINE (no plate, `wordSpacing` so the stroke doesn't eat spaces),
+  gray #4A4A4A allowed for footers, low synthesized music bed (`gen-omna-music.mjs` with `MUSIC_SPEC`, volume
+  0.07). Source take found in the shared Drive folder as `copy_BA2F….MOV` (files there are unnamed — identify
+  by transcribing the first seconds). Generic city map: seeded stops, random "tangle" and a 2-opt "clean route".
+  B1 = free Pexels clip (no UPS branding), B5 = real FreightWaves headline. Numbers carry
+  "Fuente: proyecciones de UPS". `npm run mnc9:prepare`, `npm run render:mnc9`, `scripts/mnc9-brolls.sh`;
+  cover `Mnc9Portada`.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Mnc4CosasAMano ships WITHOUT the top-right brand mark (client request). Where a brand mark is used,
