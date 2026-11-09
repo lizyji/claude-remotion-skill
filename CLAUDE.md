@@ -128,6 +128,30 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
 - Rendered files over ~30 MB can't be sent in chat: encode a delivery copy (2-pass ~3.5 Mbps).
 
 ## Client preferences (from feedback)
+- **REFERENCE STYLE for every new Manuel NoCode video = `Mnc9Ups` (`src/mnc9/Mnc9Reel.tsx`).** The client
+  approved its style and format: start each new MNC video by copying that file's structure and only adapt the
+  content (B-rolls, keywords, timings). Keep:
+  - **Format:** 1080×1920, 30 fps, split screen 50/50 — B-roll panel on top (0–960, flat light green #E5EAE5),
+    Manuel below (take upscaled to 1080×1920, shown from `CAM_Y`≈520 so the face sits in the lower half; framing
+    alternates 1.0/1.12 on every join of the trimmed take). Full screen only for short beats (hook/big numbers,
+    1–3 s) and the fixed closing card.
+  - **Captions:** Poppins ExtraBold 72 px, white, 9 px black outline (`WebkitTextStroke` + `paintOrder`),
+    `wordSpacing` 0.14em, centred ON the boundary (top 960, translateY −50%), max 5 words / 24 chars per chunk,
+    1–2 keywords in orange #FD6623, quick 0.14 s scale-in, hidden during full-screen beats and the closing card.
+  - **Rhythm:** silences/breaths trimmed (0.10 s kept after a phrase, 0.08 s before the next), never cut words;
+    top clip changes every 3–4 s (or a new element enters every 1–2 s inside longer clips), each B-roll synced
+    to Manuel's phrase.
+  - **Graphics:** MNC flat palette only (green #E5EAE5, black #141414, gray #4A4A4A, orange #FD6623, white) — no
+    gradients/blurs/purples/pinks/blues, nothing OMNA. Titles Readex Pro Bold, text Poppins. White cards / black
+    or orange chips with 2 px black borders; content in the panel between y 200 (IG UI) and ~820; source footer
+    "Fuente: …" at y 836 in gray 24 px. Real brands only as real captures/licensed footage with source; numbers
+    exactly as the script; generic maps/counters/icons are animated.
+  - **Sound:** voice −14 LUFS, low synthesized music bed (0.07, 0.11 on full-screen beats), subtle SFX
+    (whoosh on clip changes, pop/click/tick on reveals).
+  - **Close + cover:** fixed closing phrase full screen (green bg, black Readex Pro, "IA" in orange), words lighting
+    up as spoken; cover with `MncPortada`; separate B-roll files named by take (`T#_B#_name.mp4`).
+  - **Before delivering:** check on a still sheet + the full render that every caption reads clearly (no clipped
+    words, spaces visible, not over busy graphics) and that no graphic covers Manuel's face or screen content.
 - **Content on top → captions → ALL graphics at the bottom, 100% of the video.** Manuel's face AND his
   screen recordings are protected zones: no graphic, label, sticker or animation above the captions, in
   any shot or during entrances/exits (section labels too). Shrink graphics or show them in sequence
