@@ -112,6 +112,27 @@ export const Root: React.FC = () => (
       height={1920}
       defaultProps={{ photo: "mnc9/src/portada.png", zoom: 1.08, lead: "1 milla menos =", big: "hasta $50 M", bigSize: 160, plate: "al año, según ups", plateSize: 64, top: 1300 }}
     />
+    <Composition
+      id="Mnc8PortadaKlarna"
+      component={MncPortada}
+      durationInFrames={1}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{
+        photo: "mnc8/src/portada_manuel.png",
+        zoom: 1.0,
+        logo: { src: "mnc8/captures/klarna_logo.svg", width: 360, top: 620 },
+        lead: "reemplazó trabajo con ia…",
+        leadSize: 80,
+        big: "y volvió",
+        bigSize: 196,
+        plate: "a contratar humanos",
+        plateSize: 76,
+        plateGap: 14,
+        top: 1270,
+      }}
+    />
     <Composition id="Mnc8Klarna" component={Mnc8Reel} durationInFrames={MNC8_TOTAL_F} fps={MNC8_FPS} width={1080} height={1920} />
     <Composition id="Mnc8Broll" component={Mnc8Broll} defaultProps={{ i: 0 }} durationInFrames={MNC8_TOTAL_F} fps={MNC8_FPS} width={1080} height={960} />
     <Composition

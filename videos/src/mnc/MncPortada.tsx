@@ -35,9 +35,12 @@ export type PortadaProps = {
   plateSize?: number;
   top?: number;
   spark?: boolean; // only when the video mentions Claude (client rule)
+  // real brand logo (official file, never redrawn), centred at `top` px; shown in its own colours
+  logo?: { src: string; width: number; top: number };
+  plateGap?: number; // px between keyword and plate (default overlaps; raise it when the keyword has descenders)
 };
 
-export const MncPortada: React.FC<PortadaProps> = ({ photo, zoom = 1.14, lead, leadSize = 104, leadShift = 0, big, bigSize = 206, plate, plateSize = 92, top = 1290, spark }) => (
+export const MncPortada: React.FC<PortadaProps> = ({ photo, zoom = 1.14, lead, leadSize = 104, leadShift = 0, big, bigSize = 206, plate, plateSize = 92, top = 1290, spark, logo, plateGap = -22 }) => (
   <AbsoluteFill style={{ background: mnc.colors.black }}>
     <Img src={staticFile(photo)} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 30%", transform: `scale(${zoom})`, transformOrigin: "50% 100%" }} />
     {/* bottom darkening so the white lines hold on the grey shirt */}
@@ -48,12 +51,18 @@ export const MncPortada: React.FC<PortadaProps> = ({ photo, zoom = 1.14, lead, l
       <span style={{ fontSize: 19 }}>{"<no code>"}</span>
     </div>
 
+    {logo ? (
+      <div style={{ position: "absolute", left: 0, right: 0, top: logo.top, display: "flex", justifyContent: "center" }}>
+        <Img src={staticFile(logo.src)} style={{ width: logo.width, display: "block" }} />
+      </div>
+    ) : null}
+
     {spark ? <Spark size={170} x={850} y={top - 140} rot={12} /> : null}
 
     <div style={{ position: "absolute", left: 0, right: 0, top, display: "flex", flexDirection: "column", alignItems: "center" }}>
       <div style={{ ...line, fontSize: leadSize, fontWeight: mnc.weight.medium, letterSpacing: "-0.03em", marginLeft: leadShift }}>{lead}</div>
       <div style={{ ...line, fontSize: bigSize, fontWeight: mnc.weight.medium, letterSpacing: "-0.055em", color: mnc.colors.accent, marginTop: -34 }}>{big}</div>
-      <div style={{ marginTop: -22, background: mnc.colors.accent, padding: "6px 44px 22px" }}>
+      <div style={{ marginTop: plateGap, background: mnc.colors.accent, padding: "6px 44px 22px" }}>
         <div style={{ ...line, fontSize: plateSize, fontWeight: mnc.weight.medium, letterSpacing: "-0.035em" }}>{plate}</div>
       </div>
     </div>
