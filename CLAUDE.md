@@ -168,6 +168,18 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
 - **Turnaround matters as much as polish:** keep the quality bar but aim for half the time —
   analyse once, build, verify with one still sheet + one full render, and avoid re-render loops
   for cosmetic tweaks that can be checked on stills.
+- **COVER REFERENCE STYLE (latest, overrides the older MncPortada look):** `videos/reference/portadas/ref_klarna.png`
+  and `ref_ups.png` (client-made). When a video edit comes with a cover phrase, also make a cover in this style:
+  - **Photo:** a well-chosen frame from the video (eyes open, good expression), zoomed so Manuel's face is large and
+    centred; the title never covers the face.
+  - **Text:** the client's phrase EXACTLY as given (casing too — e.g. "IA" uppercase, sentence case, ".." joins) —
+    never invent or reword it; WAIT for the phrase before making the cover. Split it into a top block and/or a bottom
+    block around the face. Readex Pro, heavy, very large, soft drop shadow. Two treatments, mixed:
+    white text on a FLAT ORANGE (#FD6623) full-width band/plate, and giant orange text with no plate.
+  - **Brand logo:** if the phrase or video mentions a big company (Klarna, UPS…), include its CORRECT official logo,
+    large and integrated — e.g. Klarna wordmark in white sitting on top of the orange band, UPS shield in its
+    real colours at the frame edge beside the face (may bleed off-canvas), never over the face.
+  - "manuel <no code>" small, white, semi-transparent, top-right. No gradients; spark only if Claude is mentioned.
 - **Every video ships with a cover (portada)** in the same style as `MncPortada` (`src/mnc/MncPortada.tsx`):
   speaker photo full-bleed, three-line title — small white lead, giant orange keyword, white line
   on an orange plate — soft offset shadow, "manuel <no code>" top-right, lowercase, title kept
