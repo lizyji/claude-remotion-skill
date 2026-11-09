@@ -125,6 +125,13 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   "Fuente: Gong · gong.io/blog/sales-demos". Stock: `scripts/mnc10-stock.sh` (clips start at their window via
   `StockVid` = Sequence). Cover `Mnc10Portada` uses the NEW `MncPortadaV2` (client cover reference style).
   `npm run mnc10:prepare`, `npm run render:mnc10`, `scripts/mnc10-brolls.sh`.
+- **Mnc11Ideas** (`src/mnc11/`) — Reel "así automaticé mis ideas de contenido" (Airtable + Claude system). Mnc10
+  structure + FIRST real green-screen beats: `scripts/mnc11-matte.py` runs RobustVideoMatting (ONNX, CPU,
+  ~0.15 s/frame) on base.mp4 for the `WINDOWS` and writes VP9-alpha `cutout_*.webm`; the reel's `CUTOUT` windows draw a
+  full-frame background (animated doc / statement / real Pexels team clip) and the cut-out at the split-layout
+  position (`OffthreadVideo transparent`). Run the matte with a Python that has onnxruntime + opencv
+  (`PY=… npm run mnc11:prepare`). Screen recordings B1/B5/B6/B8/B9 were NOT in the Drive folder → client plan B
+  "[Grabación pendiente: B#]" cards (`Pending`). `npm run render:mnc11`, `scripts/mnc11-brolls.sh`.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Mnc4CosasAMano ships WITHOUT the top-right brand mark (client request). Where a brand mark is used,

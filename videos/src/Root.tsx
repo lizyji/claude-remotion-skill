@@ -18,6 +18,7 @@ import { Mnc7Reel, MNC7_FPS, MNC7_TOTAL_F } from "./mnc7/Mnc7Reel";
 import { Mnc8Broll, Mnc8Reel, MNC8_FPS, MNC8_TOTAL_F } from "./mnc8/Mnc8Reel";
 import { Mnc9Broll, Mnc9Reel, MNC9_FPS, MNC9_TOTAL_F } from "./mnc9/Mnc9Reel";
 import { Mnc10Broll, Mnc10Reel, MNC10_FPS, MNC10_TOTAL_F } from "./mnc10/Mnc10Reel";
+import { Mnc11Broll, Mnc11Reel, MNC11_FPS, MNC11_TOTAL_F } from "./mnc11/Mnc11Reel";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -103,6 +104,8 @@ export const Root: React.FC = () => (
       height={1920}
       defaultProps={{ photo: "mnc6/src/portada.png", zoom: 1.08, lead: "crea tu equipo de", leadSize: 84, big: "agentes IA", bigSize: 190, plate: "más fácil de lo que imaginas", plateSize: 66, top: 1250 }}
     />
+    <Composition id="Mnc11Ideas" component={Mnc11Reel} durationInFrames={MNC11_TOTAL_F} fps={MNC11_FPS} width={1080} height={1920} />
+    <Composition id="Mnc11Broll" component={Mnc11Broll} defaultProps={{ i: 0 }} durationInFrames={MNC11_TOTAL_F} fps={MNC11_FPS} width={1080} height={960} />
     <Composition id="Mnc10Gong" component={Mnc10Reel} durationInFrames={MNC10_TOTAL_F} fps={MNC10_FPS} width={1080} height={1920} />
     <Composition
       id="Mnc10Portada"
