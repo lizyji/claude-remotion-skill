@@ -152,6 +152,20 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
     up as spoken; cover with `MncPortada`; separate B-roll files named by take (`T#_B#_name.mp4`).
   - **Before delivering:** check on a still sheet + the full render that every caption reads clearly (no clipped
     words, spaces visible, not over busy graphics) and that no graphic covers Manuel's face or screen content.
+- **CREATIVE EVOLUTION (feedback after Mnc9, applies to every NEW MNC video; never re-edit old ones):** keep the
+  Mnc9 quality, branding, rhythm, captions, animations and SFX, but:
+  - **More real B-roll, with purpose:** brands mentioned → their OFFICIAL logo briefly; business processes → licensed
+    stock of people working, teams, offices, warehouses, operations, tech (Pexels/Pixabay, free licence, no other
+    brands visible); tools/platforms → their real interface, logo or a related visual. Balance Manuel + real
+    B-roll + interfaces + logos + animated graphics — not everything as animated graphics.
+  - **Less literal split screen:** pick per scene (not all in one video) between A) soft fade/feathered edge between
+    B-roll and Manuel instead of a hard 50/50 line, B) full-frame B-roll background with Manuel in the foreground,
+    C) Manuel cut out (background removed when technically viable) over videos/interfaces/graphics, D) layered
+    compositions with masks, opacity and soft transitions. Note: the client explicitly allows a soft fade here even
+    though MNC graphics stay flat (no colour gradients/blurs in the graphics themselves).
+  - **Same composition rules:** Manuel on screen ≈45%; never cover his face, screen recordings or interfaces;
+    captions always legible; graphics/pop-ups below the captions; IG safe zones; MNC Carousel Design System only.
+  - **Efficiency:** prefer reusable stock, official logos and simple masks/fades over complex effects.
 - **Content on top → captions → ALL graphics at the bottom, 100% of the video.** Manuel's face AND his
   screen recordings are protected zones: no graphic, label, sticker or animation above the captions, in
   any shot or during entrances/exits (section labels too). Shrink graphics or show them in sequence
