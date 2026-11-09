@@ -9,6 +9,7 @@ import { omna } from "./omna/omnaTheme";
 import { MncReel, MNC_FPS, MNC_TOTAL_F } from "./mnc/MncReel";
 import { mnc } from "./mnc/mncTheme";
 import { MncPortada } from "./mnc/MncPortada";
+import { MncPortadaV2 } from "./mnc/MncPortadaV2";
 import { Mnc4Reel, MNC4_FPS, MNC4_TOTAL_F } from "./mnc4/Mnc4Reel";
 import { Mnc5Reel, MNC5_FPS, MNC5_TOTAL_F } from "./mnc5/Mnc5Reel";
 import { OmnaManuel, OMNA2_FPS, OMNA2_TOTAL_F } from "./omna2/OmnaManuel";
@@ -16,6 +17,7 @@ import { Mnc6Reel, MNC6_FPS, MNC6_TOTAL_F } from "./mnc6/Mnc6Reel";
 import { Mnc7Reel, MNC7_FPS, MNC7_TOTAL_F } from "./mnc7/Mnc7Reel";
 import { Mnc8Broll, Mnc8Reel, MNC8_FPS, MNC8_TOTAL_F } from "./mnc8/Mnc8Reel";
 import { Mnc9Broll, Mnc9Reel, MNC9_FPS, MNC9_TOTAL_F } from "./mnc9/Mnc9Reel";
+import { Mnc10Broll, Mnc10Reel, MNC10_FPS, MNC10_TOTAL_F } from "./mnc10/Mnc10Reel";
 
 // Fonts are self-hosted in public/fonts: the render browser can't reach
 // Google Fonts through the Claude Code web proxy, and local files are deterministic.
@@ -101,6 +103,26 @@ export const Root: React.FC = () => (
       height={1920}
       defaultProps={{ photo: "mnc6/src/portada.png", zoom: 1.08, lead: "crea tu equipo de", leadSize: 84, big: "agentes IA", bigSize: 190, plate: "más fácil de lo que imaginas", plateSize: 66, top: 1250 }}
     />
+    <Composition id="Mnc10Gong" component={Mnc10Reel} durationInFrames={MNC10_TOTAL_F} fps={MNC10_FPS} width={1080} height={1920} />
+    <Composition
+      id="Mnc10Portada"
+      component={MncPortadaV2}
+      durationInFrames={1}
+      fps={30}
+      width={1080}
+      height={1920}
+      defaultProps={{
+        photo: "mnc10/src/frames/f2.png",
+        zoom: 1.2,
+        focus: [515, 900],
+        logo: { src: "mnc10/captures/gong_logo_white.svg", width: 400, top: 236 },
+        blocks: [
+          { lines: ["Deja de perder", "clientes"], top: 410, size: 112, band: true },
+          { lines: ["con tus", "presentaciones", "de ventas"], top: 1392, size: 96 },
+        ],
+      }}
+    />
+    <Composition id="Mnc10Broll" component={Mnc10Broll} defaultProps={{ i: 0 }} durationInFrames={MNC10_TOTAL_F} fps={MNC10_FPS} width={1080} height={960} />
     <Composition id="Mnc9Ups" component={Mnc9Reel} durationInFrames={MNC9_TOTAL_F} fps={MNC9_FPS} width={1080} height={1920} />
     <Composition id="Mnc9Broll" component={Mnc9Broll} defaultProps={{ i: 0 }} durationInFrames={MNC9_TOTAL_F} fps={MNC9_FPS} width={1080} height={960} />
     <Composition

@@ -118,6 +118,13 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   B1 = free Pexels clip (no UPS branding), B5 = real FreightWaves headline. Numbers carry
   "Fuente: proyecciones de UPS". `npm run mnc9:prepare`, `npm run render:mnc9`, `scripts/mnc9-brolls.sh`;
   cover `Mnc9Portada`.
+- **Mnc10Gong** (`src/mnc10/`) — Reel "presentaciones de venta (Gong)", FIRST video with the creative-evolution
+  rules: Mnc9 captions/palette/rhythm, but the top panel FADES into Manuel (CSS mask, no hard 50/50 line) and three
+  beats use real Pexels B-roll full-frame behind Manuel framed as a white-bordered card (`BG` windows). Step number
+  pinned top-left (`STEPS`). Real Gong captures (logo SVG, headline, the 67,149 and 76 s sentences) with
+  "Fuente: Gong · gong.io/blog/sales-demos". Stock: `scripts/mnc10-stock.sh` (clips start at their window via
+  `StockVid` = Sequence). Cover `Mnc10Portada` uses the NEW `MncPortadaV2` (client cover reference style).
+  `npm run mnc10:prepare`, `npm run render:mnc10`, `scripts/mnc10-brolls.sh`.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Mnc4CosasAMano ships WITHOUT the top-right brand mark (client request). Where a brand mark is used,
