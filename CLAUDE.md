@@ -130,8 +130,10 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   ~0.15 s/frame) on base.mp4 for the `WINDOWS` and writes VP9-alpha `cutout_*.webm`; the reel's `CUTOUT` windows draw a
   full-frame background (animated doc / statement / real Pexels team clip) and the cut-out at the split-layout
   position (`OffthreadVideo transparent`). Run the matte with a Python that has onnxruntime + opencv
-  (`PY=… npm run mnc11:prepare`). Screen recordings B1/B5/B6/B8/B9 were NOT in the Drive folder → client plan B
-  "[Grabación pendiente: B#]" cards (`Pending`). `npm run render:mnc11`, `scripts/mnc11-brolls.sh`.
+  (`PY=… npm run mnc11:prepare`). v2 (client corrections): screen B-rolls B1/B5/B6/B8/B9 now come from the
+  client's real recording of the system (Drive 1K_i9YYQ8BQsVnLBT7nTZZ1ujYwlBuRtB) cut by `scripts/mnc11-screens.sh` —
+  its left sidebar says "OMNA sistema de contenido", so it is ALWAYS cropped out; the team/man stock clip was removed;
+  `CUTOUT` is empty (rule v2: no cut-out over animations). `npm run render:mnc11`, `scripts/mnc11-brolls.sh`.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Mnc4CosasAMano ships WITHOUT the top-right brand mark (client request). Where a brand mark is used,
@@ -184,6 +186,10 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
     explanation, not the whole video. Do the matting offline in prepare (e.g. a video-matting model such as
     RobustVideoMatting / rembg per frame → ProRes 4444 or WebM-alpha "manuel_alpha" clip), check hair edges on stills,
     and keep captions/graphics rules unchanged.
+  - **GREEN-SCREEN RULE v2 (client, after Mnc11):** cut Manuel out (full-frame background, silhouette only) ONLY when
+    the background is real footage of PEOPLE (teams working, offices, warehouses…). Over animations, graphics,
+    interfaces, dashboards, Airtable captures or diagrams NEVER cut him out: keep his original background and add the
+    graphics as overlays / the fading top panel. Never use stock of a person unrelated to the topic.
   - **Same composition rules:** Manuel on screen ≈45%; never cover his face, screen recordings or interfaces;
     captions always legible; graphics/pop-ups below the captions; IG safe zones; MNC Carousel Design System only.
   - **Efficiency:** prefer reusable stock, official logos and simple masks/fades over complex effects.

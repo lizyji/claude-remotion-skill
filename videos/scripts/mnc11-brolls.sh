@@ -4,8 +4,8 @@
 # Window times are read from the composition (ROLL_TIMES) via a tiny node eval of words.json.
 set -euo pipefail
 cd "$(dirname "$0")/.."
-OUT=out/mnc11/brolls; mkdir -p "$OUT"
-NAMES=(T1_B1_tablero-PENDIENTE T1_extra_sistema-apruebo T2_B2-B3_hoja-en-blanco T3_B4_miniaturas-vistas T3_B5_claude-ideas-PENDIENTE T4_B6_tarjeta-guion-PENDIENTE T4_B7_etiquetas-guion T5_extra_esta-si-esta-no T5_B8_cambio-copy-PENDIENTE T5_B9_aprobar-pipeline-PENDIENTE T6_B10_la-jugada T6_B11_ia-propone-yo-decido T6_extra_criterio T7_B12_cotizaciones-pedidos-reportes)
+OUT=out/mnc11/brolls_v2; mkdir -p "$OUT"
+NAMES=(T1_B1_tablero-aprobar-ideas T1_extra_sistema-apruebo T2_B2-B3_hoja-en-blanco T3_B4_miniaturas-vistas T3_B5_ideas-con-fuente T4_B6_tarjeta-guion T4_B7_etiquetas-guion T5_extra_esta-si-esta-no T5_B8_pedido-de-cambio T5_B9_aprobar-pipeline T6_B10_la-jugada T6_B11_ia-propone-yo-decido T6_extra_criterio T7_B12_cotizaciones-pedidos-reportes)
 TIMES=$(node scripts/mnc11-times.mjs)
 i=0
 while read -r a b; do

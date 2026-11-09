@@ -9,7 +9,9 @@ import words from "./words.json";
 // "Así automaticé mis ideas de contenido" — Manuel NoCode reel. Mnc10 structure (fading top panel,
 // Mnc9 captions/palette/rhythm/SFX) + the client's green-screen rule: on three beats the B-roll fills
 // the whole frame and Manuel is a REAL cut-out (RobustVideoMatting, scripts/mnc11-matte.py) — no card.
-// The screen recordings B1/B5/B6/B8/B9 were not in the Drive folder → "[Grabación pendiente: B#]" cards.
+// Screen B-rolls B1/B5/B6/B8/B9 = the client's real recording of the system (scripts/mnc11-screens.sh,
+// sidebar with the OMNA name always cropped out). Green-screen rule (client, v2): Manuel is cut out ONLY over
+// real footage of people — never over animations/interfaces — so this reel keeps his original background.
 
 export const MNC11_FPS = 30;
 const SRC = "mnc11/clips/base.mp4";
@@ -70,11 +72,9 @@ const T = {
 };
 const FULL: [number, number][] = [[T.b10, T.c2]];
 // green-screen beats: [from, to, cutout file, its start in s]  (cutout_* made by scripts/mnc11-matte.py)
-const CUTOUT: [number, number, string, number][] = [
-  [T.c1, T.b4, "problema", 9.0],
-  [T.c2, T.crit, "jugada", 47.3],
-  [T.c3, T.close, "negocio", 54.2],
-];
+// green-screen beats ([from, to, cutout file, its start]); EMPTY: none of this reel's backgrounds is real footage of
+// people, and the only people clip (the man in the team clip) was removed at the client's request.
+const CUTOUT: [number, number, string, number][] = [];
 const SEGS = [15.13, 1.27, 8.41, 2.49, 18.89, 8.72, 5.08, 4.61];
 const JOINS = SEGS.slice(0, -1).map((_, i) => SEGS.slice(0, i + 1).reduce((a, b) => a + b, 0));
 
@@ -193,36 +193,26 @@ const StockFill: React.FC<{ name: string; from: number; label?: string }> = ({ n
 );
 
 
-// "[Grabación pendiente: B#]" — the client's plan B when a screen recording is missing
-const Pending: React.FC<{ id: string; what: string }> = ({ id, what }) => (
-  <Stage gap={22}>
-    <div
-      style={{
-        width: 860,
-        minHeight: 420,
-        border: `4px dashed ${C.black}`,
-        borderRadius: 28,
-        background: C.green,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: 20,
-        padding: 40,
-        boxSizing: "border-box",
-      }}
-    >
-      <Title size={58}>[Grabación pendiente: {id}]</Title>
-      <Body size={30} color={C.gray}>
-        {what}
-      </Body>
+// a real screen clip (public/mnc11/screens) on a white card, starting at `from`, with a slow push-in
+const Screen: React.FC<{ name: string; from: number; h?: number; top?: number; zoom?: number }> = ({ name, from, h = 620, top = 200, zoom = 1.06 }) => {
+  const t = useT();
+  const p = usePop(from, "snappy");
+  const z = interpolate(t, [from, from + 5], [1, zoom], clamp);
+  return (
+    <div style={{ position: "absolute", left: 50, width: 980, top, height: h, borderRadius: 20, overflow: "hidden", border: `3px solid ${C.black}`, background: C.white, opacity: Math.min(1, p * 1.4), transform: `translateY(${(1 - p) * 24}px)` }}>
+      <StockVidRaw src={staticFile(`mnc11/screens/${name}.mp4`)} from={from} style={{ width: 980, transform: `scale(${z})`, transformOrigin: "0% 0%" }} />
     </div>
-  </Stage>
+  );
+};
+const StockVidRaw: React.FC<{ src: string; from: number; style: React.CSSProperties }> = ({ src, from, style }) => (
+  <Sequence from={Math.round(from * MNC11_FPS)} layout="none">
+    <OffthreadVideo src={src} muted style={style} />
+  </Sequence>
 );
 
 // ---------------- B-rolls ----------------
 // T1 · B1 — real board "Aprobar ideas" (missing → placeholder)
-const B1: React.FC = () => <Pending id="B1" what="Tablero “Aprobar ideas” lleno de tarjetas, scroll rápido" />;
+const B1: React.FC = () => <Screen name="b1_lista" from={0} h={640} />;
 
 // T1 · extra — "un sistema de IA … y yo solo apruebo": ideas flow into an approval check
 const Sys: React.FC = () => {
@@ -265,7 +255,7 @@ const Sys: React.FC = () => {
   );
 };
 
-// T2 · B2/B3 (full-frame background behind Manuel's cut-out) — blank document at Sunday night,
+// T2 · B2/B3 (top panel, Manuel keeps his background) — blank document at Sunday night,
 // then "¿y ahora qué publico?" typed and erased twice
 const BlankDoc: React.FC = () => {
   const t = useT();
@@ -334,13 +324,24 @@ const B4: React.FC = () => {
 };
 
 // T3 · B5 — Claude with the idea list and each source (missing → placeholder)
-const B5: React.FC = () => <Pending id="B5" what="Claude con la lista de ideas y la fuente de cada una" />;
+const B5: React.FC = () => (
+  <>
+    <Screen name="b5_fuente" from={T.b5} h={456} top={230} zoom={1.12} />
+    <div style={{ position: "absolute", left: 0, right: 0, top: 730, display: "flex", justifyContent: "center" }}>
+      <Rise at={T.b5 + 0.3} kind="pop">
+        <Chip dark size={30}>
+          Cada idea trae <O>su fuente</O>
+        </Chip>
+      </Rise>
+    </div>
+  </>
+);
 
 // T4 · B6 — idea card with the full script in Airtable (missing → placeholder); B7 tags over it
-const B6: React.FC = () => <Pending id="B6" what="Tarjeta abierta en Airtable con el guion (scroll lento)" />;
+const B6: React.FC = () => <Screen name="b6_guion" from={T.b6} h={640} zoom={1.04} />;
 const B7: React.FC = () => (
   <>
-    <Pending id="B6" what="Tarjeta abierta en Airtable con el guion (scroll lento)" />
+    <Screen name="b6_guion" from={T.b6} h={640} zoom={1.04} />
     <div style={{ position: "absolute", left: 0, right: 0, top: 690, display: "flex", justifyContent: "center", gap: 14 }}>
       <Rise at={at("guion") - 0.1} kind="pop">
         <Chip orange>Guion ✓</Chip>
@@ -390,9 +391,41 @@ const YesNo: React.FC = () => {
 };
 
 // T5 · B8 — change request rewritten by the system (missing → placeholder)
-const B8: React.FC = () => <Pending id="B8" what="Pedido en “Cambios al copy” y la tarjeta ya reescrita" />;
+const B8: React.FC = () => (
+  <>
+    <Screen name="b8_cambio" from={T.b8} h={436} top={240} zoom={1.1} />
+    <div style={{ position: "absolute", left: 0, right: 0, top: 720, display: "flex", justifyContent: "center" }}>
+      <Rise at={at("cambio") - 0.1} kind="pop">
+        <Chip orange size={30}>
+          Pido el cambio
+        </Chip>
+      </Rise>
+    </div>
+  </>
+);
 // T5 · B9 — approve → pipeline (key moment, missing → placeholder held ≥ 3 s)
-const B9: React.FC = () => <Pending id="B9" what="Tarjeta a “✅ Aprobada” y aparece en el pipeline (“Banco de ideas”)" />;
+const B9: React.FC = () => {
+  const t = useT();
+  const s1 = T.b9 + 1.6;
+  const s2 = T.b9 + 3.0;
+  return (
+    <>
+      {t < s1 ? <Screen name="b9a_aprobada" from={T.b9} h={408} top={250} zoom={1.1} /> : t < s2 ? <Screen name="b9b_pipeline" from={s1} h={600} top={200} zoom={1.05} /> : <Screen name="b9c_detalle" from={s2} h={600} top={200} zoom={1.05} />}
+      <div style={{ position: "absolute", left: 0, right: 0, top: 818, display: "flex", justifyContent: "center", gap: 12 }}>
+        <Rise at={T.b9 + 0.3} kind="pop">
+          <Chip orange size={28}>
+            ✓ Aprobada
+          </Chip>
+        </Rise>
+        <Rise at={s1 - 0.1}>
+          <Chip dark size={28}>
+            → Pipeline · Banco de ideas
+          </Chip>
+        </Rise>
+      </div>
+    </>
+  );
+};
 
 // T6 · B10 — "Aquí está la jugada", zoom hit (full screen)
 const B10: React.FC = () => {
@@ -414,7 +447,7 @@ const B10: React.FC = () => {
   );
 };
 
-// T6 · B11 (full-frame background behind Manuel's cut-out) — "La IA propone → Yo decido"
+// T6 · B11 (top panel) — "La IA propone → Yo decido"
 const Spark = (
   <svg width={46} height={46} viewBox="-50 -50 100 100">
     {[0, 60, 120].map((a) => (
@@ -480,7 +513,7 @@ const Criterio: React.FC = () => {
   );
 };
 
-// T7 · B12 (full-frame real team clip behind Manuel's cut-out) — Cotizaciones · Pedidos · Reportes
+// T7 · B12 — Cotizaciones · Pedidos · Reportes (the man's stock clip was removed — client request)
 const BizBg: React.FC = () => {
   const items: [string, number][] = [
     ["Cotizaciones", at("cotizaciones,")],
@@ -489,7 +522,6 @@ const BizBg: React.FC = () => {
   ];
   return (
     <AbsoluteFill>
-      <StockVid name="team" from={T.c3} style={{ position: "absolute", left: 0, top: 0, width: 1080, height: 1920, objectFit: "cover" }} />
       <div style={{ position: "absolute", left: 0, right: 0, top: 260, display: "flex", flexDirection: "column", alignItems: "center", gap: 18 }}>
         <Rise at={T.c3 + 0.1}>
           <Chip dark size={30}>
@@ -665,7 +697,7 @@ const SFX = (): [number, SfxKind][] => [
 const ROLLS: [number, number, React.FC, ("cut" | undefined)?][] = [
   [0, T.sys, B1],
   [T.sys, T.c1, Sys],
-  [T.c1, T.b4, BlankDoc, "cut"],
+  [T.c1, T.b4, BlankDoc],
   [T.b4, T.b5, B4],
   [T.b5, T.b6, B5],
   [T.b6, T.b7, B6],
@@ -674,9 +706,9 @@ const ROLLS: [number, number, React.FC, ("cut" | undefined)?][] = [
   [T.b8, T.b9, B8],
   [T.b9, T.b10, B9],
   [T.b10, T.c2, B10],
-  [T.c2, T.crit, DecideBg, "cut"],
+  [T.c2, T.crit, DecideBg],
   [T.crit, T.c3, Criterio],
-  [T.c3, T.close, BizBg, "cut"],
+  [T.c3, T.close, BizBg],
 ];
 
 export const Mnc11Broll: React.FC<{ i: number }> = ({ i }) => {
