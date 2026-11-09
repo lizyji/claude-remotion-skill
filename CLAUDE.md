@@ -170,6 +170,13 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
     C) Manuel cut out (background removed when technically viable) over videos/interfaces/graphics, D) layered
     compositions with masks, opacity and soft transitions. Note: the client explicitly allows a soft fade here even
     though MNC graphics stay flat (no colour gradients/blurs in the graphics themselves).
+  - **B-roll behind Manuel = TRUE CUTOUT (client clarification after Mnc10):** when B-roll goes behind Manuel it fills
+    the WHOLE frame and Manuel appears as a clean silhouette (green-screen look) — his original background fully
+    removed, the matte following body, head and hair naturally. NEVER Manuel inside a rectangular/rounded card over the
+    video (the Mnc10 `BG` card was not what the client meant — don't reuse it). Use it only where it adds to the
+    explanation, not the whole video. Do the matting offline in prepare (e.g. a video-matting model such as
+    RobustVideoMatting / rembg per frame → ProRes 4444 or WebM-alpha "manuel_alpha" clip), check hair edges on stills,
+    and keep captions/graphics rules unchanged.
   - **Same composition rules:** Manuel on screen ≈45%; never cover his face, screen recordings or interfaces;
     captions always legible; graphics/pop-ups below the captions; IG safe zones; MNC Carousel Design System only.
   - **Efficiency:** prefer reusable stock, official logos and simple masks/fades over complex effects.
