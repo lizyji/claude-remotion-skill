@@ -134,6 +134,12 @@ npx remotion still src/index.ts <CompId> out/check_<f>.png --frame <f>
   client's real recording of the system (Drive 1K_i9YYQ8BQsVnLBT7nTZZ1ujYwlBuRtB) cut by `scripts/mnc11-screens.sh` —
   its left sidebar says "OMNA sistema de contenido", so it is ALWAYS cropped out; the team/man stock clip was removed;
   `CUTOUT` is empty (rule v2: no cut-out over animations). `npm run render:mnc11`, `scripts/mnc11-brolls.sh`.
+- **Mnc12GrokBot** (`src/mnc12/`) — Reel "Grok Bot: un agente con su propia computadora" (take `copy_F0D78A13….MOV`).
+  Mnc11 structure; cut-out ONLY over the two real-people Pexels clips (`CUTOUT`: worker at his computer, new hire
+  welcomed — rule v2). Real xAI captures (x.ai/bot header, launch post Aug 11 2026, product view) in
+  `scripts/mnc12-captures/`. B6.mp4 (Manuel's test) was missing → the real xAI product view, never a simulated UI.
+  Manuel's audio adds an unscripted "Para configurarlo… sin programar" block (kept, own B-roll `Config`).
+  `npm run mnc12:prepare` (PY with onnxruntime for the matte), `npm run render:mnc12`, `scripts/mnc12-brolls.sh`.
 - Google Drive downloads need `drive.google.com` and `drive.usercontent.google.com` in the
   environment's network allowlist; transcription (faster-whisper) needs `huggingface.co`.
 - Mnc4CosasAMano ships WITHOUT the top-right brand mark (client request). Where a brand mark is used,
