@@ -1,0 +1,21 @@
+Tu empresa ya tiene un dashboard increíble, solamente que está escondido en tu WhatsApp.
+En este video te voy a enseñar todos los casos de uso que podrías automatizar con inteligencia artificial.
+Tenemos automatizaciones que funcionan para transferir datos, sincronizar datos entre dos plataformas, por ejemplo tu WhatsApp y tu CRM, y rutear información para distribuir leads a diferentes asesores de venta, por ejemplo.
+Luego tenemos los flujos con IA o automatizaciones, que es para resumir información, extraer, como por ejemplo un agente que esté en Google Maps extrayendo direcciones y teléfonos de leads calificados para ti, y generar.
+En base a mucho contexto, a lo mejor en un lead, necesito que me generes una ficha.
+Tienes agentes de inteligencia artificial, que son los que conectas a diferentes herramientas, y puedes tener agentes que te ayuden a investigar en la web, agentes que contesten tu correo o tu WhatsApp, y agentes internos como una herramienta que puede ayudar a tus vendedores a tener información sobre los productos que vendes.
+Y por último, apps, que son cosas que puedes crear con inteligencia artificial, desde formularios, portales para clientes, portales para proveedores, y herramientas internas como cotizadores y un montón más de cosas, todo creado con inteligencia artificial.
+Y creo que una buena herramienta por donde puedes empezar es Zapier, porque aquí están prácticamente todas las herramientas que vamos a utilizar en tu día a día y que puedes integrar entre sí.
+Y aquí mismo puedes crear todo tipo de agentes, automatizaciones y flujos con IA.
+Y no necesitas saber programación.
+Entonces creo que es un buen punto de partida si no te has metido a este mundo.
+Y luego tenemos casos de uso de análisis.
+Esto es un poquito más avanzado, pero te voy a ir explicando qué es para que veas lo que se puede hacer.
+Entonces imagínate un cerebro al que le conectas todas tus fuentes de datos.
+Todo aquí dentro se filtra, se unifica y se categoriza.
+Y sirve para crear soluciones arriba de este cerebro, como soluciones de pronóstico y planeación.
+Soluciones para conciliar diferentes tipos de información.
+Alertas sobre tu información.
+Y conectar este cerebro a tu inteligencia artificial favorita, para que la puedas utilizar como una memoria compartida con todo tu equipo a la hora de usar IA.
+La idea de este video era darte un poquito de idea de lo que se puede hacer.
+Voy a entrar más a profundidad, te aviso para que no te pierdas esos videos.

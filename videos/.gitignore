@@ -1,0 +1,46 @@
+node_modules/
+out/
+# OMNA project media: source footage, brand assets (trial fonts) and generated
+# clips/music — rebuilt from Google Drive by scripts/omna-prepare.sh
+public/omna/
+# source footage — keep raw videos out of git (download from Drive per session)
+public/**/*.mov
+public/**/*.mp4
+# MNC reel media (source footage and generated base cut) — scripts/mnc-prepare.sh
+public/mnc/src/
+public/mnc/clips/
+public/mnc4/src/
+public/mnc4/clips/
+public/mnc5/src/
+public/mnc5/clips/
+public/omna2/src/
+public/omna2/clips/
+public/omna2/audio/
+public/mnc6/src/
+public/mnc6/clips/
+public/mnc7/src/
+public/mnc7/clips/
+public/mnc8/src/
+public/mnc8/clips/
+public/mnc8/captures/
+public/mnc9/src/
+public/mnc9/clips/
+public/mnc9/captures/
+public/mnc9/stock/
+public/mnc9/audio/
+public/mnc10/src/
+public/mnc10/clips/
+public/mnc10/captures/
+public/mnc10/stock/
+public/mnc10/audio/
+public/mnc11/src/
+public/mnc11/clips/
+public/mnc11/stock/
+public/mnc11/audio/
+public/mnc12/src/
+public/mnc12/clips/
+public/mnc12/stock/
+public/mnc12/audio/
+public/mnc12/captures/
+public/mnc11/ref/
+public/mnc11/screens/

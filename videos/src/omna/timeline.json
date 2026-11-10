@@ -1,0 +1,13 @@
+{
+  "fps": 30,
+  "intro": { "frames": 60 },
+  "outro": { "frames": 120, "fadeIn": 15 },
+  "clips": [
+    { "id": "s1", "src": "omna/clips/s1.mp4", "frames": 420, "person": "manuel", "join": "fade", "joinFrames": 12 },
+    { "id": "s2", "src": "omna/clips/s2.mp4", "frames": 112, "person": "manuel", "join": "cut" },
+    { "id": "s3", "src": "omna/clips/s3.mp4", "frames": 277, "person": "pamela", "join": "fade", "joinFrames": 10 },
+    { "id": "s4", "src": "omna/clips/s4.mp4", "frames": 163, "person": "lizy", "join": "fade", "joinFrames": 10 },
+    { "id": "s5", "src": "omna/clips/s5.mp4", "frames": 315, "person": "joel", "join": "fade", "joinFrames": 10 },
+    { "id": "s6", "src": "omna/clips/s6.mp4", "frames": 300, "person": "joel", "join": "cut" }
+  ]
+}
