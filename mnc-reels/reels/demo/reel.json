@@ -1,0 +1,730 @@
+{
+  "broll": [
+    {
+      "tipo": "tarjeta",
+      "start": 0.079,
+      "end": 3.572,
+      "pildora": "Caso real",
+      "titulo": "Mis ideas de contenido, en piloto automático con IA"
+    },
+    {
+      "tipo": "contador",
+      "start": 3.622,
+      "end": 6.357,
+      "valor": 3,
+      "sufijo": " h",
+      "etiqueta": "perdidas cada semana"
+    },
+    {
+      "tipo": "cita",
+      "start": 9.278,
+      "end": 11.524999999999999,
+      "medio": "Plan B",
+      "titular": "Así se ve la tarjeta de cita cuando una página no abre",
+      "fuente": "Fuente: Ejemplo, 11 nov 2026 · ejemplo.com"
+    },
+    {
+      "tipo": "lista",
+      "start": 11.575,
+      "end": 14.575999999999999,
+      "titulo": "Claude convierte la idea en:",
+      "items": [
+        "Gancho",
+        "Guion toma por toma",
+        "Lista de B-rolls"
+      ],
+      "cada": 0.6
+    },
+    {
+      "tipo": "pendiente",
+      "start": 14.626,
+      "end": 16.715999999999998,
+      "id": "B6"
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "jugada",
+      "start": 6.407,
+      "end": 8.546999999999999
+    },
+    {
+      "tipo": "cierre",
+      "start": 16.741,
+      "end": 22.9
+    }
+  ],
+  "pasos": [
+    {
+      "start": 8.523,
+      "end": 11.524999999999999,
+      "n": 1
+    },
+    {
+      "start": 11.575,
+      "end": 14.575999999999999,
+      "n": 2
+    }
+  ],
+  "sfx": [],
+  "slug": "demo",
+  "duracion": 22.9,
+  "manuel": "reels/demo/manuel.mp4",
+  "cortes": [
+    3.543,
+    6.329,
+    8.445,
+    11.497,
+    14.546,
+    16.663
+  ],
+  "palabras": [
+    {
+      "w": "Así",
+      "start": 0.079,
+      "end": 0.374,
+      "prob": 0.95
+    },
+    {
+      "w": "automaticé",
+      "start": 0.434,
+      "end": 1.044,
+      "prob": 0.95
+    },
+    {
+      "w": "mis",
+      "start": 1.104,
+      "end": 1.399,
+      "prob": 0.95
+    },
+    {
+      "w": "ideas",
+      "start": 1.459,
+      "end": 1.844,
+      "prob": 0.95
+    },
+    {
+      "w": "de",
+      "start": 1.904,
+      "end": 2.154,
+      "prob": 0.95
+    },
+    {
+      "w": "contenido",
+      "start": 2.214,
+      "end": 2.779,
+      "prob": 0.95
+    },
+    {
+      "w": "con",
+      "start": 2.839,
+      "end": 3.134,
+      "prob": 0.95
+    },
+    {
+      "w": "IA.",
+      "start": 3.194,
+      "end": 3.444,
+      "prob": 0.95
+    },
+    {
+      "w": "Antes",
+      "start": 3.622,
+      "end": 4.007,
+      "prob": 0.95
+    },
+    {
+      "w": "perdía",
+      "start": 4.067,
+      "end": 4.497,
+      "prob": 0.95
+    },
+    {
+      "w": "tres",
+      "start": 4.557,
+      "end": 4.897,
+      "prob": 0.95
+    },
+    {
+      "w": "horas",
+      "start": 4.957,
+      "end": 5.342,
+      "prob": 0.95
+    },
+    {
+      "w": "cada",
+      "start": 5.402,
+      "end": 5.742,
+      "prob": 0.95
+    },
+    {
+      "w": "semana.",
+      "start": 5.802,
+      "end": 6.232,
+      "prob": 0.95
+    },
+    {
+      "w": "Pero",
+      "start": 6.407,
+      "end": 6.747,
+      "prob": 0.95
+    },
+    {
+      "w": "aquí",
+      "start": 6.807,
+      "end": 7.147,
+      "prob": 0.95
+    },
+    {
+      "w": "está",
+      "start": 7.207,
+      "end": 7.547,
+      "prob": 0.95
+    },
+    {
+      "w": "la",
+      "start": 7.607,
+      "end": 7.857,
+      "prob": 0.95
+    },
+    {
+      "w": "jugada.",
+      "start": 7.917,
+      "end": 8.347,
+      "prob": 0.95
+    },
+    {
+      "w": "Paso",
+      "start": 8.523,
+      "end": 8.863,
+      "prob": 0.95
+    },
+    {
+      "w": "uno:",
+      "start": 8.923,
+      "end": 9.218,
+      "prob": 0.95
+    },
+    {
+      "w": "guardo",
+      "start": 9.278,
+      "end": 9.708,
+      "prob": 0.95
+    },
+    {
+      "w": "cada",
+      "start": 9.768,
+      "end": 10.108,
+      "prob": 0.95
+    },
+    {
+      "w": "idea",
+      "start": 10.168,
+      "end": 10.508,
+      "prob": 0.95
+    },
+    {
+      "w": "en",
+      "start": 10.568,
+      "end": 10.818,
+      "prob": 0.95
+    },
+    {
+      "w": "Airtable.",
+      "start": 10.878,
+      "end": 11.398,
+      "prob": 0.95
+    },
+    {
+      "w": "Paso",
+      "start": 11.575,
+      "end": 11.915,
+      "prob": 0.95
+    },
+    {
+      "w": "dos:",
+      "start": 11.975,
+      "end": 12.27,
+      "prob": 0.95
+    },
+    {
+      "w": "Claude",
+      "start": 12.33,
+      "end": 12.76,
+      "prob": 0.95
+    },
+    {
+      "w": "la",
+      "start": 12.82,
+      "end": 13.07,
+      "prob": 0.95
+    },
+    {
+      "w": "convierte",
+      "start": 13.13,
+      "end": 13.695,
+      "prob": 0.95
+    },
+    {
+      "w": "en",
+      "start": 13.755,
+      "end": 14.005,
+      "prob": 0.95
+    },
+    {
+      "w": "guion.",
+      "start": 14.065,
+      "end": 14.45,
+      "prob": 0.95
+    },
+    {
+      "w": "Y",
+      "start": 14.626,
+      "end": 14.831,
+      "prob": 0.95
+    },
+    {
+      "w": "ahora",
+      "start": 14.891,
+      "end": 15.276,
+      "prob": 0.95
+    },
+    {
+      "w": "publico",
+      "start": 15.336,
+      "end": 15.811,
+      "prob": 0.95
+    },
+    {
+      "w": "el",
+      "start": 15.871,
+      "end": 16.121,
+      "prob": 0.95
+    },
+    {
+      "w": "doble.",
+      "start": 16.181,
+      "end": 16.566,
+      "prob": 0.95
+    },
+    {
+      "w": "Si",
+      "start": 16.741,
+      "end": 16.991,
+      "prob": 0.95
+    },
+    {
+      "w": "todavía",
+      "start": 17.051,
+      "end": 17.526,
+      "prob": 0.95
+    },
+    {
+      "w": "no",
+      "start": 17.586,
+      "end": 17.836,
+      "prob": 0.95
+    },
+    {
+      "w": "sabes",
+      "start": 17.896,
+      "end": 18.281,
+      "prob": 0.95
+    },
+    {
+      "w": "cómo",
+      "start": 18.341,
+      "end": 18.681,
+      "prob": 0.95
+    },
+    {
+      "w": "implementar",
+      "start": 18.741,
+      "end": 19.396,
+      "prob": 0.95
+    },
+    {
+      "w": "IA",
+      "start": 19.456,
+      "end": 19.706,
+      "prob": 0.95
+    },
+    {
+      "w": "en",
+      "start": 19.766,
+      "end": 20.016,
+      "prob": 0.95
+    },
+    {
+      "w": "tu",
+      "start": 20.076,
+      "end": 20.326,
+      "prob": 0.95
+    },
+    {
+      "w": "negocio,",
+      "start": 20.386,
+      "end": 20.861,
+      "prob": 0.95
+    },
+    {
+      "w": "esta",
+      "start": 20.921,
+      "end": 21.261,
+      "prob": 0.95
+    },
+    {
+      "w": "cuenta",
+      "start": 21.321,
+      "end": 21.751,
+      "prob": 0.95
+    },
+    {
+      "w": "es",
+      "start": 21.811,
+      "end": 22.061,
+      "prob": 0.95
+    },
+    {
+      "w": "para",
+      "start": 22.121,
+      "end": 22.461,
+      "prob": 0.95
+    },
+    {
+      "w": "ti.",
+      "start": 22.521,
+      "end": 22.771,
+      "prob": 0.95
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.079,
+      "end": 1.904,
+      "words": [
+        {
+          "w": "Así",
+          "start": 0.079
+        },
+        {
+          "w": "automaticé",
+          "start": 0.434,
+          "key": true
+        },
+        {
+          "w": "mis",
+          "start": 1.104
+        },
+        {
+          "w": "ideas",
+          "start": 1.459
+        }
+      ]
+    },
+    {
+      "start": 1.904,
+      "end": 3.622,
+      "words": [
+        {
+          "w": "de",
+          "start": 1.904
+        },
+        {
+          "w": "contenido",
+          "start": 2.214
+        },
+        {
+          "w": "con",
+          "start": 2.839
+        },
+        {
+          "w": "IA",
+          "start": 3.194,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 3.622,
+      "end": 5.402,
+      "words": [
+        {
+          "w": "Antes",
+          "start": 3.622
+        },
+        {
+          "w": "perdía",
+          "start": 4.067,
+          "key": true
+        },
+        {
+          "w": "tres",
+          "start": 4.557
+        },
+        {
+          "w": "horas",
+          "start": 4.957
+        }
+      ]
+    },
+    {
+      "start": 5.402,
+      "end": 6.407,
+      "words": [
+        {
+          "w": "cada",
+          "start": 5.402
+        },
+        {
+          "w": "semana",
+          "start": 5.802,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 6.407,
+      "end": 8.523,
+      "words": [
+        {
+          "w": "Pero",
+          "start": 6.407
+        },
+        {
+          "w": "aquí",
+          "start": 6.807
+        },
+        {
+          "w": "está",
+          "start": 7.207
+        },
+        {
+          "w": "la",
+          "start": 7.607
+        },
+        {
+          "w": "jugada",
+          "start": 7.917,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.523,
+      "end": 9.278,
+      "words": [
+        {
+          "w": "Paso",
+          "start": 8.523
+        },
+        {
+          "w": "uno",
+          "start": 8.923
+        }
+      ]
+    },
+    {
+      "start": 9.278,
+      "end": 10.568,
+      "words": [
+        {
+          "w": "guardo",
+          "start": 9.278,
+          "key": true
+        },
+        {
+          "w": "cada",
+          "start": 9.768
+        },
+        {
+          "w": "idea",
+          "start": 10.168
+        }
+      ]
+    },
+    {
+      "start": 10.568,
+      "end": 11.575,
+      "words": [
+        {
+          "w": "en",
+          "start": 10.568
+        },
+        {
+          "w": "Airtable",
+          "start": 10.878,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 11.575,
+      "end": 12.33,
+      "words": [
+        {
+          "w": "Paso",
+          "start": 11.575
+        },
+        {
+          "w": "dos",
+          "start": 11.975
+        }
+      ]
+    },
+    {
+      "start": 12.33,
+      "end": 13.755,
+      "words": [
+        {
+          "w": "Claude",
+          "start": 12.33,
+          "key": true
+        },
+        {
+          "w": "la",
+          "start": 12.82
+        },
+        {
+          "w": "convierte",
+          "start": 13.13
+        }
+      ]
+    },
+    {
+      "start": 13.755,
+      "end": 14.626,
+      "words": [
+        {
+          "w": "en",
+          "start": 13.755
+        },
+        {
+          "w": "guion",
+          "start": 14.065
+        }
+      ]
+    },
+    {
+      "start": 14.626,
+      "end": 16.741,
+      "words": [
+        {
+          "w": "Y",
+          "start": 14.626
+        },
+        {
+          "w": "ahora",
+          "start": 14.891
+        },
+        {
+          "w": "publico",
+          "start": 15.336,
+          "key": true
+        },
+        {
+          "w": "el",
+          "start": 15.871
+        },
+        {
+          "w": "doble",
+          "start": 16.181
+        }
+      ]
+    },
+    {
+      "start": 16.741,
+      "end": 18.341,
+      "words": [
+        {
+          "w": "Si",
+          "start": 16.741
+        },
+        {
+          "w": "todavía",
+          "start": 17.051,
+          "key": true
+        },
+        {
+          "w": "no",
+          "start": 17.586
+        },
+        {
+          "w": "sabes",
+          "start": 17.896
+        }
+      ]
+    },
+    {
+      "start": 18.341,
+      "end": 19.766,
+      "words": [
+        {
+          "w": "cómo",
+          "start": 18.341
+        },
+        {
+          "w": "implementar",
+          "start": 18.741
+        },
+        {
+          "w": "IA",
+          "start": 19.456,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 19.766,
+      "end": 20.921,
+      "words": [
+        {
+          "w": "en",
+          "start": 19.766
+        },
+        {
+          "w": "tu",
+          "start": 20.076
+        },
+        {
+          "w": "negocio",
+          "start": 20.386,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 20.921,
+      "end": 23.021,
+      "words": [
+        {
+          "w": "esta",
+          "start": 20.921
+        },
+        {
+          "w": "cuenta",
+          "start": 21.321,
+          "key": true
+        },
+        {
+          "w": "es",
+          "start": 21.811
+        },
+        {
+          "w": "para",
+          "start": 22.121
+        },
+        {
+          "w": "ti",
+          "start": 22.521
+        }
+      ]
+    }
+  ],
+  "caraYFuente": 0.3776041666666667,
+  "musica": "musica-demo.wav",
+  "portada": {
+    "frase": "Así automaticé mis ideas con IA..",
+    "cuadro": 2
+  }
+}

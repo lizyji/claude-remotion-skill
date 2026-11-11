@@ -1,0 +1,14 @@
+{
+  "_nota": "Errores típicos de la transcripción. Clave = lo que oye la transcripción (minúsculas, se compara sin acentos), valor = lo correcto. Las claves de varias palabras se fusionan.",
+  "cloud": "Claude",
+  "glockbot": "Grok Bot",
+  "clawdbot": "Grok Bot",
+  "grokbot": "Grok Bot",
+  "implementaría": "implementar IA",
+  "al ia": "a la IA",
+  "el table": "Airtable",
+  "air table": "Airtable",
+  "ia": "IA",
+  "chat gpt": "ChatGPT",
+  "make": "Make"
+}
