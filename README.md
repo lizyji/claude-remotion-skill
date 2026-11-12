@@ -15,6 +15,10 @@
 
 > A motion-graphics clip produced by Claude Code using this skill. ▶️ [Watch/download the full-quality MP4 (with audio)](https://github.com/haidrrrry/claude-remotion-skill/raw/main/demo.mp4)
 
+## 🇲🇽 MNC Reels
+
+[`mnc-reels/`](mnc-reels/) es un proyecto Remotion para editar los reels verticales de Manuel NoCode con el MNC Design System: plantilla, scripts de recorte de silencios y −14 LUFS, subtítulos y portada. Ver [`mnc-reels/README.md`](mnc-reels/README.md).
+
 ## 🤖 What is this? (TL;DR)
 
 **Claude Remotion Skill** is a free, open-source [agent skill](https://docs.anthropic.com/en/docs/claude-code) for Anthropic's Claude. You install it once, then ask Claude — in plain English — to make or fix a video, and Claude renders a finished, professionally animated clip using Remotion (React + TypeScript for video). It handles motion design, B-roll, captions, transitions, and sound design automatically.

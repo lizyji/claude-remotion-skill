@@ -1,0 +1,7 @@
+node_modules/
+out/
+public/reels/
+reels/*/raw/
+reels/*/work/
+public/musica-demo.wav
+__pycache__/
