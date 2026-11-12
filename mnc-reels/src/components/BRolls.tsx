@@ -3,6 +3,7 @@ import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideo
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
+import { Barras, Fabrica, Linea, TextoGrande } from "./Graficos";
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -59,12 +60,76 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       const [z0, z1] = b.zoom ?? [1, 1.08];
       const z = interpolate(frame, [0, dur], [z0, z1], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const [fx, fy] = b.foco ?? [50, 50];
+      const [px0, py0, px1, py1] = b.paneo ?? [fx, fy, fx, fy];
+      const k = interpolate(frame, [0, dur], [0, 1], { extrapolateRight: "clamp", easing: theme.ease.inOut });
+      const ox = px0 + (px1 - px0) * k;
+      const oy = py0 + (py1 - py0) * k;
+      const gris = b.apaga
+        ? interpolate(frame, [b.apaga[0] * fps, b.apaga[1] * fps], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" })
+        : 0;
+      const sp = b.sello ? spring({ frame: frame - Math.round(b.sello.en * fps), fps, config: theme.spring.golpe }) : 0;
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco }}>
+        <div style={{ width: 960, height: b.alto ?? 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco, position: "relative" }}>
           <Img
             src={staticFile(b.src)}
-            style={{ width: "100%", height: "100%", objectFit: b.fit ?? "cover", transform: `scale(${z})`, transformOrigin: `${fx}% ${fy}%` }}
+            style={{
+              width: "100%",
+              height: "100%",
+              objectFit: b.fit ?? "cover",
+              objectPosition: `${ox}% ${oy}%`,
+              transform: `scale(${z})`,
+              transformOrigin: `${ox}% ${oy}%`,
+              filter: gris ? `grayscale(${gris}) brightness(${1 - 0.25 * gris})` : undefined,
+            }}
           />
+          {b.sello ? (
+            <div
+              style={{
+                position: "absolute",
+                inset: 0,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                opacity: Math.min(1, sp * 2),
+                transform: `scale(${interpolate(sp, [0, 1], [2.4, 1])}) rotate(-8deg)`,
+              }}
+            >
+              <div
+                style={{
+                  fontFamily: font.titulo,
+                  fontWeight: 700,
+                  fontSize: 230,
+                  lineHeight: 1,
+                  color: color.naranja,
+                  WebkitTextStroke: `8px ${color.negro}`,
+                  paintOrder: "stroke fill",
+                  border: `12px solid ${color.naranja}`,
+                  outline: `5px solid ${color.negro}`,
+                  borderRadius: 30,
+                  padding: "10px 50px 20px",
+                  background: color.blanco,
+                }}
+              >
+                {b.sello.texto}
+              </div>
+            </div>
+          ) : null}
+          {b.etiquetas ? (
+            <div style={{ position: "absolute", left: 0, right: 0, bottom: 30, display: "flex", justifyContent: "center", flexWrap: "wrap", gap: 16 }}>
+              {b.etiquetas.map((e, i) => {
+                const pe = spring({ frame: frame - Math.round(e.en * fps), fps, config: theme.spring.golpe });
+                return (
+                  <Pildora
+                    key={i}
+                    tono={e.tono ?? "naranja"}
+                    style={{ border: theme.card.border, fontSize: 38, opacity: Math.min(1, pe * 2), transform: `scale(${interpolate(pe, [0, 1], [0.4, 1])})` }}
+                  >
+                    {e.texto}
+                  </Pildora>
+                );
+              })}
+            </div>
+          ) : null}
         </div>
       );
       break;
@@ -131,7 +196,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
         <Tarjeta style={{ width: 920 }}>
           {b.titulo ? <Titulo size={56} style={{ marginBottom: 30 }}>{b.titulo}</Titulo> : null}
           {b.items.map((it, i) => {
-            const pi = spring({ frame: frame - Math.round((0.35 + i * cada) * fps), fps, config: theme.spring.suave });
+            const pi = spring({ frame: frame - Math.round((b.tiempos ? b.tiempos[i] : 0.35 + i * cada) * fps), fps, config: theme.spring.suave });
             return (
               <div
                 key={i}
@@ -151,10 +216,32 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
               </div>
             );
           })}
+          {b.remate
+            ? (() => {
+                const pr = spring({ frame: frame - Math.round(b.remate.en * fps), fps, config: theme.spring.golpe });
+                return (
+                  <div style={{ marginTop: 26, opacity: Math.min(1, pr * 2), transform: `scale(${interpolate(pr, [0, 1], [1.5, 1])})`, transformOrigin: "left center" }}>
+                    <Pildora style={{ fontSize: 44, border: theme.card.border }}>{b.remate.texto}</Pildora>
+                  </div>
+                );
+              })()
+            : null}
         </Tarjeta>
       );
       break;
     }
+    case "barras":
+      body = <Barras titulo={b.titulo} barras={b.barras} maximo={b.maximo} reescala={b.reescala} delta={b.delta} />;
+      break;
+    case "linea":
+      body = <Linea titulo={b.titulo} hitos={b.hitos} nota={b.nota} />;
+      break;
+    case "fabrica":
+      body = <Fabrica izq={b.izq} der={b.der} apaga={b.apaga} enciende={b.enciende} />;
+      break;
+    case "texto":
+      body = <TextoGrande lineas={b.lineas} resalta={b.resalta} size={b.size} pildora={b.pildora} />;
+      break;
     case "tarjeta":
       body = (
         <Tarjeta style={{ width: 940, padding: "56px 56px" }}>
