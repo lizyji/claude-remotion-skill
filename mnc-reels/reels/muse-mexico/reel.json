@@ -45,7 +45,7 @@
         }
       ],
       "tiempos": [
-        1.1799999999999993,
+        0.15,
         2.5700000000000003
       ]
     },
@@ -150,7 +150,7 @@
       "id": "T5_B14_primero_lea",
       "tipo": "texto",
       "start": 53.519,
-      "end": 56.319,
+      "end": 56.669,
       "lineas": [
         "Primero que lea.",
         "Después que mande."

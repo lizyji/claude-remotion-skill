@@ -200,21 +200,28 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
             const ti = b.tiempos?.[i] ?? 0.35 + i * cada;
             const pi = spring({ frame: frame - Math.round(ti * fps), fps, config: theme.spring.suave });
             return (
-              <div
-                key={i}
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  gap: 22,
-                  margin: "20px 0",
-                  opacity: pi,
-                  transform: `translateX(${interpolate(pi, [0, 1], [40, 0])}px) scale(${interpolate(pi, [0, 1], [0.94, 1])})`,
-                }}
-              >
-                {b.check !== false ? <Check p={pi} size={64} /> : <Pildora style={{ padding: "6px 18px" }}>{i + 1}</Pildora>}
-                <span style={{ fontFamily: font.texto, fontWeight: 600, fontSize: 48, color: color.negro }}>
-                  <ConIA texto={it} />
-                </span>
+              <div key={i} style={{ position: "relative", margin: "20px 0", height: 72 }}>
+                {/* lugar reservado: círculo y barra grises hasta que Manuel dice el punto */}
+                <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", gap: 22, opacity: 1 - Math.min(1, pi * 1.5) }}>
+                  <div style={{ width: 64, height: 64, borderRadius: 32, border: `4px solid ${color.verde}`, boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", fontFamily: font.texto, fontWeight: 600, fontSize: 32, color: color.gris }}>{i + 1}</div>
+                  <div style={{ height: 22, width: 420 - i * 60, borderRadius: 11, background: color.verde }} />
+                </div>
+                <div
+                  style={{
+                    position: "absolute",
+                    inset: 0,
+                    display: "flex",
+                    alignItems: "center",
+                    gap: 22,
+                    opacity: pi,
+                    transform: `translateX(${interpolate(pi, [0, 1], [40, 0])}px) scale(${interpolate(pi, [0, 1], [0.94, 1])})`,
+                  }}
+                >
+                  {b.check !== false ? <Check p={pi} size={64} /> : <Pildora style={{ padding: "6px 18px" }}>{i + 1}</Pildora>}
+                  <span style={{ fontFamily: font.texto, fontWeight: 600, fontSize: 48, color: color.negro }}>
+                    <ConIA texto={it} />
+                  </span>
+                </div>
               </div>
             );
           })}

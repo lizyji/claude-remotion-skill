@@ -122,7 +122,7 @@ add(id="T1_B2_video_meta", tipo="video", start=t("que manda correos"), end=t("pe
 s = t("pero te da")
 add(id="T2_B3_acceso_correo_tarjeta", tipo="pregunta", start=s, end=t("Ningún dueño"),
     items=[{"icono": "sobre", "texto": "¿Acceso a tu correo?"}, {"icono": "tarjeta", "texto": "¿A tu tarjeta?"}],
-    tiempos=[t("acceso") - s - 0.1, t("tarjeta") - s - 0.25])
+    tiempos=[0.15, t("tarjeta") - s - 0.25])
 s = t("Ningún dueño")
 add(id="T2_B4_correo_error_carrito", tipo="correo", start=s, end=t("Lo interesante"), carritoEn=t("o que compre") - s, fuente="Ejemplo ilustrativo")
 # TOMA 3
@@ -142,7 +142,7 @@ add(id="T5_B12_B13_checklist", tipo="lista", start=s, end=t("Y empieza"), titulo
     items=["Qué puede tocar", "Qué necesita tu visto bueno", "Dónde queda el registro"],
     tiempos=[t("Qué puede tocar") - s, t("Qué necesita") - s, t("Y dónde queda") - s])
 s = t("Y empieza")
-add(id="T5_B14_primero_lea", tipo="texto", start=s, end=cierre, lineas=["Primero que lea.", "Después que mande."], naranja=["lea.", "mande."],
+add(id="T5_B14_primero_lea", tipo="texto", start=s, end=cierre + 0.35, lineas=["Primero que lea.", "Después que mande."], naranja=["lea.", "mande."],
     cada=t("que mande") - s - 0.1, size=92)
 
 reel["palabras"] = P
