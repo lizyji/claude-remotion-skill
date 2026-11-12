@@ -8,6 +8,8 @@ const intervalosPanel = (reel: Reel) => {
   const xs = reel.broll
     .filter((b) => b.tipo !== "silueta")
     .map((b) => [b.start, b.end] as [number, number])
+    // los golpes tapan todo: el panel sigue detrás para que Manuel no brinque de encuadre
+    .concat(reel.golpes.map((g) => [g.start, g.end] as [number, number]))
     .sort((a, b) => a[0] - b[0]);
   const merged: [number, number][] = [];
   for (const x of xs) {
