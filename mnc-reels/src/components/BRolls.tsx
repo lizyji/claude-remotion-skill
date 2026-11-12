@@ -3,6 +3,7 @@ import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideo
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
+import { Animacion } from "./Animaciones";
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -59,12 +60,21 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       const [z0, z1] = b.zoom ?? [1, 1.08];
       const z = interpolate(frame, [0, dur], [z0, z1], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const [fx, fy] = b.foco ?? [50, 50];
+      const m = b.marco ?? { w: 960, h: 600 };
+      const pe = spring({ frame: frame - Math.round((b.etiquetaEn ?? 0.4) * fps), fps, config: theme.spring.golpe });
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco }}>
-          <Img
-            src={staticFile(b.src)}
-            style={{ width: "100%", height: "100%", objectFit: b.fit ?? "cover", transform: `scale(${z})`, transformOrigin: `${fx}% ${fy}%` }}
-          />
+        <div style={{ position: "relative", width: m.w, height: m.h }}>
+          <div style={{ width: m.w, height: m.h, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: b.fondo ?? color.blanco, boxSizing: "border-box" }}>
+            <Img
+              src={staticFile(b.src)}
+              style={{ width: "100%", height: "100%", objectFit: b.fit ?? "cover", transform: `scale(${z})`, transformOrigin: `${fx}% ${fy}%` }}
+            />
+          </div>
+          {b.etiqueta ? (
+            <div style={{ position: "absolute", left: 0, right: 0, bottom: -34, display: "flex", justifyContent: "center", opacity: Math.min(1, pe * 1.5), transform: `scale(${interpolate(pe, [0, 1], [1.5, 1])})` }}>
+              <Pildora style={{ fontSize: 40, border: `3px solid ${color.negro}` }}>{b.etiqueta}</Pildora>
+            </div>
+          ) : null}
         </div>
       );
       break;
@@ -96,7 +106,8 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
     case "logo":
       body = (
         <Tarjeta style={{ width: 760, display: "flex", flexDirection: "column", alignItems: "center", gap: 30 }}>
-          <Img src={staticFile(b.src)} style={{ maxWidth: 560, maxHeight: 240, objectFit: "contain" }} />
+          <Img src={staticFile(b.src)} style={{ maxWidth: 560, maxHeight: 300, objectFit: "contain", transform: `scale(${interpolate(frame, [0, dur], [1, 1.08])})` }} />
+          {b.nombre ? <Titulo size={80}>{b.nombre}</Titulo> : null}
           {b.etiqueta ? <Pildora>{b.etiqueta}</Pildora> : null}
         </Tarjeta>
       );
@@ -131,7 +142,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
         <Tarjeta style={{ width: 920 }}>
           {b.titulo ? <Titulo size={56} style={{ marginBottom: 30 }}>{b.titulo}</Titulo> : null}
           {b.items.map((it, i) => {
-            const pi = spring({ frame: frame - Math.round((0.35 + i * cada) * fps), fps, config: theme.spring.suave });
+            const pi = spring({ frame: frame - Math.round((b.en ? b.en[i] : 0.35 + i * cada) * fps), fps, config: theme.spring.suave });
             return (
               <div
                 key={i}
@@ -172,6 +183,8 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       break;
     case "silueta":
       return null; // se dibuja a pantalla completa en Reel.tsx
+    default:
+      body = <Animacion b={b} />;
   }
 
   return (

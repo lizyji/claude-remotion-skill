@@ -25,7 +25,9 @@ def extraer_audio(video, desde=None, hasta=None):
         cmd += ["-ss", str(desde)]
     if hasta is not None:
         cmd += ["-to", str(hasta)] if desde is None else ["-t", str(hasta - desde)]
-    cmd += ["-i", str(video), "-ac", "1", "-ar", "16000", str(tmp)]
+    # aresample=async=1:first_pts=0 rellena con silencio si el audio arranca después del video
+    # (pasa en .MOV del iPhone: start_time del audio ≈ 0.7 s). Así los tiempos son los del video.
+    cmd += ["-i", str(video), "-af", "aresample=async=1:first_pts=0", "-ac", "1", "-ar", "16000", str(tmp)]
     sh(cmd)
     return tmp
 

@@ -1,0 +1,2914 @@
+{
+  "broll": [
+    {
+      "tipo": "logo",
+      "start": 0.0,
+      "end": 2.95,
+      "src": "reels/claude-duet/B1_logo_claude_duet.png",
+      "nombre": "Claude Duet",
+      "etiqueta": "Nuevo de Anthropic",
+      "fuente": "Fuente: Anthropic · claude.com/product/claude-duet",
+      "id": "T1_B1_logo"
+    },
+    {
+      "tipo": "imagen",
+      "start": 2.95,
+      "end": 5.85,
+      "src": "reels/claude-duet/B2_titular.png",
+      "fit": "contain",
+      "fondo": "#FAF9F5",
+      "zoom": [
+        1,
+        1.06
+      ],
+      "etiqueta": "21 oct 2026",
+      "etiquetaEn": 0.5,
+      "fuente": "Fuente: Anthropic, 21 oct 2026 · claude.com",
+      "id": "T1_B2_titular"
+    },
+    {
+      "tipo": "imagen",
+      "start": 5.85,
+      "end": 7.23,
+      "src": "reels/claude-duet/B3_producto.png",
+      "fit": "contain",
+      "fondo": "#FAF9F5",
+      "zoom": [
+        1,
+        1.08
+      ],
+      "foco": [
+        30,
+        30
+      ],
+      "fuente": "Fuente: Anthropic · claude.com/product/claude-duet",
+      "id": "T2_B3_producto"
+    },
+    {
+      "tipo": "imagen",
+      "start": 7.23,
+      "end": 9.73,
+      "src": "reels/claude-duet/B3_app_resumen.png",
+      "fit": "cover",
+      "fondo": "#FAF9F5",
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "foco": [
+        50,
+        0
+      ],
+      "etiqueta": "App aparte · celular y compu",
+      "etiquetaEn": 0.3,
+      "fuente": "Fuente: Anthropic · claude.com/product/claude-duet",
+      "id": "T2_B3_app"
+    },
+    {
+      "tipo": "conectar",
+      "start": 9.73,
+      "end": 14.8,
+      "centro": "Claude Duet",
+      "centroImg": "reels/claude-duet/B1_logo_claude_duet.png",
+      "items": [
+        {
+          "icono": "correo",
+          "texto": "Correo",
+          "en": 0.92
+        },
+        {
+          "icono": "calendario",
+          "texto": "Calendario",
+          "en": 1.54
+        },
+        {
+          "icono": "herramientas",
+          "texto": "Herramientas",
+          "en": 2.28
+        }
+      ],
+      "final": {
+        "texto": "Tu asistente",
+        "en": 4.36
+      },
+      "id": "T2_B4_conectar"
+    },
+    {
+      "tipo": "lista",
+      "start": 14.8,
+      "end": 16.75,
+      "items": [
+        "Revisa",
+        "Te avisa",
+        "Hace tareas"
+      ],
+      "en": [
+        0.1,
+        0.47,
+        1.01
+      ],
+      "id": "T2_B4b_revisa_avisa"
+    },
+    {
+      "tipo": "notificacion",
+      "start": 16.75,
+      "end": 22.33,
+      "antes": {
+        "icono": "sol",
+        "texto": "Te despiertas…",
+        "en": 0.49999999999999994
+      },
+      "titulo": "Esto necesita tu atención hoy",
+      "tituloEn": 2.06,
+      "items": [
+        {
+          "icono": "correo",
+          "texto": "Correo urgente",
+          "en": 3.0
+        },
+        {
+          "icono": "junta",
+          "texto": "Junta de hoy",
+          "en": 3.84
+        },
+        {
+          "icono": "pendiente",
+          "texto": "Pendiente",
+          "en": 4.74
+        }
+      ],
+      "id": "T3_B5_notificacion"
+    },
+    {
+      "tipo": "junta",
+      "start": 22.33,
+      "end": 24.51,
+      "pedido": "Prepárame algo",
+      "salida": "Te vas a tu junta",
+      "salidaEn": 1.36,
+      "barra": "Claude trabajando…",
+      "id": "T3_B6_junta"
+    },
+    {
+      "tipo": "nube",
+      "start": 24.51,
+      "end": 26.77,
+      "titulo": "En su propia compu en la nube",
+      "items": [
+        "Revisa",
+        "Prepara",
+        "Termina"
+      ],
+      "en": [
+        0.5,
+        1.12,
+        2.04
+      ],
+      "id": "T3_B7_nube"
+    },
+    {
+      "tipo": "candados",
+      "start": 26.77,
+      "end": 31.89,
+      "items": [
+        {
+          "texto": "Mandar",
+          "en": 1.58
+        },
+        {
+          "texto": "Pagar",
+          "en": 2.24
+        },
+        {
+          "texto": "Firmar",
+          "en": 3.08
+        },
+        {
+          "texto": "Borrar",
+          "en": 3.54
+        }
+      ],
+      "sello": "Te pide permiso",
+      "selloEn": 4.28,
+      "id": "T4_B8_candados"
+    },
+    {
+      "tipo": "imagen",
+      "start": 31.89,
+      "end": 34.01,
+      "src": "reels/claude-duet/B9_aprobar.png",
+      "fit": "contain",
+      "fondo": "#FAF9F5",
+      "zoom": [
+        1,
+        1.05
+      ],
+      "marco": {
+        "w": 860,
+        "h": 540
+      },
+      "etiqueta": "Tú tienes la última palabra",
+      "etiquetaEn": 1.34,
+      "fuente": "Fuente: Anthropic · claude.com/product/claude-duet",
+      "id": "T4_B9_aprobar"
+    },
+    {
+      "tipo": "contraste",
+      "start": 36.07,
+      "end": 38.59,
+      "pildora": "Mi consejo",
+      "no": "Las decisiones",
+      "noEn": 0.94,
+      "si": "La revisada",
+      "siEn": 1.48,
+      "id": "T5_B11a_consejo"
+    },
+    {
+      "tipo": "columnas",
+      "start": 40.98,
+      "end": 47.29,
+      "izq": {
+        "titulo": "Claude revisa",
+        "en": 0.0,
+        "items": [
+          {
+            "icono": "correo",
+            "texto": "Correos",
+            "en": 0.74
+          },
+          {
+            "icono": "pendiente",
+            "texto": "Pendientes",
+            "en": 1.39
+          },
+          {
+            "icono": "campana",
+            "texto": "Avisos",
+            "en": 2.25
+          }
+        ]
+      },
+      "der": {
+        "titulo": "Tú decides",
+        "en": 3.97,
+        "items": [
+          {
+            "icono": "ojo",
+            "texto": "Lo que necesita tu criterio",
+            "en": 5.27
+          }
+        ]
+      },
+      "id": "T5_B11_columnas"
+    },
+    {
+      "tipo": "imagen",
+      "start": 47.29,
+      "end": 51.11,
+      "src": "reels/claude-duet/B12_lista_espera.png",
+      "fit": "contain",
+      "fondo": "#FAF9F5",
+      "zoom": [
+        1,
+        1.06
+      ],
+      "marco": {
+        "w": 960,
+        "h": 420
+      },
+      "etiqueta": "Lista de espera",
+      "etiquetaEn": 1.7,
+      "fuente": "Fuente: Anthropic, 21 oct 2026 · claude.com",
+      "id": "T6_B12_lista_espera"
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "jugada",
+      "start": 34.01,
+      "end": 36.07,
+      "arriba": "Esto me voló",
+      "abajo": "la cabeza",
+      "id": "T5_B10_me_volo_la_cabeza"
+    },
+    {
+      "tipo": "cierre",
+      "start": 51.11,
+      "end": 55.2,
+      "id": "T6_B13_frase_cierre"
+    }
+  ],
+  "pasos": [],
+  "sfx": [],
+  "slug": "claude-duet",
+  "duracion": 55.2,
+  "manuel": "reels/claude-duet/manuel.mp4",
+  "cortes": [
+    14.72,
+    16.62,
+    27.0,
+    40.9,
+    41.64
+  ],
+  "palabras": [
+    {
+      "w": "Anthropic",
+      "start": 0.08,
+      "end": 0.21,
+      "prob": 1
+    },
+    {
+      "w": "acaba",
+      "start": 0.21,
+      "end": 0.45,
+      "prob": 0.997
+    },
+    {
+      "w": "de",
+      "start": 0.45,
+      "end": 0.63,
+      "prob": 1.0
+    },
+    {
+      "w": "sacar",
+      "start": 0.63,
+      "end": 0.83,
+      "prob": 0.999
+    },
+    {
+      "w": "un",
+      "start": 1.01,
+      "end": 1.15,
+      "prob": 0.999
+    },
+    {
+      "w": "Claude",
+      "start": 1.15,
+      "end": 1.47,
+      "prob": 0.894
+    },
+    {
+      "w": "que",
+      "start": 1.47,
+      "end": 1.67,
+      "prob": 0.986
+    },
+    {
+      "w": "no",
+      "start": 1.67,
+      "end": 1.83,
+      "prob": 1.0
+    },
+    {
+      "w": "espera",
+      "start": 1.83,
+      "end": 2.07,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 2.07,
+      "end": 2.29,
+      "prob": 0.977
+    },
+    {
+      "w": "le",
+      "start": 2.29,
+      "end": 2.41,
+      "prob": 1.0
+    },
+    {
+      "w": "preguntes,",
+      "start": 2.41,
+      "end": 2.93,
+      "prob": 0.999
+    },
+    {
+      "w": "te",
+      "start": 2.95,
+      "end": 3.11,
+      "prob": 1.0
+    },
+    {
+      "w": "dice",
+      "start": 3.11,
+      "end": 3.31,
+      "prob": 1.0
+    },
+    {
+      "w": "qué",
+      "start": 3.31,
+      "end": 3.49,
+      "prob": 0.644
+    },
+    {
+      "w": "necesita",
+      "start": 3.49,
+      "end": 3.79,
+      "prob": 0.997
+    },
+    {
+      "w": "tu",
+      "start": 3.79,
+      "end": 4.05,
+      "prob": 1.0
+    },
+    {
+      "w": "atención",
+      "start": 4.05,
+      "end": 4.25,
+      "prob": 1.0
+    },
+    {
+      "w": "antes",
+      "start": 4.25,
+      "end": 4.85,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 4.85,
+      "end": 5.11,
+      "prob": 0.999
+    },
+    {
+      "w": "que",
+      "start": 5.11,
+      "end": 5.25,
+      "prob": 1.0
+    },
+    {
+      "w": "tú",
+      "start": 5.25,
+      "end": 5.41,
+      "prob": 0.833
+    },
+    {
+      "w": "lo",
+      "start": 5.41,
+      "end": 5.55,
+      "prob": 1.0
+    },
+    {
+      "w": "veas.",
+      "start": 5.55,
+      "end": 5.79,
+      "prob": 1.0
+    },
+    {
+      "w": "Se",
+      "start": 5.85,
+      "end": 6.25,
+      "prob": 1.0
+    },
+    {
+      "w": "llama",
+      "start": 6.28,
+      "end": 6.39,
+      "prob": 1.0
+    },
+    {
+      "w": "Claude",
+      "start": 6.39,
+      "end": 6.79,
+      "prob": 0.997
+    },
+    {
+      "w": "Duet,",
+      "start": 6.79,
+      "end": 7.09,
+      "prob": 0.574
+    },
+    {
+      "w": "es",
+      "start": 7.23,
+      "end": 7.49,
+      "prob": 1.0
+    },
+    {
+      "w": "una",
+      "start": 7.49,
+      "end": 7.63,
+      "prob": 1.0
+    },
+    {
+      "w": "app",
+      "start": 7.63,
+      "end": 7.91,
+      "prob": 0.999
+    },
+    {
+      "w": "aparte",
+      "start": 7.91,
+      "end": 8.51,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 8.51,
+      "end": 8.53,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 8.53,
+      "end": 8.63,
+      "prob": 1.0
+    },
+    {
+      "w": "celular",
+      "start": 8.63,
+      "end": 8.85,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 8.85,
+      "end": 9.15,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 9.15,
+      "end": 9.23,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 9.23,
+      "end": 9.31,
+      "prob": 1.0
+    },
+    {
+      "w": "compu,",
+      "start": 9.31,
+      "end": 9.69,
+      "prob": 0.991
+    },
+    {
+      "w": "la",
+      "start": 9.73,
+      "end": 10.07,
+      "prob": 1.0
+    },
+    {
+      "w": "conectas",
+      "start": 10.07,
+      "end": 10.49,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 10.49,
+      "end": 10.55,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 10.55,
+      "end": 10.65,
+      "prob": 1.0
+    },
+    {
+      "w": "correo,",
+      "start": 10.65,
+      "end": 11.13,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 11.13,
+      "end": 11.27,
+      "prob": 1.0
+    },
+    {
+      "w": "calendario,",
+      "start": 11.27,
+      "end": 11.81,
+      "prob": 1.0
+    },
+    {
+      "w": "tus",
+      "start": 11.87,
+      "end": 12.01,
+      "prob": 1.0
+    },
+    {
+      "w": "herramientas",
+      "start": 12.01,
+      "end": 12.63,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 12.63,
+      "end": 12.77,
+      "prob": 0.975
+    },
+    {
+      "w": "Claude",
+      "start": 12.77,
+      "end": 13.05,
+      "prob": 1.0
+    },
+    {
+      "w": "empieza",
+      "start": 13.05,
+      "end": 13.23,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 13.23,
+      "end": 13.41,
+      "prob": 1.0
+    },
+    {
+      "w": "trabajar",
+      "start": 13.41,
+      "end": 13.65,
+      "prob": 1.0
+    },
+    {
+      "w": "como",
+      "start": 13.65,
+      "end": 13.97,
+      "prob": 1.0
+    },
+    {
+      "w": "un",
+      "start": 13.97,
+      "end": 14.09,
+      "prob": 1.0
+    },
+    {
+      "w": "asistente.",
+      "start": 14.09,
+      "end": 14.51,
+      "prob": 1.0
+    },
+    {
+      "w": "Revisa,",
+      "start": 14.8,
+      "end": 15.19,
+      "prob": 0.995
+    },
+    {
+      "w": "te",
+      "start": 15.23,
+      "end": 15.37,
+      "prob": 1.0
+    },
+    {
+      "w": "avisa",
+      "start": 15.37,
+      "end": 15.69,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 15.69,
+      "end": 15.91,
+      "prob": 1.0
+    },
+    {
+      "w": "hace",
+      "start": 15.91,
+      "end": 16.05,
+      "prob": 1.0
+    },
+    {
+      "w": "tareas.",
+      "start": 16.05,
+      "end": 16.47,
+      "prob": 1.0
+    },
+    {
+      "w": "Imagínate,",
+      "start": 16.75,
+      "end": 17.15,
+      "prob": 0.999
+    },
+    {
+      "w": "te",
+      "start": 17.25,
+      "end": 17.45,
+      "prob": 1.0
+    },
+    {
+      "w": "despiertas",
+      "start": 17.45,
+      "end": 18.01,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 18.01,
+      "end": 18.15,
+      "prob": 1.0
+    },
+    {
+      "w": "Claude",
+      "start": 18.15,
+      "end": 18.41,
+      "prob": 1.0
+    },
+    {
+      "w": "ya",
+      "start": 18.41,
+      "end": 18.55,
+      "prob": 1.0
+    },
+    {
+      "w": "te",
+      "start": 18.55,
+      "end": 18.61,
+      "prob": 1.0
+    },
+    {
+      "w": "dejó",
+      "start": 18.61,
+      "end": 18.81,
+      "prob": 0.997
+    },
+    {
+      "w": "lo",
+      "start": 18.81,
+      "end": 18.89,
+      "prob": 1.0
+    },
+    {
+      "w": "importante",
+      "start": 18.89,
+      "end": 19.21,
+      "prob": 1.0
+    },
+    {
+      "w": "del",
+      "start": 19.21,
+      "end": 19.45,
+      "prob": 1.0
+    },
+    {
+      "w": "día,",
+      "start": 19.45,
+      "end": 19.59,
+      "prob": 1.0
+    },
+    {
+      "w": "qué",
+      "start": 19.67,
+      "end": 19.75,
+      "prob": 0.467
+    },
+    {
+      "w": "correo",
+      "start": 19.75,
+      "end": 20.11,
+      "prob": 0.998
+    },
+    {
+      "w": "urge,",
+      "start": 20.11,
+      "end": 20.31,
+      "prob": 0.984
+    },
+    {
+      "w": "qué",
+      "start": 20.49,
+      "end": 20.59,
+      "prob": 0.985
+    },
+    {
+      "w": "junta",
+      "start": 20.59,
+      "end": 20.89,
+      "prob": 1.0
+    },
+    {
+      "w": "tienes,",
+      "start": 20.89,
+      "end": 21.11,
+      "prob": 1.0
+    },
+    {
+      "w": "qué",
+      "start": 21.39,
+      "end": 21.49,
+      "prob": 0.998
+    },
+    {
+      "w": "quedó",
+      "start": 21.49,
+      "end": 21.75,
+      "prob": 0.946
+    },
+    {
+      "w": "pendiente,",
+      "start": 21.75,
+      "end": 22.19,
+      "prob": 1.0
+    },
+    {
+      "w": "le",
+      "start": 22.33,
+      "end": 22.67,
+      "prob": 1.0
+    },
+    {
+      "w": "pides",
+      "start": 22.67,
+      "end": 22.95,
+      "prob": 0.999
+    },
+    {
+      "w": "que",
+      "start": 22.95,
+      "end": 23.05,
+      "prob": 1.0
+    },
+    {
+      "w": "prepare",
+      "start": 23.05,
+      "end": 23.25,
+      "prob": 0.987
+    },
+    {
+      "w": "algo,",
+      "start": 23.25,
+      "end": 23.57,
+      "prob": 1.0
+    },
+    {
+      "w": "te",
+      "start": 23.69,
+      "end": 23.79,
+      "prob": 1.0
+    },
+    {
+      "w": "vas",
+      "start": 23.79,
+      "end": 23.97,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 23.97,
+      "end": 24.07,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 24.07,
+      "end": 24.19,
+      "prob": 1.0
+    },
+    {
+      "w": "junta",
+      "start": 24.19,
+      "end": 24.51,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 24.51,
+      "end": 24.61,
+      "prob": 0.999
+    },
+    {
+      "w": "él",
+      "start": 24.61,
+      "end": 24.69,
+      "prob": 0.986
+    },
+    {
+      "w": "sigue",
+      "start": 24.69,
+      "end": 24.85,
+      "prob": 1.0
+    },
+    {
+      "w": "trabajando",
+      "start": 24.85,
+      "end": 25.17,
+      "prob": 0.998
+    },
+    {
+      "w": "en",
+      "start": 25.17,
+      "end": 25.39,
+      "prob": 1.0
+    },
+    {
+      "w": "su",
+      "start": 25.39,
+      "end": 25.43,
+      "prob": 1.0
+    },
+    {
+      "w": "propia",
+      "start": 25.43,
+      "end": 25.63,
+      "prob": 0.999
+    },
+    {
+      "w": "computadora",
+      "start": 25.63,
+      "end": 26.19,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 26.19,
+      "end": 26.47,
+      "prob": 0.982
+    },
+    {
+      "w": "la",
+      "start": 26.47,
+      "end": 26.55,
+      "prob": 0.999
+    },
+    {
+      "w": "nube.",
+      "start": 26.55,
+      "end": 26.77,
+      "prob": 0.996
+    },
+    {
+      "w": "Y",
+      "start": 26.77,
+      "end": 26.9,
+      "prob": 0.863
+    },
+    {
+      "w": "lo",
+      "start": 27.08,
+      "end": 27.19,
+      "prob": 0.999
+    },
+    {
+      "w": "que",
+      "start": 27.19,
+      "end": 27.31,
+      "prob": 1.0
+    },
+    {
+      "w": "me",
+      "start": 27.31,
+      "end": 27.45,
+      "prob": 1.0
+    },
+    {
+      "w": "gustó,",
+      "start": 27.45,
+      "end": 27.79,
+      "prob": 1.0
+    },
+    {
+      "w": "antes",
+      "start": 27.81,
+      "end": 28.21,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 28.21,
+      "end": 28.35,
+      "prob": 1.0
+    },
+    {
+      "w": "mandar",
+      "start": 28.35,
+      "end": 28.53,
+      "prob": 0.998
+    },
+    {
+      "w": "un",
+      "start": 28.53,
+      "end": 28.65,
+      "prob": 1.0
+    },
+    {
+      "w": "mensaje,",
+      "start": 28.65,
+      "end": 28.97,
+      "prob": 1.0
+    },
+    {
+      "w": "pagar",
+      "start": 29.01,
+      "end": 29.31,
+      "prob": 1.0
+    },
+    {
+      "w": "algo",
+      "start": 29.31,
+      "end": 29.65,
+      "prob": 1.0
+    },
+    {
+      "w": "o",
+      "start": 29.65,
+      "end": 29.85,
+      "prob": 0.763
+    },
+    {
+      "w": "firmar",
+      "start": 29.85,
+      "end": 30.19,
+      "prob": 1.0
+    },
+    {
+      "w": "o",
+      "start": 30.19,
+      "end": 30.31,
+      "prob": 0.997
+    },
+    {
+      "w": "borrar",
+      "start": 30.31,
+      "end": 30.57,
+      "prob": 0.999
+    },
+    {
+      "w": "tu",
+      "start": 30.57,
+      "end": 30.69,
+      "prob": 1.0
+    },
+    {
+      "w": "información,",
+      "start": 30.69,
+      "end": 30.89,
+      "prob": 1.0
+    },
+    {
+      "w": "te",
+      "start": 31.05,
+      "end": 31.23,
+      "prob": 0.999
+    },
+    {
+      "w": "pide",
+      "start": 31.23,
+      "end": 31.47,
+      "prob": 1.0
+    },
+    {
+      "w": "permiso",
+      "start": 31.47,
+      "end": 31.89,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 31.89,
+      "end": 32.21,
+      "prob": 0.995
+    },
+    {
+      "w": "tú",
+      "start": 32.21,
+      "end": 32.41,
+      "prob": 0.996
+    },
+    {
+      "w": "sigues",
+      "start": 32.41,
+      "end": 32.73,
+      "prob": 1.0
+    },
+    {
+      "w": "teniendo",
+      "start": 32.73,
+      "end": 32.99,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 32.99,
+      "end": 33.23,
+      "prob": 1.0
+    },
+    {
+      "w": "última",
+      "start": 33.23,
+      "end": 33.45,
+      "prob": 1.0
+    },
+    {
+      "w": "palabra.",
+      "start": 33.45,
+      "end": 33.77,
+      "prob": 1.0
+    },
+    {
+      "w": "Y",
+      "start": 34.01,
+      "end": 34.25,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 34.25,
+      "end": 34.37,
+      "prob": 1.0
+    },
+    {
+      "w": "mí",
+      "start": 34.37,
+      "end": 34.51,
+      "prob": 1.0
+    },
+    {
+      "w": "esto",
+      "start": 34.51,
+      "end": 34.95,
+      "prob": 0.719
+    },
+    {
+      "w": "es",
+      "start": 34.95,
+      "end": 35.05,
+      "prob": 1.0
+    },
+    {
+      "w": "lo",
+      "start": 35.05,
+      "end": 35.11,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 35.11,
+      "end": 35.21,
+      "prob": 1.0
+    },
+    {
+      "w": "me",
+      "start": 35.21,
+      "end": 35.33,
+      "prob": 1.0
+    },
+    {
+      "w": "voló",
+      "start": 35.33,
+      "end": 35.51,
+      "prob": 0.997
+    },
+    {
+      "w": "la",
+      "start": 35.51,
+      "end": 35.59,
+      "prob": 0.998
+    },
+    {
+      "w": "cabeza,",
+      "start": 35.59,
+      "end": 35.81,
+      "prob": 1.0
+    },
+    {
+      "w": "no",
+      "start": 36.07,
+      "end": 36.35,
+      "prob": 1.0
+    },
+    {
+      "w": "le",
+      "start": 36.36,
+      "end": 36.49,
+      "prob": 1.0
+    },
+    {
+      "w": "delegues",
+      "start": 36.49,
+      "end": 36.87,
+      "prob": 0.952
+    },
+    {
+      "w": "las",
+      "start": 36.87,
+      "end": 37.01,
+      "prob": 1.0
+    },
+    {
+      "w": "decisiones,",
+      "start": 37.01,
+      "end": 37.55,
+      "prob": 1.0
+    },
+    {
+      "w": "delégale",
+      "start": 37.55,
+      "end": 37.95,
+      "prob": 0.839
+    },
+    {
+      "w": "la",
+      "start": 37.95,
+      "end": 38.07,
+      "prob": 1.0
+    },
+    {
+      "w": "revisada,",
+      "start": 38.07,
+      "end": 38.49,
+      "prob": 1.0
+    },
+    {
+      "w": "todo",
+      "start": 38.59,
+      "end": 38.79,
+      "prob": 1.0
+    },
+    {
+      "w": "esto",
+      "start": 38.79,
+      "end": 39.05,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 39.05,
+      "end": 39.19,
+      "prob": 1.0
+    },
+    {
+      "w": "revisas",
+      "start": 39.19,
+      "end": 39.45,
+      "prob": 0.834
+    },
+    {
+      "w": "a",
+      "start": 39.45,
+      "end": 39.57,
+      "prob": 0.99
+    },
+    {
+      "w": "diario",
+      "start": 39.57,
+      "end": 39.83,
+      "prob": 1.0
+    },
+    {
+      "w": "para",
+      "start": 39.83,
+      "end": 40.11,
+      "prob": 0.999
+    },
+    {
+      "w": "ver",
+      "start": 40.11,
+      "end": 40.29,
+      "prob": 1.0
+    },
+    {
+      "w": "si",
+      "start": 40.29,
+      "end": 40.41,
+      "prob": 1.0
+    },
+    {
+      "w": "hay",
+      "start": 40.41,
+      "end": 40.49,
+      "prob": 1.0
+    },
+    {
+      "w": "algo",
+      "start": 40.49,
+      "end": 40.69,
+      "prob": 1.0
+    },
+    {
+      "w": "importante:",
+      "start": 40.98,
+      "end": 41.53,
+      "prob": 0.994
+    },
+    {
+      "w": "correos,",
+      "start": 41.72,
+      "end": 42.35,
+      "prob": 1.0
+    },
+    {
+      "w": "pendientes,",
+      "start": 42.37,
+      "end": 43.19,
+      "prob": 1.0
+    },
+    {
+      "w": "avisos,",
+      "start": 43.23,
+      "end": 43.81,
+      "prob": 1.0
+    },
+    {
+      "w": "eso",
+      "start": 43.81,
+      "end": 44.09,
+      "prob": 1.0
+    },
+    {
+      "w": "es",
+      "start": 44.09,
+      "end": 44.19,
+      "prob": 1.0
+    },
+    {
+      "w": "lo",
+      "start": 44.19,
+      "end": 44.25,
+      "prob": 1.0
+    },
+    {
+      "w": "primero",
+      "start": 44.25,
+      "end": 44.49,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 44.49,
+      "end": 44.67,
+      "prob": 1.0
+    },
+    {
+      "w": "le",
+      "start": 44.67,
+      "end": 44.75,
+      "prob": 1.0
+    },
+    {
+      "w": "das",
+      "start": 44.75,
+      "end": 44.95,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 44.95,
+      "end": 45.13,
+      "prob": 0.99
+    },
+    {
+      "w": "tú",
+      "start": 45.13,
+      "end": 45.23,
+      "prob": 1.0
+    },
+    {
+      "w": "te",
+      "start": 45.23,
+      "end": 45.35,
+      "prob": 1.0
+    },
+    {
+      "w": "quedas",
+      "start": 45.35,
+      "end": 45.63,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 45.63,
+      "end": 45.73,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 45.73,
+      "end": 45.89,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 45.89,
+      "end": 46.05,
+      "prob": 1.0
+    },
+    {
+      "w": "sí",
+      "start": 46.05,
+      "end": 46.25,
+      "prob": 0.992
+    },
+    {
+      "w": "necesita",
+      "start": 46.25,
+      "end": 46.57,
+      "prob": 0.999
+    },
+    {
+      "w": "tu",
+      "start": 46.57,
+      "end": 46.71,
+      "prob": 1.0
+    },
+    {
+      "w": "criterio.",
+      "start": 46.71,
+      "end": 47.11,
+      "prob": 1.0
+    },
+    {
+      "w": "Por",
+      "start": 47.29,
+      "end": 47.69,
+      "prob": 1.0
+    },
+    {
+      "w": "ahora",
+      "start": 47.7,
+      "end": 47.97,
+      "prob": 1.0
+    },
+    {
+      "w": "está",
+      "start": 47.97,
+      "end": 48.37,
+      "prob": 0.87
+    },
+    {
+      "w": "en",
+      "start": 48.37,
+      "end": 48.55,
+      "prob": 1.0
+    },
+    {
+      "w": "prueba",
+      "start": 48.55,
+      "end": 48.73,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 48.73,
+      "end": 48.99,
+      "prob": 0.999
+    },
+    {
+      "w": "lista",
+      "start": 48.99,
+      "end": 49.19,
+      "prob": 0.998
+    },
+    {
+      "w": "de",
+      "start": 49.19,
+      "end": 49.31,
+      "prob": 1.0
+    },
+    {
+      "w": "espera,",
+      "start": 49.31,
+      "end": 49.49,
+      "prob": 1.0
+    },
+    {
+      "w": "apúntate",
+      "start": 49.63,
+      "end": 50.13,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 50.13,
+      "end": 50.39,
+      "prob": 1.0
+    },
+    {
+      "w": "empieza",
+      "start": 50.39,
+      "end": 50.67,
+      "prob": 1.0
+    },
+    {
+      "w": "por",
+      "start": 50.67,
+      "end": 50.85,
+      "prob": 1.0
+    },
+    {
+      "w": "ahí.",
+      "start": 50.85,
+      "end": 51.03,
+      "prob": 0.999
+    },
+    {
+      "w": "Si",
+      "start": 51.11,
+      "end": 51.31,
+      "prob": 0.994
+    },
+    {
+      "w": "todavía",
+      "start": 51.31,
+      "end": 51.61,
+      "prob": 1.0
+    },
+    {
+      "w": "no",
+      "start": 51.61,
+      "end": 51.83,
+      "prob": 1.0
+    },
+    {
+      "w": "sabes",
+      "start": 51.83,
+      "end": 52.01,
+      "prob": 1.0
+    },
+    {
+      "w": "cómo",
+      "start": 52.01,
+      "end": 52.23,
+      "prob": 0.999
+    },
+    {
+      "w": "implementar",
+      "start": 52.23,
+      "end": 52.73,
+      "prob": 0.936
+    },
+    {
+      "w": "IA",
+      "start": 52.73,
+      "end": 52.89,
+      "prob": 0.219
+    },
+    {
+      "w": "en",
+      "start": 52.89,
+      "end": 52.97,
+      "prob": 0.996
+    },
+    {
+      "w": "tu",
+      "start": 52.97,
+      "end": 53.01,
+      "prob": 1.0
+    },
+    {
+      "w": "negocio,",
+      "start": 53.01,
+      "end": 53.41,
+      "prob": 1.0
+    },
+    {
+      "w": "esta",
+      "start": 53.47,
+      "end": 53.77,
+      "prob": 1.0
+    },
+    {
+      "w": "cuenta",
+      "start": 53.77,
+      "end": 54.07,
+      "prob": 1.0
+    },
+    {
+      "w": "es",
+      "start": 54.07,
+      "end": 54.49,
+      "prob": 1.0
+    },
+    {
+      "w": "para",
+      "start": 54.49,
+      "end": 54.75,
+      "prob": 1.0
+    },
+    {
+      "w": "ti.",
+      "start": 54.75,
+      "end": 54.93,
+      "prob": 1.0
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.08,
+      "words": [
+        {
+          "w": "Anthropic",
+          "start": 0.08,
+          "key": true
+        },
+        {
+          "w": "acaba",
+          "start": 0.21
+        },
+        {
+          "w": "de",
+          "start": 0.45
+        },
+        {
+          "w": "sacar",
+          "start": 0.63
+        }
+      ],
+      "end": 1.01
+    },
+    {
+      "start": 1.01,
+      "words": [
+        {
+          "w": "un",
+          "start": 1.01
+        },
+        {
+          "w": "Claude",
+          "start": 1.15,
+          "key": true
+        },
+        {
+          "w": "que",
+          "start": 1.47
+        },
+        {
+          "w": "no",
+          "start": 1.67
+        },
+        {
+          "w": "espera",
+          "start": 1.83
+        }
+      ],
+      "end": 2.07
+    },
+    {
+      "start": 2.07,
+      "words": [
+        {
+          "w": "que",
+          "start": 2.07
+        },
+        {
+          "w": "le",
+          "start": 2.29
+        },
+        {
+          "w": "preguntes",
+          "start": 2.41,
+          "key": true
+        }
+      ],
+      "end": 2.95
+    },
+    {
+      "start": 2.95,
+      "words": [
+        {
+          "w": "te",
+          "start": 2.95
+        },
+        {
+          "w": "dice",
+          "start": 3.11
+        },
+        {
+          "w": "qué",
+          "start": 3.31
+        },
+        {
+          "w": "necesita",
+          "start": 3.49,
+          "key": true
+        }
+      ],
+      "end": 3.79
+    },
+    {
+      "start": 3.79,
+      "words": [
+        {
+          "w": "tu",
+          "start": 3.79
+        },
+        {
+          "w": "atención",
+          "start": 4.05,
+          "key": true
+        }
+      ],
+      "end": 4.25
+    },
+    {
+      "start": 4.25,
+      "words": [
+        {
+          "w": "antes",
+          "start": 4.25
+        },
+        {
+          "w": "de",
+          "start": 4.85
+        },
+        {
+          "w": "que",
+          "start": 5.11
+        }
+      ],
+      "end": 5.25
+    },
+    {
+      "start": 5.25,
+      "words": [
+        {
+          "w": "tú",
+          "start": 5.25
+        },
+        {
+          "w": "lo",
+          "start": 5.41
+        },
+        {
+          "w": "veas",
+          "start": 5.55,
+          "key": true
+        }
+      ],
+      "end": 5.85
+    },
+    {
+      "start": 5.85,
+      "words": [
+        {
+          "w": "Se",
+          "start": 5.85
+        },
+        {
+          "w": "llama",
+          "start": 6.28
+        },
+        {
+          "w": "Claude",
+          "start": 6.39,
+          "key": true
+        },
+        {
+          "w": "Duet",
+          "start": 6.79,
+          "key": true
+        }
+      ],
+      "end": 7.23
+    },
+    {
+      "start": 7.23,
+      "words": [
+        {
+          "w": "es",
+          "start": 7.23
+        },
+        {
+          "w": "una",
+          "start": 7.49
+        },
+        {
+          "w": "app",
+          "start": 7.63
+        },
+        {
+          "w": "aparte",
+          "start": 7.91,
+          "key": true
+        }
+      ],
+      "end": 8.51
+    },
+    {
+      "start": 8.51,
+      "words": [
+        {
+          "w": "en",
+          "start": 8.51
+        },
+        {
+          "w": "el",
+          "start": 8.53
+        },
+        {
+          "w": "celular",
+          "start": 8.63,
+          "key": true
+        }
+      ],
+      "end": 8.85
+    },
+    {
+      "start": 8.85,
+      "words": [
+        {
+          "w": "y",
+          "start": 8.85
+        },
+        {
+          "w": "en",
+          "start": 9.15
+        },
+        {
+          "w": "la",
+          "start": 9.23
+        },
+        {
+          "w": "compu",
+          "start": 9.31,
+          "key": true
+        }
+      ],
+      "end": 9.73
+    },
+    {
+      "start": 9.73,
+      "words": [
+        {
+          "w": "la",
+          "start": 9.73
+        },
+        {
+          "w": "conectas",
+          "start": 10.07,
+          "key": true
+        },
+        {
+          "w": "a",
+          "start": 10.49
+        },
+        {
+          "w": "tu",
+          "start": 10.55
+        },
+        {
+          "w": "correo",
+          "start": 10.65
+        }
+      ],
+      "end": 11.13
+    },
+    {
+      "start": 11.13,
+      "words": [
+        {
+          "w": "tu",
+          "start": 11.13
+        },
+        {
+          "w": "calendario",
+          "start": 11.27,
+          "key": true
+        }
+      ],
+      "end": 11.87
+    },
+    {
+      "start": 11.87,
+      "words": [
+        {
+          "w": "tus",
+          "start": 11.87
+        },
+        {
+          "w": "herramientas",
+          "start": 12.01,
+          "key": true
+        }
+      ],
+      "end": 12.63
+    },
+    {
+      "start": 12.63,
+      "words": [
+        {
+          "w": "y",
+          "start": 12.63
+        },
+        {
+          "w": "Claude",
+          "start": 12.77,
+          "key": true
+        },
+        {
+          "w": "empieza",
+          "start": 13.05
+        }
+      ],
+      "end": 13.23
+    },
+    {
+      "start": 13.23,
+      "words": [
+        {
+          "w": "a",
+          "start": 13.23
+        },
+        {
+          "w": "trabajar",
+          "start": 13.41
+        },
+        {
+          "w": "como",
+          "start": 13.65
+        }
+      ],
+      "end": 13.97
+    },
+    {
+      "start": 13.97,
+      "words": [
+        {
+          "w": "un",
+          "start": 13.97
+        },
+        {
+          "w": "asistente",
+          "start": 14.09,
+          "key": true
+        }
+      ],
+      "end": 14.8
+    },
+    {
+      "start": 14.8,
+      "words": [
+        {
+          "w": "Revisa",
+          "start": 14.8,
+          "key": true
+        },
+        {
+          "w": "te",
+          "start": 15.23
+        },
+        {
+          "w": "avisa",
+          "start": 15.37
+        }
+      ],
+      "end": 15.69
+    },
+    {
+      "start": 15.69,
+      "words": [
+        {
+          "w": "y",
+          "start": 15.69
+        },
+        {
+          "w": "hace",
+          "start": 15.91
+        },
+        {
+          "w": "tareas",
+          "start": 16.05,
+          "key": true
+        }
+      ],
+      "end": 16.75
+    },
+    {
+      "start": 16.75,
+      "words": [
+        {
+          "w": "Imagínate",
+          "start": 16.75,
+          "key": true
+        }
+      ],
+      "end": 17.25
+    },
+    {
+      "start": 17.25,
+      "words": [
+        {
+          "w": "te",
+          "start": 17.25
+        },
+        {
+          "w": "despiertas",
+          "start": 17.45,
+          "key": true
+        }
+      ],
+      "end": 18.01
+    },
+    {
+      "start": 18.01,
+      "words": [
+        {
+          "w": "y",
+          "start": 18.01
+        },
+        {
+          "w": "Claude",
+          "start": 18.15,
+          "key": true
+        },
+        {
+          "w": "ya",
+          "start": 18.41
+        },
+        {
+          "w": "te",
+          "start": 18.55
+        },
+        {
+          "w": "dejó",
+          "start": 18.61
+        }
+      ],
+      "end": 18.81
+    },
+    {
+      "start": 18.81,
+      "words": [
+        {
+          "w": "lo",
+          "start": 18.81
+        },
+        {
+          "w": "importante",
+          "start": 18.89,
+          "key": true
+        },
+        {
+          "w": "del",
+          "start": 19.21
+        },
+        {
+          "w": "día",
+          "start": 19.45
+        }
+      ],
+      "end": 19.67
+    },
+    {
+      "start": 19.67,
+      "words": [
+        {
+          "w": "qué",
+          "start": 19.67
+        },
+        {
+          "w": "correo",
+          "start": 19.75,
+          "key": true
+        },
+        {
+          "w": "urge",
+          "start": 20.11
+        }
+      ],
+      "end": 20.49
+    },
+    {
+      "start": 20.49,
+      "words": [
+        {
+          "w": "qué",
+          "start": 20.49
+        },
+        {
+          "w": "junta",
+          "start": 20.59,
+          "key": true
+        },
+        {
+          "w": "tienes",
+          "start": 20.89
+        }
+      ],
+      "end": 21.39
+    },
+    {
+      "start": 21.39,
+      "words": [
+        {
+          "w": "qué",
+          "start": 21.39
+        },
+        {
+          "w": "quedó",
+          "start": 21.49
+        },
+        {
+          "w": "pendiente",
+          "start": 21.75,
+          "key": true
+        }
+      ],
+      "end": 22.33
+    },
+    {
+      "start": 22.33,
+      "words": [
+        {
+          "w": "le",
+          "start": 22.33
+        },
+        {
+          "w": "pides",
+          "start": 22.67
+        },
+        {
+          "w": "que",
+          "start": 22.95
+        }
+      ],
+      "end": 23.05
+    },
+    {
+      "start": 23.05,
+      "words": [
+        {
+          "w": "prepare",
+          "start": 23.05,
+          "key": true
+        },
+        {
+          "w": "algo",
+          "start": 23.25
+        }
+      ],
+      "end": 23.69
+    },
+    {
+      "start": 23.69,
+      "words": [
+        {
+          "w": "te",
+          "start": 23.69
+        },
+        {
+          "w": "vas",
+          "start": 23.79
+        },
+        {
+          "w": "a",
+          "start": 23.97
+        },
+        {
+          "w": "tu",
+          "start": 24.07
+        },
+        {
+          "w": "junta",
+          "start": 24.19,
+          "key": true
+        }
+      ],
+      "end": 24.51
+    },
+    {
+      "start": 24.51,
+      "words": [
+        {
+          "w": "y",
+          "start": 24.51
+        },
+        {
+          "w": "él",
+          "start": 24.61
+        },
+        {
+          "w": "sigue",
+          "start": 24.69
+        },
+        {
+          "w": "trabajando",
+          "start": 24.85,
+          "key": true
+        }
+      ],
+      "end": 25.17
+    },
+    {
+      "start": 25.17,
+      "words": [
+        {
+          "w": "en",
+          "start": 25.17
+        },
+        {
+          "w": "su",
+          "start": 25.39
+        },
+        {
+          "w": "propia",
+          "start": 25.43
+        },
+        {
+          "w": "computadora",
+          "start": 25.63,
+          "key": true
+        }
+      ],
+      "end": 26.19
+    },
+    {
+      "start": 26.19,
+      "words": [
+        {
+          "w": "en",
+          "start": 26.19
+        },
+        {
+          "w": "la",
+          "start": 26.47
+        },
+        {
+          "w": "nube",
+          "start": 26.55,
+          "key": true
+        }
+      ],
+      "end": 26.77
+    },
+    {
+      "start": 26.77,
+      "words": [
+        {
+          "w": "Y",
+          "start": 26.77
+        },
+        {
+          "w": "lo",
+          "start": 27.08
+        },
+        {
+          "w": "que",
+          "start": 27.19
+        },
+        {
+          "w": "me",
+          "start": 27.31
+        },
+        {
+          "w": "gustó",
+          "start": 27.45,
+          "key": true
+        }
+      ],
+      "end": 27.81
+    },
+    {
+      "start": 27.81,
+      "words": [
+        {
+          "w": "antes",
+          "start": 27.81
+        },
+        {
+          "w": "de",
+          "start": 28.21
+        },
+        {
+          "w": "mandar",
+          "start": 28.35,
+          "key": true
+        }
+      ],
+      "end": 28.53
+    },
+    {
+      "start": 28.53,
+      "words": [
+        {
+          "w": "un",
+          "start": 28.53
+        },
+        {
+          "w": "mensaje",
+          "start": 28.65
+        }
+      ],
+      "end": 29.01
+    },
+    {
+      "start": 29.01,
+      "words": [
+        {
+          "w": "pagar",
+          "start": 29.01,
+          "key": true
+        },
+        {
+          "w": "algo",
+          "start": 29.31
+        }
+      ],
+      "end": 29.65
+    },
+    {
+      "start": 29.65,
+      "words": [
+        {
+          "w": "o",
+          "start": 29.65
+        },
+        {
+          "w": "firmar",
+          "start": 29.85,
+          "key": true
+        }
+      ],
+      "end": 30.19
+    },
+    {
+      "start": 30.19,
+      "words": [
+        {
+          "w": "o",
+          "start": 30.19
+        },
+        {
+          "w": "borrar",
+          "start": 30.31,
+          "key": true
+        },
+        {
+          "w": "tu",
+          "start": 30.57
+        },
+        {
+          "w": "información",
+          "start": 30.69
+        }
+      ],
+      "end": 31.05
+    },
+    {
+      "start": 31.05,
+      "words": [
+        {
+          "w": "te",
+          "start": 31.05
+        },
+        {
+          "w": "pide",
+          "start": 31.23
+        },
+        {
+          "w": "permiso",
+          "start": 31.47,
+          "key": true
+        }
+      ],
+      "end": 31.89
+    },
+    {
+      "start": 31.89,
+      "words": [
+        {
+          "w": "y",
+          "start": 31.89
+        },
+        {
+          "w": "tú",
+          "start": 32.21
+        },
+        {
+          "w": "sigues",
+          "start": 32.41
+        },
+        {
+          "w": "teniendo",
+          "start": 32.73
+        }
+      ],
+      "end": 32.99
+    },
+    {
+      "start": 32.99,
+      "words": [
+        {
+          "w": "la",
+          "start": 32.99
+        },
+        {
+          "w": "última",
+          "start": 33.23
+        },
+        {
+          "w": "palabra",
+          "start": 33.45,
+          "key": true
+        }
+      ],
+      "end": 34.01
+    },
+    {
+      "start": 34.01,
+      "words": [
+        {
+          "w": "Y",
+          "start": 34.01
+        },
+        {
+          "w": "a",
+          "start": 34.25
+        },
+        {
+          "w": "mí",
+          "start": 34.37
+        },
+        {
+          "w": "esto",
+          "start": 34.51
+        },
+        {
+          "w": "es",
+          "start": 34.95
+        }
+      ],
+      "end": 35.05
+    },
+    {
+      "start": 35.05,
+      "words": [
+        {
+          "w": "lo",
+          "start": 35.05
+        },
+        {
+          "w": "que",
+          "start": 35.11
+        },
+        {
+          "w": "me",
+          "start": 35.21
+        },
+        {
+          "w": "voló",
+          "start": 35.33
+        }
+      ],
+      "end": 35.51
+    },
+    {
+      "start": 35.51,
+      "words": [
+        {
+          "w": "la",
+          "start": 35.51
+        },
+        {
+          "w": "cabeza",
+          "start": 35.59
+        }
+      ],
+      "end": 36.07
+    },
+    {
+      "start": 36.07,
+      "words": [
+        {
+          "w": "no",
+          "start": 36.07
+        },
+        {
+          "w": "le",
+          "start": 36.36
+        },
+        {
+          "w": "delegues",
+          "start": 36.49,
+          "key": true
+        }
+      ],
+      "end": 36.87
+    },
+    {
+      "start": 36.87,
+      "words": [
+        {
+          "w": "las",
+          "start": 36.87
+        },
+        {
+          "w": "decisiones",
+          "start": 37.01,
+          "key": true
+        }
+      ],
+      "end": 37.55
+    },
+    {
+      "start": 37.55,
+      "words": [
+        {
+          "w": "delégale",
+          "start": 37.55,
+          "key": true
+        },
+        {
+          "w": "la",
+          "start": 37.95
+        },
+        {
+          "w": "revisada",
+          "start": 38.07,
+          "key": true
+        }
+      ],
+      "end": 38.59
+    },
+    {
+      "start": 38.59,
+      "words": [
+        {
+          "w": "todo",
+          "start": 38.59
+        },
+        {
+          "w": "esto",
+          "start": 38.79
+        },
+        {
+          "w": "que",
+          "start": 39.05
+        },
+        {
+          "w": "revisas",
+          "start": 39.19,
+          "key": true
+        }
+      ],
+      "end": 39.45
+    },
+    {
+      "start": 39.45,
+      "words": [
+        {
+          "w": "a",
+          "start": 39.45
+        },
+        {
+          "w": "diario",
+          "start": 39.57,
+          "key": true
+        }
+      ],
+      "end": 39.83
+    },
+    {
+      "start": 39.83,
+      "words": [
+        {
+          "w": "para",
+          "start": 39.83
+        },
+        {
+          "w": "ver",
+          "start": 40.11
+        },
+        {
+          "w": "si",
+          "start": 40.29
+        },
+        {
+          "w": "hay",
+          "start": 40.41
+        },
+        {
+          "w": "algo",
+          "start": 40.49
+        }
+      ],
+      "end": 40.98
+    },
+    {
+      "start": 40.98,
+      "words": [
+        {
+          "w": "importante",
+          "start": 40.98,
+          "key": true
+        }
+      ],
+      "end": 41.72
+    },
+    {
+      "start": 41.72,
+      "words": [
+        {
+          "w": "correos",
+          "start": 41.72,
+          "key": true
+        }
+      ],
+      "end": 42.37
+    },
+    {
+      "start": 42.37,
+      "words": [
+        {
+          "w": "pendientes",
+          "start": 42.37,
+          "key": true
+        }
+      ],
+      "end": 43.23
+    },
+    {
+      "start": 43.23,
+      "words": [
+        {
+          "w": "avisos",
+          "start": 43.23,
+          "key": true
+        }
+      ],
+      "end": 43.81
+    },
+    {
+      "start": 43.81,
+      "words": [
+        {
+          "w": "eso",
+          "start": 43.81
+        },
+        {
+          "w": "es",
+          "start": 44.09
+        },
+        {
+          "w": "lo",
+          "start": 44.19
+        },
+        {
+          "w": "primero",
+          "start": 44.25,
+          "key": true
+        }
+      ],
+      "end": 44.49
+    },
+    {
+      "start": 44.49,
+      "words": [
+        {
+          "w": "que",
+          "start": 44.49
+        },
+        {
+          "w": "le",
+          "start": 44.67
+        },
+        {
+          "w": "das",
+          "start": 44.75
+        }
+      ],
+      "end": 44.95
+    },
+    {
+      "start": 44.95,
+      "words": [
+        {
+          "w": "y",
+          "start": 44.95
+        },
+        {
+          "w": "tú",
+          "start": 45.13
+        },
+        {
+          "w": "te",
+          "start": 45.23
+        },
+        {
+          "w": "quedas",
+          "start": 45.35,
+          "key": true
+        }
+      ],
+      "end": 45.63
+    },
+    {
+      "start": 45.63,
+      "words": [
+        {
+          "w": "con",
+          "start": 45.63
+        },
+        {
+          "w": "el",
+          "start": 45.73
+        },
+        {
+          "w": "que",
+          "start": 45.89
+        },
+        {
+          "w": "sí",
+          "start": 46.05
+        },
+        {
+          "w": "necesita",
+          "start": 46.25
+        }
+      ],
+      "end": 46.57
+    },
+    {
+      "start": 46.57,
+      "words": [
+        {
+          "w": "tu",
+          "start": 46.57
+        },
+        {
+          "w": "criterio",
+          "start": 46.71,
+          "key": true
+        }
+      ],
+      "end": 47.29
+    },
+    {
+      "start": 47.29,
+      "words": [
+        {
+          "w": "Por",
+          "start": 47.29
+        },
+        {
+          "w": "ahora",
+          "start": 47.7
+        },
+        {
+          "w": "está",
+          "start": 47.97
+        }
+      ],
+      "end": 48.37
+    },
+    {
+      "start": 48.37,
+      "words": [
+        {
+          "w": "en",
+          "start": 48.37
+        },
+        {
+          "w": "prueba",
+          "start": 48.55,
+          "key": true
+        }
+      ],
+      "end": 48.73
+    },
+    {
+      "start": 48.73,
+      "words": [
+        {
+          "w": "con",
+          "start": 48.73
+        },
+        {
+          "w": "lista",
+          "start": 48.99
+        },
+        {
+          "w": "de",
+          "start": 49.19
+        },
+        {
+          "w": "espera",
+          "start": 49.31,
+          "key": true
+        }
+      ],
+      "end": 49.63
+    },
+    {
+      "start": 49.63,
+      "words": [
+        {
+          "w": "apúntate",
+          "start": 49.63,
+          "key": true
+        }
+      ],
+      "end": 50.13
+    },
+    {
+      "start": 50.13,
+      "words": [
+        {
+          "w": "y",
+          "start": 50.13
+        },
+        {
+          "w": "empieza",
+          "start": 50.39
+        },
+        {
+          "w": "por",
+          "start": 50.67
+        },
+        {
+          "w": "ahí",
+          "start": 50.85
+        }
+      ],
+      "end": 51.11
+    },
+    {
+      "start": 51.11,
+      "words": [
+        {
+          "w": "Si",
+          "start": 51.11
+        },
+        {
+          "w": "todavía",
+          "start": 51.31
+        },
+        {
+          "w": "no",
+          "start": 51.61
+        },
+        {
+          "w": "sabes",
+          "start": 51.83
+        }
+      ],
+      "end": 52.01
+    },
+    {
+      "start": 52.01,
+      "words": [
+        {
+          "w": "cómo",
+          "start": 52.01
+        },
+        {
+          "w": "implementar",
+          "start": 52.23
+        },
+        {
+          "w": "IA",
+          "start": 52.73,
+          "key": true
+        }
+      ],
+      "end": 52.89
+    },
+    {
+      "start": 52.89,
+      "words": [
+        {
+          "w": "en",
+          "start": 52.89
+        },
+        {
+          "w": "tu",
+          "start": 52.97
+        },
+        {
+          "w": "negocio",
+          "start": 53.01
+        }
+      ],
+      "end": 53.47
+    },
+    {
+      "start": 53.47,
+      "words": [
+        {
+          "w": "esta",
+          "start": 53.47
+        },
+        {
+          "w": "cuenta",
+          "start": 53.77
+        },
+        {
+          "w": "es",
+          "start": 54.07
+        },
+        {
+          "w": "para",
+          "start": 54.49
+        },
+        {
+          "w": "ti",
+          "start": 54.75
+        }
+      ],
+      "end": 55.2
+    }
+  ],
+  "caraYFuente": 0.6,
+  "musica": "musica/lofi_mnc.m4a",
+  "portada": {
+    "cuadro": 5.0
+  }
+}

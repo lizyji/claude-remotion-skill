@@ -20,7 +20,7 @@ const Pantalla: React.FC<{ dur: number; children: React.ReactNode }> = ({ dur, c
   );
 };
 
-const Jugada: React.FC<{ dur: number }> = ({ dur }) => {
+const Jugada: React.FC<{ dur: number; arriba?: string; abajo?: string }> = ({ dur, arriba = "Aquí está", abajo = "la jugada" }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const a = spring({ frame, fps, config: theme.spring.suave });
@@ -39,20 +39,21 @@ const Jugada: React.FC<{ dur: number }> = ({ dur }) => {
             transform: `translateY(${interpolate(a, [0, 1], [40, 0])}px)`,
           }}
         >
-          Aquí está
+          {arriba}
         </div>
         <div
           style={{
             fontFamily: font.titulo,
             fontWeight: 700,
-            fontSize: 230,
+            fontSize: abajo === "la jugada" ? 230 : Math.min(230, Math.floor(1500 / abajo.length)),
             lineHeight: 1,
+            whiteSpace: "nowrap",
             color: color.naranja,
             opacity: Math.min(1, b * 1.5),
             transform: `scale(${interpolate(b, [0, 1], [1.6, 1]) * respira})`,
           }}
         >
-          la jugada
+          {abajo}
         </div>
       </AbsoluteFill>
     </Pantalla>
@@ -172,7 +173,7 @@ const Cierre: React.FC<{ dur: number; start: number; palabras: Palabra[]; end: n
 export const GolpeView: React.FC<{ g: Golpe; palabras: Palabra[] }> = ({ g, palabras }) => {
   const { fps } = useVideoConfig();
   const dur = Math.round((g.end - g.start) * fps);
-  if (g.tipo === "jugada") return <Jugada dur={dur} />;
+  if (g.tipo === "jugada") return <Jugada dur={dur} arriba={g.arriba} abajo={g.abajo} />;
   if (g.tipo === "numero") return <Numero dur={dur} valor={g.valor} etiqueta={g.etiqueta} fuente={g.fuente} />;
   return <Cierre dur={dur} start={g.start} end={g.end} palabras={palabras} />;
 };

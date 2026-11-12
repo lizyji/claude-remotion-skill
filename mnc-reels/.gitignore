@@ -5,3 +5,4 @@ reels/*/raw/
 reels/*/work/
 public/musica-demo.wav
 __pycache__/
+reels/*/props*.json

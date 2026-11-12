@@ -17,6 +17,9 @@ según [`INSTRUCCIONES.md`](INSTRUCCIONES.md), que es la fuente de verdad del pr
 | `scripts/bloques.py` | Bloques de ≤ 5 palabras / 24 caracteres, sin terminar en artículo o preposición, 1 palabra clave en naranja. |
 | `scripts/hoja_cuadros.py` | Hoja de cuadros de un render para verificar. |
 | `scripts/gen_sfx.mjs` | Sintetiza whoosh / pop / click / tick / bass en `public/sfx/`. |
+| `scripts/gen_musica.py` | Música instrumental propia (lo-fi sintetizado, sin derechos de terceros) en `public/musica/lofi_mnc.m4a`, normalizada a −14 LUFS. |
+| `scripts/exportar_brolls.py` | Corta los B-rolls sueltos (nombrados por toma con `"id"`) del render final y del render `soloBroll`. |
+| `reels/<slug>/editar.py` | (Opcional) Arma `broll`, `golpes` y `subs` buscando las palabras exactas de Manuel; así la edición se puede regenerar si cambia el recorte. Ejemplo: `reels/claude-duet/editar.py`. |
 
 ## Flujo por pedido
 
@@ -55,6 +58,22 @@ pip install faster-whisper
 Sin `--props` se usa el reel `demo`. Para ver cualquier reel en el Studio: `npm run studio`.
 
 En entornos sin internet, Remotion no puede descargar su Chrome: pasa `--browser-executable=<ruta a chrome-headless-shell>`.
+
+### Notas del flujo
+
+- **Audio desfasado en .MOV del iPhone:** a veces el audio arranca ~0.7 s después del video (`start_time`).
+  `transcribir.py` y `preparar.py` alinean el audio al tiempo del video (`aresample=async=1:first_pts=0`),
+  así las palabras, los silencios y el recorte usan el mismo reloj.
+- **Silencios por energía:** `preparar.py` mide RMS en ventanas de 20 ms (−38 dB, ≥ 0.3 s). Los tiempos de la
+  transcripción que invaden un silencio se recortan contra él para que no bloqueen el corte.
+- **Animaciones genéricas** (`src/components/Animaciones.tsx`, tipos en `src/reel/types.ts`): `conectar`,
+  `notificacion`, `junta`, `nube`, `candados`, `contraste`, `columnas`. Cada elemento entra en `en` segundos
+  desde el inicio del clip, sincronizado con la palabra de Manuel. `imagen` acepta `marco`, `fondo` y `etiqueta`;
+  `lista` acepta `en`; el golpe `jugada` acepta `arriba`/`abajo` para otra frase con el mismo estilo.
+- **B-rolls sueltos:** render con `"soloBroll": true` en las props (sin Manuel, subtítulos, golpes ni audio) y
+  luego `python3 scripts/exportar_brolls.py <slug>`.
+- En este contenedor Remotion no puede bajar su Chrome: usa
+  `--browser-executable=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell`.
 
 ## Demo
 

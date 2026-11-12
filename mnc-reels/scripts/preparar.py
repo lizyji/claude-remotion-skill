@@ -15,7 +15,8 @@ Hace:
      duracion, manuel, cortes, palabras (re-mapeadas) y subs (bloques de ≤5 palabras/24 car.).
      Conserva broll, golpes, pasos, sfx y portada si el reel.json ya existía.
 """
-import argparse, json, re
+import argparse, json, re, subprocess
+import numpy as np
 from pathlib import Path
 from comun import RAIZ, duracion, escribir, leer, sh
 from bloques import bloques
@@ -23,14 +24,29 @@ from bloques import bloques
 UMBRAL_DB, MIN_SIL, PAD_DESPUES, PAD_ANTES, MIN_CORTE = -38, 0.3, 0.10, 0.08, 0.12
 
 
-def silencios(video):
-    err = sh(["ffmpeg", "-v", "info", "-i", str(video), "-af", f"silencedetect=noise={UMBRAL_DB}dB:d={MIN_SIL}", "-f", "null", "-"]).stderr
-    ini = [float(x) for x in re.findall(r"silence_start: ([\d.]+)", err)]
-    fin = [float(x) for x in re.findall(r"silence_end: ([\d.]+)", err)]
+def silencios(video, ventana=0.02):
+    """Silencios por ENERGÍA (RMS en ventanas de 20 ms) bajo UMBRAL_DB durante ≥ MIN_SIL.
+    (silencedetect de ffmpeg mide picos por muestra: con ruido de cuarto casi no detecta pausas.)
+    El audio se alinea al tiempo del video (first_pts=0), igual que en transcribir.py."""
+    sr = 16000
+    raw = subprocess.run(["ffmpeg", "-v", "error", "-i", str(video), "-af", "aresample=async=1:first_pts=0",
+                          "-ac", "1", "-ar", str(sr), "-f", "s16le", "-"], check=True, capture_output=True).stdout
+    a = np.frombuffer(raw, dtype=np.int16).astype(np.float64) / 32768
+    n = int(sr * ventana)
+    k = len(a) // n
+    rms = 20 * np.log10(np.sqrt((a[: k * n].reshape(k, n) ** 2).mean(axis=1)) + 1e-9)
     total = duracion(video)
-    if len(fin) < len(ini):
-        fin.append(total)
-    return list(zip(ini, fin)), total
+    sils, ini = [], None
+    for i, db in enumerate(list(rms) + [0.0]):
+        if db < UMBRAL_DB and ini is None:
+            ini = i
+        elif db >= UMBRAL_DB and ini is not None:
+            if (i - ini) * ventana >= MIN_SIL:
+                sils.append((ini * ventana, min(total, i * ventana)))
+            ini = None
+    if sils and sils[-1][1] >= k * ventana - 0.05:
+        sils[-1] = (sils[-1][0], total)
+    return sils, total
 
 
 def restar(a, b, palabras_iv):
@@ -61,6 +77,14 @@ def main():
     video = Path(a.video)
     palabras = leer(Path(a.palabras)) if a.palabras else []
     sils, total = silencios(video)
+    # Los tiempos de la transcripción suelen alargarse dentro de las pausas: se recortan
+    # contra los silencios medidos por energía (ahí no hay voz) para que no bloqueen el corte.
+    for p in palabras:
+        for s, e in sils:
+            if s <= p["start"] < e and p["end"] > e:
+                p["start"] = round(e, 3)
+            if s < p["end"] <= e and p["start"] < s:
+                p["end"] = round(s, 3)
 
     cortes = []
     for s, e in sils:
