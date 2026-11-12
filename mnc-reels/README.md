@@ -16,6 +16,10 @@ según [`INSTRUCCIONES.md`](INSTRUCCIONES.md), que es la fuente de verdad del pr
 | `scripts/preparar.py` | Recorta silencios (−38 dB, ≥ 0.3 s, deja 0.10 s / 0.08 s, nunca corta palabras), normaliza a −14 LUFS, re-mapea palabras y genera los bloques de subtítulos. |
 | `scripts/bloques.py` | Bloques de ≤ 5 palabras / 24 caracteres, sin terminar en artículo o preposición, 1 palabra clave en naranja. |
 | `scripts/hoja_cuadros.py` | Hoja de cuadros de un render para verificar. |
+| `src/components/Escenas.tsx` | Escenas a la medida para el panel (`"tipo": "escena"`): tipeo, radar, chat genérico, trabajo, revela, línea de tiempo con logos, captura con traducción, íconos que se encienden, aviso, nube con tareas, "no es para programadores", celular, columnas. |
+| `src/Sueltos.tsx` + `scripts/sueltos.py` | B-rolls sueltos para la entrega: `python3 scripts/sueltos.py <slug>` → `out/<slug>_brolls/<id>.mp4` (panel 1080×960, golpes 1080×1920; incluye `extras`). |
+| `scripts/gen_musica.py` | Pista instrumental original sintetizada (sin letra, libre de derechos) cuando no hay música de stock. |
+| `reels/<slug>/armar.py` | (Opcional) arma `broll`, `golpes` y `subs` del reel anclados a las palabras de Manuel; se puede volver a correr tras cambiar cortes. |
 | `scripts/gen_sfx.mjs` | Sintetiza whoosh / pop / click / tick / bass en `public/sfx/`. |
 
 ## Flujo por pedido
@@ -51,6 +55,10 @@ pip install faster-whisper
    ```bash
    npx remotion still src/index.ts Portada out/<slug>_portada.png --props='{"reel":'"$(cat reels/<slug>/reel.json)"'}'
    ```
+
+Si `--props` con el JSON en línea es demasiado largo para la terminal, guarda `{"reel": …}` en `reels/<slug>/props.json` y pasa `--props=reels/<slug>/props.json`.
+
+Golpes disponibles: `jugada`, `numero`, `cierre` y `frase` (arriba en negro, abajo gigante en naranja; p. ej. "Esto me voló la cabeza").
 
 Sin `--props` se usa el reel `demo`. Para ver cualquier reel en el Studio: `npm run studio`.
 

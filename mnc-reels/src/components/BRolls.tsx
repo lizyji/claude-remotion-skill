@@ -2,6 +2,7 @@ import React from "react";
 import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideoConfig, spring } from "remotion";
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
+import { ESCENAS } from "./Escenas";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
 
 const { color, font, layout } = theme;
@@ -170,6 +171,11 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
         </Tarjeta>
       );
       break;
+    case "escena": {
+      const E = ESCENAS[b.escena];
+      body = E ? <E {...(b.props ?? {})} /> : null;
+      break;
+    }
     case "silueta":
       return null; // se dibuja a pantalla completa en Reel.tsx
   }

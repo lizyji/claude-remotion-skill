@@ -1,0 +1,2627 @@
+{
+ "broll": [
+  {
+   "tipo": "escena",
+   "id": "T1_B1_tendencia",
+   "start": 0.0,
+   "end": 2.76,
+   "escena": "tipeo",
+   "props": {
+    "texto": "La tendencia que nadie está viendo",
+    "signo": "?",
+    "cps": 21
+   }
+  },
+  {
+   "tipo": "escena",
+   "id": "T1_B2_radar",
+   "start": 2.76,
+   "end": 5.9,
+   "escena": "radar",
+   "props": {
+    "detecta": 1.2599999999999998,
+    "etiqueta": "Para mí, lo más importante del año"
+   }
+  },
+  {
+   "tipo": "escena",
+   "id": "T2_B3_chat",
+   "start": 5.9,
+   "end": 10.8,
+   "escena": "chat",
+   "props": {
+    "pregunta": "¿Me ayudas a escribir un correo?",
+    "respuesta": "Claro, aquí tienes un borrador…",
+    "dTipeo": 2.119999999999999,
+    "dPregunta": 3.66,
+    "dRespuesta": 4.460000000000001
+   }
+  },
+  {
+   "tipo": "escena",
+   "id": "T2_B4_preguntas_respuestas",
+   "start": 10.8,
+   "end": 12.78,
+   "escena": "trabajo",
+   "props": {
+    "etiqueta": "Preguntas → respuestas",
+    "texto": "Tú haces el trabajo",
+    "dPersona": 0.3
+   }
+  },
+  {
+   "tipo": "escena",
+   "id": "T3_B4b_asistentes",
+   "start": 12.78,
+   "end": 17.36,
+   "escena": "revela",
+   "props": {
+    "pildora": "Los que van más adelante",
+    "texto": "están en otra cosa:",
+    "dTexto": 1.8199999999999985,
+    "titulo": "Asistentes personales",
+    "dTitulo": 3.119999999999999
+   }
+  },
+  {
+   "tipo": "escena",
+   "id": "T3_B5_grok_bot",
+   "start": 17.36,
+   "end": 19.68,
+   "escena": "linea",
+   "props": {
+    "nuevo": 0,
+    "dNuevo": 1.1200000000000023,
+    "puntos": [
+     {
+      "fecha": "Ago 2026",
+      "nombre": "Grok Bot",
+      "logo": "reels/tendencia/grokbot_logo.png",
+      "alto": 150
+     }
+    ]
+   },
+   "fuente": "Fuente: xAI, 11 ago 2026 · x.ai"
+  },
+  {
+   "tipo": "escena",
+   "id": "T3_B6_claude_duet",
+   "start": 19.68,
+   "end": 21.38,
+   "escena": "linea",
+   "props": {
+    "nuevo": 1,
+    "dNuevo": 0.12,
+    "puntos": [
+     {
+      "fecha": "Ago 2026",
+      "nombre": "Grok Bot",
+      "logo": "reels/tendencia/grokbot_logo.png",
+      "alto": 150
+     },
+     {
+      "fecha": "Oct 2026",
+      "nombre": "Claude Duet",
+      "logo": "reels/tendencia/claudeduet_logo.png",
+      "alto": 250
+     }
+    ]
+   },
+   "fuente": "Fuente: Anthropic, 21 oct 2026 · claude.com"
+  },
+  {
+   "tipo": "escena",
+   "id": "T3_B7_titular_techcrunch",
+   "start": 21.38,
+   "end": 23.89,
+   "escena": "captura",
+   "props": {
+    "src": "reels/tendencia/techcrunch_titular.png",
+    "traduccion": "“Claude Duet: la apuesta de Anthropic por los agentes”",
+    "dTrad": 0.7
+   },
+   "fuente": "Fuente: TechCrunch, 22 oct 2026 · techcrunch.com"
+  },
+  {
+   "tipo": "escena",
+   "id": "T4_B7b_no_esperan",
+   "start": 23.89,
+   "end": 26.42,
+   "escena": "revela",
+   "props": {
+    "pildora": "La diferencia",
+    "titulo": "No esperan a que les preguntes",
+    "dTitulo": 0.9500000000000007
+   }
+  },
+  {
+   "tipo": "escena",
+   "id": "T4_B8_correo",
+   "start": 26.42,
+   "end": 28.26,
+   "escena": "iconos",
+   "props": {
+    "etiqueta": "Revisa",
+    "enciende": [
+     0.05,
+     1.2199999999999989,
+     null
+    ]
+   }
+  },
+  {
+   "tipo": "escena",
+   "id": "T4_B9_calendario",
+   "start": 28.26,
+   "end": 30.04,
+   "escena": "aviso",
+   "props": {
+    "etiqueta": "Te avisa",
+    "aviso": "Esto necesita tu atención",
+    "dAviso": 0.5799999999999983
+   }
+  },
+  {
+   "tipo": "escena",
+   "id": "T4_B10_nube",
+   "start": 30.04,
+   "end": 35.22,
+   "escena": "nube",
+   "props": {
+    "tareas": [
+     "Preparar propuesta",
+     "Contestar correos",
+     "Agendar junta"
+    ],
+    "cada": 0.85,
+    "dEtiqueta": 3.3200000000000003,
+    "etiqueta": "Aunque tú no estés"
+   }
+  },
+  {
+   "tipo": "escena",
+   "id": "T5_B11b_no_programadores",
+   "start": 37.08,
+   "end": 38.6,
+   "escena": "noprog",
+   "props": {
+    "titulo": "No es para programadores"
+   }
+  },
+  {
+   "tipo": "logo",
+   "id": "T5_B11c_grok_facil",
+   "start": 38.6,
+   "end": 41.155,
+   "src": "reels/tendencia/grokbot_logo.png",
+   "etiqueta": "Tan fácil como usar WhatsApp",
+   "fuente": "Fuente: xAI · x.ai/bot"
+  },
+  {
+   "tipo": "escena",
+   "id": "T5_B11d_celular",
+   "start": 41.155,
+   "end": 44.315,
+   "escena": "celular",
+   "props": {
+    "etiqueta": "a tu celular",
+    "dEtiqueta": 0.8200000000000017
+   }
+  },
+  {
+   "tipo": "escena",
+   "id": "T5_B12_chat_vs_asistente",
+   "start": 44.315,
+   "end": 50.645,
+   "escena": "columnas",
+   "props": {
+    "arriba": "En un año",
+    "cols": [
+     {
+      "titulo": "Asistente",
+      "flecha": "el trabajo avanza solo",
+      "d": 1.7000000000000042,
+      "dFlecha": 2.680000000000001,
+      "destaca": true
+     },
+     {
+      "titulo": "Chat",
+      "flecha": "tú haces el trabajo",
+      "d": 3.4800000000000053,
+      "dFlecha": 4.480000000000006
+     }
+    ],
+    "dDestaca": 5.630000000000004
+   }
+  }
+ ],
+ "golpes": [
+  {
+   "tipo": "frase",
+   "id": "T5_B11_me_volo_la_cabeza",
+   "start": 35.2,
+   "end": 37.08,
+   "arriba": "Y a mí esto",
+   "abajo": "me voló\nla cabeza"
+  },
+  {
+   "tipo": "cierre",
+   "id": "T6_B14_frase_cierre",
+   "start": 50.645,
+   "end": 55.5
+  }
+ ],
+ "pasos": [],
+ "sfx": [
+  {
+   "t": 4.02,
+   "s": "pop"
+  },
+  {
+   "t": 26.46,
+   "s": "tick"
+  },
+  {
+   "t": 27.68,
+   "s": "tick"
+  },
+  {
+   "t": 28.88,
+   "s": "pop"
+  },
+  {
+   "t": 30.44,
+   "s": "tick"
+  },
+  {
+   "t": 31.29,
+   "s": "tick"
+  },
+  {
+   "t": 32.14,
+   "s": "tick"
+  }
+ ],
+ "slug": "tendencia",
+ "duracion": 55.5,
+ "manuel": "reels/tendencia/manuel.mp4",
+ "cortes": [
+  41.115,
+  50.424,
+  50.605
+ ],
+ "palabras": [
+  {
+   "w": "Hay",
+   "start": 0.08,
+   "end": 0.44,
+   "prob": 0.995
+  },
+  {
+   "w": "una",
+   "start": 0.44,
+   "end": 0.62,
+   "prob": 1.0
+  },
+  {
+   "w": "tendencia",
+   "start": 0.62,
+   "end": 1.1,
+   "prob": 1.0
+  },
+  {
+   "w": "en",
+   "start": 1.1,
+   "end": 1.2,
+   "prob": 1.0
+  },
+  {
+   "w": "la",
+   "start": 1.2,
+   "end": 1.2,
+   "prob": 0.999
+  },
+  {
+   "w": "IA",
+   "start": 1.2,
+   "end": 1.42,
+   "prob": 0.965
+  },
+  {
+   "w": "que",
+   "start": 1.42,
+   "end": 1.54,
+   "prob": 0.989
+  },
+  {
+   "w": "casi",
+   "start": 1.54,
+   "end": 1.84,
+   "prob": 1.0
+  },
+  {
+   "w": "nadie",
+   "start": 1.84,
+   "end": 2.24,
+   "prob": 1.0
+  },
+  {
+   "w": "está",
+   "start": 2.24,
+   "end": 2.46,
+   "prob": 1.0
+  },
+  {
+   "w": "pelando",
+   "start": 2.46,
+   "end": 2.78,
+   "prob": 0.887,
+   "corregida": true
+  },
+  {
+   "w": "y",
+   "start": 2.78,
+   "end": 3.04,
+   "prob": 0.815
+  },
+  {
+   "w": "para",
+   "start": 3.04,
+   "end": 3.22,
+   "prob": 0.977
+  },
+  {
+   "w": "mí",
+   "start": 3.22,
+   "end": 3.46,
+   "prob": 0.995
+  },
+  {
+   "w": "es",
+   "start": 3.46,
+   "end": 3.76,
+   "prob": 0.997
+  },
+  {
+   "w": "lo",
+   "start": 3.76,
+   "end": 3.9,
+   "prob": 1.0
+  },
+  {
+   "w": "más",
+   "start": 3.9,
+   "end": 4.02,
+   "prob": 1.0
+  },
+  {
+   "w": "importante",
+   "start": 4.02,
+   "end": 4.48,
+   "prob": 1.0
+  },
+  {
+   "w": "que",
+   "start": 4.48,
+   "end": 4.88,
+   "prob": 1.0
+  },
+  {
+   "w": "está",
+   "start": 4.88,
+   "end": 5.02,
+   "prob": 1.0
+  },
+  {
+   "w": "pasando",
+   "start": 5.02,
+   "end": 5.36,
+   "prob": 1.0
+  },
+  {
+   "w": "este",
+   "start": 5.36,
+   "end": 5.58,
+   "prob": 1.0
+  },
+  {
+   "w": "año.",
+   "start": 5.58,
+   "end": 5.78,
+   "prob": 1.0
+  },
+  {
+   "w": "Casi",
+   "start": 5.92,
+   "end": 6.32,
+   "prob": 1.0
+  },
+  {
+   "w": "todo",
+   "start": 6.32,
+   "end": 6.5,
+   "prob": 1.0
+  },
+  {
+   "w": "el",
+   "start": 6.5,
+   "end": 6.64,
+   "prob": 1.0
+  },
+  {
+   "w": "mundo",
+   "start": 6.64,
+   "end": 6.82,
+   "prob": 1.0
+  },
+  {
+   "w": "sigue",
+   "start": 6.82,
+   "end": 7.06,
+   "prob": 1.0
+  },
+  {
+   "w": "usando",
+   "start": 7.06,
+   "end": 7.32,
+   "prob": 0.997
+  },
+  {
+   "w": "la",
+   "start": 7.32,
+   "end": 7.54,
+   "prob": 1.0
+  },
+  {
+   "w": "IA",
+   "start": 7.54,
+   "end": 7.7,
+   "prob": 1.0
+  },
+  {
+   "w": "igual,",
+   "start": 7.7,
+   "end": 7.9,
+   "prob": 1.0
+  },
+  {
+   "w": "abres",
+   "start": 8.04,
+   "end": 8.38,
+   "prob": 0.999
+  },
+  {
+   "w": "Claude",
+   "start": 8.38,
+   "end": 8.7,
+   "prob": 0.509
+  },
+  {
+   "w": "o",
+   "start": 8.7,
+   "end": 8.82,
+   "prob": 0.999
+  },
+  {
+   "w": "ChatGPT,",
+   "start": 8.82,
+   "end": 9.42,
+   "prob": 0.95
+  },
+  {
+   "w": "le",
+   "start": 9.46,
+   "end": 9.58,
+   "prob": 1.0
+  },
+  {
+   "w": "preguntas",
+   "start": 9.58,
+   "end": 9.88,
+   "prob": 0.999
+  },
+  {
+   "w": "algo,",
+   "start": 9.88,
+   "end": 10.2,
+   "prob": 1.0
+  },
+  {
+   "w": "te",
+   "start": 10.28,
+   "end": 10.38,
+   "prob": 1.0
+  },
+  {
+   "w": "contesta",
+   "start": 10.38,
+   "end": 10.86,
+   "prob": 1.0
+  },
+  {
+   "w": "y",
+   "start": 10.86,
+   "end": 11.16,
+   "prob": 0.996
+  },
+  {
+   "w": "tú",
+   "start": 11.16,
+   "end": 11.28,
+   "prob": 0.999
+  },
+  {
+   "w": "haces",
+   "start": 11.28,
+   "end": 11.52,
+   "prob": 0.998
+  },
+  {
+   "w": "el",
+   "start": 11.52,
+   "end": 11.64,
+   "prob": 1.0
+  },
+  {
+   "w": "trabajo,",
+   "start": 11.64,
+   "end": 11.84,
+   "prob": 1.0
+  },
+  {
+   "w": "es",
+   "start": 12.0,
+   "end": 12.16,
+   "prob": 1.0
+  },
+  {
+   "w": "un",
+   "start": 12.16,
+   "end": 12.36,
+   "prob": 1.0
+  },
+  {
+   "w": "chat.",
+   "start": 12.36,
+   "end": 12.56,
+   "prob": 0.999
+  },
+  {
+   "w": "Pero",
+   "start": 12.8,
+   "end": 13.28,
+   "prob": 1.0
+  },
+  {
+   "w": "las",
+   "start": 13.28,
+   "end": 13.6,
+   "prob": 0.999
+  },
+  {
+   "w": "personas",
+   "start": 13.6,
+   "end": 13.94,
+   "prob": 1.0
+  },
+  {
+   "w": "más",
+   "start": 13.94,
+   "end": 14.26,
+   "prob": 1.0
+  },
+  {
+   "w": "adelante",
+   "start": 14.26,
+   "end": 14.62,
+   "prob": 1.0
+  },
+  {
+   "w": "están",
+   "start": 14.62,
+   "end": 15.18,
+   "prob": 1.0
+  },
+  {
+   "w": "en",
+   "start": 15.18,
+   "end": 15.34,
+   "prob": 1.0
+  },
+  {
+   "w": "otra",
+   "start": 15.34,
+   "end": 15.48,
+   "prob": 1.0
+  },
+  {
+   "w": "cosa,",
+   "start": 15.48,
+   "end": 15.78,
+   "prob": 1.0
+  },
+  {
+   "w": "asistentes",
+   "start": 15.92,
+   "end": 16.62,
+   "prob": 1.0
+  },
+  {
+   "w": "personales.",
+   "start": 16.62,
+   "end": 17.32,
+   "prob": 1.0
+  },
+  {
+   "w": "En",
+   "start": 17.4,
+   "end": 17.74,
+   "prob": 1.0
+  },
+  {
+   "w": "agosto",
+   "start": 17.74,
+   "end": 18.18,
+   "prob": 0.994
+  },
+  {
+   "w": "salió",
+   "start": 18.18,
+   "end": 18.62,
+   "prob": 1.0
+  },
+  {
+   "w": "Grok",
+   "start": 18.62,
+   "end": 18.88,
+   "prob": 0.552
+  },
+  {
+   "w": "Bot,",
+   "start": 18.88,
+   "end": 19.06,
+   "prob": 1.0
+  },
+  {
+   "w": "en",
+   "start": 19.22,
+   "end": 19.34,
+   "prob": 1.0
+  },
+  {
+   "w": "octubre",
+   "start": 19.34,
+   "end": 19.78,
+   "prob": 1.0
+  },
+  {
+   "w": "Anthropic",
+   "start": 19.78,
+   "end": 20.36,
+   "prob": 0.652,
+   "corregida": true
+  },
+  {
+   "w": "sacó",
+   "start": 20.36,
+   "end": 20.66,
+   "prob": 0.999
+  },
+  {
+   "w": "Duet",
+   "start": 20.66,
+   "end": 21.0,
+   "prob": 0.886
+  },
+  {
+   "w": "y",
+   "start": 21.0,
+   "end": 21.42,
+   "prob": 0.947
+  },
+  {
+   "w": "así",
+   "start": 21.42,
+   "end": 21.7,
+   "prob": 1.0
+  },
+  {
+   "w": "siguen",
+   "start": 21.7,
+   "end": 22.18,
+   "prob": 1.0
+  },
+  {
+   "w": "saliendo",
+   "start": 22.18,
+   "end": 22.52,
+   "prob": 1.0
+  },
+  {
+   "w": "más.",
+   "start": 22.52,
+   "end": 22.7,
+   "prob": 1.0
+  },
+  {
+   "w": "La",
+   "start": 23.16,
+   "end": 23.64,
+   "prob": 1.0
+  },
+  {
+   "w": "diferencia",
+   "start": 23.64,
+   "end": 24.08,
+   "prob": 1.0
+  },
+  {
+   "w": "es",
+   "start": 24.08,
+   "end": 24.76,
+   "prob": 1.0
+  },
+  {
+   "w": "que",
+   "start": 24.76,
+   "end": 24.94,
+   "prob": 1.0
+  },
+  {
+   "w": "no",
+   "start": 24.94,
+   "end": 25.14,
+   "prob": 1.0
+  },
+  {
+   "w": "esperan",
+   "start": 25.14,
+   "end": 25.58,
+   "prob": 1.0
+  },
+  {
+   "w": "a",
+   "start": 25.58,
+   "end": 25.68,
+   "prob": 1.0
+  },
+  {
+   "w": "que",
+   "start": 25.68,
+   "end": 25.74,
+   "prob": 1.0
+  },
+  {
+   "w": "les",
+   "start": 25.74,
+   "end": 25.92,
+   "prob": 1.0
+  },
+  {
+   "w": "preguntes,",
+   "start": 25.92,
+   "end": 26.46,
+   "prob": 0.998
+  },
+  {
+   "w": "revisan",
+   "start": 26.46,
+   "end": 27.0,
+   "prob": 0.997
+  },
+  {
+   "w": "tu",
+   "start": 27.0,
+   "end": 27.18,
+   "prob": 1.0
+  },
+  {
+   "w": "correo",
+   "start": 27.18,
+   "end": 27.54,
+   "prob": 1.0
+  },
+  {
+   "w": "y",
+   "start": 27.54,
+   "end": 27.6,
+   "prob": 1.0
+  },
+  {
+   "w": "tu",
+   "start": 27.6,
+   "end": 27.68,
+   "prob": 1.0
+  },
+  {
+   "w": "calendario,",
+   "start": 27.68,
+   "end": 28.26,
+   "prob": 1.0
+  },
+  {
+   "w": "te",
+   "start": 28.3,
+   "end": 28.4,
+   "prob": 0.999
+  },
+  {
+   "w": "avisan",
+   "start": 28.4,
+   "end": 28.7,
+   "prob": 0.999
+  },
+  {
+   "w": "que",
+   "start": 28.7,
+   "end": 28.88,
+   "prob": 0.592
+  },
+  {
+   "w": "necesita",
+   "start": 28.88,
+   "end": 29.18,
+   "prob": 0.989
+  },
+  {
+   "w": "tu",
+   "start": 29.18,
+   "end": 29.52,
+   "prob": 1.0
+  },
+  {
+   "w": "atención,",
+   "start": 29.52,
+   "end": 29.76,
+   "prob": 1.0
+  },
+  {
+   "w": "y",
+   "start": 30.08,
+   "end": 30.16,
+   "prob": 0.567
+  },
+  {
+   "w": "hacen",
+   "start": 30.16,
+   "end": 30.32,
+   "prob": 0.97
+  },
+  {
+   "w": "tareas",
+   "start": 30.32,
+   "end": 30.76,
+   "prob": 0.997
+  },
+  {
+   "w": "por",
+   "start": 30.76,
+   "end": 30.88,
+   "prob": 0.989
+  },
+  {
+   "w": "su",
+   "start": 30.88,
+   "end": 30.98,
+   "prob": 0.994
+  },
+  {
+   "w": "cuenta,",
+   "start": 30.98,
+   "end": 31.28,
+   "prob": 0.998
+  },
+  {
+   "w": "en",
+   "start": 31.4,
+   "end": 31.84,
+   "prob": 0.99
+  },
+  {
+   "w": "su",
+   "start": 31.84,
+   "end": 31.98,
+   "prob": 0.994
+  },
+  {
+   "w": "propia",
+   "start": 31.98,
+   "end": 32.26,
+   "prob": 0.99
+  },
+  {
+   "w": "computadora",
+   "start": 32.26,
+   "end": 32.88,
+   "prob": 0.997
+  },
+  {
+   "w": "en",
+   "start": 32.88,
+   "end": 33.02,
+   "prob": 0.858
+  },
+  {
+   "w": "la",
+   "start": 33.02,
+   "end": 33.06,
+   "prob": 0.998
+  },
+  {
+   "w": "nube,",
+   "start": 33.06,
+   "end": 33.34,
+   "prob": 0.999
+  },
+  {
+   "w": "aunque",
+   "start": 33.4,
+   "end": 33.82,
+   "prob": 0.997
+  },
+  {
+   "w": "tú",
+   "start": 33.82,
+   "end": 34.06,
+   "prob": 0.966
+  },
+  {
+   "w": "no",
+   "start": 34.06,
+   "end": 34.46,
+   "prob": 0.993
+  },
+  {
+   "w": "estés.",
+   "start": 34.46,
+   "end": 34.92,
+   "prob": 0.997
+  },
+  {
+   "w": "Y",
+   "start": 35.24,
+   "end": 35.66,
+   "prob": 0.988
+  },
+  {
+   "w": "a",
+   "start": 35.66,
+   "end": 35.8,
+   "prob": 0.996
+  },
+  {
+   "w": "mí",
+   "start": 35.8,
+   "end": 35.88,
+   "prob": 0.984
+  },
+  {
+   "w": "esto",
+   "start": 35.88,
+   "end": 36.04,
+   "prob": 0.993
+  },
+  {
+   "w": "es",
+   "start": 36.04,
+   "end": 36.12,
+   "prob": 0.996
+  },
+  {
+   "w": "lo",
+   "start": 36.12,
+   "end": 36.18,
+   "prob": 0.999
+  },
+  {
+   "w": "que",
+   "start": 36.18,
+   "end": 36.32,
+   "prob": 1.0
+  },
+  {
+   "w": "me",
+   "start": 36.32,
+   "end": 36.44,
+   "prob": 0.999
+  },
+  {
+   "w": "voló",
+   "start": 36.44,
+   "end": 36.68,
+   "prob": 0.999
+  },
+  {
+   "w": "la",
+   "start": 36.68,
+   "end": 36.76,
+   "prob": 0.996
+  },
+  {
+   "w": "cabeza,",
+   "start": 36.76,
+   "end": 36.96,
+   "prob": 1.0
+  },
+  {
+   "w": "no",
+   "start": 37.12,
+   "end": 37.36,
+   "prob": 0.998
+  },
+  {
+   "w": "es",
+   "start": 37.36,
+   "end": 37.5,
+   "prob": 0.998
+  },
+  {
+   "w": "para",
+   "start": 37.5,
+   "end": 37.7,
+   "prob": 1.0
+  },
+  {
+   "w": "programadores,",
+   "start": 37.7,
+   "end": 38.44,
+   "prob": 0.987
+  },
+  {
+   "w": "Grok",
+   "start": 38.66,
+   "end": 38.9,
+   "prob": 0.551
+  },
+  {
+   "w": "Bot",
+   "start": 38.9,
+   "end": 39.04,
+   "prob": 1.0
+  },
+  {
+   "w": "por",
+   "start": 39.04,
+   "end": 39.18,
+   "prob": 0.78
+  },
+  {
+   "w": "ejemplo",
+   "start": 39.18,
+   "end": 39.42,
+   "prob": 0.999
+  },
+  {
+   "w": "es",
+   "start": 39.42,
+   "end": 39.56,
+   "prob": 0.905
+  },
+  {
+   "w": "tan",
+   "start": 39.56,
+   "end": 39.68,
+   "prob": 1.0
+  },
+  {
+   "w": "fácil",
+   "start": 39.68,
+   "end": 40.04,
+   "prob": 0.999
+  },
+  {
+   "w": "como",
+   "start": 40.04,
+   "end": 40.22,
+   "prob": 0.998
+  },
+  {
+   "w": "usar",
+   "start": 40.22,
+   "end": 40.4,
+   "prob": 0.999
+  },
+  {
+   "w": "WhatsApp.",
+   "start": 40.4,
+   "end": 40.74,
+   "prob": 0.781
+  },
+  {
+   "w": "Son",
+   "start": 41.195,
+   "end": 41.615,
+   "prob": 0.999
+  },
+  {
+   "w": "apps",
+   "start": 41.615,
+   "end": 41.835,
+   "prob": 0.985
+  },
+  {
+   "w": "que",
+   "start": 41.835,
+   "end": 42.115,
+   "prob": 0.999
+  },
+  {
+   "w": "bajas",
+   "start": 42.115,
+   "end": 42.415,
+   "prob": 1.0
+  },
+  {
+   "w": "en",
+   "start": 42.415,
+   "end": 42.515,
+   "prob": 1.0
+  },
+  {
+   "w": "tu",
+   "start": 42.515,
+   "end": 42.575,
+   "prob": 1.0
+  },
+  {
+   "w": "celular",
+   "start": 42.575,
+   "end": 42.935,
+   "prob": 0.999
+  },
+  {
+   "w": "y",
+   "start": 42.935,
+   "end": 43.235,
+   "prob": 0.735
+  },
+  {
+   "w": "el",
+   "start": 43.235,
+   "end": 43.335,
+   "prob": 1.0
+  },
+  {
+   "w": "que",
+   "start": 43.335,
+   "end": 43.475,
+   "prob": 1.0
+  },
+  {
+   "w": "empiece",
+   "start": 43.475,
+   "end": 43.755,
+   "prob": 0.983
+  },
+  {
+   "w": "a",
+   "start": 43.755,
+   "end": 43.815,
+   "prob": 0.999
+  },
+  {
+   "w": "usarlas",
+   "start": 43.815,
+   "end": 44.195,
+   "prob": 0.999
+  },
+  {
+   "w": "hoy",
+   "start": 44.195,
+   "end": 44.355,
+   "prob": 0.999
+  },
+  {
+   "w": "en",
+   "start": 44.355,
+   "end": 44.635,
+   "prob": 0.816
+  },
+  {
+   "w": "un",
+   "start": 44.635,
+   "end": 44.735,
+   "prob": 0.999
+  },
+  {
+   "w": "año",
+   "start": 44.735,
+   "end": 45.015,
+   "prob": 1.0
+  },
+  {
+   "w": "va",
+   "start": 45.015,
+   "end": 45.255,
+   "prob": 0.896
+  },
+  {
+   "w": "a",
+   "start": 45.255,
+   "end": 45.395,
+   "prob": 1.0
+  },
+  {
+   "w": "trabajar",
+   "start": 45.395,
+   "end": 45.755,
+   "prob": 1.0
+  },
+  {
+   "w": "con",
+   "start": 45.755,
+   "end": 46.015,
+   "prob": 1.0
+  },
+  {
+   "w": "un",
+   "start": 46.015,
+   "end": 46.155,
+   "prob": 0.998
+  },
+  {
+   "w": "asistente",
+   "start": 46.155,
+   "end": 46.615,
+   "prob": 1.0
+  },
+  {
+   "w": "que",
+   "start": 46.615,
+   "end": 46.835,
+   "prob": 0.999
+  },
+  {
+   "w": "ya",
+   "start": 46.835,
+   "end": 46.995,
+   "prob": 1.0
+  },
+  {
+   "w": "lo",
+   "start": 46.995,
+   "end": 47.135,
+   "prob": 0.996
+  },
+  {
+   "w": "conoce,",
+   "start": 47.135,
+   "end": 47.595,
+   "prob": 1.0
+  },
+  {
+   "w": "mientras",
+   "start": 47.615,
+   "end": 47.935,
+   "prob": 0.999
+  },
+  {
+   "w": "los",
+   "start": 47.935,
+   "end": 48.135,
+   "prob": 0.999
+  },
+  {
+   "w": "demás",
+   "start": 48.135,
+   "end": 48.335,
+   "prob": 1.0
+  },
+  {
+   "w": "siguen",
+   "start": 48.335,
+   "end": 48.775,
+   "prob": 1.0
+  },
+  {
+   "w": "haciendo",
+   "start": 48.775,
+   "end": 48.935,
+   "prob": 1.0
+  },
+  {
+   "w": "preguntas",
+   "start": 48.935,
+   "end": 49.415,
+   "prob": 1.0
+  },
+  {
+   "w": "en",
+   "start": 49.415,
+   "end": 49.695,
+   "prob": 1.0
+  },
+  {
+   "w": "un",
+   "start": 49.695,
+   "end": 49.835,
+   "prob": 1.0
+  },
+  {
+   "w": "chat.",
+   "start": 49.835,
+   "end": 50.095,
+   "prob": 1.0
+  },
+  {
+   "w": "Así",
+   "start": 50.685,
+   "end": 51.105,
+   "prob": 0.999
+  },
+  {
+   "w": "que",
+   "start": 51.105,
+   "end": 51.305,
+   "prob": 1.0
+  },
+  {
+   "w": "si",
+   "start": 51.305,
+   "end": 51.465,
+   "prob": 0.998
+  },
+  {
+   "w": "no",
+   "start": 51.465,
+   "end": 51.685,
+   "prob": 0.999
+  },
+  {
+   "w": "sabes",
+   "start": 51.685,
+   "end": 51.925,
+   "prob": 1.0
+  },
+  {
+   "w": "cómo",
+   "start": 51.925,
+   "end": 52.305,
+   "prob": 0.984
+  },
+  {
+   "w": "implementar",
+   "start": 52.305,
+   "end": 52.865,
+   "prob": 0.987
+  },
+  {
+   "w": "IA",
+   "start": 52.865,
+   "end": 53.005,
+   "prob": 0.274
+  },
+  {
+   "w": "en",
+   "start": 53.005,
+   "end": 53.085,
+   "prob": 0.996
+  },
+  {
+   "w": "tu",
+   "start": 53.085,
+   "end": 53.145,
+   "prob": 1.0
+  },
+  {
+   "w": "negocio,",
+   "start": 53.145,
+   "end": 53.585,
+   "prob": 1.0
+  },
+  {
+   "w": "esta",
+   "start": 53.605,
+   "end": 53.985,
+   "prob": 0.999
+  },
+  {
+   "w": "cuenta",
+   "start": 53.985,
+   "end": 54.285,
+   "prob": 1.0
+  },
+  {
+   "w": "es",
+   "start": 54.285,
+   "end": 54.825,
+   "prob": 0.999
+  },
+  {
+   "w": "para",
+   "start": 54.825,
+   "end": 55.125,
+   "prob": 1.0
+  },
+  {
+   "w": "ti.",
+   "start": 55.125,
+   "end": 55.265,
+   "prob": 1.0
+  }
+ ],
+ "subs": [
+  {
+   "start": 0.08,
+   "end": 1.1,
+   "words": [
+    {
+     "w": "Hay",
+     "start": 0.08
+    },
+    {
+     "w": "una",
+     "start": 0.44
+    },
+    {
+     "w": "tendencia",
+     "start": 0.62,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 1.1,
+   "end": 1.42,
+   "words": [
+    {
+     "w": "en",
+     "start": 1.1
+    },
+    {
+     "w": "la",
+     "start": 1.2
+    },
+    {
+     "w": "IA",
+     "start": 1.2,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 1.42,
+   "end": 2.24,
+   "words": [
+    {
+     "w": "que",
+     "start": 1.42
+    },
+    {
+     "w": "casi",
+     "start": 1.54
+    },
+    {
+     "w": "nadie",
+     "start": 1.84,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 2.24,
+   "end": 2.78,
+   "words": [
+    {
+     "w": "está",
+     "start": 2.24
+    },
+    {
+     "w": "pelando",
+     "start": 2.46
+    }
+   ]
+  },
+  {
+   "start": 2.78,
+   "end": 3.76,
+   "words": [
+    {
+     "w": "y",
+     "start": 2.78
+    },
+    {
+     "w": "para",
+     "start": 3.04
+    },
+    {
+     "w": "mí",
+     "start": 3.22
+    },
+    {
+     "w": "es",
+     "start": 3.46
+    }
+   ]
+  },
+  {
+   "start": 3.76,
+   "end": 4.48,
+   "words": [
+    {
+     "w": "lo",
+     "start": 3.76
+    },
+    {
+     "w": "más",
+     "start": 3.9
+    },
+    {
+     "w": "importante",
+     "start": 4.02,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 4.48,
+   "end": 5.36,
+   "words": [
+    {
+     "w": "que",
+     "start": 4.48
+    },
+    {
+     "w": "está",
+     "start": 4.88
+    },
+    {
+     "w": "pasando",
+     "start": 5.02
+    }
+   ]
+  },
+  {
+   "start": 5.36,
+   "end": 5.92,
+   "words": [
+    {
+     "w": "este",
+     "start": 5.36
+    },
+    {
+     "w": "año",
+     "start": 5.58
+    }
+   ]
+  },
+  {
+   "start": 5.92,
+   "end": 6.82,
+   "words": [
+    {
+     "w": "Casi",
+     "start": 5.92
+    },
+    {
+     "w": "todo",
+     "start": 6.32
+    },
+    {
+     "w": "el",
+     "start": 6.5
+    },
+    {
+     "w": "mundo",
+     "start": 6.64,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 6.82,
+   "end": 8.04,
+   "words": [
+    {
+     "w": "sigue",
+     "start": 6.82
+    },
+    {
+     "w": "usando",
+     "start": 7.06
+    },
+    {
+     "w": "la",
+     "start": 7.32
+    },
+    {
+     "w": "IA",
+     "start": 7.54,
+     "key": true
+    },
+    {
+     "w": "igual",
+     "start": 7.7
+    }
+   ]
+  },
+  {
+   "start": 8.04,
+   "end": 9.46,
+   "words": [
+    {
+     "w": "abres",
+     "start": 8.04
+    },
+    {
+     "w": "Claude",
+     "start": 8.38,
+     "key": true
+    },
+    {
+     "w": "o",
+     "start": 8.7
+    },
+    {
+     "w": "ChatGPT",
+     "start": 8.82
+    }
+   ]
+  },
+  {
+   "start": 9.46,
+   "end": 10.28,
+   "words": [
+    {
+     "w": "le",
+     "start": 9.46
+    },
+    {
+     "w": "preguntas",
+     "start": 9.58,
+     "key": true
+    },
+    {
+     "w": "algo",
+     "start": 9.88
+    }
+   ]
+  },
+  {
+   "start": 10.28,
+   "end": 10.86,
+   "words": [
+    {
+     "w": "te",
+     "start": 10.28
+    },
+    {
+     "w": "contesta",
+     "start": 10.38
+    }
+   ]
+  },
+  {
+   "start": 10.86,
+   "end": 12.0,
+   "words": [
+    {
+     "w": "y",
+     "start": 10.86
+    },
+    {
+     "w": "tú",
+     "start": 11.16
+    },
+    {
+     "w": "haces",
+     "start": 11.28
+    },
+    {
+     "w": "el",
+     "start": 11.52
+    },
+    {
+     "w": "trabajo",
+     "start": 11.64,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 12.0,
+   "end": 12.8,
+   "words": [
+    {
+     "w": "es",
+     "start": 12.0
+    },
+    {
+     "w": "un",
+     "start": 12.16
+    },
+    {
+     "w": "chat",
+     "start": 12.36,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 12.8,
+   "end": 13.94,
+   "words": [
+    {
+     "w": "Pero",
+     "start": 12.8
+    },
+    {
+     "w": "las",
+     "start": 13.28
+    },
+    {
+     "w": "personas",
+     "start": 13.6
+    }
+   ]
+  },
+  {
+   "start": 13.94,
+   "end": 14.62,
+   "words": [
+    {
+     "w": "más",
+     "start": 13.94
+    },
+    {
+     "w": "adelante",
+     "start": 14.26,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 14.62,
+   "end": 15.92,
+   "words": [
+    {
+     "w": "están",
+     "start": 14.62
+    },
+    {
+     "w": "en",
+     "start": 15.18
+    },
+    {
+     "w": "otra",
+     "start": 15.34
+    },
+    {
+     "w": "cosa",
+     "start": 15.48
+    }
+   ]
+  },
+  {
+   "start": 15.92,
+   "end": 17.4,
+   "words": [
+    {
+     "w": "asistentes",
+     "start": 15.92
+    },
+    {
+     "w": "personales",
+     "start": 16.62,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 17.4,
+   "end": 18.62,
+   "words": [
+    {
+     "w": "En",
+     "start": 17.4
+    },
+    {
+     "w": "agosto",
+     "start": 17.74
+    },
+    {
+     "w": "salió",
+     "start": 18.18
+    }
+   ]
+  },
+  {
+   "start": 18.62,
+   "end": 19.22,
+   "words": [
+    {
+     "w": "Grok",
+     "start": 18.62,
+     "key": true
+    },
+    {
+     "w": "Bot",
+     "start": 18.88
+    }
+   ]
+  },
+  {
+   "start": 19.22,
+   "end": 20.36,
+   "words": [
+    {
+     "w": "en",
+     "start": 19.22
+    },
+    {
+     "w": "octubre",
+     "start": 19.34
+    },
+    {
+     "w": "Anthropic",
+     "start": 19.78,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 20.36,
+   "end": 21.0,
+   "words": [
+    {
+     "w": "sacó",
+     "start": 20.36
+    },
+    {
+     "w": "Duet",
+     "start": 20.66,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 21.0,
+   "end": 22.18,
+   "words": [
+    {
+     "w": "y",
+     "start": 21.0
+    },
+    {
+     "w": "así",
+     "start": 21.42
+    },
+    {
+     "w": "siguen",
+     "start": 21.7
+    }
+   ]
+  },
+  {
+   "start": 22.18,
+   "end": 23.16,
+   "words": [
+    {
+     "w": "saliendo",
+     "start": 22.18
+    },
+    {
+     "w": "más",
+     "start": 22.52,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 23.16,
+   "end": 24.94,
+   "words": [
+    {
+     "w": "La",
+     "start": 23.16
+    },
+    {
+     "w": "diferencia",
+     "start": 23.64,
+     "key": true
+    },
+    {
+     "w": "es",
+     "start": 24.08
+    },
+    {
+     "w": "que",
+     "start": 24.76
+    }
+   ]
+  },
+  {
+   "start": 24.94,
+   "end": 25.58,
+   "words": [
+    {
+     "w": "no",
+     "start": 24.94
+    },
+    {
+     "w": "esperan",
+     "start": 25.14,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 25.58,
+   "end": 26.46,
+   "words": [
+    {
+     "w": "a",
+     "start": 25.58
+    },
+    {
+     "w": "que",
+     "start": 25.68
+    },
+    {
+     "w": "les",
+     "start": 25.74
+    },
+    {
+     "w": "preguntes",
+     "start": 25.92
+    }
+   ]
+  },
+  {
+   "start": 26.46,
+   "end": 27.54,
+   "words": [
+    {
+     "w": "revisan",
+     "start": 26.46
+    },
+    {
+     "w": "tu",
+     "start": 27.0
+    },
+    {
+     "w": "correo",
+     "start": 27.18,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 27.54,
+   "end": 28.3,
+   "words": [
+    {
+     "w": "y",
+     "start": 27.54
+    },
+    {
+     "w": "tu",
+     "start": 27.6
+    },
+    {
+     "w": "calendario",
+     "start": 27.68,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 28.3,
+   "end": 29.18,
+   "words": [
+    {
+     "w": "te",
+     "start": 28.3
+    },
+    {
+     "w": "avisan",
+     "start": 28.4,
+     "key": true
+    },
+    {
+     "w": "que",
+     "start": 28.7
+    },
+    {
+     "w": "necesita",
+     "start": 28.88
+    }
+   ]
+  },
+  {
+   "start": 29.18,
+   "end": 30.08,
+   "words": [
+    {
+     "w": "tu",
+     "start": 29.18
+    },
+    {
+     "w": "atención",
+     "start": 29.52,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 30.08,
+   "end": 30.76,
+   "words": [
+    {
+     "w": "y",
+     "start": 30.08
+    },
+    {
+     "w": "hacen",
+     "start": 30.16
+    },
+    {
+     "w": "tareas",
+     "start": 30.32,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 30.76,
+   "end": 31.4,
+   "words": [
+    {
+     "w": "por",
+     "start": 30.76
+    },
+    {
+     "w": "su",
+     "start": 30.88
+    },
+    {
+     "w": "cuenta",
+     "start": 30.98
+    }
+   ]
+  },
+  {
+   "start": 31.4,
+   "end": 32.26,
+   "words": [
+    {
+     "w": "en",
+     "start": 31.4
+    },
+    {
+     "w": "su",
+     "start": 31.84
+    },
+    {
+     "w": "propia",
+     "start": 31.98
+    }
+   ]
+  },
+  {
+   "start": 32.26,
+   "end": 33.4,
+   "words": [
+    {
+     "w": "computadora",
+     "start": 32.26,
+     "key": true
+    },
+    {
+     "w": "en",
+     "start": 32.88
+    },
+    {
+     "w": "la",
+     "start": 33.02
+    },
+    {
+     "w": "nube",
+     "start": 33.06
+    }
+   ]
+  },
+  {
+   "start": 33.4,
+   "end": 35.24,
+   "words": [
+    {
+     "w": "aunque",
+     "start": 33.4
+    },
+    {
+     "w": "tú",
+     "start": 33.82
+    },
+    {
+     "w": "no",
+     "start": 34.06
+    },
+    {
+     "w": "estés",
+     "start": 34.46,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 35.24,
+   "end": 36.04,
+   "words": [
+    {
+     "w": "Y",
+     "start": 35.24
+    },
+    {
+     "w": "a",
+     "start": 35.66
+    },
+    {
+     "w": "mí",
+     "start": 35.8
+    },
+    {
+     "w": "esto",
+     "start": 35.88
+    }
+   ]
+  },
+  {
+   "start": 36.04,
+   "end": 36.68,
+   "words": [
+    {
+     "w": "es",
+     "start": 36.04
+    },
+    {
+     "w": "lo",
+     "start": 36.12
+    },
+    {
+     "w": "que",
+     "start": 36.18
+    },
+    {
+     "w": "me",
+     "start": 36.32
+    },
+    {
+     "w": "voló",
+     "start": 36.44
+    }
+   ]
+  },
+  {
+   "start": 36.68,
+   "end": 37.12,
+   "words": [
+    {
+     "w": "la",
+     "start": 36.68
+    },
+    {
+     "w": "cabeza",
+     "start": 36.76,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 37.12,
+   "end": 37.5,
+   "words": [
+    {
+     "w": "no",
+     "start": 37.12
+    },
+    {
+     "w": "es",
+     "start": 37.36
+    }
+   ]
+  },
+  {
+   "start": 37.5,
+   "end": 38.66,
+   "words": [
+    {
+     "w": "para",
+     "start": 37.5
+    },
+    {
+     "w": "programadores",
+     "start": 37.7,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 38.66,
+   "end": 39.42,
+   "words": [
+    {
+     "w": "Grok",
+     "start": 38.66,
+     "key": true
+    },
+    {
+     "w": "Bot",
+     "start": 38.9
+    },
+    {
+     "w": "por",
+     "start": 39.04
+    },
+    {
+     "w": "ejemplo",
+     "start": 39.18
+    }
+   ]
+  },
+  {
+   "start": 39.42,
+   "end": 40.04,
+   "words": [
+    {
+     "w": "es",
+     "start": 39.42
+    },
+    {
+     "w": "tan",
+     "start": 39.56
+    },
+    {
+     "w": "fácil",
+     "start": 39.68,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 40.04,
+   "end": 41.195,
+   "words": [
+    {
+     "w": "como",
+     "start": 40.04
+    },
+    {
+     "w": "usar",
+     "start": 40.22
+    },
+    {
+     "w": "WhatsApp",
+     "start": 40.4,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 41.195,
+   "end": 42.415,
+   "words": [
+    {
+     "w": "Son",
+     "start": 41.195
+    },
+    {
+     "w": "apps",
+     "start": 41.615,
+     "key": true
+    },
+    {
+     "w": "que",
+     "start": 41.835
+    },
+    {
+     "w": "bajas",
+     "start": 42.115
+    }
+   ]
+  },
+  {
+   "start": 42.415,
+   "end": 42.935,
+   "words": [
+    {
+     "w": "en",
+     "start": 42.415
+    },
+    {
+     "w": "tu",
+     "start": 42.515
+    },
+    {
+     "w": "celular",
+     "start": 42.575,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 42.935,
+   "end": 43.755,
+   "words": [
+    {
+     "w": "y",
+     "start": 42.935
+    },
+    {
+     "w": "el",
+     "start": 43.235
+    },
+    {
+     "w": "que",
+     "start": 43.335
+    },
+    {
+     "w": "empiece",
+     "start": 43.475,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 43.755,
+   "end": 44.355,
+   "words": [
+    {
+     "w": "a",
+     "start": 43.755
+    },
+    {
+     "w": "usarlas",
+     "start": 43.815
+    },
+    {
+     "w": "hoy",
+     "start": 44.195,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 44.355,
+   "end": 45.015,
+   "words": [
+    {
+     "w": "en",
+     "start": 44.355
+    },
+    {
+     "w": "un",
+     "start": 44.635
+    },
+    {
+     "w": "año",
+     "start": 44.735,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 45.015,
+   "end": 45.755,
+   "words": [
+    {
+     "w": "va",
+     "start": 45.015
+    },
+    {
+     "w": "a",
+     "start": 45.255
+    },
+    {
+     "w": "trabajar",
+     "start": 45.395,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 45.755,
+   "end": 46.615,
+   "words": [
+    {
+     "w": "con",
+     "start": 45.755
+    },
+    {
+     "w": "un",
+     "start": 46.015
+    },
+    {
+     "w": "asistente",
+     "start": 46.155,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 46.615,
+   "end": 47.615,
+   "words": [
+    {
+     "w": "que",
+     "start": 46.615
+    },
+    {
+     "w": "ya",
+     "start": 46.835
+    },
+    {
+     "w": "lo",
+     "start": 46.995
+    },
+    {
+     "w": "conoce",
+     "start": 47.135,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 47.615,
+   "end": 48.335,
+   "words": [
+    {
+     "w": "mientras",
+     "start": 47.615
+    },
+    {
+     "w": "los",
+     "start": 47.935
+    },
+    {
+     "w": "demás",
+     "start": 48.135
+    }
+   ]
+  },
+  {
+   "start": 48.335,
+   "end": 48.935,
+   "words": [
+    {
+     "w": "siguen",
+     "start": 48.335
+    },
+    {
+     "w": "haciendo",
+     "start": 48.775
+    }
+   ]
+  },
+  {
+   "start": 48.935,
+   "end": 50.685,
+   "words": [
+    {
+     "w": "preguntas",
+     "start": 48.935,
+     "key": true
+    },
+    {
+     "w": "en",
+     "start": 49.415
+    },
+    {
+     "w": "un",
+     "start": 49.695
+    },
+    {
+     "w": "chat",
+     "start": 49.835
+    }
+   ]
+  },
+  {
+   "start": 50.685,
+   "end": 51.925,
+   "words": [
+    {
+     "w": "Así",
+     "start": 50.685
+    },
+    {
+     "w": "que",
+     "start": 51.105
+    },
+    {
+     "w": "si",
+     "start": 51.305
+    },
+    {
+     "w": "no",
+     "start": 51.465
+    },
+    {
+     "w": "sabes",
+     "start": 51.685
+    }
+   ]
+  },
+  {
+   "start": 51.925,
+   "end": 53.005,
+   "words": [
+    {
+     "w": "cómo",
+     "start": 51.925
+    },
+    {
+     "w": "implementar",
+     "start": 52.305
+    },
+    {
+     "w": "IA",
+     "start": 52.865,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 53.005,
+   "end": 53.605,
+   "words": [
+    {
+     "w": "en",
+     "start": 53.005
+    },
+    {
+     "w": "tu",
+     "start": 53.085
+    },
+    {
+     "w": "negocio",
+     "start": 53.145
+    }
+   ]
+  },
+  {
+   "start": 53.605,
+   "end": 55.5,
+   "words": [
+    {
+     "w": "esta",
+     "start": 53.605
+    },
+    {
+     "w": "cuenta",
+     "start": 53.985
+    },
+    {
+     "w": "es",
+     "start": 54.285
+    },
+    {
+     "w": "para",
+     "start": 54.825
+    },
+    {
+     "w": "ti",
+     "start": 55.125
+    }
+   ]
+  }
+ ],
+ "extras": [
+  {
+   "tipo": "escena",
+   "id": "T6_B13_siguiente_video",
+   "start": 0,
+   "end": 3.0,
+   "escena": "tipeo",
+   "props": {
+    "texto": "Siguiente video: Claude Duet por dentro",
+    "cps": 24
+   }
+  }
+ ],
+ "musica": "reels/tendencia/musica.wav",
+ "caraYFuente": 0.6,
+ "portada": {
+  "cuadro": 3.5
+ }
+}

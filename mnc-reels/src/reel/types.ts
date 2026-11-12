@@ -21,13 +21,17 @@ export type BRoll =
   | { tipo: "contador"; start: number; end: number; valor: number; prefijo?: string; sufijo?: string; etiqueta: string; decimales?: number; fuente?: Fuente }
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
+  // Escena animada a la medida (src/components/Escenas.tsx): escena = nombre, props = sus parámetros
+  | { tipo: "escena"; start: number; end: number; escena: string; props?: Record<string, unknown>; fuente?: Fuente; id?: string }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
   | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
   | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
-  | { tipo: "cierre"; start: number; end: number };
+  | { tipo: "cierre"; start: number; end: number }
+  // Golpe de frase (p. ej. "Esto me voló la cabeza"): arriba en negro, abajo gigante en naranja
+  | { tipo: "frase"; start: number; end: number; arriba: string; abajo: string };
 
 export type Reel = {
   slug: string;
