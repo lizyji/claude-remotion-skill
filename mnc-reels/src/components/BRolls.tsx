@@ -3,6 +3,7 @@ import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideo
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
+import { CorreoCarrito, Diagrama, Pregunta, Regla, TextoGrande } from "./Animaciones";
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -40,13 +41,59 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
 
   let body: React.ReactNode = null;
   switch (b.tipo) {
-    case "cita":
+    case "cita": {
+      const pe = spring({ frame: frame - Math.round(0.45 * fps), fps, config: theme.spring.golpe });
       body = (
-        <Tarjeta style={{ width: 920 }}>
-          {b.medio ? <Pildora tono="negro" style={{ marginBottom: 26 }}>{b.medio}</Pildora> : null}
-          <Titulo size={64}>“<ConIA texto={b.titular} />”</Titulo>
-        </Tarjeta>
+        <div style={{ position: "relative", display: "flex", flexDirection: "column", alignItems: "center" }}>
+          {b.encima ? (
+            <div
+              style={{
+                fontFamily: font.titulo,
+                fontWeight: 700,
+                fontSize: 96,
+                lineHeight: 1.05,
+                color: color.negro,
+                textAlign: "center",
+                marginBottom: 34,
+                opacity: Math.min(1, pe * 1.3),
+                transform: `scale(${interpolate(pe, [0, 1], [1.3, 1])})`,
+              }}
+            >
+              {/* "|" = salto de línea; la última palabra va en naranja */}
+              {b.encima.split("|").map((linea, li, lineas) => (
+                <div key={li}>
+                  {linea.trim().split(" ").map((w, i, arr) => (
+                    <span key={i} style={{ color: li === lineas.length - 1 && i === arr.length - 1 ? color.naranja : color.negro }}>
+                      {w}
+                      {i < arr.length - 1 ? " " : ""}
+                    </span>
+                  ))}
+                </div>
+              ))}
+            </div>
+          ) : null}
+          <Tarjeta style={{ width: 920 }}>
+            {b.medio ? <Pildora tono="negro" style={{ marginBottom: 26 }}>{b.medio}</Pildora> : null}
+            <Titulo size={b.encima ? 52 : 64}>“<ConIA texto={b.titular} />”</Titulo>
+          </Tarjeta>
+        </div>
       );
+      break;
+    }
+    case "pregunta":
+      body = <Pregunta items={b.items} cada={b.cada} />;
+      break;
+    case "correo":
+      body = <CorreoCarrito carritoEn={b.carritoEn} />;
+      break;
+    case "regla":
+      body = <Regla n={b.n} titulo={b.titulo} extra={b.extra} />;
+      break;
+    case "diagrama":
+      body = <Diagrama alto={b.alto} aprueba={b.aprueba} />;
+      break;
+    case "texto":
+      body = <TextoGrande lineas={b.lineas} naranja={b.naranja} cada={b.cada} size={b.size} />;
       break;
     case "pendiente":
       body = (
@@ -131,7 +178,8 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
         <Tarjeta style={{ width: 920 }}>
           {b.titulo ? <Titulo size={56} style={{ marginBottom: 30 }}>{b.titulo}</Titulo> : null}
           {b.items.map((it, i) => {
-            const pi = spring({ frame: frame - Math.round((0.35 + i * cada) * fps), fps, config: theme.spring.suave });
+            const ti = b.tiempos?.[i] ?? 0.35 + i * cada;
+            const pi = spring({ frame: frame - Math.round(ti * fps), fps, config: theme.spring.suave });
             return (
               <div
                 key={i}
