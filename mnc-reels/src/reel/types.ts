@@ -14,13 +14,13 @@ export type Fuente = string; // "Fuente: Reuters, 12 may 2026 · reuters.com"
 
 export type BRoll =
   | { tipo: "cita"; start: number; end: number; titular: string; medio?: string; fuente: Fuente; encima?: string } // plan B
-  | { tipo: "pregunta"; start: number; end: number; items: { icono: "sobre" | "tarjeta"; texto: string }[]; cada?: number; fuente?: Fuente }
+  | { tipo: "pregunta"; start: number; end: number; items: { icono: "sobre" | "tarjeta"; texto: string }[]; cada?: number; tiempos?: number[]; fuente?: Fuente }
   | { tipo: "correo"; start: number; end: number; carritoEn?: number; fuente?: Fuente }
   | { tipo: "regla"; start: number; end: number; n: number; titulo: string; extra: "permiso" | "accesos" | "historial"; fuente?: Fuente }
   | { tipo: "diagrama"; start: number; end: number; alto?: number; aprueba?: number; fuente?: Fuente }
   | { tipo: "texto"; start: number; end: number; lineas: string[]; naranja?: string[]; cada?: number; size?: number; fuente?: Fuente }
   | { tipo: "pendiente"; start: number; end: number; id: string } // último recurso
-  | { tipo: "imagen"; start: number; end: number; src: string; fit?: "contain" | "cover"; fuente?: Fuente; zoom?: [number, number]; foco?: [number, number] }
+  | { tipo: "imagen"; start: number; end: number; src: string; fit?: "contain" | "cover"; fuente?: Fuente; zoom?: [number, number]; foco?: [number, number]; alto?: number; encima?: string; pildora?: { texto: string; en: number } }
   | { tipo: "video"; start: number; end: number; src: string; desde?: number; fit?: "contain" | "cover"; fuente?: Fuente; recorte?: { x: number; y: number; w: number; h: number } }
   | { tipo: "logo"; start: number; end: number; src: string; etiqueta?: string; fuente?: Fuente }
   | { tipo: "contador"; start: number; end: number; valor: number; prefijo?: string; sufijo?: string; etiqueta: string; decimales?: number; fuente?: Fuente }

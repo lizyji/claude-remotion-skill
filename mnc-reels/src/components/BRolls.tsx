@@ -81,7 +81,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       break;
     }
     case "pregunta":
-      body = <Pregunta items={b.items} cada={b.cada} />;
+      body = <Pregunta items={b.items} cada={b.cada} tiempos={b.tiempos} />;
       break;
     case "correo":
       body = <CorreoCarrito carritoEn={b.carritoEn} />;
@@ -106,12 +106,31 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       const [z0, z1] = b.zoom ?? [1, 1.08];
       const z = interpolate(frame, [0, dur], [z0, z1], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const [fx, fy] = b.foco ?? [50, 50];
+      const pe = spring({ frame: frame - Math.round(0.4 * fps), fps, config: theme.spring.golpe });
+      const pp = b.pildora ? spring({ frame: frame - Math.round(b.pildora.en * fps), fps, config: theme.spring.golpe }) : 0;
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco }}>
-          <Img
-            src={staticFile(b.src)}
-            style={{ width: "100%", height: "100%", objectFit: b.fit ?? "cover", transform: `scale(${z})`, transformOrigin: `${fx}% ${fy}%` }}
-          />
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          {b.encima ? (
+            <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 78, lineHeight: 1.05, color: color.negro, marginBottom: 28, whiteSpace: "nowrap", opacity: Math.min(1, pe * 1.3), transform: `scale(${interpolate(pe, [0, 1], [1.3, 1])})` }}>
+              {b.encima.split(" ").map((w, i, arr) => (
+                <span key={i} style={{ color: i === arr.length - 1 ? color.naranja : color.negro }}>
+                  {w}
+                  {i < arr.length - 1 ? " " : ""}
+                </span>
+              ))}
+            </div>
+          ) : null}
+          <div style={{ width: 960, height: b.alto ?? 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco, boxSizing: "border-box", padding: b.fit === "cover" ? 0 : 18 }}>
+            <Img
+              src={staticFile(b.src)}
+              style={{ width: "100%", height: "100%", objectFit: b.fit ?? "contain", transform: `scale(${z})`, transformOrigin: `${fx}% ${fy}%` }}
+            />
+          </div>
+          {b.pildora ? (
+            <div style={{ marginTop: 26, opacity: Math.min(1, pp * 1.4), transform: `scale(${interpolate(pp, [0, 1], [0.6, 1])})` }}>
+              <Pildora style={{ fontSize: 44, padding: "14px 40px" }}>{b.pildora.texto}</Pildora>
+            </div>
+          ) : null}
         </div>
       );
       break;

@@ -1,20 +1,233 @@
 {
-  "_nota": "Tiempos provisionales del guion (s). Al llegar la grabación se re-sincronizan con las palabras exactas de Manuel en reel.json.",
+  "_nota": "Generado desde reel.json (tiempos sincronizados con el audio de Manuel).",
   "brolls": [
-    { "id": "T1_B1_titular_expansion", "b": { "tipo": "cita", "start": 0, "end": 3, "encima": "Muse ya llegó|a México", "medio": "Expansión · 5 nov 2026", "titular": "Muse, el agente de Meta, llega a México", "fuente": "Fuente: Expansión, 5 nov 2026 · expansion.mx" } },
-    { "id": "T1_B2_video_meta", "b": { "tipo": "cita", "start": 3, "end": 6, "medio": "Meta · 8 sep 2026", "titular": "Muse te pide permiso antes de mandar un correo o hacer una compra", "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com" } },
-    { "id": "T2_B3_acceso_correo_tarjeta", "b": { "tipo": "pregunta", "start": 6, "end": 10, "cada": 1.3, "items": [ { "icono": "sobre", "texto": "¿Acceso a tu correo?" }, { "icono": "tarjeta", "texto": "¿A tu tarjeta?" } ] } },
-    { "id": "T2_B4_correo_error_carrito", "b": { "tipo": "correo", "start": 10, "end": 14, "carritoEn": 1.9, "fuente": "Ejemplo ilustrativo" } },
-    { "id": "T3_B5_titular_meta", "b": { "tipo": "cita", "start": 14, "end": 18, "medio": "Meta · 8 sep 2026", "titular": "Meta presenta Muse, su agente personal de IA", "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com" } },
-    { "id": "T3_B6_regla1_permiso", "b": { "tipo": "regla", "start": 18, "end": 22, "n": 1, "titulo": "Te pide permiso antes de mandar o comprar", "extra": "permiso", "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com" } },
-    { "id": "T3_B7_regla2_accesos", "b": { "tipo": "regla", "start": 22, "end": 26, "n": 2, "titulo": "Tú decides a qué entra: leer o también mandar", "extra": "accesos", "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com" } },
-    { "id": "T3_B8_regla3_historial", "b": { "tipo": "regla", "start": 26, "end": 30, "n": 3, "titulo": "Te enseña todo lo que hizo", "extra": "historial", "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com" } },
-    { "id": "T4_B9_diagrama", "desde": 0, "dur": 4, "b": { "tipo": "diagrama", "start": 30, "end": 37, "alto": 4.4, "aprueba": 5.8, "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com" } },
-    { "id": "T4_B10_vigilante_aprobado", "desde": 4, "dur": 3, "b": { "tipo": "diagrama", "start": 30, "end": 37, "alto": 4.4, "aprueba": 5.8, "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com" } },
-    { "id": "T4_B11_agente_vigila", "b": { "tipo": "texto", "start": 37, "end": 40, "lineas": ["Un agente", "que vigila", "al otro"], "naranja": ["vigila"], "cada": 0.35, "size": 110 } },
-    { "id": "T5_B12_checklist_1", "desde": 0, "dur": 4, "b": { "tipo": "lista", "start": 40, "end": 48, "titulo": "Antes de darle trabajo a un agente:", "items": ["Qué puede tocar", "Qué necesita tu visto bueno", "Dónde queda el registro"], "tiempos": [1.0, 4.3, 6.0] } },
-    { "id": "T5_B13_checklist_2y3", "desde": 4, "dur": 4, "b": { "tipo": "lista", "start": 40, "end": 48, "titulo": "Antes de darle trabajo a un agente:", "items": ["Qué puede tocar", "Qué necesita tu visto bueno", "Dónde queda el registro"], "tiempos": [1.0, 4.3, 6.0] } },
-    { "id": "T5_B14_primero_lea", "b": { "tipo": "texto", "start": 48, "end": 51, "lineas": ["Primero que lea.", "Después que mande."], "naranja": ["lea.", "mande."], "cada": 1.1, "size": 92 } }
+    {
+      "id": "T1_B1_titular_expansion",
+      "b": {
+        "tipo": "imagen",
+        "start": 0.0,
+        "end": 2.68,
+        "src": "reels/muse-mexico/expansion_titular.png",
+        "alto": 464,
+        "zoom": [
+          1,
+          1.04
+        ],
+        "encima": "Muse ya llegó a México",
+        "fuente": "Fuente: Expansión, 5 nov 2026 · expansion.mx"
+      }
+    },
+    {
+      "id": "T1_B2_video_meta",
+      "b": {
+        "tipo": "video",
+        "start": 2.68,
+        "end": 8.9,
+        "src": "reels/muse-mexico/muse_shopping.mp4",
+        "desde": 5.6,
+        "recorte": {
+          "x": 0.222,
+          "y": 0.42,
+          "w": 0.557,
+          "h": 0.4
+        },
+        "fuente": "Fuente: Meta, 8 sep 2026 · video oficial Muse_Shopping"
+      }
+    },
+    {
+      "id": "T2_B3_acceso_correo_tarjeta",
+      "b": {
+        "tipo": "pregunta",
+        "start": 8.9,
+        "end": 13.536,
+        "items": [
+          {
+            "icono": "sobre",
+            "texto": "¿Acceso a tu correo?"
+          },
+          {
+            "icono": "tarjeta",
+            "texto": "¿A tu tarjeta?"
+          }
+        ],
+        "tiempos": [
+          1.1799999999999993,
+          2.5700000000000003
+        ]
+      }
+    },
+    {
+      "id": "T2_B4_correo_error_carrito",
+      "b": {
+        "tipo": "correo",
+        "start": 13.536,
+        "end": 18.456,
+        "carritoEn": 3.32,
+        "fuente": "Ejemplo ilustrativo"
+      }
+    },
+    {
+      "id": "T3_B5_titular_meta",
+      "b": {
+        "tipo": "imagen",
+        "start": 18.456,
+        "end": 23.582,
+        "src": "reels/muse-mexico/meta_titular.png",
+        "alto": 372,
+        "zoom": [
+          1,
+          1.05
+        ],
+        "pildora": {
+          "texto": "Según Meta: 3 reglas",
+          "en": 3.7600000000000016
+        },
+        "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com"
+      }
+    },
+    {
+      "id": "T3_B6_regla1_permiso",
+      "b": {
+        "tipo": "regla",
+        "start": 23.582,
+        "end": 26.742,
+        "n": 1,
+        "titulo": "Te pide permiso antes de mandar o comprar",
+        "extra": "permiso",
+        "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com"
+      }
+    },
+    {
+      "id": "T3_B7_regla2_accesos",
+      "b": {
+        "tipo": "regla",
+        "start": 26.742,
+        "end": 31.082,
+        "n": 2,
+        "titulo": "Tú decides a qué entra: leer o también mandar",
+        "extra": "accesos",
+        "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com"
+      }
+    },
+    {
+      "id": "T3_B8_regla3_historial",
+      "b": {
+        "tipo": "regla",
+        "start": 31.082,
+        "end": 33.763,
+        "n": 3,
+        "titulo": "Te enseña todo lo que hizo",
+        "extra": "historial",
+        "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com"
+      }
+    },
+    {
+      "id": "T4_B9_diagrama",
+      "b": {
+        "tipo": "diagrama",
+        "start": 36.728,
+        "end": 43.408,
+        "alto": 2.58,
+        "aprueba": 6.12,
+        "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com"
+      },
+      "desde": 0,
+      "dur": 2.98
+    },
+    {
+      "id": "T4_B10_vigilante_aprobado",
+      "b": {
+        "tipo": "diagrama",
+        "start": 36.728,
+        "end": 43.408,
+        "alto": 2.58,
+        "aprueba": 6.12,
+        "fuente": "Fuente: Meta, 8 sep 2026 · about.fb.com"
+      },
+      "desde": 2.98,
+      "dur": 3.7
+    },
+    {
+      "id": "T4_B11_agente_vigila",
+      "b": {
+        "tipo": "texto",
+        "start": 33.763,
+        "end": 36.728,
+        "lineas": [
+          "Un agente",
+          "que vigila",
+          "al otro"
+        ],
+        "naranja": [
+          "vigila"
+        ],
+        "cada": 0.35,
+        "size": 110
+      }
+    },
+    {
+      "id": "T5_B12_checklist_1",
+      "b": {
+        "tipo": "lista",
+        "start": 45.208,
+        "end": 53.519,
+        "titulo": "Antes de darle trabajo a un agente:",
+        "items": [
+          "Qué puede tocar",
+          "Qué necesita tu visto bueno",
+          "Dónde queda el registro"
+        ],
+        "tiempos": [
+          3.831000000000003,
+          5.071000000000005,
+          6.571000000000005
+        ]
+      },
+      "desde": 0,
+      "dur": 4.77
+    },
+    {
+      "id": "T5_B13_checklist_2y3",
+      "b": {
+        "tipo": "lista",
+        "start": 45.208,
+        "end": 53.519,
+        "titulo": "Antes de darle trabajo a un agente:",
+        "items": [
+          "Qué puede tocar",
+          "Qué necesita tu visto bueno",
+          "Dónde queda el registro"
+        ],
+        "tiempos": [
+          3.831000000000003,
+          5.071000000000005,
+          6.571000000000005
+        ]
+      },
+      "desde": 4.77,
+      "dur": 3.541
+    },
+    {
+      "id": "T5_B14_primero_lea",
+      "b": {
+        "tipo": "texto",
+        "start": 53.519,
+        "end": 56.319,
+        "lineas": [
+          "Primero que lea.",
+          "Después que mande."
+        ],
+        "naranja": [
+          "lea.",
+          "mande."
+        ],
+        "cada": 1.7,
+        "size": 92
+      }
+    }
   ],
-  "cierre": { "id": "T6_B15_frase_cierre", "dur": 5 }
+  "cierre": {
+    "id": "T6_B15_frase_cierre",
+    "dur": 5.114
+  }
 }

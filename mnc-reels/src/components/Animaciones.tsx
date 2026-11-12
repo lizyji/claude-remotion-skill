@@ -89,12 +89,12 @@ export const IconoMundo: React.FC<{ size?: number }> = ({ size = 150 }) => (
 );
 
 // ---------- B3 · pregunta con íconos ----------
-export const Pregunta: React.FC<{ items: { icono: "sobre" | "tarjeta"; texto: string }[]; cada?: number }> = ({ items, cada = 1.4 }) => {
+export const Pregunta: React.FC<{ items: { icono: "sobre" | "tarjeta"; texto: string }[]; cada?: number; tiempos?: number[] }> = ({ items, cada = 1.4, tiempos }) => {
   return (
     <div style={{ display: "flex", flexDirection: "column", gap: 36, width: 920 }}>
       {items.map((it, i) => {
         // eslint-disable-next-line react-hooks/rules-of-hooks
-        const p = useResorte(0.15 + i * cada, "golpe");
+        const p = useResorte(tiempos?.[i] ?? 0.15 + i * cada, "golpe");
         return (
           <Tarjeta key={i} style={{ display: "flex", alignItems: "center", gap: 40, padding: "36px 44px", ...aparece(p, 40) }}>
             {it.icono === "sobre" ? <IconoSobre size={170} /> : <IconoTarjeta size={170} />}
