@@ -133,3 +133,11 @@ export const ConIA: React.FC<{ texto: string }> = ({ texto }) => (
     )}
   </>
 );
+
+// Tache: círculo negro con equis blanca
+export const Tache: React.FC<{ size?: number; p?: number }> = ({ size = 52, p = 1 }) => (
+  <svg width={size} height={size} viewBox="0 0 52 52" style={{ flexShrink: 0, transform: `scale(${p})` }}>
+    <circle cx="26" cy="26" r="24" fill={color.negro} stroke={color.negro} strokeWidth="2.5" />
+    <path d="M17 17 L35 35 M35 17 L17 35" fill="none" stroke={color.blanco} strokeWidth="5" strokeLinecap="round" />
+  </svg>
+);

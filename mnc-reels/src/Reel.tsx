@@ -18,7 +18,14 @@ const sfxAuto = (reel: ReelData) => {
   const out: { t: number; s: string }[] = [];
   for (const b of reel.broll) {
     out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
-    if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + 0.35 + i * (b.cada ?? 1.2), s: "pop" }));
+    if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + (b.tiempos ? b.tiempos[i] : 0.35 + i * (b.cada ?? 1.2)), s: "pop" }));
+    if (b.tipo === "fiscalReal") out.push({ t: b.start + b.golpe, s: "bass" });
+    if (b.tipo === "sello") {
+      out.push({ t: b.start + b.cae, s: "bass" });
+      (b.renglones ?? []).forEach((r) => out.push({ t: b.start + r.t, s: "pop" }));
+    }
+    if (b.tipo === "frases") b.lineas.forEach((l) => out.push({ t: b.start + l.t, s: "pop" }));
+    if (b.tipo === "video" && b.etiqueta) out.push({ t: b.start + 0.3, s: "click" });
     if (b.tipo === "contador") out.push({ t: b.start + 0.2 + 1.0, s: "tick" });
     if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta") out.push({ t: b.start + 0.1, s: "pop" });
   }

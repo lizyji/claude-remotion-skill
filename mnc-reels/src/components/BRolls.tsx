@@ -2,7 +2,8 @@ import React from "react";
 import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideoConfig, spring } from "remotion";
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
-import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
+import { Check, ConIA, Entra, FuentePie, Pildora, Tache, Tarjeta, useEntradaSalida } from "./Base";
+import { FiscalReal, Sello } from "./Animaciones";
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -70,25 +71,41 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       break;
     }
     case "video": {
-      const z = interpolate(frame, [0, dur], [1, 1.05], { extrapolateRight: "clamp", easing: theme.ease.inOut });
-      const r = b.recorte ?? { x: 0, y: 0, w: 1, h: 1 };
+      const r0 = b.recorte ?? { x: 0, y: 0, w: 1, h: 1 };
+      const r1 = b.recorteFin ?? r0;
+      const k = interpolate(frame, [0, dur], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: theme.ease.inOut });
+      const r = { x: r0.x + (r1.x - r0.x) * k, y: r0.y + (r1.y - r0.y) * k, w: r0.w + (r1.w - r0.w) * k, h: r0.h + (r1.h - r0.h) * k };
+      const z = b.recorteFin ? 1 : interpolate(frame, [0, dur], [1, 1.05], { extrapolateRight: "clamp", easing: theme.ease.inOut });
+      const pe = spring({ frame: frame - 8, fps, config: theme.spring.golpe });
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.negro, position: "relative" }}>
-          <div style={{ position: "absolute", inset: 0, transform: `scale(${z})` }}>
-            <OffthreadVideo
-              src={staticFile(b.src)}
-              muted
-              startFrom={Math.round((b.desde ?? 0) * fps)}
-              style={{
-                position: "absolute",
-                width: `${100 / r.w}%`,
-                height: `${100 / r.h}%`,
-                left: `${(-r.x / r.w) * 100}%`,
-                top: `${(-r.y / r.h) * 100}%`,
-                objectFit: b.fit ?? "cover",
-              }}
-            />
+        <div style={{ position: "relative", width: 960, height: 600 }}>
+          <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco, position: "relative", boxSizing: "border-box" }}>
+            <div style={{ position: "absolute", inset: 0, transform: `scale(${z})` }}>
+              <OffthreadVideo
+                src={staticFile(b.src)}
+                muted
+                startFrom={Math.round((b.desde ?? 0) * fps)}
+                style={{
+                  position: "absolute",
+                  width: `${100 / r.w}%`,
+                  height: `${100 / r.h}%`,
+                  left: `${(-r.x / r.w) * 100}%`,
+                  top: `${(-r.y / r.h) * 100}%`,
+                  objectFit: b.fit ?? "fill",
+                }}
+              />
+            </div>
+            {b.leyenda ? (
+              <div style={{ position: "absolute", left: 18, right: 18, bottom: 18, background: color.blanco, border: theme.card.border, borderRadius: 18, padding: "12px 18px", textAlign: "center", fontFamily: font.texto, fontWeight: 600, fontSize: 30, color: color.negro }}>
+                {b.leyenda}
+              </div>
+            ) : null}
           </div>
+          {b.etiqueta ? (
+            <div style={{ position: "absolute", left: 18, top: 18, transform: `scale(${pe})`, transformOrigin: "left center" }}>
+              <Pildora style={{ fontSize: 40, padding: "12px 32px", border: theme.card.border }}>{b.etiqueta}</Pildora>
+            </div>
+          ) : null}
         </div>
       );
       break;
@@ -131,7 +148,8 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
         <Tarjeta style={{ width: 920 }}>
           {b.titulo ? <Titulo size={56} style={{ marginBottom: 30 }}>{b.titulo}</Titulo> : null}
           {b.items.map((it, i) => {
-            const pi = spring({ frame: frame - Math.round((0.35 + i * cada) * fps), fps, config: theme.spring.suave });
+            const ti = b.tiempos ? b.tiempos[i] : 0.35 + i * cada;
+            const pi = spring({ frame: frame - Math.round(ti * fps), fps, config: theme.spring.suave });
             return (
               <div
                 key={i}
@@ -144,7 +162,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
                   transform: `translateX(${interpolate(pi, [0, 1], [40, 0])}px) scale(${interpolate(pi, [0, 1], [0.94, 1])})`,
                 }}
               >
-                {b.check !== false ? <Check p={pi} size={64} /> : <Pildora style={{ padding: "6px 18px" }}>{i + 1}</Pildora>}
+                {b.tache ? <Tache p={pi} size={64} /> : b.check !== false ? <Check p={pi} size={64} /> : <Pildora style={{ padding: "6px 18px" }}>{i + 1}</Pildora>}
                 <span style={{ fontFamily: font.texto, fontWeight: 600, fontSize: 48, color: color.negro }}>
                   <ConIA texto={it} />
                 </span>
@@ -167,6 +185,32 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
               <ConIA texto={b.texto} />
             </div>
           ) : null}
+        </Tarjeta>
+      );
+      break;
+    case "fiscalReal":
+      body = <FiscalReal golpe={b.golpe} />;
+      break;
+    case "sello":
+      body = <Sello texto={b.texto} cae={b.cae} renglones={b.renglones} />;
+      break;
+    case "frases":
+      body = (
+        <Tarjeta style={{ width: 940, padding: "56px 56px", textAlign: "center" }}>
+          {b.pildora ? <Pildora style={{ marginBottom: 30 }}>{b.pildora}</Pildora> : null}
+          {b.lineas.map((l, i) => {
+            const pl = spring({ frame: frame - Math.round(l.t * fps), fps, config: theme.spring.golpe });
+            const tach = l.tachado !== undefined ? interpolate(frame, [l.tachado * fps, l.tachado * fps + 8], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" }) : 0;
+            const c = l.tono === "naranja" ? color.naranja : l.tono === "gris" ? color.gris : color.negro;
+            return (
+              <div key={i} style={{ opacity: Math.min(1, pl * 1.4), transform: `scale(${interpolate(pl, [0, 1], [1.35, 1])})`, margin: "10px 0" }}>
+                <span style={{ position: "relative", display: "inline-block", fontFamily: font.titulo, fontWeight: 700, fontSize: l.size ?? 80, lineHeight: 1.1, color: c }}>
+                  <ConIA texto={l.texto} />
+                  <span style={{ position: "absolute", left: -8, top: "52%", height: 10, width: `calc(${tach * 100}% + 16px)`, background: color.naranja, borderRadius: 5 }} />
+                </span>
+              </div>
+            );
+          })}
         </Tarjeta>
       );
       break;
