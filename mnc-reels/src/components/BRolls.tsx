@@ -102,7 +102,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
             ) : null}
           </div>
           {b.etiqueta ? (
-            <div style={{ position: "absolute", left: 18, top: 18, transform: `scale(${pe})`, transformOrigin: "left center" }}>
+            <div style={{ position: "absolute", left: 18, top: -12, transform: `translateY(-100%) scale(${pe})`, transformOrigin: "left bottom" }}>
               <Pildora style={{ fontSize: 40, padding: "12px 32px", border: theme.card.border }}>{b.etiqueta}</Pildora>
             </div>
           ) : null}
