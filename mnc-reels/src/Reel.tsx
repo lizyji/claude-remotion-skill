@@ -109,7 +109,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
       {reel.musica ? <Audio src={staticFile(reel.musica)} volume={musicaVol} loop /> : null}
       {sfxAuto(reel).map((s, i) => (
         <Sequence key={`sfx${i}`} from={f(s.t)} durationInFrames={f(1)} layout="none">
-          <Audio src={staticFile(`sfx/${s.s}.wav`)} volume={s.s === "whoosh" ? 0.35 : 0.5} />
+          <Audio src={staticFile(`sfx/${s.s}.wav`)} volume={s.s === "whoosh" ? 0.105 : 0.5} />
         </Sequence>
       ))}
     </AbsoluteFill>
