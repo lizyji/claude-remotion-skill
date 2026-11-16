@@ -205,7 +205,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
   return (
     <>
       <Area conPaso={conPaso}>
-        <Entra p={p}>{body}</Entra>
+        <Entra p={p} respira={b.tipo !== "imagen" && b.tipo !== "video"}>{body}</Entra>
       </Area>
       <FuentePie texto={fuente} p={p} />
     </>

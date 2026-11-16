@@ -159,7 +159,7 @@
       "fit": "cover",
       "zoom": [
         1.0,
-        1.75
+        1.0
       ],
       "foco": [
         70,
@@ -189,7 +189,7 @@
       "fit": "cover",
       "zoom": [
         1.0,
-        1.08
+        1.0
       ],
       "foco": [
         50,
@@ -206,7 +206,7 @@
       "fit": "cover",
       "zoom": [
         1.0,
-        1.06
+        1.0
       ],
       "foco": [
         50,
@@ -3357,5 +3357,6 @@
   "caraYFuente": 0.6,
   "portada": {
     "cuadro": 2.6
-  }
+  },
+  "whoosh": false
 }

@@ -101,16 +101,16 @@ broll = [
      "ligas": [[0, 0], [0, 1], [1, 1], [2, 2]], "fuente": "Datos de ejemplo"},
     # TOMA 3 · B5: grabación de Manuel pendiente → captura oficial de Airtable (campo ligado)
     {"tipo": "imagen", "start": t_yo, "end": t_osea - G, "src": f"{SLUG}/airtable_ligado.png", "fit": "cover",
-     "zoom": [1.0, 1.75], "foco": [70, 42], "etiqueta": "Campo ligado en Airtable", "fuente": FUENTE_AT},
+     "zoom": [1.0, 1.0], "foco": [70, 42], "etiqueta": "Campo ligado en Airtable", "fuente": FUENTE_AT},
     # Ficha de proveedor (datos de ejemplo)
     {"tipo": "lista", "start": t_osea, "end": t_coneso - G, "titulo": "Proveedor A · ejemplo",
      "items": ["Me surte: cajas y cinta", "Correo", "Contacto"], "cada": (at("contacto", t_osea) - t_osea - 0.35) / 2,
      "fuente": "Datos de ejemplo"},
     # TOMA 4 · B6: grabación pendiente → capturas oficiales de Grok Bot (x.ai/bot)
     {"tipo": "imagen", "start": t_coneso, "end": t_trabaja - G, "src": f"{SLUG}/grokbot_app.png", "fit": "cover",
-     "zoom": [1.0, 1.08], "foco": [50, 20], "etiqueta": "Grok Bot", "fuente": FUENTE_XAI},
+     "zoom": [1.0, 1.0], "foco": [50, 20], "etiqueta": "Grok Bot", "fuente": FUENTE_XAI},
     {"tipo": "imagen", "start": t_trabaja, "end": t_revisa - G, "src": f"{SLUG}/grokbot_computadora.png", "fit": "cover",
-     "zoom": [1.0, 1.06], "foco": [50, 30], "etiqueta": "Su propia computadora en la nube", "fuente": FUENTE_XAI},
+     "zoom": [1.0, 1.0], "foco": [50, 30], "etiqueta": "Su propia computadora en la nube", "fuente": FUENTE_XAI},
     # Lo que hace el agente, paso a paso (sincronizado con cada frase)
     {"tipo": "lista", "start": t_revisa, "end": t_precio - G, "titulo": "El agente:",
      "items": ["Revisa tu tabla", "Escribe a cada proveedor", "Junta las respuestas", "Arma la comparativa"],
@@ -212,7 +212,7 @@ for s in reel["subs"]:
 
 reel.update({
     "broll": broll, "golpes": golpes, "pasos": pasos, "sfx": sfx,
-    "musica": f"{SLUG}/musica.wav", "caraYFuente": 0.6,
+    "musica": f"{SLUG}/musica.wav", "whoosh": False, "caraYFuente": 0.6,
     "portada": {"cuadro": 2.6},
 })
 P.write_text(json.dumps(reel, ensure_ascii=False, indent=2), encoding="utf-8")

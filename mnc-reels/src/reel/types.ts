@@ -51,6 +51,7 @@ export type Reel = {
   broll: BRoll[];
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
+  whoosh?: boolean; // false = sin whoosh en los cambios de clip ni al entrar al cierre
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
   portada?: { frase?: string; cuadro: number };
 };
