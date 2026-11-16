@@ -49,6 +49,7 @@ export type Reel = {
   broll: BRoll[];
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
+  sinWhoosh?: boolean; // true = sin whoosh en las transiciones
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
   portada?: { frase?: string; cuadro: number };
 };

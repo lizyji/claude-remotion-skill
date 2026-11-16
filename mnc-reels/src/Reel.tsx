@@ -31,7 +31,8 @@ const sfxAuto = (reel: ReelData) => {
   }
   for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" ? "whoosh" : "bass" });
   for (const p of reel.pasos ?? []) out.push({ t: p.start, s: "click" });
-  return [...out, ...(reel.sfx ?? [])];
+  const todos = [...out, ...(reel.sfx ?? [])];
+  return reel.sinWhoosh ? todos.filter((x) => x.s !== "whoosh") : todos;
 };
 
 export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {

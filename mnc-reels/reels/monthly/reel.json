@@ -3427,5 +3427,6 @@
     }
   ],
   "musica": "reels/monthly/musica.wav",
-  "caraYFuente": 0.58
+  "caraYFuente": 0.58,
+  "sinWhoosh": true
 }

@@ -51,6 +51,6 @@ golpes = [
   {"tipo": "numero", "start": 62.40, "end": 64.20, "valor": "75%", "etiqueta": "del volumen en solo 2 clientes", "fuente": "Caso de cliente reportado por Monthly"},
   {"tipo": "cierre", "start": 72.66, "end": r["duracion"]},
 ]
-r.update({"broll": broll, "golpes": golpes, "pasos": [], "sfx": [], "musica": "reels/monthly/musica.wav", "caraYFuente": 0.58})
+r.update({"broll": broll, "golpes": golpes, "pasos": [], "sfx": [], "musica": "reels/monthly/musica.wav", "caraYFuente": 0.58, "sinWhoosh": True})
 json.dump(r, open(R, "w"), ensure_ascii=False, indent=2)
 print(len(broll), "b-rolls")
