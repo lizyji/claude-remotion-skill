@@ -16,6 +16,8 @@ según [`INSTRUCCIONES.md`](INSTRUCCIONES.md), que es la fuente de verdad del pr
 | `scripts/preparar.py` | Recorta silencios (−38 dB, ≥ 0.3 s, deja 0.10 s / 0.08 s, nunca corta palabras), normaliza a −14 LUFS, re-mapea palabras y genera los bloques de subtítulos. |
 | `scripts/bloques.py` | Bloques de ≤ 5 palabras / 24 caracteres, sin terminar en artículo o preposición, 1 palabra clave en naranja. |
 | `scripts/hoja_cuadros.py` | Hoja de cuadros de un render para verificar. |
+| `scripts/gen_musica.py` | Fondo instrumental original (plan B si no hay stock de música). |
+| `src/components/BRollsExtra.tsx` | Animaciones genéricas: `chat`, `sobres`, `bandeja`, `hoja`, `diagrama`, `comparativa`, `boton`. Golpe `frase` (arriba/abajo, como "Aquí está la jugada"). |
 | `scripts/gen_sfx.mjs` | Sintetiza whoosh / pop / click / tick / bass en `public/sfx/`. |
 
 ## Flujo por pedido

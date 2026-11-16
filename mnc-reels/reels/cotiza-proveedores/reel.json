@@ -1,0 +1,3361 @@
+{
+  "broll": [
+    {
+      "tipo": "tarjeta",
+      "start": 0.0,
+      "end": 4.08,
+      "pildora": "Compras con IA",
+      "titulo": "Automatiza las compras de tu empresa"
+    },
+    {
+      "tipo": "chat",
+      "start": 4.13,
+      "end": 6.21,
+      "texto": "Cotiza este pedido",
+      "respuesta": "Escribiendo a tus proveedores",
+      "escribe": 0.9
+    },
+    {
+      "tipo": "sobres",
+      "start": 6.26,
+      "end": 9.695,
+      "titulo": "Cotización enviada",
+      "destinos": [
+        "Proveedor A",
+        "Proveedor B",
+        "Proveedor C",
+        "Proveedor D"
+      ],
+      "cada": 0.4,
+      "fuente": "Ejemplo ilustrativo"
+    },
+    {
+      "tipo": "bandeja",
+      "start": 9.745,
+      "end": 16.655,
+      "cada": 0.8466666666666667,
+      "pendienteEn": 6.080000000000001,
+      "filas": [
+        {
+          "de": "Proveedor A",
+          "asunto": "Re: cotización"
+        },
+        {
+          "de": "Proveedor B",
+          "asunto": "Re: Re: cotización"
+        },
+        {
+          "de": "Proveedor C",
+          "asunto": "Re: cotización (precio)"
+        },
+        {
+          "de": "Proveedor D",
+          "asunto": "Re: cotización",
+          "pendiente": true
+        },
+        {
+          "de": "Proveedor A",
+          "asunto": "Re: Re: cotización"
+        },
+        {
+          "de": "Proveedor E",
+          "asunto": "Re: cotización urgente"
+        }
+      ],
+      "fuente": "Ejemplo ilustrativo"
+    },
+    {
+      "tipo": "hoja",
+      "start": 16.705,
+      "end": 19.575,
+      "cada": 0.08,
+      "columnas": [
+        "Producto",
+        "Prov. A",
+        "Prov. B",
+        "Prov. C"
+      ],
+      "filas": [
+        [
+          "Cajas",
+          "$12",
+          null,
+          "$11"
+        ],
+        [
+          "Cinta",
+          null,
+          "$4",
+          null
+        ],
+        [
+          "Etiquetas",
+          "$2",
+          null,
+          "$3"
+        ],
+        [
+          "Bolsas",
+          null,
+          "$6",
+          null
+        ]
+      ],
+      "fuente": "Ejemplo ilustrativo"
+    },
+    {
+      "tipo": "tarjeta",
+      "start": 19.625,
+      "end": 22.755,
+      "pildora": "El truco",
+      "titulo": "Empieza antes de la IA"
+    },
+    {
+      "tipo": "diagrama",
+      "start": 22.805,
+      "end": 27.578,
+      "titulo": "Proveedor ↔ Productos",
+      "izq": {
+        "titulo": "Proveedores",
+        "items": [
+          "Proveedor A",
+          "Proveedor B",
+          "Proveedor C"
+        ]
+      },
+      "der": {
+        "titulo": "Productos",
+        "items": [
+          "Cajas",
+          "Cinta",
+          "Etiquetas"
+        ]
+      },
+      "ligas": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "fuente": "Datos de ejemplo"
+    },
+    {
+      "tipo": "imagen",
+      "start": 27.628,
+      "end": 31.598,
+      "src": "reels/cotiza-proveedores/airtable_ligado.png",
+      "fit": "cover",
+      "zoom": [
+        1.0,
+        1.75
+      ],
+      "foco": [
+        70,
+        42
+      ],
+      "etiqueta": "Campo ligado en Airtable",
+      "fuente": "Fuente: Airtable, captura oficial · support.airtable.com"
+    },
+    {
+      "tipo": "lista",
+      "start": 31.648,
+      "end": 35.438,
+      "titulo": "Proveedor A · ejemplo",
+      "items": [
+        "Me surte: cajas y cinta",
+        "Correo",
+        "Contacto"
+      ],
+      "cada": 1.3150000000000002,
+      "fuente": "Datos de ejemplo"
+    },
+    {
+      "tipo": "imagen",
+      "start": 35.488,
+      "end": 37.698,
+      "src": "reels/cotiza-proveedores/grokbot_app.png",
+      "fit": "cover",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "foco": [
+        50,
+        20
+      ],
+      "etiqueta": "Grok Bot",
+      "fuente": "Fuente: xAI, ago 2026 · x.ai/bot"
+    },
+    {
+      "tipo": "imagen",
+      "start": 37.748,
+      "end": 40.438,
+      "src": "reels/cotiza-proveedores/grokbot_computadora.png",
+      "fit": "cover",
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "foco": [
+        50,
+        30
+      ],
+      "etiqueta": "Su propia computadora en la nube",
+      "fuente": "Fuente: xAI, ago 2026 · x.ai/bot"
+    },
+    {
+      "tipo": "lista",
+      "start": 40.488,
+      "end": 47.318,
+      "titulo": "El agente:",
+      "items": [
+        "Revisa tu tabla",
+        "Escribe a cada proveedor",
+        "Junta las respuestas",
+        "Arma la comparativa"
+      ],
+      "cada": 1.743
+    },
+    {
+      "tipo": "comparativa",
+      "start": 47.368,
+      "end": 50.381,
+      "cada": 0.45,
+      "columnas": [
+        "Proveedor",
+        "Precio",
+        "Entrega",
+        "Estado"
+      ],
+      "filas": [
+        {
+          "celdas": [
+            "Proveedor A",
+            "$1,240",
+            "3 días"
+          ],
+          "estado": "ok"
+        },
+        {
+          "celdas": [
+            "Proveedor B",
+            "$1,180",
+            "5 días"
+          ],
+          "estado": "ok",
+          "mejor": true
+        },
+        {
+          "celdas": [
+            "Proveedor C",
+            "—",
+            "—"
+          ],
+          "estado": "falta"
+        }
+      ],
+      "fuente": "Tabla de ejemplo"
+    },
+    {
+      "tipo": "tarjeta",
+      "start": 52.371,
+      "end": 54.581,
+      "pildora": "La clave",
+      "titulo": "El agente es tan bueno como tu tabla"
+    },
+    {
+      "tipo": "tarjeta",
+      "start": 54.631,
+      "end": 58.521,
+      "pildora": "Sin tabla ordenada",
+      "titulo": "Ni la mejor IA te va a salvar"
+    },
+    {
+      "tipo": "boton",
+      "start": 58.571,
+      "end": 61.221,
+      "arriba": "La decisión sigue siendo tuya",
+      "texto": "Tú decides",
+      "clic": 2.020000000000003
+    },
+    {
+      "tipo": "lista",
+      "start": 61.271,
+      "end": 64.261,
+      "check": false,
+      "items": [
+        "Ordena",
+        "Automatiza"
+      ],
+      "cada": 1.3800000000000026
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "frase",
+      "start": 50.431,
+      "end": 52.321000000000005,
+      "arriba": "Esta es",
+      "abajo": "la clave"
+    },
+    {
+      "tipo": "cierre",
+      "start": 64.311,
+      "end": 68.3
+    }
+  ],
+  "pasos": [
+    {
+      "start": 61.271,
+      "end": 62.601000000000006,
+      "n": 1
+    },
+    {
+      "start": 62.651,
+      "end": 64.26100000000001,
+      "n": 2
+    }
+  ],
+  "sfx": [
+    {
+      "t": 4.48,
+      "s": "tick"
+    },
+    {
+      "t": 4.63,
+      "s": "tick"
+    },
+    {
+      "t": 4.78,
+      "s": "tick"
+    },
+    {
+      "t": 4.93,
+      "s": "tick"
+    },
+    {
+      "t": 5.08,
+      "s": "tick"
+    },
+    {
+      "t": 5.23,
+      "s": "tick"
+    },
+    {
+      "t": 5.63,
+      "s": "click"
+    },
+    {
+      "t": 7.26,
+      "s": "pop"
+    },
+    {
+      "t": 7.66,
+      "s": "pop"
+    },
+    {
+      "t": 8.06,
+      "s": "pop"
+    },
+    {
+      "t": 8.46,
+      "s": "pop"
+    },
+    {
+      "t": 9.945,
+      "s": "tick"
+    },
+    {
+      "t": 10.792,
+      "s": "tick"
+    },
+    {
+      "t": 11.638,
+      "s": "tick"
+    },
+    {
+      "t": 12.485,
+      "s": "tick"
+    },
+    {
+      "t": 13.332,
+      "s": "tick"
+    },
+    {
+      "t": 14.178,
+      "s": "tick"
+    },
+    {
+      "t": 15.825,
+      "s": "pop"
+    },
+    {
+      "t": 47.668,
+      "s": "tick"
+    },
+    {
+      "t": 48.118,
+      "s": "tick"
+    },
+    {
+      "t": 48.568,
+      "s": "tick"
+    },
+    {
+      "t": 49.218,
+      "s": "pop"
+    },
+    {
+      "t": 60.591,
+      "s": "click"
+    }
+  ],
+  "slug": "cotiza-proveedores",
+  "duracion": 68.3,
+  "manuel": "reels/cotiza-proveedores/manuel.mp4",
+  "cortes": [
+    9.6,
+    27.541,
+    50.328
+  ],
+  "palabras": [
+    {
+      "w": "Así",
+      "start": 0.0,
+      "end": 0.64,
+      "prob": 0.396
+    },
+    {
+      "w": "puedes",
+      "start": 0.64,
+      "end": 1.04,
+      "prob": 0.872
+    },
+    {
+      "w": "automatizar",
+      "start": 1.04,
+      "end": 1.7,
+      "prob": 0.986
+    },
+    {
+      "w": "las",
+      "start": 1.7,
+      "end": 2.02,
+      "prob": 0.976
+    },
+    {
+      "w": "compras",
+      "start": 2.02,
+      "end": 2.28,
+      "prob": 0.988
+    },
+    {
+      "w": "de",
+      "start": 2.28,
+      "end": 2.42,
+      "prob": 0.985
+    },
+    {
+      "w": "tu",
+      "start": 2.42,
+      "end": 2.54,
+      "prob": 0.987
+    },
+    {
+      "w": "empresa.",
+      "start": 2.54,
+      "end": 3.58,
+      "prob": 0.988
+    },
+    {
+      "w": "Simplemente",
+      "start": 3.94,
+      "end": 4.34,
+      "prob": 0.974
+    },
+    {
+      "w": "le",
+      "start": 4.34,
+      "end": 4.52,
+      "prob": 0.966
+    },
+    {
+      "w": "puedes",
+      "start": 4.52,
+      "end": 4.64,
+      "prob": 0.465
+    },
+    {
+      "w": "decir",
+      "start": 4.64,
+      "end": 4.74,
+      "prob": 0.542
+    },
+    {
+      "w": "a",
+      "start": 4.74,
+      "end": 4.86,
+      "prob": 0.916
+    },
+    {
+      "w": "un agente",
+      "start": 4.86,
+      "end": 5.14,
+      "prob": 0.712,
+      "corregida": true
+    },
+    {
+      "w": "que",
+      "start": 5.14,
+      "end": 5.38,
+      "prob": 0.963
+    },
+    {
+      "w": "cotiza",
+      "start": 5.38,
+      "end": 5.58,
+      "prob": 0.978
+    },
+    {
+      "w": "este",
+      "start": 5.58,
+      "end": 5.8,
+      "prob": 0.974
+    },
+    {
+      "w": "pedido",
+      "start": 5.8,
+      "end": 6.26,
+      "prob": 0.996
+    },
+    {
+      "w": "y",
+      "start": 6.26,
+      "end": 6.62,
+      "prob": 0.783
+    },
+    {
+      "w": "él",
+      "start": 6.62,
+      "end": 7.1,
+      "prob": 0.935
+    },
+    {
+      "w": "lo",
+      "start": 7.1,
+      "end": 7.28,
+      "prob": 0.955
+    },
+    {
+      "w": "va",
+      "start": 7.28,
+      "end": 7.4,
+      "prob": 0.993
+    },
+    {
+      "w": "y",
+      "start": 7.4,
+      "end": 7.62,
+      "prob": 0.977
+    },
+    {
+      "w": "lo",
+      "start": 7.62,
+      "end": 7.82,
+      "prob": 0.984
+    },
+    {
+      "w": "cotiza",
+      "start": 7.82,
+      "end": 8.02,
+      "prob": 0.993
+    },
+    {
+      "w": "con",
+      "start": 8.02,
+      "end": 8.18,
+      "prob": 0.994
+    },
+    {
+      "w": "mis",
+      "start": 8.18,
+      "end": 8.38,
+      "prob": 0.977
+    },
+    {
+      "w": "proveedores.",
+      "start": 8.38,
+      "end": 9.5,
+      "prob": 0.999
+    },
+    {
+      "w": "Y",
+      "start": 9.745,
+      "end": 9.825,
+      "prob": 0.927
+    },
+    {
+      "w": "es",
+      "start": 9.825,
+      "end": 9.965,
+      "prob": 0.991
+    },
+    {
+      "w": "que",
+      "start": 9.965,
+      "end": 10.045,
+      "prob": 0.995
+    },
+    {
+      "w": "en",
+      "start": 10.045,
+      "end": 10.225,
+      "prob": 0.993
+    },
+    {
+      "w": "compras",
+      "start": 10.225,
+      "end": 10.505,
+      "prob": 0.941
+    },
+    {
+      "w": "cotizar",
+      "start": 10.505,
+      "end": 10.925,
+      "prob": 0.796
+    },
+    {
+      "w": "es",
+      "start": 10.925,
+      "end": 11.225,
+      "prob": 0.975
+    },
+    {
+      "w": "así.",
+      "start": 11.225,
+      "end": 11.465,
+      "prob": 0.994
+    },
+    {
+      "w": "Buscas",
+      "start": 11.605,
+      "end": 11.825,
+      "prob": 0.997
+    },
+    {
+      "w": "a",
+      "start": 11.825,
+      "end": 12.005,
+      "prob": 0.989
+    },
+    {
+      "w": "quien",
+      "start": 12.005,
+      "end": 12.065,
+      "prob": 0.927
+    },
+    {
+      "w": "te",
+      "start": 12.065,
+      "end": 12.245,
+      "prob": 0.996
+    },
+    {
+      "w": "surte",
+      "start": 12.245,
+      "end": 12.505,
+      "prob": 0.794
+    },
+    {
+      "w": "cada",
+      "start": 12.505,
+      "end": 12.805,
+      "prob": 0.946
+    },
+    {
+      "w": "cosa,",
+      "start": 12.805,
+      "end": 13.045,
+      "prob": 0.996
+    },
+    {
+      "w": "le",
+      "start": 13.225,
+      "end": 13.345,
+      "prob": 0.721
+    },
+    {
+      "w": "escribes",
+      "start": 13.345,
+      "end": 13.565,
+      "prob": 0.985
+    },
+    {
+      "w": "a",
+      "start": 13.565,
+      "end": 13.785,
+      "prob": 0.988
+    },
+    {
+      "w": "uno",
+      "start": 13.785,
+      "end": 13.965,
+      "prob": 0.988
+    },
+    {
+      "w": "o",
+      "start": 13.965,
+      "end": 14.145,
+      "prob": 0.665
+    },
+    {
+      "w": "a",
+      "start": 14.145,
+      "end": 14.305,
+      "prob": 0.966
+    },
+    {
+      "w": "otro",
+      "start": 14.305,
+      "end": 14.545,
+      "prob": 0.992
+    },
+    {
+      "w": "y",
+      "start": 14.545,
+      "end": 14.825,
+      "prob": 0.824
+    },
+    {
+      "w": "esperas.",
+      "start": 14.825,
+      "end": 15.425,
+      "prob": 0.991
+    },
+    {
+      "w": "Persigues",
+      "start": 15.625,
+      "end": 15.925,
+      "prob": 0.901
+    },
+    {
+      "w": "al",
+      "start": 15.925,
+      "end": 16.065,
+      "prob": 0.903
+    },
+    {
+      "w": "que",
+      "start": 16.065,
+      "end": 16.145,
+      "prob": 0.995
+    },
+    {
+      "w": "no",
+      "start": 16.145,
+      "end": 16.225,
+      "prob": 0.993
+    },
+    {
+      "w": "te",
+      "start": 16.225,
+      "end": 16.405,
+      "prob": 0.993
+    },
+    {
+      "w": "contestó",
+      "start": 16.405,
+      "end": 16.705,
+      "prob": 0.746
+    },
+    {
+      "w": "y",
+      "start": 16.705,
+      "end": 16.865,
+      "prob": 0.952
+    },
+    {
+      "w": "al",
+      "start": 16.865,
+      "end": 16.985,
+      "prob": 0.958
+    },
+    {
+      "w": "final",
+      "start": 16.985,
+      "end": 17.145,
+      "prob": 0.999
+    },
+    {
+      "w": "pasas",
+      "start": 17.145,
+      "end": 17.525,
+      "prob": 0.975
+    },
+    {
+      "w": "todo",
+      "start": 17.525,
+      "end": 17.685,
+      "prob": 0.996
+    },
+    {
+      "w": "en",
+      "start": 17.685,
+      "end": 17.845,
+      "prob": 0.984
+    },
+    {
+      "w": "Excel",
+      "start": 17.845,
+      "end": 18.005,
+      "prob": 0.738
+    },
+    {
+      "w": "para",
+      "start": 18.005,
+      "end": 18.265,
+      "prob": 0.989
+    },
+    {
+      "w": "poder",
+      "start": 18.265,
+      "end": 18.545,
+      "prob": 0.998
+    },
+    {
+      "w": "comparar.",
+      "start": 18.545,
+      "end": 19.365,
+      "prob": 0.993
+    },
+    {
+      "w": "Para",
+      "start": 19.625,
+      "end": 19.845,
+      "prob": 0.989
+    },
+    {
+      "w": "automatizarlo",
+      "start": 19.845,
+      "end": 20.665,
+      "prob": 0.989
+    },
+    {
+      "w": "el",
+      "start": 20.665,
+      "end": 20.885,
+      "prob": 0.518
+    },
+    {
+      "w": "truco",
+      "start": 20.885,
+      "end": 21.165,
+      "prob": 0.992
+    },
+    {
+      "w": "empieza",
+      "start": 21.165,
+      "end": 21.385,
+      "prob": 0.994
+    },
+    {
+      "w": "antes",
+      "start": 21.385,
+      "end": 21.685,
+      "prob": 0.997
+    },
+    {
+      "w": "de",
+      "start": 21.685,
+      "end": 21.845,
+      "prob": 0.993
+    },
+    {
+      "w": "la",
+      "start": 21.845,
+      "end": 21.965,
+      "prob": 0.997
+    },
+    {
+      "w": "IA.",
+      "start": 21.965,
+      "end": 22.585,
+      "prob": 0.486
+    },
+    {
+      "w": "Tienes",
+      "start": 22.805,
+      "end": 23.105,
+      "prob": 0.995
+    },
+    {
+      "w": "que",
+      "start": 23.105,
+      "end": 23.225,
+      "prob": 0.999
+    },
+    {
+      "w": "tener",
+      "start": 23.225,
+      "end": 23.445,
+      "prob": 0.998
+    },
+    {
+      "w": "toda",
+      "start": 23.445,
+      "end": 23.645,
+      "prob": 0.987
+    },
+    {
+      "w": "la",
+      "start": 23.645,
+      "end": 23.785,
+      "prob": 0.999
+    },
+    {
+      "w": "información",
+      "start": 23.785,
+      "end": 24.105,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 24.105,
+      "end": 24.265,
+      "prob": 0.998
+    },
+    {
+      "w": "tus",
+      "start": 24.265,
+      "end": 24.425,
+      "prob": 0.996
+    },
+    {
+      "w": "proveedores",
+      "start": 24.425,
+      "end": 24.845,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 24.845,
+      "end": 25.085,
+      "prob": 0.994
+    },
+    {
+      "w": "productos",
+      "start": 25.085,
+      "end": 25.485,
+      "prob": 0.995
+    },
+    {
+      "w": "bien",
+      "start": 25.485,
+      "end": 25.925,
+      "prob": 0.978
+    },
+    {
+      "w": "ordenada",
+      "start": 25.925,
+      "end": 26.465,
+      "prob": 0.992
+    },
+    {
+      "w": "y",
+      "start": 26.465,
+      "end": 26.765,
+      "prob": 0.996
+    },
+    {
+      "w": "ligada",
+      "start": 26.765,
+      "end": 27.045,
+      "prob": 0.995
+    },
+    {
+      "w": "entre",
+      "start": 27.045,
+      "end": 27.305,
+      "prob": 0.997
+    },
+    {
+      "w": "sí.",
+      "start": 27.305,
+      "end": 27.485,
+      "prob": 0.917
+    },
+    {
+      "w": "Yo",
+      "start": 27.628,
+      "end": 27.868,
+      "prob": 0.493
+    },
+    {
+      "w": "utilizo",
+      "start": 27.868,
+      "end": 28.188,
+      "prob": 0.952
+    },
+    {
+      "w": "Airtable",
+      "start": 28.188,
+      "end": 28.688,
+      "prob": 0.669
+    },
+    {
+      "w": "y",
+      "start": 28.688,
+      "end": 28.908,
+      "prob": 0.906
+    },
+    {
+      "w": "tengo",
+      "start": 28.908,
+      "end": 29.088,
+      "prob": 0.992
+    },
+    {
+      "w": "una",
+      "start": 29.088,
+      "end": 29.328,
+      "prob": 0.986
+    },
+    {
+      "w": "tabla",
+      "start": 29.328,
+      "end": 29.568,
+      "prob": 0.965
+    },
+    {
+      "w": "de",
+      "start": 29.568,
+      "end": 29.688,
+      "prob": 0.995
+    },
+    {
+      "w": "proveedores",
+      "start": 29.688,
+      "end": 30.148,
+      "prob": 0.997
+    },
+    {
+      "w": "y",
+      "start": 30.148,
+      "end": 30.368,
+      "prob": 0.952
+    },
+    {
+      "w": "una",
+      "start": 30.368,
+      "end": 30.488,
+      "prob": 0.953
+    },
+    {
+      "w": "de",
+      "start": 30.488,
+      "end": 30.688,
+      "prob": 0.995
+    },
+    {
+      "w": "productos",
+      "start": 30.688,
+      "end": 30.968,
+      "prob": 0.986
+    },
+    {
+      "w": "ligadas.",
+      "start": 30.968,
+      "end": 31.488,
+      "prob": 0.926
+    },
+    {
+      "w": "O",
+      "start": 31.648,
+      "end": 31.668,
+      "prob": 0.923
+    },
+    {
+      "w": "sea,",
+      "start": 31.668,
+      "end": 31.788,
+      "prob": 0.784
+    },
+    {
+      "w": "sé",
+      "start": 31.848,
+      "end": 32.008,
+      "prob": 0.867
+    },
+    {
+      "w": "exactamente",
+      "start": 32.008,
+      "end": 32.468,
+      "prob": 0.977
+    },
+    {
+      "w": "quién",
+      "start": 32.468,
+      "end": 32.688,
+      "prob": 0.647
+    },
+    {
+      "w": "me",
+      "start": 32.688,
+      "end": 32.868,
+      "prob": 0.956
+    },
+    {
+      "w": "surte",
+      "start": 32.868,
+      "end": 33.128,
+      "prob": 0.838
+    },
+    {
+      "w": "qué",
+      "start": 33.128,
+      "end": 33.308,
+      "prob": 0.885
+    },
+    {
+      "w": "con",
+      "start": 33.308,
+      "end": 33.528,
+      "prob": 0.853
+    },
+    {
+      "w": "su",
+      "start": 33.528,
+      "end": 33.748,
+      "prob": 0.993
+    },
+    {
+      "w": "correo",
+      "start": 33.748,
+      "end": 34.128,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 34.128,
+      "end": 34.308,
+      "prob": 0.983
+    },
+    {
+      "w": "con",
+      "start": 34.308,
+      "end": 34.428,
+      "prob": 0.893
+    },
+    {
+      "w": "su",
+      "start": 34.428,
+      "end": 34.628,
+      "prob": 0.995
+    },
+    {
+      "w": "contacto.",
+      "start": 34.628,
+      "end": 35.328,
+      "prob": 0.999
+    },
+    {
+      "w": "Con",
+      "start": 35.488,
+      "end": 35.608,
+      "prob": 0.972
+    },
+    {
+      "w": "eso",
+      "start": 35.608,
+      "end": 35.868,
+      "prob": 0.991
+    },
+    {
+      "w": "le",
+      "start": 35.868,
+      "end": 36.068,
+      "prob": 0.476
+    },
+    {
+      "w": "paso",
+      "start": 36.068,
+      "end": 36.248,
+      "prob": 0.97
+    },
+    {
+      "w": "el",
+      "start": 36.248,
+      "end": 36.368,
+      "prob": 0.996
+    },
+    {
+      "w": "pedido",
+      "start": 36.368,
+      "end": 36.548,
+      "prob": 0.948
+    },
+    {
+      "w": "a",
+      "start": 36.548,
+      "end": 36.668,
+      "prob": 0.94
+    },
+    {
+      "w": "un agente",
+      "start": 36.668,
+      "end": 36.968,
+      "prob": 0.349,
+      "corregida": true
+    },
+    {
+      "w": "como",
+      "start": 36.968,
+      "end": 37.268,
+      "prob": 0.905
+    },
+    {
+      "w": "Grok",
+      "start": 37.268,
+      "end": 37.568,
+      "prob": 0.234
+    },
+    {
+      "w": "Bot",
+      "start": 37.568,
+      "end": 37.748,
+      "prob": 0.001
+    },
+    {
+      "w": "que",
+      "start": 37.748,
+      "end": 38.088,
+      "prob": 0.656
+    },
+    {
+      "w": "trabaja",
+      "start": 38.088,
+      "end": 38.408,
+      "prob": 0.978
+    },
+    {
+      "w": "en",
+      "start": 38.408,
+      "end": 38.528,
+      "prob": 0.992
+    },
+    {
+      "w": "su",
+      "start": 38.528,
+      "end": 38.728,
+      "prob": 0.996
+    },
+    {
+      "w": "propia",
+      "start": 38.728,
+      "end": 39.028,
+      "prob": 0.972
+    },
+    {
+      "w": "computadora",
+      "start": 39.028,
+      "end": 39.568,
+      "prob": 0.999
+    },
+    {
+      "w": "en",
+      "start": 39.568,
+      "end": 39.848,
+      "prob": 0.942
+    },
+    {
+      "w": "la",
+      "start": 39.848,
+      "end": 39.968,
+      "prob": 0.982
+    },
+    {
+      "w": "nube.",
+      "start": 39.968,
+      "end": 40.368,
+      "prob": 0.971
+    },
+    {
+      "w": "Revisa",
+      "start": 40.488,
+      "end": 40.908,
+      "prob": 0.817
+    },
+    {
+      "w": "en",
+      "start": 40.908,
+      "end": 41.088,
+      "prob": 0.984
+    },
+    {
+      "w": "mi",
+      "start": 41.088,
+      "end": 41.228,
+      "prob": 0.996
+    },
+    {
+      "w": "tabla",
+      "start": 41.228,
+      "end": 41.488,
+      "prob": 0.998
+    },
+    {
+      "w": "quién",
+      "start": 41.488,
+      "end": 41.608,
+      "prob": 0.875
+    },
+    {
+      "w": "me",
+      "start": 41.608,
+      "end": 41.788,
+      "prob": 0.992
+    },
+    {
+      "w": "surte",
+      "start": 41.788,
+      "end": 42.088,
+      "prob": 0.977
+    },
+    {
+      "w": "cada",
+      "start": 42.088,
+      "end": 42.388,
+      "prob": 0.976
+    },
+    {
+      "w": "producto,",
+      "start": 42.388,
+      "end": 42.868,
+      "prob": 0.998
+    },
+    {
+      "w": "le",
+      "start": 43.068,
+      "end": 43.248,
+      "prob": 0.978
+    },
+    {
+      "w": "escribe",
+      "start": 43.248,
+      "end": 43.368,
+      "prob": 0.856
+    },
+    {
+      "w": "el",
+      "start": 43.368,
+      "end": 43.528,
+      "prob": 0.996
+    },
+    {
+      "w": "correo",
+      "start": 43.528,
+      "end": 43.968,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 43.968,
+      "end": 44.208,
+      "prob": 0.994
+    },
+    {
+      "w": "cada",
+      "start": 44.208,
+      "end": 44.368,
+      "prob": 0.999
+    },
+    {
+      "w": "proveedor,",
+      "start": 44.368,
+      "end": 44.768,
+      "prob": 0.982
+    },
+    {
+      "w": "junta",
+      "start": 45.048,
+      "end": 45.128,
+      "prob": 0.801
+    },
+    {
+      "w": "las",
+      "start": 45.128,
+      "end": 45.368,
+      "prob": 0.985
+    },
+    {
+      "w": "respuestas",
+      "start": 45.368,
+      "end": 45.748,
+      "prob": 0.998
+    },
+    {
+      "w": "y",
+      "start": 45.748,
+      "end": 46.168,
+      "prob": 0.933
+    },
+    {
+      "w": "me",
+      "start": 46.168,
+      "end": 46.348,
+      "prob": 0.981
+    },
+    {
+      "w": "arma",
+      "start": 46.348,
+      "end": 46.448,
+      "prob": 0.957
+    },
+    {
+      "w": "la",
+      "start": 46.448,
+      "end": 46.808,
+      "prob": 0.991
+    },
+    {
+      "w": "comparativa.",
+      "start": 46.808,
+      "end": 47.228,
+      "prob": 0.998
+    },
+    {
+      "w": "Precio,",
+      "start": 47.368,
+      "end": 47.748,
+      "prob": 0.976
+    },
+    {
+      "w": "tiempo",
+      "start": 47.748,
+      "end": 47.968,
+      "prob": 0.997
+    },
+    {
+      "w": "de",
+      "start": 47.968,
+      "end": 48.188,
+      "prob": 0.992
+    },
+    {
+      "w": "entrega",
+      "start": 48.188,
+      "end": 48.528,
+      "prob": 0.998
+    },
+    {
+      "w": "y",
+      "start": 48.528,
+      "end": 48.688,
+      "prob": 0.929
+    },
+    {
+      "w": "quién",
+      "start": 48.688,
+      "end": 48.908,
+      "prob": 0.881
+    },
+    {
+      "w": "falta",
+      "start": 48.908,
+      "end": 49.208,
+      "prob": 0.997
+    },
+    {
+      "w": "por",
+      "start": 49.208,
+      "end": 49.548,
+      "prob": 0.988
+    },
+    {
+      "w": "contestar.",
+      "start": 49.548,
+      "end": 50.228,
+      "prob": 0.999
+    },
+    {
+      "w": "Y",
+      "start": 50.431,
+      "end": 50.571,
+      "prob": 0.928
+    },
+    {
+      "w": "para",
+      "start": 50.571,
+      "end": 50.691,
+      "prob": 0.985
+    },
+    {
+      "w": "que",
+      "start": 50.691,
+      "end": 50.911,
+      "prob": 0.998
+    },
+    {
+      "w": "funcione",
+      "start": 50.911,
+      "end": 51.451,
+      "prob": 0.997
+    },
+    {
+      "w": "esta",
+      "start": 51.451,
+      "end": 51.811,
+      "prob": 0.41
+    },
+    {
+      "w": "es",
+      "start": 51.811,
+      "end": 51.931,
+      "prob": 0.99
+    },
+    {
+      "w": "la",
+      "start": 51.931,
+      "end": 52.031,
+      "prob": 0.998
+    },
+    {
+      "w": "clave.",
+      "start": 52.031,
+      "end": 52.231,
+      "prob": 0.999
+    },
+    {
+      "w": "El",
+      "start": 52.371,
+      "end": 52.551,
+      "prob": 0.983
+    },
+    {
+      "w": "agente",
+      "start": 52.551,
+      "end": 52.891,
+      "prob": 0.987
+    },
+    {
+      "w": "es",
+      "start": 52.891,
+      "end": 53.091,
+      "prob": 0.981
+    },
+    {
+      "w": "tan",
+      "start": 53.091,
+      "end": 53.251,
+      "prob": 0.996
+    },
+    {
+      "w": "bueno",
+      "start": 53.251,
+      "end": 53.511,
+      "prob": 0.991
+    },
+    {
+      "w": "como",
+      "start": 53.511,
+      "end": 53.851,
+      "prob": 0.517
+    },
+    {
+      "w": "tu",
+      "start": 53.851,
+      "end": 54.031,
+      "prob": 0.81
+    },
+    {
+      "w": "tabla.",
+      "start": 54.031,
+      "end": 54.471,
+      "prob": 0.991
+    },
+    {
+      "w": "Si",
+      "start": 54.631,
+      "end": 54.771,
+      "prob": 0.951
+    },
+    {
+      "w": "no",
+      "start": 54.771,
+      "end": 54.971,
+      "prob": 0.998
+    },
+    {
+      "w": "sabes",
+      "start": 54.971,
+      "end": 55.231,
+      "prob": 0.978
+    },
+    {
+      "w": "quién",
+      "start": 55.231,
+      "end": 55.471,
+      "prob": 0.665
+    },
+    {
+      "w": "te",
+      "start": 55.471,
+      "end": 55.711,
+      "prob": 0.994
+    },
+    {
+      "w": "surte",
+      "start": 55.711,
+      "end": 56.071,
+      "prob": 0.845
+    },
+    {
+      "w": "qué",
+      "start": 56.071,
+      "end": 56.391,
+      "prob": 0.502
+    },
+    {
+      "w": "ni",
+      "start": 56.391,
+      "end": 56.791,
+      "prob": 0.422
+    },
+    {
+      "w": "la",
+      "start": 56.791,
+      "end": 57.051,
+      "prob": 0.992
+    },
+    {
+      "w": "mejor",
+      "start": 57.051,
+      "end": 57.231,
+      "prob": 0.997
+    },
+    {
+      "w": "IA",
+      "start": 57.231,
+      "end": 57.491,
+      "prob": 0.483
+    },
+    {
+      "w": "te",
+      "start": 57.491,
+      "end": 57.651,
+      "prob": 0.88
+    },
+    {
+      "w": "va",
+      "start": 57.651,
+      "end": 57.851,
+      "prob": 0.991
+    },
+    {
+      "w": "a",
+      "start": 57.851,
+      "end": 57.911,
+      "prob": 0.981
+    },
+    {
+      "w": "salvar.",
+      "start": 57.911,
+      "end": 58.131,
+      "prob": 0.999
+    },
+    {
+      "w": "Y",
+      "start": 58.571,
+      "end": 58.671,
+      "prob": 0.905
+    },
+    {
+      "w": "la",
+      "start": 58.671,
+      "end": 58.751,
+      "prob": 0.994
+    },
+    {
+      "w": "decisión",
+      "start": 58.751,
+      "end": 59.091,
+      "prob": 0.988
+    },
+    {
+      "w": "de",
+      "start": 59.091,
+      "end": 59.251,
+      "prob": 0.991
+    },
+    {
+      "w": "a",
+      "start": 59.251,
+      "end": 59.331,
+      "prob": 0.647
+    },
+    {
+      "w": "quién",
+      "start": 59.331,
+      "end": 59.511,
+      "prob": 0.84
+    },
+    {
+      "w": "comprarle",
+      "start": 59.511,
+      "end": 60.051,
+      "prob": 0.944
+    },
+    {
+      "w": "sigue",
+      "start": 60.051,
+      "end": 60.271,
+      "prob": 0.982
+    },
+    {
+      "w": "siendo",
+      "start": 60.271,
+      "end": 60.591,
+      "prob": 0.999
+    },
+    {
+      "w": "tuya.",
+      "start": 60.591,
+      "end": 61.011,
+      "prob": 0.996
+    },
+    {
+      "w": "Primero",
+      "start": 61.271,
+      "end": 61.511,
+      "prob": 0.949
+    },
+    {
+      "w": "ordena",
+      "start": 61.511,
+      "end": 61.831,
+      "prob": 0.963
+    },
+    {
+      "w": "a",
+      "start": 61.831,
+      "end": 61.871,
+      "prob": 0.932
+    },
+    {
+      "w": "tus",
+      "start": 61.871,
+      "end": 61.991,
+      "prob": 0.966
+    },
+    {
+      "w": "proveedores,",
+      "start": 61.991,
+      "end": 62.531,
+      "prob": 0.999
+    },
+    {
+      "w": "luego",
+      "start": 62.651,
+      "end": 62.871,
+      "prob": 0.997
+    },
+    {
+      "w": "ponle",
+      "start": 62.871,
+      "end": 63.171,
+      "prob": 0.912
+    },
+    {
+      "w": "a",
+      "start": 63.171,
+      "end": 63.191,
+      "prob": 0.812
+    },
+    {
+      "w": "un agente",
+      "start": 63.191,
+      "end": 63.511,
+      "prob": 0.839,
+      "corregida": true
+    },
+    {
+      "w": "a",
+      "start": 63.511,
+      "end": 63.651,
+      "prob": 0.968
+    },
+    {
+      "w": "cotizar.",
+      "start": 63.651,
+      "end": 64.011,
+      "prob": 0.994
+    },
+    {
+      "w": "Y",
+      "start": 64.311,
+      "end": 64.451,
+      "prob": 0.983
+    },
+    {
+      "w": "si",
+      "start": 64.451,
+      "end": 64.611,
+      "prob": 0.977
+    },
+    {
+      "w": "todavía",
+      "start": 64.611,
+      "end": 64.891,
+      "prob": 0.999
+    },
+    {
+      "w": "no",
+      "start": 64.891,
+      "end": 65.071,
+      "prob": 0.999
+    },
+    {
+      "w": "sabes",
+      "start": 65.071,
+      "end": 65.231,
+      "prob": 0.976
+    },
+    {
+      "w": "cómo",
+      "start": 65.231,
+      "end": 65.471,
+      "prob": 0.979
+    },
+    {
+      "w": "implementar IA",
+      "start": 65.471,
+      "end": 65.971,
+      "prob": 0.539,
+      "corregida": true
+    },
+    {
+      "w": "en",
+      "start": 65.971,
+      "end": 66.091,
+      "prob": 0.949
+    },
+    {
+      "w": "tu",
+      "start": 66.091,
+      "end": 66.191,
+      "prob": 0.994
+    },
+    {
+      "w": "negocio,",
+      "start": 66.191,
+      "end": 66.651,
+      "prob": 0.998
+    },
+    {
+      "w": "esta",
+      "start": 66.891,
+      "end": 66.971,
+      "prob": 0.963
+    },
+    {
+      "w": "cuenta",
+      "start": 66.971,
+      "end": 67.271,
+      "prob": 0.998
+    },
+    {
+      "w": "es",
+      "start": 67.271,
+      "end": 67.771,
+      "prob": 0.996
+    },
+    {
+      "w": "para",
+      "start": 67.771,
+      "end": 67.931,
+      "prob": 0.998
+    },
+    {
+      "w": "ti.",
+      "start": 67.931,
+      "end": 68.111,
+      "prob": 0.945
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.0,
+      "end": 1.7,
+      "words": [
+        {
+          "w": "Así",
+          "start": 0.0
+        },
+        {
+          "w": "puedes",
+          "start": 0.64
+        },
+        {
+          "w": "automatizar",
+          "start": 1.04,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 1.7,
+      "end": 2.28,
+      "words": [
+        {
+          "w": "las",
+          "start": 1.7
+        },
+        {
+          "w": "compras",
+          "start": 2.02,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 2.28,
+      "end": 3.94,
+      "words": [
+        {
+          "w": "de",
+          "start": 2.28
+        },
+        {
+          "w": "tu",
+          "start": 2.42
+        },
+        {
+          "w": "empresa",
+          "start": 2.54,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 3.94,
+      "end": 4.64,
+      "words": [
+        {
+          "w": "Simplemente",
+          "start": 3.94,
+          "key": true
+        },
+        {
+          "w": "le",
+          "start": 4.34
+        },
+        {
+          "w": "puedes",
+          "start": 4.52
+        }
+      ]
+    },
+    {
+      "start": 4.64,
+      "end": 5.14,
+      "words": [
+        {
+          "w": "decir",
+          "start": 4.64
+        },
+        {
+          "w": "a",
+          "start": 4.74
+        },
+        {
+          "w": "un agente",
+          "start": 4.86,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 5.14,
+      "end": 6.26,
+      "words": [
+        {
+          "w": "que",
+          "start": 5.14
+        },
+        {
+          "w": "“Cotiza",
+          "start": 5.38,
+          "key": true
+        },
+        {
+          "w": "este",
+          "start": 5.58
+        },
+        {
+          "w": "pedido”",
+          "start": 5.8
+        }
+      ]
+    },
+    {
+      "start": 6.26,
+      "end": 7.4,
+      "words": [
+        {
+          "w": "y",
+          "start": 6.26
+        },
+        {
+          "w": "él",
+          "start": 6.62
+        },
+        {
+          "w": "lo",
+          "start": 7.1
+        },
+        {
+          "w": "va",
+          "start": 7.28
+        }
+      ]
+    },
+    {
+      "start": 7.4,
+      "end": 8.02,
+      "words": [
+        {
+          "w": "y",
+          "start": 7.4
+        },
+        {
+          "w": "lo",
+          "start": 7.62
+        },
+        {
+          "w": "cotiza",
+          "start": 7.82,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.02,
+      "end": 9.745,
+      "words": [
+        {
+          "w": "con",
+          "start": 8.02
+        },
+        {
+          "w": "mis",
+          "start": 8.18
+        },
+        {
+          "w": "proveedores",
+          "start": 8.38,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 9.745,
+      "end": 10.505,
+      "words": [
+        {
+          "w": "Y",
+          "start": 9.745
+        },
+        {
+          "w": "es",
+          "start": 9.825
+        },
+        {
+          "w": "que",
+          "start": 9.965
+        },
+        {
+          "w": "en",
+          "start": 10.045
+        },
+        {
+          "w": "compras",
+          "start": 10.225,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 10.505,
+      "end": 11.605,
+      "words": [
+        {
+          "w": "cotizar",
+          "start": 10.505,
+          "key": true
+        },
+        {
+          "w": "es",
+          "start": 10.925
+        },
+        {
+          "w": "así",
+          "start": 11.225
+        }
+      ]
+    },
+    {
+      "start": 11.605,
+      "end": 12.505,
+      "words": [
+        {
+          "w": "Buscas",
+          "start": 11.605,
+          "key": true
+        },
+        {
+          "w": "a",
+          "start": 11.825
+        },
+        {
+          "w": "quien",
+          "start": 12.005
+        },
+        {
+          "w": "te",
+          "start": 12.065
+        },
+        {
+          "w": "surte",
+          "start": 12.245
+        }
+      ]
+    },
+    {
+      "start": 12.505,
+      "end": 13.565,
+      "words": [
+        {
+          "w": "cada",
+          "start": 12.505
+        },
+        {
+          "w": "cosa",
+          "start": 12.805
+        },
+        {
+          "w": "le",
+          "start": 13.225
+        },
+        {
+          "w": "escribes",
+          "start": 13.345,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 13.565,
+      "end": 14.545,
+      "words": [
+        {
+          "w": "a",
+          "start": 13.565
+        },
+        {
+          "w": "uno",
+          "start": 13.785
+        },
+        {
+          "w": "o",
+          "start": 13.965
+        },
+        {
+          "w": "a",
+          "start": 14.145
+        },
+        {
+          "w": "otro",
+          "start": 14.305
+        }
+      ]
+    },
+    {
+      "start": 14.545,
+      "end": 15.625,
+      "words": [
+        {
+          "w": "y",
+          "start": 14.545
+        },
+        {
+          "w": "esperas",
+          "start": 14.825,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 15.625,
+      "end": 16.225,
+      "words": [
+        {
+          "w": "Persigues",
+          "start": 15.625,
+          "key": true
+        },
+        {
+          "w": "al",
+          "start": 15.925
+        },
+        {
+          "w": "que",
+          "start": 16.065
+        },
+        {
+          "w": "no",
+          "start": 16.145
+        }
+      ]
+    },
+    {
+      "start": 16.225,
+      "end": 17.145,
+      "words": [
+        {
+          "w": "te",
+          "start": 16.225
+        },
+        {
+          "w": "contestó",
+          "start": 16.405,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 16.705
+        },
+        {
+          "w": "al",
+          "start": 16.865
+        },
+        {
+          "w": "final",
+          "start": 16.985
+        }
+      ]
+    },
+    {
+      "start": 17.145,
+      "end": 18.005,
+      "words": [
+        {
+          "w": "pasas",
+          "start": 17.145
+        },
+        {
+          "w": "todo",
+          "start": 17.525
+        },
+        {
+          "w": "en",
+          "start": 17.685
+        },
+        {
+          "w": "Excel",
+          "start": 17.845,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 18.005,
+      "end": 19.625,
+      "words": [
+        {
+          "w": "para",
+          "start": 18.005
+        },
+        {
+          "w": "poder",
+          "start": 18.265
+        },
+        {
+          "w": "comparar",
+          "start": 18.545,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 19.625,
+      "end": 20.665,
+      "words": [
+        {
+          "w": "Para",
+          "start": 19.625
+        },
+        {
+          "w": "automatizarlo",
+          "start": 19.845,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 20.665,
+      "end": 21.685,
+      "words": [
+        {
+          "w": "el",
+          "start": 20.665
+        },
+        {
+          "w": "truco",
+          "start": 20.885,
+          "key": true
+        },
+        {
+          "w": "empieza",
+          "start": 21.165
+        },
+        {
+          "w": "antes",
+          "start": 21.385
+        }
+      ]
+    },
+    {
+      "start": 21.685,
+      "end": 22.805,
+      "words": [
+        {
+          "w": "de",
+          "start": 21.685
+        },
+        {
+          "w": "la",
+          "start": 21.845
+        },
+        {
+          "w": "IA",
+          "start": 21.965,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 22.805,
+      "end": 23.645,
+      "words": [
+        {
+          "w": "Tienes",
+          "start": 22.805
+        },
+        {
+          "w": "que",
+          "start": 23.105
+        },
+        {
+          "w": "tener",
+          "start": 23.225
+        },
+        {
+          "w": "toda",
+          "start": 23.445,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 23.645,
+      "end": 24.105,
+      "words": [
+        {
+          "w": "la",
+          "start": 23.645
+        },
+        {
+          "w": "información",
+          "start": 23.785,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 24.105,
+      "end": 24.845,
+      "words": [
+        {
+          "w": "de",
+          "start": 24.105
+        },
+        {
+          "w": "tus",
+          "start": 24.265
+        },
+        {
+          "w": "proveedores",
+          "start": 24.425,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 24.845,
+      "end": 25.925,
+      "words": [
+        {
+          "w": "y",
+          "start": 24.845
+        },
+        {
+          "w": "productos",
+          "start": 25.085,
+          "key": true
+        },
+        {
+          "w": "bien",
+          "start": 25.485
+        }
+      ]
+    },
+    {
+      "start": 25.925,
+      "end": 27.045,
+      "words": [
+        {
+          "w": "ordenada",
+          "start": 25.925,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 26.465
+        },
+        {
+          "w": "ligada",
+          "start": 26.765,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 27.045,
+      "end": 27.628,
+      "words": [
+        {
+          "w": "entre",
+          "start": 27.045
+        },
+        {
+          "w": "sí",
+          "start": 27.305
+        }
+      ]
+    },
+    {
+      "start": 27.628,
+      "end": 28.688,
+      "words": [
+        {
+          "w": "Yo",
+          "start": 27.628
+        },
+        {
+          "w": "utilizo",
+          "start": 27.868
+        },
+        {
+          "w": "Airtable",
+          "start": 28.188,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 28.688,
+      "end": 29.568,
+      "words": [
+        {
+          "w": "y",
+          "start": 28.688
+        },
+        {
+          "w": "tengo",
+          "start": 28.908
+        },
+        {
+          "w": "una",
+          "start": 29.088
+        },
+        {
+          "w": "tabla",
+          "start": 29.328,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 29.568,
+      "end": 30.148,
+      "words": [
+        {
+          "w": "de",
+          "start": 29.568
+        },
+        {
+          "w": "proveedores",
+          "start": 29.688,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 30.148,
+      "end": 30.968,
+      "words": [
+        {
+          "w": "y",
+          "start": 30.148
+        },
+        {
+          "w": "una",
+          "start": 30.368
+        },
+        {
+          "w": "de",
+          "start": 30.488
+        },
+        {
+          "w": "productos",
+          "start": 30.688,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 30.968,
+      "end": 31.648,
+      "words": [
+        {
+          "w": "ligadas",
+          "start": 30.968,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 31.648,
+      "end": 32.468,
+      "words": [
+        {
+          "w": "O",
+          "start": 31.648
+        },
+        {
+          "w": "sea",
+          "start": 31.668
+        },
+        {
+          "w": "sé",
+          "start": 31.848
+        },
+        {
+          "w": "exactamente",
+          "start": 32.008,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 32.468,
+      "end": 33.308,
+      "words": [
+        {
+          "w": "quién",
+          "start": 32.468
+        },
+        {
+          "w": "me",
+          "start": 32.688
+        },
+        {
+          "w": "surte",
+          "start": 32.868
+        },
+        {
+          "w": "qué",
+          "start": 33.128
+        }
+      ]
+    },
+    {
+      "start": 33.308,
+      "end": 34.128,
+      "words": [
+        {
+          "w": "con",
+          "start": 33.308
+        },
+        {
+          "w": "su",
+          "start": 33.528
+        },
+        {
+          "w": "correo",
+          "start": 33.748,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 34.128,
+      "end": 35.488,
+      "words": [
+        {
+          "w": "y",
+          "start": 34.128
+        },
+        {
+          "w": "con",
+          "start": 34.308
+        },
+        {
+          "w": "su",
+          "start": 34.428
+        },
+        {
+          "w": "contacto",
+          "start": 34.628,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 35.488,
+      "end": 36.248,
+      "words": [
+        {
+          "w": "Con",
+          "start": 35.488
+        },
+        {
+          "w": "eso",
+          "start": 35.608
+        },
+        {
+          "w": "le",
+          "start": 35.868
+        },
+        {
+          "w": "paso",
+          "start": 36.068
+        }
+      ]
+    },
+    {
+      "start": 36.248,
+      "end": 36.968,
+      "words": [
+        {
+          "w": "el",
+          "start": 36.248
+        },
+        {
+          "w": "pedido",
+          "start": 36.368
+        },
+        {
+          "w": "a",
+          "start": 36.548
+        },
+        {
+          "w": "un agente",
+          "start": 36.668,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 36.968,
+      "end": 37.748,
+      "words": [
+        {
+          "w": "como",
+          "start": 36.968
+        },
+        {
+          "w": "Grok",
+          "start": 37.268,
+          "key": true
+        },
+        {
+          "w": "Bot",
+          "start": 37.568,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 37.748,
+      "end": 39.028,
+      "words": [
+        {
+          "w": "que",
+          "start": 37.748
+        },
+        {
+          "w": "trabaja",
+          "start": 38.088,
+          "key": true
+        },
+        {
+          "w": "en",
+          "start": 38.408
+        },
+        {
+          "w": "su",
+          "start": 38.528
+        },
+        {
+          "w": "propia",
+          "start": 38.728
+        }
+      ]
+    },
+    {
+      "start": 39.028,
+      "end": 40.488,
+      "words": [
+        {
+          "w": "computadora",
+          "start": 39.028
+        },
+        {
+          "w": "en",
+          "start": 39.568
+        },
+        {
+          "w": "la",
+          "start": 39.848
+        },
+        {
+          "w": "nube",
+          "start": 39.968,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 40.488,
+      "end": 41.608,
+      "words": [
+        {
+          "w": "Revisa",
+          "start": 40.488
+        },
+        {
+          "w": "en",
+          "start": 40.908
+        },
+        {
+          "w": "mi",
+          "start": 41.088
+        },
+        {
+          "w": "tabla",
+          "start": 41.228,
+          "key": true
+        },
+        {
+          "w": "quién",
+          "start": 41.488
+        }
+      ]
+    },
+    {
+      "start": 41.608,
+      "end": 43.068,
+      "words": [
+        {
+          "w": "me",
+          "start": 41.608
+        },
+        {
+          "w": "surte",
+          "start": 41.788
+        },
+        {
+          "w": "cada",
+          "start": 42.088
+        },
+        {
+          "w": "producto",
+          "start": 42.388,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 43.068,
+      "end": 43.968,
+      "words": [
+        {
+          "w": "le",
+          "start": 43.068
+        },
+        {
+          "w": "escribe",
+          "start": 43.248
+        },
+        {
+          "w": "el",
+          "start": 43.368
+        },
+        {
+          "w": "correo",
+          "start": 43.528,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 43.968,
+      "end": 45.048,
+      "words": [
+        {
+          "w": "a",
+          "start": 43.968
+        },
+        {
+          "w": "cada",
+          "start": 44.208
+        },
+        {
+          "w": "proveedor",
+          "start": 44.368,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 45.048,
+      "end": 45.748,
+      "words": [
+        {
+          "w": "junta",
+          "start": 45.048
+        },
+        {
+          "w": "las",
+          "start": 45.128
+        },
+        {
+          "w": "respuestas",
+          "start": 45.368,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 45.748,
+      "end": 47.368,
+      "words": [
+        {
+          "w": "y",
+          "start": 45.748
+        },
+        {
+          "w": "me",
+          "start": 46.168
+        },
+        {
+          "w": "arma",
+          "start": 46.348
+        },
+        {
+          "w": "la",
+          "start": 46.448
+        },
+        {
+          "w": "comparativa",
+          "start": 46.808,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 47.368,
+      "end": 48.528,
+      "words": [
+        {
+          "w": "Precio",
+          "start": 47.368,
+          "key": true
+        },
+        {
+          "w": "tiempo",
+          "start": 47.748
+        },
+        {
+          "w": "de",
+          "start": 47.968
+        },
+        {
+          "w": "entrega",
+          "start": 48.188,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 48.528,
+      "end": 49.208,
+      "words": [
+        {
+          "w": "y",
+          "start": 48.528
+        },
+        {
+          "w": "quién",
+          "start": 48.688
+        },
+        {
+          "w": "falta",
+          "start": 48.908
+        }
+      ]
+    },
+    {
+      "start": 49.208,
+      "end": 50.431,
+      "words": [
+        {
+          "w": "por",
+          "start": 49.208
+        },
+        {
+          "w": "contestar",
+          "start": 49.548,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 50.431,
+      "end": 51.451,
+      "words": [
+        {
+          "w": "Y",
+          "start": 50.431
+        },
+        {
+          "w": "para",
+          "start": 50.571
+        },
+        {
+          "w": "que",
+          "start": 50.691
+        },
+        {
+          "w": "funcione",
+          "start": 50.911,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 51.451,
+      "end": 52.371,
+      "words": [
+        {
+          "w": "esta",
+          "start": 51.451
+        },
+        {
+          "w": "es",
+          "start": 51.811
+        },
+        {
+          "w": "la",
+          "start": 51.931
+        },
+        {
+          "w": "clave",
+          "start": 52.031,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 52.371,
+      "end": 53.511,
+      "words": [
+        {
+          "w": "El",
+          "start": 52.371
+        },
+        {
+          "w": "agente",
+          "start": 52.551,
+          "key": true
+        },
+        {
+          "w": "es",
+          "start": 52.891
+        },
+        {
+          "w": "tan",
+          "start": 53.091
+        },
+        {
+          "w": "bueno",
+          "start": 53.251
+        }
+      ]
+    },
+    {
+      "start": 53.511,
+      "end": 54.631,
+      "words": [
+        {
+          "w": "como",
+          "start": 53.511
+        },
+        {
+          "w": "tu",
+          "start": 53.851
+        },
+        {
+          "w": "tabla",
+          "start": 54.031,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 54.631,
+      "end": 55.471,
+      "words": [
+        {
+          "w": "Si",
+          "start": 54.631
+        },
+        {
+          "w": "no",
+          "start": 54.771
+        },
+        {
+          "w": "sabes",
+          "start": 54.971
+        },
+        {
+          "w": "quién",
+          "start": 55.231
+        }
+      ]
+    },
+    {
+      "start": 55.471,
+      "end": 56.391,
+      "words": [
+        {
+          "w": "te",
+          "start": 55.471
+        },
+        {
+          "w": "surte",
+          "start": 55.711
+        },
+        {
+          "w": "qué",
+          "start": 56.071
+        }
+      ]
+    },
+    {
+      "start": 56.391,
+      "end": 57.491,
+      "words": [
+        {
+          "w": "ni",
+          "start": 56.391
+        },
+        {
+          "w": "la",
+          "start": 56.791
+        },
+        {
+          "w": "mejor",
+          "start": 57.051
+        },
+        {
+          "w": "IA",
+          "start": 57.231,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 57.491,
+      "end": 58.571,
+      "words": [
+        {
+          "w": "te",
+          "start": 57.491
+        },
+        {
+          "w": "va",
+          "start": 57.651
+        },
+        {
+          "w": "a",
+          "start": 57.851
+        },
+        {
+          "w": "salvar",
+          "start": 57.911,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 58.571,
+      "end": 59.091,
+      "words": [
+        {
+          "w": "Y",
+          "start": 58.571
+        },
+        {
+          "w": "la",
+          "start": 58.671
+        },
+        {
+          "w": "decisión",
+          "start": 58.751,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 59.091,
+      "end": 60.051,
+      "words": [
+        {
+          "w": "de",
+          "start": 59.091
+        },
+        {
+          "w": "a",
+          "start": 59.251
+        },
+        {
+          "w": "quién",
+          "start": 59.331
+        },
+        {
+          "w": "comprarle",
+          "start": 59.511,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 60.051,
+      "end": 61.271,
+      "words": [
+        {
+          "w": "sigue",
+          "start": 60.051
+        },
+        {
+          "w": "siendo",
+          "start": 60.271
+        },
+        {
+          "w": "tuya",
+          "start": 60.591,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 61.271,
+      "end": 61.831,
+      "words": [
+        {
+          "w": "Primero",
+          "start": 61.271
+        },
+        {
+          "w": "ordena",
+          "start": 61.511,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 61.831,
+      "end": 62.651,
+      "words": [
+        {
+          "w": "a",
+          "start": 61.831
+        },
+        {
+          "w": "tus",
+          "start": 61.871
+        },
+        {
+          "w": "proveedores",
+          "start": 61.991,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 62.651,
+      "end": 63.511,
+      "words": [
+        {
+          "w": "luego",
+          "start": 62.651
+        },
+        {
+          "w": "ponle",
+          "start": 62.871
+        },
+        {
+          "w": "a",
+          "start": 63.171
+        },
+        {
+          "w": "un agente",
+          "start": 63.191,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 63.511,
+      "end": 64.311,
+      "words": [
+        {
+          "w": "a",
+          "start": 63.511
+        },
+        {
+          "w": "cotizar",
+          "start": 63.651,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 64.311,
+      "end": 65.231,
+      "words": [
+        {
+          "w": "Y",
+          "start": 64.311
+        },
+        {
+          "w": "si",
+          "start": 64.451
+        },
+        {
+          "w": "todavía",
+          "start": 64.611,
+          "key": true
+        },
+        {
+          "w": "no",
+          "start": 64.891
+        },
+        {
+          "w": "sabes",
+          "start": 65.071
+        }
+      ]
+    },
+    {
+      "start": 65.231,
+      "end": 65.971,
+      "words": [
+        {
+          "w": "cómo",
+          "start": 65.231
+        },
+        {
+          "w": "implementar IA",
+          "start": 65.471,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 65.971,
+      "end": 66.891,
+      "words": [
+        {
+          "w": "en",
+          "start": 65.971
+        },
+        {
+          "w": "tu",
+          "start": 66.091
+        },
+        {
+          "w": "negocio",
+          "start": 66.191,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 66.891,
+      "end": 68.361,
+      "words": [
+        {
+          "w": "esta",
+          "start": 66.891
+        },
+        {
+          "w": "cuenta",
+          "start": 66.971,
+          "key": true
+        },
+        {
+          "w": "es",
+          "start": 67.271
+        },
+        {
+          "w": "para",
+          "start": 67.771
+        },
+        {
+          "w": "ti",
+          "start": 67.931
+        }
+      ]
+    }
+  ],
+  "musica": "reels/cotiza-proveedores/musica.wav",
+  "caraYFuente": 0.6,
+  "portada": {
+    "cuadro": 2.6
+  }
+}

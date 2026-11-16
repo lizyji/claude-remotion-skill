@@ -2,6 +2,7 @@ import React from "react";
 import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideoConfig, spring } from "remotion";
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
+import { Bandeja, Boton, Chat, Comparativa, Diagrama, Hoja, Sobres } from "./BRollsExtra";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
 
 const { color, font, layout } = theme;
@@ -59,12 +60,18 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       const [z0, z1] = b.zoom ?? [1, 1.08];
       const z = interpolate(frame, [0, dur], [z0, z1], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const [fx, fy] = b.foco ?? [50, 50];
+      const pe = spring({ frame: frame - Math.round(0.5 * fps), fps, config: theme.spring.golpe });
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco }}>
+        <div style={{ position: "relative", width: 960, height: b.alto ?? 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco }}>
           <Img
             src={staticFile(b.src)}
             style={{ width: "100%", height: "100%", objectFit: b.fit ?? "cover", transform: `scale(${z})`, transformOrigin: `${fx}% ${fy}%` }}
           />
+          {b.etiqueta ? (
+            <div style={{ position: "absolute", left: 24, bottom: 24, transform: `scale(${pe})`, transformOrigin: "0% 100%" }}>
+              <Pildora>{b.etiqueta}</Pildora>
+            </div>
+          ) : null}
         </div>
       );
       break;
@@ -169,6 +176,27 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
           ) : null}
         </Tarjeta>
       );
+      break;
+    case "chat":
+      body = <Chat texto={b.texto} respuesta={b.respuesta} escribe={b.escribe} />;
+      break;
+    case "sobres":
+      body = <Sobres destinos={b.destinos} cada={b.cada} titulo={b.titulo} />;
+      break;
+    case "bandeja":
+      body = <Bandeja filas={b.filas} cada={b.cada} pendienteEn={b.pendienteEn} />;
+      break;
+    case "hoja":
+      body = <Hoja columnas={b.columnas} filas={b.filas} cada={b.cada} />;
+      break;
+    case "diagrama":
+      body = <Diagrama titulo={b.titulo} izq={b.izq} der={b.der} ligas={b.ligas} />;
+      break;
+    case "comparativa":
+      body = <Comparativa columnas={b.columnas} filas={b.filas} cada={b.cada} />;
+      break;
+    case "boton":
+      body = <Boton texto={b.texto} arriba={b.arriba} clic={b.clic} />;
       break;
     case "silueta":
       return null; // se dibuja a pantalla completa en Reel.tsx

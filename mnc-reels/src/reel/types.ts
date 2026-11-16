@@ -15,17 +15,26 @@ export type Fuente = string; // "Fuente: Reuters, 12 may 2026 · reuters.com"
 export type BRoll =
   | { tipo: "cita"; start: number; end: number; titular: string; medio?: string; fuente: Fuente } // plan B
   | { tipo: "pendiente"; start: number; end: number; id: string } // último recurso
-  | { tipo: "imagen"; start: number; end: number; src: string; fit?: "contain" | "cover"; fuente?: Fuente; zoom?: [number, number]; foco?: [number, number] }
+  | { tipo: "imagen"; start: number; end: number; src: string; fit?: "contain" | "cover"; fuente?: Fuente; zoom?: [number, number]; foco?: [number, number]; etiqueta?: string; alto?: number }
   | { tipo: "video"; start: number; end: number; src: string; desde?: number; fit?: "contain" | "cover"; fuente?: Fuente; recorte?: { x: number; y: number; w: number; h: number } }
   | { tipo: "logo"; start: number; end: number; src: string; etiqueta?: string; fuente?: Fuente }
   | { tipo: "contador"; start: number; end: number; valor: number; prefijo?: string; sufijo?: string; etiqueta: string; decimales?: number; fuente?: Fuente }
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
+  // Animaciones genéricas (sin marcas ni interfaces reales)
+  | { tipo: "chat"; start: number; end: number; texto: string; respuesta?: string; escribe?: number; fuente?: Fuente }
+  | { tipo: "sobres"; start: number; end: number; destinos: string[]; cada?: number; titulo?: string; fuente?: Fuente }
+  | { tipo: "bandeja"; start: number; end: number; filas: { de: string; asunto: string; pendiente?: boolean }[]; cada?: number; pendienteEn?: number; fuente?: Fuente }
+  | { tipo: "hoja"; start: number; end: number; columnas: string[]; filas: (string | null)[][]; cada?: number; fuente?: Fuente }
+  | { tipo: "diagrama"; start: number; end: number; titulo?: string; izq: { titulo: string; items: string[] }; der: { titulo: string; items: string[] }; ligas: [number, number][]; fuente?: Fuente }
+  | { tipo: "comparativa"; start: number; end: number; columnas: string[]; filas: { celdas: string[]; estado: "ok" | "falta"; mejor?: boolean }[]; cada?: number; fuente?: Fuente }
+  | { tipo: "boton"; start: number; end: number; texto: string; arriba?: string; clic?: number; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
   | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
+  | { tipo: "frase"; start: number; end: number; arriba: string; abajo: string }
   | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
   | { tipo: "cierre"; start: number; end: number };
 
