@@ -32,7 +32,8 @@ const Titulo: React.FC<{ children: React.ReactNode; size?: number; style?: React
 );
 
 // Un B-roll vive dentro de un <Sequence>: frame 0 = su inicio.
-export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPaso }) => {
+// sinZoom: recorte fijo, sin paneo/zoom lento dentro del recuadro
+export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean; sinZoom?: boolean }> = ({ b, conPaso, sinZoom }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const dur = Math.round((b.end - b.start) * fps);
@@ -57,7 +58,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       );
       break;
     case "imagen": {
-      const [z0, z1] = b.zoom ?? [1, 1.08];
+      const [z0, z1] = sinZoom ? [1, 1] : b.zoom ?? [1, 1.08];
       const z = interpolate(frame, [0, dur], [z0, z1], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const [fx, fy] = b.foco ?? [50, 50];
       body = (
@@ -72,10 +73,10 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
     }
     case "video": {
       const r0 = b.recorte ?? { x: 0, y: 0, w: 1, h: 1 };
-      const r1 = b.recorteFin ?? r0;
+      const r1 = sinZoom ? r0 : b.recorteFin ?? r0;
       const k = interpolate(frame, [0, dur], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: theme.ease.inOut });
       const r = { x: r0.x + (r1.x - r0.x) * k, y: r0.y + (r1.y - r0.y) * k, w: r0.w + (r1.w - r0.w) * k, h: r0.h + (r1.h - r0.h) * k };
-      const z = b.recorteFin ? 1 : interpolate(frame, [0, dur], [1, 1.05], { extrapolateRight: "clamp", easing: theme.ease.inOut });
+      const z = sinZoom || b.recorteFin ? 1 : interpolate(frame, [0, dur], [1, 1.05], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const pe = spring({ frame: frame - 8, fps, config: theme.spring.golpe });
       body = (
         <div style={{ position: "relative", width: 960, height: 600 }}>

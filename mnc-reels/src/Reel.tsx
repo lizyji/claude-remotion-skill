@@ -78,7 +78,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
         .filter((b) => b.tipo !== "silueta")
         .map((b, i) => (
           <Sequence key={i} from={f(b.start)} durationInFrames={Math.max(1, f(b.end) - f(b.start))} layout="none">
-            <BRollView b={b} conPaso={(reel.pasos ?? []).some((s) => s.start < b.end && s.end > b.start)} />
+            <BRollView b={b} sinZoom={reel.sinZoom} conPaso={(reel.pasos ?? []).some((s) => s.start < b.end && s.end > b.start)} />
           </Sequence>
         ))}
 
