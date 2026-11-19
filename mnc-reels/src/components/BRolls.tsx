@@ -75,7 +75,11 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       const z = interpolate(frame, [0, dur], [1, 1.05], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const r = b.recorte ?? { x: 0, y: 0, w: 1, h: 1 };
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.negro, position: "relative" }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 22 }}>
+          {b.etiqueta ? (
+            <Pildora style={{ fontSize: 40, transform: `scale(${spring({ frame: frame - 12, fps, config: theme.spring.golpe })})` }}>{b.etiqueta}</Pildora>
+          ) : null}
+        <div style={{ width: 960, height: b.etiqueta ? 520 : 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.negro, position: "relative" }}>
           <div style={{ position: "absolute", inset: 0, transform: `scale(${z})` }}>
             <OffthreadVideo
               src={staticFile(b.src)}
@@ -91,11 +95,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
               }}
             />
           </div>
-          {b.etiqueta ? (
-            <div style={{ position: "absolute", left: 0, right: 0, bottom: 34, display: "flex", justifyContent: "center" }}>
-              <Pildora style={{ fontSize: 40, transform: `scale(${spring({ frame: frame - 12, fps, config: theme.spring.golpe })})` }}>{b.etiqueta}</Pildora>
-            </div>
-          ) : null}
+        </div>
         </div>
       );
       break;
@@ -183,6 +183,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
     case "premio":
     case "tachado":
     case "tabla":
+    case "riesgo":
       body = <BRollExtra b={b} dur={dur} />;
       break;
     case "silueta":

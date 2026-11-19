@@ -41,13 +41,12 @@
    "fuente": "Fuente: Gomez-Uribe y Hunt (Netflix), ACM, dic 2015"
   },
   {
-   "tipo": "video",
+   "tipo": "riesgo",
    "start": 12.27,
    "end": 15.37,
-   "src": "reels/netflix/mixkit_26089.mp4",
-   "desde": 1.0,
-   "etiqueta": "↑ Riesgo de que cancele",
-   "fuente": "Fuente: Gomez-Uribe y Hunt (Netflix), ACM, dic 2015 · Video: Mixkit"
+   "titulo": "1:30 sin encontrar nada",
+   "etiqueta": "Riesgo de que cancele",
+   "fuente": "Fuente: Gomez-Uribe y Hunt (Netflix), ACM, dic 2015"
   },
   {
    "tipo": "video",
@@ -2386,5 +2385,6 @@
  "caraYFuente": 0.5,
  "portada": {
   "cuadro": 10.0
- }
+ },
+ "sinWhoosh": true
 }

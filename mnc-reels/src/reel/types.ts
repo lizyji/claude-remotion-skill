@@ -27,6 +27,7 @@ export type BRoll =
   | { tipo: "filas"; start: number; end: number; datos: string[]; fuente?: Fuente }
   | { tipo: "premio"; start: number; end: number; monto: number; anio: string; extra?: string; fuente?: Fuente }
   | { tipo: "tachado"; start: number; end: number; texto: string; pildora?: string; fuente?: Fuente }
+  | { tipo: "riesgo"; start: number; end: number; titulo: string; etiqueta: string; fuente?: Fuente }
   | { tipo: "tabla"; start: number; end: number; fase: "tabla" | "ofertas"; nota?: string; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
   | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
@@ -49,6 +50,7 @@ export type Reel = {
   broll: BRoll[];
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
+  sinWhoosh?: boolean; // true = sin "whoosh" en los cambios de clip ni en el cierre
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
   portada?: { frase?: string; cuadro: number };
 };

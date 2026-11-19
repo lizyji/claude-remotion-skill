@@ -374,6 +374,52 @@ const Tabla: React.FC<{ fase: "tabla" | "ofertas"; nota?: string }> = ({ fase, n
   );
 };
 
+
+// ── Riesgo: tras 1:30 sin encontrar nada, el medidor sube a "alto" ──────────────────
+const Riesgo: React.FC<{ titulo: string; etiqueta: string }> = ({ titulo, etiqueta }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const N = 10;
+  const nivel = interpolate(frame, [fps * 0.6, fps * 2.0], [0, N], { ...clamp, easing: theme.ease.inOut });
+  const alto = useResorte(2.05, "golpe");
+  const t = useResorte(0.05);
+  return (
+    <Tarjeta style={{ width: 940, padding: "44px 48px" }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 22, opacity: t, marginBottom: 34 }}>
+        <svg width={70} height={70} viewBox="0 0 70 70" style={{ flexShrink: 0 }}>
+          <circle cx={35} cy={38} r={27} fill={color.blanco} stroke={color.negro} strokeWidth={6} />
+          <rect x={29} y={2} width={12} height={8} rx={2} fill={color.negro} />
+          <path d="M35 38 L35 22" stroke={color.naranja} strokeWidth={6} strokeLinecap="round" />
+        </svg>
+        <Titulo size={58}>{titulo}</Titulo>
+      </div>
+      <div style={{ fontFamily: font.texto, fontWeight: 600, fontSize: 40, color: color.negro, marginBottom: 18 }}>{etiqueta}</div>
+      <div style={{ display: "flex", alignItems: "flex-end", gap: 12, height: 190 }}>
+        {Array.from({ length: N }).map((_, i) => {
+          const on = Math.min(1, Math.max(0, nivel - i));
+          return (
+            <div
+              key={i}
+              style={{
+                flex: 1,
+                height: 50 + i * 14,
+                borderRadius: 10,
+                border: `3px solid ${color.negro}`,
+                background: on > 0.5 ? (i >= 6 ? color.naranja : color.negro) : color.verde,
+                transform: `scaleY(${1 + 0.15 * Math.sin(on * Math.PI)})`,
+                transformOrigin: "bottom",
+              }}
+            />
+          );
+        })}
+        <div style={{ marginLeft: 16, alignSelf: "center", transform: `scale(${alto})` }}>
+          <Pildora style={{ fontSize: 44, whiteSpace: "nowrap" }}>↑ Alto</Pildora>
+        </div>
+      </div>
+    </Tarjeta>
+  );
+};
+
 export const BRollExtra: React.FC<{ b: BRoll; dur: number }> = ({ b, dur }) => {
   switch (b.tipo) {
     case "cronometro":
@@ -386,6 +432,8 @@ export const BRollExtra: React.FC<{ b: BRoll; dur: number }> = ({ b, dur }) => {
       return <Premio monto={b.monto} anio={b.anio} extra={b.extra} />;
     case "tachado":
       return <Tachado texto={b.texto} pildora={b.pildora} />;
+    case "riesgo":
+      return <Riesgo titulo={b.titulo} etiqueta={b.etiqueta} />;
     case "tabla":
       return <Tabla fase={b.fase} nota={b.nota} />;
     default:
