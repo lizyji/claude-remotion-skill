@@ -1,0 +1,2390 @@
+{
+ "broll": [
+  {
+   "tipo": "logo",
+   "start": 0.0,
+   "end": 2.21,
+   "src": "reels/netflix/netflix_logo.svg",
+   "etiqueta": "Recomendaciones"
+  },
+  {
+   "tipo": "contador",
+   "start": 2.21,
+   "end": 4.55,
+   "valor": 1000,
+   "prefijo": "+$",
+   "etiqueta": "millones de dólares al año",
+   "fuente": "Fuente: Gomez-Uribe y Hunt (Netflix), ACM, dic 2015"
+  },
+  {
+   "tipo": "tachado",
+   "start": 4.55,
+   "end": 6.25,
+   "texto": "El algoritmo más listo",
+   "pildora": "No fue por…"
+  },
+  {
+   "tipo": "cita",
+   "start": 6.25,
+   "end": 9.07,
+   "medio": "Business Insider, 2016",
+   "titular": "Netflix calcula que sus recomendaciones valen más de 1,000 millones de dólares al año",
+   "fuente": "Fuente: Gomez-Uribe y Hunt, Netflix, 2015 · vía Business Insider, 2016"
+  },
+  {
+   "tipo": "cronometro",
+   "start": 9.07,
+   "end": 12.27,
+   "desde": 60,
+   "hasta": 90,
+   "etiqueta": "buscando… y pierde el interés",
+   "fuente": "Fuente: Gomez-Uribe y Hunt (Netflix), ACM, dic 2015"
+  },
+  {
+   "tipo": "video",
+   "start": 12.27,
+   "end": 15.37,
+   "src": "reels/netflix/mixkit_26089.mp4",
+   "desde": 1.0,
+   "etiqueta": "↑ Riesgo de que cancele",
+   "fuente": "Fuente: Gomez-Uribe y Hunt (Netflix), ACM, dic 2015 · Video: Mixkit"
+  },
+  {
+   "tipo": "video",
+   "start": 15.37,
+   "end": 18.43,
+   "src": "reels/netflix/netflix_inicio_tv.mp4",
+   "desde": 0.0,
+   "etiqueta": "Distinta para cada persona",
+   "fuente": "Fuente: Netflix, may 2025 · about.netflix.com"
+  },
+  {
+   "tipo": "filas",
+   "start": 18.43,
+   "end": 20.69,
+   "datos": [
+    "lo que ves",
+    "lo que dejas a medias"
+   ],
+   "fuente": "Fuente: Gomez-Uribe y Hunt (Netflix), ACM, dic 2015"
+  },
+  {
+   "tipo": "barra",
+   "start": 20.69,
+   "end": 24.69,
+   "titulo": "8 de cada 10 elecciones",
+   "a": 80,
+   "etiquetaA": "recomendación",
+   "etiquetaB": "búsqueda",
+   "fuente": "Fuente: Gomez-Uribe y Hunt, Netflix, 2015 · vía Business Insider, 2016"
+  },
+  {
+   "tipo": "premio",
+   "start": 26.01,
+   "end": 30.81,
+   "monto": 1000000,
+   "anio": "2009",
+   "extra": "a quien mejorara su algoritmo 10%",
+   "fuente": "Fuente: Netflix Prize, 2009 · vía Techdirt, abr 2012"
+  },
+  {
+   "tipo": "cita",
+   "start": 30.81,
+   "end": 32.83,
+   "medio": "Techdirt, 2012",
+   "titular": "Netflix nunca usó completo el algoritmo que ganó su premio de un millón de dólares",
+   "sello": "No se usó completo",
+   "fuente": "Fuente: Netflix, vía Techdirt, abr 2012"
+  },
+  {
+   "tipo": "tachado",
+   "start": 32.83,
+   "end": 35.39,
+   "texto": "El algoritmo más listo",
+   "pildora": "El dinero no estaba en…"
+  },
+  {
+   "tipo": "video",
+   "start": 35.39,
+   "end": 38.43,
+   "src": "reels/netflix/netflix_inicio_tv.mp4",
+   "desde": 3.2,
+   "etiqueta": "Tus datos en cada pantalla",
+   "fuente": "Fuente: Netflix, may 2025 · about.netflix.com"
+  },
+  {
+   "tipo": "logo",
+   "start": 38.43,
+   "end": 40.6,
+   "src": "reels/netflix/netflix_logo.svg",
+   "etiqueta": "No necesitas ser Netflix"
+  },
+  {
+   "tipo": "tabla",
+   "start": 40.6,
+   "end": 43.0,
+   "fase": "tabla",
+   "nota": "Ejemplo ilustrativo"
+  },
+  {
+   "tipo": "tabla",
+   "start": 43.0,
+   "end": 46.04,
+   "fase": "ofertas",
+   "nota": "Ejemplo ilustrativo"
+  }
+ ],
+ "golpes": [
+  {
+   "tipo": "cierre",
+   "start": 46.04,
+   "end": 50.5
+  }
+ ],
+ "pasos": [],
+ "sfx": [],
+ "slug": "netflix",
+ "duracion": 50.5,
+ "manuel": "reels/netflix/manuel.mp4",
+ "cortes": [
+  15.286,
+  24.609,
+  40.518
+ ],
+ "palabras": [
+  {
+   "w": "Netflix",
+   "start": 0.109,
+   "end": 0.749,
+   "prob": 0.973
+  },
+  {
+   "w": "calcula",
+   "start": 0.749,
+   "end": 1.249,
+   "prob": 0.999
+  },
+  {
+   "w": "que",
+   "start": 1.249,
+   "end": 1.389,
+   "prob": 0.998
+  },
+  {
+   "w": "sus",
+   "start": 1.389,
+   "end": 1.549,
+   "prob": 0.997
+  },
+  {
+   "w": "recomendaciones",
+   "start": 1.549,
+   "end": 2.209,
+   "prob": 0.999
+  },
+  {
+   "w": "le",
+   "start": 2.209,
+   "end": 2.409,
+   "prob": 0.952
+  },
+  {
+   "w": "ahorran",
+   "start": 2.409,
+   "end": 2.589,
+   "prob": 1.0
+  },
+  {
+   "w": "más",
+   "start": 2.589,
+   "end": 2.709,
+   "prob": 0.991
+  },
+  {
+   "w": "de",
+   "start": 2.709,
+   "end": 2.849,
+   "prob": 0.998
+  },
+  {
+   "w": "mil",
+   "start": 2.849,
+   "end": 3.049,
+   "prob": 0.909
+  },
+  {
+   "w": "millones",
+   "start": 3.049,
+   "end": 3.269,
+   "prob": 1.0
+  },
+  {
+   "w": "de",
+   "start": 3.269,
+   "end": 3.529,
+   "prob": 0.999
+  },
+  {
+   "w": "dólares",
+   "start": 3.529,
+   "end": 3.669,
+   "prob": 0.998
+  },
+  {
+   "w": "al",
+   "start": 3.669,
+   "end": 3.889,
+   "prob": 0.999
+  },
+  {
+   "w": "año",
+   "start": 3.889,
+   "end": 4.049,
+   "prob": 1.0
+  },
+  {
+   "w": "y",
+   "start": 4.049,
+   "end": 4.209,
+   "prob": 0.622
+  },
+  {
+   "w": "no",
+   "start": 4.209,
+   "end": 4.349,
+   "prob": 1.0
+  },
+  {
+   "w": "fue",
+   "start": 4.349,
+   "end": 4.549,
+   "prob": 0.999
+  },
+  {
+   "w": "por",
+   "start": 4.549,
+   "end": 4.789,
+   "prob": 0.999
+  },
+  {
+   "w": "tener",
+   "start": 4.789,
+   "end": 5.089,
+   "prob": 0.998
+  },
+  {
+   "w": "el",
+   "start": 5.089,
+   "end": 5.189,
+   "prob": 0.362
+  },
+  {
+   "w": "algoritmo",
+   "start": 5.189,
+   "end": 5.509,
+   "prob": 1.0
+  },
+  {
+   "w": "más",
+   "start": 5.509,
+   "end": 5.669,
+   "prob": 0.995
+  },
+  {
+   "w": "listo.",
+   "start": 5.669,
+   "end": 6.009,
+   "prob": 1.0
+  },
+  {
+   "w": "Según",
+   "start": 6.249,
+   "end": 6.649,
+   "prob": 1.0
+  },
+  {
+   "w": "dos",
+   "start": 6.649,
+   "end": 6.869,
+   "prob": 0.989
+  },
+  {
+   "w": "directivos",
+   "start": 6.869,
+   "end": 7.389,
+   "prob": 1.0
+  },
+  {
+   "w": "de",
+   "start": 7.389,
+   "end": 7.469,
+   "prob": 1.0
+  },
+  {
+   "w": "Netflix,",
+   "start": 7.469,
+   "end": 7.689,
+   "prob": 0.999
+  },
+  {
+   "w": "una",
+   "start": 7.889,
+   "end": 8.029,
+   "prob": 0.999
+  },
+  {
+   "w": "persona",
+   "start": 8.029,
+   "end": 8.349,
+   "prob": 1.0
+  },
+  {
+   "w": "pierde",
+   "start": 8.349,
+   "end": 8.669,
+   "prob": 0.999
+  },
+  {
+   "w": "el",
+   "start": 8.669,
+   "end": 8.749,
+   "prob": 0.855
+  },
+  {
+   "w": "interés",
+   "start": 8.749,
+   "end": 9.069,
+   "prob": 1.0
+  },
+  {
+   "w": "después",
+   "start": 9.069,
+   "end": 9.289,
+   "prob": 0.999
+  },
+  {
+   "w": "de",
+   "start": 9.289,
+   "end": 9.469,
+   "prob": 1.0
+  },
+  {
+   "w": "60",
+   "start": 9.469,
+   "end": 9.789,
+   "prob": 0.991
+  },
+  {
+   "w": "a",
+   "start": 9.789,
+   "end": 10.189,
+   "prob": 0.999
+  },
+  {
+   "w": "90",
+   "start": 10.189,
+   "end": 10.449,
+   "prob": 1.0
+  },
+  {
+   "w": "segundos",
+   "start": 10.449,
+   "end": 10.769,
+   "prob": 1.0
+  },
+  {
+   "w": "de",
+   "start": 10.769,
+   "end": 11.069,
+   "prob": 1.0
+  },
+  {
+   "w": "buscar.",
+   "start": 11.069,
+   "end": 11.249,
+   "prob": 0.999
+  },
+  {
+   "w": "Si",
+   "start": 11.409,
+   "end": 11.749,
+   "prob": 0.999
+  },
+  {
+   "w": "en",
+   "start": 11.749,
+   "end": 11.869,
+   "prob": 1.0
+  },
+  {
+   "w": "ese",
+   "start": 11.869,
+   "end": 12.029,
+   "prob": 1.0
+  },
+  {
+   "w": "minuto",
+   "start": 12.029,
+   "end": 12.269,
+   "prob": 1.0
+  },
+  {
+   "w": "y",
+   "start": 12.269,
+   "end": 12.389,
+   "prob": 1.0
+  },
+  {
+   "w": "medio",
+   "start": 12.389,
+   "end": 12.529,
+   "prob": 1.0
+  },
+  {
+   "w": "no",
+   "start": 12.529,
+   "end": 12.709,
+   "prob": 1.0
+  },
+  {
+   "w": "encuentra",
+   "start": 12.709,
+   "end": 12.969,
+   "prob": 0.996
+  },
+  {
+   "w": "nada,",
+   "start": 12.969,
+   "end": 13.209,
+   "prob": 1.0
+  },
+  {
+   "w": "sube",
+   "start": 13.329,
+   "end": 13.849,
+   "prob": 1.0
+  },
+  {
+   "w": "el",
+   "start": 13.849,
+   "end": 14.009,
+   "prob": 1.0
+  },
+  {
+   "w": "riesgo",
+   "start": 14.009,
+   "end": 14.369,
+   "prob": 1.0
+  },
+  {
+   "w": "de",
+   "start": 14.369,
+   "end": 14.569,
+   "prob": 1.0
+  },
+  {
+   "w": "que",
+   "start": 14.569,
+   "end": 14.669,
+   "prob": 0.999
+  },
+  {
+   "w": "cancele.",
+   "start": 14.669,
+   "end": 15.049,
+   "prob": 0.998
+  },
+  {
+   "w": "Por",
+   "start": 15.366,
+   "end": 15.766,
+   "prob": 1.0
+  },
+  {
+   "w": "eso,",
+   "start": 15.766,
+   "end": 16.086,
+   "prob": 1.0
+  },
+  {
+   "w": "tu",
+   "start": 16.146,
+   "end": 16.306,
+   "prob": 1.0
+  },
+  {
+   "w": "pantalla",
+   "start": 16.306,
+   "end": 16.606,
+   "prob": 1.0
+  },
+  {
+   "w": "de",
+   "start": 16.606,
+   "end": 16.766,
+   "prob": 1.0
+  },
+  {
+   "w": "inicio",
+   "start": 16.766,
+   "end": 17.026,
+   "prob": 1.0
+  },
+  {
+   "w": "no",
+   "start": 17.026,
+   "end": 17.366,
+   "prob": 1.0
+  },
+  {
+   "w": "es",
+   "start": 17.366,
+   "end": 17.466,
+   "prob": 1.0
+  },
+  {
+   "w": "igual",
+   "start": 17.466,
+   "end": 17.666,
+   "prob": 1.0
+  },
+  {
+   "w": "a",
+   "start": 17.666,
+   "end": 17.786,
+   "prob": 1.0
+  },
+  {
+   "w": "la",
+   "start": 17.786,
+   "end": 17.846,
+   "prob": 1.0
+  },
+  {
+   "w": "de",
+   "start": 17.846,
+   "end": 17.946,
+   "prob": 1.0
+  },
+  {
+   "w": "nadie",
+   "start": 17.946,
+   "end": 18.146,
+   "prob": 1.0
+  },
+  {
+   "w": "más.",
+   "start": 18.146,
+   "end": 18.326,
+   "prob": 1.0
+  },
+  {
+   "w": "Se",
+   "start": 18.426,
+   "end": 18.586,
+   "prob": 1.0
+  },
+  {
+   "w": "arma",
+   "start": 18.586,
+   "end": 18.746,
+   "prob": 1.0
+  },
+  {
+   "w": "con",
+   "start": 18.746,
+   "end": 18.946,
+   "prob": 1.0
+  },
+  {
+   "w": "lo",
+   "start": 18.946,
+   "end": 19.066,
+   "prob": 1.0
+  },
+  {
+   "w": "que",
+   "start": 19.066,
+   "end": 19.206,
+   "prob": 1.0
+  },
+  {
+   "w": "ves",
+   "start": 19.206,
+   "end": 19.346,
+   "prob": 0.999
+  },
+  {
+   "w": "y",
+   "start": 19.346,
+   "end": 19.586,
+   "prob": 1.0
+  },
+  {
+   "w": "con",
+   "start": 19.586,
+   "end": 19.706,
+   "prob": 1.0
+  },
+  {
+   "w": "lo",
+   "start": 19.706,
+   "end": 19.846,
+   "prob": 1.0
+  },
+  {
+   "w": "que",
+   "start": 19.846,
+   "end": 19.966,
+   "prob": 1.0
+  },
+  {
+   "w": "dejas",
+   "start": 19.966,
+   "end": 20.206,
+   "prob": 1.0
+  },
+  {
+   "w": "a",
+   "start": 20.206,
+   "end": 20.346,
+   "prob": 1.0
+  },
+  {
+   "w": "medias.",
+   "start": 20.346,
+   "end": 20.626,
+   "prob": 1.0
+  },
+  {
+   "w": "Y",
+   "start": 20.686,
+   "end": 20.886,
+   "prob": 1.0
+  },
+  {
+   "w": "8",
+   "start": 20.886,
+   "end": 21.126,
+   "prob": 0.91
+  },
+  {
+   "w": "de",
+   "start": 21.126,
+   "end": 21.286,
+   "prob": 1.0
+  },
+  {
+   "w": "cada",
+   "start": 21.286,
+   "end": 21.466,
+   "prob": 1.0
+  },
+  {
+   "w": "10",
+   "start": 21.466,
+   "end": 21.826,
+   "prob": 1.0
+  },
+  {
+   "w": "cosas",
+   "start": 21.826,
+   "end": 22.086,
+   "prob": 1.0
+  },
+  {
+   "w": "que",
+   "start": 22.086,
+   "end": 22.326,
+   "prob": 1.0
+  },
+  {
+   "w": "la",
+   "start": 22.326,
+   "end": 22.426,
+   "prob": 1.0
+  },
+  {
+   "w": "gente",
+   "start": 22.426,
+   "end": 22.606,
+   "prob": 1.0
+  },
+  {
+   "w": "ve",
+   "start": 22.606,
+   "end": 22.846,
+   "prob": 1.0
+  },
+  {
+   "w": "vienen",
+   "start": 22.846,
+   "end": 23.246,
+   "prob": 0.99
+  },
+  {
+   "w": "de",
+   "start": 23.246,
+   "end": 23.466,
+   "prob": 1.0
+  },
+  {
+   "w": "una",
+   "start": 23.466,
+   "end": 23.606,
+   "prob": 1.0
+  },
+  {
+   "w": "recomendación.",
+   "start": 23.606,
+   "end": 24.286,
+   "prob": 1.0
+  },
+  {
+   "w": "Y",
+   "start": 24.689,
+   "end": 24.949,
+   "prob": 0.999
+  },
+  {
+   "w": "esto",
+   "start": 24.949,
+   "end": 25.209,
+   "prob": 1.0
+  },
+  {
+   "w": "está",
+   "start": 25.209,
+   "end": 25.589,
+   "prob": 1.0
+  },
+  {
+   "w": "interesante.",
+   "start": 25.589,
+   "end": 26.009,
+   "prob": 1.0
+  },
+  {
+   "w": "En",
+   "start": 26.009,
+   "end": 26.549,
+   "prob": 0.739
+  },
+  {
+   "w": "2009,",
+   "start": 26.549,
+   "end": 27.029,
+   "prob": 0.98
+  },
+  {
+   "w": "Netflix",
+   "start": 27.229,
+   "end": 27.529,
+   "prob": 0.978
+  },
+  {
+   "w": "pagó",
+   "start": 27.529,
+   "end": 28.049,
+   "prob": 0.987
+  },
+  {
+   "w": "un",
+   "start": 28.049,
+   "end": 28.089,
+   "prob": 0.896
+  },
+  {
+   "w": "millón",
+   "start": 28.089,
+   "end": 28.469,
+   "prob": 0.99
+  },
+  {
+   "w": "de",
+   "start": 28.469,
+   "end": 28.529,
+   "prob": 0.997
+  },
+  {
+   "w": "dólares",
+   "start": 28.529,
+   "end": 28.789,
+   "prob": 0.985
+  },
+  {
+   "w": "a",
+   "start": 28.789,
+   "end": 29.029,
+   "prob": 0.989
+  },
+  {
+   "w": "quien",
+   "start": 29.029,
+   "end": 29.229,
+   "prob": 0.987
+  },
+  {
+   "w": "mejorara",
+   "start": 29.229,
+   "end": 29.589,
+   "prob": 0.97
+  },
+  {
+   "w": "su",
+   "start": 29.589,
+   "end": 29.709,
+   "prob": 0.991
+  },
+  {
+   "w": "algoritmo",
+   "start": 29.709,
+   "end": 30.109,
+   "prob": 0.999
+  },
+  {
+   "w": "un",
+   "start": 30.109,
+   "end": 30.329,
+   "prob": 0.99
+  },
+  {
+   "w": "10",
+   "start": 30.329,
+   "end": 30.529,
+   "prob": 0.989
+  },
+  {
+   "w": "%",
+   "start": 30.529,
+   "end": 30.809,
+   "prob": 0.751
+  },
+  {
+   "w": "y",
+   "start": 30.809,
+   "end": 31.289,
+   "prob": 0.931
+  },
+  {
+   "w": "nunca",
+   "start": 31.289,
+   "end": 31.669,
+   "prob": 0.995
+  },
+  {
+   "w": "lo",
+   "start": 31.669,
+   "end": 32.009,
+   "prob": 0.996
+  },
+  {
+   "w": "usó",
+   "start": 32.009,
+   "end": 32.209,
+   "prob": 0.966
+  },
+  {
+   "w": "completo.",
+   "start": 32.209,
+   "end": 32.489,
+   "prob": 0.998
+  },
+  {
+   "w": "El",
+   "start": 32.829,
+   "end": 33.289,
+   "prob": 0.977
+  },
+  {
+   "w": "dinero",
+   "start": 33.289,
+   "end": 33.589,
+   "prob": 0.999
+  },
+  {
+   "w": "no",
+   "start": 33.589,
+   "end": 33.889,
+   "prob": 0.994
+  },
+  {
+   "w": "estaba",
+   "start": 33.889,
+   "end": 34.109,
+   "prob": 0.997
+  },
+  {
+   "w": "en",
+   "start": 34.109,
+   "end": 34.249,
+   "prob": 0.998
+  },
+  {
+   "w": "el",
+   "start": 34.249,
+   "end": 34.289,
+   "prob": 0.996
+  },
+  {
+   "w": "algoritmo",
+   "start": 34.289,
+   "end": 34.669,
+   "prob": 0.999
+  },
+  {
+   "w": "más",
+   "start": 34.669,
+   "end": 34.809,
+   "prob": 0.996
+  },
+  {
+   "w": "listo.",
+   "start": 34.809,
+   "end": 35.169,
+   "prob": 0.999
+  },
+  {
+   "w": "Estaba",
+   "start": 35.389,
+   "end": 35.869,
+   "prob": 0.998
+  },
+  {
+   "w": "en",
+   "start": 35.869,
+   "end": 36.149,
+   "prob": 0.999
+  },
+  {
+   "w": "usar",
+   "start": 36.149,
+   "end": 36.369,
+   "prob": 0.997
+  },
+  {
+   "w": "sus",
+   "start": 36.369,
+   "end": 36.589,
+   "prob": 0.991
+  },
+  {
+   "w": "datos",
+   "start": 36.589,
+   "end": 36.909,
+   "prob": 0.999
+  },
+  {
+   "w": "en",
+   "start": 36.909,
+   "end": 37.149,
+   "prob": 0.997
+  },
+  {
+   "w": "cada",
+   "start": 37.149,
+   "end": 37.329,
+   "prob": 0.998
+  },
+  {
+   "w": "parte",
+   "start": 37.329,
+   "end": 37.649,
+   "prob": 0.999
+  },
+  {
+   "w": "de",
+   "start": 37.649,
+   "end": 37.809,
+   "prob": 0.999
+  },
+  {
+   "w": "la",
+   "start": 37.809,
+   "end": 37.869,
+   "prob": 0.997
+  },
+  {
+   "w": "pantalla.",
+   "start": 37.869,
+   "end": 38.189,
+   "prob": 1.0
+  },
+  {
+   "w": "Y",
+   "start": 38.429,
+   "end": 38.789,
+   "prob": 0.994
+  },
+  {
+   "w": "tú",
+   "start": 38.789,
+   "end": 38.969,
+   "prob": 0.984
+  },
+  {
+   "w": "no",
+   "start": 38.969,
+   "end": 39.309,
+   "prob": 0.98
+  },
+  {
+   "w": "necesitas",
+   "start": 39.309,
+   "end": 39.769,
+   "prob": 0.999
+  },
+  {
+   "w": "ser",
+   "start": 39.769,
+   "end": 39.889,
+   "prob": 0.786
+  },
+  {
+   "w": "Netflix.",
+   "start": 39.889,
+   "end": 40.149,
+   "prob": 0.997
+  },
+  {
+   "w": "Tu",
+   "start": 40.598,
+   "end": 41.078,
+   "prob": 0.996
+  },
+  {
+   "w": "historial",
+   "start": 41.078,
+   "end": 41.398,
+   "prob": 0.998
+  },
+  {
+   "w": "de",
+   "start": 41.398,
+   "end": 41.478,
+   "prob": 1.0
+  },
+  {
+   "w": "ventas",
+   "start": 41.478,
+   "end": 41.778,
+   "prob": 0.999
+  },
+  {
+   "w": "ya",
+   "start": 41.778,
+   "end": 41.878,
+   "prob": 0.999
+  },
+  {
+   "w": "sabe",
+   "start": 41.878,
+   "end": 42.178,
+   "prob": 0.998
+  },
+  {
+   "w": "qué",
+   "start": 42.178,
+   "end": 42.298,
+   "prob": 0.975
+  },
+  {
+   "w": "le",
+   "start": 42.298,
+   "end": 42.438,
+   "prob": 0.994
+  },
+  {
+   "w": "compra",
+   "start": 42.438,
+   "end": 42.678,
+   "prob": 0.995
+  },
+  {
+   "w": "cada",
+   "start": 42.678,
+   "end": 42.798,
+   "prob": 0.498
+  },
+  {
+   "w": "cliente",
+   "start": 42.798,
+   "end": 43.278,
+   "prob": 1.0
+  },
+  {
+   "w": "y",
+   "start": 43.278,
+   "end": 43.378,
+   "prob": 0.997
+  },
+  {
+   "w": "qué",
+   "start": 43.378,
+   "end": 43.498,
+   "prob": 0.99
+  },
+  {
+   "w": "dejó",
+   "start": 43.498,
+   "end": 43.818,
+   "prob": 0.96
+  },
+  {
+   "w": "de",
+   "start": 43.818,
+   "end": 43.878,
+   "prob": 0.999
+  },
+  {
+   "w": "comprarte.",
+   "start": 43.878,
+   "end": 44.278,
+   "prob": 0.972
+  },
+  {
+   "w": "Hoy",
+   "start": 44.418,
+   "end": 44.698,
+   "prob": 0.994
+  },
+  {
+   "w": "la",
+   "start": 44.698,
+   "end": 44.838,
+   "prob": 0.941
+  },
+  {
+   "w": "IA",
+   "start": 44.838,
+   "end": 45.038,
+   "prob": 0.956
+  },
+  {
+   "w": "te",
+   "start": 45.038,
+   "end": 45.258,
+   "prob": 0.998
+  },
+  {
+   "w": "ayuda",
+   "start": 45.258,
+   "end": 45.518,
+   "prob": 0.992
+  },
+  {
+   "w": "a",
+   "start": 45.518,
+   "end": 45.618,
+   "prob": 0.999
+  },
+  {
+   "w": "leerlo.",
+   "start": 45.618,
+   "end": 45.978,
+   "prob": 1.0
+  },
+  {
+   "w": "Si",
+   "start": 46.038,
+   "end": 46.358,
+   "prob": 0.999
+  },
+  {
+   "w": "todavía",
+   "start": 46.358,
+   "end": 46.778,
+   "prob": 0.999
+  },
+  {
+   "w": "no",
+   "start": 46.778,
+   "end": 46.978,
+   "prob": 1.0
+  },
+  {
+   "w": "sabes",
+   "start": 46.978,
+   "end": 47.178,
+   "prob": 0.999
+  },
+  {
+   "w": "cómo",
+   "start": 47.178,
+   "end": 47.358,
+   "prob": 0.999
+  },
+  {
+   "w": "implementar",
+   "start": 47.358,
+   "end": 47.858,
+   "prob": 0.994
+  },
+  {
+   "w": "IA",
+   "start": 47.858,
+   "end": 48.098,
+   "prob": 0.998
+  },
+  {
+   "w": "en",
+   "start": 48.098,
+   "end": 48.258,
+   "prob": 0.998
+  },
+  {
+   "w": "tu",
+   "start": 48.258,
+   "end": 48.378,
+   "prob": 1.0
+  },
+  {
+   "w": "negocio,",
+   "start": 48.378,
+   "end": 48.758,
+   "prob": 1.0
+  },
+  {
+   "w": "esta",
+   "start": 48.838,
+   "end": 49.198,
+   "prob": 0.999
+  },
+  {
+   "w": "cuenta",
+   "start": 49.198,
+   "end": 49.438,
+   "prob": 1.0
+  },
+  {
+   "w": "es",
+   "start": 49.438,
+   "end": 49.898,
+   "prob": 0.999
+  },
+  {
+   "w": "para",
+   "start": 49.898,
+   "end": 50.138,
+   "prob": 1.0
+  },
+  {
+   "w": "ti.",
+   "start": 50.138,
+   "end": 50.298,
+   "prob": 1.0
+  }
+ ],
+ "subs": [
+  {
+   "start": 0.109,
+   "end": 1.249,
+   "words": [
+    {
+     "w": "Netflix",
+     "start": 0.109,
+     "key": true
+    },
+    {
+     "w": "calcula",
+     "start": 0.749
+    }
+   ]
+  },
+  {
+   "start": 1.249,
+   "end": 2.209,
+   "words": [
+    {
+     "w": "que",
+     "start": 1.249
+    },
+    {
+     "w": "sus",
+     "start": 1.389
+    },
+    {
+     "w": "recomendaciones",
+     "start": 1.549,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 2.209,
+   "end": 3.049,
+   "words": [
+    {
+     "w": "le",
+     "start": 2.209,
+     "key": false
+    },
+    {
+     "w": "ahorran",
+     "start": 2.409,
+     "key": false
+    },
+    {
+     "w": "más",
+     "start": 2.589,
+     "key": false
+    },
+    {
+     "w": "de",
+     "start": 2.709,
+     "key": false
+    },
+    {
+     "w": "mil",
+     "start": 2.849,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 3.049,
+   "end": 3.669,
+   "words": [
+    {
+     "w": "millones",
+     "start": 3.049,
+     "key": true
+    },
+    {
+     "w": "de",
+     "start": 3.269
+    },
+    {
+     "w": "dólares",
+     "start": 3.529
+    }
+   ]
+  },
+  {
+   "start": 3.669,
+   "end": 4.549,
+   "words": [
+    {
+     "w": "al",
+     "start": 3.669
+    },
+    {
+     "w": "año",
+     "start": 3.889
+    },
+    {
+     "w": "y",
+     "start": 4.049
+    },
+    {
+     "w": "no",
+     "start": 4.209
+    },
+    {
+     "w": "fue",
+     "start": 4.349
+    }
+   ]
+  },
+  {
+   "start": 4.549,
+   "end": 5.509,
+   "words": [
+    {
+     "w": "por",
+     "start": 4.549
+    },
+    {
+     "w": "tener",
+     "start": 4.789
+    },
+    {
+     "w": "el",
+     "start": 5.089
+    },
+    {
+     "w": "algoritmo",
+     "start": 5.189,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 5.509,
+   "end": 6.249,
+   "words": [
+    {
+     "w": "más",
+     "start": 5.509
+    },
+    {
+     "w": "listo",
+     "start": 5.669
+    }
+   ]
+  },
+  {
+   "start": 6.249,
+   "end": 7.389,
+   "words": [
+    {
+     "w": "Según",
+     "start": 6.249
+    },
+    {
+     "w": "dos",
+     "start": 6.649
+    },
+    {
+     "w": "directivos",
+     "start": 6.869,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 7.389,
+   "end": 8.349,
+   "words": [
+    {
+     "w": "de",
+     "start": 7.389
+    },
+    {
+     "w": "Netflix",
+     "start": 7.469,
+     "key": true
+    },
+    {
+     "w": "una",
+     "start": 7.889
+    },
+    {
+     "w": "persona",
+     "start": 8.029
+    }
+   ]
+  },
+  {
+   "start": 8.349,
+   "end": 9.069,
+   "words": [
+    {
+     "w": "pierde",
+     "start": 8.349
+    },
+    {
+     "w": "el",
+     "start": 8.669
+    },
+    {
+     "w": "interés",
+     "start": 8.749,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 9.069,
+   "end": 10.449,
+   "words": [
+    {
+     "w": "después",
+     "start": 9.069
+    },
+    {
+     "w": "de",
+     "start": 9.289
+    },
+    {
+     "w": "60",
+     "start": 9.469,
+     "key": true
+    },
+    {
+     "w": "a",
+     "start": 9.789
+    },
+    {
+     "w": "90",
+     "start": 10.189
+    }
+   ]
+  },
+  {
+   "start": 10.449,
+   "end": 11.409,
+   "words": [
+    {
+     "w": "segundos",
+     "start": 10.449,
+     "key": true
+    },
+    {
+     "w": "de",
+     "start": 10.769
+    },
+    {
+     "w": "buscar",
+     "start": 11.069
+    }
+   ]
+  },
+  {
+   "start": 11.409,
+   "end": 12.269,
+   "words": [
+    {
+     "w": "Si",
+     "start": 11.409
+    },
+    {
+     "w": "en",
+     "start": 11.749
+    },
+    {
+     "w": "ese",
+     "start": 11.869
+    },
+    {
+     "w": "minuto",
+     "start": 12.029,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 12.269,
+   "end": 12.969,
+   "words": [
+    {
+     "w": "y",
+     "start": 12.269
+    },
+    {
+     "w": "medio",
+     "start": 12.389
+    },
+    {
+     "w": "no",
+     "start": 12.529
+    },
+    {
+     "w": "encuentra",
+     "start": 12.709,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 12.969,
+   "end": 14.369,
+   "words": [
+    {
+     "w": "nada",
+     "start": 12.969
+    },
+    {
+     "w": "sube",
+     "start": 13.329
+    },
+    {
+     "w": "el",
+     "start": 13.849
+    },
+    {
+     "w": "riesgo",
+     "start": 14.009,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 14.369,
+   "end": 15.366,
+   "words": [
+    {
+     "w": "de",
+     "start": 14.369
+    },
+    {
+     "w": "que",
+     "start": 14.569
+    },
+    {
+     "w": "cancele",
+     "start": 14.669,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 15.366,
+   "end": 16.606,
+   "words": [
+    {
+     "w": "Por",
+     "start": 15.366
+    },
+    {
+     "w": "eso",
+     "start": 15.766
+    },
+    {
+     "w": "tu",
+     "start": 16.146
+    },
+    {
+     "w": "pantalla",
+     "start": 16.306,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 16.606,
+   "end": 17.666,
+   "words": [
+    {
+     "w": "de",
+     "start": 16.606
+    },
+    {
+     "w": "inicio",
+     "start": 16.766,
+     "key": true
+    },
+    {
+     "w": "no",
+     "start": 17.026
+    },
+    {
+     "w": "es",
+     "start": 17.366
+    },
+    {
+     "w": "igual",
+     "start": 17.466
+    }
+   ]
+  },
+  {
+   "start": 17.666,
+   "end": 18.426,
+   "words": [
+    {
+     "w": "a",
+     "start": 17.666
+    },
+    {
+     "w": "la",
+     "start": 17.786
+    },
+    {
+     "w": "de",
+     "start": 17.846
+    },
+    {
+     "w": "nadie",
+     "start": 17.946
+    },
+    {
+     "w": "más",
+     "start": 18.146
+    }
+   ]
+  },
+  {
+   "start": 18.426,
+   "end": 18.746,
+   "words": [
+    {
+     "w": "Se",
+     "start": 18.426
+    },
+    {
+     "w": "arma",
+     "start": 18.586
+    }
+   ]
+  },
+  {
+   "start": 18.746,
+   "end": 19.346,
+   "words": [
+    {
+     "w": "con",
+     "start": 18.746
+    },
+    {
+     "w": "lo",
+     "start": 18.946
+    },
+    {
+     "w": "que",
+     "start": 19.066
+    },
+    {
+     "w": "ves",
+     "start": 19.206
+    }
+   ]
+  },
+  {
+   "start": 19.346,
+   "end": 20.206,
+   "words": [
+    {
+     "w": "y",
+     "start": 19.346
+    },
+    {
+     "w": "con",
+     "start": 19.586
+    },
+    {
+     "w": "lo",
+     "start": 19.706
+    },
+    {
+     "w": "que",
+     "start": 19.846
+    },
+    {
+     "w": "dejas",
+     "start": 19.966
+    }
+   ]
+  },
+  {
+   "start": 20.206,
+   "end": 20.686,
+   "words": [
+    {
+     "w": "a",
+     "start": 20.206
+    },
+    {
+     "w": "medias",
+     "start": 20.346,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 20.686,
+   "end": 21.826,
+   "words": [
+    {
+     "w": "Y",
+     "start": 20.686
+    },
+    {
+     "w": "8",
+     "start": 20.886,
+     "key": true
+    },
+    {
+     "w": "de",
+     "start": 21.126
+    },
+    {
+     "w": "cada",
+     "start": 21.286
+    },
+    {
+     "w": "10",
+     "start": 21.466
+    }
+   ]
+  },
+  {
+   "start": 21.826,
+   "end": 22.846,
+   "words": [
+    {
+     "w": "cosas",
+     "start": 21.826,
+     "key": false
+    },
+    {
+     "w": "que",
+     "start": 22.086,
+     "key": false
+    },
+    {
+     "w": "la",
+     "start": 22.326,
+     "key": false
+    },
+    {
+     "w": "gente",
+     "start": 22.426,
+     "key": false
+    },
+    {
+     "w": "ve",
+     "start": 22.606,
+     "key": false
+    }
+   ]
+  },
+  {
+   "start": 22.846,
+   "end": 23.246,
+   "words": [
+    {
+     "w": "vienen",
+     "start": 22.846,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 23.246,
+   "end": 24.689,
+   "words": [
+    {
+     "w": "de",
+     "start": 23.246
+    },
+    {
+     "w": "una",
+     "start": 23.466
+    },
+    {
+     "w": "recomendación",
+     "start": 23.606,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 24.689,
+   "end": 26.009,
+   "words": [
+    {
+     "w": "Y",
+     "start": 24.689
+    },
+    {
+     "w": "esto",
+     "start": 24.949
+    },
+    {
+     "w": "está",
+     "start": 25.209
+    },
+    {
+     "w": "interesante",
+     "start": 25.589,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 26.009,
+   "end": 28.049,
+   "words": [
+    {
+     "w": "En",
+     "start": 26.009
+    },
+    {
+     "w": "2009",
+     "start": 26.549,
+     "key": true
+    },
+    {
+     "w": "Netflix",
+     "start": 27.229
+    },
+    {
+     "w": "pagó",
+     "start": 27.529
+    }
+   ]
+  },
+  {
+   "start": 28.049,
+   "end": 28.789,
+   "words": [
+    {
+     "w": "un",
+     "start": 28.049
+    },
+    {
+     "w": "millón",
+     "start": 28.089
+    },
+    {
+     "w": "de",
+     "start": 28.469
+    },
+    {
+     "w": "dólares",
+     "start": 28.529,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 28.789,
+   "end": 29.589,
+   "words": [
+    {
+     "w": "a",
+     "start": 28.789
+    },
+    {
+     "w": "quien",
+     "start": 29.029
+    },
+    {
+     "w": "mejorara",
+     "start": 29.229,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 29.589,
+   "end": 30.809,
+   "words": [
+    {
+     "w": "su",
+     "start": 29.589
+    },
+    {
+     "w": "algoritmo",
+     "start": 29.709
+    },
+    {
+     "w": "un",
+     "start": 30.109
+    },
+    {
+     "w": "10%",
+     "start": 30.329,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 30.809,
+   "end": 32.829,
+   "words": [
+    {
+     "w": "y",
+     "start": 30.809
+    },
+    {
+     "w": "nunca",
+     "start": 31.289
+    },
+    {
+     "w": "lo",
+     "start": 31.669
+    },
+    {
+     "w": "usó",
+     "start": 32.009
+    },
+    {
+     "w": "completo",
+     "start": 32.209,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 32.829,
+   "end": 34.109,
+   "words": [
+    {
+     "w": "El",
+     "start": 32.829
+    },
+    {
+     "w": "dinero",
+     "start": 33.289,
+     "key": true
+    },
+    {
+     "w": "no",
+     "start": 33.589
+    },
+    {
+     "w": "estaba",
+     "start": 33.889
+    }
+   ]
+  },
+  {
+   "start": 34.109,
+   "end": 34.669,
+   "words": [
+    {
+     "w": "en",
+     "start": 34.109
+    },
+    {
+     "w": "el",
+     "start": 34.249
+    },
+    {
+     "w": "algoritmo",
+     "start": 34.289,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 34.669,
+   "end": 35.389,
+   "words": [
+    {
+     "w": "más",
+     "start": 34.669
+    },
+    {
+     "w": "listo",
+     "start": 34.809
+    }
+   ]
+  },
+  {
+   "start": 35.389,
+   "end": 36.909,
+   "words": [
+    {
+     "w": "Estaba",
+     "start": 35.389,
+     "key": false
+    },
+    {
+     "w": "en",
+     "start": 35.869,
+     "key": false
+    },
+    {
+     "w": "usar",
+     "start": 36.149,
+     "key": false
+    },
+    {
+     "w": "sus",
+     "start": 36.369,
+     "key": false
+    },
+    {
+     "w": "datos",
+     "start": 36.589,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 36.909,
+   "end": 37.649,
+   "words": [
+    {
+     "w": "en",
+     "start": 36.909
+    },
+    {
+     "w": "cada",
+     "start": 37.149
+    },
+    {
+     "w": "parte",
+     "start": 37.329
+    }
+   ]
+  },
+  {
+   "start": 37.649,
+   "end": 38.429,
+   "words": [
+    {
+     "w": "de",
+     "start": 37.649
+    },
+    {
+     "w": "la",
+     "start": 37.809
+    },
+    {
+     "w": "pantalla",
+     "start": 37.869,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 38.429,
+   "end": 39.889,
+   "words": [
+    {
+     "w": "Y",
+     "start": 38.429
+    },
+    {
+     "w": "tú",
+     "start": 38.789
+    },
+    {
+     "w": "no",
+     "start": 38.969
+    },
+    {
+     "w": "necesitas",
+     "start": 39.309,
+     "key": true
+    },
+    {
+     "w": "ser",
+     "start": 39.769
+    }
+   ]
+  },
+  {
+   "start": 39.889,
+   "end": 40.598,
+   "words": [
+    {
+     "w": "Netflix",
+     "start": 39.889,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 40.598,
+   "end": 41.778,
+   "words": [
+    {
+     "w": "Tu",
+     "start": 40.598
+    },
+    {
+     "w": "historial",
+     "start": 41.078,
+     "key": true
+    },
+    {
+     "w": "de",
+     "start": 41.398
+    },
+    {
+     "w": "ventas",
+     "start": 41.478
+    }
+   ]
+  },
+  {
+   "start": 41.778,
+   "end": 42.678,
+   "words": [
+    {
+     "w": "ya",
+     "start": 41.778
+    },
+    {
+     "w": "sabe",
+     "start": 41.878
+    },
+    {
+     "w": "qué",
+     "start": 42.178
+    },
+    {
+     "w": "le",
+     "start": 42.298
+    },
+    {
+     "w": "compra",
+     "start": 42.438,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 42.678,
+   "end": 43.818,
+   "words": [
+    {
+     "w": "cada",
+     "start": 42.678
+    },
+    {
+     "w": "cliente",
+     "start": 42.798,
+     "key": true
+    },
+    {
+     "w": "y",
+     "start": 43.278
+    },
+    {
+     "w": "qué",
+     "start": 43.378
+    },
+    {
+     "w": "dejó",
+     "start": 43.498
+    }
+   ]
+  },
+  {
+   "start": 43.818,
+   "end": 44.418,
+   "words": [
+    {
+     "w": "de",
+     "start": 43.818
+    },
+    {
+     "w": "comprarte",
+     "start": 43.878,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 44.418,
+   "end": 45.518,
+   "words": [
+    {
+     "w": "Hoy",
+     "start": 44.418
+    },
+    {
+     "w": "la",
+     "start": 44.698
+    },
+    {
+     "w": "IA",
+     "start": 44.838,
+     "key": true
+    },
+    {
+     "w": "te",
+     "start": 45.038
+    },
+    {
+     "w": "ayuda",
+     "start": 45.258
+    }
+   ]
+  },
+  {
+   "start": 45.518,
+   "end": 46.038,
+   "words": [
+    {
+     "w": "a",
+     "start": 45.518
+    },
+    {
+     "w": "leerlo",
+     "start": 45.618,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 46.038,
+   "end": 47.178,
+   "words": [
+    {
+     "w": "Si",
+     "start": 46.038
+    },
+    {
+     "w": "todavía",
+     "start": 46.358,
+     "key": true
+    },
+    {
+     "w": "no",
+     "start": 46.778
+    },
+    {
+     "w": "sabes",
+     "start": 46.978
+    }
+   ]
+  },
+  {
+   "start": 47.178,
+   "end": 48.098,
+   "words": [
+    {
+     "w": "cómo",
+     "start": 47.178
+    },
+    {
+     "w": "implementar",
+     "start": 47.358
+    },
+    {
+     "w": "IA",
+     "start": 47.858,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 48.098,
+   "end": 48.838,
+   "words": [
+    {
+     "w": "en",
+     "start": 48.098
+    },
+    {
+     "w": "tu",
+     "start": 48.258
+    },
+    {
+     "w": "negocio",
+     "start": 48.378,
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 48.838,
+   "end": 50.548,
+   "words": [
+    {
+     "w": "esta",
+     "start": 48.838
+    },
+    {
+     "w": "cuenta",
+     "start": 49.198,
+     "key": true
+    },
+    {
+     "w": "es",
+     "start": 49.438
+    },
+    {
+     "w": "para",
+     "start": 49.898
+    },
+    {
+     "w": "ti",
+     "start": 50.138
+    }
+   ]
+  }
+ ],
+ "musica": "reels/netflix/musica_mixkit_curiosity.mp3",
+ "caraYFuente": 0.5,
+ "portada": {
+  "cuadro": 10.0
+ }
+}

@@ -3,6 +3,7 @@ import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideo
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
+import { BRollExtra, Sello } from "./BRollsExtra";
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -42,9 +43,10 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
   switch (b.tipo) {
     case "cita":
       body = (
-        <Tarjeta style={{ width: 920 }}>
+        <Tarjeta style={{ width: 920, position: "relative" }}>
           {b.medio ? <Pildora tono="negro" style={{ marginBottom: 26 }}>{b.medio}</Pildora> : null}
           <Titulo size={64}>“<ConIA texto={b.titular} />”</Titulo>
+          {b.sello ? <Sello texto={b.sello} delay={Math.round(fps * 0.6)} /> : null}
         </Tarjeta>
       );
       break;
@@ -89,6 +91,11 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
               }}
             />
           </div>
+          {b.etiqueta ? (
+            <div style={{ position: "absolute", left: 0, right: 0, bottom: 34, display: "flex", justifyContent: "center" }}>
+              <Pildora style={{ fontSize: 40, transform: `scale(${spring({ frame: frame - 12, fps, config: theme.spring.golpe })})` }}>{b.etiqueta}</Pildora>
+            </div>
+          ) : null}
         </div>
       );
       break;
@@ -115,7 +122,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       });
       body = (
         <Tarjeta style={{ width: 860, textAlign: "center" }}>
-          <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 210, color: color.naranja, lineHeight: 1, transform: `scale(${s})` }}>
+          <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: `${(b.prefijo ?? "").length + txt.length + (b.sufijo ?? "").length > 5 ? 170 : 210}px`, whiteSpace: "nowrap", color: color.naranja, lineHeight: 1, transform: `scale(${s})` }}>
             {b.prefijo ?? ""}
             {txt}
             {b.sufijo ?? ""}
@@ -169,6 +176,14 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
           ) : null}
         </Tarjeta>
       );
+      break;
+    case "cronometro":
+    case "barra":
+    case "filas":
+    case "premio":
+    case "tachado":
+    case "tabla":
+      body = <BRollExtra b={b} dur={dur} />;
       break;
     case "silueta":
       return null; // se dibuja a pantalla completa en Reel.tsx

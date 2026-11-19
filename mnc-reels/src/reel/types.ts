@@ -13,14 +13,21 @@ export type BloqueSub = {
 export type Fuente = string; // "Fuente: Reuters, 12 may 2026 · reuters.com"
 
 export type BRoll =
-  | { tipo: "cita"; start: number; end: number; titular: string; medio?: string; fuente: Fuente } // plan B
+  | { tipo: "cita"; start: number; end: number; titular: string; medio?: string; fuente: Fuente; sello?: string } // plan B
   | { tipo: "pendiente"; start: number; end: number; id: string } // último recurso
   | { tipo: "imagen"; start: number; end: number; src: string; fit?: "contain" | "cover"; fuente?: Fuente; zoom?: [number, number]; foco?: [number, number] }
-  | { tipo: "video"; start: number; end: number; src: string; desde?: number; fit?: "contain" | "cover"; fuente?: Fuente; recorte?: { x: number; y: number; w: number; h: number } }
+  | { tipo: "video"; start: number; end: number; src: string; desde?: number; fit?: "contain" | "cover"; fuente?: Fuente; recorte?: { x: number; y: number; w: number; h: number }; etiqueta?: string }
   | { tipo: "logo"; start: number; end: number; src: string; etiqueta?: string; fuente?: Fuente }
   | { tipo: "contador"; start: number; end: number; valor: number; prefijo?: string; sufijo?: string; etiqueta: string; decimales?: number; fuente?: Fuente }
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
+  // Animaciones de datos (BRollsExtra.tsx)
+  | { tipo: "cronometro"; start: number; end: number; desde: number; hasta: number; etiqueta?: string; fuente?: Fuente }
+  | { tipo: "barra"; start: number; end: number; titulo: string; a: number; etiquetaA: string; etiquetaB: string; fuente?: Fuente }
+  | { tipo: "filas"; start: number; end: number; datos: string[]; fuente?: Fuente }
+  | { tipo: "premio"; start: number; end: number; monto: number; anio: string; extra?: string; fuente?: Fuente }
+  | { tipo: "tachado"; start: number; end: number; texto: string; pildora?: string; fuente?: Fuente }
+  | { tipo: "tabla"; start: number; end: number; fase: "tabla" | "ofertas"; nota?: string; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
   | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
 

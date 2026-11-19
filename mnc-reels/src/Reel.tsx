@@ -27,7 +27,8 @@ const sfxAuto = (reel: ReelData) => {
   return [...out, ...(reel.sfx ?? [])];
 };
 
-export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
+// soloPanel: exporta solo el panel de B-roll (sin Manuel, subtítulos, golpes ni audio) para los B-rolls sueltos
+export const Reel: React.FC<{ reel: ReelData; soloPanel?: boolean }> = ({ reel, soloPanel }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const t = frame / fps;
@@ -54,7 +55,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
   return (
     <AbsoluteFill style={{ background: color.verde }}>
       {/* 1 · Manuel (con su audio, ya normalizado a −14 LUFS) */}
-      <Manuel src={reel.manuel} mezcla={m} zoom={zoom} caraYFuente={caraY} />
+      {soloPanel ? null : <Manuel src={reel.manuel} mezcla={m} zoom={zoom} caraYFuente={caraY} />}
 
       {/* 2 · Panel verde claro que se funde hacia Manuel (composición A) */}
       <AbsoluteFill
@@ -86,21 +87,21 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
       ) : null}
 
       {/* 4 · Número de paso */}
-      {paso && !golpe ? <Paso n={paso.n} p={spring({ frame: frame - f(paso.start), fps, config: theme.spring.golpe })} /> : null}
+      {paso && !golpe && !soloPanel ? <Paso n={paso.n} p={spring({ frame: frame - f(paso.start), fps, config: theme.spring.golpe })} /> : null}
 
       {/* 5 · Subtítulos (ocultos en golpes y cierre) */}
-      {bloque && !golpe ? <Subtitulos bloque={bloque} t={t} /> : null}
+      {bloque && !golpe && !soloPanel ? <Subtitulos bloque={bloque} t={t} /> : null}
 
       {/* 6 · Golpes a pantalla completa */}
-      {reel.golpes.map((g, i) => (
+      {(soloPanel ? [] : reel.golpes).map((g, i) => (
         <Sequence key={i} from={f(g.start)} durationInFrames={Math.max(1, (g.tipo === "cierre" ? durationInFrames : f(g.end)) - f(g.start))}>
           <GolpeView g={g} palabras={reel.palabras} />
         </Sequence>
       ))}
 
       {/* Audio: música + efectos */}
-      {reel.musica ? <Audio src={staticFile(reel.musica)} volume={musicaVol} loop /> : null}
-      {sfxAuto(reel).map((s, i) => (
+      {reel.musica && !soloPanel ? <Audio src={staticFile(reel.musica)} volume={musicaVol} loop /> : null}
+      {(soloPanel ? [] : sfxAuto(reel)).map((s, i) => (
         <Sequence key={`sfx${i}`} from={f(s.t)} durationInFrames={f(1)} layout="none">
           <Audio src={staticFile(`sfx/${s.s}.wav`)} volume={s.s === "whoosh" ? 0.35 : 0.5} />
         </Sequence>
