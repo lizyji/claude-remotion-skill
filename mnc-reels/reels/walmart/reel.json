@@ -1,0 +1,2411 @@
+{
+  "broll": [
+    {
+      "tipo": "video",
+      "start": 0.0,
+      "end": 1.62,
+      "src": "reels/walmart/wm_fachada.mp4",
+      "pildora": "Walmart",
+      "pildoraEn": 0.15,
+      "fuente": "Fuente: Voice of America vía Wikimedia Commons · Walmart, Chicago"
+    },
+    {
+      "tipo": "tormenta",
+      "start": 1.62,
+      "end": 3.0,
+      "etiqueta": "Antes de un huracán",
+      "etiquetaEn": 0.1
+    },
+    {
+      "tipo": "imagen",
+      "start": 4.55,
+      "end": 6.6,
+      "src": "reels/walmart/poptarts.jpg",
+      "fit": "contain",
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "pildora": "Nadie lo adivinó",
+      "pildoraEn": 0.25,
+      "fuente": "Fuente: Wikimedia Commons"
+    },
+    {
+      "tipo": "iconos",
+      "start": 6.6,
+      "end": 10.05,
+      "titulo": "Lo obvio:",
+      "items": [
+        {
+          "icono": "agua",
+          "texto": "Agua",
+          "en": 2.2
+        },
+        {
+          "icono": "linterna",
+          "texto": "Linternas",
+          "en": 2.5
+        },
+        {
+          "icono": "pilas",
+          "texto": "Pilas",
+          "en": 3.2
+        }
+      ]
+    },
+    {
+      "tipo": "imagen",
+      "start": 10.05,
+      "end": 12.05,
+      "src": "reels/walmart/wm_agua_milton.jpg",
+      "zoom": [
+        1.05,
+        1.2
+      ],
+      "foco": [
+        30,
+        55
+      ],
+      "pildora": "Se acaba",
+      "pildoraEn": 1.4,
+      "fuente": "Fuente: Wikimedia Commons · Walmart Avon Park, antes del huracán Milton (2024)"
+    },
+    {
+      "tipo": "anaquel",
+      "start": 12.05,
+      "end": 14.2,
+      "modo": "vaciar",
+      "pregunta": true,
+      "titulo": "¿Y lo que de verdad compran?"
+    },
+    {
+      "tipo": "video",
+      "start": 14.2,
+      "end": 16.4,
+      "src": "reels/walmart/wm_fachada2.mp4",
+      "pildora": "2004",
+      "pildoraEn": 0.1,
+      "fuente": "Fuente: Voice of America vía Wikimedia Commons · Walmart, Chicago"
+    },
+    {
+      "tipo": "video",
+      "start": 16.4,
+      "end": 17.75,
+      "src": "reels/walmart/wm_pasillo.mp4",
+      "fuente": "Fuente: Voice of America vía Wikimedia Commons · Walmart, Chicago"
+    },
+    {
+      "tipo": "imagen",
+      "start": 17.75,
+      "end": 19.2,
+      "src": "reels/walmart/wm_cajas.jpg",
+      "zoom": [
+        1.0,
+        1.08
+      ],
+      "pildora": "Antes de cada huracán",
+      "pildoraEn": 0.05,
+      "fuente": "Fuente: Wikimedia Commons"
+    },
+    {
+      "tipo": "barras",
+      "start": 19.2,
+      "end": 23.2,
+      "titulo": "Ventas antes de un huracán",
+      "subeEn": 1.94,
+      "valor": "x7",
+      "etiqueta": "Pop-Tarts de fresa vs. lo normal",
+      "fuente": "Fuente: The New York Times, 14 nov 2004 · nytimes.com"
+    },
+    {
+      "tipo": "imagen",
+      "start": 23.2,
+      "end": 25.45,
+      "src": "reels/walmart/gma_titular.png",
+      "fit": "contain",
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "pildora": "No se cocinan · duran",
+      "pildoraEn": 0.9,
+      "fuente": "Fuente: ABC News (Good Morning America), 27 ago 2011 · goodmorningamerica.com"
+    },
+    {
+      "tipo": "imagen",
+      "start": 25.45,
+      "end": 27.6,
+      "src": "reels/walmart/wm_camion.jpg",
+      "zoom": [
+        1.0,
+        1.12
+      ],
+      "foco": [
+        60,
+        50
+      ],
+      "pildora": "Desde entonces",
+      "pildoraEn": 0.05,
+      "fuente": "Fuente: Wikimedia Commons"
+    },
+    {
+      "tipo": "camion",
+      "start": 27.6,
+      "end": 30.25,
+      "carga": "Pop-Tarts",
+      "tienda": "TIENDA"
+    },
+    {
+      "tipo": "tachado",
+      "start": 31.62,
+      "end": 34.72,
+      "antes": "Corazonada",
+      "despues": "Sus ventas de siempre",
+      "tachaEn": 0.1,
+      "despuesEn": 1.36,
+      "extra": "Solo había que leerlo",
+      "extraEn": 2.2
+    },
+    {
+      "tipo": "logo",
+      "start": 34.72,
+      "end": 36.4,
+      "src": "reels/walmart/walmart_logo.svg",
+      "arriba": "No necesitas ser",
+      "etiqueta": "Tu negocio también puede",
+      "etiquetaEn": 0.9
+    },
+    {
+      "tipo": "exporta",
+      "start": 36.4,
+      "end": 39.25,
+      "hoja": "Tus ventas · últimos 2 años",
+      "iaEn": 2.48
+    },
+    {
+      "tipo": "calendario",
+      "start": 39.25,
+      "end": 43.9,
+      "titulo": "¿Qué se vende más antes de…?",
+      "tituloEn": 0.7,
+      "etiquetas": [
+        {
+          "texto": "Buen Fin",
+          "en": 1.99
+        },
+        {
+          "texto": "Regreso a clases",
+          "en": 2.67
+        },
+        {
+          "texto": "Lluvias",
+          "en": 3.91
+        }
+      ]
+    },
+    {
+      "tipo": "anaquel",
+      "start": 45.0,
+      "end": 47.95,
+      "modo": "llenar",
+      "titulo": "Estaba en sus datos",
+      "etiqueta": "A tiempo"
+    },
+    {
+      "tipo": "comentario",
+      "start": 47.95,
+      "end": 49.3,
+      "texto": "¿Qué se te dispara en temporada?"
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "numero",
+      "start": 3.0,
+      "end": 4.55,
+      "valor": "x7",
+      "etiqueta": "Pop-Tarts de fresa",
+      "fuente": "Fuente: The New York Times, 14 nov 2004 · nytimes.com"
+    },
+    {
+      "tipo": "jugada",
+      "start": 30.25,
+      "end": 31.62
+    },
+    {
+      "tipo": "numero",
+      "start": 43.9,
+      "end": 45.0,
+      "valor": "x7",
+      "etiqueta": "y estaba en sus datos",
+      "fuente": "Fuente: The New York Times, 14 nov 2004 · nytimes.com"
+    },
+    {
+      "tipo": "cierre",
+      "start": 49.25,
+      "end": 52.7
+    }
+  ],
+  "pasos": [],
+  "sfx": [
+    {
+      "t": 21.14,
+      "s": "tick"
+    },
+    {
+      "t": 31.72,
+      "s": "click"
+    },
+    {
+      "t": 33.0,
+      "s": "pop"
+    },
+    {
+      "t": 38.88,
+      "s": "pop"
+    },
+    {
+      "t": 41.24,
+      "s": "pop"
+    },
+    {
+      "t": 41.92,
+      "s": "pop"
+    },
+    {
+      "t": 43.16,
+      "s": "pop"
+    },
+    {
+      "t": 28.0,
+      "s": "whoosh"
+    }
+  ],
+  "slug": "walmart",
+  "duracion": 52.7,
+  "manuel": "reels/walmart/manuel.mp4",
+  "cortes": [
+    14.089,
+    23.146
+  ],
+  "palabras": [
+    {
+      "w": "Walmart",
+      "start": 0.18,
+      "end": 0.96,
+      "prob": 0.827
+    },
+    {
+      "w": "descubrió",
+      "start": 0.96,
+      "end": 1.48,
+      "prob": 0.995
+    },
+    {
+      "w": "que",
+      "start": 1.48,
+      "end": 1.68,
+      "prob": 0.984
+    },
+    {
+      "w": "antes",
+      "start": 1.68,
+      "end": 1.88,
+      "prob": 0.975
+    },
+    {
+      "w": "de",
+      "start": 1.88,
+      "end": 1.98,
+      "prob": 0.978
+    },
+    {
+      "w": "un",
+      "start": 1.98,
+      "end": 2.1,
+      "prob": 0.982
+    },
+    {
+      "w": "huracán",
+      "start": 2.1,
+      "end": 2.38,
+      "prob": 0.988
+    },
+    {
+      "w": "se",
+      "start": 2.38,
+      "end": 2.54,
+      "prob": 0.908
+    },
+    {
+      "w": "venden",
+      "start": 2.54,
+      "end": 2.74,
+      "prob": 0.987
+    },
+    {
+      "w": "hasta",
+      "start": 2.74,
+      "end": 3.06,
+      "prob": 0.982
+    },
+    {
+      "w": "7",
+      "start": 3.06,
+      "end": 3.38,
+      "prob": 0.408
+    },
+    {
+      "w": "veces",
+      "start": 3.38,
+      "end": 3.62,
+      "prob": 0.998
+    },
+    {
+      "w": "más",
+      "start": 3.62,
+      "end": 3.82,
+      "prob": 0.947
+    },
+    {
+      "w": "Pop-Tarts",
+      "start": 3.82,
+      "end": 4.16,
+      "prob": 0.659
+    },
+    {
+      "w": "de",
+      "start": 4.16,
+      "end": 4.36,
+      "prob": 0.987
+    },
+    {
+      "w": "fresa",
+      "start": 4.36,
+      "end": 4.62,
+      "prob": 0.911
+    },
+    {
+      "w": "y",
+      "start": 4.62,
+      "end": 4.86,
+      "prob": 0.794
+    },
+    {
+      "w": "nadie",
+      "start": 4.86,
+      "end": 5.22,
+      "prob": 0.991
+    },
+    {
+      "w": "lo",
+      "start": 5.22,
+      "end": 5.54,
+      "prob": 0.995
+    },
+    {
+      "w": "adivinó.",
+      "start": 5.54,
+      "end": 6.34,
+      "prob": 0.965
+    },
+    {
+      "w": "Cuando",
+      "start": 6.66,
+      "end": 6.68,
+      "prob": 0.945
+    },
+    {
+      "w": "viene",
+      "start": 6.68,
+      "end": 6.84,
+      "prob": 0.987
+    },
+    {
+      "w": "un",
+      "start": 6.84,
+      "end": 7.02,
+      "prob": 0.983
+    },
+    {
+      "w": "huracán",
+      "start": 7.02,
+      "end": 7.38,
+      "prob": 0.998
+    },
+    {
+      "w": "todo",
+      "start": 7.38,
+      "end": 7.64,
+      "prob": 0.811
+    },
+    {
+      "w": "el",
+      "start": 7.64,
+      "end": 7.7,
+      "prob": 0.993
+    },
+    {
+      "w": "mundo",
+      "start": 7.7,
+      "end": 7.84,
+      "prob": 0.999
+    },
+    {
+      "w": "piensa",
+      "start": 7.84,
+      "end": 8.14,
+      "prob": 0.992
+    },
+    {
+      "w": "en",
+      "start": 8.14,
+      "end": 8.22,
+      "prob": 0.883
+    },
+    {
+      "w": "lo",
+      "start": 8.22,
+      "end": 8.32,
+      "prob": 0.232
+    },
+    {
+      "w": "obvio,",
+      "start": 8.32,
+      "end": 8.5,
+      "prob": 0.884
+    },
+    {
+      "w": "agua,",
+      "start": 8.8,
+      "end": 9.0,
+      "prob": 0.98
+    },
+    {
+      "w": "linternas,",
+      "start": 9.1,
+      "end": 9.68,
+      "prob": 0.858
+    },
+    {
+      "w": "pilas",
+      "start": 9.82,
+      "end": 10.08,
+      "prob": 0.995
+    },
+    {
+      "w": "y",
+      "start": 10.08,
+      "end": 10.26,
+      "prob": 0.664
+    },
+    {
+      "w": "si",
+      "start": 10.26,
+      "end": 10.36,
+      "prob": 0.987
+    },
+    {
+      "w": "llenas",
+      "start": 10.36,
+      "end": 10.56,
+      "prob": 0.98
+    },
+    {
+      "w": "la",
+      "start": 10.56,
+      "end": 10.72,
+      "prob": 0.889
+    },
+    {
+      "w": "tienda",
+      "start": 10.72,
+      "end": 10.96,
+      "prob": 0.927
+    },
+    {
+      "w": "solo",
+      "start": 10.96,
+      "end": 11.2,
+      "prob": 0.668
+    },
+    {
+      "w": "de",
+      "start": 11.2,
+      "end": 11.4,
+      "prob": 0.988
+    },
+    {
+      "w": "eso",
+      "start": 11.4,
+      "end": 11.5,
+      "prob": 0.813
+    },
+    {
+      "w": "se",
+      "start": 11.5,
+      "end": 11.7,
+      "prob": 0.815
+    },
+    {
+      "w": "te",
+      "start": 11.7,
+      "end": 11.86,
+      "prob": 0.991
+    },
+    {
+      "w": "acaba",
+      "start": 11.86,
+      "end": 12.08,
+      "prob": 0.947
+    },
+    {
+      "w": "lo",
+      "start": 12.08,
+      "end": 12.38,
+      "prob": 0.981
+    },
+    {
+      "w": "que",
+      "start": 12.38,
+      "end": 12.48,
+      "prob": 0.999
+    },
+    {
+      "w": "la",
+      "start": 12.48,
+      "end": 12.64,
+      "prob": 0.996
+    },
+    {
+      "w": "gente",
+      "start": 12.64,
+      "end": 12.88,
+      "prob": 0.998
+    },
+    {
+      "w": "de",
+      "start": 12.88,
+      "end": 13.14,
+      "prob": 0.962
+    },
+    {
+      "w": "verdad",
+      "start": 13.14,
+      "end": 13.36,
+      "prob": 0.999
+    },
+    {
+      "w": "va",
+      "start": 13.36,
+      "end": 13.6,
+      "prob": 0.982
+    },
+    {
+      "w": "a",
+      "start": 13.6,
+      "end": 13.96,
+      "prob": 0.986
+    },
+    {
+      "w": "comprar.",
+      "start": 13.96,
+      "end": 13.98,
+      "prob": 0.998
+    },
+    {
+      "w": "En",
+      "start": 14.255,
+      "end": 14.355,
+      "prob": 0.978
+    },
+    {
+      "w": "2004",
+      "start": 14.355,
+      "end": 15.035,
+      "prob": 0.955
+    },
+    {
+      "w": "Walmart",
+      "start": 15.035,
+      "end": 15.535,
+      "prob": 0.809
+    },
+    {
+      "w": "revisó",
+      "start": 15.535,
+      "end": 15.975,
+      "prob": 0.993
+    },
+    {
+      "w": "lo",
+      "start": 15.975,
+      "end": 16.135,
+      "prob": 0.995
+    },
+    {
+      "w": "que",
+      "start": 16.135,
+      "end": 16.415,
+      "prob": 0.999
+    },
+    {
+      "w": "compraba",
+      "start": 16.415,
+      "end": 16.595,
+      "prob": 0.989
+    },
+    {
+      "w": "la",
+      "start": 16.595,
+      "end": 16.755,
+      "prob": 0.973
+    },
+    {
+      "w": "gente",
+      "start": 16.755,
+      "end": 17.035,
+      "prob": 0.999
+    },
+    {
+      "w": "antes",
+      "start": 17.035,
+      "end": 17.455,
+      "prob": 0.994
+    },
+    {
+      "w": "de",
+      "start": 17.455,
+      "end": 17.615,
+      "prob": 0.998
+    },
+    {
+      "w": "los",
+      "start": 17.615,
+      "end": 17.775,
+      "prob": 0.991
+    },
+    {
+      "w": "huracanes",
+      "start": 17.775,
+      "end": 18.195,
+      "prob": 0.996
+    },
+    {
+      "w": "anteriores",
+      "start": 18.195,
+      "end": 18.675,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 18.675,
+      "end": 19.015,
+      "prob": 0.964
+    },
+    {
+      "w": "encontró",
+      "start": 19.015,
+      "end": 19.275,
+      "prob": 0.98
+    },
+    {
+      "w": "que",
+      "start": 19.275,
+      "end": 19.415,
+      "prob": 0.998
+    },
+    {
+      "w": "las",
+      "start": 19.415,
+      "end": 19.615,
+      "prob": 0.99
+    },
+    {
+      "w": "Pop-Tarts",
+      "start": 19.615,
+      "end": 19.935,
+      "prob": 0.976
+    },
+    {
+      "w": "de",
+      "start": 19.935,
+      "end": 20.115,
+      "prob": 0.986
+    },
+    {
+      "w": "fresa",
+      "start": 20.115,
+      "end": 20.335,
+      "prob": 0.909
+    },
+    {
+      "w": "se",
+      "start": 20.335,
+      "end": 20.535,
+      "prob": 0.992
+    },
+    {
+      "w": "vendían",
+      "start": 20.535,
+      "end": 20.795,
+      "prob": 0.989
+    },
+    {
+      "w": "hasta",
+      "start": 20.795,
+      "end": 21.135,
+      "prob": 0.995
+    },
+    {
+      "w": "7",
+      "start": 21.135,
+      "end": 21.495,
+      "prob": 0.849
+    },
+    {
+      "w": "veces",
+      "start": 21.495,
+      "end": 21.875,
+      "prob": 0.998
+    },
+    {
+      "w": "más",
+      "start": 21.875,
+      "end": 22.355,
+      "prob": 0.983
+    },
+    {
+      "w": "de",
+      "start": 22.355,
+      "end": 22.555,
+      "prob": 0.984
+    },
+    {
+      "w": "lo",
+      "start": 22.555,
+      "end": 22.715,
+      "prob": 0.996
+    },
+    {
+      "w": "normal.",
+      "start": 22.715,
+      "end": 23.035,
+      "prob": 0.998
+    },
+    {
+      "w": "No",
+      "start": 23.284,
+      "end": 23.444,
+      "prob": 0.928
+    },
+    {
+      "w": "se",
+      "start": 23.444,
+      "end": 23.604,
+      "prob": 0.965
+    },
+    {
+      "w": "echan",
+      "start": 23.604,
+      "end": 23.724,
+      "prob": 0.992
+    },
+    {
+      "w": "a",
+      "start": 23.724,
+      "end": 23.884,
+      "prob": 0.999
+    },
+    {
+      "w": "perder",
+      "start": 23.884,
+      "end": 24.124,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 24.124,
+      "end": 24.444,
+      "prob": 0.983
+    },
+    {
+      "w": "no",
+      "start": 24.444,
+      "end": 24.564,
+      "prob": 0.995
+    },
+    {
+      "w": "necesitas",
+      "start": 24.564,
+      "end": 24.804,
+      "prob": 0.994
+    },
+    {
+      "w": "cocinarlas.",
+      "start": 24.804,
+      "end": 25.404,
+      "prob": 0.959
+    },
+    {
+      "w": "Desde",
+      "start": 25.504,
+      "end": 25.704,
+      "prob": 0.997
+    },
+    {
+      "w": "entonces",
+      "start": 25.704,
+      "end": 26.184,
+      "prob": 0.999
+    },
+    {
+      "w": "antes",
+      "start": 26.184,
+      "end": 26.544,
+      "prob": 0.528
+    },
+    {
+      "w": "de",
+      "start": 26.544,
+      "end": 26.664,
+      "prob": 0.998
+    },
+    {
+      "w": "la",
+      "start": 26.664,
+      "end": 26.784,
+      "prob": 0.996
+    },
+    {
+      "w": "tormenta",
+      "start": 26.784,
+      "end": 27.284,
+      "prob": 0.998
+    },
+    {
+      "w": "manda",
+      "start": 27.284,
+      "end": 27.624,
+      "prob": 0.682
+    },
+    {
+      "w": "camiones",
+      "start": 27.624,
+      "end": 27.864,
+      "prob": 0.993
+    },
+    {
+      "w": "con",
+      "start": 27.864,
+      "end": 28.164,
+      "prob": 0.992
+    },
+    {
+      "w": "Pop-Tarts",
+      "start": 28.164,
+      "end": 28.664,
+      "prob": 0.459
+    },
+    {
+      "w": "a",
+      "start": 28.664,
+      "end": 29.004,
+      "prob": 0.987
+    },
+    {
+      "w": "todas",
+      "start": 29.004,
+      "end": 29.164,
+      "prob": 0.995
+    },
+    {
+      "w": "esas",
+      "start": 29.164,
+      "end": 29.424,
+      "prob": 0.96
+    },
+    {
+      "w": "tiendas.",
+      "start": 29.424,
+      "end": 30.064,
+      "prob": 0.999
+    },
+    {
+      "w": "Pero",
+      "start": 30.324,
+      "end": 30.504,
+      "prob": 0.935
+    },
+    {
+      "w": "aquí",
+      "start": 30.504,
+      "end": 30.924,
+      "prob": 0.987
+    },
+    {
+      "w": "está",
+      "start": 30.924,
+      "end": 31.164,
+      "prob": 0.948
+    },
+    {
+      "w": "la",
+      "start": 31.164,
+      "end": 31.344,
+      "prob": 0.996
+    },
+    {
+      "w": "jugada",
+      "start": 31.344,
+      "end": 31.664,
+      "prob": 0.998
+    },
+    {
+      "w": "ese",
+      "start": 31.664,
+      "end": 31.984,
+      "prob": 0.074
+    },
+    {
+      "w": "dato",
+      "start": 31.984,
+      "end": 32.304,
+      "prob": 0.991
+    },
+    {
+      "w": "estaba",
+      "start": 32.304,
+      "end": 32.724,
+      "prob": 0.975
+    },
+    {
+      "w": "en",
+      "start": 32.724,
+      "end": 32.824,
+      "prob": 0.999
+    },
+    {
+      "w": "sus",
+      "start": 32.824,
+      "end": 32.984,
+      "prob": 0.984
+    },
+    {
+      "w": "ventas",
+      "start": 32.984,
+      "end": 33.284,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 33.284,
+      "end": 33.444,
+      "prob": 0.995
+    },
+    {
+      "w": "siempre,",
+      "start": 33.444,
+      "end": 33.724,
+      "prob": 0.999
+    },
+    {
+      "w": "solo",
+      "start": 33.824,
+      "end": 34.024,
+      "prob": 0.585
+    },
+    {
+      "w": "había",
+      "start": 34.024,
+      "end": 34.184,
+      "prob": 0.954
+    },
+    {
+      "w": "que",
+      "start": 34.184,
+      "end": 34.404,
+      "prob": 0.998
+    },
+    {
+      "w": "leerlo",
+      "start": 34.404,
+      "end": 34.764,
+      "prob": 0.994
+    },
+    {
+      "w": "y",
+      "start": 34.764,
+      "end": 35.024,
+      "prob": 0.961
+    },
+    {
+      "w": "no",
+      "start": 35.024,
+      "end": 35.264,
+      "prob": 0.995
+    },
+    {
+      "w": "necesita",
+      "start": 35.264,
+      "end": 35.524,
+      "prob": 0.927
+    },
+    {
+      "w": "ser",
+      "start": 35.524,
+      "end": 35.764,
+      "prob": 0.861
+    },
+    {
+      "w": "Walmart.",
+      "start": 35.764,
+      "end": 36.044,
+      "prob": 0.92
+    },
+    {
+      "w": "Exporta",
+      "start": 36.464,
+      "end": 36.784,
+      "prob": 0.859
+    },
+    {
+      "w": "tus",
+      "start": 36.784,
+      "end": 36.964,
+      "prob": 0.988
+    },
+    {
+      "w": "ventas",
+      "start": 36.964,
+      "end": 37.284,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 37.284,
+      "end": 37.404,
+      "prob": 0.997
+    },
+    {
+      "w": "los",
+      "start": 37.404,
+      "end": 37.584,
+      "prob": 0.999
+    },
+    {
+      "w": "últimos",
+      "start": 37.584,
+      "end": 37.844,
+      "prob": 0.997
+    },
+    {
+      "w": "dos",
+      "start": 37.844,
+      "end": 38.064,
+      "prob": 0.954
+    },
+    {
+      "w": "años,",
+      "start": 38.064,
+      "end": 38.424,
+      "prob": 0.999
+    },
+    {
+      "w": "dáselas",
+      "start": 38.584,
+      "end": 38.884,
+      "prob": 0.921
+    },
+    {
+      "w": "a la IA",
+      "start": 38.884,
+      "end": 39.284,
+      "prob": 0.586,
+      "corregida": true
+    },
+    {
+      "w": "y",
+      "start": 39.284,
+      "end": 39.604,
+      "prob": 0.957
+    },
+    {
+      "w": "pregúntale",
+      "start": 39.604,
+      "end": 39.984,
+      "prob": 0.957
+    },
+    {
+      "w": "qué",
+      "start": 39.984,
+      "end": 40.164,
+      "prob": 0.672
+    },
+    {
+      "w": "se",
+      "start": 40.164,
+      "end": 40.324,
+      "prob": 0.998
+    },
+    {
+      "w": "vende",
+      "start": 40.324,
+      "end": 40.504,
+      "prob": 0.963
+    },
+    {
+      "w": "más",
+      "start": 40.504,
+      "end": 40.724,
+      "prob": 0.995
+    },
+    {
+      "w": "antes",
+      "start": 40.724,
+      "end": 41.024,
+      "prob": 0.908
+    },
+    {
+      "w": "del",
+      "start": 41.024,
+      "end": 41.244,
+      "prob": 0.948
+    },
+    {
+      "w": "Buen",
+      "start": 41.244,
+      "end": 41.404,
+      "prob": 0.787
+    },
+    {
+      "w": "Fin,",
+      "start": 41.404,
+      "end": 41.704,
+      "prob": 0.996
+    },
+    {
+      "w": "regreso",
+      "start": 41.924,
+      "end": 42.144,
+      "prob": 0.966
+    },
+    {
+      "w": "a",
+      "start": 42.144,
+      "end": 42.324,
+      "prob": 0.994
+    },
+    {
+      "w": "clases",
+      "start": 42.324,
+      "end": 42.584,
+      "prob": 0.964
+    },
+    {
+      "w": "o",
+      "start": 42.584,
+      "end": 42.884,
+      "prob": 0.947
+    },
+    {
+      "w": "de",
+      "start": 42.884,
+      "end": 43.024,
+      "prob": 0.992
+    },
+    {
+      "w": "las",
+      "start": 43.024,
+      "end": 43.164,
+      "prob": 0.996
+    },
+    {
+      "w": "lluvias.",
+      "start": 43.164,
+      "end": 43.684,
+      "prob": 0.996
+    },
+    {
+      "w": "Siete",
+      "start": 43.944,
+      "end": 44.164,
+      "prob": 0.876
+    },
+    {
+      "w": "veces",
+      "start": 44.164,
+      "end": 44.444,
+      "prob": 0.999
+    },
+    {
+      "w": "más",
+      "start": 44.444,
+      "end": 44.704,
+      "prob": 0.997
+    },
+    {
+      "w": "y",
+      "start": 44.704,
+      "end": 45.084,
+      "prob": 0.974
+    },
+    {
+      "w": "estaba",
+      "start": 45.084,
+      "end": 45.204,
+      "prob": 0.868
+    },
+    {
+      "w": "en",
+      "start": 45.204,
+      "end": 45.344,
+      "prob": 0.991
+    },
+    {
+      "w": "sus",
+      "start": 45.344,
+      "end": 45.444,
+      "prob": 0.986
+    },
+    {
+      "w": "datos.",
+      "start": 45.444,
+      "end": 45.724,
+      "prob": 0.998
+    },
+    {
+      "w": "¿Qué",
+      "start": 46.104,
+      "end": 46.224,
+      "prob": 0.846
+    },
+    {
+      "w": "se",
+      "start": 46.224,
+      "end": 46.384,
+      "prob": 0.991
+    },
+    {
+      "w": "te",
+      "start": 46.384,
+      "end": 46.564,
+      "prob": 0.995
+    },
+    {
+      "w": "dispara",
+      "start": 46.564,
+      "end": 46.904,
+      "prob": 0.988
+    },
+    {
+      "w": "a",
+      "start": 46.904,
+      "end": 46.964,
+      "prob": 0.938
+    },
+    {
+      "w": "ti",
+      "start": 46.964,
+      "end": 47.144,
+      "prob": 0.96
+    },
+    {
+      "w": "en",
+      "start": 47.144,
+      "end": 47.444,
+      "prob": 0.986
+    },
+    {
+      "w": "temporada?",
+      "start": 47.444,
+      "end": 47.824,
+      "prob": 0.992
+    },
+    {
+      "w": "Dímelo",
+      "start": 48.124,
+      "end": 48.284,
+      "prob": 0.66
+    },
+    {
+      "w": "en",
+      "start": 48.284,
+      "end": 48.364,
+      "prob": 0.987
+    },
+    {
+      "w": "los",
+      "start": 48.364,
+      "end": 48.564,
+      "prob": 0.997
+    },
+    {
+      "w": "comentarios.",
+      "start": 48.564,
+      "end": 48.944,
+      "prob": 0.999
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.18,
+      "end": 1.48,
+      "words": [
+        {
+          "w": "Walmart",
+          "start": 0.18,
+          "key": true
+        },
+        {
+          "w": "descubrió",
+          "start": 0.96,
+          "key": false
+        }
+      ]
+    },
+    {
+      "start": 1.48,
+      "end": 2.38,
+      "words": [
+        {
+          "w": "que",
+          "start": 1.48
+        },
+        {
+          "w": "antes",
+          "start": 1.68
+        },
+        {
+          "w": "de",
+          "start": 1.88
+        },
+        {
+          "w": "un",
+          "start": 1.98
+        },
+        {
+          "w": "huracán",
+          "start": 2.1,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 2.38,
+      "end": 3.62,
+      "words": [
+        {
+          "w": "se",
+          "start": 2.38
+        },
+        {
+          "w": "venden",
+          "start": 2.54
+        },
+        {
+          "w": "hasta",
+          "start": 2.74
+        },
+        {
+          "w": "7",
+          "start": 3.06,
+          "key": true
+        },
+        {
+          "w": "veces",
+          "start": 3.38
+        }
+      ]
+    },
+    {
+      "start": 3.62,
+      "end": 4.62,
+      "words": [
+        {
+          "w": "más",
+          "start": 3.62
+        },
+        {
+          "w": "Pop-Tarts",
+          "start": 3.82,
+          "key": true
+        },
+        {
+          "w": "de",
+          "start": 4.16
+        },
+        {
+          "w": "fresa",
+          "start": 4.36
+        }
+      ]
+    },
+    {
+      "start": 4.62,
+      "end": 6.66,
+      "words": [
+        {
+          "w": "y",
+          "start": 4.62
+        },
+        {
+          "w": "nadie",
+          "start": 4.86
+        },
+        {
+          "w": "lo",
+          "start": 5.22
+        },
+        {
+          "w": "adivinó",
+          "start": 5.54,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 6.66,
+      "end": 7.38,
+      "words": [
+        {
+          "w": "Cuando",
+          "start": 6.66
+        },
+        {
+          "w": "viene",
+          "start": 6.68
+        },
+        {
+          "w": "un",
+          "start": 6.84
+        },
+        {
+          "w": "huracán",
+          "start": 7.02,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 7.38,
+      "end": 8.14,
+      "words": [
+        {
+          "w": "todo",
+          "start": 7.38
+        },
+        {
+          "w": "el",
+          "start": 7.64
+        },
+        {
+          "w": "mundo",
+          "start": 7.7
+        },
+        {
+          "w": "piensa",
+          "start": 7.84,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.14,
+      "end": 8.8,
+      "words": [
+        {
+          "w": "en",
+          "start": 8.14
+        },
+        {
+          "w": "lo",
+          "start": 8.22
+        },
+        {
+          "w": "obvio",
+          "start": 8.32,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.8,
+      "end": 10.08,
+      "words": [
+        {
+          "w": "agua",
+          "start": 8.8
+        },
+        {
+          "w": "linternas",
+          "start": 9.1,
+          "key": true
+        },
+        {
+          "w": "pilas",
+          "start": 9.82
+        }
+      ]
+    },
+    {
+      "start": 10.08,
+      "end": 10.96,
+      "words": [
+        {
+          "w": "y",
+          "start": 10.08
+        },
+        {
+          "w": "si",
+          "start": 10.26
+        },
+        {
+          "w": "llenas",
+          "start": 10.36,
+          "key": true
+        },
+        {
+          "w": "la",
+          "start": 10.56
+        },
+        {
+          "w": "tienda",
+          "start": 10.72
+        }
+      ]
+    },
+    {
+      "start": 10.96,
+      "end": 11.5,
+      "words": [
+        {
+          "w": "solo",
+          "start": 10.96
+        },
+        {
+          "w": "de",
+          "start": 11.2
+        },
+        {
+          "w": "eso",
+          "start": 11.4,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 11.5,
+      "end": 12.08,
+      "words": [
+        {
+          "w": "se",
+          "start": 11.5
+        },
+        {
+          "w": "te",
+          "start": 11.7
+        },
+        {
+          "w": "acaba",
+          "start": 11.86,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 12.08,
+      "end": 12.88,
+      "words": [
+        {
+          "w": "lo",
+          "start": 12.08
+        },
+        {
+          "w": "que",
+          "start": 12.38
+        },
+        {
+          "w": "la",
+          "start": 12.48
+        },
+        {
+          "w": "gente",
+          "start": 12.64,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 12.88,
+      "end": 14.255,
+      "words": [
+        {
+          "w": "de",
+          "start": 12.88
+        },
+        {
+          "w": "verdad",
+          "start": 13.14
+        },
+        {
+          "w": "va",
+          "start": 13.36
+        },
+        {
+          "w": "a",
+          "start": 13.6
+        },
+        {
+          "w": "comprar",
+          "start": 13.96,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 14.255,
+      "end": 15.975,
+      "words": [
+        {
+          "w": "En",
+          "start": 14.255
+        },
+        {
+          "w": "2004",
+          "start": 14.355,
+          "key": true
+        },
+        {
+          "w": "Walmart",
+          "start": 15.035
+        },
+        {
+          "w": "revisó",
+          "start": 15.535
+        }
+      ]
+    },
+    {
+      "start": 15.975,
+      "end": 17.035,
+      "words": [
+        {
+          "w": "lo",
+          "start": 15.975
+        },
+        {
+          "w": "que",
+          "start": 16.135
+        },
+        {
+          "w": "compraba",
+          "start": 16.415,
+          "key": true
+        },
+        {
+          "w": "la",
+          "start": 16.595
+        },
+        {
+          "w": "gente",
+          "start": 16.755
+        }
+      ]
+    },
+    {
+      "start": 17.035,
+      "end": 18.195,
+      "words": [
+        {
+          "w": "antes",
+          "start": 17.035
+        },
+        {
+          "w": "de",
+          "start": 17.455
+        },
+        {
+          "w": "los",
+          "start": 17.615
+        },
+        {
+          "w": "huracanes",
+          "start": 17.775,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 18.195,
+      "end": 19.275,
+      "words": [
+        {
+          "w": "anteriores",
+          "start": 18.195,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 18.675
+        },
+        {
+          "w": "encontró",
+          "start": 19.015
+        }
+      ]
+    },
+    {
+      "start": 19.275,
+      "end": 19.935,
+      "words": [
+        {
+          "w": "que",
+          "start": 19.275
+        },
+        {
+          "w": "las",
+          "start": 19.415
+        },
+        {
+          "w": "Pop-Tarts",
+          "start": 19.615,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 19.935,
+      "end": 20.795,
+      "words": [
+        {
+          "w": "de",
+          "start": 19.935
+        },
+        {
+          "w": "fresa",
+          "start": 20.115
+        },
+        {
+          "w": "se",
+          "start": 20.335
+        },
+        {
+          "w": "vendían",
+          "start": 20.535,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 20.795,
+      "end": 21.875,
+      "words": [
+        {
+          "w": "hasta",
+          "start": 20.795
+        },
+        {
+          "w": "7",
+          "start": 21.135,
+          "key": true
+        },
+        {
+          "w": "veces",
+          "start": 21.495
+        }
+      ]
+    },
+    {
+      "start": 21.875,
+      "end": 23.284,
+      "words": [
+        {
+          "w": "más",
+          "start": 21.875
+        },
+        {
+          "w": "de",
+          "start": 22.355
+        },
+        {
+          "w": "lo",
+          "start": 22.555
+        },
+        {
+          "w": "normal",
+          "start": 22.715,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 23.284,
+      "end": 24.124,
+      "words": [
+        {
+          "w": "No",
+          "start": 23.284
+        },
+        {
+          "w": "se",
+          "start": 23.444
+        },
+        {
+          "w": "echan",
+          "start": 23.604
+        },
+        {
+          "w": "a",
+          "start": 23.724
+        },
+        {
+          "w": "perder",
+          "start": 23.884,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 24.124,
+      "end": 24.804,
+      "words": [
+        {
+          "w": "y",
+          "start": 24.124
+        },
+        {
+          "w": "no",
+          "start": 24.444
+        },
+        {
+          "w": "necesitas",
+          "start": 24.564,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 24.804,
+      "end": 25.504,
+      "words": [
+        {
+          "w": "cocinarlas",
+          "start": 24.804,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 25.504,
+      "end": 26.544,
+      "words": [
+        {
+          "w": "Desde",
+          "start": 25.504
+        },
+        {
+          "w": "entonces",
+          "start": 25.704,
+          "key": true
+        },
+        {
+          "w": "antes",
+          "start": 26.184
+        }
+      ]
+    },
+    {
+      "start": 26.544,
+      "end": 27.624,
+      "words": [
+        {
+          "w": "de",
+          "start": 26.544
+        },
+        {
+          "w": "la",
+          "start": 26.664
+        },
+        {
+          "w": "tormenta",
+          "start": 26.784,
+          "key": true
+        },
+        {
+          "w": "manda",
+          "start": 27.284
+        }
+      ]
+    },
+    {
+      "start": 27.624,
+      "end": 28.664,
+      "words": [
+        {
+          "w": "camiones",
+          "start": 27.624
+        },
+        {
+          "w": "con",
+          "start": 27.864
+        },
+        {
+          "w": "Pop-Tarts",
+          "start": 28.164,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 28.664,
+      "end": 30.324,
+      "words": [
+        {
+          "w": "a",
+          "start": 28.664
+        },
+        {
+          "w": "todas",
+          "start": 29.004
+        },
+        {
+          "w": "esas",
+          "start": 29.164
+        },
+        {
+          "w": "tiendas",
+          "start": 29.424,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 30.324,
+      "end": 31.664,
+      "words": [
+        {
+          "w": "Pero",
+          "start": 30.324
+        },
+        {
+          "w": "aquí",
+          "start": 30.504
+        },
+        {
+          "w": "está",
+          "start": 30.924
+        },
+        {
+          "w": "la",
+          "start": 31.164
+        },
+        {
+          "w": "jugada",
+          "start": 31.344,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 31.664,
+      "end": 32.724,
+      "words": [
+        {
+          "w": "ese",
+          "start": 31.664
+        },
+        {
+          "w": "dato",
+          "start": 31.984
+        },
+        {
+          "w": "estaba",
+          "start": 32.304,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 32.724,
+      "end": 33.824,
+      "words": [
+        {
+          "w": "en",
+          "start": 32.724
+        },
+        {
+          "w": "sus",
+          "start": 32.824
+        },
+        {
+          "w": "ventas",
+          "start": 32.984
+        },
+        {
+          "w": "de",
+          "start": 33.284
+        },
+        {
+          "w": "siempre",
+          "start": 33.444,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 33.824,
+      "end": 34.764,
+      "words": [
+        {
+          "w": "solo",
+          "start": 33.824
+        },
+        {
+          "w": "había",
+          "start": 34.024
+        },
+        {
+          "w": "que",
+          "start": 34.184
+        },
+        {
+          "w": "leerlo",
+          "start": 34.404,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 34.764,
+      "end": 35.764,
+      "words": [
+        {
+          "w": "y",
+          "start": 34.764
+        },
+        {
+          "w": "no",
+          "start": 35.024
+        },
+        {
+          "w": "necesita",
+          "start": 35.264,
+          "key": true
+        },
+        {
+          "w": "ser",
+          "start": 35.524
+        }
+      ]
+    },
+    {
+      "start": 35.764,
+      "end": 36.464,
+      "words": [
+        {
+          "w": "Walmart",
+          "start": 35.764,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 36.464,
+      "end": 37.284,
+      "words": [
+        {
+          "w": "Exporta",
+          "start": 36.464,
+          "key": true
+        },
+        {
+          "w": "tus",
+          "start": 36.784
+        },
+        {
+          "w": "ventas",
+          "start": 36.964
+        }
+      ]
+    },
+    {
+      "start": 37.284,
+      "end": 38.584,
+      "words": [
+        {
+          "w": "de",
+          "start": 37.284
+        },
+        {
+          "w": "los",
+          "start": 37.404
+        },
+        {
+          "w": "últimos",
+          "start": 37.584,
+          "key": true
+        },
+        {
+          "w": "dos",
+          "start": 37.844
+        },
+        {
+          "w": "años",
+          "start": 38.064
+        }
+      ]
+    },
+    {
+      "start": 38.584,
+      "end": 39.284,
+      "words": [
+        {
+          "w": "dáselas",
+          "start": 38.584,
+          "key": true
+        },
+        {
+          "w": "a la IA",
+          "start": 38.884
+        }
+      ]
+    },
+    {
+      "start": 39.284,
+      "end": 39.984,
+      "words": [
+        {
+          "w": "y",
+          "start": 39.284
+        },
+        {
+          "w": "pregúntale",
+          "start": 39.604,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 39.984,
+      "end": 41.024,
+      "words": [
+        {
+          "w": "qué",
+          "start": 39.984
+        },
+        {
+          "w": "se",
+          "start": 40.164
+        },
+        {
+          "w": "vende",
+          "start": 40.324,
+          "key": true
+        },
+        {
+          "w": "más",
+          "start": 40.504
+        },
+        {
+          "w": "antes",
+          "start": 40.724
+        }
+      ]
+    },
+    {
+      "start": 41.024,
+      "end": 41.924,
+      "words": [
+        {
+          "w": "del",
+          "start": 41.024
+        },
+        {
+          "w": "Buen",
+          "start": 41.244,
+          "key": true
+        },
+        {
+          "w": "Fin",
+          "start": 41.404,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 41.924,
+      "end": 42.584,
+      "words": [
+        {
+          "w": "regreso",
+          "start": 41.924,
+          "key": true
+        },
+        {
+          "w": "a",
+          "start": 42.144
+        },
+        {
+          "w": "clases",
+          "start": 42.324
+        }
+      ]
+    },
+    {
+      "start": 42.584,
+      "end": 43.944,
+      "words": [
+        {
+          "w": "o",
+          "start": 42.584
+        },
+        {
+          "w": "de",
+          "start": 42.884
+        },
+        {
+          "w": "las",
+          "start": 43.024
+        },
+        {
+          "w": "lluvias",
+          "start": 43.164,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 43.944,
+      "end": 44.704,
+      "words": [
+        {
+          "w": "Siete",
+          "start": 43.944,
+          "key": true
+        },
+        {
+          "w": "veces",
+          "start": 44.164,
+          "key": false
+        },
+        {
+          "w": "más",
+          "start": 44.444,
+          "key": false
+        }
+      ]
+    },
+    {
+      "start": 44.704,
+      "end": 46.104,
+      "words": [
+        {
+          "w": "y",
+          "start": 44.704,
+          "key": false
+        },
+        {
+          "w": "estaba",
+          "start": 45.084,
+          "key": false
+        },
+        {
+          "w": "en",
+          "start": 45.204
+        },
+        {
+          "w": "sus",
+          "start": 45.344
+        },
+        {
+          "w": "datos",
+          "start": 45.444,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 46.104,
+      "end": 46.904,
+      "words": [
+        {
+          "w": "¿Qué",
+          "start": 46.104
+        },
+        {
+          "w": "se",
+          "start": 46.224
+        },
+        {
+          "w": "te",
+          "start": 46.384
+        },
+        {
+          "w": "dispara",
+          "start": 46.564,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 46.904,
+      "end": 48.124,
+      "words": [
+        {
+          "w": "a",
+          "start": 46.904
+        },
+        {
+          "w": "ti",
+          "start": 46.964
+        },
+        {
+          "w": "en",
+          "start": 47.144
+        },
+        {
+          "w": "temporada?",
+          "start": 47.444,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 48.124,
+      "end": 48.284,
+      "words": [
+        {
+          "w": "Dímelo",
+          "start": 48.124,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 48.284,
+      "end": 49.194,
+      "words": [
+        {
+          "w": "en",
+          "start": 48.284
+        },
+        {
+          "w": "los",
+          "start": 48.364
+        },
+        {
+          "w": "comentarios",
+          "start": 48.564,
+          "key": true
+        }
+      ]
+    }
+  ],
+  "duracionManuel": 49.2,
+  "musica": "reels/walmart/musica.wav",
+  "caraYFuente": 0.56,
+  "portada": {
+    "cuadro": 4.0
+  }
+}

@@ -3,6 +3,20 @@ import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideo
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
+import { Anaquel, Barras, Calendario, Camion, Comentario, Exporta, Iconos, Tachado, Tormenta } from "./Animaciones";
+
+// Píldora que entra con golpe dentro de una imagen o video (abajo a la izquierda)
+const PildoraFoto: React.FC<{ texto?: string; en?: number }> = ({ texto, en = 0.35 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  if (!texto) return null;
+  const p = spring({ frame: frame - Math.round(en * fps), fps, config: theme.spring.golpe });
+  return (
+    <div style={{ position: "absolute", left: 28, bottom: 28, opacity: Math.min(1, p * 1.5), transform: `scale(${interpolate(p, [0, 1], [1.4, 1])})`, transformOrigin: "left bottom" }}>
+      <Pildora style={{ fontSize: 40, border: `3px solid ${color.negro}` }}>{texto}</Pildora>
+    </div>
+  );
+};
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -60,11 +74,12 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       const z = interpolate(frame, [0, dur], [z0, z1], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const [fx, fy] = b.foco ?? [50, 50];
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco }}>
+        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: b.fondo ?? color.blanco, position: "relative" }}>
           <Img
             src={staticFile(b.src)}
             style={{ width: "100%", height: "100%", objectFit: b.fit ?? "cover", transform: `scale(${z})`, transformOrigin: `${fx}% ${fy}%` }}
           />
+          <PildoraFoto texto={b.pildora} en={b.pildoraEn} />
         </div>
       );
       break;
@@ -89,6 +104,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
               }}
             />
           </div>
+          <PildoraFoto texto={b.pildora} en={b.pildoraEn} />
         </div>
       );
       break;
@@ -96,8 +112,13 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
     case "logo":
       body = (
         <Tarjeta style={{ width: 760, display: "flex", flexDirection: "column", alignItems: "center", gap: 30 }}>
-          <Img src={staticFile(b.src)} style={{ maxWidth: 560, maxHeight: 240, objectFit: "contain" }} />
-          {b.etiqueta ? <Pildora>{b.etiqueta}</Pildora> : null}
+          {b.arriba ? <Titulo size={50}>{b.arriba}</Titulo> : null}
+          <Img src={staticFile(b.src)} style={{ maxWidth: 600, maxHeight: 240, objectFit: "contain" }} />
+          {b.etiqueta ? (
+            <div style={{ opacity: b.etiquetaEn === undefined ? 1 : Math.min(1, spring({ frame: frame - Math.round(b.etiquetaEn * fps), fps, config: theme.spring.golpe }) * 1.5) }}>
+              <Pildora>{b.etiqueta}</Pildora>
+            </div>
+          ) : null}
         </Tarjeta>
       );
       break;
@@ -169,6 +190,33 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
           ) : null}
         </Tarjeta>
       );
+      break;
+    case "tormenta":
+      body = <Tormenta etiqueta={b.etiqueta} etiquetaEn={b.etiquetaEn} />;
+      break;
+    case "iconos":
+      body = <Iconos titulo={b.titulo} items={b.items} />;
+      break;
+    case "anaquel":
+      body = <Anaquel modo={b.modo} titulo={b.titulo} pregunta={b.pregunta} etiqueta={b.etiqueta} dur={b.end - b.start} />;
+      break;
+    case "barras":
+      body = <Barras titulo={b.titulo} subeEn={b.subeEn} valor={b.valor} etiqueta={b.etiqueta} />;
+      break;
+    case "camion":
+      body = <Camion carga={b.carga} tienda={b.tienda} dur={b.end - b.start} />;
+      break;
+    case "tachado":
+      body = <Tachado antes={b.antes} despues={b.despues} tachaEn={b.tachaEn} despuesEn={b.despuesEn} extra={b.extra} extraEn={b.extraEn} />;
+      break;
+    case "exporta":
+      body = <Exporta hoja={b.hoja} iaEn={b.iaEn} />;
+      break;
+    case "calendario":
+      body = <Calendario titulo={b.titulo} tituloEn={b.tituloEn} etiquetas={b.etiquetas} />;
+      break;
+    case "comentario":
+      body = <Comentario texto={b.texto} />;
       break;
     case "silueta":
       return null; // se dibuja a pantalla completa en Reel.tsx

@@ -30,9 +30,16 @@ def extraer_audio(video, desde=None, hasta=None):
     return tmp
 
 
+PROMPT = "Manuel NoCode habla de IA, Claude, Airtable, Make, automatización, Grok Bot."
+
+
 def transcribir(modelo, wav, offset=0.0):
-    segs, _ = modelo.transcribe(str(wav), language="es", word_timestamps=True, vad_filter=True,
-                                initial_prompt="Manuel NoCode habla de IA, Claude, Airtable, Make, automatización, Grok Bot.")
+    # Se pasa el audio ya decodificado (numpy) para no depender de la versión de PyAV.
+    import wave, numpy as np
+    with wave.open(str(wav)) as f:
+        audio = np.frombuffer(f.readframes(f.getnframes()), dtype=np.int16).astype(np.float32) / 32768.0
+    segs, _ = modelo.transcribe(audio, language="es", word_timestamps=True, vad_filter=True,
+                                initial_prompt=PROMPT)
     out = []
     for s in segs:
         for w in s.words or []:

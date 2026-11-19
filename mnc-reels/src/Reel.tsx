@@ -54,7 +54,9 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
   return (
     <AbsoluteFill style={{ background: color.verde }}>
       {/* 1 · Manuel (con su audio, ya normalizado a −14 LUFS) */}
-      <Manuel src={reel.manuel} mezcla={m} zoom={zoom} caraYFuente={caraY} />
+      <Sequence durationInFrames={f(reel.duracionManuel ?? reel.duracion)} layout="none">
+        <Manuel src={reel.manuel} mezcla={m} zoom={zoom} caraYFuente={caraY} />
+      </Sequence>
 
       {/* 2 · Panel verde claro que se funde hacia Manuel (composición A) */}
       <AbsoluteFill
