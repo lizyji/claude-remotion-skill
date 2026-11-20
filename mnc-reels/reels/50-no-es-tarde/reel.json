@@ -1,0 +1,3102 @@
+{
+  "broll": [
+    {
+      "tipo": "escena",
+      "id": "T1_B1_50-tarde",
+      "nombre": "escribe",
+      "start": 0.0,
+      "end": 2.14,
+      "props": {
+        "texto": "¿50 años y ya es tarde para la IA?",
+        "desde": 0.05,
+        "hasta": 2.06
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T2_B3_tres-cosas",
+      "nombre": "tarjetas",
+      "start": 4.05,
+      "end": 9.83,
+      "props": {
+        "titulo": "Para crear oportunidades con IA necesitas:",
+        "items": [
+          {
+            "texto": "Lo técnico",
+            "at": 6.57
+          },
+          {
+            "texto": "Conocer tu industria",
+            "at": 7.33
+          },
+          {
+            "texto": "Pensar en sistemas",
+            "at": 8.83
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T2_B4_lo-tecnico",
+      "nombre": "etiqueta",
+      "start": 9.83,
+      "end": 11.95,
+      "props": {
+        "titulo": "Lo técnico",
+        "pildora": "lo más fácil de aprender hoy",
+        "at": 11.01,
+        "tono": "negro"
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T2_B5_tu-industria",
+      "nombre": "etiqueta",
+      "start": 11.95,
+      "end": 14.27,
+      "props": {
+        "titulo": "Tu industria",
+        "pildora": "solo se gana con años",
+        "at": 12.79,
+        "tono": "naranja",
+        "calendario": {
+          "desde": 12.049999999999999,
+          "hasta": 13.95,
+          "anios": 25
+        }
+      }
+    },
+    {
+      "tipo": "tarjeta",
+      "id": "T3_B6a_haz-esto",
+      "start": 14.27,
+      "end": 15.47,
+      "pildora": "3 pasos",
+      "titulo": "Así que haz esto:"
+    },
+    {
+      "tipo": "escena",
+      "id": "T3_B6_documento",
+      "nombre": "documento",
+      "start": 15.47,
+      "end": 22.79,
+      "props": {
+        "encabezado": "Paso 1 · Escribe quién eres",
+        "titulo": {
+          "texto": "Quién soy",
+          "at": 17.33
+        },
+        "items": [
+          {
+            "texto": "Experiencia",
+            "at": 18.09
+          },
+          {
+            "texto": "Qué me gusta y qué no",
+            "at": 18.67
+          },
+          {
+            "texto": "Estilo de vida",
+            "at": 19.93
+          },
+          {
+            "texto": "Tiempo",
+            "at": 21.43
+          }
+        ]
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T3_B7_chat-ia",
+      "nombre": "chat",
+      "start": 22.79,
+      "end": 26.95,
+      "props": {
+        "encabezado": "Paso 2 · Dáselo a la IA",
+        "envia": 23.83,
+        "pide": {
+          "texto": "Dame oportunidades de negocio",
+          "at": 24.65
+        },
+        "opciones": [
+          24.93,
+          25.23,
+          25.53
+        ]
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T3_B8_valida",
+      "nombre": "validar",
+      "start": 26.95,
+      "end": 29.65,
+      "props": {
+        "encabezado": "Paso 3 · Valida las que te hagan sentido",
+        "taches": [
+          28.19,
+          28.59
+        ],
+        "ok": 28.95,
+        "elegida": 1
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T4_B9_negocio-definido",
+      "nombre": "tachado",
+      "start": 29.65,
+      "end": 32.81,
+      "props": {
+        "antes": "Negocio definido",
+        "tacha": 30.29,
+        "despues": "La IA te ayuda a definirlo",
+        "at": 31.05
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T5_B10_clave-nicho",
+      "nombre": "clave",
+      "start": 32.81,
+      "end": 36.29,
+      "props": {
+        "previa": "No se te olvide:",
+        "clave": {
+          "texto": "La clave",
+          "at": 34.13
+        },
+        "frase": {
+          "texto": "tu conocimiento de nicho",
+          "at": 35.01
+        },
+        "subraya": 35.69
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T5_B11_fabricas",
+      "nombre": "fabricas",
+      "start": 36.29,
+      "end": 41.76,
+      "props": {
+        "etiqueta": {
+          "texto": "Fábrica automotriz",
+          "at": 38.07
+        },
+        "ia": 39.13,
+        "flechas": 39.55,
+        "otras": [
+          39.95,
+          40.1,
+          40.15
+        ],
+        "final": {
+          "texto": "Ayuda a otras a digitalizarse",
+          "at": 40.79
+        }
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T5_B12_contador",
+      "nombre": "contabilidad",
+      "start": 41.76,
+      "end": 47.2,
+      "props": {
+        "titulo": {
+          "texto": "Contabilidad",
+          "at": 41.96
+        },
+        "pildora": {
+          "texto": "Mi contador ya lo hace",
+          "at": 42.76
+        },
+        "industrias": {
+          "texto": "Todas las industrias lo necesitan",
+          "at": 45.04,
+          "iconos": [
+            45.82,
+            45.97,
+            46.12,
+            46.27
+          ]
+        }
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T5_B13_formula",
+      "nombre": "formula",
+      "start": 47.2,
+      "end": 53.815,
+      "props": {
+        "encabezado": "Necesitan personas que:",
+        "a": {
+          "texto": "Sabes IA",
+          "at": 48.0
+        },
+        "b": {
+          "texto": "Conoces el negocio",
+          "at": 48.58
+        },
+        "r": {
+          "texto": "Lo que todas las industrias necesitan",
+          "at": 49.98
+        },
+        "extra": {
+          "texto": "con conocimiento específico",
+          "at": 52.12
+        }
+      }
+    },
+    {
+      "tipo": "escena",
+      "id": "T6_B14_pregunta",
+      "nombre": "pregunta",
+      "start": 53.815,
+      "end": 58.0,
+      "props": {
+        "pregunta": "¿Cuántos años llevas en tu industria?",
+        "resalta": "años",
+        "comenta": {
+          "texto": "Te leo en comentarios",
+          "at": 55.415
+        },
+        "guarda": {
+          "texto": "Guárdalo",
+          "at": 56.735
+        }
+      }
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "texto",
+      "id": "T1_B2_lo-mas-dificil",
+      "start": 2.14,
+      "end": 4.0,
+      "arriba": "Tienes",
+      "grande": "lo más difícil"
+    },
+    {
+      "tipo": "cierre",
+      "id": "T6_B15_firma",
+      "start": 58.0,
+      "end": 60.0,
+      "barrido": 1.0
+    }
+  ],
+  "pasos": [
+    {
+      "start": 15.47,
+      "end": 22.79,
+      "n": 1
+    },
+    {
+      "start": 22.79,
+      "end": 26.95,
+      "n": 2
+    },
+    {
+      "start": 26.95,
+      "end": 29.65,
+      "n": 3
+    }
+  ],
+  "sfx": [
+    {
+      "t": 3.93,
+      "s": "whoosh"
+    },
+    {
+      "t": 6.57,
+      "s": "pop"
+    },
+    {
+      "t": 7.33,
+      "s": "pop"
+    },
+    {
+      "t": 8.83,
+      "s": "pop"
+    },
+    {
+      "t": 11.01,
+      "s": "pop"
+    },
+    {
+      "t": 12.79,
+      "s": "pop"
+    },
+    {
+      "t": 18.09,
+      "s": "pop"
+    },
+    {
+      "t": 18.67,
+      "s": "pop"
+    },
+    {
+      "t": 19.93,
+      "s": "pop"
+    },
+    {
+      "t": 21.43,
+      "s": "pop"
+    },
+    {
+      "t": 24.93,
+      "s": "pop"
+    },
+    {
+      "t": 25.23,
+      "s": "pop"
+    },
+    {
+      "t": 25.53,
+      "s": "pop"
+    },
+    {
+      "t": 28.19,
+      "s": "tick"
+    },
+    {
+      "t": 28.59,
+      "s": "tick"
+    },
+    {
+      "t": 28.95,
+      "s": "click"
+    },
+    {
+      "t": 29.53,
+      "s": "whoosh"
+    },
+    {
+      "t": 30.29,
+      "s": "tick"
+    },
+    {
+      "t": 31.05,
+      "s": "pop"
+    },
+    {
+      "t": 34.13,
+      "s": "pop"
+    },
+    {
+      "t": 35.01,
+      "s": "pop"
+    },
+    {
+      "t": 39.13,
+      "s": "pop"
+    },
+    {
+      "t": 39.95,
+      "s": "pop"
+    },
+    {
+      "t": 40.1,
+      "s": "pop"
+    },
+    {
+      "t": 40.15,
+      "s": "pop"
+    },
+    {
+      "t": 40.79,
+      "s": "pop"
+    },
+    {
+      "t": 42.76,
+      "s": "tick"
+    },
+    {
+      "t": 45.82,
+      "s": "pop"
+    },
+    {
+      "t": 45.97,
+      "s": "pop"
+    },
+    {
+      "t": 46.12,
+      "s": "pop"
+    },
+    {
+      "t": 46.27,
+      "s": "pop"
+    },
+    {
+      "t": 48.0,
+      "s": "pop"
+    },
+    {
+      "t": 48.58,
+      "s": "pop"
+    },
+    {
+      "t": 49.98,
+      "s": "pop"
+    },
+    {
+      "t": 55.415,
+      "s": "pop"
+    },
+    {
+      "t": 56.735,
+      "s": "tick"
+    },
+    {
+      "t": 57.9,
+      "s": "whoosh"
+    }
+  ],
+  "slug": "50-no-es-tarde",
+  "duracion": 60.0,
+  "manuel": "reels/50-no-es-tarde/manuel.mp4",
+  "cortes": [
+    3.97,
+    41.68,
+    53.735
+  ],
+  "palabras": [
+    {
+      "w": "Si",
+      "start": 0.0,
+      "end": 0.16,
+      "prob": 0.911
+    },
+    {
+      "w": "crees",
+      "start": 0.16,
+      "end": 0.38,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 0.38,
+      "end": 0.4,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 0.4,
+      "end": 0.5,
+      "prob": 0.996
+    },
+    {
+      "w": "los",
+      "start": 0.5,
+      "end": 0.54,
+      "prob": 1.0
+    },
+    {
+      "w": "50",
+      "start": 0.54,
+      "end": 0.82,
+      "prob": 0.993
+    },
+    {
+      "w": "ya",
+      "start": 0.82,
+      "end": 1.18,
+      "prob": 0.993
+    },
+    {
+      "w": "es",
+      "start": 1.18,
+      "end": 1.28,
+      "prob": 1.0
+    },
+    {
+      "w": "tarde",
+      "start": 1.28,
+      "end": 1.54,
+      "prob": 1.0
+    },
+    {
+      "w": "para",
+      "start": 1.54,
+      "end": 1.74,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 1.74,
+      "end": 1.88,
+      "prob": 0.987
+    },
+    {
+      "w": "IA,",
+      "start": 1.88,
+      "end": 2.06,
+      "prob": 0.981
+    },
+    {
+      "w": "tienes",
+      "start": 2.14,
+      "end": 2.5,
+      "prob": 1.0
+    },
+    {
+      "w": "lo",
+      "start": 2.5,
+      "end": 2.66,
+      "prob": 1.0
+    },
+    {
+      "w": "más",
+      "start": 2.66,
+      "end": 2.82,
+      "prob": 1.0
+    },
+    {
+      "w": "difícil",
+      "start": 2.82,
+      "end": 3.18,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 3.18,
+      "end": 3.34,
+      "prob": 1.0
+    },
+    {
+      "w": "conseguir.",
+      "start": 3.34,
+      "end": 3.6,
+      "prob": 1.0
+    },
+    {
+      "w": "Para",
+      "start": 4.05,
+      "end": 4.45,
+      "prob": 1.0
+    },
+    {
+      "w": "crear",
+      "start": 4.45,
+      "end": 4.71,
+      "prob": 0.998
+    },
+    {
+      "w": "oportunidades",
+      "start": 4.71,
+      "end": 5.23,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 5.23,
+      "end": 5.37,
+      "prob": 1.0
+    },
+    {
+      "w": "IA",
+      "start": 5.37,
+      "end": 5.53,
+      "prob": 0.999
+    },
+    {
+      "w": "necesitas",
+      "start": 5.53,
+      "end": 5.95,
+      "prob": 0.967
+    },
+    {
+      "w": "tres",
+      "start": 5.95,
+      "end": 6.11,
+      "prob": 0.725
+    },
+    {
+      "w": "cosas.",
+      "start": 6.11,
+      "end": 6.39,
+      "prob": 1.0
+    },
+    {
+      "w": "Lo",
+      "start": 6.57,
+      "end": 6.75,
+      "prob": 1.0
+    },
+    {
+      "w": "técnico,",
+      "start": 6.75,
+      "end": 7.31,
+      "prob": 1.0
+    },
+    {
+      "w": "conocer",
+      "start": 7.33,
+      "end": 7.69,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 7.69,
+      "end": 7.91,
+      "prob": 1.0
+    },
+    {
+      "w": "fondo",
+      "start": 7.91,
+      "end": 8.11,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 8.11,
+      "end": 8.21,
+      "prob": 0.999
+    },
+    {
+      "w": "industria",
+      "start": 8.21,
+      "end": 8.59,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 8.59,
+      "end": 8.83,
+      "prob": 0.999
+    },
+    {
+      "w": "pensar",
+      "start": 8.83,
+      "end": 9.17,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 9.17,
+      "end": 9.33,
+      "prob": 1.0
+    },
+    {
+      "w": "sistemas.",
+      "start": 9.33,
+      "end": 9.57,
+      "prob": 1.0
+    },
+    {
+      "w": "Y",
+      "start": 9.83,
+      "end": 10.09,
+      "prob": 1.0
+    },
+    {
+      "w": "lo",
+      "start": 10.09,
+      "end": 10.21,
+      "prob": 1.0
+    },
+    {
+      "w": "técnico",
+      "start": 10.21,
+      "end": 10.63,
+      "prob": 1.0
+    },
+    {
+      "w": "es",
+      "start": 10.63,
+      "end": 10.79,
+      "prob": 0.964
+    },
+    {
+      "w": "lo",
+      "start": 10.79,
+      "end": 10.89,
+      "prob": 1.0
+    },
+    {
+      "w": "más",
+      "start": 10.89,
+      "end": 11.01,
+      "prob": 1.0
+    },
+    {
+      "w": "fácil",
+      "start": 11.01,
+      "end": 11.31,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 11.31,
+      "end": 11.41,
+      "prob": 1.0
+    },
+    {
+      "w": "aprender",
+      "start": 11.41,
+      "end": 11.61,
+      "prob": 1.0
+    },
+    {
+      "w": "hoy.",
+      "start": 11.61,
+      "end": 11.87,
+      "prob": 1.0
+    },
+    {
+      "w": "Lo",
+      "start": 11.95,
+      "end": 12.23,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 12.23,
+      "end": 12.33,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 12.33,
+      "end": 12.45,
+      "prob": 1.0
+    },
+    {
+      "w": "industria",
+      "start": 12.45,
+      "end": 12.79,
+      "prob": 1.0
+    },
+    {
+      "w": "solo",
+      "start": 12.79,
+      "end": 13.07,
+      "prob": 0.978
+    },
+    {
+      "w": "se",
+      "start": 13.07,
+      "end": 13.23,
+      "prob": 1.0
+    },
+    {
+      "w": "gana",
+      "start": 13.23,
+      "end": 13.49,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 13.49,
+      "end": 13.67,
+      "prob": 1.0
+    },
+    {
+      "w": "años.",
+      "start": 13.67,
+      "end": 13.95,
+      "prob": 1.0
+    },
+    {
+      "w": "Así",
+      "start": 14.27,
+      "end": 14.67,
+      "prob": 0.985
+    },
+    {
+      "w": "que",
+      "start": 14.67,
+      "end": 14.95,
+      "prob": 0.867
+    },
+    {
+      "w": "haz",
+      "start": 14.95,
+      "end": 15.09,
+      "prob": 0.993
+    },
+    {
+      "w": "esto.",
+      "start": 15.09,
+      "end": 15.31,
+      "prob": 1.0
+    },
+    {
+      "w": "Paso",
+      "start": 15.47,
+      "end": 15.81,
+      "prob": 0.999
+    },
+    {
+      "w": "número",
+      "start": 15.81,
+      "end": 15.91,
+      "prob": 0.997
+    },
+    {
+      "w": "uno,",
+      "start": 15.91,
+      "end": 16.23,
+      "prob": 0.902
+    },
+    {
+      "w": "escribe",
+      "start": 16.33,
+      "end": 16.59,
+      "prob": 0.955
+    },
+    {
+      "w": "en",
+      "start": 16.59,
+      "end": 16.73,
+      "prob": 0.997
+    },
+    {
+      "w": "un",
+      "start": 16.73,
+      "end": 16.79,
+      "prob": 1.0
+    },
+    {
+      "w": "documento",
+      "start": 16.79,
+      "end": 17.33,
+      "prob": 1.0
+    },
+    {
+      "w": "quién",
+      "start": 17.33,
+      "end": 17.57,
+      "prob": 0.996
+    },
+    {
+      "w": "eres,",
+      "start": 17.57,
+      "end": 17.91,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 17.99,
+      "end": 18.09,
+      "prob": 1.0
+    },
+    {
+      "w": "experiencia,",
+      "start": 18.09,
+      "end": 18.45,
+      "prob": 1.0
+    },
+    {
+      "w": "qué",
+      "start": 18.67,
+      "end": 18.79,
+      "prob": 1.0
+    },
+    {
+      "w": "te",
+      "start": 18.79,
+      "end": 18.93,
+      "prob": 1.0
+    },
+    {
+      "w": "gusta",
+      "start": 18.93,
+      "end": 19.15,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 19.15,
+      "end": 19.29,
+      "prob": 1.0
+    },
+    {
+      "w": "qué",
+      "start": 19.29,
+      "end": 19.35,
+      "prob": 1.0
+    },
+    {
+      "w": "no,",
+      "start": 19.35,
+      "end": 19.53,
+      "prob": 1.0
+    },
+    {
+      "w": "qué",
+      "start": 19.61,
+      "end": 19.93,
+      "prob": 1.0
+    },
+    {
+      "w": "estilo",
+      "start": 19.93,
+      "end": 20.17,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 20.17,
+      "end": 20.31,
+      "prob": 1.0
+    },
+    {
+      "w": "vida",
+      "start": 20.31,
+      "end": 20.49,
+      "prob": 1.0
+    },
+    {
+      "w": "quieres",
+      "start": 20.49,
+      "end": 20.75,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 20.75,
+      "end": 21.05,
+      "prob": 1.0
+    },
+    {
+      "w": "cuánto",
+      "start": 21.05,
+      "end": 21.43,
+      "prob": 1.0
+    },
+    {
+      "w": "tiempo",
+      "start": 21.43,
+      "end": 21.69,
+      "prob": 1.0
+    },
+    {
+      "w": "le",
+      "start": 21.69,
+      "end": 21.89,
+      "prob": 1.0
+    },
+    {
+      "w": "puedes",
+      "start": 21.89,
+      "end": 22.15,
+      "prob": 1.0
+    },
+    {
+      "w": "dedicar.",
+      "start": 22.15,
+      "end": 22.51,
+      "prob": 1.0
+    },
+    {
+      "w": "El",
+      "start": 22.79,
+      "end": 23.15,
+      "prob": 0.999
+    },
+    {
+      "w": "paso",
+      "start": 23.15,
+      "end": 23.35,
+      "prob": 1.0
+    },
+    {
+      "w": "dos",
+      "start": 23.35,
+      "end": 23.57,
+      "prob": 0.999
+    },
+    {
+      "w": "es",
+      "start": 23.57,
+      "end": 23.83,
+      "prob": 0.998
+    },
+    {
+      "w": "dárselo",
+      "start": 23.83,
+      "end": 24.25,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 24.25,
+      "end": 24.31,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 24.31,
+      "end": 24.37,
+      "prob": 0.999
+    },
+    {
+      "w": "IA",
+      "start": 24.37,
+      "end": 24.49,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 24.49,
+      "end": 24.65,
+      "prob": 1.0
+    },
+    {
+      "w": "pedirle",
+      "start": 24.65,
+      "end": 24.93,
+      "prob": 0.998
+    },
+    {
+      "w": "oportunidades",
+      "start": 24.93,
+      "end": 25.43,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 25.43,
+      "end": 25.55,
+      "prob": 1.0
+    },
+    {
+      "w": "negocio",
+      "start": 25.55,
+      "end": 25.89,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 25.89,
+      "end": 26.05,
+      "prob": 1.0
+    },
+    {
+      "w": "partir",
+      "start": 26.05,
+      "end": 26.35,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 26.35,
+      "end": 26.51,
+      "prob": 1.0
+    },
+    {
+      "w": "eso.",
+      "start": 26.51,
+      "end": 26.71,
+      "prob": 1.0
+    },
+    {
+      "w": "El",
+      "start": 26.95,
+      "end": 27.35,
+      "prob": 1.0
+    },
+    {
+      "w": "último",
+      "start": 27.35,
+      "end": 27.55,
+      "prob": 1.0
+    },
+    {
+      "w": "paso",
+      "start": 27.55,
+      "end": 27.79,
+      "prob": 1.0
+    },
+    {
+      "w": "es",
+      "start": 27.79,
+      "end": 27.99,
+      "prob": 1.0
+    },
+    {
+      "w": "ir",
+      "start": 27.99,
+      "end": 28.19,
+      "prob": 1.0
+    },
+    {
+      "w": "validando",
+      "start": 28.19,
+      "end": 28.57,
+      "prob": 0.966
+    },
+    {
+      "w": "las",
+      "start": 28.57,
+      "end": 28.69,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 28.69,
+      "end": 28.81,
+      "prob": 1.0
+    },
+    {
+      "w": "te",
+      "start": 28.81,
+      "end": 28.95,
+      "prob": 1.0
+    },
+    {
+      "w": "hagan",
+      "start": 28.95,
+      "end": 29.07,
+      "prob": 1.0
+    },
+    {
+      "w": "sentido.",
+      "start": 29.07,
+      "end": 29.33,
+      "prob": 1.0
+    },
+    {
+      "w": "No",
+      "start": 29.65,
+      "end": 29.75,
+      "prob": 0.419
+    },
+    {
+      "w": "necesitas",
+      "start": 29.75,
+      "end": 30.03,
+      "prob": 0.991
+    },
+    {
+      "w": "tener",
+      "start": 30.03,
+      "end": 30.21,
+      "prob": 0.999
+    },
+    {
+      "w": "el",
+      "start": 30.21,
+      "end": 30.29,
+      "prob": 0.996
+    },
+    {
+      "w": "negocio",
+      "start": 30.29,
+      "end": 30.57,
+      "prob": 1.0
+    },
+    {
+      "w": "definido.",
+      "start": 30.57,
+      "end": 31.01,
+      "prob": 1.0
+    },
+    {
+      "w": "La",
+      "start": 31.05,
+      "end": 31.19,
+      "prob": 0.996
+    },
+    {
+      "w": "IA",
+      "start": 31.19,
+      "end": 31.41,
+      "prob": 0.988
+    },
+    {
+      "w": "te",
+      "start": 31.41,
+      "end": 31.61,
+      "prob": 0.998
+    },
+    {
+      "w": "ayuda",
+      "start": 31.61,
+      "end": 31.91,
+      "prob": 0.995
+    },
+    {
+      "w": "a",
+      "start": 31.91,
+      "end": 32.11,
+      "prob": 1.0
+    },
+    {
+      "w": "definirlo.",
+      "start": 32.11,
+      "end": 32.69,
+      "prob": 1.0
+    },
+    {
+      "w": "Y",
+      "start": 32.81,
+      "end": 33.01,
+      "prob": 1.0
+    },
+    {
+      "w": "esto",
+      "start": 33.01,
+      "end": 33.23,
+      "prob": 1.0
+    },
+    {
+      "w": "no",
+      "start": 33.23,
+      "end": 33.47,
+      "prob": 0.92
+    },
+    {
+      "w": "se",
+      "start": 33.47,
+      "end": 33.57,
+      "prob": 1.0
+    },
+    {
+      "w": "te",
+      "start": 33.57,
+      "end": 33.67,
+      "prob": 1.0
+    },
+    {
+      "w": "olvide,",
+      "start": 33.67,
+      "end": 33.95,
+      "prob": 0.999
+    },
+    {
+      "w": "la",
+      "start": 33.99,
+      "end": 34.13,
+      "prob": 1.0
+    },
+    {
+      "w": "clave",
+      "start": 34.13,
+      "end": 34.51,
+      "prob": 1.0
+    },
+    {
+      "w": "está",
+      "start": 34.51,
+      "end": 34.81,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 34.81,
+      "end": 34.97,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 34.97,
+      "end": 35.01,
+      "prob": 1.0
+    },
+    {
+      "w": "conocimiento",
+      "start": 35.01,
+      "end": 35.57,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 35.57,
+      "end": 35.69,
+      "prob": 1.0
+    },
+    {
+      "w": "nicho.",
+      "start": 35.69,
+      "end": 36.03,
+      "prob": 0.999
+    },
+    {
+      "w": "Por",
+      "start": 36.29,
+      "end": 36.69,
+      "prob": 1.0
+    },
+    {
+      "w": "ejemplo,",
+      "start": 36.69,
+      "end": 37.01,
+      "prob": 1.0
+    },
+    {
+      "w": "si",
+      "start": 37.05,
+      "end": 37.19,
+      "prob": 1.0
+    },
+    {
+      "w": "conoces",
+      "start": 37.19,
+      "end": 37.51,
+      "prob": 1.0
+    },
+    {
+      "w": "cómo",
+      "start": 37.51,
+      "end": 37.69,
+      "prob": 0.996
+    },
+    {
+      "w": "opera",
+      "start": 37.69,
+      "end": 37.91,
+      "prob": 0.518
+    },
+    {
+      "w": "una",
+      "start": 37.91,
+      "end": 38.07,
+      "prob": 1.0
+    },
+    {
+      "w": "fábrica",
+      "start": 38.07,
+      "end": 38.35,
+      "prob": 1.0
+    },
+    {
+      "w": "automotriz,",
+      "start": 38.35,
+      "end": 38.79,
+      "prob": 0.999
+    },
+    {
+      "w": "aprende",
+      "start": 38.89,
+      "end": 39.11,
+      "prob": 0.995
+    },
+    {
+      "w": "IA",
+      "start": 39.13,
+      "end": 39.31,
+      "prob": 0.854,
+      "corregida": true
+    },
+    {
+      "w": "ya",
+      "start": 39.31,
+      "end": 39.49,
+      "prob": 0.9,
+      "corregida": true
+    },
+    {
+      "w": "y",
+      "start": 39.49,
+      "end": 39.55,
+      "prob": 1.0
+    },
+    {
+      "w": "ayuda",
+      "start": 39.55,
+      "end": 39.79,
+      "prob": 0.996
+    },
+    {
+      "w": "a",
+      "start": 39.79,
+      "end": 39.95,
+      "prob": 1.0
+    },
+    {
+      "w": "otras",
+      "start": 39.95,
+      "end": 40.15,
+      "prob": 1.0
+    },
+    {
+      "w": "fábricas",
+      "start": 40.15,
+      "end": 40.69,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 40.69,
+      "end": 40.79,
+      "prob": 1.0
+    },
+    {
+      "w": "digitalizarse.",
+      "start": 40.79,
+      "end": 41.45,
+      "prob": 1.0
+    },
+    {
+      "w": "Mi",
+      "start": 41.76,
+      "end": 42.16,
+      "prob": 1.0
+    },
+    {
+      "w": "contador",
+      "start": 42.16,
+      "end": 42.56,
+      "prob": 1.0
+    },
+    {
+      "w": "ya",
+      "start": 42.56,
+      "end": 42.76,
+      "prob": 1.0
+    },
+    {
+      "w": "lo",
+      "start": 42.76,
+      "end": 42.86,
+      "prob": 1.0
+    },
+    {
+      "w": "está",
+      "start": 42.86,
+      "end": 43.04,
+      "prob": 1.0
+    },
+    {
+      "w": "haciendo",
+      "start": 43.04,
+      "end": 43.32,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 43.32,
+      "end": 43.7,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 43.7,
+      "end": 43.8,
+      "prob": 1.0
+    },
+    {
+      "w": "contabilidad",
+      "start": 43.8,
+      "end": 44.3,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 44.3,
+      "end": 44.46,
+      "prob": 0.979
+    },
+    {
+      "w": "es",
+      "start": 44.46,
+      "end": 44.6,
+      "prob": 1.0
+    },
+    {
+      "w": "algo",
+      "start": 44.6,
+      "end": 44.8,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 44.8,
+      "end": 45.04,
+      "prob": 1.0
+    },
+    {
+      "w": "todas",
+      "start": 45.04,
+      "end": 45.42,
+      "prob": 1.0
+    },
+    {
+      "w": "las",
+      "start": 45.42,
+      "end": 45.82,
+      "prob": 1.0
+    },
+    {
+      "w": "industrias",
+      "start": 45.82,
+      "end": 46.42,
+      "prob": 1.0
+    },
+    {
+      "w": "necesitan.",
+      "start": 46.42,
+      "end": 47.16,
+      "prob": 1.0
+    },
+    {
+      "w": "Necesitan",
+      "start": 47.2,
+      "end": 47.46,
+      "prob": 0.998
+    },
+    {
+      "w": "personas",
+      "start": 47.46,
+      "end": 47.76,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 47.76,
+      "end": 48.0,
+      "prob": 1.0
+    },
+    {
+      "w": "sepan",
+      "start": 48.0,
+      "end": 48.2,
+      "prob": 1.0
+    },
+    {
+      "w": "IA,",
+      "start": 48.2,
+      "end": 48.44,
+      "prob": 0.998
+    },
+    {
+      "w": "que",
+      "start": 48.46,
+      "end": 48.58,
+      "prob": 1.0
+    },
+    {
+      "w": "conozcan",
+      "start": 48.58,
+      "end": 48.98,
+      "prob": 1.0
+    },
+    {
+      "w": "sus",
+      "start": 48.98,
+      "end": 49.1,
+      "prob": 1.0
+    },
+    {
+      "w": "negocios,",
+      "start": 49.1,
+      "end": 49.42,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 49.48,
+      "end": 49.58,
+      "prob": 1.0
+    },
+    {
+      "w": "les",
+      "start": 49.58,
+      "end": 49.7,
+      "prob": 1.0
+    },
+    {
+      "w": "ayuden",
+      "start": 49.7,
+      "end": 49.98,
+      "prob": 0.999
+    },
+    {
+      "w": "a",
+      "start": 49.98,
+      "end": 50.06,
+      "prob": 1.0
+    },
+    {
+      "w": "implementar",
+      "start": 50.06,
+      "end": 50.68,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 50.68,
+      "end": 51.26,
+      "prob": 0.997
+    },
+    {
+      "w": "ese",
+      "start": 51.26,
+      "end": 51.66,
+      "prob": 1.0
+    },
+    {
+      "w": "negocio",
+      "start": 51.66,
+      "end": 51.98,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 51.98,
+      "end": 52.12,
+      "prob": 0.996
+    },
+    {
+      "w": "conocimiento",
+      "start": 52.12,
+      "end": 52.48,
+      "prob": 0.999
+    },
+    {
+      "w": "específico",
+      "start": 52.48,
+      "end": 52.94,
+      "prob": 1.0
+    },
+    {
+      "w": "del",
+      "start": 52.94,
+      "end": 53.1,
+      "prob": 0.998
+    },
+    {
+      "w": "negocio.",
+      "start": 53.1,
+      "end": 53.56,
+      "prob": 1.0
+    },
+    {
+      "w": "¿Cuántos",
+      "start": 53.815,
+      "end": 54.215,
+      "prob": 1.0
+    },
+    {
+      "w": "años",
+      "start": 54.215,
+      "end": 54.375,
+      "prob": 1.0
+    },
+    {
+      "w": "llevas",
+      "start": 54.375,
+      "end": 54.675,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 54.675,
+      "end": 54.815,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 54.815,
+      "end": 54.915,
+      "prob": 1.0
+    },
+    {
+      "w": "industria?",
+      "start": 54.915,
+      "end": 55.315,
+      "prob": 1.0
+    },
+    {
+      "w": "Te",
+      "start": 55.415,
+      "end": 55.555,
+      "prob": 0.633
+    },
+    {
+      "w": "leo",
+      "start": 55.555,
+      "end": 55.835,
+      "prob": 0.9,
+      "corregida": true
+    },
+    {
+      "w": "en",
+      "start": 55.835,
+      "end": 55.875,
+      "prob": 1.0
+    },
+    {
+      "w": "los",
+      "start": 55.875,
+      "end": 55.895,
+      "prob": 1.0
+    },
+    {
+      "w": "comentarios",
+      "start": 55.895,
+      "end": 56.295,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 56.295,
+      "end": 56.735,
+      "prob": 1.0
+    },
+    {
+      "w": "guarda",
+      "start": 56.735,
+      "end": 57.155,
+      "prob": 1.0
+    },
+    {
+      "w": "este",
+      "start": 57.155,
+      "end": 57.275,
+      "prob": 1.0
+    },
+    {
+      "w": "video.",
+      "start": 57.275,
+      "end": 57.515,
+      "prob": 0.996
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.0,
+      "end": 0.4,
+      "words": [
+        {
+          "w": "Si",
+          "start": 0.0
+        },
+        {
+          "w": "crees",
+          "start": 0.16,
+          "key": true
+        },
+        {
+          "w": "que",
+          "start": 0.38
+        }
+      ]
+    },
+    {
+      "start": 0.4,
+      "end": 1.18,
+      "words": [
+        {
+          "w": "a",
+          "start": 0.4
+        },
+        {
+          "w": "los",
+          "start": 0.5
+        },
+        {
+          "w": "50",
+          "start": 0.54,
+          "key": true
+        },
+        {
+          "w": "ya",
+          "start": 0.82
+        }
+      ]
+    },
+    {
+      "start": 1.18,
+      "end": 2.14,
+      "words": [
+        {
+          "w": "es",
+          "start": 1.18
+        },
+        {
+          "w": "tarde",
+          "start": 1.28,
+          "key": true
+        },
+        {
+          "w": "para",
+          "start": 1.54
+        },
+        {
+          "w": "la",
+          "start": 1.74
+        },
+        {
+          "w": "IA",
+          "start": 1.88,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 2.14,
+      "end": 3.18,
+      "words": [
+        {
+          "w": "tienes",
+          "start": 2.14
+        },
+        {
+          "w": "lo",
+          "start": 2.5
+        },
+        {
+          "w": "más",
+          "start": 2.66
+        },
+        {
+          "w": "difícil",
+          "start": 2.82,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 3.18,
+      "end": 4.05,
+      "words": [
+        {
+          "w": "de",
+          "start": 3.18
+        },
+        {
+          "w": "conseguir",
+          "start": 3.34,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 4.05,
+      "end": 5.23,
+      "words": [
+        {
+          "w": "Para",
+          "start": 4.05
+        },
+        {
+          "w": "crear",
+          "start": 4.45
+        },
+        {
+          "w": "oportunidades",
+          "start": 4.71,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 5.23,
+      "end": 5.95,
+      "words": [
+        {
+          "w": "con",
+          "start": 5.23
+        },
+        {
+          "w": "IA",
+          "start": 5.37,
+          "key": true
+        },
+        {
+          "w": "necesitas",
+          "start": 5.53
+        }
+      ]
+    },
+    {
+      "start": 5.95,
+      "end": 6.57,
+      "words": [
+        {
+          "w": "tres",
+          "start": 5.95,
+          "key": true
+        },
+        {
+          "w": "cosas",
+          "start": 6.11
+        }
+      ]
+    },
+    {
+      "start": 6.57,
+      "end": 7.33,
+      "words": [
+        {
+          "w": "Lo",
+          "start": 6.57
+        },
+        {
+          "w": "técnico",
+          "start": 6.75,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 7.33,
+      "end": 8.11,
+      "words": [
+        {
+          "w": "conocer",
+          "start": 7.33
+        },
+        {
+          "w": "a",
+          "start": 7.69
+        },
+        {
+          "w": "fondo",
+          "start": 7.91,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.11,
+      "end": 8.59,
+      "words": [
+        {
+          "w": "tu",
+          "start": 8.11
+        },
+        {
+          "w": "industria",
+          "start": 8.21,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.59,
+      "end": 9.83,
+      "words": [
+        {
+          "w": "y",
+          "start": 8.59
+        },
+        {
+          "w": "pensar",
+          "start": 8.83
+        },
+        {
+          "w": "en",
+          "start": 9.17
+        },
+        {
+          "w": "sistemas",
+          "start": 9.33,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 9.83,
+      "end": 10.63,
+      "words": [
+        {
+          "w": "Y",
+          "start": 9.83
+        },
+        {
+          "w": "lo",
+          "start": 10.09
+        },
+        {
+          "w": "técnico",
+          "start": 10.21,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 10.63,
+      "end": 11.31,
+      "words": [
+        {
+          "w": "es",
+          "start": 10.63
+        },
+        {
+          "w": "lo",
+          "start": 10.79
+        },
+        {
+          "w": "más",
+          "start": 10.89
+        },
+        {
+          "w": "fácil",
+          "start": 11.01,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 11.31,
+      "end": 11.95,
+      "words": [
+        {
+          "w": "de",
+          "start": 11.31
+        },
+        {
+          "w": "aprender",
+          "start": 11.41,
+          "key": true
+        },
+        {
+          "w": "hoy",
+          "start": 11.61
+        }
+      ]
+    },
+    {
+      "start": 11.95,
+      "end": 12.79,
+      "words": [
+        {
+          "w": "Lo",
+          "start": 11.95
+        },
+        {
+          "w": "de",
+          "start": 12.23
+        },
+        {
+          "w": "tu",
+          "start": 12.33
+        },
+        {
+          "w": "industria",
+          "start": 12.45,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 12.79,
+      "end": 14.27,
+      "words": [
+        {
+          "w": "solo",
+          "start": 12.79
+        },
+        {
+          "w": "se",
+          "start": 13.07
+        },
+        {
+          "w": "gana",
+          "start": 13.23
+        },
+        {
+          "w": "con",
+          "start": 13.49
+        },
+        {
+          "w": "años",
+          "start": 13.67,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 14.27,
+      "end": 15.47,
+      "words": [
+        {
+          "w": "Así",
+          "start": 14.27
+        },
+        {
+          "w": "que",
+          "start": 14.67
+        },
+        {
+          "w": "haz",
+          "start": 14.95
+        },
+        {
+          "w": "esto",
+          "start": 15.09,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 15.47,
+      "end": 16.33,
+      "words": [
+        {
+          "w": "Paso",
+          "start": 15.47
+        },
+        {
+          "w": "número",
+          "start": 15.81
+        },
+        {
+          "w": "uno",
+          "start": 15.91,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 16.33,
+      "end": 17.33,
+      "words": [
+        {
+          "w": "escribe",
+          "start": 16.33
+        },
+        {
+          "w": "en",
+          "start": 16.59
+        },
+        {
+          "w": "un",
+          "start": 16.73
+        },
+        {
+          "w": "documento",
+          "start": 16.79,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 17.33,
+      "end": 17.99,
+      "words": [
+        {
+          "w": "quién",
+          "start": 17.33,
+          "key": true
+        },
+        {
+          "w": "eres",
+          "start": 17.57
+        }
+      ]
+    },
+    {
+      "start": 17.99,
+      "end": 18.67,
+      "words": [
+        {
+          "w": "tu",
+          "start": 17.99
+        },
+        {
+          "w": "experiencia",
+          "start": 18.09,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 18.67,
+      "end": 19.15,
+      "words": [
+        {
+          "w": "qué",
+          "start": 18.67
+        },
+        {
+          "w": "te",
+          "start": 18.79
+        },
+        {
+          "w": "gusta",
+          "start": 18.93,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 19.15,
+      "end": 19.61,
+      "words": [
+        {
+          "w": "y",
+          "start": 19.15
+        },
+        {
+          "w": "qué",
+          "start": 19.29
+        },
+        {
+          "w": "no",
+          "start": 19.35,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 19.61,
+      "end": 20.49,
+      "words": [
+        {
+          "w": "qué",
+          "start": 19.61
+        },
+        {
+          "w": "estilo",
+          "start": 19.93,
+          "key": true
+        },
+        {
+          "w": "de",
+          "start": 20.17
+        },
+        {
+          "w": "vida",
+          "start": 20.31
+        }
+      ]
+    },
+    {
+      "start": 20.49,
+      "end": 21.69,
+      "words": [
+        {
+          "w": "quieres",
+          "start": 20.49
+        },
+        {
+          "w": "y",
+          "start": 20.75
+        },
+        {
+          "w": "cuánto",
+          "start": 21.05
+        },
+        {
+          "w": "tiempo",
+          "start": 21.43,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 21.69,
+      "end": 22.79,
+      "words": [
+        {
+          "w": "le",
+          "start": 21.69
+        },
+        {
+          "w": "puedes",
+          "start": 21.89
+        },
+        {
+          "w": "dedicar",
+          "start": 22.15,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 22.79,
+      "end": 24.25,
+      "words": [
+        {
+          "w": "El",
+          "start": 22.79
+        },
+        {
+          "w": "paso",
+          "start": 23.15
+        },
+        {
+          "w": "dos",
+          "start": 23.35,
+          "key": true
+        },
+        {
+          "w": "es",
+          "start": 23.57
+        },
+        {
+          "w": "dárselo",
+          "start": 23.83
+        }
+      ]
+    },
+    {
+      "start": 24.25,
+      "end": 24.93,
+      "words": [
+        {
+          "w": "a",
+          "start": 24.25
+        },
+        {
+          "w": "la",
+          "start": 24.31
+        },
+        {
+          "w": "IA",
+          "start": 24.37,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 24.49
+        },
+        {
+          "w": "pedirle",
+          "start": 24.65
+        }
+      ]
+    },
+    {
+      "start": 24.93,
+      "end": 25.89,
+      "words": [
+        {
+          "w": "oportunidades",
+          "start": 24.93
+        },
+        {
+          "w": "de",
+          "start": 25.43
+        },
+        {
+          "w": "negocio",
+          "start": 25.55,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 25.89,
+      "end": 26.95,
+      "words": [
+        {
+          "w": "a",
+          "start": 25.89
+        },
+        {
+          "w": "partir",
+          "start": 26.05,
+          "key": true
+        },
+        {
+          "w": "de",
+          "start": 26.35
+        },
+        {
+          "w": "eso",
+          "start": 26.51
+        }
+      ]
+    },
+    {
+      "start": 26.95,
+      "end": 28.19,
+      "words": [
+        {
+          "w": "El",
+          "start": 26.95
+        },
+        {
+          "w": "último",
+          "start": 27.35,
+          "key": true
+        },
+        {
+          "w": "paso",
+          "start": 27.55
+        },
+        {
+          "w": "es",
+          "start": 27.79
+        },
+        {
+          "w": "ir",
+          "start": 27.99
+        }
+      ]
+    },
+    {
+      "start": 28.19,
+      "end": 28.57,
+      "words": [
+        {
+          "w": "validando",
+          "start": 28.19,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 28.57,
+      "end": 29.65,
+      "words": [
+        {
+          "w": "las",
+          "start": 28.57
+        },
+        {
+          "w": "que",
+          "start": 28.69
+        },
+        {
+          "w": "te",
+          "start": 28.81
+        },
+        {
+          "w": "hagan",
+          "start": 28.95
+        },
+        {
+          "w": "sentido",
+          "start": 29.07,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 29.65,
+      "end": 30.21,
+      "words": [
+        {
+          "w": "No",
+          "start": 29.65
+        },
+        {
+          "w": "necesitas",
+          "start": 29.75,
+          "key": true
+        },
+        {
+          "w": "tener",
+          "start": 30.03
+        }
+      ]
+    },
+    {
+      "start": 30.21,
+      "end": 31.05,
+      "words": [
+        {
+          "w": "el",
+          "start": 30.21
+        },
+        {
+          "w": "negocio",
+          "start": 30.29
+        },
+        {
+          "w": "definido",
+          "start": 30.57,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 31.05,
+      "end": 31.91,
+      "words": [
+        {
+          "w": "La",
+          "start": 31.05
+        },
+        {
+          "w": "IA",
+          "start": 31.19,
+          "key": true
+        },
+        {
+          "w": "te",
+          "start": 31.41
+        },
+        {
+          "w": "ayuda",
+          "start": 31.61
+        }
+      ]
+    },
+    {
+      "start": 31.91,
+      "end": 32.81,
+      "words": [
+        {
+          "w": "a",
+          "start": 31.91
+        },
+        {
+          "w": "definirlo",
+          "start": 32.11,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 32.81,
+      "end": 33.47,
+      "words": [
+        {
+          "w": "Y",
+          "start": 32.81
+        },
+        {
+          "w": "esto",
+          "start": 33.01,
+          "key": true
+        },
+        {
+          "w": "no",
+          "start": 33.23
+        }
+      ]
+    },
+    {
+      "start": 33.47,
+      "end": 33.99,
+      "words": [
+        {
+          "w": "se",
+          "start": 33.47
+        },
+        {
+          "w": "te",
+          "start": 33.57
+        },
+        {
+          "w": "olvide",
+          "start": 33.67,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 33.99,
+      "end": 34.51,
+      "words": [
+        {
+          "w": "la",
+          "start": 33.99
+        },
+        {
+          "w": "clave",
+          "start": 34.13,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 34.51,
+      "end": 35.57,
+      "words": [
+        {
+          "w": "está",
+          "start": 34.51
+        },
+        {
+          "w": "en",
+          "start": 34.81
+        },
+        {
+          "w": "tu",
+          "start": 34.97
+        },
+        {
+          "w": "conocimiento",
+          "start": 35.01,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 35.57,
+      "end": 36.29,
+      "words": [
+        {
+          "w": "de",
+          "start": 35.57
+        },
+        {
+          "w": "nicho",
+          "start": 35.69,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 36.29,
+      "end": 37.51,
+      "words": [
+        {
+          "w": "Por",
+          "start": 36.29
+        },
+        {
+          "w": "ejemplo",
+          "start": 36.69,
+          "key": true
+        },
+        {
+          "w": "si",
+          "start": 37.05
+        },
+        {
+          "w": "conoces",
+          "start": 37.19
+        }
+      ]
+    },
+    {
+      "start": 37.51,
+      "end": 38.35,
+      "words": [
+        {
+          "w": "cómo",
+          "start": 37.51
+        },
+        {
+          "w": "opera",
+          "start": 37.69
+        },
+        {
+          "w": "una",
+          "start": 37.91
+        },
+        {
+          "w": "fábrica",
+          "start": 38.07,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 38.35,
+      "end": 39.49,
+      "words": [
+        {
+          "w": "automotriz",
+          "start": 38.35
+        },
+        {
+          "w": "aprende",
+          "start": 38.89
+        },
+        {
+          "w": "IA",
+          "start": 39.13,
+          "key": true
+        },
+        {
+          "w": "ya",
+          "start": 39.31
+        }
+      ]
+    },
+    {
+      "start": 39.49,
+      "end": 40.69,
+      "words": [
+        {
+          "w": "y",
+          "start": 39.49
+        },
+        {
+          "w": "ayuda",
+          "start": 39.55
+        },
+        {
+          "w": "a",
+          "start": 39.79
+        },
+        {
+          "w": "otras",
+          "start": 39.95
+        },
+        {
+          "w": "fábricas",
+          "start": 40.15,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 40.69,
+      "end": 41.76,
+      "words": [
+        {
+          "w": "a",
+          "start": 40.69
+        },
+        {
+          "w": "digitalizarse",
+          "start": 40.79,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 41.76,
+      "end": 42.76,
+      "words": [
+        {
+          "w": "Mi",
+          "start": 41.76
+        },
+        {
+          "w": "contador",
+          "start": 42.16,
+          "key": true
+        },
+        {
+          "w": "ya",
+          "start": 42.56
+        }
+      ]
+    },
+    {
+      "start": 42.76,
+      "end": 43.32,
+      "words": [
+        {
+          "w": "lo",
+          "start": 42.76
+        },
+        {
+          "w": "está",
+          "start": 42.86
+        },
+        {
+          "w": "haciendo",
+          "start": 43.04,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 43.32,
+      "end": 44.3,
+      "words": [
+        {
+          "w": "con",
+          "start": 43.32
+        },
+        {
+          "w": "la",
+          "start": 43.7
+        },
+        {
+          "w": "contabilidad",
+          "start": 43.8,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 44.3,
+      "end": 45.42,
+      "words": [
+        {
+          "w": "y",
+          "start": 44.3
+        },
+        {
+          "w": "es",
+          "start": 44.46
+        },
+        {
+          "w": "algo",
+          "start": 44.6
+        },
+        {
+          "w": "que",
+          "start": 44.8
+        },
+        {
+          "w": "todas",
+          "start": 45.04,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 45.42,
+      "end": 47.2,
+      "words": [
+        {
+          "w": "las",
+          "start": 45.42
+        },
+        {
+          "w": "industrias",
+          "start": 45.82,
+          "key": true
+        },
+        {
+          "w": "necesitan",
+          "start": 46.42
+        }
+      ]
+    },
+    {
+      "start": 47.2,
+      "end": 47.76,
+      "words": [
+        {
+          "w": "Necesitan",
+          "start": 47.2
+        },
+        {
+          "w": "personas",
+          "start": 47.46,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 47.76,
+      "end": 48.46,
+      "words": [
+        {
+          "w": "que",
+          "start": 47.76
+        },
+        {
+          "w": "sepan",
+          "start": 48.0
+        },
+        {
+          "w": "IA",
+          "start": 48.2,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 48.46,
+      "end": 48.98,
+      "words": [
+        {
+          "w": "que",
+          "start": 48.46
+        },
+        {
+          "w": "conozcan",
+          "start": 48.58,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 48.98,
+      "end": 49.48,
+      "words": [
+        {
+          "w": "sus",
+          "start": 48.98
+        },
+        {
+          "w": "negocios",
+          "start": 49.1,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 49.48,
+      "end": 49.98,
+      "words": [
+        {
+          "w": "que",
+          "start": 49.48
+        },
+        {
+          "w": "les",
+          "start": 49.58
+        },
+        {
+          "w": "ayuden",
+          "start": 49.7,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 49.98,
+      "end": 50.68,
+      "words": [
+        {
+          "w": "a",
+          "start": 49.98
+        },
+        {
+          "w": "implementar",
+          "start": 50.06,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 50.68,
+      "end": 51.98,
+      "words": [
+        {
+          "w": "en",
+          "start": 50.68
+        },
+        {
+          "w": "ese",
+          "start": 51.26
+        },
+        {
+          "w": "negocio",
+          "start": 51.66,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 51.98,
+      "end": 52.48,
+      "words": [
+        {
+          "w": "con",
+          "start": 51.98
+        },
+        {
+          "w": "conocimiento",
+          "start": 52.12,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 52.48,
+      "end": 53.815,
+      "words": [
+        {
+          "w": "específico",
+          "start": 52.48,
+          "key": true
+        },
+        {
+          "w": "del",
+          "start": 52.94
+        },
+        {
+          "w": "negocio",
+          "start": 53.1
+        }
+      ]
+    },
+    {
+      "start": 53.815,
+      "end": 54.675,
+      "words": [
+        {
+          "w": "¿Cuántos",
+          "start": 53.815
+        },
+        {
+          "w": "años",
+          "start": 54.215,
+          "key": true
+        },
+        {
+          "w": "llevas",
+          "start": 54.375
+        }
+      ]
+    },
+    {
+      "start": 54.675,
+      "end": 55.415,
+      "words": [
+        {
+          "w": "en",
+          "start": 54.675
+        },
+        {
+          "w": "tu",
+          "start": 54.815
+        },
+        {
+          "w": "industria?",
+          "start": 54.915,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 55.415,
+      "end": 55.835,
+      "words": [
+        {
+          "w": "Te",
+          "start": 55.415
+        },
+        {
+          "w": "leo",
+          "start": 55.555,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 55.835,
+      "end": 56.295,
+      "words": [
+        {
+          "w": "en",
+          "start": 55.835
+        },
+        {
+          "w": "los",
+          "start": 55.875
+        },
+        {
+          "w": "comentarios",
+          "start": 55.895,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 56.295,
+      "end": 57.765,
+      "words": [
+        {
+          "w": "y",
+          "start": 56.295
+        },
+        {
+          "w": "guarda",
+          "start": 56.735,
+          "key": true
+        },
+        {
+          "w": "este",
+          "start": 57.155
+        },
+        {
+          "w": "video",
+          "start": 57.275
+        }
+      ]
+    }
+  ],
+  "duracionVoz": 58.0,
+  "whooshAuto": false,
+  "musica": "musica/50-no-es-tarde.wav",
+  "caraYFuente": 0.55,
+  "cola": 2.0,
+  "portada": {
+    "cuadro": 2.3
+  }
+}

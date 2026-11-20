@@ -59,6 +59,39 @@ const Jugada: React.FC<{ dur: number }> = ({ dur }) => {
   );
 };
 
+// Golpe de texto: línea chica en negro + frase grande en naranja con golpe de zoom
+const Texto: React.FC<{ dur: number; arriba?: string; grande: string }> = ({ dur, arriba, grande }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const a = spring({ frame, fps, config: theme.spring.suave });
+  const b = spring({ frame: frame - 4, fps, config: theme.spring.golpe });
+  const respira = 1 + 0.008 * Math.sin(frame / 6);
+  return (
+    <Pantalla dur={dur}>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", padding: "0 70px", textAlign: "center" }}>
+        {arriba ? (
+          <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 110, color: color.negro, opacity: a, transform: `translateY(${interpolate(a, [0, 1], [40, 0])}px)` }}>
+            {arriba}
+          </div>
+        ) : null}
+        <div
+          style={{
+            fontFamily: font.titulo,
+            fontWeight: 700,
+            fontSize: 170,
+            lineHeight: 1.02,
+            color: color.naranja,
+            opacity: Math.min(1, b * 1.5),
+            transform: `scale(${interpolate(b, [0, 1], [1.6, 1]) * respira})`,
+          }}
+        >
+          {grande}
+        </div>
+      </AbsoluteFill>
+    </Pantalla>
+  );
+};
+
 const Numero: React.FC<{ dur: number; valor: string; etiqueta?: string; fuente?: string }> = ({ dur, valor, etiqueta, fuente }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
@@ -173,6 +206,8 @@ export const GolpeView: React.FC<{ g: Golpe; palabras: Palabra[] }> = ({ g, pala
   const { fps } = useVideoConfig();
   const dur = Math.round((g.end - g.start) * fps);
   if (g.tipo === "jugada") return <Jugada dur={dur} />;
+  if (g.tipo === "texto") return <Texto dur={dur} arriba={g.arriba} grande={g.grande} />;
   if (g.tipo === "numero") return <Numero dur={dur} valor={g.valor} etiqueta={g.etiqueta} fuente={g.fuente} />;
-  return <Cierre dur={dur} start={g.start} end={g.end} palabras={palabras} />;
+  const finBarrido = g.barrido ? g.start + g.barrido / 0.9 : g.end;
+  return <Cierre dur={dur} start={g.start} end={finBarrido} palabras={g.barrido ? [] : palabras} />;
 };

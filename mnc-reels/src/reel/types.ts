@@ -22,12 +22,17 @@ export type BRoll =
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
-  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
+  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente }
+  // Animación a medida (src/components/Escenas.tsx). Los tiempos dentro de props van en
+  // segundos ABSOLUTOS del reel, para sincronizarlos con las palabras exactas de Manuel.
+  | { tipo: "escena"; start: number; end: number; nombre: string; props?: Record<string, unknown>; id?: string; fuente?: Fuente };
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
   | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
-  | { tipo: "cierre"; start: number; end: number };
+  | { tipo: "texto"; start: number; end: number; arriba?: string; grande: string } // golpe de texto con zoom
+  // barrido: segundos en que se iluminan todas las palabras cuando la frase va SIN voz
+  | { tipo: "cierre"; start: number; end: number; barrido?: number };
 
 export type Reel = {
   slug: string;
@@ -42,6 +47,10 @@ export type Reel = {
   broll: BRoll[];
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
+  // false = sin whoosh automático en cada cambio de clip (se ponen a mano en sfx)
+  whooshAuto?: boolean;
+  // segundos finales sin voz (p. ej. frase de firma después de que Manuel termina)
+  cola?: number;
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
   portada?: { frase?: string; cuadro: number };
 };
