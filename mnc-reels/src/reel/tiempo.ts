@@ -32,6 +32,7 @@ export const mezclaPanel = (reel: Reel, t: number, rampa = 0.3) => {
 
 // Encuadre alterno 100% / 112% en cada corte de silencio
 export const zoomCorte = (reel: Reel, t: number) => {
+  if (reel.sinZoomCortes) return 1;
   const n = reel.cortes.filter((c) => c <= t).length;
   return n % 2 === 0 ? 1 : 1.12;
 };

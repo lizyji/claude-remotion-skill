@@ -48,6 +48,8 @@ export type Reel = {
   caraYFuente?: number; // 0–1: altura de la cara dentro del video fuente (default 0.38)
   musica?: string;
   cortes: number[]; // instantes de los cortes de silencio → alterna 100%/112%
+  sinZoomCortes?: boolean; // true: Manuel siempre al 100% (sin el zoom alterno en los cortes)
+  sinWhoosh?: boolean; // true: sin el "whoosh" automático en cambios de clip y golpes
   palabras: Palabra[];
   subs: BloqueSub[];
   broll: BRoll[];

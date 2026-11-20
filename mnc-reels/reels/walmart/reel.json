@@ -275,10 +275,6 @@
     {
       "t": 43.16,
       "s": "pop"
-    },
-    {
-      "t": 28.0,
-      "s": "whoosh"
     }
   ],
   "slug": "walmart",
@@ -2407,5 +2403,7 @@
   "caraYFuente": 0.56,
   "portada": {
     "cuadro": 4.0
-  }
+  },
+  "sinZoomCortes": true,
+  "sinWhoosh": true
 }

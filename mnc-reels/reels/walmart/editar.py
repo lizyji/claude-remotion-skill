@@ -80,7 +80,9 @@ reel["broll"] = [
     {"tipo": "comentario", "start": 47.95, "end": 49.3, "texto": "¿Qué se te dispara en temporada?"},
 ]
 
-FIN_VOZ = reel["duracion"]
+import subprocess
+FIN_VOZ = round(float(subprocess.run(["ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0",
+    str(R.parents[2] / "public" / reel["manuel"])], capture_output=True, text=True, check=True).stdout), 3)  # fin real de la voz
 reel["duracionManuel"] = FIN_VOZ
 reel["duracion"] = round(FIN_VOZ + 3.5, 3)
 reel["golpes"] = [
@@ -91,8 +93,11 @@ reel["golpes"] = [
 ]
 reel["pasos"] = []
 reel["sfx"] = [{"t": 21.14, "s": "tick"}, {"t": 31.72, "s": "click"}, {"t": 33.0, "s": "pop"}, {"t": 38.88, "s": "pop"},
-               {"t": 41.24, "s": "pop"}, {"t": 41.92, "s": "pop"}, {"t": 43.16, "s": "pop"}, {"t": 28.0, "s": "whoosh"}]
+               {"t": 41.24, "s": "pop"}, {"t": 41.92, "s": "pop"}, {"t": 43.16, "s": "pop"}]
 reel["musica"] = D + "musica.wav"
+# Correcciones de Lizzy (20 nov): sin zoom de la cara en los cortes y sin whoosh en transiciones
+reel["sinZoomCortes"] = True
+reel["sinWhoosh"] = True
 reel["caraYFuente"] = 0.56
 reel.setdefault("portada", {"cuadro": 4.0})
 R.write_text(json.dumps(reel, ensure_ascii=False, indent=2), encoding="utf-8")
