@@ -22,7 +22,10 @@ export type BRoll =
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
-  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
+  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente }
+  // Escena animada a la medida (src/components/escenas). marcas: instantes (s, línea del reel) en que
+  // entra cada elemento interno, sincronizados con las palabras de Manuel.
+  | { tipo: "escena"; start: number; end: number; id: string; marcas?: number[]; nombre?: string; fuente?: Fuente };
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
@@ -44,6 +47,8 @@ export type Reel = {
   pasos?: { start: number; end: number; n: number }[];
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
   portada?: { frase?: string; cuadro: number };
+  whooshAuto?: boolean; // false: sin whoosh automático en cada cambio (se ponen a mano en sfx)
+  firma?: number; // segundos finales sin voz (frase de firma a pantalla completa); Manuel termina antes
 };
 
 export const FRASE_CIERRE =

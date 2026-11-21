@@ -16,13 +16,15 @@ const dB = (x: number) => Math.pow(10, x / 20);
 // tick al terminar un contador, bass en cada golpe a pantalla completa.
 const sfxAuto = (reel: ReelData) => {
   const out: { t: number; s: string }[] = [];
+  const whoosh = reel.whooshAuto !== false;
   for (const b of reel.broll) {
-    out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
+    if (whoosh) out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
     if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + 0.35 + i * (b.cada ?? 1.2), s: "pop" }));
     if (b.tipo === "contador") out.push({ t: b.start + 0.2 + 1.0, s: "tick" });
     if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta") out.push({ t: b.start + 0.1, s: "pop" });
+    if (b.tipo === "escena") (b.marcas ?? []).forEach((m) => out.push({ t: m, s: "pop" }));
   }
-  for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" ? "whoosh" : "bass" });
+  for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" ? (whoosh ? "whoosh" : "bass") : "bass" });
   for (const p of reel.pasos ?? []) out.push({ t: p.start, s: "click" });
   return [...out, ...(reel.sfx ?? [])];
 };
@@ -54,7 +56,9 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
   return (
     <AbsoluteFill style={{ background: color.verde }}>
       {/* 1 · Manuel (con su audio, ya normalizado a −14 LUFS) */}
-      <Manuel src={reel.manuel} mezcla={m} zoom={zoom} caraYFuente={caraY} />
+      <Sequence durationInFrames={reel.firma ? f(reel.duracion - reel.firma) : durationInFrames} layout="none">
+        <Manuel src={reel.manuel} mezcla={m} zoom={zoom} caraYFuente={caraY} />
+      </Sequence>
 
       {/* 2 · Panel verde claro que se funde hacia Manuel (composición A) */}
       <AbsoluteFill

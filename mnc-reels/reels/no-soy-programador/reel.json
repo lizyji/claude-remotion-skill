@@ -1,0 +1,3427 @@
+{
+  "broll": [
+    {
+      "tipo": "escena",
+      "nombre": "T1_B1_no_soy_programador",
+      "id": "noProgramador",
+      "start": 0.0,
+      "end": 1.7,
+      "marcas": [
+        0.96
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T1_B2_tres_empresas",
+      "id": "tresEmpresas",
+      "start": 1.7,
+      "end": 3.75,
+      "marcas": [
+        2.26
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T2_B3_pandemia",
+      "id": "pandemia",
+      "start": 3.75,
+      "end": 5.7,
+      "marcas": [
+        5.12
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T2_B4_abuela",
+      "id": "abuela",
+      "start": 5.7,
+      "end": 7.9,
+      "marcas": [
+        7.22
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T2_B5_kit",
+      "id": "kit",
+      "start": 7.9,
+      "end": 15.2,
+      "marcas": [
+        9.02,
+        10.5,
+        11.9
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T3_B6_no_code",
+      "id": "noCode",
+      "start": 15.2,
+      "end": 21.75,
+      "marcas": [
+        15.2,
+        18.28,
+        19.64
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T3_B7_excel_a_no_code",
+      "id": "excelApp",
+      "start": 21.75,
+      "end": 30.15,
+      "marcas": [
+        21.8,
+        25.83,
+        27.45,
+        29.17
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T4_B8_linea_de_tiempo",
+      "id": "lineaTiempo",
+      "start": 30.15,
+      "end": 37.6,
+      "marcas": [
+        30.27,
+        31.0,
+        32.08,
+        34.31
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T5_B9_150_empresas",
+      "id": "mas150",
+      "start": 37.6,
+      "end": 42.7,
+      "marcas": [
+        39.91,
+        41.23
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T5_B10_miles_de_personas",
+      "id": "miles",
+      "start": 42.7,
+      "end": 48.95,
+      "marcas": [
+        45.03,
+        45.9,
+        46.99
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T5_B11_formula",
+      "id": "formula",
+      "start": 48.95,
+      "end": 59.05,
+      "marcas": [
+        51.77,
+        55.19,
+        57.22
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T6_B12_hoy_fabricas",
+      "id": "hoy",
+      "start": 59.05,
+      "end": 64.1,
+      "marcas": [
+        60.84,
+        61.52,
+        62.6
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T6_B13_por_donde_empezar",
+      "id": "preguntas",
+      "start": 64.1,
+      "end": 70.2,
+      "marcas": [
+        64.24,
+        66.18,
+        67.98,
+        69.3
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T7_B14_comunidad_gratis",
+      "id": "comunidad",
+      "start": 70.2,
+      "end": 74.95,
+      "marcas": [
+        73.28,
+        73.6
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T7_B15_bienvenido",
+      "id": "bienvenido",
+      "start": 74.95,
+      "end": 76.91,
+      "marcas": [
+        75.98
+      ]
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "cierre",
+      "start": 76.91,
+      "end": 78.91
+    }
+  ],
+  "pasos": [],
+  "sfx": [
+    {
+      "t": 15.12,
+      "s": "whoosh"
+    },
+    {
+      "t": 37.52,
+      "s": "whoosh"
+    },
+    {
+      "t": 58.97,
+      "s": "whoosh"
+    }
+  ],
+  "slug": "no-soy-programador",
+  "duracion": 78.91,
+  "manuel": "reels/no-soy-programador/manuel.mp4",
+  "cortes": [
+    21.78,
+    59.044
+  ],
+  "palabras": [
+    {
+      "w": "No",
+      "start": 0.08,
+      "end": 0.72,
+      "prob": 0.755
+    },
+    {
+      "w": "soy",
+      "start": 0.72,
+      "end": 0.96,
+      "prob": 0.992
+    },
+    {
+      "w": "programador",
+      "start": 0.96,
+      "end": 1.52,
+      "prob": 0.99
+    },
+    {
+      "w": "y",
+      "start": 1.52,
+      "end": 1.76,
+      "prob": 0.855
+    },
+    {
+      "w": "he",
+      "start": 1.76,
+      "end": 1.92,
+      "prob": 0.993
+    },
+    {
+      "w": "fundado",
+      "start": 1.92,
+      "end": 2.26,
+      "prob": 0.998
+    },
+    {
+      "w": "tres",
+      "start": 2.26,
+      "end": 2.56,
+      "prob": 0.827
+    },
+    {
+      "w": "empresas",
+      "start": 2.56,
+      "end": 2.92,
+      "prob": 0.996
+    },
+    {
+      "w": "de",
+      "start": 2.92,
+      "end": 3.04,
+      "prob": 0.933
+    },
+    {
+      "w": "tecnología.",
+      "start": 3.04,
+      "end": 3.58,
+      "prob": 0.99
+    },
+    {
+      "w": "Todo",
+      "start": 3.8,
+      "end": 3.96,
+      "prob": 0.991
+    },
+    {
+      "w": "empezó",
+      "start": 3.96,
+      "end": 4.24,
+      "prob": 0.993
+    },
+    {
+      "w": "en",
+      "start": 4.24,
+      "end": 4.36,
+      "prob": 0.995
+    },
+    {
+      "w": "la",
+      "start": 4.36,
+      "end": 4.54,
+      "prob": 0.998
+    },
+    {
+      "w": "pandemia,",
+      "start": 4.54,
+      "end": 4.78,
+      "prob": 0.997
+    },
+    {
+      "w": "cambié",
+      "start": 5.12,
+      "end": 5.28,
+      "prob": 0.959
+    },
+    {
+      "w": "de",
+      "start": 5.28,
+      "end": 5.5,
+      "prob": 0.998
+    },
+    {
+      "w": "carrera",
+      "start": 5.5,
+      "end": 5.76,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 5.76,
+      "end": 5.96,
+      "prob": 0.958
+    },
+    {
+      "w": "le",
+      "start": 5.96,
+      "end": 6.12,
+      "prob": 0.827
+    },
+    {
+      "w": "empecé",
+      "start": 6.12,
+      "end": 6.32,
+      "prob": 0.991
+    },
+    {
+      "w": "a",
+      "start": 6.32,
+      "end": 6.38,
+      "prob": 0.973
+    },
+    {
+      "w": "enseñar",
+      "start": 6.38,
+      "end": 6.7,
+      "prob": 0.998
+    },
+    {
+      "w": "tecnología",
+      "start": 6.7,
+      "end": 7.12,
+      "prob": 0.99
+    },
+    {
+      "w": "a",
+      "start": 7.12,
+      "end": 7.22,
+      "prob": 0.95
+    },
+    {
+      "w": "mi",
+      "start": 7.22,
+      "end": 7.32,
+      "prob": 0.996
+    },
+    {
+      "w": "abuela.",
+      "start": 7.32,
+      "end": 7.76,
+      "prob": 0.996
+    },
+    {
+      "w": "De",
+      "start": 7.94,
+      "end": 8.06,
+      "prob": 0.986
+    },
+    {
+      "w": "ahí",
+      "start": 8.06,
+      "end": 8.18,
+      "prob": 0.982
+    },
+    {
+      "w": "nació",
+      "start": 8.18,
+      "end": 8.48,
+      "prob": 0.985
+    },
+    {
+      "w": "Kit,",
+      "start": 8.48,
+      "end": 8.74,
+      "prob": 0.513
+    },
+    {
+      "w": "clases",
+      "start": 9.02,
+      "end": 9.3,
+      "prob": 0.898
+    },
+    {
+      "w": "por",
+      "start": 9.3,
+      "end": 9.54,
+      "prob": 0.991
+    },
+    {
+      "w": "Zoom",
+      "start": 9.54,
+      "end": 9.66,
+      "prob": 0.755
+    },
+    {
+      "w": "que",
+      "start": 9.66,
+      "end": 9.94,
+      "prob": 0.935
+    },
+    {
+      "w": "conectaron",
+      "start": 9.94,
+      "end": 10.32,
+      "prob": 0.992
+    },
+    {
+      "w": "a",
+      "start": 10.32,
+      "end": 10.5,
+      "prob": 0.992
+    },
+    {
+      "w": "cientos",
+      "start": 10.5,
+      "end": 10.78,
+      "prob": 0.998
+    },
+    {
+      "w": "de",
+      "start": 10.78,
+      "end": 10.94,
+      "prob": 0.999
+    },
+    {
+      "w": "adultos",
+      "start": 10.94,
+      "end": 11.18,
+      "prob": 0.998
+    },
+    {
+      "w": "mayores.",
+      "start": 11.18,
+      "end": 11.76,
+      "prob": 0.998
+    },
+    {
+      "w": "Y",
+      "start": 11.9,
+      "end": 12.02,
+      "prob": 0.946
+    },
+    {
+      "w": "ahí",
+      "start": 12.02,
+      "end": 12.22,
+      "prob": 0.955
+    },
+    {
+      "w": "entendí",
+      "start": 12.22,
+      "end": 12.66,
+      "prob": 0.989
+    },
+    {
+      "w": "que",
+      "start": 12.66,
+      "end": 12.82,
+      "prob": 0.976
+    },
+    {
+      "w": "la",
+      "start": 12.82,
+      "end": 13.06,
+      "prob": 0.989
+    },
+    {
+      "w": "tecnología",
+      "start": 13.06,
+      "end": 13.4,
+      "prob": 0.999
+    },
+    {
+      "w": "bien",
+      "start": 13.4,
+      "end": 13.7,
+      "prob": 0.909
+    },
+    {
+      "w": "explicada",
+      "start": 13.7,
+      "end": 14.32,
+      "prob": 0.996
+    },
+    {
+      "w": "cambia",
+      "start": 14.32,
+      "end": 14.68,
+      "prob": 0.966
+    },
+    {
+      "w": "vidas.",
+      "start": 14.68,
+      "end": 15.16,
+      "prob": 0.993
+    },
+    {
+      "w": "Pero",
+      "start": 15.28,
+      "end": 15.5,
+      "prob": 0.989
+    },
+    {
+      "w": "para",
+      "start": 15.5,
+      "end": 15.72,
+      "prob": 0.971
+    },
+    {
+      "w": "operar",
+      "start": 15.72,
+      "end": 16.08,
+      "prob": 0.997
+    },
+    {
+      "w": "Kit",
+      "start": 16.08,
+      "end": 16.24,
+      "prob": 0.985
+    },
+    {
+      "w": "tuve",
+      "start": 16.24,
+      "end": 16.48,
+      "prob": 0.897
+    },
+    {
+      "w": "que",
+      "start": 16.48,
+      "end": 16.6,
+      "prob": 0.998
+    },
+    {
+      "w": "aprender",
+      "start": 16.6,
+      "end": 16.92,
+      "prob": 0.999
+    },
+    {
+      "w": "algo",
+      "start": 16.92,
+      "end": 17.14,
+      "prob": 0.996
+    },
+    {
+      "w": "que",
+      "start": 17.14,
+      "end": 17.3,
+      "prob": 0.992
+    },
+    {
+      "w": "me",
+      "start": 17.3,
+      "end": 17.58,
+      "prob": 0.996
+    },
+    {
+      "w": "cambió",
+      "start": 17.58,
+      "end": 17.84,
+      "prob": 0.989
+    },
+    {
+      "w": "todo.",
+      "start": 17.84,
+      "end": 18.1,
+      "prob": 0.994
+    },
+    {
+      "w": "Descubrí",
+      "start": 18.28,
+      "end": 18.64,
+      "prob": 0.979
+    },
+    {
+      "w": "el",
+      "start": 18.64,
+      "end": 18.82,
+      "prob": 0.975
+    },
+    {
+      "w": "no code",
+      "start": 18.82,
+      "end": 19.2,
+      "prob": 0.428
+    },
+    {
+      "w": "que",
+      "start": 19.2,
+      "end": 19.44,
+      "prob": 0.573
+    },
+    {
+      "w": "es",
+      "start": 19.44,
+      "end": 19.64,
+      "prob": 0.996
+    },
+    {
+      "w": "construir",
+      "start": 19.64,
+      "end": 20.02,
+      "prob": 0.934
+    },
+    {
+      "w": "software",
+      "start": 20.02,
+      "end": 20.46,
+      "prob": 0.976
+    },
+    {
+      "w": "sin",
+      "start": 20.46,
+      "end": 20.8,
+      "prob": 0.985
+    },
+    {
+      "w": "saber",
+      "start": 20.8,
+      "end": 21.12,
+      "prob": 0.996
+    },
+    {
+      "w": "programar.",
+      "start": 21.12,
+      "end": 21.76,
+      "prob": 0.998
+    },
+    {
+      "w": "Y",
+      "start": 21.814,
+      "end": 21.974,
+      "prob": 0.876
+    },
+    {
+      "w": "me",
+      "start": 21.974,
+      "end": 22.134,
+      "prob": 0.998
+    },
+    {
+      "w": "enamoré",
+      "start": 22.134,
+      "end": 22.434,
+      "prob": 0.992
+    },
+    {
+      "w": "tanto",
+      "start": 22.434,
+      "end": 22.674,
+      "prob": 0.993
+    },
+    {
+      "w": "y",
+      "start": 22.674,
+      "end": 22.774,
+      "prob": 0.951
+    },
+    {
+      "w": "le",
+      "start": 22.774,
+      "end": 22.874,
+      "prob": 0.824
+    },
+    {
+      "w": "veía",
+      "start": 22.874,
+      "end": 23.034,
+      "prob": 0.931
+    },
+    {
+      "w": "tanto",
+      "start": 23.034,
+      "end": 23.274,
+      "prob": 0.992
+    },
+    {
+      "w": "potencial",
+      "start": 23.274,
+      "end": 23.694,
+      "prob": 0.992
+    },
+    {
+      "w": "que",
+      "start": 23.694,
+      "end": 23.934,
+      "prob": 0.927
+    },
+    {
+      "w": "empecé",
+      "start": 23.934,
+      "end": 24.154,
+      "prob": 0.995
+    },
+    {
+      "w": "a",
+      "start": 24.154,
+      "end": 24.214,
+      "prob": 0.988
+    },
+    {
+      "w": "ayudar",
+      "start": 24.214,
+      "end": 24.374,
+      "prob": 0.994
+    },
+    {
+      "w": "a",
+      "start": 24.374,
+      "end": 24.554,
+      "prob": 0.933
+    },
+    {
+      "w": "empresas",
+      "start": 24.554,
+      "end": 24.834,
+      "prob": 0.988
+    },
+    {
+      "w": "a",
+      "start": 24.834,
+      "end": 25.094,
+      "prob": 0.995
+    },
+    {
+      "w": "dejar",
+      "start": 25.094,
+      "end": 25.294,
+      "prob": 0.993
+    },
+    {
+      "w": "de",
+      "start": 25.294,
+      "end": 25.454,
+      "prob": 0.999
+    },
+    {
+      "w": "operar",
+      "start": 25.454,
+      "end": 25.674,
+      "prob": 0.998
+    },
+    {
+      "w": "en",
+      "start": 25.674,
+      "end": 25.834,
+      "prob": 0.994
+    },
+    {
+      "w": "Excel",
+      "start": 25.834,
+      "end": 26.034,
+      "prob": 0.873
+    },
+    {
+      "w": "y",
+      "start": 26.034,
+      "end": 26.434,
+      "prob": 0.911
+    },
+    {
+      "w": "a",
+      "start": 26.434,
+      "end": 26.534,
+      "prob": 0.973
+    },
+    {
+      "w": "migrarse",
+      "start": 26.534,
+      "end": 27.114,
+      "prob": 0.977
+    },
+    {
+      "w": "a",
+      "start": 27.114,
+      "end": 27.254,
+      "prob": 0.961
+    },
+    {
+      "w": "operar",
+      "start": 27.254,
+      "end": 27.514,
+      "prob": 0.999
+    },
+    {
+      "w": "con",
+      "start": 27.454,
+      "end": 27.554,
+      "prob": 0.5,
+      "insertada": true
+    },
+    {
+      "w": "herramientas",
+      "start": 27.514,
+      "end": 28.074,
+      "prob": 0.786
+    },
+    {
+      "w": "no code",
+      "start": 28.074,
+      "end": 28.454,
+      "prob": 0.437
+    },
+    {
+      "w": "todo",
+      "start": 28.454,
+      "end": 28.754,
+      "prob": 0.901
+    },
+    {
+      "w": "construido",
+      "start": 28.754,
+      "end": 29.174,
+      "prob": 0.886
+    },
+    {
+      "w": "sin",
+      "start": 29.174,
+      "end": 29.374,
+      "prob": 0.991
+    },
+    {
+      "w": "programación.",
+      "start": 29.374,
+      "end": 30.034,
+      "prob": 0.996
+    },
+    {
+      "w": "Justo",
+      "start": 30.274,
+      "end": 30.674,
+      "prob": 0.963
+    },
+    {
+      "w": "cuando",
+      "start": 30.674,
+      "end": 30.814,
+      "prob": 0.995
+    },
+    {
+      "w": "yo",
+      "start": 30.814,
+      "end": 30.974,
+      "prob": 0.979
+    },
+    {
+      "w": "estaba",
+      "start": 30.974,
+      "end": 31.114,
+      "prob": 0.984
+    },
+    {
+      "w": "haciendo",
+      "start": 31.114,
+      "end": 31.354,
+      "prob": 0.994
+    },
+    {
+      "w": "eso",
+      "start": 31.354,
+      "end": 31.594,
+      "prob": 0.966
+    },
+    {
+      "w": "salió",
+      "start": 31.594,
+      "end": 31.854,
+      "prob": 0.82
+    },
+    {
+      "w": "la",
+      "start": 31.854,
+      "end": 32.075,
+      "prob": 0.991
+    },
+    {
+      "w": "inteligencia",
+      "start": 32.075,
+      "end": 32.495,
+      "prob": 0.868
+    },
+    {
+      "w": "artificial",
+      "start": 32.495,
+      "end": 32.934,
+      "prob": 0.951
+    },
+    {
+      "w": "y",
+      "start": 32.934,
+      "end": 33.194,
+      "prob": 0.932
+    },
+    {
+      "w": "el",
+      "start": 33.194,
+      "end": 33.414,
+      "prob": 0.936
+    },
+    {
+      "w": "no code",
+      "start": 33.414,
+      "end": 33.954,
+      "prob": 0.99
+    },
+    {
+      "w": "se",
+      "start": 33.954,
+      "end": 34.315,
+      "prob": 0.982
+    },
+    {
+      "w": "disparó",
+      "start": 34.315,
+      "end": 34.554,
+      "prob": 0.972
+    },
+    {
+      "w": "en",
+      "start": 34.554,
+      "end": 34.755,
+      "prob": 0.995
+    },
+    {
+      "w": "popularidad.",
+      "start": 34.755,
+      "end": 35.554,
+      "prob": 0.993
+    },
+    {
+      "w": "Eso",
+      "start": 35.895,
+      "end": 36.035,
+      "prob": 0.925
+    },
+    {
+      "w": "me",
+      "start": 36.035,
+      "end": 36.255,
+      "prob": 0.997
+    },
+    {
+      "w": "ayudó",
+      "start": 36.255,
+      "end": 36.554,
+      "prob": 0.987
+    },
+    {
+      "w": "a",
+      "start": 36.554,
+      "end": 36.755,
+      "prob": 0.998
+    },
+    {
+      "w": "posicionarme",
+      "start": 36.755,
+      "end": 37.215,
+      "prob": 0.983
+    },
+    {
+      "w": "muchísimo",
+      "start": 37.215,
+      "end": 37.654,
+      "prob": 0.988
+    },
+    {
+      "w": "y",
+      "start": 37.654,
+      "end": 37.895,
+      "prob": 0.937
+    },
+    {
+      "w": "desde",
+      "start": 37.895,
+      "end": 38.134,
+      "prob": 0.977
+    },
+    {
+      "w": "entonces",
+      "start": 38.134,
+      "end": 38.495,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 38.495,
+      "end": 38.715,
+      "prob": 0.8
+    },
+    {
+      "w": "forma",
+      "start": 38.715,
+      "end": 38.914,
+      "prob": 0.997
+    },
+    {
+      "w": "directa",
+      "start": 38.914,
+      "end": 39.274,
+      "prob": 0.992
+    },
+    {
+      "w": "he",
+      "start": 39.274,
+      "end": 39.395,
+      "prob": 0.554
+    },
+    {
+      "w": "ayudado",
+      "start": 39.395,
+      "end": 39.514,
+      "prob": 0.918
+    },
+    {
+      "w": "a",
+      "start": 39.514,
+      "end": 39.575,
+      "prob": 0.767
+    },
+    {
+      "w": "más",
+      "start": 39.575,
+      "end": 39.675,
+      "prob": 0.961
+    },
+    {
+      "w": "de",
+      "start": 39.675,
+      "end": 39.914,
+      "prob": 0.998
+    },
+    {
+      "w": "150",
+      "start": 39.914,
+      "end": 40.414,
+      "prob": 0.98
+    },
+    {
+      "w": "empresas",
+      "start": 40.414,
+      "end": 40.895,
+      "prob": 0.999
+    },
+    {
+      "w": "a",
+      "start": 40.895,
+      "end": 41.234,
+      "prob": 0.994
+    },
+    {
+      "w": "implementar",
+      "start": 41.234,
+      "end": 41.694,
+      "prob": 0.998
+    },
+    {
+      "w": "inteligencia",
+      "start": 41.694,
+      "end": 42.255,
+      "prob": 0.977
+    },
+    {
+      "w": "artificial",
+      "start": 42.255,
+      "end": 42.794,
+      "prob": 0.995
+    },
+    {
+      "w": "y",
+      "start": 42.794,
+      "end": 43.255,
+      "prob": 0.914
+    },
+    {
+      "w": "he",
+      "start": 43.255,
+      "end": 43.334,
+      "prob": 0.891
+    },
+    {
+      "w": "ayudado",
+      "start": 43.334,
+      "end": 43.675,
+      "prob": 0.998
+    },
+    {
+      "w": "a",
+      "start": 43.675,
+      "end": 43.774,
+      "prob": 0.974
+    },
+    {
+      "w": "miles",
+      "start": 43.774,
+      "end": 43.954,
+      "prob": 0.994
+    },
+    {
+      "w": "de",
+      "start": 43.954,
+      "end": 44.294,
+      "prob": 0.999
+    },
+    {
+      "w": "personas",
+      "start": 44.294,
+      "end": 44.495,
+      "prob": 0.998
+    },
+    {
+      "w": "a",
+      "start": 44.495,
+      "end": 44.614,
+      "prob": 0.947
+    },
+    {
+      "w": "través",
+      "start": 44.614,
+      "end": 44.794,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 44.794,
+      "end": 44.954,
+      "prob": 0.949
+    },
+    {
+      "w": "mis",
+      "start": 44.954,
+      "end": 45.035,
+      "prob": 0.931
+    },
+    {
+      "w": "redes",
+      "start": 45.035,
+      "end": 45.215,
+      "prob": 0.991
+    },
+    {
+      "w": "sociales",
+      "start": 45.215,
+      "end": 45.495,
+      "prob": 0.998
+    },
+    {
+      "w": "y",
+      "start": 45.495,
+      "end": 45.895,
+      "prob": 0.994
+    },
+    {
+      "w": "clases",
+      "start": 45.895,
+      "end": 46.255,
+      "prob": 0.981
+    },
+    {
+      "w": "a",
+      "start": 46.255,
+      "end": 46.535,
+      "prob": 0.86
+    },
+    {
+      "w": "que",
+      "start": 46.535,
+      "end": 46.715,
+      "prob": 0.999
+    },
+    {
+      "w": "puedan",
+      "start": 46.715,
+      "end": 46.995,
+      "prob": 0.996
+    },
+    {
+      "w": "automatizar",
+      "start": 46.995,
+      "end": 47.694,
+      "prob": 0.997
+    },
+    {
+      "w": "sus",
+      "start": 47.694,
+      "end": 47.895,
+      "prob": 0.966
+    },
+    {
+      "w": "procesos",
+      "start": 47.895,
+      "end": 48.255,
+      "prob": 0.996
+    },
+    {
+      "w": "y",
+      "start": 48.255,
+      "end": 48.474,
+      "prob": 0.998
+    },
+    {
+      "w": "tareas.",
+      "start": 48.474,
+      "end": 49.114,
+      "prob": 0.999
+    },
+    {
+      "w": "Siempre",
+      "start": 49.154,
+      "end": 49.495,
+      "prob": 0.997
+    },
+    {
+      "w": "con",
+      "start": 49.495,
+      "end": 49.634,
+      "prob": 0.999
+    },
+    {
+      "w": "un",
+      "start": 49.634,
+      "end": 49.815,
+      "prob": 0.993
+    },
+    {
+      "w": "enfoque",
+      "start": 49.815,
+      "end": 50.035,
+      "prob": 0.998
+    },
+    {
+      "w": "de",
+      "start": 50.035,
+      "end": 50.234,
+      "prob": 0.997
+    },
+    {
+      "w": "ayudar",
+      "start": 50.234,
+      "end": 50.535,
+      "prob": 0.998
+    },
+    {
+      "w": "a",
+      "start": 50.535,
+      "end": 50.874,
+      "prob": 0.998
+    },
+    {
+      "w": "profesionales",
+      "start": 50.874,
+      "end": 51.355,
+      "prob": 0.998
+    },
+    {
+      "w": "que",
+      "start": 51.355,
+      "end": 51.514,
+      "prob": 0.998
+    },
+    {
+      "w": "tienen",
+      "start": 51.514,
+      "end": 51.774,
+      "prob": 0.991
+    },
+    {
+      "w": "conocimiento",
+      "start": 51.774,
+      "end": 52.355,
+      "prob": 0.991
+    },
+    {
+      "w": "de",
+      "start": 52.355,
+      "end": 52.535,
+      "prob": 0.878
+    },
+    {
+      "w": "negocio",
+      "start": 52.535,
+      "end": 52.914,
+      "prob": 0.985
+    },
+    {
+      "w": "pero",
+      "start": 52.914,
+      "end": 53.114,
+      "prob": 0.808
+    },
+    {
+      "w": "no",
+      "start": 53.114,
+      "end": 53.355,
+      "prob": 0.996
+    },
+    {
+      "w": "tienen",
+      "start": 53.355,
+      "end": 53.535,
+      "prob": 0.956
+    },
+    {
+      "w": "el",
+      "start": 53.535,
+      "end": 53.755,
+      "prob": 0.992
+    },
+    {
+      "w": "conocimiento",
+      "start": 53.755,
+      "end": 54.175,
+      "prob": 1.0
+    },
+    {
+      "w": "técnico",
+      "start": 54.175,
+      "end": 54.634,
+      "prob": 0.999
+    },
+    {
+      "w": "a",
+      "start": 54.634,
+      "end": 54.855,
+      "prob": 0.932
+    },
+    {
+      "w": "que",
+      "start": 54.855,
+      "end": 54.974,
+      "prob": 0.997
+    },
+    {
+      "w": "puedan",
+      "start": 54.974,
+      "end": 55.194,
+      "prob": 0.991
+    },
+    {
+      "w": "combinar",
+      "start": 55.194,
+      "end": 55.734,
+      "prob": 0.875
+    },
+    {
+      "w": "ambas",
+      "start": 55.734,
+      "end": 56.114,
+      "prob": 0.998
+    },
+    {
+      "w": "disciplinas",
+      "start": 56.114,
+      "end": 56.634,
+      "prob": 0.997
+    },
+    {
+      "w": "para",
+      "start": 56.634,
+      "end": 56.895,
+      "prob": 0.964
+    },
+    {
+      "w": "poder",
+      "start": 56.895,
+      "end": 57.215,
+      "prob": 0.982
+    },
+    {
+      "w": "exponenciar",
+      "start": 57.215,
+      "end": 57.734,
+      "prob": 0.988
+    },
+    {
+      "w": "sus",
+      "start": 57.734,
+      "end": 57.895,
+      "prob": 0.994
+    },
+    {
+      "w": "carreras",
+      "start": 57.895,
+      "end": 58.315,
+      "prob": 0.996
+    },
+    {
+      "w": "y",
+      "start": 58.315,
+      "end": 58.594,
+      "prob": 0.993
+    },
+    {
+      "w": "negocios.",
+      "start": 58.594,
+      "end": 58.855,
+      "prob": 0.997
+    },
+    {
+      "w": "Hoy",
+      "start": 59.178,
+      "end": 59.299,
+      "prob": 0.97
+    },
+    {
+      "w": "tengo",
+      "start": 59.299,
+      "end": 59.498,
+      "prob": 0.986
+    },
+    {
+      "w": "una",
+      "start": 59.498,
+      "end": 59.699,
+      "prob": 0.997
+    },
+    {
+      "w": "empresa",
+      "start": 59.699,
+      "end": 59.979,
+      "prob": 0.999
+    },
+    {
+      "w": "que",
+      "start": 59.979,
+      "end": 60.218,
+      "prob": 0.995
+    },
+    {
+      "w": "lleva",
+      "start": 60.218,
+      "end": 60.498,
+      "prob": 0.996
+    },
+    {
+      "w": "IA",
+      "start": 60.498,
+      "end": 60.739,
+      "prob": 0.562
+    },
+    {
+      "w": "a",
+      "start": 60.739,
+      "end": 60.839,
+      "prob": 0.5,
+      "insertada": true
+    },
+    {
+      "w": "fábricas",
+      "start": 60.839,
+      "end": 61.299,
+      "prob": 0.925
+    },
+    {
+      "w": "y",
+      "start": 61.299,
+      "end": 61.519,
+      "prob": 0.988
+    },
+    {
+      "w": "distribuidoras",
+      "start": 61.519,
+      "end": 61.979,
+      "prob": 0.991
+    },
+    {
+      "w": "pero",
+      "start": 61.979,
+      "end": 62.099,
+      "prob": 0.61
+    },
+    {
+      "w": "hay",
+      "start": 62.099,
+      "end": 62.239,
+      "prob": 0.976
+    },
+    {
+      "w": "algo",
+      "start": 62.239,
+      "end": 62.379,
+      "prob": 0.999
+    },
+    {
+      "w": "que",
+      "start": 62.379,
+      "end": 62.599,
+      "prob": 0.999
+    },
+    {
+      "w": "nunca",
+      "start": 62.599,
+      "end": 62.898,
+      "prob": 0.998
+    },
+    {
+      "w": "dejé",
+      "start": 62.898,
+      "end": 63.219,
+      "prob": 0.961
+    },
+    {
+      "w": "de",
+      "start": 63.219,
+      "end": 63.379,
+      "prob": 0.5,
+      "insertada": true
+    },
+    {
+      "w": "enseñar.",
+      "start": 63.379,
+      "end": 64.099,
+      "prob": 0.838
+    },
+    {
+      "w": "Por",
+      "start": 64.239,
+      "end": 64.418,
+      "prob": 0.99
+    },
+    {
+      "w": "eso",
+      "start": 64.418,
+      "end": 64.698,
+      "prob": 0.998
+    },
+    {
+      "w": "hago",
+      "start": 64.698,
+      "end": 64.978,
+      "prob": 0.938
+    },
+    {
+      "w": "estos",
+      "start": 64.978,
+      "end": 65.178,
+      "prob": 0.993
+    },
+    {
+      "w": "videos",
+      "start": 65.178,
+      "end": 65.499,
+      "prob": 0.867
+    },
+    {
+      "w": "para",
+      "start": 65.499,
+      "end": 65.739,
+      "prob": 0.661
+    },
+    {
+      "w": "que",
+      "start": 65.739,
+      "end": 65.859,
+      "prob": 0.995
+    },
+    {
+      "w": "si",
+      "start": 65.859,
+      "end": 65.999,
+      "prob": 0.968
+    },
+    {
+      "w": "tienes",
+      "start": 65.999,
+      "end": 66.178,
+      "prob": 0.993
+    },
+    {
+      "w": "años",
+      "start": 66.178,
+      "end": 66.459,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 66.459,
+      "end": 66.739,
+      "prob": 0.994
+    },
+    {
+      "w": "experiencia",
+      "start": 66.739,
+      "end": 67.118,
+      "prob": 0.998
+    },
+    {
+      "w": "y",
+      "start": 67.118,
+      "end": 67.558,
+      "prob": 0.973
+    },
+    {
+      "w": "sientes",
+      "start": 67.558,
+      "end": 67.778,
+      "prob": 0.988
+    },
+    {
+      "w": "que",
+      "start": 67.778,
+      "end": 67.978,
+      "prob": 0.999
+    },
+    {
+      "w": "la",
+      "start": 67.978,
+      "end": 68.058,
+      "prob": 0.924
+    },
+    {
+      "w": "IA",
+      "start": 68.058,
+      "end": 68.219,
+      "prob": 0.927
+    },
+    {
+      "w": "va",
+      "start": 68.219,
+      "end": 68.338,
+      "prob": 0.987
+    },
+    {
+      "w": "muy",
+      "start": 68.338,
+      "end": 68.538,
+      "prob": 0.99
+    },
+    {
+      "w": "rápido,",
+      "start": 68.538,
+      "end": 69.038,
+      "prob": 0.998
+    },
+    {
+      "w": "sepas",
+      "start": 69.299,
+      "end": 69.519,
+      "prob": 0.995
+    },
+    {
+      "w": "por",
+      "start": 69.519,
+      "end": 69.739,
+      "prob": 0.999
+    },
+    {
+      "w": "dónde",
+      "start": 69.739,
+      "end": 69.859,
+      "prob": 0.935
+    },
+    {
+      "w": "empezar",
+      "start": 69.859,
+      "end": 70.239,
+      "prob": 0.996
+    },
+    {
+      "w": "y",
+      "start": 70.239,
+      "end": 70.499,
+      "prob": 0.696
+    },
+    {
+      "w": "si",
+      "start": 70.499,
+      "end": 70.659,
+      "prob": 0.966
+    },
+    {
+      "w": "quieres",
+      "start": 70.659,
+      "end": 70.819,
+      "prob": 0.998
+    },
+    {
+      "w": "aprender",
+      "start": 70.819,
+      "end": 71.239,
+      "prob": 0.999
+    },
+    {
+      "w": "conmigo",
+      "start": 71.239,
+      "end": 71.579,
+      "prob": 0.998
+    },
+    {
+      "w": "de",
+      "start": 71.579,
+      "end": 71.739,
+      "prob": 0.95
+    },
+    {
+      "w": "cerca",
+      "start": 71.739,
+      "end": 71.999,
+      "prob": 0.999
+    },
+    {
+      "w": "tengo",
+      "start": 71.999,
+      "end": 72.219,
+      "prob": 0.719
+    },
+    {
+      "w": "una",
+      "start": 72.219,
+      "end": 72.379,
+      "prob": 0.993
+    },
+    {
+      "w": "comunidad",
+      "start": 72.379,
+      "end": 72.719,
+      "prob": 0.996
+    },
+    {
+      "w": "gratis.",
+      "start": 72.719,
+      "end": 73.278,
+      "prob": 0.995
+    },
+    {
+      "w": "Está",
+      "start": 73.278,
+      "end": 73.599,
+      "prob": 0.918
+    },
+    {
+      "w": "en",
+      "start": 73.599,
+      "end": 73.898,
+      "prob": 0.997
+    },
+    {
+      "w": "mi",
+      "start": 73.898,
+      "end": 74.099,
+      "prob": 0.994
+    },
+    {
+      "w": "perfil.",
+      "start": 74.099,
+      "end": 74.799,
+      "prob": 0.997
+    },
+    {
+      "w": "Así",
+      "start": 75.058,
+      "end": 75.159,
+      "prob": 0.86
+    },
+    {
+      "w": "que",
+      "start": 75.159,
+      "end": 75.379,
+      "prob": 0.996
+    },
+    {
+      "w": "bienvenido",
+      "start": 75.379,
+      "end": 75.898,
+      "prob": 0.968
+    },
+    {
+      "w": "a",
+      "start": 75.898,
+      "end": 75.978,
+      "prob": 0.961
+    },
+    {
+      "w": "este",
+      "start": 75.978,
+      "end": 76.099,
+      "prob": 0.991
+    },
+    {
+      "w": "perfil.",
+      "start": 76.099,
+      "end": 76.659,
+      "prob": 0.998
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.08,
+      "end": 1.92,
+      "words": [
+        {
+          "w": "No",
+          "start": 0.08
+        },
+        {
+          "w": "soy",
+          "start": 0.72
+        },
+        {
+          "w": "programador",
+          "start": 0.96,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 1.52
+        },
+        {
+          "w": "he",
+          "start": 1.76
+        }
+      ]
+    },
+    {
+      "start": 1.92,
+      "end": 2.92,
+      "words": [
+        {
+          "w": "fundado",
+          "start": 1.92
+        },
+        {
+          "w": "tres",
+          "start": 2.26,
+          "key": true
+        },
+        {
+          "w": "empresas",
+          "start": 2.56
+        }
+      ]
+    },
+    {
+      "start": 2.92,
+      "end": 3.8,
+      "words": [
+        {
+          "w": "de",
+          "start": 2.92
+        },
+        {
+          "w": "tecnología",
+          "start": 3.04,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 3.8,
+      "end": 4.24,
+      "words": [
+        {
+          "w": "Todo",
+          "start": 3.8
+        },
+        {
+          "w": "empezó",
+          "start": 3.96,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 4.24,
+      "end": 5.12,
+      "words": [
+        {
+          "w": "en",
+          "start": 4.24
+        },
+        {
+          "w": "la",
+          "start": 4.36
+        },
+        {
+          "w": "pandemia",
+          "start": 4.54,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 5.12,
+      "end": 5.76,
+      "words": [
+        {
+          "w": "cambié",
+          "start": 5.12
+        },
+        {
+          "w": "de",
+          "start": 5.28
+        },
+        {
+          "w": "carrera",
+          "start": 5.5,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 5.76,
+      "end": 6.7,
+      "words": [
+        {
+          "w": "y",
+          "start": 5.76
+        },
+        {
+          "w": "le",
+          "start": 5.96
+        },
+        {
+          "w": "empecé",
+          "start": 6.12
+        },
+        {
+          "w": "a",
+          "start": 6.32
+        },
+        {
+          "w": "enseñar",
+          "start": 6.38,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 6.7,
+      "end": 7.94,
+      "words": [
+        {
+          "w": "tecnología",
+          "start": 6.7,
+          "key": true
+        },
+        {
+          "w": "a",
+          "start": 7.12
+        },
+        {
+          "w": "mi",
+          "start": 7.22
+        },
+        {
+          "w": "abuela",
+          "start": 7.32
+        }
+      ]
+    },
+    {
+      "start": 7.94,
+      "end": 9.02,
+      "words": [
+        {
+          "w": "De",
+          "start": 7.94
+        },
+        {
+          "w": "ahí",
+          "start": 8.06
+        },
+        {
+          "w": "nació",
+          "start": 8.18
+        },
+        {
+          "w": "Kit",
+          "start": 8.48
+        }
+      ]
+    },
+    {
+      "start": 9.02,
+      "end": 9.66,
+      "words": [
+        {
+          "w": "clases",
+          "start": 9.02,
+          "key": true
+        },
+        {
+          "w": "por",
+          "start": 9.3
+        },
+        {
+          "w": "Zoom",
+          "start": 9.54
+        }
+      ]
+    },
+    {
+      "start": 9.66,
+      "end": 10.78,
+      "words": [
+        {
+          "w": "que",
+          "start": 9.66
+        },
+        {
+          "w": "conectaron",
+          "start": 9.94
+        },
+        {
+          "w": "a",
+          "start": 10.32
+        },
+        {
+          "w": "cientos",
+          "start": 10.5,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 10.78,
+      "end": 11.9,
+      "words": [
+        {
+          "w": "de",
+          "start": 10.78
+        },
+        {
+          "w": "adultos",
+          "start": 10.94
+        },
+        {
+          "w": "mayores",
+          "start": 11.18,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 11.9,
+      "end": 12.66,
+      "words": [
+        {
+          "w": "Y",
+          "start": 11.9
+        },
+        {
+          "w": "ahí",
+          "start": 12.02
+        },
+        {
+          "w": "entendí",
+          "start": 12.22,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 12.66,
+      "end": 13.7,
+      "words": [
+        {
+          "w": "que",
+          "start": 12.66
+        },
+        {
+          "w": "la",
+          "start": 12.82
+        },
+        {
+          "w": "tecnología",
+          "start": 13.06,
+          "key": true
+        },
+        {
+          "w": "bien",
+          "start": 13.4
+        }
+      ]
+    },
+    {
+      "start": 13.7,
+      "end": 15.28,
+      "words": [
+        {
+          "w": "explicada",
+          "start": 13.7,
+          "key": true
+        },
+        {
+          "w": "cambia",
+          "start": 14.32
+        },
+        {
+          "w": "vidas",
+          "start": 14.68
+        }
+      ]
+    },
+    {
+      "start": 15.28,
+      "end": 16.24,
+      "words": [
+        {
+          "w": "Pero",
+          "start": 15.28
+        },
+        {
+          "w": "para",
+          "start": 15.5
+        },
+        {
+          "w": "operar",
+          "start": 15.72,
+          "key": true
+        },
+        {
+          "w": "Kit",
+          "start": 16.08
+        }
+      ]
+    },
+    {
+      "start": 16.24,
+      "end": 17.14,
+      "words": [
+        {
+          "w": "tuve",
+          "start": 16.24
+        },
+        {
+          "w": "que",
+          "start": 16.48
+        },
+        {
+          "w": "aprender",
+          "start": 16.6,
+          "key": true
+        },
+        {
+          "w": "algo",
+          "start": 16.92
+        }
+      ]
+    },
+    {
+      "start": 17.14,
+      "end": 18.28,
+      "words": [
+        {
+          "w": "que",
+          "start": 17.14
+        },
+        {
+          "w": "me",
+          "start": 17.3
+        },
+        {
+          "w": "cambió",
+          "start": 17.58,
+          "key": true
+        },
+        {
+          "w": "todo",
+          "start": 17.84
+        }
+      ]
+    },
+    {
+      "start": 18.28,
+      "end": 19.2,
+      "words": [
+        {
+          "w": "Descubrí",
+          "start": 18.28,
+          "key": true
+        },
+        {
+          "w": "el",
+          "start": 18.64
+        },
+        {
+          "w": "no code",
+          "start": 18.82
+        }
+      ]
+    },
+    {
+      "start": 19.2,
+      "end": 20.02,
+      "words": [
+        {
+          "w": "que",
+          "start": 19.2
+        },
+        {
+          "w": "es",
+          "start": 19.44
+        },
+        {
+          "w": "construir",
+          "start": 19.64,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 20.02,
+      "end": 21.12,
+      "words": [
+        {
+          "w": "software",
+          "start": 20.02,
+          "key": true
+        },
+        {
+          "w": "sin",
+          "start": 20.46
+        },
+        {
+          "w": "saber",
+          "start": 20.8
+        }
+      ]
+    },
+    {
+      "start": 21.12,
+      "end": 21.814,
+      "words": [
+        {
+          "w": "programar",
+          "start": 21.12,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 21.814,
+      "end": 22.674,
+      "words": [
+        {
+          "w": "Y",
+          "start": 21.814
+        },
+        {
+          "w": "me",
+          "start": 21.974
+        },
+        {
+          "w": "enamoré",
+          "start": 22.134,
+          "key": true
+        },
+        {
+          "w": "tanto",
+          "start": 22.434
+        }
+      ]
+    },
+    {
+      "start": 22.674,
+      "end": 23.274,
+      "words": [
+        {
+          "w": "y",
+          "start": 22.674
+        },
+        {
+          "w": "le",
+          "start": 22.774
+        },
+        {
+          "w": "veía",
+          "start": 22.874,
+          "key": true
+        },
+        {
+          "w": "tanto",
+          "start": 23.034
+        }
+      ]
+    },
+    {
+      "start": 23.274,
+      "end": 24.154,
+      "words": [
+        {
+          "w": "potencial",
+          "start": 23.274,
+          "key": true
+        },
+        {
+          "w": "que",
+          "start": 23.694
+        },
+        {
+          "w": "empecé",
+          "start": 23.934
+        }
+      ]
+    },
+    {
+      "start": 24.154,
+      "end": 24.834,
+      "words": [
+        {
+          "w": "a",
+          "start": 24.154
+        },
+        {
+          "w": "ayudar",
+          "start": 24.214
+        },
+        {
+          "w": "a",
+          "start": 24.374
+        },
+        {
+          "w": "empresas",
+          "start": 24.554,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 24.834,
+      "end": 25.674,
+      "words": [
+        {
+          "w": "a",
+          "start": 24.834
+        },
+        {
+          "w": "dejar",
+          "start": 25.094
+        },
+        {
+          "w": "de",
+          "start": 25.294
+        },
+        {
+          "w": "operar",
+          "start": 25.454,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 25.674,
+      "end": 27.114,
+      "words": [
+        {
+          "w": "en",
+          "start": 25.674
+        },
+        {
+          "w": "Excel",
+          "start": 25.834
+        },
+        {
+          "w": "y",
+          "start": 26.034
+        },
+        {
+          "w": "a",
+          "start": 26.434
+        },
+        {
+          "w": "migrarse",
+          "start": 26.534,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 27.114,
+      "end": 27.454,
+      "words": [
+        {
+          "w": "a",
+          "start": 27.114
+        },
+        {
+          "w": "operar",
+          "start": 27.254,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 27.454,
+      "end": 28.454,
+      "words": [
+        {
+          "w": "con",
+          "start": 27.454
+        },
+        {
+          "w": "herramientas",
+          "start": 27.514,
+          "key": true
+        },
+        {
+          "w": "no code",
+          "start": 28.074
+        }
+      ]
+    },
+    {
+      "start": 28.454,
+      "end": 29.174,
+      "words": [
+        {
+          "w": "todo",
+          "start": 28.454
+        },
+        {
+          "w": "construido",
+          "start": 28.754,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 29.174,
+      "end": 30.274,
+      "words": [
+        {
+          "w": "sin",
+          "start": 29.174
+        },
+        {
+          "w": "programación",
+          "start": 29.374,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 30.274,
+      "end": 31.114,
+      "words": [
+        {
+          "w": "Justo",
+          "start": 30.274
+        },
+        {
+          "w": "cuando",
+          "start": 30.674,
+          "key": true
+        },
+        {
+          "w": "yo",
+          "start": 30.814
+        },
+        {
+          "w": "estaba",
+          "start": 30.974
+        }
+      ]
+    },
+    {
+      "start": 31.114,
+      "end": 31.854,
+      "words": [
+        {
+          "w": "haciendo",
+          "start": 31.114
+        },
+        {
+          "w": "eso",
+          "start": 31.354
+        },
+        {
+          "w": "salió",
+          "start": 31.594,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 31.854,
+      "end": 32.495,
+      "words": [
+        {
+          "w": "la",
+          "start": 31.854
+        },
+        {
+          "w": "inteligencia",
+          "start": 32.075,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 32.495,
+      "end": 33.954,
+      "words": [
+        {
+          "w": "artificial",
+          "start": 32.495,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 32.934
+        },
+        {
+          "w": "el",
+          "start": 33.194
+        },
+        {
+          "w": "no code",
+          "start": 33.414
+        }
+      ]
+    },
+    {
+      "start": 33.954,
+      "end": 34.554,
+      "words": [
+        {
+          "w": "se",
+          "start": 33.954
+        },
+        {
+          "w": "disparó",
+          "start": 34.315,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 34.554,
+      "end": 35.895,
+      "words": [
+        {
+          "w": "en",
+          "start": 34.554
+        },
+        {
+          "w": "popularidad",
+          "start": 34.755,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 35.895,
+      "end": 36.554,
+      "words": [
+        {
+          "w": "Eso",
+          "start": 35.895
+        },
+        {
+          "w": "me",
+          "start": 36.035
+        },
+        {
+          "w": "ayudó",
+          "start": 36.255,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 36.554,
+      "end": 37.654,
+      "words": [
+        {
+          "w": "a",
+          "start": 36.554
+        },
+        {
+          "w": "posicionarme",
+          "start": 36.755,
+          "key": true
+        },
+        {
+          "w": "muchísimo",
+          "start": 37.215
+        }
+      ]
+    },
+    {
+      "start": 37.654,
+      "end": 38.495,
+      "words": [
+        {
+          "w": "y",
+          "start": 37.654
+        },
+        {
+          "w": "desde",
+          "start": 37.895
+        },
+        {
+          "w": "entonces",
+          "start": 38.134,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 38.495,
+      "end": 39.395,
+      "words": [
+        {
+          "w": "de",
+          "start": 38.495
+        },
+        {
+          "w": "forma",
+          "start": 38.715
+        },
+        {
+          "w": "directa",
+          "start": 38.914,
+          "key": true
+        },
+        {
+          "w": "he",
+          "start": 39.274
+        }
+      ]
+    },
+    {
+      "start": 39.395,
+      "end": 40.414,
+      "words": [
+        {
+          "w": "ayudado",
+          "start": 39.395
+        },
+        {
+          "w": "a",
+          "start": 39.514
+        },
+        {
+          "w": "más",
+          "start": 39.575
+        },
+        {
+          "w": "de",
+          "start": 39.675
+        },
+        {
+          "w": "150",
+          "start": 39.914,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 40.414,
+      "end": 41.694,
+      "words": [
+        {
+          "w": "empresas",
+          "start": 40.414
+        },
+        {
+          "w": "a",
+          "start": 40.895
+        },
+        {
+          "w": "implementar",
+          "start": 41.234,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 41.694,
+      "end": 42.794,
+      "words": [
+        {
+          "w": "inteligencia",
+          "start": 41.694,
+          "key": true
+        },
+        {
+          "w": "artificial",
+          "start": 42.255
+        }
+      ]
+    },
+    {
+      "start": 42.794,
+      "end": 43.954,
+      "words": [
+        {
+          "w": "y",
+          "start": 42.794
+        },
+        {
+          "w": "he",
+          "start": 43.255
+        },
+        {
+          "w": "ayudado",
+          "start": 43.334,
+          "key": true
+        },
+        {
+          "w": "a",
+          "start": 43.675
+        },
+        {
+          "w": "miles",
+          "start": 43.774
+        }
+      ]
+    },
+    {
+      "start": 43.954,
+      "end": 44.794,
+      "words": [
+        {
+          "w": "de",
+          "start": 43.954
+        },
+        {
+          "w": "personas",
+          "start": 44.294,
+          "key": true
+        },
+        {
+          "w": "a",
+          "start": 44.495
+        },
+        {
+          "w": "través",
+          "start": 44.614
+        }
+      ]
+    },
+    {
+      "start": 44.794,
+      "end": 45.495,
+      "words": [
+        {
+          "w": "de",
+          "start": 44.794
+        },
+        {
+          "w": "mis",
+          "start": 44.954
+        },
+        {
+          "w": "redes",
+          "start": 45.035
+        },
+        {
+          "w": "sociales",
+          "start": 45.215,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 45.495,
+      "end": 46.995,
+      "words": [
+        {
+          "w": "y",
+          "start": 45.495
+        },
+        {
+          "w": "clases",
+          "start": 45.895,
+          "key": true
+        },
+        {
+          "w": "a",
+          "start": 46.255
+        },
+        {
+          "w": "que",
+          "start": 46.535
+        },
+        {
+          "w": "puedan",
+          "start": 46.715
+        }
+      ]
+    },
+    {
+      "start": 46.995,
+      "end": 48.255,
+      "words": [
+        {
+          "w": "automatizar",
+          "start": 46.995,
+          "key": true
+        },
+        {
+          "w": "sus",
+          "start": 47.694
+        },
+        {
+          "w": "procesos",
+          "start": 47.895
+        }
+      ]
+    },
+    {
+      "start": 48.255,
+      "end": 49.154,
+      "words": [
+        {
+          "w": "y",
+          "start": 48.255
+        },
+        {
+          "w": "tareas",
+          "start": 48.474,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 49.154,
+      "end": 50.035,
+      "words": [
+        {
+          "w": "Siempre",
+          "start": 49.154
+        },
+        {
+          "w": "con",
+          "start": 49.495
+        },
+        {
+          "w": "un",
+          "start": 49.634
+        },
+        {
+          "w": "enfoque",
+          "start": 49.815,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 50.035,
+      "end": 50.535,
+      "words": [
+        {
+          "w": "de",
+          "start": 50.035
+        },
+        {
+          "w": "ayudar",
+          "start": 50.234,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 50.535,
+      "end": 51.355,
+      "words": [
+        {
+          "w": "a",
+          "start": 50.535
+        },
+        {
+          "w": "profesionales",
+          "start": 50.874,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 51.355,
+      "end": 52.355,
+      "words": [
+        {
+          "w": "que",
+          "start": 51.355
+        },
+        {
+          "w": "tienen",
+          "start": 51.514
+        },
+        {
+          "w": "conocimiento",
+          "start": 51.774,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 52.355,
+      "end": 53.355,
+      "words": [
+        {
+          "w": "de",
+          "start": 52.355
+        },
+        {
+          "w": "negocio",
+          "start": 52.535,
+          "key": true
+        },
+        {
+          "w": "pero",
+          "start": 52.914
+        },
+        {
+          "w": "no",
+          "start": 53.114
+        }
+      ]
+    },
+    {
+      "start": 53.355,
+      "end": 54.175,
+      "words": [
+        {
+          "w": "tienen",
+          "start": 53.355
+        },
+        {
+          "w": "el",
+          "start": 53.535
+        },
+        {
+          "w": "conocimiento",
+          "start": 53.755,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 54.175,
+      "end": 55.194,
+      "words": [
+        {
+          "w": "técnico",
+          "start": 54.175,
+          "key": true
+        },
+        {
+          "w": "a",
+          "start": 54.634
+        },
+        {
+          "w": "que",
+          "start": 54.855
+        },
+        {
+          "w": "puedan",
+          "start": 54.974
+        }
+      ]
+    },
+    {
+      "start": 55.194,
+      "end": 56.114,
+      "words": [
+        {
+          "w": "combinar",
+          "start": 55.194,
+          "key": true
+        },
+        {
+          "w": "ambas",
+          "start": 55.734
+        }
+      ]
+    },
+    {
+      "start": 56.114,
+      "end": 57.215,
+      "words": [
+        {
+          "w": "disciplinas",
+          "start": 56.114,
+          "key": true
+        },
+        {
+          "w": "para",
+          "start": 56.634
+        },
+        {
+          "w": "poder",
+          "start": 56.895
+        }
+      ]
+    },
+    {
+      "start": 57.215,
+      "end": 58.315,
+      "words": [
+        {
+          "w": "exponenciar",
+          "start": 57.215,
+          "key": true
+        },
+        {
+          "w": "sus",
+          "start": 57.734
+        },
+        {
+          "w": "carreras",
+          "start": 57.895
+        }
+      ]
+    },
+    {
+      "start": 58.315,
+      "end": 59.178,
+      "words": [
+        {
+          "w": "y",
+          "start": 58.315
+        },
+        {
+          "w": "negocios",
+          "start": 58.594,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 59.178,
+      "end": 59.979,
+      "words": [
+        {
+          "w": "Hoy",
+          "start": 59.178
+        },
+        {
+          "w": "tengo",
+          "start": 59.299
+        },
+        {
+          "w": "una",
+          "start": 59.498
+        },
+        {
+          "w": "empresa",
+          "start": 59.699,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 59.979,
+      "end": 61.299,
+      "words": [
+        {
+          "w": "que",
+          "start": 59.979
+        },
+        {
+          "w": "lleva",
+          "start": 60.218
+        },
+        {
+          "w": "IA",
+          "start": 60.498,
+          "key": true
+        },
+        {
+          "w": "a",
+          "start": 60.739
+        },
+        {
+          "w": "fábricas",
+          "start": 60.839
+        }
+      ]
+    },
+    {
+      "start": 61.299,
+      "end": 61.979,
+      "words": [
+        {
+          "w": "y",
+          "start": 61.299
+        },
+        {
+          "w": "distribuidoras",
+          "start": 61.519,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 61.979,
+      "end": 62.898,
+      "words": [
+        {
+          "w": "pero",
+          "start": 61.979
+        },
+        {
+          "w": "hay",
+          "start": 62.099
+        },
+        {
+          "w": "algo",
+          "start": 62.239
+        },
+        {
+          "w": "que",
+          "start": 62.379
+        },
+        {
+          "w": "nunca",
+          "start": 62.599,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 62.898,
+      "end": 64.239,
+      "words": [
+        {
+          "w": "dejé",
+          "start": 62.898
+        },
+        {
+          "w": "de",
+          "start": 63.219
+        },
+        {
+          "w": "enseñar",
+          "start": 63.379,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 64.239,
+      "end": 64.978,
+      "words": [
+        {
+          "w": "Por",
+          "start": 64.239
+        },
+        {
+          "w": "eso",
+          "start": 64.418
+        },
+        {
+          "w": "hago",
+          "start": 64.698,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 64.978,
+      "end": 65.499,
+      "words": [
+        {
+          "w": "estos",
+          "start": 64.978
+        },
+        {
+          "w": "videos",
+          "start": 65.178,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 65.499,
+      "end": 66.459,
+      "words": [
+        {
+          "w": "para",
+          "start": 65.499
+        },
+        {
+          "w": "que",
+          "start": 65.739
+        },
+        {
+          "w": "si",
+          "start": 65.859
+        },
+        {
+          "w": "tienes",
+          "start": 65.999,
+          "key": true
+        },
+        {
+          "w": "años",
+          "start": 66.178
+        }
+      ]
+    },
+    {
+      "start": 66.459,
+      "end": 67.778,
+      "words": [
+        {
+          "w": "de",
+          "start": 66.459
+        },
+        {
+          "w": "experiencia",
+          "start": 66.739,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 67.118
+        },
+        {
+          "w": "sientes",
+          "start": 67.558
+        }
+      ]
+    },
+    {
+      "start": 67.778,
+      "end": 68.338,
+      "words": [
+        {
+          "w": "que",
+          "start": 67.778
+        },
+        {
+          "w": "la",
+          "start": 67.978
+        },
+        {
+          "w": "IA",
+          "start": 68.058,
+          "key": true
+        },
+        {
+          "w": "va",
+          "start": 68.219
+        }
+      ]
+    },
+    {
+      "start": 68.338,
+      "end": 69.519,
+      "words": [
+        {
+          "w": "muy",
+          "start": 68.338
+        },
+        {
+          "w": "rápido",
+          "start": 68.538,
+          "key": true
+        },
+        {
+          "w": "sepas",
+          "start": 69.299
+        }
+      ]
+    },
+    {
+      "start": 69.519,
+      "end": 70.239,
+      "words": [
+        {
+          "w": "por",
+          "start": 69.519
+        },
+        {
+          "w": "dónde",
+          "start": 69.739
+        },
+        {
+          "w": "empezar",
+          "start": 69.859,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 70.239,
+      "end": 71.239,
+      "words": [
+        {
+          "w": "y",
+          "start": 70.239
+        },
+        {
+          "w": "si",
+          "start": 70.499
+        },
+        {
+          "w": "quieres",
+          "start": 70.659
+        },
+        {
+          "w": "aprender",
+          "start": 70.819,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 71.239,
+      "end": 72.219,
+      "words": [
+        {
+          "w": "conmigo",
+          "start": 71.239,
+          "key": true
+        },
+        {
+          "w": "de",
+          "start": 71.579
+        },
+        {
+          "w": "cerca",
+          "start": 71.739
+        },
+        {
+          "w": "tengo",
+          "start": 71.999
+        }
+      ]
+    },
+    {
+      "start": 72.219,
+      "end": 73.278,
+      "words": [
+        {
+          "w": "una",
+          "start": 72.219
+        },
+        {
+          "w": "comunidad",
+          "start": 72.379
+        },
+        {
+          "w": "gratis",
+          "start": 72.719,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 73.278,
+      "end": 75.058,
+      "words": [
+        {
+          "w": "Está",
+          "start": 73.278
+        },
+        {
+          "w": "en",
+          "start": 73.599
+        },
+        {
+          "w": "mi",
+          "start": 73.898
+        },
+        {
+          "w": "perfil",
+          "start": 74.099,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 75.058,
+      "end": 75.898,
+      "words": [
+        {
+          "w": "Así",
+          "start": 75.058
+        },
+        {
+          "w": "que",
+          "start": 75.159
+        },
+        {
+          "w": "bienvenido",
+          "start": 75.379,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 75.898,
+      "end": 76.909,
+      "words": [
+        {
+          "w": "a",
+          "start": 75.898
+        },
+        {
+          "w": "este",
+          "start": 75.978
+        },
+        {
+          "w": "perfil",
+          "start": 76.099,
+          "key": true
+        }
+      ]
+    }
+  ],
+  "firma": 2.0,
+  "whooshAuto": false,
+  "musica": "reels/no-soy-programador/musica.wav",
+  "portada": {
+    "cuadro": 2.3
+  },
+  "caraYFuente": 0.5
+}

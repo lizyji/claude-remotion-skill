@@ -2,6 +2,7 @@ import React from "react";
 import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideoConfig, spring } from "remotion";
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
+import { ESCENAS } from "./escenas";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
 
 const { color, font, layout } = theme;
@@ -170,6 +171,13 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
         </Tarjeta>
       );
       break;
+    case "escena": {
+      const Esc = ESCENAS[b.id];
+      if (!Esc) throw new Error(`Escena desconocida: ${b.id}`);
+      // marcas → cuadros relativos al inicio del clip
+      body = <Esc m={(b.marcas ?? []).map((x) => Math.round((x - b.start) * fps))} dur={dur} />;
+      break;
+    }
     case "silueta":
       return null; // se dibuja a pantalla completa en Reel.tsx
   }
