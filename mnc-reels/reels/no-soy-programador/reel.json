@@ -2575,7 +2575,7 @@
     },
     {
       "start": 36.554,
-      "end": 37.654,
+      "end": 37.215,
       "words": [
         {
           "w": "a",
@@ -2585,10 +2585,17 @@
           "w": "posicionarme",
           "start": 36.755,
           "key": true
-        },
+        }
+      ]
+    },
+    {
+      "start": 37.215,
+      "end": 37.654,
+      "words": [
         {
           "w": "muchísimo",
-          "start": 37.215
+          "start": 37.215,
+          "key": true
         }
       ]
     },

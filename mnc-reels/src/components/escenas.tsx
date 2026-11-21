@@ -438,7 +438,8 @@ const Mas150: React.FC<Props> = ({ m }) => {
   const ap = useAp();
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const ini = m[0] ?? 20;
+  // el conteo arranca ~1 s antes de que Manuel diga "150" y aterriza justo en la palabra
+  const ini = Math.max(6, (m[0] ?? 40) - Math.round(fps * 0.9));
   const n = Math.round(interpolate(frame, [ini, ini + fps * 1.1], [0, 150], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: theme.ease.out }));
   const g = ap(ini + Math.round(fps * 1.1), "golpe");
   const s = 1 + 0.08 * Math.sin(Math.min(1, g) * Math.PI);
@@ -447,7 +448,7 @@ const Mas150: React.FC<Props> = ({ m }) => {
       <Sube p={ap(0)}>
         <Pildora tono="negro" style={{ fontSize: 40 }}>De forma directa</Pildora>
       </Sube>
-      <Tarjeta style={{ width: 820, textAlign: "center", padding: "30px 40px", transform: `scale(${ap(4) * s})` }}>
+      <Tarjeta style={{ width: 820, textAlign: "center", padding: "30px 40px", transform: `scale(${ap(ini - 6) * s})`, opacity: Math.min(1, ap(ini - 6) * 2) }}>
         <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 230, lineHeight: 1, color: color.naranja, fontVariantNumeric: "tabular-nums" }}>+{n}</div>
         <T size={70}>empresas</T>
       </Tarjeta>
