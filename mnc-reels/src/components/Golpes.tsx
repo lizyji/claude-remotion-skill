@@ -59,7 +59,7 @@ const Jugada: React.FC<{ dur: number }> = ({ dur }) => {
   );
 };
 
-const Numero: React.FC<{ dur: number; valor: string; etiqueta?: string; fuente?: string }> = ({ dur, valor, etiqueta, fuente }) => {
+const Numero: React.FC<{ dur: number; valor: string; etiqueta?: string; fuente?: string; size?: number }> = ({ dur, valor, etiqueta, fuente, size = 280 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const g = spring({ frame, fps, config: theme.spring.golpe });
@@ -67,7 +67,7 @@ const Numero: React.FC<{ dur: number; valor: string; etiqueta?: string; fuente?:
   return (
     <Pantalla dur={dur}>
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", padding: 60 }}>
-        <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 280, lineHeight: 1, color: color.naranja, transform: `scale(${interpolate(g, [0, 1], [1.5, 1])})` }}>
+        <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: size, lineHeight: 1, color: color.naranja, transform: `scale(${interpolate(g, [0, 1], [1.5, 1]) * (1 + 0.015 * Math.sin(frame / 5))})` }}>
           {valor}
         </div>
         {etiqueta ? (
@@ -173,6 +173,6 @@ export const GolpeView: React.FC<{ g: Golpe; palabras: Palabra[] }> = ({ g, pala
   const { fps } = useVideoConfig();
   const dur = Math.round((g.end - g.start) * fps);
   if (g.tipo === "jugada") return <Jugada dur={dur} />;
-  if (g.tipo === "numero") return <Numero dur={dur} valor={g.valor} etiqueta={g.etiqueta} fuente={g.fuente} />;
+  if (g.tipo === "numero") return <Numero dur={dur} valor={g.valor} etiqueta={g.etiqueta} fuente={g.fuente} size={g.size} />;
   return <Cierre dur={dur} start={g.start} end={g.end} palabras={palabras} />;
 };

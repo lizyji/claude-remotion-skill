@@ -48,6 +48,7 @@
       "end": 15.2,
       "marcas": [
         9.02,
+        9.94,
         10.5,
         11.9
       ]
@@ -127,13 +128,23 @@
     },
     {
       "tipo": "escena",
-      "nombre": "T6_B12_hoy_fabricas",
+      "nombre": "T6_B12_hoy_omna",
       "id": "hoy",
       "start": 59.05,
-      "end": 64.1,
+      "end": 61.98,
       "marcas": [
+        59.7,
         60.84,
-        61.52,
+        61.52
+      ]
+    },
+    {
+      "tipo": "escena",
+      "nombre": "T6_B12b_nunca_deje_de_ensenar",
+      "id": "nuncaDeje",
+      "start": 61.98,
+      "end": 64.45,
+      "marcas": [
         62.6
       ]
     },
@@ -141,10 +152,10 @@
       "tipo": "escena",
       "nombre": "T6_B13_por_donde_empezar",
       "id": "preguntas",
-      "start": 64.1,
+      "start": 64.45,
       "end": 70.2,
       "marcas": [
-        64.24,
+        64.5,
         66.18,
         67.98,
         69.3
@@ -157,7 +168,7 @@
       "start": 70.2,
       "end": 74.95,
       "marcas": [
-        73.28,
+        73.1,
         73.6
       ]
     },
@@ -173,6 +184,13 @@
     }
   ],
   "golpes": [
+    {
+      "tipo": "numero",
+      "start": 63.38,
+      "end": 64.45,
+      "valor": "ENSEÑAR",
+      "size": 180
+    },
     {
       "tipo": "cierre",
       "start": 76.91,
@@ -3426,7 +3444,6 @@
   ],
   "firma": 2.0,
   "whooshAuto": false,
-  "musica": "reels/no-soy-programador/musica.wav",
   "portada": {
     "cuadro": 2.3
   },

@@ -2,7 +2,7 @@
 // (960×620) y recibe m = cuadros (relativos al clip) en que entra cada elemento interno.
 // Solo colores planos MNC; íconos de línea negra con acentos naranja.
 import React from "react";
-import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
+import { Img, interpolate, spring, staticFile, useCurrentFrame, useVideoConfig } from "remotion";
 import { theme } from "../theme";
 import { Check, Pildora, Tarjeta } from "./Base";
 
@@ -175,14 +175,25 @@ const TresEmpresas: React.FC<Props> = ({ m }) => {
   );
 };
 
-// T2 · B3 — "Pandemia" con casa
+// T2 · B3 — "Pandemia" con casa y cubrebocas
+const Cubrebocas: React.FC<{ p: number; size?: number }> = ({ p, size }) => (
+  <Icono size={size}>
+    <path d="M24 46 C40 38 80 38 96 46 V72 C80 92 40 92 24 72 Z" {...L} fill={color.blanco} style={traza(p, 260)} />
+    <path d="M36 56 H84 M36 68 H84" {...LN} strokeWidth={5} style={traza(p, 60)} />
+    <path d="M24 50 C10 46 8 70 24 70 M96 50 C110 46 112 70 96 70" {...L} strokeWidth={5} style={traza(p, 80)} />
+  </Icono>
+);
 const Pandemia: React.FC<Props> = ({ m }) => {
   const ap = useAp();
+  const circ = (p: number, children: React.ReactNode) => (
+    <Tarjeta style={{ width: 250, height: 250, borderRadius: 999, display: "flex", alignItems: "center", justifyContent: "center", padding: 0, transform: `scale(${p})` }}>{children}</Tarjeta>
+  );
   return (
     <Col gap={26}>
-      <Tarjeta style={{ width: 300, height: 300, borderRadius: 999, display: "flex", alignItems: "center", justifyContent: "center", padding: 0, transform: `scale(${ap(0, "golpe")})` }}>
-        <Casa p={ap(2)} size={200} />
-      </Tarjeta>
+      <div style={{ display: "flex", gap: 30 }}>
+        {circ(ap(0, "golpe"), <Casa p={ap(2)} size={170} />)}
+        {circ(ap(6, "golpe"), <Cubrebocas p={ap(8)} size={180} />)}
+      </div>
       <Sube p={ap(5)}>
         <T size={110}>Pandemia</T>
       </Sube>
@@ -210,55 +221,69 @@ const Abuela: React.FC<Props> = ({ m }) => {
   );
 };
 
-// T2 · B5 — cuadrícula tipo videollamada (genérica, sin logos) → "La tecnología bien explicada cambia vidas"
+// T2 · B5 — foto real de Manuel con la camisa de Kit (Keep In Touch) → cuadrícula tipo videollamada
+// (genérica, sin logos) → "La tecnología bien explicada cambia vidas"
+// m: [clases, cuadrícula, cientos, frase]
 const Kit: React.FC<Props> = ({ m }) => {
   const ap = useAp();
   const frame = useCurrentFrame();
-  const cambio = m[2] ?? 120;
-  const sale = interpolate(frame, [cambio - 6, cambio + 2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const { durationInFrames } = useVideoConfig();
+  const grid = m[1] ?? 60;
+  const cambio = m[3] ?? 120;
+  const fotoSale = interpolate(frame, [grid - 6, grid + 2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const gridSale = interpolate(frame, [cambio - 6, cambio + 2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
   const frase = ap(cambio);
+  const zoom = interpolate(frame, [0, grid], [1, 1.08], { extrapolateRight: "clamp" });
   const cols = 5, filas = 3;
+  void durationInFrames;
   return (
     <div style={{ position: "relative", width: 960, height: 620, display: "flex", alignItems: "center", justifyContent: "center" }}>
-      <div style={{ position: "absolute", opacity: sale, transform: `scale(${lerp(sale, 0.9, 1)})` }}>
+      {/* 1 · foto real */}
+      <div style={{ position: "absolute", opacity: fotoSale, display: "flex", alignItems: "center", gap: 40 }}>
+        <Sube p={ap(0, "golpe")}>
+          <div style={{ width: 340, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco }}>
+            <Img src={staticFile("reels/no-soy-programador/kit_manuel.jpg")} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: "50% 40%", transform: `scale(${zoom})`, transformOrigin: "60% 60%" }} />
+          </div>
+        </Sube>
+        <Col gap={18} style={{ alignItems: "flex-start" }}>
+          <Golpe p={ap(4, "golpe")}>
+            <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 150, lineHeight: 1, color: color.naranja }}>Kit</div>
+          </Golpe>
+          <Sube p={ap(10)}>
+            <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 52, color: color.negro }}>(Keep In Touch)</div>
+          </Sube>
+          <Sube p={ap(m[0] ?? 30)}>
+            <Pildora tono="negro" style={{ fontSize: 40 }}>Clases por Zoom</Pildora>
+          </Sube>
+        </Col>
+      </div>
+      {/* 2 · cuadrícula genérica */}
+      <div style={{ position: "absolute", opacity: Math.min(gridSale, ap(grid)), transform: `scale(${lerp(gridSale, 0.9, 1)})` }}>
         <Col gap={22}>
-          <Sube p={ap(0)} style={{ display: "flex", alignItems: "center", gap: 18 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
             <Pildora style={{ fontSize: 46, fontFamily: font.titulo, fontWeight: 700 }}>Kit</Pildora>
             <T size={52}>clases por Zoom</T>
-          </Sube>
+          </div>
           <div style={{ display: "grid", gridTemplateColumns: `repeat(${cols}, 160px)`, gap: 14 }}>
             {Array.from({ length: cols * filas }).map((_, i) => {
-              const p = ap((m[0] ?? 10) + i * 2, "rapido");
+              const p = ap(grid + i, "rapido");
               const hablando = i === 7 && Math.floor(frame / 12) % 2 === 0;
               return (
-                <div
-                  key={i}
-                  style={{
-                    width: 160,
-                    height: 112,
-                    background: color.blanco,
-                    border: `3px solid ${hablando ? color.naranja : color.negro}`,
-                    borderRadius: 16,
-                    display: "flex",
-                    alignItems: "flex-end",
-                    justifyContent: "center",
-                    overflow: "hidden",
-                    transform: `scale(${p})`,
-                  }}
-                >
+                <div key={i} style={{ width: 160, height: 112, background: color.blanco, border: `3px solid ${hablando ? color.naranja : color.negro}`, borderRadius: 16, display: "flex", alignItems: "flex-end", justifyContent: "center", overflow: "hidden", transform: `scale(${p})` }}>
                   <Persona size={96} acento={i % 4 === 1} />
                 </div>
               );
             })}
           </div>
-          <Sube p={ap(m[1] ?? 60)}>
+          <Sube p={ap(m[2] ?? 80)}>
             <T size={50}>
               <N>cientos</N> de adultos mayores
             </T>
           </Sube>
         </Col>
       </div>
-      <div style={{ position: "absolute", opacity: frase, pointerEvents: "none" }}>
+      {/* 3 · frase */}
+      <div style={{ position: "absolute", opacity: frase }}>
         <Sube p={frase}>
           <Tarjeta style={{ width: 900, padding: "56px 56px" }}>
             <T size={82}>
@@ -518,33 +543,58 @@ const Formula: React.FC<Props> = ({ m }) => {
   );
 };
 
-// T6 · B12 — "Hoy: IA para fábricas y distribuidoras" (sin nombre ni marca de la empresa)
+// T6 · B12 — "Hoy tengo una empresa": logo de OMNA (pedido expreso de corrección) + "IA para fábricas y distribuidoras"
+// m: [logo, fábricas, distribuidoras]
 const Hoy: React.FC<Props> = ({ m }) => {
   const ap = useAp();
+  const logo = ap(m[0] ?? 15, "golpe");
   return (
-    <Col gap={26}>
-      <Sube p={ap(0)} style={{ display: "flex", alignItems: "center", gap: 22 }}>
-        <Pildora style={{ fontSize: 50, fontFamily: font.titulo, fontWeight: 700 }}>Hoy</Pildora>
-        <T size={62}>
+    <Col gap={22}>
+      <div style={{ display: "flex", alignItems: "center", gap: 26 }}>
+        <Sube p={ap(0)}>
+          <Pildora style={{ fontSize: 50, fontFamily: font.titulo, fontWeight: 700 }}>Hoy</Pildora>
+        </Sube>
+        <Tarjeta style={{ padding: "22px 40px", transform: `scale(${logo})`, opacity: Math.min(1, logo * 2) }}>
+          <Img src={staticFile("reels/no-soy-programador/omna_logo.png")} style={{ height: 150, display: "block" }} />
+        </Tarjeta>
+      </div>
+      <Sube p={ap(m[1] ?? 30)}>
+        <T size={58}>
           <N>IA</N> para
         </T>
       </Sube>
       <div style={{ display: "flex", gap: 30 }}>
         {[
-          { i: <Fabrica size={170} p={ap((m[0] ?? 20) + 2)} />, t: "Fábricas", d: m[0] ?? 20 },
-          { i: <Camion size={170} p={ap((m[1] ?? 40) + 2)} />, t: "Distribuidoras", d: m[1] ?? 40 },
+          { i: <Fabrica size={110} p={ap((m[1] ?? 30) + 2)} />, t: "Fábricas", d: m[1] ?? 30 },
+          { i: <Camion size={110} p={ap((m[2] ?? 45) + 2)} />, t: "Distribuidoras", d: m[2] ?? 45 },
         ].map((x, k) => {
           const p = ap(x.d, "golpe");
           return (
-            <Tarjeta key={k} style={{ width: 400, padding: "26px 20px", display: "flex", flexDirection: "column", alignItems: "center", gap: 6, transform: `scale(${p})`, opacity: Math.min(1, 2 * p) }}>
+            <Tarjeta key={k} style={{ flexShrink: 0, padding: "14px 30px 14px 18px", display: "flex", alignItems: "center", gap: 10, transform: `scale(${p})`, opacity: Math.min(1, 2 * p) }}>
               {x.i}
-              <span style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 50, color: color.negro }}>{x.t}</span>
+              <span style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 42, color: color.negro }}>{x.t}</span>
             </Tarjeta>
           );
         })}
       </div>
-      <Sube p={ap(m[2] ?? 80)}>
-        <Pildora tono="negro" style={{ fontSize: 40 }}>Pero nunca dejé de enseñar</Pildora>
+    </Col>
+  );
+};
+
+// T6 · B12b — "pero hay algo que nunca dejé de…" (preparación del golpe "ENSEÑAR")
+const NuncaDeje: React.FC<Props> = ({ m }) => {
+  const ap = useAp();
+  const frame = useCurrentFrame();
+  const puntos = ".".repeat(1 + (Math.floor(frame / 6) % 3));
+  return (
+    <Col gap={20}>
+      <Sube p={ap(0)}>
+        <T size={84}>Hay algo que</T>
+      </Sube>
+      <Sube p={ap(m[0] ?? 12)}>
+        <T size={84}>
+          <N>nunca</N> dejé de{puntos}
+        </T>
       </Sube>
     </Col>
   );
@@ -579,35 +629,66 @@ const Preguntas: React.FC<Props> = ({ m }) => {
   );
 };
 
-// T7 · B14 — "Comunidad gratis · liga en mi perfil" con flecha hacia arriba
+// T7 · B14 — "Comunidad gratis" → captura real del perfil de Instagram con flecha a la historia destacada "Brújula IA"
+// m: [captura, flecha]
 const Comunidad: React.FC<Props> = ({ m }) => {
   const ap = useAp();
   const frame = useCurrentFrame();
-  const bote = Math.abs(Math.sin(frame / 7)) * 18;
-  const fl = ap(m[0] ?? 20, "golpe");
+  const cap = m[0] ?? 60;
+  const sale = interpolate(frame, [cap - 6, cap + 2], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+  const c = ap(cap);
+  const fl = ap(m[1] ?? cap + 10, "golpe");
+  // captura 921×1160 → 492×620; "Brújula IA" en (47.8 %, 89.2 %)
+  const W = 492, H = 620, hx = 0.478 * W, hy = 0.892 * H;
+  const k = interpolate(frame, [m[1] ?? cap + 10, (m[1] ?? cap + 10) + 36], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: theme.ease.inOut });
+  const z = 1 + 1.3 * k;
+  // posición en pantalla de la historia destacada: de su lugar original hacia (centro, 62 %)
+  const px = hx + (W / 2 - hx) * k, py = hy + (H * 0.62 - hy) * k;
+  const bote = Math.abs(Math.sin(frame / 6)) * 14;
   return (
-    <Col gap={22}>
-      <svg width={170} height={170} viewBox="0 0 120 120" style={{ transform: `translateY(${-bote}px) scale(${fl})` }}>
-        <path d="M60 108 V20 M24 54 L60 18 L96 54" fill="none" stroke={color.naranja} strokeWidth={16} strokeLinecap="round" strokeLinejoin="round" />
-      </svg>
-      <Sube p={ap(0)}>
-        <Tarjeta style={{ padding: "34px 56px", display: "flex", alignItems: "center", gap: 24 }}>
-          <div style={{ display: "flex" }}>
-            {[0, 1, 2].map((i) => (
-              <div key={i} style={{ marginLeft: i ? -26 : 0, background: color.verde, borderRadius: 99, border: theme.card.border, width: 96, height: 96, display: "flex", alignItems: "flex-end", justifyContent: "center", overflow: "hidden" }}>
-                <Persona size={84} acento={i === 1} />
-              </div>
-            ))}
+    <div style={{ position: "relative", width: 960, height: 620, display: "flex", alignItems: "center", justifyContent: "center" }}>
+      <div style={{ position: "absolute", opacity: sale }}>
+        <Sube p={ap(0)}>
+          <Tarjeta style={{ padding: "34px 56px", display: "flex", alignItems: "center", gap: 24 }}>
+            <div style={{ display: "flex" }}>
+              {[0, 1, 2].map((i) => (
+                <div key={i} style={{ marginLeft: i ? -26 : 0, background: color.verde, borderRadius: 99, border: theme.card.border, width: 96, height: 96, display: "flex", alignItems: "flex-end", justifyContent: "center", overflow: "hidden" }}>
+                  <Persona size={84} acento={i === 1} />
+                </div>
+              ))}
+            </div>
+            <T size={76}>
+              Comunidad <N>gratis</N>
+            </T>
+          </Tarjeta>
+        </Sube>
+      </div>
+      <div style={{ position: "absolute", opacity: c, display: "flex", alignItems: "center", gap: 26, transform: `translateY(${lerp(c, 40, 0)}px)` }}>
+        <div style={{ position: "relative", width: W, height: H, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco }}>
+          {/* zoom que lleva la historia destacada al centro del recuadro */}
+          <div style={{ position: "absolute", left: 0, top: 0, width: W, height: H, transformOrigin: "0 0", transform: `translate(${px - hx * z}px, ${py - hy * z}px) scale(${z})` }}>
+            <Img src={staticFile("reels/no-soy-programador/instagram_perfil.jpg")} style={{ width: W, height: H, display: "block" }} />
+            <div style={{ position: "absolute", left: hx - 27, top: hy - 27, width: 54, height: 54, borderRadius: 99, border: `4px solid ${color.naranja}`, transform: `scale(${fl})` }} />
           </div>
-          <T size={76}>
+          {/* flecha: la punta (18,134) toca el aro arriba a la derecha */}
+          <svg width={120} height={150} viewBox="0 0 120 150" style={{ position: "absolute", left: px + 22 * z - 18, top: py - 26 * z - 134 - bote, opacity: fl, transformOrigin: "18px 134px", transform: `scale(${fl})` }}>
+            <path d="M100 10 C90 70 60 100 22 128" fill="none" stroke={color.naranja} strokeWidth={13} strokeLinecap="round" />
+            <path d="M12 92 L18 134 L58 124" fill="none" stroke={color.naranja} strokeWidth={13} strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </div>
+        <Col gap={18} style={{ alignItems: "flex-start", width: 400 }}>
+          <T size={64} style={{ textAlign: "left" }}>
             Comunidad <N>gratis</N>
           </T>
-        </Tarjeta>
-      </Sube>
-      <Sube p={ap(m[1] ?? 60)}>
-        <Pildora tono="negro" style={{ fontSize: 46 }}>Liga en mi perfil</Pildora>
-      </Sube>
-    </Col>
+          <Golpe p={fl}>
+            <Pildora tono="negro" style={{ fontSize: 42 }}>Está en mi perfil</Pildora>
+          </Golpe>
+          <Golpe p={ap((m[1] ?? cap + 10) + 8, "golpe")}>
+            <Pildora style={{ fontSize: 42 }}>Brújula IA</Pildora>
+          </Golpe>
+        </Col>
+      </div>
+    </div>
   );
 };
 
@@ -641,6 +722,7 @@ export const ESCENAS: Record<string, React.FC<Props>> = {
   miles: Miles,
   formula: Formula,
   hoy: Hoy,
+  nuncaDeje: NuncaDeje,
   preguntas: Preguntas,
   comunidad: Comunidad,
   bienvenido: Bienvenido,

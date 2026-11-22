@@ -29,7 +29,7 @@ export type BRoll =
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
-  | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
+  | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente; size?: number }
   | { tipo: "cierre"; start: number; end: number };
 
 export type Reel = {
