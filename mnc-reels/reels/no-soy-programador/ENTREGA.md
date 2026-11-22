@@ -28,7 +28,7 @@
 1. **B4 · abuela**: no hay fotos en Drive → tarjeta animada "Le enseñé tecnología a mi abuela" con ícono de celular.
 2. **B5 · clases de Kit**: no hay capturas de una clase → después de la foto, cuadrícula genérica de videollamada (sin logo de Zoom, sin personas generadas).
 3. **Portada**: no vino la frase → falta. Mándala y la genero exacta.
-4. **Liga de la comunidad**: no vino; en pantalla solo dice "Liga en mi perfil" (no hace falta la URL en el video, sí en la bio).
+4. **Liga de la comunidad**: no vino; en pantalla se señala la historia destacada "Brújula IA" del perfil (la URL va en la bio).
 
 ## B-rolls (16 · 1080×960, nombrados por toma)
 T1_B1_no_soy_programador · T1_B2_tres_empresas · T2_B3_pandemia · T2_B4_abuela · T2_B5_kit · T3_B6_no_code · T3_B7_excel_a_no_code · T4_B8_linea_de_tiempo · T5_B9_150_empresas · T5_B10_miles_de_personas · T5_B11_formula · T6_B12_hoy_omna · T6_B12b_nunca_deje_de_ensenar · T6_B13_por_donde_empezar · T7_B14_comunidad_gratis · T7_B15_bienvenido
