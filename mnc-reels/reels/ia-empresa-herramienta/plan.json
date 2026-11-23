@@ -1,0 +1,290 @@
+{
+  "caraYFuente": 0.51,
+  "musica": "reels/ia-empresa-herramienta/musica.wav",
+  "whooshAuto": false,
+  "broll": [
+    {
+      "tipo": "custom",
+      "id": "iaemp-B1",
+      "start": 0.0,
+      "end": 2.42,
+      "marcas": [
+        0.92,
+        0.92,
+        1.72
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B2",
+      "start": 2.42,
+      "end": 7.06,
+      "marcas": [
+        3.68,
+        5.74,
+        6.52
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B3",
+      "start": 7.06,
+      "end": 9.58,
+      "marcas": [
+        8.3
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B4",
+      "start": 9.58,
+      "end": 11.88,
+      "marcas": [
+        9.76,
+        10.54
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B5",
+      "start": 11.88,
+      "end": 14.62,
+      "marcas": [
+        12.4,
+        13.66
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B6",
+      "start": 14.62,
+      "end": 19.36,
+      "marcas": [
+        15.6,
+        16.42,
+        17.26,
+        17.88,
+        18.42
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B7",
+      "start": 19.36,
+      "end": 22.42,
+      "marcas": [
+        20.26,
+        20.78,
+        22.02
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B8",
+      "start": 22.42,
+      "end": 28.61,
+      "marcas": [
+        23.28,
+        24.6,
+        25.56,
+        26.1,
+        27.54
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B9",
+      "start": 28.61,
+      "end": 33.73,
+      "marcas": [
+        29.69,
+        31.19,
+        32.47
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B10",
+      "start": 33.73,
+      "end": 35.85,
+      "marcas": [
+        34.35,
+        35.13
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B11",
+      "start": 35.85,
+      "end": 38.8,
+      "marcas": [
+        36.45,
+        37.3,
+        38.6
+      ]
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "palabras",
+      "start": 38.45,
+      "end": 41.4,
+      "items": [
+        "DOLOR",
+        "MEDIDA",
+        "HERRAMIENTA"
+      ],
+      "marcas": [
+        37.0,
+        37.0,
+        38.55
+      ]
+    },
+    {
+      "tipo": "pregunta",
+      "start": 41.1,
+      "end": 45.167,
+      "texto": "¿Cuál es el proceso que más te duele en tu empresa?",
+      "sub": "Te leo en los comentarios"
+    }
+  ],
+  "pasos": [
+    {
+      "start": 14.62,
+      "end": 19.36,
+      "n": 1
+    },
+    {
+      "start": 19.36,
+      "end": 22.42,
+      "n": 2
+    },
+    {
+      "start": 22.42,
+      "end": 28.61,
+      "n": 3
+    }
+  ],
+  "sfx": [
+    {
+      "t": 11.8,
+      "s": "whoosh"
+    },
+    {
+      "t": 28.53,
+      "s": "whoosh"
+    },
+    {
+      "t": 41.17,
+      "s": "whoosh"
+    },
+    {
+      "t": 0.92,
+      "s": "tick"
+    },
+    {
+      "t": 2.45,
+      "s": "pop"
+    },
+    {
+      "t": 3.7,
+      "s": "click"
+    },
+    {
+      "t": 5.76,
+      "s": "pop"
+    },
+    {
+      "t": 6.52,
+      "s": "bass"
+    },
+    {
+      "t": 7.12,
+      "s": "pop"
+    },
+    {
+      "t": 8.3,
+      "s": "pop"
+    },
+    {
+      "t": 9.8,
+      "s": "tick"
+    },
+    {
+      "t": 10.54,
+      "s": "pop"
+    },
+    {
+      "t": 13.66,
+      "s": "pop"
+    },
+    {
+      "t": 16.42,
+      "s": "tick"
+    },
+    {
+      "t": 17.26,
+      "s": "pop"
+    },
+    {
+      "t": 17.88,
+      "s": "pop"
+    },
+    {
+      "t": 18.42,
+      "s": "pop"
+    },
+    {
+      "t": 20.26,
+      "s": "tick"
+    },
+    {
+      "t": 22.02,
+      "s": "pop"
+    },
+    {
+      "t": 23.28,
+      "s": "pop"
+    },
+    {
+      "t": 24.6,
+      "s": "pop"
+    },
+    {
+      "t": 26.1,
+      "s": "pop"
+    },
+    {
+      "t": 27.54,
+      "s": "tick"
+    },
+    {
+      "t": 29.69,
+      "s": "click"
+    },
+    {
+      "t": 31.19,
+      "s": "pop"
+    },
+    {
+      "t": 32.47,
+      "s": "pop"
+    },
+    {
+      "t": 34.4,
+      "s": "pop"
+    },
+    {
+      "t": 35.13,
+      "s": "pop"
+    },
+    {
+      "t": 36.45,
+      "s": "pop"
+    },
+    {
+      "t": 37.3,
+      "s": "pop"
+    }
+  ]
+}

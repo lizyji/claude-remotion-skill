@@ -1,0 +1,2060 @@
+{
+  "broll": [
+    {
+      "tipo": "custom",
+      "id": "iaemp-B1",
+      "start": 0.0,
+      "end": 2.42,
+      "marcas": [
+        0.92,
+        0.92,
+        1.72
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B2",
+      "start": 2.42,
+      "end": 7.06,
+      "marcas": [
+        3.68,
+        5.74,
+        6.52
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B3",
+      "start": 7.06,
+      "end": 9.58,
+      "marcas": [
+        8.3
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B4",
+      "start": 9.58,
+      "end": 11.88,
+      "marcas": [
+        9.76,
+        10.54
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B5",
+      "start": 11.88,
+      "end": 14.62,
+      "marcas": [
+        12.4,
+        13.66
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B6",
+      "start": 14.62,
+      "end": 19.36,
+      "marcas": [
+        15.6,
+        16.42,
+        17.26,
+        17.88,
+        18.42
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B7",
+      "start": 19.36,
+      "end": 22.42,
+      "marcas": [
+        20.26,
+        20.78,
+        22.02
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B8",
+      "start": 22.42,
+      "end": 28.61,
+      "marcas": [
+        23.28,
+        24.6,
+        25.56,
+        26.1,
+        27.54
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B9",
+      "start": 28.61,
+      "end": 33.73,
+      "marcas": [
+        29.69,
+        31.19,
+        32.47
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B10",
+      "start": 33.73,
+      "end": 35.85,
+      "marcas": [
+        34.35,
+        35.13
+      ]
+    },
+    {
+      "tipo": "custom",
+      "id": "iaemp-B11",
+      "start": 35.85,
+      "end": 38.8,
+      "marcas": [
+        36.45,
+        37.3,
+        38.6
+      ]
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "palabras",
+      "start": 38.45,
+      "end": 41.4,
+      "items": [
+        "DOLOR",
+        "MEDIDA",
+        "HERRAMIENTA"
+      ],
+      "marcas": [
+        37.0,
+        37.0,
+        38.55
+      ]
+    },
+    {
+      "tipo": "pregunta",
+      "start": 41.1,
+      "end": 45.167,
+      "texto": "¿Cuál es el proceso que más te duele en tu empresa?",
+      "sub": "Te leo en los comentarios"
+    }
+  ],
+  "pasos": [
+    {
+      "start": 14.62,
+      "end": 19.36,
+      "n": 1
+    },
+    {
+      "start": 19.36,
+      "end": 22.42,
+      "n": 2
+    },
+    {
+      "start": 22.42,
+      "end": 28.61,
+      "n": 3
+    }
+  ],
+  "sfx": [
+    {
+      "t": 11.8,
+      "s": "whoosh"
+    },
+    {
+      "t": 28.53,
+      "s": "whoosh"
+    },
+    {
+      "t": 41.17,
+      "s": "whoosh"
+    },
+    {
+      "t": 0.92,
+      "s": "tick"
+    },
+    {
+      "t": 2.45,
+      "s": "pop"
+    },
+    {
+      "t": 3.7,
+      "s": "click"
+    },
+    {
+      "t": 5.76,
+      "s": "pop"
+    },
+    {
+      "t": 6.52,
+      "s": "bass"
+    },
+    {
+      "t": 7.12,
+      "s": "pop"
+    },
+    {
+      "t": 8.3,
+      "s": "pop"
+    },
+    {
+      "t": 9.8,
+      "s": "tick"
+    },
+    {
+      "t": 10.54,
+      "s": "pop"
+    },
+    {
+      "t": 13.66,
+      "s": "pop"
+    },
+    {
+      "t": 16.42,
+      "s": "tick"
+    },
+    {
+      "t": 17.26,
+      "s": "pop"
+    },
+    {
+      "t": 17.88,
+      "s": "pop"
+    },
+    {
+      "t": 18.42,
+      "s": "pop"
+    },
+    {
+      "t": 20.26,
+      "s": "tick"
+    },
+    {
+      "t": 22.02,
+      "s": "pop"
+    },
+    {
+      "t": 23.28,
+      "s": "pop"
+    },
+    {
+      "t": 24.6,
+      "s": "pop"
+    },
+    {
+      "t": 26.1,
+      "s": "pop"
+    },
+    {
+      "t": 27.54,
+      "s": "tick"
+    },
+    {
+      "t": 29.69,
+      "s": "click"
+    },
+    {
+      "t": 31.19,
+      "s": "pop"
+    },
+    {
+      "t": 32.47,
+      "s": "pop"
+    },
+    {
+      "t": 34.4,
+      "s": "pop"
+    },
+    {
+      "t": 35.13,
+      "s": "pop"
+    },
+    {
+      "t": 36.45,
+      "s": "pop"
+    },
+    {
+      "t": 37.3,
+      "s": "pop"
+    }
+  ],
+  "slug": "ia-empresa-herramienta",
+  "duracion": 45.167,
+  "manuel": "reels/ia-empresa-herramienta/manuel.mp4",
+  "cortes": [
+    11.884,
+    14.543,
+    20.179,
+    28.528,
+    41.218
+  ],
+  "palabras": [
+    {
+      "w": "Llevo",
+      "start": 0.0,
+      "end": 0.28,
+      "prob": 0.938
+    },
+    {
+      "w": "más",
+      "start": 0.28,
+      "end": 0.44,
+      "prob": 0.977
+    },
+    {
+      "w": "de",
+      "start": 0.44,
+      "end": 0.56,
+      "prob": 0.997
+    },
+    {
+      "w": "150",
+      "start": 0.56,
+      "end": 0.92,
+      "prob": 0.997
+    },
+    {
+      "w": "proyectos",
+      "start": 0.92,
+      "end": 1.64,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 1.64,
+      "end": 1.72,
+      "prob": 0.984
+    },
+    {
+      "w": "IA",
+      "start": 1.72,
+      "end": 1.82,
+      "prob": 0.474
+    },
+    {
+      "w": "en",
+      "start": 1.82,
+      "end": 1.92,
+      "prob": 0.969
+    },
+    {
+      "w": "empresas",
+      "start": 1.92,
+      "end": 2.16,
+      "prob": 0.972
+    },
+    {
+      "w": "y",
+      "start": 2.16,
+      "end": 2.42,
+      "prob": 0.963
+    },
+    {
+      "w": "el",
+      "start": 2.42,
+      "end": 2.54,
+      "prob": 0.998
+    },
+    {
+      "w": "error",
+      "start": 2.54,
+      "end": 2.76,
+      "prob": 0.996
+    },
+    {
+      "w": "número",
+      "start": 2.76,
+      "end": 3.0,
+      "prob": 0.983
+    },
+    {
+      "w": "uno",
+      "start": 3.0,
+      "end": 3.26,
+      "prob": 0.685
+    },
+    {
+      "w": "no",
+      "start": 3.26,
+      "end": 3.56,
+      "prob": 0.987
+    },
+    {
+      "w": "es",
+      "start": 3.56,
+      "end": 3.68,
+      "prob": 1.0
+    },
+    {
+      "w": "técnico,",
+      "start": 3.68,
+      "end": 4.04,
+      "prob": 0.999
+    },
+    {
+      "w": "es",
+      "start": 4.16,
+      "end": 4.5,
+      "prob": 0.994
+    },
+    {
+      "w": "este.",
+      "start": 4.5,
+      "end": 4.84,
+      "prob": 0.948
+    },
+    {
+      "w": "Es",
+      "start": 5.22,
+      "end": 5.74,
+      "prob": 0.991
+    },
+    {
+      "w": "empezar",
+      "start": 5.74,
+      "end": 6.14,
+      "prob": 0.999
+    },
+    {
+      "w": "por",
+      "start": 6.14,
+      "end": 6.42,
+      "prob": 0.999
+    },
+    {
+      "w": "la",
+      "start": 6.42,
+      "end": 6.52,
+      "prob": 1.0
+    },
+    {
+      "w": "herramienta.",
+      "start": 6.52,
+      "end": 7.06,
+      "prob": 1.0
+    },
+    {
+      "w": "Uy,",
+      "start": 7.06,
+      "end": 7.4,
+      "prob": 0.994
+    },
+    {
+      "w": "compramos",
+      "start": 7.42,
+      "end": 7.8,
+      "prob": 1.0
+    },
+    {
+      "w": "tal",
+      "start": 7.8,
+      "end": 7.94,
+      "prob": 1.0
+    },
+    {
+      "w": "sistema",
+      "start": 7.94,
+      "end": 8.3,
+      "prob": 1.0
+    },
+    {
+      "w": "o",
+      "start": 8.3,
+      "end": 8.68,
+      "prob": 0.985
+    },
+    {
+      "w": "queremos",
+      "start": 8.68,
+      "end": 8.92,
+      "prob": 0.997
+    },
+    {
+      "w": "un",
+      "start": 8.92,
+      "end": 9.18,
+      "prob": 1.0
+    },
+    {
+      "w": "chatbot",
+      "start": 9.18,
+      "end": 9.58,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 9.58,
+      "end": 9.76,
+      "prob": 0.998
+    },
+    {
+      "w": "seis",
+      "start": 9.76,
+      "end": 9.96,
+      "prob": 0.835
+    },
+    {
+      "w": "meses",
+      "start": 9.96,
+      "end": 10.22,
+      "prob": 1.0
+    },
+    {
+      "w": "después",
+      "start": 10.22,
+      "end": 10.54,
+      "prob": 0.998
+    },
+    {
+      "w": "nadie",
+      "start": 10.54,
+      "end": 11.16,
+      "prob": 0.998
+    },
+    {
+      "w": "lo",
+      "start": 11.16,
+      "end": 11.4,
+      "prob": 1.0
+    },
+    {
+      "w": "usa.",
+      "start": 11.4,
+      "end": 11.66,
+      "prob": 1.0
+    },
+    {
+      "w": "Siempre",
+      "start": 11.964,
+      "end": 12.484,
+      "prob": 1.0
+    },
+    {
+      "w": "lo",
+      "start": 12.484,
+      "end": 12.624,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 12.624,
+      "end": 12.744,
+      "prob": 1.0
+    },
+    {
+      "w": "funciona",
+      "start": 12.744,
+      "end": 13.064,
+      "prob": 1.0
+    },
+    {
+      "w": "empieza",
+      "start": 13.064,
+      "end": 13.664,
+      "prob": 0.999
+    },
+    {
+      "w": "al",
+      "start": 13.664,
+      "end": 13.924,
+      "prob": 1.0
+    },
+    {
+      "w": "revés.",
+      "start": 13.924,
+      "end": 14.284,
+      "prob": 1.0
+    },
+    {
+      "w": "Primero,",
+      "start": 14.623,
+      "end": 15.143,
+      "prob": 1.0
+    },
+    {
+      "w": "elige",
+      "start": 15.143,
+      "end": 15.523,
+      "prob": 0.996
+    },
+    {
+      "w": "un",
+      "start": 15.523,
+      "end": 15.603,
+      "prob": 1.0
+    },
+    {
+      "w": "proceso",
+      "start": 15.603,
+      "end": 15.823,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 15.823,
+      "end": 16.063,
+      "prob": 1.0
+    },
+    {
+      "w": "les",
+      "start": 16.063,
+      "end": 16.163,
+      "prob": 1.0
+    },
+    {
+      "w": "duele",
+      "start": 16.163,
+      "end": 16.423,
+      "prob": 1.0
+    },
+    {
+      "w": "cada",
+      "start": 16.423,
+      "end": 16.563,
+      "prob": 1.0
+    },
+    {
+      "w": "semana,",
+      "start": 16.563,
+      "end": 16.943,
+      "prob": 1.0
+    },
+    {
+      "w": "como",
+      "start": 17.063,
+      "end": 17.263,
+      "prob": 1.0
+    },
+    {
+      "w": "cotizar,",
+      "start": 17.263,
+      "end": 17.803,
+      "prob": 1.0
+    },
+    {
+      "w": "cobrar",
+      "start": 17.883,
+      "end": 18.243,
+      "prob": 1.0
+    },
+    {
+      "w": "o",
+      "start": 18.243,
+      "end": 18.423,
+      "prob": 1.0
+    },
+    {
+      "w": "capturar",
+      "start": 18.423,
+      "end": 18.843,
+      "prob": 1.0
+    },
+    {
+      "w": "pedidos.",
+      "start": 18.843,
+      "end": 19.203,
+      "prob": 1.0
+    },
+    {
+      "w": "Dos,",
+      "start": 19.363,
+      "end": 19.883,
+      "prob": 0.996
+    },
+    {
+      "w": "midan",
+      "start": 20.259,
+      "end": 20.779,
+      "prob": 0.999
+    },
+    {
+      "w": "cuánto",
+      "start": 20.779,
+      "end": 21.339,
+      "prob": 1.0
+    },
+    {
+      "w": "tiempo",
+      "start": 21.339,
+      "end": 21.619,
+      "prob": 1.0
+    },
+    {
+      "w": "les",
+      "start": 21.619,
+      "end": 21.799,
+      "prob": 1.0
+    },
+    {
+      "w": "toma",
+      "start": 21.799,
+      "end": 22.019,
+      "prob": 0.999
+    },
+    {
+      "w": "hoy.",
+      "start": 22.019,
+      "end": 22.239,
+      "prob": 0.999
+    },
+    {
+      "w": "Y",
+      "start": 22.419,
+      "end": 22.739,
+      "prob": 0.982
+    },
+    {
+      "w": "hasta",
+      "start": 22.739,
+      "end": 22.919,
+      "prob": 1.0
+    },
+    {
+      "w": "entonces",
+      "start": 22.919,
+      "end": 23.279,
+      "prob": 1.0
+    },
+    {
+      "w": "buscan",
+      "start": 23.279,
+      "end": 23.899,
+      "prob": 0.739
+    },
+    {
+      "w": "la",
+      "start": 23.899,
+      "end": 23.999,
+      "prob": 1.0
+    },
+    {
+      "w": "herramienta",
+      "start": 23.999,
+      "end": 24.459,
+      "prob": 1.0
+    },
+    {
+      "w": "o",
+      "start": 24.459,
+      "end": 24.599,
+      "prob": 1.0
+    },
+    {
+      "w": "construyen",
+      "start": 24.599,
+      "end": 25.119,
+      "prob": 0.995
+    },
+    {
+      "w": "una",
+      "start": 25.119,
+      "end": 25.339,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 25.339,
+      "end": 25.559,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 25.559,
+      "end": 25.679,
+      "prob": 1.0
+    },
+    {
+      "w": "prueban",
+      "start": 25.679,
+      "end": 25.979,
+      "prob": 0.975
+    },
+    {
+      "w": "con",
+      "start": 25.979,
+      "end": 26.099,
+      "prob": 1.0
+    },
+    {
+      "w": "una",
+      "start": 26.099,
+      "end": 26.299,
+      "prob": 1.0
+    },
+    {
+      "w": "sola",
+      "start": 26.299,
+      "end": 26.479,
+      "prob": 1.0
+    },
+    {
+      "w": "persona",
+      "start": 26.479,
+      "end": 26.839,
+      "prob": 1.0
+    },
+    {
+      "w": "antes",
+      "start": 26.839,
+      "end": 27.299,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 27.299,
+      "end": 27.539,
+      "prob": 1.0
+    },
+    {
+      "w": "dársela",
+      "start": 27.539,
+      "end": 27.939,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 27.939,
+      "end": 27.959,
+      "prob": 1.0
+    },
+    {
+      "w": "todos.",
+      "start": 27.959,
+      "end": 28.179,
+      "prob": 1.0
+    },
+    {
+      "w": "Y",
+      "start": 28.608,
+      "end": 28.828,
+      "prob": 0.877
+    },
+    {
+      "w": "esto",
+      "start": 28.828,
+      "end": 29.008,
+      "prob": 0.998
+    },
+    {
+      "w": "es",
+      "start": 29.008,
+      "end": 29.088,
+      "prob": 0.998
+    },
+    {
+      "w": "importante,",
+      "start": 29.088,
+      "end": 29.448,
+      "prob": 0.995
+    },
+    {
+      "w": "quien",
+      "start": 29.688,
+      "end": 29.928,
+      "prob": 0.987
+    },
+    {
+      "w": "más",
+      "start": 29.928,
+      "end": 30.128,
+      "prob": 0.972
+    },
+    {
+      "w": "sabe",
+      "start": 30.128,
+      "end": 30.388,
+      "prob": 0.994
+    },
+    {
+      "w": "del",
+      "start": 30.388,
+      "end": 30.488,
+      "prob": 0.996
+    },
+    {
+      "w": "proceso",
+      "start": 30.488,
+      "end": 30.768,
+      "prob": 1.0
+    },
+    {
+      "w": "casi",
+      "start": 30.768,
+      "end": 31.188,
+      "prob": 0.959
+    },
+    {
+      "w": "nunca",
+      "start": 31.188,
+      "end": 31.508,
+      "prob": 1.0
+    },
+    {
+      "w": "es",
+      "start": 31.508,
+      "end": 31.748,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 31.748,
+      "end": 31.848,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 31.848,
+      "end": 31.968,
+      "prob": 0.999
+    },
+    {
+      "w": "sistemas,",
+      "start": 31.968,
+      "end": 32.228,
+      "prob": 0.999
+    },
+    {
+      "w": "es",
+      "start": 32.468,
+      "end": 32.728,
+      "prob": 1.0
+    },
+    {
+      "w": "quien",
+      "start": 32.728,
+      "end": 32.968,
+      "prob": 0.997
+    },
+    {
+      "w": "lo",
+      "start": 32.968,
+      "end": 33.108,
+      "prob": 0.999
+    },
+    {
+      "w": "hace",
+      "start": 33.108,
+      "end": 33.288,
+      "prob": 1.0
+    },
+    {
+      "w": "todos",
+      "start": 33.288,
+      "end": 33.548,
+      "prob": 0.998
+    },
+    {
+      "w": "los",
+      "start": 33.548,
+      "end": 33.728,
+      "prob": 1.0
+    },
+    {
+      "w": "días.",
+      "start": 33.728,
+      "end": 33.968,
+      "prob": 1.0
+    },
+    {
+      "w": "Siéntenlo",
+      "start": 34.348,
+      "end": 34.788,
+      "prob": 0.798
+    },
+    {
+      "w": "en",
+      "start": 34.788,
+      "end": 34.848,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 34.848,
+      "end": 34.868,
+      "prob": 1.0
+    },
+    {
+      "w": "mesa",
+      "start": 34.868,
+      "end": 35.128,
+      "prob": 1.0
+    },
+    {
+      "w": "desde",
+      "start": 35.128,
+      "end": 35.268,
+      "prob": 0.999
+    },
+    {
+      "w": "el",
+      "start": 35.268,
+      "end": 35.368,
+      "prob": 1.0
+    },
+    {
+      "w": "día",
+      "start": 35.368,
+      "end": 35.488,
+      "prob": 0.999
+    },
+    {
+      "w": "uno,",
+      "start": 35.488,
+      "end": 35.728,
+      "prob": 0.714
+    },
+    {
+      "w": "primero",
+      "start": 35.848,
+      "end": 36.328,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 36.328,
+      "end": 36.508,
+      "prob": 1.0
+    },
+    {
+      "w": "dolor,",
+      "start": 36.508,
+      "end": 36.708,
+      "prob": 1.0
+    },
+    {
+      "w": "luego",
+      "start": 36.848,
+      "end": 37.148,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 37.148,
+      "end": 37.368,
+      "prob": 1.0
+    },
+    {
+      "w": "medida",
+      "start": 37.368,
+      "end": 37.608,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 37.608,
+      "end": 37.868,
+      "prob": 0.998
+    },
+    {
+      "w": "al",
+      "start": 37.868,
+      "end": 37.988,
+      "prob": 1.0
+    },
+    {
+      "w": "final",
+      "start": 37.988,
+      "end": 38.248,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 38.248,
+      "end": 38.508,
+      "prob": 0.999
+    },
+    {
+      "w": "herramienta.",
+      "start": 38.508,
+      "end": 39.088,
+      "prob": 1.0
+    },
+    {
+      "w": "¿Cuál",
+      "start": 41.298,
+      "end": 41.738,
+      "prob": 0.999
+    },
+    {
+      "w": "es",
+      "start": 41.738,
+      "end": 41.778,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 41.778,
+      "end": 41.878,
+      "prob": 1.0
+    },
+    {
+      "w": "proceso",
+      "start": 41.878,
+      "end": 42.138,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 42.138,
+      "end": 42.318,
+      "prob": 1.0
+    },
+    {
+      "w": "más",
+      "start": 42.318,
+      "end": 42.478,
+      "prob": 1.0
+    },
+    {
+      "w": "te",
+      "start": 42.478,
+      "end": 42.618,
+      "prob": 1.0
+    },
+    {
+      "w": "duele",
+      "start": 42.618,
+      "end": 42.838,
+      "prob": 0.996
+    },
+    {
+      "w": "en",
+      "start": 42.838,
+      "end": 42.898,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 42.898,
+      "end": 42.938,
+      "prob": 1.0
+    },
+    {
+      "w": "empresa?",
+      "start": 42.938,
+      "end": 43.198,
+      "prob": 1.0
+    },
+    {
+      "w": "Te",
+      "start": 43.358,
+      "end": 43.538,
+      "prob": 0.999
+    },
+    {
+      "w": "leo",
+      "start": 43.538,
+      "end": 43.878,
+      "prob": 0.999
+    },
+    {
+      "w": "en",
+      "start": 43.878,
+      "end": 44.038,
+      "prob": 1.0
+    },
+    {
+      "w": "los",
+      "start": 44.038,
+      "end": 44.138,
+      "prob": 1.0
+    },
+    {
+      "w": "comentarios.",
+      "start": 44.138,
+      "end": 44.478,
+      "prob": 1.0
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.0,
+      "end": 0.92,
+      "words": [
+        {
+          "w": "Llevo",
+          "start": 0.0
+        },
+        {
+          "w": "más",
+          "start": 0.28
+        },
+        {
+          "w": "de",
+          "start": 0.44
+        },
+        {
+          "w": "150",
+          "start": 0.56,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 0.92,
+      "end": 1.82,
+      "words": [
+        {
+          "w": "proyectos",
+          "start": 0.92
+        },
+        {
+          "w": "de",
+          "start": 1.64
+        },
+        {
+          "w": "IA",
+          "start": 1.72,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 1.82,
+      "end": 2.76,
+      "words": [
+        {
+          "w": "en",
+          "start": 1.82
+        },
+        {
+          "w": "empresas",
+          "start": 1.92
+        },
+        {
+          "w": "y",
+          "start": 2.16
+        },
+        {
+          "w": "el",
+          "start": 2.42
+        },
+        {
+          "w": "error",
+          "start": 2.54,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 2.76,
+      "end": 4.16,
+      "words": [
+        {
+          "w": "número",
+          "start": 2.76
+        },
+        {
+          "w": "uno",
+          "start": 3.0,
+          "key": true
+        },
+        {
+          "w": "no",
+          "start": 3.26
+        },
+        {
+          "w": "es",
+          "start": 3.56
+        },
+        {
+          "w": "técnico",
+          "start": 3.68,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 4.16,
+      "end": 5.22,
+      "words": [
+        {
+          "w": "es",
+          "start": 4.16
+        },
+        {
+          "w": "este",
+          "start": 4.5
+        }
+      ]
+    },
+    {
+      "start": 5.22,
+      "end": 6.14,
+      "words": [
+        {
+          "w": "Es",
+          "start": 5.22
+        },
+        {
+          "w": "empezar",
+          "start": 5.74
+        }
+      ]
+    },
+    {
+      "start": 6.14,
+      "end": 7.06,
+      "words": [
+        {
+          "w": "por",
+          "start": 6.14
+        },
+        {
+          "w": "la",
+          "start": 6.42
+        },
+        {
+          "w": "herramienta",
+          "start": 6.52,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 7.06,
+      "end": 8.3,
+      "words": [
+        {
+          "w": "Uy",
+          "start": 7.06
+        },
+        {
+          "w": "compramos",
+          "start": 7.42,
+          "key": true
+        },
+        {
+          "w": "tal",
+          "start": 7.8
+        },
+        {
+          "w": "sistema",
+          "start": 7.94
+        }
+      ]
+    },
+    {
+      "start": 8.3,
+      "end": 9.58,
+      "words": [
+        {
+          "w": "o",
+          "start": 8.3
+        },
+        {
+          "w": "queremos",
+          "start": 8.68
+        },
+        {
+          "w": "un",
+          "start": 8.92
+        },
+        {
+          "w": "chatbot",
+          "start": 9.18,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 9.58,
+      "end": 10.54,
+      "words": [
+        {
+          "w": "y",
+          "start": 9.58
+        },
+        {
+          "w": "seis",
+          "start": 9.76,
+          "key": true
+        },
+        {
+          "w": "meses",
+          "start": 9.96,
+          "key": true
+        },
+        {
+          "w": "después",
+          "start": 10.22
+        }
+      ]
+    },
+    {
+      "start": 10.54,
+      "end": 11.964,
+      "words": [
+        {
+          "w": "nadie",
+          "start": 10.54,
+          "key": true
+        },
+        {
+          "w": "lo",
+          "start": 11.16
+        },
+        {
+          "w": "usa",
+          "start": 11.4
+        }
+      ]
+    },
+    {
+      "start": 11.964,
+      "end": 13.064,
+      "words": [
+        {
+          "w": "Siempre",
+          "start": 11.964
+        },
+        {
+          "w": "lo",
+          "start": 12.484
+        },
+        {
+          "w": "que",
+          "start": 12.624
+        },
+        {
+          "w": "funciona",
+          "start": 12.744,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 13.064,
+      "end": 14.623,
+      "words": [
+        {
+          "w": "empieza",
+          "start": 13.064
+        },
+        {
+          "w": "al",
+          "start": 13.664
+        },
+        {
+          "w": "revés",
+          "start": 13.924,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 14.623,
+      "end": 15.823,
+      "words": [
+        {
+          "w": "Primero",
+          "start": 14.623
+        },
+        {
+          "w": "elige",
+          "start": 15.143
+        },
+        {
+          "w": "un",
+          "start": 15.523
+        },
+        {
+          "w": "proceso",
+          "start": 15.603,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 15.823,
+      "end": 16.423,
+      "words": [
+        {
+          "w": "que",
+          "start": 15.823
+        },
+        {
+          "w": "les",
+          "start": 16.063
+        },
+        {
+          "w": "duele",
+          "start": 16.163,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 16.423,
+      "end": 17.883,
+      "words": [
+        {
+          "w": "cada",
+          "start": 16.423
+        },
+        {
+          "w": "semana",
+          "start": 16.563
+        },
+        {
+          "w": "como",
+          "start": 17.063
+        },
+        {
+          "w": "cotizar",
+          "start": 17.263,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 17.883,
+      "end": 18.843,
+      "words": [
+        {
+          "w": "cobrar",
+          "start": 17.883,
+          "key": true
+        },
+        {
+          "w": "o",
+          "start": 18.243
+        },
+        {
+          "w": "capturar",
+          "start": 18.423
+        }
+      ]
+    },
+    {
+      "start": 18.843,
+      "end": 19.363,
+      "words": [
+        {
+          "w": "pedidos",
+          "start": 18.843,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 19.363,
+      "end": 21.619,
+      "words": [
+        {
+          "w": "Dos",
+          "start": 19.363
+        },
+        {
+          "w": "midan",
+          "start": 20.259,
+          "key": true
+        },
+        {
+          "w": "cuánto",
+          "start": 20.779
+        },
+        {
+          "w": "tiempo",
+          "start": 21.339,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 21.619,
+      "end": 22.419,
+      "words": [
+        {
+          "w": "les",
+          "start": 21.619
+        },
+        {
+          "w": "toma",
+          "start": 21.799
+        },
+        {
+          "w": "hoy",
+          "start": 22.019
+        }
+      ]
+    },
+    {
+      "start": 22.419,
+      "end": 23.899,
+      "words": [
+        {
+          "w": "Y",
+          "start": 22.419
+        },
+        {
+          "w": "hasta",
+          "start": 22.739
+        },
+        {
+          "w": "entonces",
+          "start": 22.919,
+          "key": true
+        },
+        {
+          "w": "buscan",
+          "start": 23.279
+        }
+      ]
+    },
+    {
+      "start": 23.899,
+      "end": 24.459,
+      "words": [
+        {
+          "w": "la",
+          "start": 23.899
+        },
+        {
+          "w": "herramienta",
+          "start": 23.999,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 24.459,
+      "end": 25.119,
+      "words": [
+        {
+          "w": "o",
+          "start": 24.459
+        },
+        {
+          "w": "construyen",
+          "start": 24.599,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 25.119,
+      "end": 25.979,
+      "words": [
+        {
+          "w": "una",
+          "start": 25.119
+        },
+        {
+          "w": "y",
+          "start": 25.339
+        },
+        {
+          "w": "la",
+          "start": 25.559
+        },
+        {
+          "w": "prueban",
+          "start": 25.679
+        }
+      ]
+    },
+    {
+      "start": 25.979,
+      "end": 26.839,
+      "words": [
+        {
+          "w": "con",
+          "start": 25.979
+        },
+        {
+          "w": "una",
+          "start": 26.099
+        },
+        {
+          "w": "sola",
+          "start": 26.299,
+          "key": true
+        },
+        {
+          "w": "persona",
+          "start": 26.479,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 26.839,
+      "end": 28.608,
+      "words": [
+        {
+          "w": "antes",
+          "start": 26.839
+        },
+        {
+          "w": "de",
+          "start": 27.299
+        },
+        {
+          "w": "dársela",
+          "start": 27.539
+        },
+        {
+          "w": "a",
+          "start": 27.939
+        },
+        {
+          "w": "todos",
+          "start": 27.959,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 28.608,
+      "end": 29.688,
+      "words": [
+        {
+          "w": "Y",
+          "start": 28.608
+        },
+        {
+          "w": "esto",
+          "start": 28.828
+        },
+        {
+          "w": "es",
+          "start": 29.008
+        },
+        {
+          "w": "importante",
+          "start": 29.088,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 29.688,
+      "end": 30.388,
+      "words": [
+        {
+          "w": "quien",
+          "start": 29.688
+        },
+        {
+          "w": "más",
+          "start": 29.928
+        },
+        {
+          "w": "sabe",
+          "start": 30.128
+        }
+      ]
+    },
+    {
+      "start": 30.388,
+      "end": 31.508,
+      "words": [
+        {
+          "w": "del",
+          "start": 30.388
+        },
+        {
+          "w": "proceso",
+          "start": 30.488,
+          "key": true
+        },
+        {
+          "w": "casi",
+          "start": 30.768
+        },
+        {
+          "w": "nunca",
+          "start": 31.188
+        }
+      ]
+    },
+    {
+      "start": 31.508,
+      "end": 32.468,
+      "words": [
+        {
+          "w": "es",
+          "start": 31.508
+        },
+        {
+          "w": "el",
+          "start": 31.748
+        },
+        {
+          "w": "de",
+          "start": 31.848
+        },
+        {
+          "w": "sistemas",
+          "start": 31.968,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 32.468,
+      "end": 33.548,
+      "words": [
+        {
+          "w": "es",
+          "start": 32.468
+        },
+        {
+          "w": "quien",
+          "start": 32.728
+        },
+        {
+          "w": "lo",
+          "start": 32.968
+        },
+        {
+          "w": "hace",
+          "start": 33.108
+        },
+        {
+          "w": "todos",
+          "start": 33.288,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 33.548,
+      "end": 34.348,
+      "words": [
+        {
+          "w": "los",
+          "start": 33.548
+        },
+        {
+          "w": "días",
+          "start": 33.728,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 34.348,
+      "end": 35.128,
+      "words": [
+        {
+          "w": "Siéntenlo",
+          "start": 34.348
+        },
+        {
+          "w": "en",
+          "start": 34.788
+        },
+        {
+          "w": "la",
+          "start": 34.848
+        },
+        {
+          "w": "mesa",
+          "start": 34.868,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 35.128,
+      "end": 35.848,
+      "words": [
+        {
+          "w": "desde",
+          "start": 35.128
+        },
+        {
+          "w": "el",
+          "start": 35.268
+        },
+        {
+          "w": "día",
+          "start": 35.368
+        },
+        {
+          "w": "uno",
+          "start": 35.488,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 35.848,
+      "end": 36.848,
+      "words": [
+        {
+          "w": "primero",
+          "start": 35.848
+        },
+        {
+          "w": "el",
+          "start": 36.328
+        },
+        {
+          "w": "dolor",
+          "start": 36.508,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 36.848,
+      "end": 37.608,
+      "words": [
+        {
+          "w": "luego",
+          "start": 36.848
+        },
+        {
+          "w": "la",
+          "start": 37.148
+        },
+        {
+          "w": "medida",
+          "start": 37.368,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 37.608,
+      "end": 38.248,
+      "words": [
+        {
+          "w": "y",
+          "start": 37.608
+        },
+        {
+          "w": "al",
+          "start": 37.868
+        },
+        {
+          "w": "final",
+          "start": 37.988
+        }
+      ]
+    },
+    {
+      "start": 38.248,
+      "end": 39.338,
+      "words": [
+        {
+          "w": "la",
+          "start": 38.248
+        },
+        {
+          "w": "herramienta",
+          "start": 38.508,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 41.298,
+      "end": 42.138,
+      "words": [
+        {
+          "w": "¿Cuál",
+          "start": 41.298
+        },
+        {
+          "w": "es",
+          "start": 41.738
+        },
+        {
+          "w": "el",
+          "start": 41.778
+        },
+        {
+          "w": "proceso",
+          "start": 41.878,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 42.138,
+      "end": 42.838,
+      "words": [
+        {
+          "w": "que",
+          "start": 42.138
+        },
+        {
+          "w": "más",
+          "start": 42.318
+        },
+        {
+          "w": "te",
+          "start": 42.478
+        },
+        {
+          "w": "duele",
+          "start": 42.618,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 42.838,
+      "end": 43.358,
+      "words": [
+        {
+          "w": "en",
+          "start": 42.838
+        },
+        {
+          "w": "tu",
+          "start": 42.898
+        },
+        {
+          "w": "empresa?",
+          "start": 42.938
+        }
+      ]
+    },
+    {
+      "start": 43.358,
+      "end": 43.878,
+      "words": [
+        {
+          "w": "Te",
+          "start": 43.358
+        },
+        {
+          "w": "leo",
+          "start": 43.538
+        }
+      ]
+    },
+    {
+      "start": 43.878,
+      "end": 44.728,
+      "words": [
+        {
+          "w": "en",
+          "start": 43.878
+        },
+        {
+          "w": "los",
+          "start": 44.038
+        },
+        {
+          "w": "comentarios",
+          "start": 44.138
+        }
+      ]
+    }
+  ],
+  "caraYFuente": 0.51,
+  "musica": "reels/ia-empresa-herramienta/musica.wav",
+  "whooshAuto": false
+}

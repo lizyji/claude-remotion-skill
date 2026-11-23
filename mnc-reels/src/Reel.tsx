@@ -17,12 +17,16 @@ const dB = (x: number) => Math.pow(10, x / 20);
 const sfxAuto = (reel: ReelData) => {
   const out: { t: number; s: string }[] = [];
   for (const b of reel.broll) {
-    out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
+    if (reel.whooshAuto !== false) out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
     if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + 0.35 + i * (b.cada ?? 1.2), s: "pop" }));
     if (b.tipo === "contador") out.push({ t: b.start + 0.2 + 1.0, s: "tick" });
     if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta") out.push({ t: b.start + 0.1, s: "pop" });
   }
-  for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" ? "whoosh" : "bass" });
+  for (const g of reel.golpes) {
+    if (g.tipo === "cierre" || g.tipo === "pregunta") {
+      if (reel.whooshAuto !== false) out.push({ t: g.start, s: "whoosh" });
+    } else out.push({ t: g.start, s: "bass" });
+  }
   for (const p of reel.pasos ?? []) out.push({ t: p.start, s: "click" });
   return [...out, ...(reel.sfx ?? [])];
 };
@@ -45,7 +49,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
   const musicaVol = (fr: number) => {
     const ts = fr / fps;
     const enGolpe = activo(reel.golpes, ts);
-    const base = enGolpe && enGolpe.tipo !== "cierre" ? dB(-18) : dB(-23);
+    const base = enGolpe && enGolpe.tipo !== "cierre" && enGolpe.tipo !== "pregunta" ? dB(-18) : dB(-23);
     const salida = interpolate(fr, [durationInFrames - f(2), durationInFrames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
     const entrada = interpolate(fr, [0, f(0.5)], [0, 1], { extrapolateRight: "clamp" });
     return base * salida * entrada;
@@ -93,7 +97,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
 
       {/* 6 · Golpes a pantalla completa */}
       {reel.golpes.map((g, i) => (
-        <Sequence key={i} from={f(g.start)} durationInFrames={Math.max(1, (g.tipo === "cierre" ? durationInFrames : f(g.end)) - f(g.start))}>
+        <Sequence key={i} from={f(g.start)} durationInFrames={Math.max(1, (g.tipo === "cierre" || g.tipo === "pregunta" ? durationInFrames : f(g.end)) - f(g.start))}>
           <GolpeView g={g} palabras={reel.palabras} />
         </Sequence>
       ))}

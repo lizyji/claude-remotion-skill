@@ -169,10 +169,93 @@ const Cierre: React.FC<{ dur: number; start: number; palabras: Palabra[]; end: n
   );
 };
 
+// Palabras grandes en orden con flechas (p. ej. DOLOR → MEDIDA → HERRAMIENTA). Imagen para guardar.
+const Palabras: React.FC<{ dur: number; start: number; items: string[]; marcas?: number[] }> = ({ dur, start, items, marcas }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const size = Math.min(150, Math.floor(1080 / Math.max(...items.map((x) => x.length))));
+  return (
+    <Pantalla dur={dur}>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 10 }}>
+        {items.map((it, i) => {
+          const at = Math.round(((marcas?.[i] ?? start) - start) * fps);
+          const p = spring({ frame: frame - at, fps, config: theme.spring.golpe });
+          const pf = spring({ frame: frame - at + 4, fps, config: theme.spring.suave });
+          return (
+            <React.Fragment key={i}>
+              {i > 0 ? (
+                <svg width={90} height={90} viewBox="0 0 90 90" style={{ opacity: pf, transform: `translateY(${interpolate(pf, [0, 1], [-20, 0])}px)` }}>
+                  <path d="M45 8 V70 M20 48 L45 74 L70 48" fill="none" stroke={color.naranja} strokeWidth={12} strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
+              ) : null}
+              <div style={{ display: "flex", alignItems: "center", gap: 28, opacity: Math.min(1, p * 1.4), transform: `scale(${interpolate(p, [0, 1], [1.4, 1])})` }}>
+                <div style={{ width: 92, height: 92, borderRadius: 20, background: color.naranja, border: theme.card.border, color: color.blanco, fontFamily: font.titulo, fontWeight: 700, fontSize: 58, display: "flex", alignItems: "center", justifyContent: "center" }}>
+                  {i + 1}
+                </div>
+                <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: size, lineHeight: 1, color: color.negro, letterSpacing: "0.01em" }}>{it}</div>
+              </div>
+            </React.Fragment>
+          );
+        })}
+      </AbsoluteFill>
+    </Pantalla>
+  );
+};
+
+// Ícono de comentario: globo naranja con borde negro y tres puntos blancos
+export const IconoComentario: React.FC<{ size?: number }> = ({ size = 200 }) => (
+  <svg width={size} height={size} viewBox="0 0 200 200">
+    <path d="M30 40 Q30 22 48 22 H152 Q170 22 170 40 V122 Q170 140 152 140 H86 L50 176 V140 H48 Q30 140 30 122 Z" fill={color.naranja} stroke={color.negro} strokeWidth={6} strokeLinejoin="round" />
+    {[70, 100, 130].map((x) => (
+      <circle key={x} cx={x} cy={81} r={11} fill={color.blanco} />
+    ))}
+  </svg>
+);
+
+// Cierre con pregunta: fondo verde claro, texto negro, palabras que se iluminan, ícono de comentario.
+const Pregunta: React.FC<{ dur: number; start: number; end: number; texto: string; sub?: string; palabras: Palabra[] }> = ({ dur, start, end, texto, sub, palabras }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = start + frame / fps;
+  const tokens = texto.split(" ");
+  const tiempos = tiemposCierre(texto, palabras, start, end);
+  const ic = spring({ frame: frame - 3, fps, config: theme.spring.golpe });
+  const ultima = tiempos[tiempos.length - 1];
+  const subT = sub ? (palabras.find((p) => p.start > ultima && norm(p.w) === norm(sub.split(" ")[0]))?.start ?? ultima + 0.4) : 0;
+  const ps = spring({ frame: frame - Math.round((subT - start) * fps), fps, config: theme.spring.suave });
+  const wob = Math.sin(frame / 8) * 3;
+  return (
+    <Pantalla dur={dur + 10}>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", padding: "0 90px" }}>
+        <div style={{ transform: `scale(${ic}) rotate(${interpolate(ic, [0, 1], [-14, 0]) + wob}deg)`, marginBottom: 50 }}>
+          <IconoComentario size={220} />
+        </div>
+        <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "center", gap: "0 0.28em", fontFamily: font.titulo, fontWeight: 700, fontSize: 96, lineHeight: 1.2, textAlign: "center" }}>
+          {tokens.map((tk, i) => {
+            const on = interpolate(t, [tiempos[i] - 0.04, tiempos[i] + 0.12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+            return (
+              <span key={i} style={{ color: color.negro, opacity: 0.22 + 0.78 * on, transform: `scale(${1 + 0.06 * Math.sin(on * Math.PI)})`, display: "inline-block" }}>
+                {tk}
+              </span>
+            );
+          })}
+        </div>
+        {sub ? (
+          <div style={{ marginTop: 56, opacity: ps, transform: `translateY(${interpolate(ps, [0, 1], [30, 0])}px)`, background: color.negro, color: color.blanco, fontFamily: font.texto, fontWeight: 600, fontSize: 46, padding: "18px 44px", borderRadius: 999 }}>
+            {sub}
+          </div>
+        ) : null}
+      </AbsoluteFill>
+    </Pantalla>
+  );
+};
+
 export const GolpeView: React.FC<{ g: Golpe; palabras: Palabra[] }> = ({ g, palabras }) => {
   const { fps } = useVideoConfig();
   const dur = Math.round((g.end - g.start) * fps);
   if (g.tipo === "jugada") return <Jugada dur={dur} />;
+  if (g.tipo === "palabras") return <Palabras dur={dur} start={g.start} items={g.items} marcas={g.marcas} />;
+  if (g.tipo === "pregunta") return <Pregunta dur={dur} start={g.start} end={g.end} texto={g.texto} sub={g.sub} palabras={palabras} />;
   if (g.tipo === "numero") return <Numero dur={dur} valor={g.valor} etiqueta={g.etiqueta} fuente={g.fuente} />;
   return <Cierre dur={dur} start={g.start} end={g.end} palabras={palabras} />;
 };

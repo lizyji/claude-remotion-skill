@@ -22,12 +22,20 @@ export type BRoll =
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
-  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
+  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente }
+  // Animación a medida de un reel (src/reels/<slug>.tsx). marcas = instantes (s, tiempo del reel)
+  // de las palabras de Manuel donde entra cada elemento.
+  | { tipo: "custom"; start: number; end: number; id: string; marcas?: number[]; fuente?: Fuente };
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
   | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
-  | { tipo: "cierre"; start: number; end: number };
+  | { tipo: "cierre"; start: number; end: number }
+  // Palabras grandes en orden (imagen para guardar). marcas = cuándo se ilumina cada una.
+  | { tipo: "palabras"; start: number; end: number; items: string[]; marcas?: number[] }
+  // Cierre con pregunta para comentarios (cuando el video no lleva la frase de firma).
+  // Las palabras de "texto" se iluminan según las dice Manuel; "sub" va abajo, más chico.
+  | { tipo: "pregunta"; start: number; end: number; texto: string; sub?: string };
 
 export type Reel = {
   slug: string;
@@ -42,6 +50,8 @@ export type Reel = {
   broll: BRoll[];
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
+  // false: sin whoosh automático en cada cambio de clip (se ponen a mano en "sfx")
+  whooshAuto?: boolean;
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
   portada?: { frase?: string; cuadro: number };
 };
