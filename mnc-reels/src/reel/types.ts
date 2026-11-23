@@ -22,12 +22,16 @@ export type BRoll =
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
-  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
+  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente }
+  // Animación a la medida (src/components/Anims.tsx). marcas: instantes (s del reel) de las
+  // palabras de Manuel con las que se sincroniza cada elemento.
+  | { tipo: "anim"; start: number; end: number; anim: string; marcas?: number[]; fuente?: Fuente };
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
   | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
-  | { tipo: "cierre"; start: number; end: number };
+  | { tipo: "cierre"; start: number; end: number }
+  | { tipo: "brujula"; start: number; end: number };
 
 export type Reel = {
   slug: string;
@@ -43,6 +47,10 @@ export type Reel = {
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
+  // Si existe, reemplaza los whoosh automáticos: solo suenan en estos instantes.
+  whoosh?: number[];
+  // Nombre de cada B-roll para exportarlo suelto (mismo orden que broll), p. ej. "T4_B9_tres_permisos"
+  clips?: string[];
   portada?: { frase?: string; cuadro: number };
 };
 

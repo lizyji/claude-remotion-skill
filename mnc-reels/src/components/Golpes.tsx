@@ -3,6 +3,7 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { theme } from "../theme";
 import { FRASE_CIERRE, type Golpe, type Palabra } from "../reel/types";
 import { FuentePie } from "./Base";
+import { BrujulaGolpe } from "./Anims";
 
 const { color, font } = theme;
 
@@ -173,6 +174,7 @@ export const GolpeView: React.FC<{ g: Golpe; palabras: Palabra[] }> = ({ g, pala
   const { fps } = useVideoConfig();
   const dur = Math.round((g.end - g.start) * fps);
   if (g.tipo === "jugada") return <Jugada dur={dur} />;
+  if (g.tipo === "brujula") return <Pantalla dur={dur}><BrujulaGolpe /></Pantalla>;
   if (g.tipo === "numero") return <Numero dur={dur} valor={g.valor} etiqueta={g.etiqueta} fuente={g.fuente} />;
   return <Cierre dur={dur} start={g.start} end={g.end} palabras={palabras} />;
 };

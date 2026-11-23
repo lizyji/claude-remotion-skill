@@ -30,8 +30,15 @@ def extraer_audio(video, desde=None, hasta=None):
     return tmp
 
 
+def cargar_wav(wav):
+    """WAV 16 kHz mono s16 → float32 (evita depender de la versión de PyAV)."""
+    import wave, numpy as np
+    with wave.open(str(wav)) as f:
+        return np.frombuffer(f.readframes(f.getnframes()), dtype=np.int16).astype(np.float32) / 32768.0
+
+
 def transcribir(modelo, wav, offset=0.0):
-    segs, _ = modelo.transcribe(str(wav), language="es", word_timestamps=True, vad_filter=True,
+    segs, _ = modelo.transcribe(cargar_wav(wav), language="es", word_timestamps=True, vad_filter=True,
                                 initial_prompt="Manuel NoCode habla de IA, Claude, Airtable, Make, automatización, Grok Bot.")
     out = []
     for s in segs:
