@@ -1,0 +1,2080 @@
+{
+  "broll": [
+    {
+      "tipo": "logo",
+      "id": "T1_B1_anthropic",
+      "start": 0.0,
+      "end": 3.247,
+      "src": "reels/anthropic-ipo/anthropic_logo.png",
+      "etiqueta": "Salió a la bolsa",
+      "fuente": "Fuente: Anthropic · anthropic.com"
+    },
+    {
+      "tipo": "texto",
+      "id": "T1_B2_valor",
+      "start": 3.287,
+      "end": 6.667,
+      "arriba": "Podría valer hasta",
+      "titulo": "1.4 billones",
+      "abajo": "de dólares (USD)"
+    },
+    {
+      "tipo": "imagen",
+      "id": "T2_B3_titular",
+      "start": 6.707,
+      "end": 9.607,
+      "src": "reels/anthropic-ipo/decrypt_titular.png",
+      "fit": "contain",
+      "zoom": [
+        1.0,
+        1.05
+      ],
+      "foco": [
+        50,
+        25
+      ],
+      "fuente": "Fuente: Decrypt, 10 nov 2026 · decrypt.co"
+    },
+    {
+      "tipo": "cotizacion",
+      "id": "T2_B4_nasdaq_ant",
+      "start": 9.647,
+      "end": 12.267,
+      "mercado": "Nasdaq",
+      "clave": "ANT",
+      "dato": "70–78 USD por acción",
+      "fuente": "Fuente: Decrypt, 10 nov 2026 · decrypt.co"
+    },
+    {
+      "tipo": "digitos",
+      "id": "T2_B5_billones",
+      "start": 12.307,
+      "end": 17.367,
+      "arriba": "1.4 billones =",
+      "valor": "1,400,000,000,000",
+      "etiqueta": "dólares",
+      "desde": 2.57
+    },
+    {
+      "tipo": "tarjeta",
+      "id": "T2_B6_actualizacion",
+      "start": 17.407,
+      "end": 19.812,
+      "pildora": "Actualización",
+      "titulo": "Salió a 83 USD por acción",
+      "texto": "18 nov 2026",
+      "fuente": "Fuente: The Next Web / Bloomberg, 18 nov 2026 · thenextweb.com"
+    },
+    {
+      "tipo": "contador",
+      "id": "T3_B7_ventas",
+      "start": 19.852,
+      "end": 23.666,
+      "valor": 16300,
+      "sufijo": "",
+      "etiqueta": "millones USD en 6 meses",
+      "desde": 0.654,
+      "fuente": "Fuente: S-1 de Anthropic, 26 oct 2026 · vía TheWrap"
+    },
+    {
+      "tipo": "tarjeta",
+      "id": "T3_B8_perdida",
+      "start": 23.706,
+      "end": 26.896,
+      "pildora": "Pérdida",
+      "tono": "negro",
+      "titulo": "80,700 millones USD",
+      "texto": "72,400 millones son ajuste contable (no salió dinero)",
+      "textoEn": 2.38,
+      "fuente": "Fuente: S-1 de Anthropic, 26 oct 2026 · vía TheWrap"
+    },
+    {
+      "tipo": "aviso",
+      "id": "T3_B9_aviso",
+      "start": 26.936,
+      "end": 28.864,
+      "texto": "No es recomendación de inversión"
+    },
+    {
+      "tipo": "tacha",
+      "id": "T4_B11_cuanto_vale",
+      "start": 30.785,
+      "end": 34.798,
+      "pildora": "Wall Street ya no pregunta",
+      "antes": "¿Sirve la IA?",
+      "despues": "¿Cuánto vale?",
+      "antesEn": 0.1,
+      "tachaEn": 2.273
+    },
+    {
+      "tipo": "mosaico",
+      "id": "T4_B12_empresas",
+      "start": 34.838,
+      "end": 39.128,
+      "etiqueta": "Miles de empresas que ya pagan",
+      "n": 12,
+      "cada": 0.197
+    },
+    {
+      "tipo": "tacha",
+      "id": "T5_B13_en_que_parte",
+      "start": 39.168,
+      "end": 44.42,
+      "pildora": "La pregunta para tu negocio",
+      "antes": "¿Si uso IA?",
+      "despues": "¿En qué parte empiezo?",
+      "antesEn": 2.132,
+      "tachaEn": 3.352
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "jugada",
+      "id": "T4_B10_volo_la_cabeza",
+      "start": 28.564,
+      "end": 30.745,
+      "arriba": "Esto es lo que me",
+      "abajo": "voló la cabeza"
+    },
+    {
+      "tipo": "cierre",
+      "id": "T5_B14_pregunta",
+      "start": 44.12,
+      "end": 46.6,
+      "frase": "¿Tú en qué parte empezarías?",
+      "lineas": [
+        3,
+        1,
+        1
+      ],
+      "clave": [
+        "qué",
+        "parte"
+      ],
+      "nota": "Te leo en los comentarios"
+    }
+  ],
+  "pasos": [],
+  "sfx": [
+    {
+      "t": 6.607,
+      "s": "whoosh"
+    },
+    {
+      "t": 19.752,
+      "s": "whoosh"
+    },
+    {
+      "t": 39.068,
+      "s": "whoosh"
+    }
+  ],
+  "slug": "anthropic-ipo",
+  "duracion": 46.6,
+  "manuel": "reels/anthropic-ipo/manuel.mp4",
+  "cortes": [
+    19.772,
+    26.856,
+    30.705,
+    39.088
+  ],
+  "palabras": [
+    {
+      "w": "Anthropic,",
+      "start": 0.08,
+      "end": 0.647
+    },
+    {
+      "w": "la",
+      "start": 0.827,
+      "end": 1.027
+    },
+    {
+      "w": "empresa",
+      "start": 1.027,
+      "end": 1.287
+    },
+    {
+      "w": "que",
+      "start": 1.287,
+      "end": 1.507
+    },
+    {
+      "w": "hace",
+      "start": 1.507,
+      "end": 1.647
+    },
+    {
+      "w": "Claude,",
+      "start": 1.647,
+      "end": 1.947
+    },
+    {
+      "w": "acaba",
+      "start": 2.047,
+      "end": 2.367
+    },
+    {
+      "w": "de",
+      "start": 2.367,
+      "end": 2.607
+    },
+    {
+      "w": "salir",
+      "start": 2.607,
+      "end": 2.787
+    },
+    {
+      "w": "a",
+      "start": 2.787,
+      "end": 2.887
+    },
+    {
+      "w": "la",
+      "start": 2.887,
+      "end": 2.947
+    },
+    {
+      "w": "bolsa",
+      "start": 2.947,
+      "end": 3.287
+    },
+    {
+      "w": "y",
+      "start": 3.287,
+      "end": 3.467
+    },
+    {
+      "w": "podría",
+      "start": 3.467,
+      "end": 3.707
+    },
+    {
+      "w": "valer",
+      "start": 3.707,
+      "end": 4.107
+    },
+    {
+      "w": "hasta",
+      "start": 4.107,
+      "end": 4.347
+    },
+    {
+      "w": "1.4",
+      "start": 4.347,
+      "end": 5.147
+    },
+    {
+      "w": "billones",
+      "start": 5.147,
+      "end": 5.687
+    },
+    {
+      "w": "de",
+      "start": 5.687,
+      "end": 5.867
+    },
+    {
+      "w": "dólares.",
+      "start": 5.867,
+      "end": 6.087
+    },
+    {
+      "w": "Puso",
+      "start": 6.707,
+      "end": 7.147
+    },
+    {
+      "w": "el",
+      "start": 7.147,
+      "end": 7.287
+    },
+    {
+      "w": "precio",
+      "start": 7.287,
+      "end": 7.607
+    },
+    {
+      "w": "entre",
+      "start": 7.607,
+      "end": 7.927
+    },
+    {
+      "w": "70",
+      "start": 7.927,
+      "end": 8.307
+    },
+    {
+      "w": "y",
+      "start": 8.307,
+      "end": 8.447
+    },
+    {
+      "w": "78",
+      "start": 8.447,
+      "end": 8.747
+    },
+    {
+      "w": "dólares",
+      "start": 8.747,
+      "end": 9.167
+    },
+    {
+      "w": "por",
+      "start": 9.167,
+      "end": 9.407
+    },
+    {
+      "w": "acción",
+      "start": 9.407,
+      "end": 9.647
+    },
+    {
+      "w": "y",
+      "start": 9.647,
+      "end": 9.847
+    },
+    {
+      "w": "va",
+      "start": 9.847,
+      "end": 9.947
+    },
+    {
+      "w": "a",
+      "start": 9.947,
+      "end": 9.987
+    },
+    {
+      "w": "cotizar",
+      "start": 9.987,
+      "end": 10.287
+    },
+    {
+      "w": "en",
+      "start": 10.287,
+      "end": 10.407
+    },
+    {
+      "w": "el",
+      "start": 10.407,
+      "end": 10.507
+    },
+    {
+      "w": "Nasdaq",
+      "start": 10.507,
+      "end": 10.907
+    },
+    {
+      "w": "con",
+      "start": 10.907,
+      "end": 11.067
+    },
+    {
+      "w": "la",
+      "start": 11.067,
+      "end": 11.147
+    },
+    {
+      "w": "clave",
+      "start": 11.147,
+      "end": 11.447
+    },
+    {
+      "w": "ANT.",
+      "start": 11.447,
+      "end": 11.887
+    },
+    {
+      "w": "Y",
+      "start": 12.307,
+      "end": 12.747
+    },
+    {
+      "w": "para",
+      "start": 12.747,
+      "end": 12.887
+    },
+    {
+      "w": "que",
+      "start": 12.887,
+      "end": 13.007
+    },
+    {
+      "w": "te",
+      "start": 13.007,
+      "end": 13.107
+    },
+    {
+      "w": "des",
+      "start": 13.107,
+      "end": 13.287
+    },
+    {
+      "w": "una",
+      "start": 13.287,
+      "end": 13.387
+    },
+    {
+      "w": "idea,",
+      "start": 13.387,
+      "end": 13.547
+    },
+    {
+      "w": "1.4",
+      "start": 13.667,
+      "end": 14.347
+    },
+    {
+      "w": "billones",
+      "start": 14.347,
+      "end": 14.787
+    },
+    {
+      "w": "es",
+      "start": 14.787,
+      "end": 15.127
+    },
+    {
+      "w": "1,400,000",
+      "start": 15.127,
+      "end": 16.547
+    },
+    {
+      "w": "millones",
+      "start": 16.547,
+      "end": 16.687
+    },
+    {
+      "w": "de",
+      "start": 16.687,
+      "end": 17.067
+    },
+    {
+      "w": "dólares,",
+      "start": 17.067,
+      "end": 17.247
+    },
+    {
+      "w": "pero",
+      "start": 17.407,
+      "end": 17.627
+    },
+    {
+      "w": "el",
+      "start": 17.627,
+      "end": 17.767
+    },
+    {
+      "w": "dato",
+      "start": 17.767,
+      "end": 17.927
+    },
+    {
+      "w": "que",
+      "start": 17.927,
+      "end": 18.107
+    },
+    {
+      "w": "a",
+      "start": 18.107,
+      "end": 18.227
+    },
+    {
+      "w": "mí",
+      "start": 18.227,
+      "end": 18.267
+    },
+    {
+      "w": "me",
+      "start": 18.267,
+      "end": 18.387
+    },
+    {
+      "w": "importa",
+      "start": 18.387,
+      "end": 18.667
+    },
+    {
+      "w": "no",
+      "start": 18.667,
+      "end": 19.027
+    },
+    {
+      "w": "es",
+      "start": 19.027,
+      "end": 19.207
+    },
+    {
+      "w": "el",
+      "start": 19.207,
+      "end": 19.347
+    },
+    {
+      "w": "precio.",
+      "start": 19.347,
+      "end": 19.627
+    },
+    {
+      "w": "Es",
+      "start": 19.852,
+      "end": 20.086
+    },
+    {
+      "w": "este:",
+      "start": 20.086,
+      "end": 20.386,
+      "corregida": true
+    },
+    {
+      "w": "en",
+      "start": 20.506,
+      "end": 20.726
+    },
+    {
+      "w": "solo",
+      "start": 20.726,
+      "end": 20.926
+    },
+    {
+      "w": "6",
+      "start": 20.926,
+      "end": 21.166
+    },
+    {
+      "w": "meses",
+      "start": 21.166,
+      "end": 21.466
+    },
+    {
+      "w": "vendió",
+      "start": 21.466,
+      "end": 21.886
+    },
+    {
+      "w": "más",
+      "start": 21.886,
+      "end": 22.026
+    },
+    {
+      "w": "de",
+      "start": 22.026,
+      "end": 22.166
+    },
+    {
+      "w": "16,000",
+      "start": 22.166,
+      "end": 22.946
+    },
+    {
+      "w": "millones",
+      "start": 22.946,
+      "end": 23.146
+    },
+    {
+      "w": "de",
+      "start": 23.146,
+      "end": 23.366
+    },
+    {
+      "w": "dólares.",
+      "start": 23.366,
+      "end": 23.566
+    },
+    {
+      "w": "Ojo,",
+      "start": 23.706,
+      "end": 24.146
+    },
+    {
+      "w": "también",
+      "start": 24.226,
+      "end": 24.486
+    },
+    {
+      "w": "reportó",
+      "start": 24.486,
+      "end": 24.986
+    },
+    {
+      "w": "pérdidas",
+      "start": 24.986,
+      "end": 25.286
+    },
+    {
+      "w": "enormes",
+      "start": 25.286,
+      "end": 25.726
+    },
+    {
+      "w": "en",
+      "start": 25.726,
+      "end": 25.946
+    },
+    {
+      "w": "buena",
+      "start": 25.946,
+      "end": 26.106
+    },
+    {
+      "w": "parte",
+      "start": 26.106,
+      "end": 26.386
+    },
+    {
+      "w": "contables.",
+      "start": 26.386,
+      "end": 26.826,
+      "corregida": true
+    },
+    {
+      "w": "Ojo,",
+      "start": 26.936,
+      "end": 27.224,
+      "corregida": true
+    },
+    {
+      "w": "y",
+      "start": 27.224,
+      "end": 27.324
+    },
+    {
+      "w": "esto",
+      "start": 27.324,
+      "end": 27.484
+    },
+    {
+      "w": "no",
+      "start": 27.484,
+      "end": 27.584
+    },
+    {
+      "w": "es",
+      "start": 27.584,
+      "end": 27.664
+    },
+    {
+      "w": "recomendación",
+      "start": 27.664,
+      "end": 28.144
+    },
+    {
+      "w": "de",
+      "start": 28.144,
+      "end": 28.244
+    },
+    {
+      "w": "inversión.",
+      "start": 28.244,
+      "end": 28.564,
+      "corregida": true
+    },
+    {
+      "w": "Y",
+      "start": 28.564,
+      "end": 28.804
+    },
+    {
+      "w": "a",
+      "start": 28.804,
+      "end": 28.964
+    },
+    {
+      "w": "mí",
+      "start": 28.964,
+      "end": 29.124
+    },
+    {
+      "w": "esto",
+      "start": 29.124,
+      "end": 29.604
+    },
+    {
+      "w": "es",
+      "start": 29.604,
+      "end": 29.684
+    },
+    {
+      "w": "lo",
+      "start": 29.684,
+      "end": 29.744
+    },
+    {
+      "w": "que",
+      "start": 29.744,
+      "end": 29.864
+    },
+    {
+      "w": "me",
+      "start": 29.864,
+      "end": 29.984
+    },
+    {
+      "w": "voló",
+      "start": 29.984,
+      "end": 30.184
+    },
+    {
+      "w": "la",
+      "start": 30.184,
+      "end": 30.264
+    },
+    {
+      "w": "cabeza.",
+      "start": 30.264,
+      "end": 30.484
+    },
+    {
+      "w": "Wall",
+      "start": 30.785,
+      "end": 31.018
+    },
+    {
+      "w": "Street",
+      "start": 31.018,
+      "end": 31.318
+    },
+    {
+      "w": "ya",
+      "start": 31.318,
+      "end": 31.518
+    },
+    {
+      "w": "no",
+      "start": 31.518,
+      "end": 31.678
+    },
+    {
+      "w": "está",
+      "start": 31.678,
+      "end": 31.798
+    },
+    {
+      "w": "preguntando",
+      "start": 31.798,
+      "end": 32.278
+    },
+    {
+      "w": "si",
+      "start": 32.278,
+      "end": 32.398
+    },
+    {
+      "w": "la",
+      "start": 32.398,
+      "end": 32.558
+    },
+    {
+      "w": "IA",
+      "start": 32.558,
+      "end": 32.698
+    },
+    {
+      "w": "sirve,",
+      "start": 32.698,
+      "end": 33.018
+    },
+    {
+      "w": "está",
+      "start": 33.058,
+      "end": 33.298
+    },
+    {
+      "w": "preguntando",
+      "start": 33.298,
+      "end": 33.998
+    },
+    {
+      "w": "cuánto",
+      "start": 33.998,
+      "end": 34.578
+    },
+    {
+      "w": "vale.",
+      "start": 34.578,
+      "end": 34.718
+    },
+    {
+      "w": "Y",
+      "start": 34.838,
+      "end": 35.178
+    },
+    {
+      "w": "esas",
+      "start": 35.178,
+      "end": 35.398
+    },
+    {
+      "w": "ventas",
+      "start": 35.398,
+      "end": 35.858
+    },
+    {
+      "w": "salen",
+      "start": 35.858,
+      "end": 36.298
+    },
+    {
+      "w": "de",
+      "start": 36.298,
+      "end": 36.398
+    },
+    {
+      "w": "miles",
+      "start": 36.398,
+      "end": 36.658
+    },
+    {
+      "w": "de",
+      "start": 36.658,
+      "end": 36.838
+    },
+    {
+      "w": "empresas",
+      "start": 36.838,
+      "end": 37.058
+    },
+    {
+      "w": "que",
+      "start": 37.058,
+      "end": 37.358
+    },
+    {
+      "w": "ya",
+      "start": 37.358,
+      "end": 37.518
+    },
+    {
+      "w": "la",
+      "start": 37.518,
+      "end": 37.658
+    },
+    {
+      "w": "pagan",
+      "start": 37.658,
+      "end": 37.918
+    },
+    {
+      "w": "para",
+      "start": 37.918,
+      "end": 38.178
+    },
+    {
+      "w": "trabajar",
+      "start": 38.178,
+      "end": 38.538
+    },
+    {
+      "w": "con",
+      "start": 38.538,
+      "end": 38.818
+    },
+    {
+      "w": "ella.",
+      "start": 38.818,
+      "end": 38.987
+    },
+    {
+      "w": "Entonces,",
+      "start": 39.168,
+      "end": 39.44,
+      "corregida": true
+    },
+    {
+      "w": "esto",
+      "start": 39.44,
+      "end": 39.6
+    },
+    {
+      "w": "nos",
+      "start": 39.6,
+      "end": 39.72
+    },
+    {
+      "w": "deja",
+      "start": 39.72,
+      "end": 39.9
+    },
+    {
+      "w": "pensando",
+      "start": 39.9,
+      "end": 40.18
+    },
+    {
+      "w": "en",
+      "start": 40.18,
+      "end": 40.38
+    },
+    {
+      "w": "la",
+      "start": 40.38,
+      "end": 40.44
+    },
+    {
+      "w": "pregunta",
+      "start": 40.44,
+      "end": 40.7
+    },
+    {
+      "w": "para",
+      "start": 40.7,
+      "end": 40.92
+    },
+    {
+      "w": "tu",
+      "start": 40.92,
+      "end": 41.06
+    },
+    {
+      "w": "negocio:",
+      "start": 41.06,
+      "end": 41.4,
+      "corregida": true
+    },
+    {
+      "w": "ya",
+      "start": 41.4,
+      "end": 41.64
+    },
+    {
+      "w": "no",
+      "start": 41.64,
+      "end": 41.82
+    },
+    {
+      "w": "es",
+      "start": 41.82,
+      "end": 41.96
+    },
+    {
+      "w": "si",
+      "start": 41.96,
+      "end": 42.1
+    },
+    {
+      "w": "usar IA,",
+      "start": 42.1,
+      "end": 42.42,
+      "corregida": true
+    },
+    {
+      "w": "es",
+      "start": 42.52,
+      "end": 42.66
+    },
+    {
+      "w": "en",
+      "start": 42.66,
+      "end": 42.88
+    },
+    {
+      "w": "qué",
+      "start": 42.88,
+      "end": 43.0
+    },
+    {
+      "w": "parte",
+      "start": 43.0,
+      "end": 43.32
+    },
+    {
+      "w": "la",
+      "start": 43.32,
+      "end": 43.48
+    },
+    {
+      "w": "vas",
+      "start": 43.48,
+      "end": 43.52
+    },
+    {
+      "w": "a",
+      "start": 43.52,
+      "end": 43.58
+    },
+    {
+      "w": "usar",
+      "start": 43.58,
+      "end": 43.72
+    },
+    {
+      "w": "primero.",
+      "start": 43.72,
+      "end": 43.96
+    },
+    {
+      "w": "¿Tú",
+      "start": 44.12,
+      "end": 44.34
+    },
+    {
+      "w": "en",
+      "start": 44.34,
+      "end": 44.42
+    },
+    {
+      "w": "qué",
+      "start": 44.42,
+      "end": 44.46
+    },
+    {
+      "w": "parte",
+      "start": 44.46,
+      "end": 44.76
+    },
+    {
+      "w": "empezarías?",
+      "start": 44.76,
+      "end": 45.34
+    },
+    {
+      "w": "Te",
+      "start": 45.42,
+      "end": 45.56
+    },
+    {
+      "w": "leo",
+      "start": 45.56,
+      "end": 45.74
+    },
+    {
+      "w": "en",
+      "start": 45.74,
+      "end": 45.8
+    },
+    {
+      "w": "los",
+      "start": 45.8,
+      "end": 45.88
+    },
+    {
+      "w": "comentarios.",
+      "start": 45.88,
+      "end": 46.24
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.08,
+      "end": 1.287,
+      "words": [
+        {
+          "w": "Anthropic",
+          "start": 0.08,
+          "key": true
+        },
+        {
+          "w": "la",
+          "start": 0.827
+        },
+        {
+          "w": "empresa",
+          "start": 1.027
+        }
+      ]
+    },
+    {
+      "start": 1.287,
+      "end": 2.047,
+      "words": [
+        {
+          "w": "que",
+          "start": 1.287
+        },
+        {
+          "w": "hace",
+          "start": 1.507
+        },
+        {
+          "w": "Claude",
+          "start": 1.647,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 2.047,
+      "end": 2.787,
+      "words": [
+        {
+          "w": "acaba",
+          "start": 2.047
+        },
+        {
+          "w": "de",
+          "start": 2.367
+        },
+        {
+          "w": "salir",
+          "start": 2.607
+        }
+      ]
+    },
+    {
+      "start": 2.787,
+      "end": 3.287,
+      "words": [
+        {
+          "w": "a",
+          "start": 2.787
+        },
+        {
+          "w": "la",
+          "start": 2.887
+        },
+        {
+          "w": "bolsa",
+          "start": 2.947,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 3.287,
+      "end": 4.107,
+      "words": [
+        {
+          "w": "y",
+          "start": 3.287
+        },
+        {
+          "w": "podría",
+          "start": 3.467
+        },
+        {
+          "w": "valer",
+          "start": 3.707
+        }
+      ]
+    },
+    {
+      "start": 4.107,
+      "end": 5.687,
+      "words": [
+        {
+          "w": "hasta",
+          "start": 4.107
+        },
+        {
+          "w": "1.4",
+          "start": 4.347,
+          "key": true
+        },
+        {
+          "w": "billones",
+          "start": 5.147,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 5.687,
+      "end": 6.287,
+      "words": [
+        {
+          "w": "de",
+          "start": 5.687
+        },
+        {
+          "w": "dólares",
+          "start": 5.867
+        }
+      ]
+    },
+    {
+      "start": 6.707,
+      "end": 7.607,
+      "words": [
+        {
+          "w": "Puso",
+          "start": 6.707
+        },
+        {
+          "w": "el",
+          "start": 7.147
+        },
+        {
+          "w": "precio",
+          "start": 7.287
+        }
+      ]
+    },
+    {
+      "start": 7.607,
+      "end": 8.747,
+      "words": [
+        {
+          "w": "entre",
+          "start": 7.607
+        },
+        {
+          "w": "70",
+          "start": 7.927,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 8.307
+        },
+        {
+          "w": "78",
+          "start": 8.447,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.747,
+      "end": 9.647,
+      "words": [
+        {
+          "w": "dólares",
+          "start": 8.747
+        },
+        {
+          "w": "por",
+          "start": 9.167
+        },
+        {
+          "w": "acción",
+          "start": 9.407
+        }
+      ]
+    },
+    {
+      "start": 9.647,
+      "end": 10.287,
+      "words": [
+        {
+          "w": "y",
+          "start": 9.647
+        },
+        {
+          "w": "va",
+          "start": 9.847
+        },
+        {
+          "w": "a",
+          "start": 9.947
+        },
+        {
+          "w": "cotizar",
+          "start": 9.987
+        }
+      ]
+    },
+    {
+      "start": 10.287,
+      "end": 10.907,
+      "words": [
+        {
+          "w": "en",
+          "start": 10.287
+        },
+        {
+          "w": "el",
+          "start": 10.407
+        },
+        {
+          "w": "Nasdaq",
+          "start": 10.507,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 10.907,
+      "end": 12.307,
+      "words": [
+        {
+          "w": "con",
+          "start": 10.907
+        },
+        {
+          "w": "la",
+          "start": 11.067
+        },
+        {
+          "w": "clave",
+          "start": 11.147
+        },
+        {
+          "w": "ANT",
+          "start": 11.447,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 12.307,
+      "end": 13.287,
+      "words": [
+        {
+          "w": "Y",
+          "start": 12.307
+        },
+        {
+          "w": "para",
+          "start": 12.747
+        },
+        {
+          "w": "que",
+          "start": 12.887
+        },
+        {
+          "w": "te",
+          "start": 13.007
+        },
+        {
+          "w": "des",
+          "start": 13.107
+        }
+      ]
+    },
+    {
+      "start": 13.287,
+      "end": 13.667,
+      "words": [
+        {
+          "w": "una",
+          "start": 13.287
+        },
+        {
+          "w": "idea",
+          "start": 13.387
+        }
+      ]
+    },
+    {
+      "start": 13.667,
+      "end": 15.127,
+      "words": [
+        {
+          "w": "1.4",
+          "start": 13.667,
+          "key": true
+        },
+        {
+          "w": "billones",
+          "start": 14.347,
+          "key": true
+        },
+        {
+          "w": "es",
+          "start": 14.787
+        }
+      ]
+    },
+    {
+      "start": 15.127,
+      "end": 16.547,
+      "words": [
+        {
+          "w": "1,400,000",
+          "start": 15.127,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 16.547,
+      "end": 17.407,
+      "words": [
+        {
+          "w": "millones",
+          "start": 16.547
+        },
+        {
+          "w": "de",
+          "start": 16.687
+        },
+        {
+          "w": "dólares",
+          "start": 17.067
+        }
+      ]
+    },
+    {
+      "start": 17.407,
+      "end": 17.927,
+      "words": [
+        {
+          "w": "pero",
+          "start": 17.407
+        },
+        {
+          "w": "el",
+          "start": 17.627
+        },
+        {
+          "w": "dato",
+          "start": 17.767,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 17.927,
+      "end": 18.667,
+      "words": [
+        {
+          "w": "que",
+          "start": 17.927
+        },
+        {
+          "w": "a",
+          "start": 18.107
+        },
+        {
+          "w": "mí",
+          "start": 18.227
+        },
+        {
+          "w": "me",
+          "start": 18.267
+        },
+        {
+          "w": "importa",
+          "start": 18.387
+        }
+      ]
+    },
+    {
+      "start": 18.667,
+      "end": 19.852,
+      "words": [
+        {
+          "w": "no",
+          "start": 18.667
+        },
+        {
+          "w": "es",
+          "start": 19.027
+        },
+        {
+          "w": "el",
+          "start": 19.207
+        },
+        {
+          "w": "precio",
+          "start": 19.347,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 19.852,
+      "end": 20.506,
+      "words": [
+        {
+          "w": "Es",
+          "start": 19.852
+        },
+        {
+          "w": "este",
+          "start": 20.086
+        }
+      ]
+    },
+    {
+      "start": 20.506,
+      "end": 21.466,
+      "words": [
+        {
+          "w": "en",
+          "start": 20.506
+        },
+        {
+          "w": "solo",
+          "start": 20.726
+        },
+        {
+          "w": "6",
+          "start": 20.926,
+          "key": true
+        },
+        {
+          "w": "meses",
+          "start": 21.166,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 21.466,
+      "end": 22.166,
+      "words": [
+        {
+          "w": "vendió",
+          "start": 21.466
+        },
+        {
+          "w": "más",
+          "start": 21.886
+        },
+        {
+          "w": "de",
+          "start": 22.026
+        }
+      ]
+    },
+    {
+      "start": 22.166,
+      "end": 23.146,
+      "words": [
+        {
+          "w": "16,000",
+          "start": 22.166,
+          "key": true
+        },
+        {
+          "w": "millones",
+          "start": 22.946,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 23.146,
+      "end": 23.706,
+      "words": [
+        {
+          "w": "de",
+          "start": 23.146
+        },
+        {
+          "w": "dólares",
+          "start": 23.366
+        }
+      ]
+    },
+    {
+      "start": 23.706,
+      "end": 24.986,
+      "words": [
+        {
+          "w": "Ojo",
+          "start": 23.706
+        },
+        {
+          "w": "también",
+          "start": 24.226
+        },
+        {
+          "w": "reportó",
+          "start": 24.486
+        }
+      ]
+    },
+    {
+      "start": 24.986,
+      "end": 25.726,
+      "words": [
+        {
+          "w": "pérdidas",
+          "start": 24.986,
+          "key": true
+        },
+        {
+          "w": "enormes",
+          "start": 25.286
+        }
+      ]
+    },
+    {
+      "start": 25.726,
+      "end": 26.386,
+      "words": [
+        {
+          "w": "en",
+          "start": 25.726
+        },
+        {
+          "w": "buena",
+          "start": 25.946
+        },
+        {
+          "w": "parte",
+          "start": 26.106
+        }
+      ]
+    },
+    {
+      "start": 26.386,
+      "end": 26.936,
+      "words": [
+        {
+          "w": "contables",
+          "start": 26.386,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 26.936,
+      "end": 27.664,
+      "words": [
+        {
+          "w": "Ojo",
+          "start": 26.936
+        },
+        {
+          "w": "y",
+          "start": 27.224
+        },
+        {
+          "w": "esto",
+          "start": 27.324
+        },
+        {
+          "w": "no",
+          "start": 27.484
+        },
+        {
+          "w": "es",
+          "start": 27.584
+        }
+      ]
+    },
+    {
+      "start": 27.664,
+      "end": 28.144,
+      "words": [
+        {
+          "w": "recomendación",
+          "start": 27.664,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 28.144,
+      "end": 28.564,
+      "words": [
+        {
+          "w": "de",
+          "start": 28.144
+        },
+        {
+          "w": "inversión",
+          "start": 28.244,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 28.564,
+      "end": 29.604,
+      "words": [
+        {
+          "w": "Y",
+          "start": 28.564
+        },
+        {
+          "w": "a",
+          "start": 28.804
+        },
+        {
+          "w": "mí",
+          "start": 28.964
+        },
+        {
+          "w": "esto",
+          "start": 29.124
+        }
+      ]
+    },
+    {
+      "start": 29.604,
+      "end": 30.184,
+      "words": [
+        {
+          "w": "es",
+          "start": 29.604
+        },
+        {
+          "w": "lo",
+          "start": 29.684
+        },
+        {
+          "w": "que",
+          "start": 29.744
+        },
+        {
+          "w": "me",
+          "start": 29.864
+        },
+        {
+          "w": "voló",
+          "start": 29.984
+        }
+      ]
+    },
+    {
+      "start": 30.184,
+      "end": 30.785,
+      "words": [
+        {
+          "w": "la",
+          "start": 30.184
+        },
+        {
+          "w": "cabeza",
+          "start": 30.264,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 30.785,
+      "end": 31.678,
+      "words": [
+        {
+          "w": "Wall",
+          "start": 30.785,
+          "key": true
+        },
+        {
+          "w": "Street",
+          "start": 31.018,
+          "key": true
+        },
+        {
+          "w": "ya",
+          "start": 31.318
+        },
+        {
+          "w": "no",
+          "start": 31.518
+        }
+      ]
+    },
+    {
+      "start": 31.678,
+      "end": 32.278,
+      "words": [
+        {
+          "w": "está",
+          "start": 31.678
+        },
+        {
+          "w": "preguntando",
+          "start": 31.798
+        }
+      ]
+    },
+    {
+      "start": 32.278,
+      "end": 33.058,
+      "words": [
+        {
+          "w": "si",
+          "start": 32.278
+        },
+        {
+          "w": "la",
+          "start": 32.398
+        },
+        {
+          "w": "IA",
+          "start": 32.558,
+          "key": true
+        },
+        {
+          "w": "sirve",
+          "start": 32.698
+        }
+      ]
+    },
+    {
+      "start": 33.058,
+      "end": 33.998,
+      "words": [
+        {
+          "w": "está",
+          "start": 33.058
+        },
+        {
+          "w": "preguntando",
+          "start": 33.298
+        }
+      ]
+    },
+    {
+      "start": 33.998,
+      "end": 34.838,
+      "words": [
+        {
+          "w": "cuánto",
+          "start": 33.998,
+          "key": true
+        },
+        {
+          "w": "vale",
+          "start": 34.578,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 34.838,
+      "end": 35.858,
+      "words": [
+        {
+          "w": "Y",
+          "start": 34.838
+        },
+        {
+          "w": "esas",
+          "start": 35.178
+        },
+        {
+          "w": "ventas",
+          "start": 35.398,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 35.858,
+      "end": 36.658,
+      "words": [
+        {
+          "w": "salen",
+          "start": 35.858
+        },
+        {
+          "w": "de",
+          "start": 36.298
+        },
+        {
+          "w": "miles",
+          "start": 36.398
+        }
+      ]
+    },
+    {
+      "start": 36.658,
+      "end": 37.058,
+      "words": [
+        {
+          "w": "de",
+          "start": 36.658
+        },
+        {
+          "w": "empresas",
+          "start": 36.838,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 37.058,
+      "end": 37.918,
+      "words": [
+        {
+          "w": "que",
+          "start": 37.058
+        },
+        {
+          "w": "ya",
+          "start": 37.358
+        },
+        {
+          "w": "la",
+          "start": 37.518
+        },
+        {
+          "w": "pagan",
+          "start": 37.658,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 37.918,
+      "end": 39.168,
+      "words": [
+        {
+          "w": "para",
+          "start": 37.918
+        },
+        {
+          "w": "trabajar",
+          "start": 38.178
+        },
+        {
+          "w": "con",
+          "start": 38.538
+        },
+        {
+          "w": "ella",
+          "start": 38.818
+        }
+      ]
+    },
+    {
+      "start": 39.168,
+      "end": 39.72,
+      "words": [
+        {
+          "w": "Entonces",
+          "start": 39.168
+        },
+        {
+          "w": "esto",
+          "start": 39.44
+        },
+        {
+          "w": "nos",
+          "start": 39.6
+        }
+      ]
+    },
+    {
+      "start": 39.72,
+      "end": 40.18,
+      "words": [
+        {
+          "w": "deja",
+          "start": 39.72
+        },
+        {
+          "w": "pensando",
+          "start": 39.9
+        }
+      ]
+    },
+    {
+      "start": 40.18,
+      "end": 40.7,
+      "words": [
+        {
+          "w": "en",
+          "start": 40.18
+        },
+        {
+          "w": "la",
+          "start": 40.38
+        },
+        {
+          "w": "pregunta",
+          "start": 40.44,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 40.7,
+      "end": 41.4,
+      "words": [
+        {
+          "w": "para",
+          "start": 40.7
+        },
+        {
+          "w": "tu",
+          "start": 40.92
+        },
+        {
+          "w": "negocio",
+          "start": 41.06,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 41.4,
+      "end": 42.52,
+      "words": [
+        {
+          "w": "ya",
+          "start": 41.4
+        },
+        {
+          "w": "no",
+          "start": 41.64
+        },
+        {
+          "w": "es",
+          "start": 41.82
+        },
+        {
+          "w": "si",
+          "start": 41.96
+        },
+        {
+          "w": "usar",
+          "start": 42.1
+        },
+        {
+          "w": "IA",
+          "start": 42.1,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 42.52,
+      "end": 43.32,
+      "words": [
+        {
+          "w": "es",
+          "start": 42.52
+        },
+        {
+          "w": "en",
+          "start": 42.66
+        },
+        {
+          "w": "qué",
+          "start": 42.88,
+          "key": true
+        },
+        {
+          "w": "parte",
+          "start": 43.0,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 43.32,
+      "end": 43.72,
+      "words": [
+        {
+          "w": "la",
+          "start": 43.32
+        },
+        {
+          "w": "vas",
+          "start": 43.48
+        },
+        {
+          "w": "a",
+          "start": 43.52
+        },
+        {
+          "w": "usar",
+          "start": 43.58
+        }
+      ]
+    },
+    {
+      "start": 43.72,
+      "end": 44.12,
+      "words": [
+        {
+          "w": "primero",
+          "start": 43.72,
+          "key": true
+        }
+      ]
+    }
+  ],
+  "whooshAuto": false,
+  "musica": "reels/anthropic-ipo/musica.wav",
+  "caraYFuente": 0.58,
+  "portada": {
+    "cuadro": 2.0
+  }
+}

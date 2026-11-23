@@ -33,6 +33,22 @@ def silencios(video):
     return list(zip(ini, fin)), total
 
 
+def ajustar_a_silencios(palabras, sils):
+    """La transcripción suele adelantar el inicio de la palabra que sigue a una pausa (y alargar la
+    anterior) metiéndolas dentro del silencio. Eso bloquea el corte. Si el borde de una palabra cae
+    dentro de un silencio medido por energía, se mueve al borde del silencio."""
+    out = []
+    for p in palabras:
+        s0, e0 = p["start"], p["end"]
+        for a, b in sils:
+            if a < s0 < b and e0 > b:
+                s0 = b
+            if a < e0 < b and s0 < a:
+                e0 = a
+        out.append({**p, "start": round(s0, 3), "end": round(e0, 3)})
+    return out
+
+
 def restar(a, b, palabras_iv):
     """Intervalo de corte [a,b] menos los intervalos de palabras (con margen)."""
     piezas = [(a, b)]
@@ -61,6 +77,7 @@ def main():
     video = Path(a.video)
     palabras = leer(Path(a.palabras)) if a.palabras else []
     sils, total = silencios(video)
+    palabras = ajustar_a_silencios(palabras, sils)
 
     cortes = []
     for s, e in sils:

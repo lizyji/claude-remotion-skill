@@ -17,6 +17,8 @@ según [`INSTRUCCIONES.md`](INSTRUCCIONES.md), que es la fuente de verdad del pr
 | `scripts/bloques.py` | Bloques de ≤ 5 palabras / 24 caracteres, sin terminar en artículo o preposición, 1 palabra clave en naranja. |
 | `scripts/hoja_cuadros.py` | Hoja de cuadros de un render para verificar. |
 | `scripts/gen_sfx.mjs` | Sintetiza whoosh / pop / click / tick / bass en `public/sfx/`. |
+| `scripts/gen_musica.py` | Música instrumental original (sintetizada, libre de derechos) cuando no hay acceso a Pixabay. |
+| `src/Clip.tsx` | Composición `Clip`: exporta un B-roll suelto (panel 1080×960 o golpe 1080×1920) por su `id`. |
 
 ## Flujo por pedido
 
@@ -51,6 +53,17 @@ pip install faster-whisper
    ```bash
    npx remotion still src/index.ts Portada out/<slug>_portada.png --props='{"reel":'"$(cat reels/<slug>/reel.json)"'}'
    ```
+
+B-rolls sueltos (cada B-roll/golpe lleva un `"id"` tipo `T3_B7_ventas`):
+   ```bash
+   npx remotion render src/index.ts Clip out/<slug>_brolls/T3_B7_ventas.mp4 --muted --props=clip.json
+   ```
+   donde `clip.json` = `{"reel": <reel.json>, "id": "T3_B7_ventas"}`.
+
+Tipos de B-roll además de los básicos: `texto` (golpe de texto), `tacha` (frase tachada → nueva), `cotizacion`
+(ficha genérica con gráfica), `digitos` (número que se escribe), `aviso` (recuadro gris), `mosaico` (oficinas que se
+encienden). `jugada` acepta `arriba`/`abajo` y `cierre` acepta `frase`/`lineas`/`clave`/`nota` para videos sin frase
+de firma. `"whooshAuto": false` quita el whoosh automático para ponerlo a mano en `sfx`.
 
 Sin `--props` se usa el reel `demo`. Para ver cualquier reel en el Studio: `npm run studio`.
 

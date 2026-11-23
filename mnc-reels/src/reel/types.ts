@@ -12,22 +12,35 @@ export type BloqueSub = {
 
 export type Fuente = string; // "Fuente: Reuters, 12 may 2026 · reuters.com"
 
-export type BRoll =
+export type BRoll = { id?: string } & (
   | { tipo: "cita"; start: number; end: number; titular: string; medio?: string; fuente: Fuente } // plan B
   | { tipo: "pendiente"; start: number; end: number; id: string } // último recurso
   | { tipo: "imagen"; start: number; end: number; src: string; fit?: "contain" | "cover"; fuente?: Fuente; zoom?: [number, number]; foco?: [number, number] }
   | { tipo: "video"; start: number; end: number; src: string; desde?: number; fit?: "contain" | "cover"; fuente?: Fuente; recorte?: { x: number; y: number; w: number; h: number } }
   | { tipo: "logo"; start: number; end: number; src: string; etiqueta?: string; fuente?: Fuente }
-  | { tipo: "contador"; start: number; end: number; valor: number; prefijo?: string; sufijo?: string; etiqueta: string; decimales?: number; fuente?: Fuente }
+  | { tipo: "contador"; start: number; end: number; valor: number; prefijo?: string; sufijo?: string; etiqueta: string; decimales?: number; desde?: number; fuente?: Fuente }
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
-  | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
+  | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; textoEn?: number; tono?: "naranja" | "negro"; fuente?: Fuente }
+  // Texto grande con golpe de zoom (arriba: línea chica opcional)
+  | { tipo: "texto"; start: number; end: number; titulo: string; arriba?: string; abajo?: string; size?: number; tono?: "naranja" | "negro"; fuente?: Fuente }
+  // "antes" aparece en antesEn s, se tacha en tachaEn s y entra "despues" (naranja)
+  | { tipo: "tacha"; start: number; end: number; pildora?: string; antes: string; despues: string; antesEn?: number; tachaEn: number; fuente?: Fuente }
+  // Ficha de cotización GENÉRICA (colores MNC, sin imitar ninguna bolsa) con gráfica que sube
+  | { tipo: "cotizacion"; start: number; end: number; mercado: string; clave: string; dato: string; fuente?: Fuente }
+  // Número que se escribe dígito por dígito a partir de "desde" s
+  | { tipo: "digitos"; start: number; end: number; valor: string; arriba?: string; etiqueta?: string; desde?: number; fuente?: Fuente }
+  // Aviso en recuadro gris
+  | { tipo: "aviso"; start: number; end: number; texto: string; fuente?: Fuente }
+  // Mosaico de oficinas genéricas (íconos) que se encienden una a una
+  | { tipo: "mosaico"; start: number; end: number; etiqueta: string; n?: number; cada?: number; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
-  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
+  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente });
 
-export type Golpe =
-  | { tipo: "jugada"; start: number; end: number }
+export type Golpe = { id?: string } & (
+  | { tipo: "jugada"; start: number; end: number; arriba?: string; abajo?: string }
   | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
-  | { tipo: "cierre"; start: number; end: number };
+  // frase: por defecto FRASE_CIERRE; lineas = palabras por línea; nota = línea chica abajo
+  | { tipo: "cierre"; start: number; end: number; frase?: string; lineas?: number[]; clave?: string[]; nota?: string });
 
 export type Reel = {
   slug: string;
@@ -42,6 +55,7 @@ export type Reel = {
   broll: BRoll[];
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
+  whooshAuto?: boolean; // false = sin whoosh automático en cada cambio de clip (ponlos a mano en sfx)
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
   portada?: { frase?: string; cuadro: number };
 };

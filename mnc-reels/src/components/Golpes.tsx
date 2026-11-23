@@ -20,7 +20,7 @@ const Pantalla: React.FC<{ dur: number; children: React.ReactNode }> = ({ dur, c
   );
 };
 
-const Jugada: React.FC<{ dur: number }> = ({ dur }) => {
+const Jugada: React.FC<{ dur: number; arriba?: string; abajo?: string }> = ({ dur, arriba = "Aquí está", abajo = "la jugada" }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const a = spring({ frame, fps, config: theme.spring.suave });
@@ -39,20 +39,21 @@ const Jugada: React.FC<{ dur: number }> = ({ dur }) => {
             transform: `translateY(${interpolate(a, [0, 1], [40, 0])}px)`,
           }}
         >
-          Aquí está
+          {arriba}
         </div>
         <div
           style={{
             fontFamily: font.titulo,
             fontWeight: 700,
-            fontSize: 230,
+            fontSize: abajo.length > 10 ? 170 : 230,
             lineHeight: 1,
+            textAlign: "center",
             color: color.naranja,
             opacity: Math.min(1, b * 1.5),
             transform: `scale(${interpolate(b, [0, 1], [1.6, 1]) * respira})`,
           }}
         >
-          la jugada
+          {abajo}
         </div>
       </AbsoluteFill>
     </Pantalla>
@@ -131,22 +132,33 @@ export const tiemposCierre = (frase: string, palabras: Palabra[], start: number,
 // Palabras por línea: "Si todavía no sabes / cómo implementar IA / en tu negocio, / esta cuenta / es para ti."
 const LINEAS_CIERRE = [4, 3, 3, 2, 3];
 
-const Cierre: React.FC<{ dur: number; start: number; palabras: Palabra[]; end: number }> = ({ dur, start, end, palabras }) => {
+const Cierre: React.FC<{ dur: number; start: number; palabras: Palabra[]; end: number; frase?: string; lineas?: number[]; clave?: string[]; nota?: string }> = ({
+  dur,
+  start,
+  end,
+  palabras,
+  frase = FRASE_CIERRE,
+  lineas = LINEAS_CIERRE,
+  clave = ["IA"],
+  nota,
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = start + frame / fps;
-  const tokens = FRASE_CIERRE.split(" ");
-  const tiempos = tiemposCierre(FRASE_CIERRE, palabras, start, end);
+  const tokens = frase.split(" ");
+  const tiempos = tiemposCierre(frase, palabras, start, end);
+  const LINEAS_CIERRE = lineas;
+  const pn = nota ? spring({ frame: frame - Math.round(fps * 0.9), fps, config: theme.spring.suave }) : 0;
   return (
     <Pantalla dur={dur + 10}>
-      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: "0 80px" }}>
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", fontFamily: font.titulo, fontWeight: 700, fontSize: 88, lineHeight: 1.22, textAlign: "center" }}>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", padding: "0 80px", flexDirection: "column" }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", fontFamily: font.titulo, fontWeight: 700, fontSize: tokens.length < 8 ? 118 : 88, lineHeight: 1.22, textAlign: "center" }}>
           {LINEAS_CIERRE.map((n, li) => (
           <div key={li} style={{ display: "flex", gap: "0 0.28em" }}>
           {tokens.slice(LINEAS_CIERRE.slice(0, li).reduce((a, b) => a + b, 0), LINEAS_CIERRE.slice(0, li + 1).reduce((a, b) => a + b, 0)).map((tk, j) => {
             const i = LINEAS_CIERRE.slice(0, li).reduce((a, b) => a + b, 0) + j;
             const on = interpolate(t, [tiempos[i] - 0.04, tiempos[i] + 0.12], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
-            const esIA = tk.replace(/[^A-Za-z]/g, "") === "IA";
+            const esIA = clave.some((c) => norm(c) === norm(tk));
             return (
               <span
                 key={i}
@@ -164,6 +176,11 @@ const Cierre: React.FC<{ dur: number; start: number; palabras: Palabra[]; end: n
           </div>
           ))}
         </div>
+        {nota ? (
+          <div style={{ marginTop: 60, opacity: pn, transform: `translateY(${interpolate(pn, [0, 1], [30, 0])}px)` }}>
+            <span style={{ background: color.negro, color: color.blanco, fontFamily: font.texto, fontWeight: 600, fontSize: 46, padding: "16px 40px", borderRadius: 999 }}>{nota}</span>
+          </div>
+        ) : null}
       </AbsoluteFill>
     </Pantalla>
   );
@@ -172,7 +189,7 @@ const Cierre: React.FC<{ dur: number; start: number; palabras: Palabra[]; end: n
 export const GolpeView: React.FC<{ g: Golpe; palabras: Palabra[] }> = ({ g, palabras }) => {
   const { fps } = useVideoConfig();
   const dur = Math.round((g.end - g.start) * fps);
-  if (g.tipo === "jugada") return <Jugada dur={dur} />;
+  if (g.tipo === "jugada") return <Jugada dur={dur} arriba={g.arriba} abajo={g.abajo} />;
   if (g.tipo === "numero") return <Numero dur={dur} valor={g.valor} etiqueta={g.etiqueta} fuente={g.fuente} />;
-  return <Cierre dur={dur} start={g.start} end={g.end} palabras={palabras} />;
+  return <Cierre dur={dur} start={g.start} end={g.end} palabras={palabras} frase={g.frase} lineas={g.lineas} clave={g.clave} nota={g.nota} />;
 };

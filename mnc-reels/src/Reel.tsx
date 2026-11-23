@@ -17,12 +17,20 @@ const dB = (x: number) => Math.pow(10, x / 20);
 const sfxAuto = (reel: ReelData) => {
   const out: { t: number; s: string }[] = [];
   for (const b of reel.broll) {
-    out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
+    if (reel.whooshAuto !== false) out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
     if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + 0.35 + i * (b.cada ?? 1.2), s: "pop" }));
-    if (b.tipo === "contador") out.push({ t: b.start + 0.2 + 1.0, s: "tick" });
-    if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta") out.push({ t: b.start + 0.1, s: "pop" });
+    if (b.tipo === "contador") out.push({ t: b.start + (b.desde ?? 0.2) + 1.0, s: "tick" });
+    if (["logo", "cita", "tarjeta", "texto", "aviso", "cotizacion", "imagen"].includes(b.tipo)) out.push({ t: b.start + 0.1, s: "pop" });
+    if (b.tipo === "tarjeta" && b.textoEn) out.push({ t: b.start + b.textoEn, s: "pop" });
+    if (b.tipo === "tacha") {
+      out.push({ t: b.start + (b.antesEn ?? 0.1), s: "pop" });
+      out.push({ t: b.start + b.tachaEn, s: "click" });
+      out.push({ t: b.start + b.tachaEn + 0.3, s: "pop" });
+    }
+    if (b.tipo === "digitos") out.push({ t: b.start + (b.desde ?? 0.3) + b.valor.length * 0.09, s: "tick" });
+    if (b.tipo === "mosaico") for (let i = 0; i < (b.n ?? 12); i++) if (i % 3 === 0) out.push({ t: b.start + 0.4 + i * (b.cada ?? 0.22), s: "tick" });
   }
-  for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" ? "whoosh" : "bass" });
+  for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" && reel.whooshAuto !== false ? "whoosh" : "bass" });
   for (const p of reel.pasos ?? []) out.push({ t: p.start, s: "click" });
   return [...out, ...(reel.sfx ?? [])];
 };
