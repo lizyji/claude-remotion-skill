@@ -16,13 +16,27 @@ const dB = (x: number) => Math.pow(10, x / 20);
 // tick al terminar un contador, bass en cada golpe a pantalla completa.
 const sfxAuto = (reel: ReelData) => {
   const out: { t: number; s: string }[] = [];
+  const auto = reel.whooshAuto !== false;
   for (const b of reel.broll) {
-    out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
-    if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + 0.35 + i * (b.cada ?? 1.2), s: "pop" }));
+    if (auto) out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
+    if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + (b.tiempos?.[i] ?? 0.35 + i * (b.cada ?? 1.2)), s: "pop" }));
+    if (b.tipo === "pendiente") (b.items ?? []).forEach((_, i) => out.push({ t: b.start + (b.tiempos?.[i] ?? 0.3 + i * 0.9), s: b.ilumina ? "tick" : "pop" }));
+    if (b.tipo === "reloj") out.push({ t: b.start + (b.numeroEn ?? 0.25), s: "pop" });
+    if (b.tipo === "pila" || b.tipo === "calendario") out.push({ t: b.start + (b.llegaEn ?? 1.8), s: "tick" });
+    if (b.tipo === "lupa") b.items.forEach((_, i) => out.push({ t: b.start + (b.itemsEn ?? 0.6) + i * (b.cada ?? 0.75), s: "pop" }));
+    if (b.tipo === "flecha") {
+      out.push({ t: b.start + (b.aEn ?? 0.45), s: "pop" });
+      if (b.extra) out.push({ t: b.start + (b.extraEn ?? 1.4), s: "tick" });
+    }
+    if (b.tipo === "texto") out.push({ t: b.start + 0.05, s: "pop" });
+    if (b.tipo === "verifica") out.push({ t: b.start + 0.5, s: "tick" });
     if (b.tipo === "contador") out.push({ t: b.start + 0.2 + 1.0, s: "tick" });
     if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta") out.push({ t: b.start + 0.1, s: "pop" });
   }
-  for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" ? "whoosh" : "bass" });
+  for (const g of reel.golpes) {
+    if (g.tipo !== "cierre") out.push({ t: g.start, s: "bass" });
+    else if (auto) out.push({ t: g.start, s: "whoosh" });
+  }
   for (const p of reel.pasos ?? []) out.push({ t: p.start, s: "click" });
   return [...out, ...(reel.sfx ?? [])];
 };

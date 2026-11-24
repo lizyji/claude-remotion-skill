@@ -1,0 +1,2414 @@
+{
+  "broll": [
+    {
+      "tipo": "reloj",
+      "start": 0.0,
+      "end": 6.508,
+      "antes": "JP Morgan",
+      "valor": "360,000",
+      "etiqueta": "horas al año",
+      "numeroEn": 3.8,
+      "etiquetaEn": 5.08,
+      "fuente": "Fuente: Bloomberg, 28 feb 2017",
+      "_id": "T1_B1_360mil_horas"
+    },
+    {
+      "tipo": "pila",
+      "start": 6.558,
+      "end": 9.817,
+      "valor": 12000,
+      "etiqueta": "contratos al año",
+      "llegaEn": 1.469,
+      "fuente": "Fuente: Bloomberg, 28 feb 2017",
+      "_id": "T2_B2_pila_contratos"
+    },
+    {
+      "tipo": "lupa",
+      "start": 9.867,
+      "end": 12.913,
+      "titulo": "Contrato",
+      "items": [
+        "Monto",
+        "Fecha",
+        "Condiciones"
+      ],
+      "itemsEn": 1.64,
+      "cada": 0.3,
+      "_id": "T2_B3_lupa_datos"
+    },
+    {
+      "tipo": "calendario",
+      "start": 14.347,
+      "end": 18.86,
+      "hasta": 41,
+      "etiqueta": "años sin parar",
+      "llegaEn": 2.14,
+      "fuente": "Fuente: 360,000 ÷ 8,760 h de un año = 41.1 · Bloomberg, 28 feb 2017",
+      "_id": "T2_B4_41_anos"
+    },
+    {
+      "tipo": "imagen",
+      "start": 18.91,
+      "end": 21.63,
+      "src": "reels/jp-morgan/aba_titular.png",
+      "fit": "contain",
+      "zoom": [
+        1.0,
+        1.06
+      ],
+      "fuente": "Fuente: Bloomberg, 28 feb 2017 · vía ABA Journal, 2 mar 2017 · abajournal.com",
+      "_id": "T3_B5_titular"
+    },
+    {
+      "tipo": "flecha",
+      "start": 21.68,
+      "end": 26.15,
+      "de": "360,000 horas",
+      "a": "segundos",
+      "aEn": 0.3,
+      "extra": "Menos errores",
+      "extraEn": 1.6,
+      "fuente": "Fuente: Bloomberg, 28 feb 2017",
+      "_id": "T3_B6_horas_a_segundos"
+    },
+    {
+      "tipo": "flecha",
+      "start": 26.2,
+      "end": 30.87,
+      "de": "JP Morgan: su propio software",
+      "a": "Hoy: con Claude",
+      "tachar": false,
+      "deSize": 64,
+      "aSize": 104,
+      "aEn": 3.48,
+      "_id": "T4_B6b_inspirate"
+    },
+    {
+      "tipo": "pendiente",
+      "start": 30.92,
+      "end": 35.01,
+      "id": "B7",
+      "items": [
+        "Contrato",
+        "Orden de compra",
+        "Póliza"
+      ],
+      "tiempos": [
+        0.7,
+        1.82,
+        2.8
+      ],
+      "fuente": "Ejemplo ilustrativo con datos ficticios",
+      "_id": "T4_B7_subir_documentos"
+    },
+    {
+      "tipo": "pendiente",
+      "start": 35.06,
+      "end": 38.595,
+      "id": "B8",
+      "ilumina": true,
+      "items": [
+        "Proveedor",
+        "Monto",
+        "Vencimiento",
+        "Penalizaciones"
+      ],
+      "tiempos": [
+        0.58,
+        1.12,
+        1.78,
+        2.44
+      ],
+      "fuente": "Ejemplo ilustrativo con datos ficticios",
+      "_id": "T4_B8_tabla"
+    },
+    {
+      "tipo": "texto",
+      "start": 38.645,
+      "end": 40.025,
+      "texto": "No necesitas ser JP Morgan",
+      "resalta": "JP Morgan",
+      "_id": "T4_B9_no_necesitas"
+    },
+    {
+      "tipo": "lista",
+      "start": 40.075,
+      "end": 45.006,
+      "items": [
+        "Prueba con 2–3 contratos que conozcas",
+        "Luego el resto"
+      ],
+      "tiempos": [
+        1.32,
+        3.24
+      ],
+      "_id": "T5_B10_checklist"
+    },
+    {
+      "tipo": "verifica",
+      "start": 45.056,
+      "end": 48.683,
+      "titulo": "Siempre verifica",
+      "texto": "lo que te entrega y a qué lo conectas",
+      "_id": "T5_B11_verifica"
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "numero",
+      "start": 12.963,
+      "end": 14.347,
+      "valor": "360,000",
+      "etiqueta": "horas de abogados",
+      "fuente": "Fuente: Bloomberg, 28 feb 2017"
+    },
+    {
+      "tipo": "cierre",
+      "start": 48.733,
+      "end": 53.8
+    }
+  ],
+  "pasos": [
+    {
+      "start": 40.075,
+      "end": 43.315,
+      "n": 1
+    },
+    {
+      "start": 43.315,
+      "end": 45.056,
+      "n": 2
+    },
+    {
+      "start": 45.056,
+      "end": 48.683,
+      "n": 3
+    }
+  ],
+  "sfx": [
+    {
+      "t": 12.883,
+      "s": "whoosh"
+    },
+    {
+      "t": 26.12,
+      "s": "whoosh"
+    },
+    {
+      "t": 48.653,
+      "s": "whoosh"
+    }
+  ],
+  "slug": "jp-morgan",
+  "duracion": 53.8,
+  "manuel": "reels/jp-morgan/manuel.mp4",
+  "cortes": [
+    6.478,
+    12.688,
+    18.83,
+    38.575,
+    45.026,
+    48.653
+  ],
+  "palabras": [
+    {
+      "w": "JP",
+      "start": 0.0,
+      "end": 0.38,
+      "prob": 0.961
+    },
+    {
+      "w": "Morgan",
+      "start": 0.38,
+      "end": 0.66,
+      "prob": 0.999
+    },
+    {
+      "w": "revisa",
+      "start": 0.66,
+      "end": 1.2,
+      "prob": 0.982
+    },
+    {
+      "w": "en",
+      "start": 1.2,
+      "end": 1.3,
+      "prob": 0.995
+    },
+    {
+      "w": "segundos",
+      "start": 1.3,
+      "end": 1.56,
+      "prob": 0.999
+    },
+    {
+      "w": "contratos",
+      "start": 1.56,
+      "end": 2.26,
+      "prob": 0.999
+    },
+    {
+      "w": "que",
+      "start": 2.26,
+      "end": 2.48,
+      "prob": 0.995
+    },
+    {
+      "w": "a",
+      "start": 2.48,
+      "end": 2.6,
+      "prob": 1.0
+    },
+    {
+      "w": "sus",
+      "start": 2.6,
+      "end": 2.74,
+      "prob": 1.0
+    },
+    {
+      "w": "abogados",
+      "start": 2.74,
+      "end": 3.34,
+      "prob": 1.0
+    },
+    {
+      "w": "les",
+      "start": 3.34,
+      "end": 3.48,
+      "prob": 0.997
+    },
+    {
+      "w": "tomaban",
+      "start": 3.48,
+      "end": 3.9,
+      "prob": 0.999
+    },
+    {
+      "w": "360,000",
+      "start": 3.9,
+      "end": 5.08,
+      "prob": 0.997
+    },
+    {
+      "w": "horas",
+      "start": 5.08,
+      "end": 5.4,
+      "prob": 0.998
+    },
+    {
+      "w": "al",
+      "start": 5.4,
+      "end": 5.94,
+      "prob": 0.999
+    },
+    {
+      "w": "año.",
+      "start": 5.94,
+      "end": 6.26,
+      "prob": 1.0
+    },
+    {
+      "w": "El",
+      "start": 6.558,
+      "end": 6.587,
+      "prob": 0.999
+    },
+    {
+      "w": "banco",
+      "start": 6.587,
+      "end": 6.847,
+      "prob": 0.999
+    },
+    {
+      "w": "recibe",
+      "start": 6.847,
+      "end": 7.407,
+      "prob": 0.998
+    },
+    {
+      "w": "unos",
+      "start": 7.407,
+      "end": 7.547,
+      "prob": 0.999
+    },
+    {
+      "w": "12,000",
+      "start": 7.547,
+      "end": 8.027,
+      "prob": 1.0
+    },
+    {
+      "w": "contratos",
+      "start": 8.027,
+      "end": 8.487,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 8.487,
+      "end": 8.647,
+      "prob": 1.0
+    },
+    {
+      "w": "créditos",
+      "start": 8.647,
+      "end": 9.067,
+      "prob": 0.999
+    },
+    {
+      "w": "nuevos",
+      "start": 9.067,
+      "end": 9.267,
+      "prob": 1.0
+    },
+    {
+      "w": "al",
+      "start": 9.267,
+      "end": 9.507,
+      "prob": 1.0
+    },
+    {
+      "w": "año.",
+      "start": 9.507,
+      "end": 9.727,
+      "prob": 1.0
+    },
+    {
+      "w": "Alguien",
+      "start": 9.867,
+      "end": 10.227,
+      "prob": 1.0
+    },
+    {
+      "w": "tenía",
+      "start": 10.227,
+      "end": 10.407,
+      "prob": 0.999
+    },
+    {
+      "w": "que",
+      "start": 10.407,
+      "end": 10.647,
+      "prob": 1.0
+    },
+    {
+      "w": "leer",
+      "start": 10.647,
+      "end": 10.827,
+      "prob": 1.0
+    },
+    {
+      "w": "cada",
+      "start": 10.827,
+      "end": 11.047,
+      "prob": 1.0
+    },
+    {
+      "w": "uno",
+      "start": 11.047,
+      "end": 11.327,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 11.327,
+      "end": 11.507,
+      "prob": 1.0
+    },
+    {
+      "w": "sacar",
+      "start": 11.507,
+      "end": 11.727,
+      "prob": 1.0
+    },
+    {
+      "w": "los",
+      "start": 11.727,
+      "end": 11.947,
+      "prob": 1.0
+    },
+    {
+      "w": "datos",
+      "start": 11.947,
+      "end": 12.127,
+      "prob": 1.0
+    },
+    {
+      "w": "clave.",
+      "start": 12.127,
+      "end": 12.547,
+      "prob": 1.0
+    },
+    {
+      "w": "Eran",
+      "start": 12.963,
+      "end": 13.147,
+      "prob": 0.999
+    },
+    {
+      "w": "360,000",
+      "start": 13.147,
+      "end": 14.267,
+      "prob": 1.0
+    },
+    {
+      "w": "horas",
+      "start": 14.267,
+      "end": 14.367,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 14.367,
+      "end": 14.547,
+      "prob": 1.0
+    },
+    {
+      "w": "abogados",
+      "start": 14.547,
+      "end": 14.907,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 14.907,
+      "end": 15.007,
+      "prob": 1.0
+    },
+    {
+      "w": "oficiales",
+      "start": 15.007,
+      "end": 15.427,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 15.427,
+      "end": 15.447,
+      "prob": 1.0
+    },
+    {
+      "w": "créditos,",
+      "start": 15.447,
+      "end": 15.847,
+      "prob": 1.0
+    },
+    {
+      "w": "más",
+      "start": 15.887,
+      "end": 16.147,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 16.147,
+      "end": 16.387,
+      "prob": 1.0
+    },
+    {
+      "w": "41",
+      "start": 16.387,
+      "end": 16.867,
+      "prob": 1.0
+    },
+    {
+      "w": "años",
+      "start": 16.867,
+      "end": 17.387,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 17.387,
+      "end": 17.587,
+      "prob": 1.0
+    },
+    {
+      "w": "trabajo",
+      "start": 17.587,
+      "end": 17.887,
+      "prob": 1.0
+    },
+    {
+      "w": "sin",
+      "start": 17.887,
+      "end": 18.187,
+      "prob": 1.0
+    },
+    {
+      "w": "parar.",
+      "start": 18.187,
+      "end": 18.487,
+      "prob": 1.0
+    },
+    {
+      "w": "JP",
+      "start": 18.91,
+      "end": 19.14,
+      "prob": 1.0
+    },
+    {
+      "w": "Morgan",
+      "start": 19.14,
+      "end": 19.42,
+      "prob": 1.0
+    },
+    {
+      "w": "creó",
+      "start": 19.42,
+      "end": 19.76,
+      "prob": 0.999
+    },
+    {
+      "w": "un",
+      "start": 19.76,
+      "end": 19.84,
+      "prob": 1.0
+    },
+    {
+      "w": "software",
+      "start": 19.84,
+      "end": 20.1,
+      "prob": 1.0
+    },
+    {
+      "w": "llamado",
+      "start": 20.1,
+      "end": 20.34,
+      "prob": 1.0
+    },
+    {
+      "w": "COIN",
+      "start": 20.34,
+      "end": 20.72,
+      "prob": 0.957
+    },
+    {
+      "w": "que",
+      "start": 20.72,
+      "end": 20.94,
+      "prob": 0.992
+    },
+    {
+      "w": "hace",
+      "start": 20.94,
+      "end": 21.18,
+      "prob": 0.999
+    },
+    {
+      "w": "esa",
+      "start": 21.18,
+      "end": 21.3,
+      "prob": 1.0
+    },
+    {
+      "w": "lectura",
+      "start": 21.3,
+      "end": 21.68,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 21.68,
+      "end": 21.9,
+      "prob": 1.0
+    },
+    {
+      "w": "segundos",
+      "start": 21.9,
+      "end": 22.26,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 22.26,
+      "end": 22.56,
+      "prob": 0.984
+    },
+    {
+      "w": "además",
+      "start": 22.56,
+      "end": 22.8,
+      "prob": 0.999
+    },
+    {
+      "w": "bajó",
+      "start": 22.8,
+      "end": 23.16,
+      "prob": 0.998
+    },
+    {
+      "w": "los",
+      "start": 23.16,
+      "end": 23.28,
+      "prob": 1.0
+    },
+    {
+      "w": "errores",
+      "start": 23.28,
+      "end": 23.62,
+      "prob": 1.0
+    },
+    {
+      "w": "porque",
+      "start": 23.62,
+      "end": 23.84,
+      "prob": 0.999
+    },
+    {
+      "w": "la",
+      "start": 23.84,
+      "end": 24.02,
+      "prob": 1.0
+    },
+    {
+      "w": "mayoría",
+      "start": 24.02,
+      "end": 24.28,
+      "prob": 1.0
+    },
+    {
+      "w": "venían",
+      "start": 24.28,
+      "end": 24.6,
+      "prob": 0.996
+    },
+    {
+      "w": "de",
+      "start": 24.6,
+      "end": 24.74,
+      "prob": 0.997
+    },
+    {
+      "w": "interpretar",
+      "start": 24.74,
+      "end": 25.24,
+      "prob": 1.0
+    },
+    {
+      "w": "mal",
+      "start": 25.24,
+      "end": 25.4,
+      "prob": 1.0
+    },
+    {
+      "w": "un",
+      "start": 25.4,
+      "end": 25.68,
+      "prob": 1.0
+    },
+    {
+      "w": "contrato.",
+      "start": 25.68,
+      "end": 26.2,
+      "prob": 1.0
+    },
+    {
+      "w": "Te",
+      "start": 26.2,
+      "end": 26.6,
+      "prob": 0.984
+    },
+    {
+      "w": "puedes",
+      "start": 26.6,
+      "end": 26.8,
+      "prob": 1.0
+    },
+    {
+      "w": "inspirar",
+      "start": 26.8,
+      "end": 27.3,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 27.3,
+      "end": 27.34,
+      "prob": 0.999
+    },
+    {
+      "w": "lo",
+      "start": 27.34,
+      "end": 27.46,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 27.46,
+      "end": 27.52,
+      "prob": 1.0
+    },
+    {
+      "w": "JP",
+      "start": 27.52,
+      "end": 27.78,
+      "prob": 0.979
+    },
+    {
+      "w": "Morgan",
+      "start": 27.78,
+      "end": 28.04,
+      "prob": 0.999
+    },
+    {
+      "w": "hizo",
+      "start": 28.04,
+      "end": 28.48,
+      "prob": 0.998
+    },
+    {
+      "w": "con",
+      "start": 28.48,
+      "end": 28.68,
+      "prob": 0.999
+    },
+    {
+      "w": "su",
+      "start": 28.68,
+      "end": 28.82,
+      "prob": 1.0
+    },
+    {
+      "w": "propio",
+      "start": 28.82,
+      "end": 29.06,
+      "prob": 1.0
+    },
+    {
+      "w": "software",
+      "start": 29.06,
+      "end": 29.38,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 29.38,
+      "end": 29.68,
+      "prob": 0.959
+    },
+    {
+      "w": "hoy",
+      "start": 29.68,
+      "end": 29.86,
+      "prob": 1.0
+    },
+    {
+      "w": "lo",
+      "start": 29.86,
+      "end": 29.96,
+      "prob": 1.0
+    },
+    {
+      "w": "puedes",
+      "start": 29.96,
+      "end": 30.2,
+      "prob": 0.998
+    },
+    {
+      "w": "hacer",
+      "start": 30.2,
+      "end": 30.36,
+      "prob": 0.997
+    },
+    {
+      "w": "con",
+      "start": 30.36,
+      "end": 30.52,
+      "prob": 1.0
+    },
+    {
+      "w": "Claude.",
+      "start": 30.52,
+      "end": 30.88,
+      "prob": 0.513
+    },
+    {
+      "w": "Le",
+      "start": 30.92,
+      "end": 31.14,
+      "prob": 0.998
+    },
+    {
+      "w": "subes",
+      "start": 31.14,
+      "end": 31.5,
+      "prob": 1.0
+    },
+    {
+      "w": "tus",
+      "start": 31.5,
+      "end": 31.62,
+      "prob": 1.0
+    },
+    {
+      "w": "contratos,",
+      "start": 31.62,
+      "end": 32.48,
+      "prob": 1.0
+    },
+    {
+      "w": "tus",
+      "start": 32.6,
+      "end": 32.74,
+      "prob": 0.998
+    },
+    {
+      "w": "órdenes",
+      "start": 32.74,
+      "end": 33.16,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 33.16,
+      "end": 33.18,
+      "prob": 1.0
+    },
+    {
+      "w": "compra",
+      "start": 33.18,
+      "end": 33.46,
+      "prob": 1.0
+    },
+    {
+      "w": "o",
+      "start": 33.46,
+      "end": 33.72,
+      "prob": 0.999
+    },
+    {
+      "w": "pólizas",
+      "start": 33.72,
+      "end": 34.12,
+      "prob": 0.995
+    },
+    {
+      "w": "y",
+      "start": 34.12,
+      "end": 34.42,
+      "prob": 0.971
+    },
+    {
+      "w": "le",
+      "start": 34.42,
+      "end": 34.76,
+      "prob": 1.0
+    },
+    {
+      "w": "pides",
+      "start": 34.76,
+      "end": 35.06,
+      "prob": 1.0
+    },
+    {
+      "w": "una",
+      "start": 35.06,
+      "end": 35.2,
+      "prob": 1.0
+    },
+    {
+      "w": "tabla",
+      "start": 35.2,
+      "end": 35.54,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 35.54,
+      "end": 35.64,
+      "prob": 0.996
+    },
+    {
+      "w": "proveedor,",
+      "start": 35.64,
+      "end": 36.12,
+      "prob": 0.999
+    },
+    {
+      "w": "monto,",
+      "start": 36.18,
+      "end": 36.48,
+      "prob": 0.999
+    },
+    {
+      "w": "fecha",
+      "start": 36.54,
+      "end": 36.8,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 36.8,
+      "end": 36.84,
+      "prob": 1.0
+    },
+    {
+      "w": "vencimiento",
+      "start": 36.84,
+      "end": 37.26,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 37.26,
+      "end": 37.5,
+      "prob": 1.0
+    },
+    {
+      "w": "penalizaciones.",
+      "start": 37.5,
+      "end": 38.26,
+      "prob": 1.0
+    },
+    {
+      "w": "Y",
+      "start": 38.655,
+      "end": 38.675,
+      "prob": 1.0
+    },
+    {
+      "w": "no",
+      "start": 38.675,
+      "end": 38.815,
+      "prob": 1.0
+    },
+    {
+      "w": "necesitas",
+      "start": 38.815,
+      "end": 39.275,
+      "prob": 0.977
+    },
+    {
+      "w": "ser",
+      "start": 39.275,
+      "end": 39.395,
+      "prob": 0.989
+    },
+    {
+      "w": "JP",
+      "start": 39.395,
+      "end": 39.615,
+      "prob": 1.0
+    },
+    {
+      "w": "Morgan.",
+      "start": 39.615,
+      "end": 39.855,
+      "prob": 1.0
+    },
+    {
+      "w": "Revisa",
+      "start": 40.075,
+      "end": 40.435,
+      "prob": 0.996
+    },
+    {
+      "w": "primero",
+      "start": 40.435,
+      "end": 40.715,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 40.715,
+      "end": 40.915,
+      "prob": 1.0
+    },
+    {
+      "w": "tabla",
+      "start": 40.915,
+      "end": 41.235,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 41.235,
+      "end": 41.395,
+      "prob": 1.0
+    },
+    {
+      "w": "dos",
+      "start": 41.395,
+      "end": 41.655,
+      "prob": 0.895
+    },
+    {
+      "w": "o",
+      "start": 41.655,
+      "end": 41.795,
+      "prob": 1.0
+    },
+    {
+      "w": "tres",
+      "start": 41.795,
+      "end": 41.955,
+      "prob": 1.0
+    },
+    {
+      "w": "contratos",
+      "start": 41.955,
+      "end": 42.395,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 42.395,
+      "end": 42.555,
+      "prob": 1.0
+    },
+    {
+      "w": "conozcas",
+      "start": 42.555,
+      "end": 42.915,
+      "prob": 1.0
+    },
+    {
+      "w": "bien",
+      "start": 42.915,
+      "end": 43.115,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 43.115,
+      "end": 43.315,
+      "prob": 1.0
+    },
+    {
+      "w": "luego",
+      "start": 43.315,
+      "end": 43.515,
+      "prob": 1.0
+    },
+    {
+      "w": "déjalo",
+      "start": 43.515,
+      "end": 43.875,
+      "prob": 1.0
+    },
+    {
+      "w": "trabajar",
+      "start": 43.875,
+      "end": 44.135,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 44.135,
+      "end": 44.415,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 44.415,
+      "end": 44.555,
+      "prob": 1.0
+    },
+    {
+      "w": "resto.",
+      "start": 44.555,
+      "end": 44.795,
+      "prob": 1.0
+    },
+    {
+      "w": "Y",
+      "start": 45.106,
+      "end": 45.406,
+      "prob": 0.999
+    },
+    {
+      "w": "obvio,",
+      "start": 45.106,
+      "end": 45.345,
+      "prob": 0.999
+    },
+    {
+      "w": "siempre",
+      "start": 45.345,
+      "end": 45.645,
+      "prob": 1.0
+    },
+    {
+      "w": "verifica",
+      "start": 45.645,
+      "end": 46.105,
+      "prob": 1.0
+    },
+    {
+      "w": "bien",
+      "start": 46.105,
+      "end": 46.345,
+      "prob": 1.0
+    },
+    {
+      "w": "todo",
+      "start": 46.345,
+      "end": 46.785,
+      "prob": 1.0
+    },
+    {
+      "w": "lo",
+      "start": 46.785,
+      "end": 46.945,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 46.945,
+      "end": 47.085,
+      "prob": 1.0
+    },
+    {
+      "w": "te",
+      "start": 47.085,
+      "end": 47.165,
+      "prob": 1.0
+    },
+    {
+      "w": "entrega",
+      "start": 47.165,
+      "end": 47.525,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 47.525,
+      "end": 47.625,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 47.625,
+      "end": 47.765,
+      "prob": 1.0
+    },
+    {
+      "w": "qué",
+      "start": 47.765,
+      "end": 47.865,
+      "prob": 0.998
+    },
+    {
+      "w": "lo",
+      "start": 47.865,
+      "end": 47.985,
+      "prob": 1.0
+    },
+    {
+      "w": "conectas.",
+      "start": 47.985,
+      "end": 48.445,
+      "prob": 1.0
+    },
+    {
+      "w": "Así",
+      "start": 48.733,
+      "end": 48.842,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 48.842,
+      "end": 48.982,
+      "prob": 1.0
+    },
+    {
+      "w": "si",
+      "start": 48.982,
+      "end": 49.122,
+      "prob": 0.997
+    },
+    {
+      "w": "todavía",
+      "start": 49.122,
+      "end": 49.382,
+      "prob": 1.0
+    },
+    {
+      "w": "no",
+      "start": 49.382,
+      "end": 49.562,
+      "prob": 1.0
+    },
+    {
+      "w": "sabes",
+      "start": 49.562,
+      "end": 49.742,
+      "prob": 1.0
+    },
+    {
+      "w": "cómo",
+      "start": 49.742,
+      "end": 49.942,
+      "prob": 1.0
+    },
+    {
+      "w": "implementar",
+      "start": 49.942,
+      "end": 50.542,
+      "prob": 1.0
+    },
+    {
+      "w": "IA",
+      "start": 50.542,
+      "end": 50.842,
+      "prob": 0.909
+    },
+    {
+      "w": "en",
+      "start": 50.842,
+      "end": 50.922,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 50.922,
+      "end": 51.022,
+      "prob": 1.0
+    },
+    {
+      "w": "negocio,",
+      "start": 51.022,
+      "end": 51.442,
+      "prob": 1.0
+    },
+    {
+      "w": "esta",
+      "start": 51.482,
+      "end": 51.822,
+      "prob": 1.0
+    },
+    {
+      "w": "cuenta",
+      "start": 51.822,
+      "end": 52.102,
+      "prob": 1.0
+    },
+    {
+      "w": "es",
+      "start": 52.102,
+      "end": 52.562,
+      "prob": 1.0
+    },
+    {
+      "w": "para",
+      "start": 52.562,
+      "end": 52.802,
+      "prob": 1.0
+    },
+    {
+      "w": "ti.",
+      "start": 52.802,
+      "end": 53.002,
+      "prob": 1.0
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.0,
+      "words": [
+        {
+          "w": "JP",
+          "start": 0.0,
+          "key": true
+        },
+        {
+          "w": "Morgan",
+          "start": 0.38,
+          "key": true
+        },
+        {
+          "w": "revisa",
+          "start": 0.66
+        }
+      ],
+      "end": 1.2
+    },
+    {
+      "start": 1.2,
+      "words": [
+        {
+          "w": "en",
+          "start": 1.2
+        },
+        {
+          "w": "segundos",
+          "start": 1.3,
+          "key": true
+        },
+        {
+          "w": "contratos",
+          "start": 1.56
+        }
+      ],
+      "end": 2.26
+    },
+    {
+      "start": 2.26,
+      "words": [
+        {
+          "w": "que",
+          "start": 2.26
+        },
+        {
+          "w": "a",
+          "start": 2.48
+        },
+        {
+          "w": "sus",
+          "start": 2.6
+        },
+        {
+          "w": "abogados",
+          "start": 2.74,
+          "key": true
+        }
+      ],
+      "end": 3.34
+    },
+    {
+      "start": 3.34,
+      "words": [
+        {
+          "w": "les",
+          "start": 3.34
+        },
+        {
+          "w": "tomaban",
+          "start": 3.48
+        },
+        {
+          "w": "360,000",
+          "start": 3.9,
+          "key": true
+        }
+      ],
+      "end": 5.08
+    },
+    {
+      "start": 5.08,
+      "words": [
+        {
+          "w": "horas",
+          "start": 5.08,
+          "key": true
+        },
+        {
+          "w": "al",
+          "start": 5.4
+        },
+        {
+          "w": "año",
+          "start": 5.94
+        }
+      ],
+      "end": 6.558
+    },
+    {
+      "start": 6.558,
+      "words": [
+        {
+          "w": "El",
+          "start": 6.558
+        },
+        {
+          "w": "banco",
+          "start": 6.587
+        },
+        {
+          "w": "recibe",
+          "start": 6.847
+        }
+      ],
+      "end": 7.407
+    },
+    {
+      "start": 7.407,
+      "words": [
+        {
+          "w": "unos",
+          "start": 7.407
+        },
+        {
+          "w": "12,000",
+          "start": 7.547,
+          "key": true
+        },
+        {
+          "w": "contratos",
+          "start": 8.027
+        }
+      ],
+      "end": 8.487
+    },
+    {
+      "start": 8.487,
+      "words": [
+        {
+          "w": "de",
+          "start": 8.487
+        },
+        {
+          "w": "créditos",
+          "start": 8.647,
+          "key": true
+        },
+        {
+          "w": "nuevos",
+          "start": 9.067
+        }
+      ],
+      "end": 9.267
+    },
+    {
+      "start": 9.267,
+      "words": [
+        {
+          "w": "al",
+          "start": 9.267
+        },
+        {
+          "w": "año",
+          "start": 9.507
+        }
+      ],
+      "end": 9.867
+    },
+    {
+      "start": 9.867,
+      "words": [
+        {
+          "w": "Alguien",
+          "start": 9.867
+        },
+        {
+          "w": "tenía",
+          "start": 10.227
+        },
+        {
+          "w": "que",
+          "start": 10.407
+        },
+        {
+          "w": "leer",
+          "start": 10.647,
+          "key": true
+        }
+      ],
+      "end": 10.827
+    },
+    {
+      "start": 10.827,
+      "words": [
+        {
+          "w": "cada",
+          "start": 10.827
+        },
+        {
+          "w": "uno",
+          "start": 11.047
+        },
+        {
+          "w": "y",
+          "start": 11.327
+        },
+        {
+          "w": "sacar",
+          "start": 11.507
+        }
+      ],
+      "end": 11.727
+    },
+    {
+      "start": 11.727,
+      "words": [
+        {
+          "w": "los",
+          "start": 11.727
+        },
+        {
+          "w": "datos",
+          "start": 11.947,
+          "key": true
+        },
+        {
+          "w": "clave",
+          "start": 12.127,
+          "key": true
+        }
+      ],
+      "end": 12.963
+    },
+    {
+      "start": 12.963,
+      "words": [
+        {
+          "w": "Eran",
+          "start": 12.963
+        },
+        {
+          "w": "360,000",
+          "start": 13.147,
+          "key": true
+        },
+        {
+          "w": "horas",
+          "start": 14.267
+        }
+      ],
+      "end": 14.367
+    },
+    {
+      "start": 14.367,
+      "words": [
+        {
+          "w": "de",
+          "start": 14.367
+        },
+        {
+          "w": "abogados",
+          "start": 14.547,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 14.907
+        },
+        {
+          "w": "oficiales",
+          "start": 15.007
+        }
+      ],
+      "end": 15.427
+    },
+    {
+      "start": 15.427,
+      "words": [
+        {
+          "w": "de",
+          "start": 15.427
+        },
+        {
+          "w": "créditos",
+          "start": 15.447
+        }
+      ],
+      "end": 15.887
+    },
+    {
+      "start": 15.887,
+      "words": [
+        {
+          "w": "más",
+          "start": 15.887
+        },
+        {
+          "w": "de",
+          "start": 16.147
+        },
+        {
+          "w": "41",
+          "start": 16.387,
+          "key": true
+        },
+        {
+          "w": "años",
+          "start": 16.867,
+          "key": true
+        }
+      ],
+      "end": 17.387
+    },
+    {
+      "start": 17.387,
+      "words": [
+        {
+          "w": "de",
+          "start": 17.387
+        },
+        {
+          "w": "trabajo",
+          "start": 17.587
+        },
+        {
+          "w": "sin",
+          "start": 17.887,
+          "key": true
+        },
+        {
+          "w": "parar",
+          "start": 18.187,
+          "key": true
+        }
+      ],
+      "end": 18.91
+    },
+    {
+      "start": 18.91,
+      "words": [
+        {
+          "w": "JP",
+          "start": 18.91,
+          "key": true
+        },
+        {
+          "w": "Morgan",
+          "start": 19.14,
+          "key": true
+        },
+        {
+          "w": "creó",
+          "start": 19.42
+        }
+      ],
+      "end": 19.76
+    },
+    {
+      "start": 19.76,
+      "words": [
+        {
+          "w": "un",
+          "start": 19.76
+        },
+        {
+          "w": "software",
+          "start": 19.84
+        },
+        {
+          "w": "llamado",
+          "start": 20.1
+        },
+        {
+          "w": "COIN",
+          "start": 20.34,
+          "key": true
+        }
+      ],
+      "end": 20.72
+    },
+    {
+      "start": 20.72,
+      "words": [
+        {
+          "w": "que",
+          "start": 20.72
+        },
+        {
+          "w": "hace",
+          "start": 20.94
+        },
+        {
+          "w": "esa",
+          "start": 21.18
+        },
+        {
+          "w": "lectura",
+          "start": 21.3,
+          "key": true
+        }
+      ],
+      "end": 21.68
+    },
+    {
+      "start": 21.68,
+      "words": [
+        {
+          "w": "en",
+          "start": 21.68
+        },
+        {
+          "w": "segundos",
+          "start": 21.9,
+          "key": true
+        }
+      ],
+      "end": 22.26
+    },
+    {
+      "start": 22.26,
+      "words": [
+        {
+          "w": "y",
+          "start": 22.26
+        },
+        {
+          "w": "además",
+          "start": 22.56
+        },
+        {
+          "w": "bajó",
+          "start": 22.8
+        }
+      ],
+      "end": 23.16
+    },
+    {
+      "start": 23.16,
+      "words": [
+        {
+          "w": "los",
+          "start": 23.16
+        },
+        {
+          "w": "errores",
+          "start": 23.28,
+          "key": true
+        }
+      ],
+      "end": 23.62
+    },
+    {
+      "start": 23.62,
+      "words": [
+        {
+          "w": "porque",
+          "start": 23.62
+        },
+        {
+          "w": "la",
+          "start": 23.84
+        },
+        {
+          "w": "mayoría",
+          "start": 24.02
+        },
+        {
+          "w": "venían",
+          "start": 24.28
+        }
+      ],
+      "end": 24.6
+    },
+    {
+      "start": 24.6,
+      "words": [
+        {
+          "w": "de",
+          "start": 24.6
+        },
+        {
+          "w": "interpretar",
+          "start": 24.74,
+          "key": true
+        },
+        {
+          "w": "mal",
+          "start": 25.24
+        }
+      ],
+      "end": 25.4
+    },
+    {
+      "start": 25.4,
+      "words": [
+        {
+          "w": "un",
+          "start": 25.4
+        },
+        {
+          "w": "contrato",
+          "start": 25.68,
+          "key": true
+        }
+      ],
+      "end": 26.2
+    },
+    {
+      "start": 26.2,
+      "words": [
+        {
+          "w": "Te",
+          "start": 26.2
+        },
+        {
+          "w": "puedes",
+          "start": 26.6
+        },
+        {
+          "w": "inspirar",
+          "start": 26.8,
+          "key": true
+        }
+      ],
+      "end": 27.3
+    },
+    {
+      "start": 27.3,
+      "words": [
+        {
+          "w": "en",
+          "start": 27.3
+        },
+        {
+          "w": "lo",
+          "start": 27.34
+        },
+        {
+          "w": "que",
+          "start": 27.46
+        },
+        {
+          "w": "JP",
+          "start": 27.52,
+          "key": true
+        },
+        {
+          "w": "Morgan",
+          "start": 27.78,
+          "key": true
+        }
+      ],
+      "end": 28.04
+    },
+    {
+      "start": 28.04,
+      "words": [
+        {
+          "w": "hizo",
+          "start": 28.04
+        },
+        {
+          "w": "con",
+          "start": 28.48
+        },
+        {
+          "w": "su",
+          "start": 28.68
+        },
+        {
+          "w": "propio",
+          "start": 28.82
+        },
+        {
+          "w": "software",
+          "start": 29.06,
+          "key": true
+        }
+      ],
+      "end": 29.38
+    },
+    {
+      "start": 29.38,
+      "words": [
+        {
+          "w": "y",
+          "start": 29.38
+        },
+        {
+          "w": "hoy",
+          "start": 29.68,
+          "key": true
+        },
+        {
+          "w": "lo",
+          "start": 29.86
+        },
+        {
+          "w": "puedes",
+          "start": 29.96
+        },
+        {
+          "w": "hacer",
+          "start": 30.2
+        }
+      ],
+      "end": 30.36
+    },
+    {
+      "start": 30.36,
+      "words": [
+        {
+          "w": "con",
+          "start": 30.36
+        },
+        {
+          "w": "Claude",
+          "start": 30.52,
+          "key": true
+        }
+      ],
+      "end": 30.92
+    },
+    {
+      "start": 30.92,
+      "words": [
+        {
+          "w": "Le",
+          "start": 30.92
+        },
+        {
+          "w": "subes",
+          "start": 31.14
+        },
+        {
+          "w": "tus",
+          "start": 31.5
+        },
+        {
+          "w": "contratos",
+          "start": 31.62,
+          "key": true
+        }
+      ],
+      "end": 32.6
+    },
+    {
+      "start": 32.6,
+      "words": [
+        {
+          "w": "tus",
+          "start": 32.6
+        },
+        {
+          "w": "órdenes",
+          "start": 32.74,
+          "key": true
+        },
+        {
+          "w": "de",
+          "start": 33.16
+        },
+        {
+          "w": "compra",
+          "start": 33.18
+        }
+      ],
+      "end": 33.46
+    },
+    {
+      "start": 33.46,
+      "words": [
+        {
+          "w": "o",
+          "start": 33.46
+        },
+        {
+          "w": "pólizas",
+          "start": 33.72,
+          "key": true
+        }
+      ],
+      "end": 34.12
+    },
+    {
+      "start": 34.12,
+      "words": [
+        {
+          "w": "y",
+          "start": 34.12
+        },
+        {
+          "w": "le",
+          "start": 34.42
+        },
+        {
+          "w": "pides",
+          "start": 34.76
+        },
+        {
+          "w": "una",
+          "start": 35.06
+        },
+        {
+          "w": "tabla",
+          "start": 35.2,
+          "key": true
+        }
+      ],
+      "end": 35.54
+    },
+    {
+      "start": 35.54,
+      "words": [
+        {
+          "w": "con",
+          "start": 35.54
+        },
+        {
+          "w": "proveedor",
+          "start": 35.64,
+          "key": true
+        },
+        {
+          "w": "monto",
+          "start": 36.18,
+          "key": true
+        }
+      ],
+      "end": 36.54
+    },
+    {
+      "start": 36.54,
+      "words": [
+        {
+          "w": "fecha",
+          "start": 36.54
+        },
+        {
+          "w": "de",
+          "start": 36.8
+        },
+        {
+          "w": "vencimiento",
+          "start": 36.84,
+          "key": true
+        }
+      ],
+      "end": 37.26
+    },
+    {
+      "start": 37.26,
+      "words": [
+        {
+          "w": "y",
+          "start": 37.26
+        },
+        {
+          "w": "penalizaciones",
+          "start": 37.5,
+          "key": true
+        }
+      ],
+      "end": 38.655
+    },
+    {
+      "start": 38.655,
+      "words": [
+        {
+          "w": "Y",
+          "start": 38.655
+        },
+        {
+          "w": "no",
+          "start": 38.675
+        },
+        {
+          "w": "necesitas",
+          "start": 38.815,
+          "key": true
+        }
+      ],
+      "end": 39.275
+    },
+    {
+      "start": 39.275,
+      "words": [
+        {
+          "w": "ser",
+          "start": 39.275
+        },
+        {
+          "w": "JP",
+          "start": 39.395,
+          "key": true
+        },
+        {
+          "w": "Morgan",
+          "start": 39.615,
+          "key": true
+        }
+      ],
+      "end": 40.075
+    },
+    {
+      "start": 40.075,
+      "words": [
+        {
+          "w": "Revisa",
+          "start": 40.075
+        },
+        {
+          "w": "primero",
+          "start": 40.435,
+          "key": true
+        },
+        {
+          "w": "la",
+          "start": 40.715
+        },
+        {
+          "w": "tabla",
+          "start": 40.915
+        }
+      ],
+      "end": 41.235
+    },
+    {
+      "start": 41.235,
+      "words": [
+        {
+          "w": "con",
+          "start": 41.235
+        },
+        {
+          "w": "dos",
+          "start": 41.395,
+          "key": true
+        },
+        {
+          "w": "o",
+          "start": 41.655
+        },
+        {
+          "w": "tres",
+          "start": 41.795,
+          "key": true
+        },
+        {
+          "w": "contratos",
+          "start": 41.955
+        }
+      ],
+      "end": 42.395
+    },
+    {
+      "start": 42.395,
+      "words": [
+        {
+          "w": "que",
+          "start": 42.395
+        },
+        {
+          "w": "conozcas",
+          "start": 42.555,
+          "key": true
+        },
+        {
+          "w": "bien",
+          "start": 42.915
+        }
+      ],
+      "end": 43.115
+    },
+    {
+      "start": 43.115,
+      "words": [
+        {
+          "w": "y",
+          "start": 43.115
+        },
+        {
+          "w": "luego",
+          "start": 43.315
+        },
+        {
+          "w": "déjalo",
+          "start": 43.515
+        },
+        {
+          "w": "trabajar",
+          "start": 43.875,
+          "key": true
+        }
+      ],
+      "end": 44.135
+    },
+    {
+      "start": 44.135,
+      "words": [
+        {
+          "w": "con",
+          "start": 44.135
+        },
+        {
+          "w": "el",
+          "start": 44.415
+        },
+        {
+          "w": "resto",
+          "start": 44.555,
+          "key": true
+        }
+      ],
+      "end": 45.106
+    },
+    {
+      "start": 45.106,
+      "words": [
+        {
+          "w": "Y",
+          "start": 45.106
+        },
+        {
+          "w": "obvio",
+          "start": 45.106
+        },
+        {
+          "w": "siempre",
+          "start": 45.345
+        },
+        {
+          "w": "verifica",
+          "start": 45.645,
+          "key": true
+        }
+      ],
+      "end": 46.105
+    },
+    {
+      "start": 46.105,
+      "words": [
+        {
+          "w": "bien",
+          "start": 46.105
+        },
+        {
+          "w": "todo",
+          "start": 46.345
+        }
+      ],
+      "end": 46.785
+    },
+    {
+      "start": 46.785,
+      "words": [
+        {
+          "w": "lo",
+          "start": 46.785
+        },
+        {
+          "w": "que",
+          "start": 46.945
+        },
+        {
+          "w": "te",
+          "start": 47.085
+        },
+        {
+          "w": "entrega",
+          "start": 47.165,
+          "key": true
+        }
+      ],
+      "end": 47.525
+    },
+    {
+      "start": 47.525,
+      "words": [
+        {
+          "w": "y",
+          "start": 47.525
+        },
+        {
+          "w": "a",
+          "start": 47.625
+        },
+        {
+          "w": "qué",
+          "start": 47.765
+        },
+        {
+          "w": "lo",
+          "start": 47.865
+        },
+        {
+          "w": "conectas",
+          "start": 47.985,
+          "key": true
+        }
+      ],
+      "end": 48.733
+    },
+    {
+      "start": 48.733,
+      "words": [
+        {
+          "w": "Así",
+          "start": 48.733
+        },
+        {
+          "w": "que",
+          "start": 48.842
+        },
+        {
+          "w": "si",
+          "start": 48.982
+        },
+        {
+          "w": "todavía",
+          "start": 49.122
+        },
+        {
+          "w": "no",
+          "start": 49.382
+        }
+      ],
+      "end": 49.562
+    },
+    {
+      "start": 49.562,
+      "words": [
+        {
+          "w": "sabes",
+          "start": 49.562
+        },
+        {
+          "w": "cómo",
+          "start": 49.742
+        },
+        {
+          "w": "implementar",
+          "start": 49.942
+        }
+      ],
+      "end": 50.542
+    },
+    {
+      "start": 50.542,
+      "words": [
+        {
+          "w": "IA",
+          "start": 50.542,
+          "key": true
+        },
+        {
+          "w": "en",
+          "start": 50.842
+        },
+        {
+          "w": "tu",
+          "start": 50.922
+        },
+        {
+          "w": "negocio",
+          "start": 51.022
+        }
+      ],
+      "end": 51.482
+    },
+    {
+      "start": 51.482,
+      "words": [
+        {
+          "w": "esta",
+          "start": 51.482
+        },
+        {
+          "w": "cuenta",
+          "start": 51.822,
+          "key": true
+        },
+        {
+          "w": "es",
+          "start": 52.102
+        },
+        {
+          "w": "para",
+          "start": 52.562
+        },
+        {
+          "w": "ti",
+          "start": 52.802
+        }
+      ],
+      "end": 53.252
+    }
+  ],
+  "whooshAuto": false,
+  "musica": "reels/jp-morgan/musica.wav",
+  "portada": {
+    "cuadro": 1.0
+  },
+  "caraYFuente": 0.57
+}

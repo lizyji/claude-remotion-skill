@@ -3,6 +3,7 @@ import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideo
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
+import { Calendario, Flecha, Lupa, PendienteItems, Pila, Reloj, TextoGrande, Verifica } from "./BRollsExtra";
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -49,6 +50,10 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       );
       break;
     case "pendiente":
+      if (b.items?.length) {
+        body = <PendienteItems id={b.id} items={b.items} tiempos={b.tiempos} ilumina={b.ilumina} />;
+        break;
+      }
       body = (
         <Tarjeta fondo={color.verde} style={{ width: 860, textAlign: "center" }}>
           <Titulo size={56} style={{ color: color.gris }}>[Grabación pendiente: {b.id}]</Titulo>
@@ -131,7 +136,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
         <Tarjeta style={{ width: 920 }}>
           {b.titulo ? <Titulo size={56} style={{ marginBottom: 30 }}>{b.titulo}</Titulo> : null}
           {b.items.map((it, i) => {
-            const pi = spring({ frame: frame - Math.round((0.35 + i * cada) * fps), fps, config: theme.spring.suave });
+            const pi = spring({ frame: frame - Math.round((b.tiempos?.[i] ?? 0.35 + i * cada) * fps), fps, config: theme.spring.suave });
             return (
               <div
                 key={i}
@@ -169,6 +174,27 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
           ) : null}
         </Tarjeta>
       );
+      break;
+    case "reloj":
+      body = <Reloj valor={b.valor} etiqueta={b.etiqueta} antes={b.antes} numeroEn={b.numeroEn} etiquetaEn={b.etiquetaEn} />;
+      break;
+    case "pila":
+      body = <Pila valor={b.valor} etiqueta={b.etiqueta} llegaEn={b.llegaEn} />;
+      break;
+    case "lupa":
+      body = <Lupa items={b.items} titulo={b.titulo} itemsEn={b.itemsEn} cada={b.cada} />;
+      break;
+    case "calendario":
+      body = <Calendario hasta={b.hasta} etiqueta={b.etiqueta} llegaEn={b.llegaEn} />;
+      break;
+    case "flecha":
+      body = <Flecha de={b.de} a={b.a} extra={b.extra} aEn={b.aEn} extraEn={b.extraEn} tachar={b.tachar} deSize={b.deSize} aSize={b.aSize} />;
+      break;
+    case "texto":
+      body = <TextoGrande texto={b.texto} resalta={b.resalta} />;
+      break;
+    case "verifica":
+      body = <Verifica titulo={b.titulo} texto={b.texto} />;
       break;
     case "silueta":
       return null; // se dibuja a pantalla completa en Reel.tsx

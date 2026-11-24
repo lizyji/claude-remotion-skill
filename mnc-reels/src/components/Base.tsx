@@ -98,7 +98,7 @@ export const FuentePie: React.FC<{ texto?: string; p?: number }> = ({ texto, p =
         opacity: p,
       }}
     >
-      {texto.startsWith("Fuente") ? texto : `Fuente: ${texto}`}
+      {texto.startsWith("Fuente") || texto.startsWith("Ejemplo") ? texto : `Fuente: ${texto}`}
     </div>
   ) : null;
 

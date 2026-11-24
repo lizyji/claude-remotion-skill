@@ -62,6 +62,18 @@ def main():
     palabras = leer(Path(a.palabras)) if a.palabras else []
     sils, total = silencios(video)
 
+    # La transcripción suele "estirar" las palabras hacia los silencios (sobre todo el inicio
+    # de la palabra que sigue a una pausa). La energía manda: se recortan a los bordes del silencio.
+    for p in palabras:
+        for s, e in sils:
+            if s < p["start"] < e and p["end"] > e:
+                p["start"] = round(e, 3)
+            if s < p["end"] < e and p["start"] < s:
+                p["end"] = round(s, 3)
+            if s <= p["start"] and p["end"] <= e:  # palabra "dentro" del silencio: va justo después
+                d = min(0.3, p["end"] - p["start"])
+                p["start"], p["end"] = round(e, 3), round(e + d, 3)
+
     cortes = []
     for s, e in sils:
         cs, ce = (0.0 if s <= 0.05 else s + PAD_DESPUES), (total if e >= total - 0.05 else e - PAD_ANTES)
@@ -96,7 +108,11 @@ def main():
         for p in palabras
         if not any(s <= p["start"] and p["end"] <= e for s, e in unidos)
     ]
-    marcas = [round(nuevo_t(s), 3) for s, _ in unidos if 0 < nuevo_t(s) < nuevo_t(total) - 0.05]
+    marcas = []
+    for s, _ in unidos:
+        m = round(nuevo_t(s), 3)
+        if 0 < m < nuevo_t(total) - 0.05 and not (marcas and m - marcas[-1] < 0.4):
+            marcas.append(m)
 
     # 1) recorte + encuadre vertical, audio PCM intermedio
     work = RAIZ / "reels" / a.slug / "work"

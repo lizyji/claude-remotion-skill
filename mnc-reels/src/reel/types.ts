@@ -14,12 +14,21 @@ export type Fuente = string; // "Fuente: Reuters, 12 may 2026 · reuters.com"
 
 export type BRoll =
   | { tipo: "cita"; start: number; end: number; titular: string; medio?: string; fuente: Fuente } // plan B
-  | { tipo: "pendiente"; start: number; end: number; id: string } // último recurso
+  // último recurso; items = píldoras genéricas que entran en "tiempos" (s relativos al inicio del clip)
+  | { tipo: "pendiente"; start: number; end: number; id: string; items?: string[]; tiempos?: number[]; ilumina?: boolean; fuente?: Fuente }
   | { tipo: "imagen"; start: number; end: number; src: string; fit?: "contain" | "cover"; fuente?: Fuente; zoom?: [number, number]; foco?: [number, number] }
   | { tipo: "video"; start: number; end: number; src: string; desde?: number; fit?: "contain" | "cover"; fuente?: Fuente; recorte?: { x: number; y: number; w: number; h: number } }
   | { tipo: "logo"; start: number; end: number; src: string; etiqueta?: string; fuente?: Fuente }
   | { tipo: "contador"; start: number; end: number; valor: number; prefijo?: string; sufijo?: string; etiqueta: string; decimales?: number; fuente?: Fuente }
-  | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
+  | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; tiempos?: number[]; check?: boolean; fuente?: Fuente }
+  // Animaciones genéricas extra (tiempos "...En" en s relativos al inicio del clip)
+  | { tipo: "reloj"; start: number; end: number; valor: string; etiqueta: string; antes?: string; numeroEn?: number; etiquetaEn?: number; fuente?: Fuente }
+  | { tipo: "pila"; start: number; end: number; valor: number; etiqueta: string; llegaEn?: number; fuente?: Fuente }
+  | { tipo: "lupa"; start: number; end: number; items: string[]; titulo?: string; itemsEn?: number; cada?: number; fuente?: Fuente }
+  | { tipo: "calendario"; start: number; end: number; hasta: number; etiqueta: string; llegaEn?: number; fuente?: Fuente }
+  | { tipo: "flecha"; start: number; end: number; de: string; a: string; extra?: string; aEn?: number; extraEn?: number; tachar?: boolean; deSize?: number; aSize?: number; fuente?: Fuente }
+  | { tipo: "texto"; start: number; end: number; texto: string; resalta?: string; fuente?: Fuente }
+  | { tipo: "verifica"; start: number; end: number; titulo: string; texto?: string; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
   | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
@@ -43,6 +52,8 @@ export type Reel = {
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
+  // false = sin whoosh automático en cada cambio de clip (se ponen a mano en "sfx")
+  whooshAuto?: boolean;
   portada?: { frase?: string; cuadro: number };
 };
 
