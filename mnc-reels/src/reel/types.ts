@@ -16,18 +16,26 @@ export type BRoll =
   | { tipo: "cita"; start: number; end: number; titular: string; medio?: string; fuente: Fuente } // plan B
   | { tipo: "pendiente"; start: number; end: number; id: string } // último recurso
   | { tipo: "imagen"; start: number; end: number; src: string; fit?: "contain" | "cover"; fuente?: Fuente; zoom?: [number, number]; foco?: [number, number] }
-  | { tipo: "video"; start: number; end: number; src: string; desde?: number; fit?: "contain" | "cover"; fuente?: Fuente; recorte?: { x: number; y: number; w: number; h: number } }
+  | { tipo: "video"; start: number; end: number; src: string; desde?: number; fit?: "contain" | "cover"; fuente?: Fuente; recorte?: { x: number; y: number; w: number; h: number }; velocidad?: number; zoom?: [number, number]; foco?: [number, number]; pildora?: string }
   | { tipo: "logo"; start: number; end: number; src: string; etiqueta?: string; fuente?: Fuente }
   | { tipo: "contador"; start: number; end: number; valor: number; prefijo?: string; sufijo?: string; etiqueta: string; decimales?: number; fuente?: Fuente }
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
+  // Animaciones genéricas MNC (sin logos ni interfaces de marca; datos ficticios)
+  | { tipo: "hoja"; start: number; end: number; limpiaEn?: number; fuente?: Fuente }
+  | { tipo: "tachado"; start: number; end: number; formula: string; titulo: string; fuente?: Fuente }
+  | { tipo: "bloques"; start: number; end: number; items: { txt: string; en: number; naranja?: boolean }[]; juntaEn: number; fuente?: Fuente }
+  | { tipo: "prompt"; start: number; end: number; texto: string; pildora?: string; fuente?: Fuente }
+  | { tipo: "errores"; start: number; end: number; etiquetas: { txt: string; en: number }[]; fuente?: Fuente }
+  | { tipo: "ventas"; start: number; end: number; tablaEn: number; graficaEn: number; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
   | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
   | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
-  | { tipo: "cierre"; start: number; end: number };
+  | { tipo: "cierre"; start: number; end: number }
+  | { tipo: "palomitas"; start: number; end: number; titulo?: string; items: { txt: string; en: number }[] };
 
 export type Reel = {
   slug: string;
@@ -42,6 +50,7 @@ export type Reel = {
   broll: BRoll[];
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
+  whooshAuto?: boolean; // false: sin whoosh automático en cada cambio de clip (solo los de "sfx")
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
   portada?: { frase?: string; cuadro: number };
 };

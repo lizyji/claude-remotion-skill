@@ -2,7 +2,7 @@ import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { theme } from "../theme";
 import { FRASE_CIERRE, type Golpe, type Palabra } from "../reel/types";
-import { FuentePie } from "./Base";
+import { Check, FuentePie } from "./Base";
 
 const { color, font } = theme;
 
@@ -169,10 +169,50 @@ const Cierre: React.FC<{ dur: number; start: number; palabras: Palabra[]; end: n
   );
 };
 
+// Cierre a pantalla completa (fondo verde claro, texto negro) con palomitas que aparecen
+// cuando Manuel dice cada frase. Se usa en videos sin la frase de firma.
+const Palomitas: React.FC<{ dur: number; start: number; titulo?: string; items: { txt: string; en: number }[] }> = ({ dur, start, titulo, items }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const a = spring({ frame, fps, config: theme.spring.suave });
+  return (
+    <Pantalla dur={dur}>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", padding: "0 70px" }}>
+        {titulo ? (
+          <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 84, color: color.negro, marginBottom: 70, opacity: a, textAlign: "center", lineHeight: 1.1 }}>
+            {titulo}
+          </div>
+        ) : null}
+        <div style={{ display: "flex", flexDirection: "column", gap: 54, alignItems: "flex-start" }}>
+          {items.map((it, i) => {
+            const p = spring({ frame: frame - Math.round((it.en - start) * fps), fps, config: theme.spring.golpe });
+            return (
+              <div
+                key={i}
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  gap: 34,
+                  opacity: Math.min(1, p * 1.5),
+                  transform: `translateX(${interpolate(p, [0, 1], [60, 0])}px)`,
+                }}
+              >
+                <Check size={110} p={Math.min(1, p)} />
+                <span style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 76, color: color.negro, lineHeight: 1.08 }}>{it.txt}</span>
+              </div>
+            );
+          })}
+        </div>
+      </AbsoluteFill>
+    </Pantalla>
+  );
+};
+
 export const GolpeView: React.FC<{ g: Golpe; palabras: Palabra[] }> = ({ g, palabras }) => {
   const { fps } = useVideoConfig();
   const dur = Math.round((g.end - g.start) * fps);
   if (g.tipo === "jugada") return <Jugada dur={dur} />;
   if (g.tipo === "numero") return <Numero dur={dur} valor={g.valor} etiqueta={g.etiqueta} fuente={g.fuente} />;
+  if (g.tipo === "palomitas") return <Palomitas dur={dur} start={g.start} titulo={g.titulo} items={g.items} />;
   return <Cierre dur={dur} start={g.start} end={g.end} palabras={palabras} />;
 };

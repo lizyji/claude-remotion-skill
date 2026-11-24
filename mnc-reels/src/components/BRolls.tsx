@@ -3,6 +3,7 @@ import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideo
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
+import { Bloques, Errores, Hoja, Prompt, Tachado, Ventas } from "./Animaciones";
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -70,29 +71,54 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       break;
     }
     case "video": {
-      const z = interpolate(frame, [0, dur], [1, 1.05], { extrapolateRight: "clamp", easing: theme.ease.inOut });
+      const [z0, z1] = b.zoom ?? [1, 1.05];
+      const z = interpolate(frame, [0, dur], [z0, z1], { extrapolateRight: "clamp", easing: theme.ease.inOut });
+      const [fx, fy] = b.foco ?? [50, 50];
       const r = b.recorte ?? { x: 0, y: 0, w: 1, h: 1 };
+      const alto = conPaso ? 470 : 600;
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.negro, position: "relative" }}>
-          <div style={{ position: "absolute", inset: 0, transform: `scale(${z})` }}>
-            <OffthreadVideo
-              src={staticFile(b.src)}
-              muted
-              startFrom={Math.round((b.desde ?? 0) * fps)}
-              style={{
-                position: "absolute",
-                width: `${100 / r.w}%`,
-                height: `${100 / r.h}%`,
-                left: `${(-r.x / r.w) * 100}%`,
-                top: `${(-r.y / r.h) * 100}%`,
-                objectFit: b.fit ?? "cover",
-              }}
-            />
+        <div style={{ position: "relative" }}>
+          <div style={{ width: 960, height: alto, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco, position: "relative" }}>
+            <div style={{ position: "absolute", inset: 0, transform: `scale(${z})`, transformOrigin: `${fx}% ${fy}%` }}>
+              <OffthreadVideo
+                src={staticFile(b.src)}
+                muted
+                playbackRate={b.velocidad ?? 1}
+                startFrom={Math.round((b.desde ?? 0) * fps)}
+                style={{
+                  position: "absolute",
+                  width: `${100 / r.w}%`,
+                  height: `${100 / r.h}%`,
+                  left: `${(-r.x / r.w) * 100}%`,
+                  top: `${(-r.y / r.h) * 100}%`,
+                  objectFit: b.fit ?? "cover",
+                }}
+              />
+            </div>
           </div>
+          {b.pildora ? <Pildora tono="negro" style={{ position: "absolute", left: 24, bottom: 24, fontSize: 28, padding: "8px 24px" }}>{b.pildora}</Pildora> : null}
         </div>
       );
       break;
     }
+    case "hoja":
+      body = <Hoja limpiaEn={b.limpiaEn ?? 1.6} />;
+      break;
+    case "tachado":
+      body = <Tachado formula={b.formula} titulo={b.titulo} />;
+      break;
+    case "bloques":
+      body = <Bloques items={b.items.map((i) => ({ ...i, en: i.en - b.start }))} juntaEn={b.juntaEn - b.start} />;
+      break;
+    case "prompt":
+      body = <Prompt texto={b.texto} pildora={b.pildora} />;
+      break;
+    case "errores":
+      body = <Errores etiquetas={b.etiquetas.map((e) => ({ ...e, en: e.en - b.start }))} />;
+      break;
+    case "ventas":
+      body = <Ventas tablaEn={b.tablaEn - b.start} graficaEn={b.graficaEn - b.start} />;
+      break;
     case "logo":
       body = (
         <Tarjeta style={{ width: 760, display: "flex", flexDirection: "column", alignItems: "center", gap: 30 }}>

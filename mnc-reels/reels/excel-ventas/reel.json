@@ -1,0 +1,1568 @@
+{
+  "broll": [
+    {
+      "tipo": "hoja",
+      "start": 0.0,
+      "end": 2.7,
+      "limpiaEn": 1.55,
+      "fuente": "Ejemplo con datos ficticios"
+    },
+    {
+      "tipo": "tachado",
+      "start": 2.7,
+      "end": 3.89,
+      "formula": "=SUMA(C2:C40)",
+      "titulo": "Sin fórmulas"
+    },
+    {
+      "tipo": "bloques",
+      "start": 3.89,
+      "end": 6.4,
+      "items": [
+        {
+          "txt": "Claude",
+          "en": 4.07
+        },
+        {
+          "txt": "Excel",
+          "en": 4.65
+        },
+        {
+          "txt": "1 prompt",
+          "en": 5.4,
+          "naranja": true
+        }
+      ],
+      "juntaEn": 5.85
+    },
+    {
+      "tipo": "lista",
+      "start": 6.4,
+      "end": 9.65,
+      "titulo": "Con un solo prompt:",
+      "items": [
+        "Limpias tu base",
+        "Ventas por cliente",
+        "En minutos, sin fórmulas"
+      ],
+      "cada": 1.05
+    },
+    {
+      "tipo": "video",
+      "start": 9.65,
+      "end": 12.95,
+      "src": "reels/excel-ventas/anthropic_m365.mp4",
+      "desde": 8.8,
+      "velocidad": 0.36,
+      "recorte": {
+        "x": 0.12,
+        "y": 0.13,
+        "w": 0.74,
+        "h": 0.645
+      },
+      "zoom": [
+        1.0,
+        1.45
+      ],
+      "foco": [
+        98,
+        40
+      ],
+      "pildora": "Panel de Claude en Excel",
+      "fuente": "Fuente: Anthropic, 2026 · claude.com (video oficial) · datos de ejemplo"
+    },
+    {
+      "tipo": "prompt",
+      "start": 12.95,
+      "end": 14.69,
+      "pildora": "Tu prompt",
+      "texto": "Limpia la base: nombres repetidos, fechas mal escritas y celdas vacías.",
+      "fuente": "Ejemplo con datos ficticios"
+    },
+    {
+      "tipo": "errores",
+      "start": 14.69,
+      "end": 18.07,
+      "etiquetas": [
+        {
+          "txt": "Repetidos",
+          "en": 14.89
+        },
+        {
+          "txt": "Fechas",
+          "en": 15.71
+        },
+        {
+          "txt": "Vacías",
+          "en": 16.91
+        }
+      ],
+      "fuente": "Ejemplo con datos ficticios"
+    },
+    {
+      "tipo": "ventas",
+      "start": 18.07,
+      "end": 21.07,
+      "tablaEn": 19.07,
+      "graficaEn": 20.45,
+      "fuente": "Ejemplo con datos ficticios"
+    },
+    {
+      "tipo": "lista",
+      "start": 21.07,
+      "end": 22.97,
+      "titulo": "Te explica cada paso:",
+      "items": [
+        "Unificó nombres",
+        "Corrigió fechas",
+        "Sumó por cliente"
+      ],
+      "cada": 0.42,
+      "check": false,
+      "fuente": "Ejemplo con datos ficticios"
+    },
+    {
+      "tipo": "video",
+      "start": 22.97,
+      "end": 25.59,
+      "src": "reels/excel-ventas/anthropic_m365.mp4",
+      "desde": 6.0,
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "foco": [
+        50,
+        50
+      ],
+      "pildora": "Todo dentro de Excel",
+      "fuente": "Fuente: Anthropic, 2026 · claude.com (video oficial) · datos de ejemplo",
+      "velocidad": 0.95
+    },
+    {
+      "tipo": "tarjeta",
+      "start": 25.62,
+      "end": 27.95,
+      "pildora": "Lo que necesitas",
+      "titulo": "Plan Pro de Claude",
+      "texto": "Disponible en planes Pro, Max, Team y Enterprise",
+      "fuente": "Fuente: Anthropic, 2026 · support.claude.com"
+    },
+    {
+      "tipo": "tarjeta",
+      "start": 30.55,
+      "end": 33.7,
+      "pildora": "@manuelnocode",
+      "titulo": "Sígueme para más tutoriales",
+      "texto": "y guarda este video"
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "palomitas",
+      "start": 27.52,
+      "end": 30.55,
+      "items": [
+        {
+          "txt": "Sin cambiar de herramienta",
+          "en": 27.72
+        },
+        {
+          "txt": "Sin fórmulas",
+          "en": 29.0
+        },
+        {
+          "txt": "Sin programar",
+          "en": 29.9
+        }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "start": 9.65,
+      "end": 12.95,
+      "n": 1
+    },
+    {
+      "start": 12.95,
+      "end": 18.07,
+      "n": 2
+    },
+    {
+      "start": 18.07,
+      "end": 22.97,
+      "n": 3
+    }
+  ],
+  "sfx": [
+    {
+      "t": 3.81,
+      "s": "whoosh"
+    },
+    {
+      "t": 17.99,
+      "s": "whoosh"
+    },
+    {
+      "t": 27.44,
+      "s": "whoosh"
+    },
+    {
+      "t": 1.55,
+      "s": "click"
+    },
+    {
+      "t": 3.12,
+      "s": "tick"
+    },
+    {
+      "t": 4.07,
+      "s": "pop"
+    },
+    {
+      "t": 4.65,
+      "s": "pop"
+    },
+    {
+      "t": 5.4,
+      "s": "pop"
+    },
+    {
+      "t": 14.89,
+      "s": "tick"
+    },
+    {
+      "t": 15.71,
+      "s": "tick"
+    },
+    {
+      "t": 16.91,
+      "s": "tick"
+    },
+    {
+      "t": 20.45,
+      "s": "pop"
+    }
+  ],
+  "slug": "excel-ventas",
+  "duracion": 33.7,
+  "manuel": "reels/excel-ventas/manuel.mp4",
+  "cortes": [
+    3.7,
+    9.48,
+    17.95,
+    22.84,
+    25.59,
+    30.45
+  ],
+  "palabras": [
+    {
+      "w": "Tu",
+      "start": 0.0,
+      "end": 0.24,
+      "prob": 0.317
+    },
+    {
+      "w": "reporte",
+      "start": 0.24,
+      "end": 0.72,
+      "prob": 0.961
+    },
+    {
+      "w": "de",
+      "start": 0.72,
+      "end": 0.86,
+      "prob": 0.995
+    },
+    {
+      "w": "ventas",
+      "start": 0.86,
+      "end": 1.26,
+      "prob": 0.996
+    },
+    {
+      "w": "por",
+      "start": 1.26,
+      "end": 1.52,
+      "prob": 0.988
+    },
+    {
+      "w": "cliente",
+      "start": 1.52,
+      "end": 2.06,
+      "prob": 0.988
+    },
+    {
+      "w": "en",
+      "start": 2.06,
+      "end": 2.24,
+      "prob": 0.961
+    },
+    {
+      "w": "minutos",
+      "start": 2.24,
+      "end": 2.7,
+      "prob": 0.97
+    },
+    {
+      "w": "sin",
+      "start": 2.7,
+      "end": 3.12,
+      "prob": 0.913
+    },
+    {
+      "w": "fórmulas.",
+      "start": 3.12,
+      "end": 3.7,
+      "prob": 0.974
+    },
+    {
+      "w": "Con",
+      "start": 3.89,
+      "end": 4.07,
+      "prob": 0.969
+    },
+    {
+      "w": "Claude",
+      "start": 4.07,
+      "end": 4.23,
+      "prob": 0.514
+    },
+    {
+      "w": "dentro",
+      "start": 4.23,
+      "end": 4.47,
+      "prob": 0.976
+    },
+    {
+      "w": "de",
+      "start": 4.47,
+      "end": 4.65,
+      "prob": 0.996
+    },
+    {
+      "w": "Excel",
+      "start": 4.65,
+      "end": 4.85,
+      "prob": 0.976
+    },
+    {
+      "w": "y",
+      "start": 4.85,
+      "end": 5.11,
+      "prob": 0.932
+    },
+    {
+      "w": "un",
+      "start": 5.11,
+      "end": 5.25,
+      "prob": 0.938
+    },
+    {
+      "w": "solo",
+      "start": 5.25,
+      "end": 5.47,
+      "prob": 0.979
+    },
+    {
+      "w": "prompt,",
+      "start": 5.47,
+      "end": 5.73,
+      "prob": 0.97
+    },
+    {
+      "w": "limpias",
+      "start": 6.01,
+      "end": 6.21,
+      "prob": 0.982
+    },
+    {
+      "w": "tu",
+      "start": 6.21,
+      "end": 6.41,
+      "prob": 0.966
+    },
+    {
+      "w": "base",
+      "start": 6.41,
+      "end": 6.63,
+      "prob": 0.993
+    },
+    {
+      "w": "y",
+      "start": 6.63,
+      "end": 6.87,
+      "prob": 0.95
+    },
+    {
+      "w": "sacas",
+      "start": 6.87,
+      "end": 7.19,
+      "prob": 0.995
+    },
+    {
+      "w": "las",
+      "start": 7.19,
+      "end": 7.39,
+      "prob": 0.966
+    },
+    {
+      "w": "ventas",
+      "start": 7.39,
+      "end": 7.63,
+      "prob": 0.999
+    },
+    {
+      "w": "por",
+      "start": 7.63,
+      "end": 7.87,
+      "prob": 0.983
+    },
+    {
+      "w": "cliente",
+      "start": 7.87,
+      "end": 8.29,
+      "prob": 0.991
+    },
+    {
+      "w": "en",
+      "start": 8.29,
+      "end": 8.47,
+      "prob": 0.986
+    },
+    {
+      "w": "minutos",
+      "start": 8.47,
+      "end": 8.79,
+      "prob": 0.976
+    },
+    {
+      "w": "sin",
+      "start": 8.79,
+      "end": 9.07,
+      "prob": 0.996
+    },
+    {
+      "w": "fórmulas.",
+      "start": 9.07,
+      "end": 9.48,
+      "prob": 0.995
+    },
+    {
+      "w": "El",
+      "start": 9.65,
+      "end": 9.79,
+      "prob": 0.992
+    },
+    {
+      "w": "paso",
+      "start": 9.79,
+      "end": 9.99,
+      "prob": 0.98
+    },
+    {
+      "w": "1",
+      "start": 9.99,
+      "end": 10.29,
+      "prob": 0.545
+    },
+    {
+      "w": "es",
+      "start": 10.29,
+      "end": 10.67,
+      "prob": 0.908
+    },
+    {
+      "w": "abrir",
+      "start": 10.67,
+      "end": 10.85,
+      "prob": 0.98
+    },
+    {
+      "w": "el",
+      "start": 10.85,
+      "end": 11.03,
+      "prob": 0.991
+    },
+    {
+      "w": "panel",
+      "start": 11.03,
+      "end": 11.23,
+      "prob": 0.979
+    },
+    {
+      "w": "de",
+      "start": 11.23,
+      "end": 11.45,
+      "prob": 0.992
+    },
+    {
+      "w": "Claude",
+      "start": 11.45,
+      "end": 11.77,
+      "prob": 0.998
+    },
+    {
+      "w": "dentro",
+      "start": 11.77,
+      "end": 12.07,
+      "prob": 0.992
+    },
+    {
+      "w": "de",
+      "start": 12.07,
+      "end": 12.19,
+      "prob": 0.997
+    },
+    {
+      "w": "tu",
+      "start": 12.19,
+      "end": 12.29,
+      "prob": 0.943
+    },
+    {
+      "w": "Excel.",
+      "start": 12.29,
+      "end": 12.57,
+      "prob": 0.977
+    },
+    {
+      "w": "Después",
+      "start": 12.95,
+      "end": 13.33,
+      "prob": 0.992
+    },
+    {
+      "w": "le",
+      "start": 13.33,
+      "end": 13.69,
+      "prob": 0.654
+    },
+    {
+      "w": "pides",
+      "start": 13.69,
+      "end": 13.81,
+      "prob": 0.994
+    },
+    {
+      "w": "que",
+      "start": 13.81,
+      "end": 13.99,
+      "prob": 0.991
+    },
+    {
+      "w": "limpie",
+      "start": 13.99,
+      "end": 14.13,
+      "prob": 0.796
+    },
+    {
+      "w": "la",
+      "start": 14.13,
+      "end": 14.33,
+      "prob": 0.996
+    },
+    {
+      "w": "base,",
+      "start": 14.33,
+      "end": 14.49,
+      "prob": 0.998
+    },
+    {
+      "w": "nombres",
+      "start": 14.69,
+      "end": 14.89,
+      "prob": 0.896
+    },
+    {
+      "w": "repetidos,",
+      "start": 14.89,
+      "end": 15.55,
+      "prob": 0.995
+    },
+    {
+      "w": "fechas",
+      "start": 15.71,
+      "end": 15.91,
+      "prob": 0.994
+    },
+    {
+      "w": "mal",
+      "start": 15.91,
+      "end": 16.21,
+      "prob": 0.846
+    },
+    {
+      "w": "escritas,",
+      "start": 16.21,
+      "end": 16.75,
+      "prob": 0.99
+    },
+    {
+      "w": "celdas",
+      "start": 16.91,
+      "end": 17.15,
+      "prob": 0.688,
+      "corregida": true
+    },
+    {
+      "w": "vacías.",
+      "start": 17.15,
+      "end": 17.71,
+      "prob": 0.993
+    },
+    {
+      "w": "Y",
+      "start": 18.07,
+      "end": 18.19,
+      "prob": 0.952
+    },
+    {
+      "w": "el",
+      "start": 18.19,
+      "end": 18.33,
+      "prob": 0.933
+    },
+    {
+      "w": "último",
+      "start": 18.33,
+      "end": 18.57,
+      "prob": 0.985
+    },
+    {
+      "w": "paso,",
+      "start": 18.57,
+      "end": 18.89,
+      "prob": 0.99
+    },
+    {
+      "w": "le",
+      "start": 19.07,
+      "end": 19.25,
+      "prob": 0.988
+    },
+    {
+      "w": "pides",
+      "start": 19.25,
+      "end": 19.39,
+      "prob": 0.998
+    },
+    {
+      "w": "las",
+      "start": 19.39,
+      "end": 19.55,
+      "prob": 0.992
+    },
+    {
+      "w": "ventas",
+      "start": 19.55,
+      "end": 19.77,
+      "prob": 0.999
+    },
+    {
+      "w": "por",
+      "start": 19.77,
+      "end": 19.97,
+      "prob": 0.986
+    },
+    {
+      "w": "cliente",
+      "start": 19.97,
+      "end": 20.25,
+      "prob": 0.995
+    },
+    {
+      "w": "con",
+      "start": 20.25,
+      "end": 20.41,
+      "prob": 0.978
+    },
+    {
+      "w": "una",
+      "start": 20.41,
+      "end": 20.57,
+      "prob": 0.991
+    },
+    {
+      "w": "gráfica",
+      "start": 20.57,
+      "end": 20.95,
+      "prob": 0.998
+    },
+    {
+      "w": "y",
+      "start": 20.95,
+      "end": 21.07,
+      "prob": 0.928
+    },
+    {
+      "w": "te",
+      "start": 21.07,
+      "end": 21.39,
+      "prob": 0.993
+    },
+    {
+      "w": "explica",
+      "start": 21.39,
+      "end": 21.75,
+      "prob": 0.994
+    },
+    {
+      "w": "cada",
+      "start": 21.75,
+      "end": 22.11,
+      "prob": 0.995
+    },
+    {
+      "w": "paso",
+      "start": 22.11,
+      "end": 22.37,
+      "prob": 0.997
+    },
+    {
+      "w": "que",
+      "start": 22.37,
+      "end": 22.61,
+      "prob": 0.998
+    },
+    {
+      "w": "hizo.",
+      "start": 22.61,
+      "end": 22.81,
+      "prob": 0.996
+    },
+    {
+      "w": "Y",
+      "start": 22.97,
+      "end": 23.07,
+      "prob": 0.942
+    },
+    {
+      "w": "lo",
+      "start": 23.07,
+      "end": 23.25,
+      "prob": 0.962
+    },
+    {
+      "w": "mejor,",
+      "start": 23.25,
+      "end": 23.57,
+      "prob": 0.999
+    },
+    {
+      "w": "todo",
+      "start": 23.63,
+      "end": 23.87,
+      "prob": 0.995
+    },
+    {
+      "w": "pasa",
+      "start": 23.87,
+      "end": 24.15,
+      "prob": 0.997
+    },
+    {
+      "w": "dentro",
+      "start": 24.15,
+      "end": 24.39,
+      "prob": 0.995
+    },
+    {
+      "w": "del",
+      "start": 24.39,
+      "end": 24.61,
+      "prob": 0.664
+    },
+    {
+      "w": "Excel",
+      "start": 24.61,
+      "end": 24.83,
+      "prob": 0.984
+    },
+    {
+      "w": "que",
+      "start": 24.83,
+      "end": 25.11,
+      "prob": 0.991
+    },
+    {
+      "w": "ya",
+      "start": 25.11,
+      "end": 25.39,
+      "prob": 0.998
+    },
+    {
+      "w": "usas.",
+      "start": 25.39,
+      "end": 25.59,
+      "prob": 0.985
+    },
+    {
+      "w": "¿Necesitas",
+      "start": 25.59,
+      "end": 26.28,
+      "prob": 0.731
+    },
+    {
+      "w": "el",
+      "start": 26.28,
+      "end": 26.48,
+      "prob": 0.965
+    },
+    {
+      "w": "plan",
+      "start": 26.48,
+      "end": 26.68,
+      "prob": 0.653
+    },
+    {
+      "w": "Pro",
+      "start": 26.68,
+      "end": 26.88,
+      "prob": 0.349
+    },
+    {
+      "w": "de",
+      "start": 26.88,
+      "end": 27.06,
+      "prob": 0.979
+    },
+    {
+      "w": "Claude?",
+      "start": 27.06,
+      "end": 27.3,
+      "prob": 0.621
+    },
+    {
+      "w": "No",
+      "start": 27.52,
+      "end": 27.72,
+      "prob": 0.803
+    },
+    {
+      "w": "cambies",
+      "start": 27.72,
+      "end": 28.0,
+      "prob": 0.931
+    },
+    {
+      "w": "de",
+      "start": 28.0,
+      "end": 28.16,
+      "prob": 0.914
+    },
+    {
+      "w": "herramienta,",
+      "start": 28.16,
+      "end": 28.7,
+      "prob": 0.978
+    },
+    {
+      "w": "no",
+      "start": 28.88,
+      "end": 29.0,
+      "prob": 0.968
+    },
+    {
+      "w": "escribes",
+      "start": 29.0,
+      "end": 29.2,
+      "prob": 0.9
+    },
+    {
+      "w": "fórmulas",
+      "start": 29.2,
+      "end": 29.66,
+      "prob": 0.983
+    },
+    {
+      "w": "y",
+      "start": 29.66,
+      "end": 29.9,
+      "prob": 0.882
+    },
+    {
+      "w": "no",
+      "start": 29.9,
+      "end": 30.08,
+      "prob": 0.983
+    },
+    {
+      "w": "programas.",
+      "start": 30.08,
+      "end": 30.46,
+      "prob": 0.991
+    },
+    {
+      "w": "Sígueme",
+      "start": 30.62,
+      "end": 30.96,
+      "prob": 0.942
+    },
+    {
+      "w": "para",
+      "start": 30.96,
+      "end": 31.2,
+      "prob": 0.988
+    },
+    {
+      "w": "más",
+      "start": 31.2,
+      "end": 31.36,
+      "prob": 0.92
+    },
+    {
+      "w": "tutoriales",
+      "start": 31.36,
+      "end": 31.84,
+      "prob": 0.993
+    },
+    {
+      "w": "como",
+      "start": 31.84,
+      "end": 32.0,
+      "prob": 0.98
+    },
+    {
+      "w": "este",
+      "start": 32.0,
+      "end": 32.26,
+      "prob": 0.747
+    },
+    {
+      "w": "y",
+      "start": 32.26,
+      "end": 32.5,
+      "prob": 0.948
+    },
+    {
+      "w": "guarda",
+      "start": 32.5,
+      "end": 33.1,
+      "prob": 0.977
+    },
+    {
+      "w": "este",
+      "start": 33.1,
+      "end": 33.26,
+      "prob": 0.984
+    },
+    {
+      "w": "video.",
+      "start": 33.26,
+      "end": 33.54,
+      "prob": 0.613
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.0,
+      "end": 1.26,
+      "words": [
+        {
+          "w": "Tu"
+        },
+        {
+          "w": "reporte"
+        },
+        {
+          "w": "de"
+        },
+        {
+          "w": "ventas",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 1.26,
+      "end": 2.7,
+      "words": [
+        {
+          "w": "por"
+        },
+        {
+          "w": "cliente"
+        },
+        {
+          "w": "en"
+        },
+        {
+          "w": "minutos,",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 2.7,
+      "end": 3.89,
+      "words": [
+        {
+          "w": "sin"
+        },
+        {
+          "w": "fórmulas.",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 3.89,
+      "end": 4.47,
+      "words": [
+        {
+          "w": "Con"
+        },
+        {
+          "w": "Claude",
+          "key": true
+        },
+        {
+          "w": "dentro"
+        }
+      ]
+    },
+    {
+      "start": 4.47,
+      "end": 5.11,
+      "words": [
+        {
+          "w": "de"
+        },
+        {
+          "w": "Excel",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 5.11,
+      "end": 6.01,
+      "words": [
+        {
+          "w": "y"
+        },
+        {
+          "w": "un"
+        },
+        {
+          "w": "solo"
+        },
+        {
+          "w": "prompt,",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 6.01,
+      "end": 6.63,
+      "words": [
+        {
+          "w": "limpias",
+          "key": true
+        },
+        {
+          "w": "tu"
+        },
+        {
+          "w": "base"
+        }
+      ]
+    },
+    {
+      "start": 6.63,
+      "end": 7.63,
+      "words": [
+        {
+          "w": "y"
+        },
+        {
+          "w": "sacas"
+        },
+        {
+          "w": "las"
+        },
+        {
+          "w": "ventas",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 7.63,
+      "end": 8.79,
+      "words": [
+        {
+          "w": "por"
+        },
+        {
+          "w": "cliente",
+          "key": true
+        },
+        {
+          "w": "en"
+        },
+        {
+          "w": "minutos,"
+        }
+      ]
+    },
+    {
+      "start": 8.79,
+      "end": 9.65,
+      "words": [
+        {
+          "w": "sin"
+        },
+        {
+          "w": "fórmulas.",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 9.65,
+      "end": 10.85,
+      "words": [
+        {
+          "w": "El"
+        },
+        {
+          "w": "paso",
+          "key": true
+        },
+        {
+          "w": "1",
+          "key": true
+        },
+        {
+          "w": "es"
+        },
+        {
+          "w": "abrir"
+        }
+      ]
+    },
+    {
+      "start": 10.85,
+      "end": 11.77,
+      "words": [
+        {
+          "w": "el"
+        },
+        {
+          "w": "panel",
+          "key": true
+        },
+        {
+          "w": "de"
+        },
+        {
+          "w": "Claude"
+        }
+      ]
+    },
+    {
+      "start": 11.77,
+      "end": 12.95,
+      "words": [
+        {
+          "w": "dentro"
+        },
+        {
+          "w": "de"
+        },
+        {
+          "w": "tu"
+        },
+        {
+          "w": "Excel.",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 12.95,
+      "end": 13.81,
+      "words": [
+        {
+          "w": "Después",
+          "key": true
+        },
+        {
+          "w": "le"
+        },
+        {
+          "w": "pides"
+        }
+      ]
+    },
+    {
+      "start": 13.81,
+      "end": 14.69,
+      "words": [
+        {
+          "w": "que"
+        },
+        {
+          "w": "limpie",
+          "key": true
+        },
+        {
+          "w": "la"
+        },
+        {
+          "w": "base:"
+        }
+      ]
+    },
+    {
+      "start": 14.69,
+      "end": 15.71,
+      "words": [
+        {
+          "w": "nombres"
+        },
+        {
+          "w": "repetidos,",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 15.71,
+      "end": 16.91,
+      "words": [
+        {
+          "w": "fechas"
+        },
+        {
+          "w": "mal",
+          "key": true
+        },
+        {
+          "w": "escritas,",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 16.91,
+      "end": 18.07,
+      "words": [
+        {
+          "w": "celdas"
+        },
+        {
+          "w": "vacías.",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 18.07,
+      "end": 19.07,
+      "words": [
+        {
+          "w": "Y"
+        },
+        {
+          "w": "el"
+        },
+        {
+          "w": "último",
+          "key": true
+        },
+        {
+          "w": "paso:"
+        }
+      ]
+    },
+    {
+      "start": 19.07,
+      "end": 19.77,
+      "words": [
+        {
+          "w": "le"
+        },
+        {
+          "w": "pides"
+        },
+        {
+          "w": "las"
+        },
+        {
+          "w": "ventas",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 19.77,
+      "end": 20.25,
+      "words": [
+        {
+          "w": "por"
+        },
+        {
+          "w": "cliente",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 20.25,
+      "end": 20.95,
+      "words": [
+        {
+          "w": "con"
+        },
+        {
+          "w": "una"
+        },
+        {
+          "w": "gráfica",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 20.95,
+      "end": 22.37,
+      "words": [
+        {
+          "w": "y"
+        },
+        {
+          "w": "te"
+        },
+        {
+          "w": "explica",
+          "key": true
+        },
+        {
+          "w": "cada"
+        },
+        {
+          "w": "paso"
+        }
+      ]
+    },
+    {
+      "start": 22.37,
+      "end": 22.97,
+      "words": [
+        {
+          "w": "que"
+        },
+        {
+          "w": "hizo."
+        }
+      ]
+    },
+    {
+      "start": 22.97,
+      "end": 23.63,
+      "words": [
+        {
+          "w": "Y"
+        },
+        {
+          "w": "lo"
+        },
+        {
+          "w": "mejor:",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 23.63,
+      "end": 24.39,
+      "words": [
+        {
+          "w": "todo"
+        },
+        {
+          "w": "pasa"
+        },
+        {
+          "w": "dentro",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 24.39,
+      "end": 25.62,
+      "words": [
+        {
+          "w": "del"
+        },
+        {
+          "w": "Excel",
+          "key": true
+        },
+        {
+          "w": "que"
+        },
+        {
+          "w": "ya"
+        },
+        {
+          "w": "usas."
+        }
+      ]
+    },
+    {
+      "start": 25.62,
+      "end": 26.88,
+      "words": [
+        {
+          "w": "Necesitas"
+        },
+        {
+          "w": "el"
+        },
+        {
+          "w": "plan",
+          "key": true
+        },
+        {
+          "w": "Pro",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 26.88,
+      "end": 27.52,
+      "words": [
+        {
+          "w": "de"
+        },
+        {
+          "w": "Claude.",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 27.52,
+      "end": 28.0,
+      "words": [
+        {
+          "w": "No"
+        },
+        {
+          "w": "cambies",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 28.0,
+      "end": 28.88,
+      "words": [
+        {
+          "w": "de"
+        },
+        {
+          "w": "herramienta,",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 28.88,
+      "end": 29.66,
+      "words": [
+        {
+          "w": "no"
+        },
+        {
+          "w": "escribes"
+        },
+        {
+          "w": "fórmulas",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 29.66,
+      "end": 30.62,
+      "words": [
+        {
+          "w": "y"
+        },
+        {
+          "w": "no"
+        },
+        {
+          "w": "programas.",
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 30.62,
+      "end": 31.36,
+      "words": [
+        {
+          "w": "Sígueme",
+          "key": true
+        },
+        {
+          "w": "para"
+        },
+        {
+          "w": "más"
+        }
+      ]
+    },
+    {
+      "start": 31.36,
+      "end": 32.26,
+      "words": [
+        {
+          "w": "tutoriales",
+          "key": true
+        },
+        {
+          "w": "como"
+        },
+        {
+          "w": "este"
+        }
+      ]
+    },
+    {
+      "start": 32.26,
+      "end": 33.7,
+      "words": [
+        {
+          "w": "y"
+        },
+        {
+          "w": "guarda",
+          "key": true
+        },
+        {
+          "w": "este"
+        },
+        {
+          "w": "video."
+        }
+      ]
+    }
+  ],
+  "whooshAuto": false,
+  "musica": "reels/excel-ventas/musica.m4a",
+  "caraYFuente": 0.52,
+  "portada": {
+    "cuadro": 5.0
+  }
+}
