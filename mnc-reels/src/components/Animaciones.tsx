@@ -49,7 +49,7 @@ const Tabla: React.FC<{ children: React.ReactNode; style?: React.CSSProperties }
   <div style={{ background: color.blanco, border: theme.card.border, borderRadius: 22, overflow: "hidden", ...style }}>{children}</div>
 );
 
-// ───────── B1 · Hoja desordenada que tiembla y se limpia de golpe ─────────
+// ───────── B1 · Hoja desordenada (fija, sin temblor) que se limpia de golpe ─────────
 const SUCIA = [
   ["cafe luna", "3/13/26", "$1,200"],
   ["Café Luna ", "", "980"],
@@ -67,7 +67,6 @@ export const Hoja: React.FC<{ limpiaEn: number }> = ({ limpiaEn }) => {
   const { frame, fps, t } = useT();
   const limpio = t >= limpiaEn;
   const g = sp(frame, fps, limpiaEn, "golpe");
-  const caos = limpio ? 0 : interpolate(t, [0, limpiaEn], [0.5, 1.4], clamp);
   const flash = interpolate(t, [limpiaEn - 0.05, limpiaEn, limpiaEn + 0.18], [0, 1, 0], clamp);
   if (!limpio) {
     return (
@@ -78,10 +77,8 @@ export const Hoja: React.FC<{ limpiaEn: number }> = ({ limpiaEn }) => {
           <Celda w={290} head style={{ borderRight: "none" }}>Venta</Celda>
         </Fila>
         {SUCIA.map((r, i) => {
-          const dx = Math.sin(frame * 1.7 + i * 2.1) * 7 * caos;
-          const rot = Math.sin(frame * 1.3 + i) * 1.4 * caos;
           return (
-            <Fila key={i} last={i === SUCIA.length - 1} style={{ transform: `translateX(${dx}px) rotate(${rot}deg)` }}>
+            <Fila key={i} last={i === SUCIA.length - 1}>
               {r.map((c, j) => (
                 <Celda
                   key={j}
