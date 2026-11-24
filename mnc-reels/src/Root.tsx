@@ -2,6 +2,7 @@ import React from "react";
 import { Composition, Still, getInputProps } from "remotion";
 import { Reel } from "./Reel";
 import { Portada } from "./Portada";
+import { BRollSuelto } from "./BRollSuelto";
 import type { Reel as ReelData } from "./reel/types";
 import demo from "../reels/demo/reel.json";
 
@@ -21,6 +22,23 @@ export const Root: React.FC = () => (
       height={1920}
       durationInFrames={Math.round(reel.duracion * 30)}
       calculateMetadata={({ props }) => ({ durationInFrames: Math.round(props.reel.duracion * 30) })}
+    />
+    <Composition
+      id="BRollSuelto"
+      component={BRollSuelto}
+      defaultProps={{ reel, i: 0 }}
+      fps={30}
+      width={1080}
+      height={960}
+      durationInFrames={30}
+      calculateMetadata={({ props }) => {
+        const xs = [...props.reel.broll, ...props.reel.golpes];
+        const b = xs[props.i];
+        return {
+          durationInFrames: Math.max(1, Math.round((b.end - b.start) * 30)),
+          height: props.i >= props.reel.broll.length ? 1920 : 960,
+        };
+      }}
     />
     <Still id="Portada" component={Portada} defaultProps={{ reel }} width={1080} height={1920} />
   </>

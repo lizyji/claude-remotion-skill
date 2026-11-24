@@ -22,12 +22,17 @@ export type BRoll =
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
-  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
+  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente }
+  // Animación a la medida de un reel: componente registrado en src/anims/index.ts por id
+  // entra/sale: false = sin transición en ese borde (para encadenar dos clips sobre el mismo gráfico)
+  | { tipo: "anim"; start: number; end: number; id: string; nombre?: string; fuente?: Fuente; entra?: false; sale?: false };
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
   | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
-  | { tipo: "cierre"; start: number; end: number };
+  | { tipo: "cierre"; start: number; end: number }
+  // Cierre sin frase de firma: pregunta a pantalla completa (+ pie opcional, p. ej. compartir)
+  | { tipo: "pregunta"; start: number; end: number; id: string; nombre?: string };
 
 export type Reel = {
   slug: string;
@@ -42,8 +47,14 @@ export type Reel = {
   broll: BRoll[];
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
-  sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
-  portada?: { frase?: string; cuadro: number };
+  sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass"; vol?: number }[];
+  // false: no pone whoosh automático en cada cambio de clip (se ponen a mano en "sfx")
+  whooshAuto?: boolean;
+  // false: no pone pops/ticks/bass automáticos (se ponen a mano en "sfx")
+  sfxAuto?: boolean;
+  // tramos donde NO van subtítulos aunque Manuel hable (p. ej. "Y aquí está la jugada" sin texto)
+  sinSubs?: { start: number; end: number }[];
+  portada?: { frase?: string; cuadro: number; naranja?: string[]; size?: number; provisional?: boolean };
 };
 
 export const FRASE_CIERRE =

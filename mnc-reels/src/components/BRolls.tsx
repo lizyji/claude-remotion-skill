@@ -2,6 +2,7 @@ import React from "react";
 import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideoConfig, spring } from "remotion";
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
+import { ANIMS } from "../anims";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
 
 const { color, font, layout } = theme;
@@ -35,7 +36,10 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const dur = Math.round((b.end - b.start) * fps);
-  const p = useEntradaSalida(dur);
+  const pES = useEntradaSalida(dur);
+  const pE = useEntradaSalida(1_000_000); // solo entrada
+  const pS = useEntradaSalida(dur, -1000); // solo salida
+  const p = b.tipo === "anim" && b.entra === false ? (b.sale === false ? 1 : pS) : b.tipo === "anim" && b.sale === false ? pE : pES;
   const fuente = "fuente" in b ? b.fuente : undefined;
 
   let body: React.ReactNode = null;
@@ -170,6 +174,11 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
         </Tarjeta>
       );
       break;
+    case "anim": {
+      const A = ANIMS[b.id];
+      body = A ? <A dur={dur} start={b.start} /> : null;
+      break;
+    }
     case "silueta":
       return null; // se dibuja a pantalla completa en Reel.tsx
   }

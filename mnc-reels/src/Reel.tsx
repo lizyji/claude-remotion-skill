@@ -15,14 +15,16 @@ const dB = (x: number) => Math.pow(10, x / 20);
 // SFX automáticos: whoosh en cada cambio de clip, pop en cada elemento de lista,
 // tick al terminar un contador, bass en cada golpe a pantalla completa.
 const sfxAuto = (reel: ReelData) => {
-  const out: { t: number; s: string }[] = [];
+  const out: { t: number; s: string; vol?: number }[] = [];
+  if (reel.sfxAuto === false) return [...(reel.sfx ?? [])];
   for (const b of reel.broll) {
-    out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
+    if (reel.whooshAuto !== false) out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
     if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + 0.35 + i * (b.cada ?? 1.2), s: "pop" }));
     if (b.tipo === "contador") out.push({ t: b.start + 0.2 + 1.0, s: "tick" });
     if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta") out.push({ t: b.start + 0.1, s: "pop" });
   }
   for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" ? "whoosh" : "bass" });
+  if (reel.whooshAuto === false) return [...out.filter((x) => x.s !== "whoosh"), ...(reel.sfx ?? [])];
   for (const p of reel.pasos ?? []) out.push({ t: p.start, s: "click" });
   return [...out, ...(reel.sfx ?? [])];
 };
@@ -39,13 +41,14 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
   const golpe = activo(reel.golpes, t);
   const silueta = reel.broll.find((b) => b.tipo === "silueta" && t >= b.start && t < b.end);
   const bloque = activo(reel.subs, t);
+  const sinSub = activo(reel.sinSubs, t);
   const paso = activo(reel.pasos, t);
 
   // Música: ≈ −23 dB bajo la voz, sube un poco en golpes, baja al final
   const musicaVol = (fr: number) => {
     const ts = fr / fps;
     const enGolpe = activo(reel.golpes, ts);
-    const base = enGolpe && enGolpe.tipo !== "cierre" ? dB(-18) : dB(-23);
+    const base = enGolpe && enGolpe.tipo !== "cierre" && enGolpe.tipo !== "pregunta" ? dB(-18) : dB(-23);
     const salida = interpolate(fr, [durationInFrames - f(2), durationInFrames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
     const entrada = interpolate(fr, [0, f(0.5)], [0, 1], { extrapolateRight: "clamp" });
     return base * salida * entrada;
@@ -89,11 +92,11 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
       {paso && !golpe ? <Paso n={paso.n} p={spring({ frame: frame - f(paso.start), fps, config: theme.spring.golpe })} /> : null}
 
       {/* 5 · Subtítulos (ocultos en golpes y cierre) */}
-      {bloque && !golpe ? <Subtitulos bloque={bloque} t={t} /> : null}
+      {bloque && !golpe && !sinSub ? <Subtitulos bloque={bloque} t={t} /> : null}
 
       {/* 6 · Golpes a pantalla completa */}
       {reel.golpes.map((g, i) => (
-        <Sequence key={i} from={f(g.start)} durationInFrames={Math.max(1, (g.tipo === "cierre" ? durationInFrames : f(g.end)) - f(g.start))}>
+        <Sequence key={i} from={f(g.start)} durationInFrames={Math.max(1, (g.tipo === "cierre" || g.tipo === "pregunta" ? durationInFrames : f(g.end)) - f(g.start))}>
           <GolpeView g={g} palabras={reel.palabras} />
         </Sequence>
       ))}
@@ -102,7 +105,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
       {reel.musica ? <Audio src={staticFile(reel.musica)} volume={musicaVol} loop /> : null}
       {sfxAuto(reel).map((s, i) => (
         <Sequence key={`sfx${i}`} from={f(s.t)} durationInFrames={f(1)} layout="none">
-          <Audio src={staticFile(`sfx/${s.s}.wav`)} volume={s.s === "whoosh" ? 0.35 : 0.5} />
+          <Audio src={staticFile(`sfx/${s.s}.wav`)} volume={s.vol ?? (s.s === "whoosh" ? 0.35 : 0.5)} />
         </Sequence>
       ))}
     </AbsoluteFill>

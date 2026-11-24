@@ -44,12 +44,22 @@ export const Portada: React.FC<{ reel: Reel }> = ({ reel }) => {
           textAlign: "center",
           fontFamily: font.titulo,
           fontWeight: 700,
-          fontSize: 104,
+          fontSize: reel.portada?.size ?? 104,
           lineHeight: 1.08,
           color: color.negro,
         }}
       >
-        <ConIA texto={frase} />
+        {(reel.portada?.naranja ?? []).length ? (
+          frase.split(" ").map((w, i) => (
+            <React.Fragment key={i}>
+              <span style={{ color: reel.portada?.naranja?.includes(w.replace(/[.,;:¿?¡!]/g, "")) ? color.naranja : undefined }}>
+                <ConIA texto={w} />
+              </span>{" "}
+            </React.Fragment>
+          ))
+        ) : (
+          <ConIA texto={frase} />
+        )}
       </div>
     </AbsoluteFill>
   );

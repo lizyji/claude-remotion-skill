@@ -1,0 +1,2421 @@
+{
+  "broll": [
+    {
+      "tipo": "anim",
+      "id": "pedido/B1",
+      "nombre": "T1_B1_dias_vs_minutos",
+      "start": 0.0,
+      "end": 3.3
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B2",
+      "nombre": "T1_B2_donde_se_va",
+      "start": 3.3,
+      "end": 4.3
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B3",
+      "nombre": "T2_B3_caso_aseguradora",
+      "start": 4.3,
+      "end": 7.9
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B4",
+      "nombre": "T2_B4_cita_hbr",
+      "start": 7.9,
+      "end": 12.6,
+      "fuente": "Fuente: Michael Hammer, Harvard Business Review, 1990"
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B5",
+      "nombre": "T3_B5_ventas_correo_aprobacion",
+      "start": 12.6,
+      "end": 18.25
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B6",
+      "nombre": "T3_B6_escritorio_fulano",
+      "start": 18.25,
+      "end": 21.5
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B7",
+      "nombre": "T3_B7_espera",
+      "start": 21.5,
+      "end": 25.05
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B8",
+      "nombre": "T4_B8_trabajar_mas_rapido",
+      "start": 26.1,
+      "end": 28.7
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B9",
+      "nombre": "T4_B9_comprar_otro_sistema",
+      "start": 28.7,
+      "end": 32.45
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B10",
+      "nombre": "T5_B10_una_semana",
+      "start": 32.45,
+      "end": 35.0
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B11",
+      "nombre": "T5_B11_tabla_area_entra_sale",
+      "start": 35.0,
+      "end": 39.6,
+      "sale": false
+    },
+    {
+      "tipo": "anim",
+      "id": "pedido/B12",
+      "nombre": "T5_B12_aqui_se_queda_parado",
+      "start": 39.6,
+      "end": 44.5,
+      "entra": false
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "pregunta",
+      "id": "pedido/B13",
+      "nombre": "T6_B13_pregunta_cierre",
+      "start": 44.2,
+      "end": 48.9
+    }
+  ],
+  "pasos": [],
+  "sfx": [
+    {
+      "t": 12.52,
+      "s": "whoosh"
+    },
+    {
+      "t": 26.02,
+      "s": "whoosh"
+    },
+    {
+      "t": 44.12,
+      "s": "whoosh"
+    },
+    {
+      "t": 0.6,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 3.4,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 4.6,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 5.6,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 13.0,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 14.75,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 16.6,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 17.6,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 18.6,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 19.9,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 20.6,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 21.6,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 26.9,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 28.9,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 32.7,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 35.2,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 45.7,
+      "s": "pop",
+      "vol": 0.35
+    },
+    {
+      "t": 2.7,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 8.9,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 10.6,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 35.7,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 36.4,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 36.7,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 37.2,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 37.6,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 33.0,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 33.4,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 33.8,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 34.2,
+      "s": "tick",
+      "vol": 0.45
+    },
+    {
+      "t": 27.85,
+      "s": "click",
+      "vol": 0.5
+    },
+    {
+      "t": 29.7,
+      "s": "click",
+      "vol": 0.5
+    },
+    {
+      "t": 41.2,
+      "s": "bass",
+      "vol": 0.4
+    },
+    {
+      "t": 43.2,
+      "s": "pop",
+      "vol": 0.4
+    },
+    {
+      "t": 46.8,
+      "s": "pop",
+      "vol": 0.45
+    }
+  ],
+  "slug": "pedido-espera",
+  "duracion": 48.9,
+  "manuel": "reels/pedido-espera/manuel.mp4",
+  "cortes": [
+    12.63,
+    25.072,
+    32.344
+  ],
+  "palabras": [
+    {
+      "w": "Tu",
+      "start": 0.11,
+      "end": 0.59,
+      "prob": 0.531,
+      "corregida": true
+    },
+    {
+      "w": "pedido",
+      "start": 0.59,
+      "end": 0.97,
+      "prob": 0.992
+    },
+    {
+      "w": "tarda",
+      "start": 0.97,
+      "end": 1.25,
+      "prob": 0.955
+    },
+    {
+      "w": "días",
+      "start": 1.25,
+      "end": 1.39,
+      "prob": 0.941
+    },
+    {
+      "w": "en",
+      "start": 1.39,
+      "end": 1.59,
+      "prob": 0.988
+    },
+    {
+      "w": "salir,",
+      "start": 1.59,
+      "end": 1.77,
+      "prob": 0.99
+    },
+    {
+      "w": "pero",
+      "start": 1.81,
+      "end": 1.93,
+      "prob": 0.951
+    },
+    {
+      "w": "el",
+      "start": 1.93,
+      "end": 2.07,
+      "prob": 0.955
+    },
+    {
+      "w": "trabajo",
+      "start": 2.07,
+      "end": 2.33,
+      "prob": 0.996
+    },
+    {
+      "w": "real",
+      "start": 2.33,
+      "end": 2.53,
+      "prob": 0.989
+    },
+    {
+      "w": "son",
+      "start": 2.53,
+      "end": 2.71,
+      "prob": 0.936
+    },
+    {
+      "w": "minutos.",
+      "start": 2.71,
+      "end": 3.07,
+      "prob": 0.991
+    },
+    {
+      "w": "¿Dónde",
+      "start": 3.39,
+      "end": 3.67,
+      "prob": 0.928
+    },
+    {
+      "w": "se",
+      "start": 3.67,
+      "end": 3.71,
+      "prob": 0.969
+    },
+    {
+      "w": "va",
+      "start": 3.71,
+      "end": 3.85,
+      "prob": 0.985
+    },
+    {
+      "w": "el",
+      "start": 3.85,
+      "end": 3.95,
+      "prob": 0.892
+    },
+    {
+      "w": "resto?",
+      "start": 3.95,
+      "end": 4.21,
+      "prob": 0.998
+    },
+    {
+      "w": "Hay",
+      "start": 4.35,
+      "end": 4.55,
+      "prob": 0.964
+    },
+    {
+      "w": "un",
+      "start": 4.55,
+      "end": 4.65,
+      "prob": 0.994
+    },
+    {
+      "w": "caso",
+      "start": 4.65,
+      "end": 4.93,
+      "prob": 0.998
+    },
+    {
+      "w": "de",
+      "start": 4.93,
+      "end": 5.07,
+      "prob": 0.962
+    },
+    {
+      "w": "los",
+      "start": 5.07,
+      "end": 5.21,
+      "prob": 0.896
+    },
+    {
+      "w": "90s",
+      "start": 5.21,
+      "end": 5.47,
+      "prob": 0.56,
+      "corregida": true
+    },
+    {
+      "w": "de",
+      "start": 5.47,
+      "end": 5.71,
+      "prob": 0.604
+    },
+    {
+      "w": "una",
+      "start": 5.71,
+      "end": 5.89,
+      "prob": 0.981
+    },
+    {
+      "w": "aseguradora",
+      "start": 5.89,
+      "end": 6.35,
+      "prob": 0.992
+    },
+    {
+      "w": "que",
+      "start": 6.35,
+      "end": 6.53,
+      "prob": 0.973
+    },
+    {
+      "w": "se",
+      "start": 6.53,
+      "end": 6.69,
+      "prob": 0.996
+    },
+    {
+      "w": "cita",
+      "start": 6.69,
+      "end": 6.91,
+      "prob": 0.996
+    },
+    {
+      "w": "muchísimo.",
+      "start": 6.91,
+      "end": 7.47,
+      "prob": 0.954
+    },
+    {
+      "w": "La",
+      "start": 7.97,
+      "end": 7.99,
+      "prob": 0.906
+    },
+    {
+      "w": "solicitud",
+      "start": 7.99,
+      "end": 8.49,
+      "prob": 0.998
+    },
+    {
+      "w": "tardaba",
+      "start": 8.49,
+      "end": 8.91,
+      "prob": 0.99
+    },
+    {
+      "w": "semanas",
+      "start": 8.91,
+      "end": 9.17,
+      "prob": 0.997
+    },
+    {
+      "w": "en",
+      "start": 9.17,
+      "end": 9.37,
+      "prob": 0.994
+    },
+    {
+      "w": "salir",
+      "start": 9.37,
+      "end": 9.61,
+      "prob": 0.996
+    },
+    {
+      "w": "y",
+      "start": 9.61,
+      "end": 9.81,
+      "prob": 0.823
+    },
+    {
+      "w": "el",
+      "start": 9.81,
+      "end": 9.95,
+      "prob": 0.99
+    },
+    {
+      "w": "trabajo",
+      "start": 9.95,
+      "end": 10.19,
+      "prob": 0.998
+    },
+    {
+      "w": "real",
+      "start": 10.19,
+      "end": 10.43,
+      "prob": 0.993
+    },
+    {
+      "w": "eran",
+      "start": 10.43,
+      "end": 10.69,
+      "prob": 0.979
+    },
+    {
+      "w": "minutos.",
+      "start": 10.69,
+      "end": 11.07,
+      "prob": 0.996
+    },
+    {
+      "w": "Lo",
+      "start": 11.33,
+      "end": 11.45,
+      "prob": 0.988
+    },
+    {
+      "w": "demás",
+      "start": 11.45,
+      "end": 11.83,
+      "prob": 0.998
+    },
+    {
+      "w": "era",
+      "start": 11.83,
+      "end": 12.17,
+      "prob": 0.933
+    },
+    {
+      "w": "esperar.",
+      "start": 12.17,
+      "end": 12.55,
+      "prob": 0.993
+    },
+    {
+      "w": "Y",
+      "start": 12.731,
+      "end": 12.831,
+      "prob": 0.907
+    },
+    {
+      "w": "en",
+      "start": 12.831,
+      "end": 12.991,
+      "prob": 0.99
+    },
+    {
+      "w": "una",
+      "start": 12.991,
+      "end": 13.111,
+      "prob": 0.997
+    },
+    {
+      "w": "empresa",
+      "start": 13.111,
+      "end": 13.351,
+      "prob": 0.998
+    },
+    {
+      "w": "tradicional",
+      "start": 13.351,
+      "end": 13.871,
+      "prob": 0.995
+    },
+    {
+      "w": "pasa",
+      "start": 13.871,
+      "end": 14.251,
+      "prob": 0.888
+    },
+    {
+      "w": "igual.",
+      "start": 14.251,
+      "end": 14.531,
+      "prob": 0.995
+    },
+    {
+      "w": "Ventas",
+      "start": 14.751,
+      "end": 14.971,
+      "prob": 0.936
+    },
+    {
+      "w": "levanta",
+      "start": 14.971,
+      "end": 15.311,
+      "prob": 0.953
+    },
+    {
+      "w": "el",
+      "start": 15.311,
+      "end": 15.511,
+      "prob": 0.992
+    },
+    {
+      "w": "pedido,",
+      "start": 15.511,
+      "end": 15.891,
+      "prob": 0.999
+    },
+    {
+      "w": "lo",
+      "start": 16.031,
+      "end": 16.171,
+      "prob": 0.994
+    },
+    {
+      "w": "manda",
+      "start": 16.171,
+      "end": 16.391,
+      "prob": 0.968
+    },
+    {
+      "w": "por",
+      "start": 16.391,
+      "end": 16.631,
+      "prob": 0.997
+    },
+    {
+      "w": "correo,",
+      "start": 16.631,
+      "end": 17.171,
+      "prob": 0.999
+    },
+    {
+      "w": "espera",
+      "start": 17.291,
+      "end": 17.431,
+      "prob": 0.996
+    },
+    {
+      "w": "una",
+      "start": 17.431,
+      "end": 17.651,
+      "prob": 0.995
+    },
+    {
+      "w": "aprobación,",
+      "start": 17.651,
+      "end": 18.131,
+      "prob": 0.991
+    },
+    {
+      "w": "está",
+      "start": 18.291,
+      "end": 18.431,
+      "prob": 0.98
+    },
+    {
+      "w": "en",
+      "start": 18.431,
+      "end": 18.551,
+      "prob": 0.991
+    },
+    {
+      "w": "el",
+      "start": 18.551,
+      "end": 18.711,
+      "prob": 0.997
+    },
+    {
+      "w": "escritorio",
+      "start": 18.711,
+      "end": 18.991,
+      "prob": 0.998
+    },
+    {
+      "w": "de",
+      "start": 18.991,
+      "end": 19.151,
+      "prob": 0.981
+    },
+    {
+      "w": "fulano,",
+      "start": 19.151,
+      "end": 19.511,
+      "prob": 0.933
+    },
+    {
+      "w": "pasa",
+      "start": 19.711,
+      "end": 19.911,
+      "prob": 0.988
+    },
+    {
+      "w": "a almacén,",
+      "start": 19.911,
+      "end": 20.351,
+      "prob": 0.866,
+      "corregida": true
+    },
+    {
+      "w": "luego",
+      "start": 20.431,
+      "end": 20.591,
+      "prob": 0.995
+    },
+    {
+      "w": "facturación.",
+      "start": 20.591,
+      "end": 21.191,
+      "prob": 0.911
+    },
+    {
+      "w": "Cada",
+      "start": 21.591,
+      "end": 21.791,
+      "prob": 0.994
+    },
+    {
+      "w": "paso",
+      "start": 21.791,
+      "end": 22.011,
+      "prob": 0.995
+    },
+    {
+      "w": "toma",
+      "start": 22.011,
+      "end": 22.211,
+      "prob": 0.978
+    },
+    {
+      "w": "minutos.",
+      "start": 22.211,
+      "end": 22.571,
+      "prob": 0.986
+    },
+    {
+      "w": "Lo",
+      "start": 22.651,
+      "end": 22.811,
+      "prob": 0.994
+    },
+    {
+      "w": "que",
+      "start": 22.811,
+      "end": 22.991,
+      "prob": 0.999
+    },
+    {
+      "w": "tarda",
+      "start": 22.991,
+      "end": 23.351,
+      "prob": 0.663,
+      "corregida": true
+    },
+    {
+      "w": "es",
+      "start": 23.351,
+      "end": 23.571,
+      "prob": 0.976
+    },
+    {
+      "w": "el",
+      "start": 23.571,
+      "end": 23.831,
+      "prob": 0.993
+    },
+    {
+      "w": "pase",
+      "start": 23.831,
+      "end": 23.971,
+      "prob": 0.978
+    },
+    {
+      "w": "de",
+      "start": 23.971,
+      "end": 24.151,
+      "prob": 0.995
+    },
+    {
+      "w": "un",
+      "start": 24.151,
+      "end": 24.251,
+      "prob": 0.949
+    },
+    {
+      "w": "área",
+      "start": 24.251,
+      "end": 24.431,
+      "prob": 0.997
+    },
+    {
+      "w": "a",
+      "start": 24.431,
+      "end": 24.771,
+      "prob": 0.996
+    },
+    {
+      "w": "otra.",
+      "start": 24.771,
+      "end": 25.011,
+      "prob": 0.985
+    },
+    {
+      "w": "Y",
+      "start": 25.144,
+      "end": 25.344,
+      "prob": 0.981
+    },
+    {
+      "w": "aquí",
+      "start": 25.344,
+      "end": 25.504,
+      "prob": 0.994
+    },
+    {
+      "w": "está",
+      "start": 25.504,
+      "end": 25.644,
+      "prob": 0.974
+    },
+    {
+      "w": "la",
+      "start": 25.644,
+      "end": 25.824,
+      "prob": 0.993
+    },
+    {
+      "w": "jugada.",
+      "start": 25.824,
+      "end": 26.124,
+      "prob": 0.997
+    },
+    {
+      "w": "Pedirle",
+      "start": 26.224,
+      "end": 26.544,
+      "prob": 0.951
+    },
+    {
+      "w": "a",
+      "start": 26.544,
+      "end": 26.544,
+      "prob": 0.994
+    },
+    {
+      "w": "tu",
+      "start": 26.544,
+      "end": 26.664,
+      "prob": 0.983
+    },
+    {
+      "w": "gente",
+      "start": 26.664,
+      "end": 26.864,
+      "prob": 0.998
+    },
+    {
+      "w": "que",
+      "start": 26.864,
+      "end": 27.124,
+      "prob": 0.996
+    },
+    {
+      "w": "trabaje",
+      "start": 27.124,
+      "end": 27.324,
+      "prob": 0.98
+    },
+    {
+      "w": "más",
+      "start": 27.324,
+      "end": 27.504,
+      "prob": 0.993
+    },
+    {
+      "w": "rápido",
+      "start": 27.504,
+      "end": 27.804,
+      "prob": 0.999
+    },
+    {
+      "w": "casi",
+      "start": 27.804,
+      "end": 28.144,
+      "prob": 0.853
+    },
+    {
+      "w": "no",
+      "start": 28.144,
+      "end": 28.344,
+      "prob": 0.998
+    },
+    {
+      "w": "cambia",
+      "start": 28.344,
+      "end": 28.544,
+      "prob": 0.985
+    },
+    {
+      "w": "nada.",
+      "start": 28.544,
+      "end": 28.764,
+      "prob": 0.997
+    },
+    {
+      "w": "Y",
+      "start": 28.764,
+      "end": 29.084,
+      "prob": 0.171
+    },
+    {
+      "w": "comprar",
+      "start": 29.084,
+      "end": 29.224,
+      "prob": 0.902
+    },
+    {
+      "w": "otro",
+      "start": 29.224,
+      "end": 29.424,
+      "prob": 0.976
+    },
+    {
+      "w": "sistema",
+      "start": 29.424,
+      "end": 29.724,
+      "prob": 0.997
+    },
+    {
+      "w": "tampoco,",
+      "start": 29.724,
+      "end": 30.164,
+      "prob": 0.93
+    },
+    {
+      "w": "si",
+      "start": 30.524,
+      "end": 30.584,
+      "prob": 0.96
+    },
+    {
+      "w": "el",
+      "start": 30.584,
+      "end": 30.764,
+      "prob": 0.99
+    },
+    {
+      "w": "pedido",
+      "start": 30.764,
+      "end": 31.024,
+      "prob": 0.998
+    },
+    {
+      "w": "va",
+      "start": 31.024,
+      "end": 31.224,
+      "prob": 0.961
+    },
+    {
+      "w": "a",
+      "start": 31.224,
+      "end": 31.264,
+      "prob": 0.872
+    },
+    {
+      "w": "seguir",
+      "start": 31.264,
+      "end": 31.404,
+      "prob": 0.999
+    },
+    {
+      "w": "esperando",
+      "start": 31.404,
+      "end": 31.804,
+      "prob": 0.994
+    },
+    {
+      "w": "igual.",
+      "start": 31.804,
+      "end": 32.244,
+      "prob": 0.968
+    },
+    {
+      "w": "Así",
+      "start": 32.591,
+      "end": 32.651,
+      "prob": 0.944
+    },
+    {
+      "w": "que",
+      "start": 32.651,
+      "end": 32.811,
+      "prob": 0.995
+    },
+    {
+      "w": "lo",
+      "start": 32.811,
+      "end": 32.931,
+      "prob": 0.951
+    },
+    {
+      "w": "que",
+      "start": 32.931,
+      "end": 33.011,
+      "prob": 0.998
+    },
+    {
+      "w": "yo",
+      "start": 33.011,
+      "end": 33.111,
+      "prob": 0.992
+    },
+    {
+      "w": "haría",
+      "start": 33.111,
+      "end": 33.331,
+      "prob": 0.984
+    },
+    {
+      "w": "primero",
+      "start": 33.331,
+      "end": 33.591,
+      "prob": 0.995
+    },
+    {
+      "w": "durante",
+      "start": 33.591,
+      "end": 33.911,
+      "prob": 0.942
+    },
+    {
+      "w": "una",
+      "start": 33.911,
+      "end": 34.091,
+      "prob": 0.979
+    },
+    {
+      "w": "semana",
+      "start": 34.091,
+      "end": 34.391,
+      "prob": 0.999
+    },
+    {
+      "w": "es",
+      "start": 34.391,
+      "end": 34.671,
+      "prob": 0.936
+    },
+    {
+      "w": "anotar",
+      "start": 34.671,
+      "end": 35.131,
+      "prob": 0.676,
+      "corregida": true
+    },
+    {
+      "w": "a",
+      "start": 35.131,
+      "end": 35.411,
+      "prob": 0.977
+    },
+    {
+      "w": "qué",
+      "start": 35.411,
+      "end": 35.451,
+      "prob": 0.854
+    },
+    {
+      "w": "hora",
+      "start": 35.451,
+      "end": 35.671,
+      "prob": 0.993
+    },
+    {
+      "w": "entra",
+      "start": 35.671,
+      "end": 35.851,
+      "prob": 0.994
+    },
+    {
+      "w": "y",
+      "start": 35.851,
+      "end": 36.131,
+      "prob": 0.938
+    },
+    {
+      "w": "a",
+      "start": 36.131,
+      "end": 36.151,
+      "prob": 0.972
+    },
+    {
+      "w": "qué",
+      "start": 36.151,
+      "end": 36.251,
+      "prob": 0.983
+    },
+    {
+      "w": "hora",
+      "start": 36.251,
+      "end": 36.391,
+      "prob": 0.981
+    },
+    {
+      "w": "sale",
+      "start": 36.391,
+      "end": 36.631,
+      "prob": 0.997
+    },
+    {
+      "w": "cada",
+      "start": 36.631,
+      "end": 36.931,
+      "prob": 0.99
+    },
+    {
+      "w": "pedido",
+      "start": 36.931,
+      "end": 37.211,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 37.211,
+      "end": 37.431,
+      "prob": 0.985
+    },
+    {
+      "w": "cada",
+      "start": 37.431,
+      "end": 37.531,
+      "prob": 0.999
+    },
+    {
+      "w": "área.",
+      "start": 37.531,
+      "end": 37.771,
+      "prob": 0.998
+    },
+    {
+      "w": "Con",
+      "start": 37.971,
+      "end": 38.051,
+      "prob": 0.95
+    },
+    {
+      "w": "un",
+      "start": 38.051,
+      "end": 38.291,
+      "prob": 0.972
+    },
+    {
+      "w": "Excel",
+      "start": 38.291,
+      "end": 38.611,
+      "prob": 0.752
+    },
+    {
+      "w": "basta.",
+      "start": 38.611,
+      "end": 39.051,
+      "prob": 0.821
+    },
+    {
+      "w": "Y",
+      "start": 39.731,
+      "end": 39.871,
+      "prob": 0.951
+    },
+    {
+      "w": "ahí",
+      "start": 39.871,
+      "end": 40.111,
+      "prob": 0.937
+    },
+    {
+      "w": "vas",
+      "start": 40.111,
+      "end": 40.331,
+      "prob": 0.925
+    },
+    {
+      "w": "a",
+      "start": 40.331,
+      "end": 40.451,
+      "prob": 0.998
+    },
+    {
+      "w": "ver",
+      "start": 40.451,
+      "end": 40.591,
+      "prob": 0.992
+    },
+    {
+      "w": "dónde",
+      "start": 40.591,
+      "end": 40.811,
+      "prob": 0.891
+    },
+    {
+      "w": "se",
+      "start": 40.811,
+      "end": 41.051,
+      "prob": 0.995
+    },
+    {
+      "w": "queda",
+      "start": 41.051,
+      "end": 41.171,
+      "prob": 0.996
+    },
+    {
+      "w": "parado.",
+      "start": 41.171,
+      "end": 41.591,
+      "prob": 0.989
+    },
+    {
+      "w": "Y",
+      "start": 41.791,
+      "end": 41.891,
+      "prob": 0.968
+    },
+    {
+      "w": "eso",
+      "start": 41.891,
+      "end": 41.971,
+      "prob": 0.987
+    },
+    {
+      "w": "es",
+      "start": 41.971,
+      "end": 42.071,
+      "prob": 0.997
+    },
+    {
+      "w": "lo",
+      "start": 42.071,
+      "end": 42.191,
+      "prob": 0.998
+    },
+    {
+      "w": "primero",
+      "start": 42.191,
+      "end": 42.471,
+      "prob": 0.998
+    },
+    {
+      "w": "que",
+      "start": 42.471,
+      "end": 42.811,
+      "prob": 0.902
+    },
+    {
+      "w": "vale",
+      "start": 42.811,
+      "end": 42.951,
+      "prob": 0.997
+    },
+    {
+      "w": "la",
+      "start": 42.951,
+      "end": 43.131,
+      "prob": 0.999
+    },
+    {
+      "w": "pena",
+      "start": 43.131,
+      "end": 43.311,
+      "prob": 1.0
+    },
+    {
+      "w": "automatizar.",
+      "start": 43.311,
+      "end": 43.511,
+      "prob": 0.998
+    },
+    {
+      "w": "¿En",
+      "start": 44.291,
+      "end": 44.491,
+      "prob": 0.835
+    },
+    {
+      "w": "qué",
+      "start": 44.491,
+      "end": 44.631,
+      "prob": 0.984
+    },
+    {
+      "w": "tarea",
+      "start": 44.631,
+      "end": 44.851,
+      "prob": 0.841
+    },
+    {
+      "w": "se",
+      "start": 44.851,
+      "end": 44.991,
+      "prob": 0.993
+    },
+    {
+      "w": "te",
+      "start": 44.991,
+      "end": 45.111,
+      "prob": 0.977
+    },
+    {
+      "w": "atora",
+      "start": 45.111,
+      "end": 45.291,
+      "prob": 0.917
+    },
+    {
+      "w": "a",
+      "start": 45.291,
+      "end": 45.431,
+      "prob": 0.861
+    },
+    {
+      "w": "ti?",
+      "start": 45.431,
+      "end": 45.551,
+      "prob": 0.95
+    },
+    {
+      "w": "Te",
+      "start": 45.671,
+      "end": 45.771,
+      "prob": 0.726
+    },
+    {
+      "w": "leo",
+      "start": 45.771,
+      "end": 45.871,
+      "prob": 0.699
+    },
+    {
+      "w": "en",
+      "start": 45.871,
+      "end": 45.971,
+      "prob": 0.971
+    },
+    {
+      "w": "los",
+      "start": 45.971,
+      "end": 46.171,
+      "prob": 0.998
+    },
+    {
+      "w": "comentarios",
+      "start": 46.171,
+      "end": 46.531,
+      "prob": 0.998
+    },
+    {
+      "w": "y",
+      "start": 46.531,
+      "end": 46.851,
+      "prob": 0.856
+    },
+    {
+      "w": "mándale",
+      "start": 46.851,
+      "end": 47.171,
+      "prob": 0.9
+    },
+    {
+      "w": "este",
+      "start": 47.171,
+      "end": 47.371,
+      "prob": 0.501
+    },
+    {
+      "w": "video",
+      "start": 47.371,
+      "end": 47.691,
+      "prob": 0.524
+    },
+    {
+      "w": "a",
+      "start": 47.691,
+      "end": 47.971,
+      "prob": 0.982
+    },
+    {
+      "w": "quien",
+      "start": 47.971,
+      "end": 48.091,
+      "prob": 0.946
+    },
+    {
+      "w": "lleva",
+      "start": 48.091,
+      "end": 48.351,
+      "prob": 0.991
+    },
+    {
+      "w": "pedidos.",
+      "start": 48.351,
+      "end": 48.811,
+      "prob": 0.994
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.11,
+      "end": 1.39,
+      "words": [
+        {
+          "w": "Tu",
+          "start": 0.11
+        },
+        {
+          "w": "pedido",
+          "start": 0.59
+        },
+        {
+          "w": "tarda",
+          "start": 0.97
+        },
+        {
+          "w": "días",
+          "start": 1.25,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 1.39,
+      "end": 1.81,
+      "words": [
+        {
+          "w": "en",
+          "start": 1.39
+        },
+        {
+          "w": "salir",
+          "start": 1.59
+        }
+      ]
+    },
+    {
+      "start": 1.81,
+      "end": 2.53,
+      "words": [
+        {
+          "w": "pero",
+          "start": 1.81
+        },
+        {
+          "w": "el",
+          "start": 1.93
+        },
+        {
+          "w": "trabajo",
+          "start": 2.07,
+          "key": true
+        },
+        {
+          "w": "real",
+          "start": 2.33
+        }
+      ]
+    },
+    {
+      "start": 2.53,
+      "end": 3.39,
+      "words": [
+        {
+          "w": "son",
+          "start": 2.53
+        },
+        {
+          "w": "minutos",
+          "start": 2.71,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 3.39,
+      "end": 4.35,
+      "words": [
+        {
+          "w": "¿Dónde",
+          "start": 3.39
+        },
+        {
+          "w": "se",
+          "start": 3.67
+        },
+        {
+          "w": "va",
+          "start": 3.71
+        },
+        {
+          "w": "el",
+          "start": 3.85
+        },
+        {
+          "w": "resto?",
+          "start": 3.95
+        }
+      ]
+    },
+    {
+      "start": 4.35,
+      "end": 4.93,
+      "words": [
+        {
+          "w": "Hay",
+          "start": 4.35
+        },
+        {
+          "w": "un",
+          "start": 4.55
+        },
+        {
+          "w": "caso",
+          "start": 4.65,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 4.93,
+      "end": 5.47,
+      "words": [
+        {
+          "w": "de",
+          "start": 4.93
+        },
+        {
+          "w": "los",
+          "start": 5.07
+        },
+        {
+          "w": "90s",
+          "start": 5.21,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 5.47,
+      "end": 6.35,
+      "words": [
+        {
+          "w": "de",
+          "start": 5.47
+        },
+        {
+          "w": "una",
+          "start": 5.71
+        },
+        {
+          "w": "aseguradora",
+          "start": 5.89,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 6.35,
+      "end": 7.97,
+      "words": [
+        {
+          "w": "que",
+          "start": 6.35
+        },
+        {
+          "w": "se",
+          "start": 6.53
+        },
+        {
+          "w": "cita",
+          "start": 6.69
+        },
+        {
+          "w": "muchísimo",
+          "start": 6.91
+        }
+      ]
+    },
+    {
+      "start": 7.97,
+      "end": 8.91,
+      "words": [
+        {
+          "w": "La",
+          "start": 7.97
+        },
+        {
+          "w": "solicitud",
+          "start": 7.99
+        },
+        {
+          "w": "tardaba",
+          "start": 8.49,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.91,
+      "end": 9.61,
+      "words": [
+        {
+          "w": "semanas",
+          "start": 8.91,
+          "key": true
+        },
+        {
+          "w": "en",
+          "start": 9.17
+        },
+        {
+          "w": "salir",
+          "start": 9.37
+        }
+      ]
+    },
+    {
+      "start": 9.61,
+      "end": 10.43,
+      "words": [
+        {
+          "w": "y",
+          "start": 9.61
+        },
+        {
+          "w": "el",
+          "start": 9.81
+        },
+        {
+          "w": "trabajo",
+          "start": 9.95
+        },
+        {
+          "w": "real",
+          "start": 10.19
+        }
+      ]
+    },
+    {
+      "start": 10.43,
+      "end": 11.33,
+      "words": [
+        {
+          "w": "eran",
+          "start": 10.43
+        },
+        {
+          "w": "minutos",
+          "start": 10.69,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 11.33,
+      "end": 12.731,
+      "words": [
+        {
+          "w": "Lo",
+          "start": 11.33
+        },
+        {
+          "w": "demás",
+          "start": 11.45
+        },
+        {
+          "w": "era",
+          "start": 11.83
+        },
+        {
+          "w": "esperar",
+          "start": 12.17,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 12.731,
+      "end": 13.351,
+      "words": [
+        {
+          "w": "Y",
+          "start": 12.731
+        },
+        {
+          "w": "en",
+          "start": 12.831
+        },
+        {
+          "w": "una",
+          "start": 12.991
+        },
+        {
+          "w": "empresa",
+          "start": 13.111,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 13.351,
+      "end": 14.751,
+      "words": [
+        {
+          "w": "tradicional",
+          "start": 13.351
+        },
+        {
+          "w": "pasa",
+          "start": 13.871
+        },
+        {
+          "w": "igual",
+          "start": 14.251
+        }
+      ]
+    },
+    {
+      "start": 14.751,
+      "end": 16.031,
+      "words": [
+        {
+          "w": "Ventas",
+          "start": 14.751,
+          "key": true
+        },
+        {
+          "w": "levanta",
+          "start": 14.971
+        },
+        {
+          "w": "el",
+          "start": 15.311
+        },
+        {
+          "w": "pedido",
+          "start": 15.511
+        }
+      ]
+    },
+    {
+      "start": 16.031,
+      "end": 17.291,
+      "words": [
+        {
+          "w": "lo",
+          "start": 16.031
+        },
+        {
+          "w": "manda",
+          "start": 16.171
+        },
+        {
+          "w": "por",
+          "start": 16.391
+        },
+        {
+          "w": "correo",
+          "start": 16.631,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 17.291,
+      "end": 18.291,
+      "words": [
+        {
+          "w": "espera",
+          "start": 17.291
+        },
+        {
+          "w": "una",
+          "start": 17.431
+        },
+        {
+          "w": "aprobación",
+          "start": 17.651,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 18.291,
+      "end": 18.991,
+      "words": [
+        {
+          "w": "está",
+          "start": 18.291
+        },
+        {
+          "w": "en",
+          "start": 18.431
+        },
+        {
+          "w": "el",
+          "start": 18.551
+        },
+        {
+          "w": "escritorio",
+          "start": 18.711,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 18.991,
+      "end": 19.711,
+      "words": [
+        {
+          "w": "de",
+          "start": 18.991
+        },
+        {
+          "w": "fulano",
+          "start": 19.151
+        }
+      ]
+    },
+    {
+      "start": 19.711,
+      "end": 20.431,
+      "words": [
+        {
+          "w": "pasa",
+          "start": 19.711
+        },
+        {
+          "w": "a almacén",
+          "start": 19.911,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 20.431,
+      "end": 21.591,
+      "words": [
+        {
+          "w": "luego",
+          "start": 20.431
+        },
+        {
+          "w": "facturación",
+          "start": 20.591,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 21.591,
+      "end": 22.651,
+      "words": [
+        {
+          "w": "Cada",
+          "start": 21.591
+        },
+        {
+          "w": "paso",
+          "start": 21.791
+        },
+        {
+          "w": "toma",
+          "start": 22.011
+        },
+        {
+          "w": "minutos",
+          "start": 22.211,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 22.651,
+      "end": 23.571,
+      "words": [
+        {
+          "w": "Lo",
+          "start": 22.651
+        },
+        {
+          "w": "que",
+          "start": 22.811
+        },
+        {
+          "w": "tarda",
+          "start": 22.991
+        },
+        {
+          "w": "es",
+          "start": 23.351
+        }
+      ]
+    },
+    {
+      "start": 23.571,
+      "end": 24.431,
+      "words": [
+        {
+          "w": "el",
+          "start": 23.571
+        },
+        {
+          "w": "pase",
+          "start": 23.831,
+          "key": true
+        },
+        {
+          "w": "de",
+          "start": 23.971
+        },
+        {
+          "w": "un",
+          "start": 24.151
+        },
+        {
+          "w": "área",
+          "start": 24.251
+        }
+      ]
+    },
+    {
+      "start": 24.431,
+      "end": 25.261,
+      "words": [
+        {
+          "w": "a",
+          "start": 24.431
+        },
+        {
+          "w": "otra",
+          "start": 24.771
+        }
+      ]
+    },
+    {
+      "start": 26.224,
+      "end": 26.864,
+      "words": [
+        {
+          "w": "Pedirle",
+          "start": 26.224
+        },
+        {
+          "w": "a",
+          "start": 26.544
+        },
+        {
+          "w": "tu",
+          "start": 26.544
+        },
+        {
+          "w": "gente",
+          "start": 26.664
+        }
+      ]
+    },
+    {
+      "start": 26.864,
+      "end": 27.804,
+      "words": [
+        {
+          "w": "que",
+          "start": 26.864
+        },
+        {
+          "w": "trabaje",
+          "start": 27.124
+        },
+        {
+          "w": "más",
+          "start": 27.324
+        },
+        {
+          "w": "rápido",
+          "start": 27.504,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 27.804,
+      "end": 28.764,
+      "words": [
+        {
+          "w": "casi",
+          "start": 27.804
+        },
+        {
+          "w": "no",
+          "start": 28.144
+        },
+        {
+          "w": "cambia",
+          "start": 28.344
+        },
+        {
+          "w": "nada",
+          "start": 28.544,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 28.764,
+      "end": 29.724,
+      "words": [
+        {
+          "w": "Y",
+          "start": 28.764
+        },
+        {
+          "w": "comprar",
+          "start": 29.084
+        },
+        {
+          "w": "otro",
+          "start": 29.224
+        },
+        {
+          "w": "sistema",
+          "start": 29.424,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 29.724,
+      "end": 30.524,
+      "words": [
+        {
+          "w": "tampoco",
+          "start": 29.724
+        }
+      ]
+    },
+    {
+      "start": 30.524,
+      "end": 31.224,
+      "words": [
+        {
+          "w": "si",
+          "start": 30.524
+        },
+        {
+          "w": "el",
+          "start": 30.584
+        },
+        {
+          "w": "pedido",
+          "start": 30.764
+        },
+        {
+          "w": "va",
+          "start": 31.024
+        }
+      ]
+    },
+    {
+      "start": 31.224,
+      "end": 32.591,
+      "words": [
+        {
+          "w": "a",
+          "start": 31.224
+        },
+        {
+          "w": "seguir",
+          "start": 31.264
+        },
+        {
+          "w": "esperando",
+          "start": 31.404,
+          "key": true
+        },
+        {
+          "w": "igual",
+          "start": 31.804
+        }
+      ]
+    },
+    {
+      "start": 32.591,
+      "end": 33.111,
+      "words": [
+        {
+          "w": "Así",
+          "start": 32.591
+        },
+        {
+          "w": "que",
+          "start": 32.651
+        },
+        {
+          "w": "lo",
+          "start": 32.811
+        },
+        {
+          "w": "que",
+          "start": 32.931
+        },
+        {
+          "w": "yo",
+          "start": 33.011
+        }
+      ]
+    },
+    {
+      "start": 33.111,
+      "end": 33.591,
+      "words": [
+        {
+          "w": "haría",
+          "start": 33.111
+        },
+        {
+          "w": "primero",
+          "start": 33.331,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 33.591,
+      "end": 34.391,
+      "words": [
+        {
+          "w": "durante",
+          "start": 33.591
+        },
+        {
+          "w": "una",
+          "start": 33.911
+        },
+        {
+          "w": "semana",
+          "start": 34.091,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 34.391,
+      "end": 35.131,
+      "words": [
+        {
+          "w": "es",
+          "start": 34.391
+        },
+        {
+          "w": "anotar",
+          "start": 34.671
+        }
+      ]
+    },
+    {
+      "start": 35.131,
+      "end": 35.851,
+      "words": [
+        {
+          "w": "a",
+          "start": 35.131
+        },
+        {
+          "w": "qué",
+          "start": 35.411
+        },
+        {
+          "w": "hora",
+          "start": 35.451
+        },
+        {
+          "w": "entra",
+          "start": 35.671,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 35.851,
+      "end": 36.631,
+      "words": [
+        {
+          "w": "y",
+          "start": 35.851
+        },
+        {
+          "w": "a",
+          "start": 36.131
+        },
+        {
+          "w": "qué",
+          "start": 36.151
+        },
+        {
+          "w": "hora",
+          "start": 36.251
+        },
+        {
+          "w": "sale",
+          "start": 36.391,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 36.631,
+      "end": 37.971,
+      "words": [
+        {
+          "w": "cada",
+          "start": 36.631
+        },
+        {
+          "w": "pedido",
+          "start": 36.931
+        },
+        {
+          "w": "de",
+          "start": 37.211
+        },
+        {
+          "w": "cada",
+          "start": 37.431
+        },
+        {
+          "w": "área",
+          "start": 37.531
+        }
+      ]
+    },
+    {
+      "start": 37.971,
+      "end": 39.301,
+      "words": [
+        {
+          "w": "Con",
+          "start": 37.971
+        },
+        {
+          "w": "un",
+          "start": 38.051
+        },
+        {
+          "w": "Excel",
+          "start": 38.291,
+          "key": true
+        },
+        {
+          "w": "basta",
+          "start": 38.611
+        }
+      ]
+    },
+    {
+      "start": 39.731,
+      "end": 40.591,
+      "words": [
+        {
+          "w": "Y",
+          "start": 39.731
+        },
+        {
+          "w": "ahí",
+          "start": 39.871
+        },
+        {
+          "w": "vas",
+          "start": 40.111
+        },
+        {
+          "w": "a",
+          "start": 40.331
+        },
+        {
+          "w": "ver",
+          "start": 40.451
+        }
+      ]
+    },
+    {
+      "start": 40.591,
+      "end": 41.791,
+      "words": [
+        {
+          "w": "dónde",
+          "start": 40.591
+        },
+        {
+          "w": "se",
+          "start": 40.811
+        },
+        {
+          "w": "queda",
+          "start": 41.051
+        },
+        {
+          "w": "parado",
+          "start": 41.171,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 41.791,
+      "end": 42.471,
+      "words": [
+        {
+          "w": "Y",
+          "start": 41.791
+        },
+        {
+          "w": "eso",
+          "start": 41.891
+        },
+        {
+          "w": "es",
+          "start": 41.971
+        },
+        {
+          "w": "lo",
+          "start": 42.071
+        },
+        {
+          "w": "primero",
+          "start": 42.191,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 42.471,
+      "end": 43.311,
+      "words": [
+        {
+          "w": "que",
+          "start": 42.471
+        },
+        {
+          "w": "vale",
+          "start": 42.811
+        },
+        {
+          "w": "la",
+          "start": 42.951
+        },
+        {
+          "w": "pena",
+          "start": 43.131
+        }
+      ]
+    },
+    {
+      "start": 43.311,
+      "end": 43.761,
+      "words": [
+        {
+          "w": "automatizar",
+          "start": 43.311,
+          "key": true
+        }
+      ]
+    }
+  ],
+  "musica": "reels/pedido-espera/musica.wav",
+  "caraYFuente": 0.57,
+  "sinSubs": [
+    {
+      "start": 25.05,
+      "end": 26.15
+    }
+  ],
+  "whooshAuto": false,
+  "sfxAuto": false,
+  "portada": {
+    "cuadro": 39.0,
+    "frase": "Tu pedido tarda días en salir, pero el trabajo real son minutos",
+    "naranja": [
+      "días",
+      "minutos"
+    ],
+    "size": 92,
+    "provisional": true
+  }
+}
