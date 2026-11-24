@@ -27,6 +27,8 @@ export type BRoll =
   | { tipo: "lupa"; start: number; end: number; items: string[]; titulo?: string; itemsEn?: number; cada?: number; fuente?: Fuente }
   | { tipo: "calendario"; start: number; end: number; hasta: number; etiqueta: string; llegaEn?: number; fuente?: Fuente }
   | { tipo: "flecha"; start: number; end: number; de: string; a: string; extra?: string; aEn?: number; extraEn?: number; tachar?: boolean; deSize?: number; aSize?: number; fuente?: Fuente }
+  | { tipo: "subida"; start: number; end: number; items: string[]; tiempos?: number[]; titulo?: string; fuente?: Fuente }
+  | { tipo: "tabla"; start: number; end: number; columnas: string[]; filas: string[][]; tiempos?: number[]; fuente?: Fuente }
   | { tipo: "texto"; start: number; end: number; texto: string; resalta?: string; fuente?: Fuente }
   | { tipo: "verifica"; start: number; end: number; titulo: string; texto?: string; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }

@@ -28,6 +28,8 @@ const sfxAuto = (reel: ReelData) => {
       out.push({ t: b.start + (b.aEn ?? 0.45), s: "pop" });
       if (b.extra) out.push({ t: b.start + (b.extraEn ?? 1.4), s: "tick" });
     }
+    if (b.tipo === "subida") b.items.forEach((_, i) => out.push({ t: b.start + (b.tiempos?.[i] ?? 0.3 + i * 0.9), s: "pop" }));
+    if (b.tipo === "tabla") b.columnas.forEach((_, i) => out.push({ t: b.start + (b.tiempos?.[i] ?? 0.5 + i * 0.7), s: "tick" }));
     if (b.tipo === "texto") out.push({ t: b.start + 0.05, s: "pop" });
     if (b.tipo === "verifica") out.push({ t: b.start + 0.5, s: "tick" });
     if (b.tipo === "contador") out.push({ t: b.start + 0.2 + 1.0, s: "tick" });

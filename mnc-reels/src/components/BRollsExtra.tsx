@@ -256,3 +256,99 @@ export const PendienteItems: React.FC<{ id: string; items?: string[]; tiempos?: 
     </div>
   );
 };
+
+// B7 · Subes tus documentos: 3 hojas genéricas que caen en una bandeja de carga (sin interfaz de ningún producto)
+export const Subida: React.FC<{ items: string[]; tiempos?: number[]; titulo?: string }> = ({ items, tiempos, titulo = "Subes tus documentos" }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const p0 = useSp(0);
+  const flecha = Math.sin(frame / 5) * 6;
+  return (
+    <Tarjeta style={{ width: 940, padding: "30px 36px 34px", display: "flex", flexDirection: "column", alignItems: "center", gap: 22, transform: `scale(${interpolate(p0, [0, 1], [0.95, 1])})` }}>
+      <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
+        <svg width={56} height={56} viewBox="0 0 56 56" style={{ transform: `translateY(${flecha}px)` }}>
+          <path d="M28 40 V10 M14 23 L28 9 L42 23" stroke={color.naranja} strokeWidth="7" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+          <path d="M8 38 V48 H48 V38" stroke={color.negro} strokeWidth="6" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+        <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 52, color: color.negro }}>{titulo}</div>
+      </div>
+      <div style={{ width: "100%", height: 360, border: `3px dashed ${color.gris}`, borderRadius: 22, background: color.verde, display: "flex", alignItems: "center", justifyContent: "center", gap: 34 }}>
+        {items.map((it, i) => {
+          const t0 = Math.round((tiempos?.[i] ?? 0.3 + i * 0.9) * fps);
+          const pi = spring({ frame: frame - t0, fps, config: theme.spring.golpe });
+          const listo = spring({ frame: frame - t0 - 10, fps, config: theme.spring.rapido });
+          return (
+            <div key={i} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 14, opacity: Math.min(1, pi * 1.5), transform: `translateY(${interpolate(pi, [0, 1], [-260, 0])}px) rotate(${interpolate(pi, [0, 1], [(i - 1) * 14, 0])}deg)` }}>
+              <div style={{ position: "relative" }}>
+                <Hoja w={190} h={240} renglones={5} />
+                <div style={{ position: "absolute", right: -18, bottom: -18 }}>
+                  <Check size={58} p={listo} />
+                </div>
+              </div>
+              <Pildora tono={i === items.length - 1 ? "naranja" : "negro"} style={{ fontSize: 28, padding: "8px 20px" }}>{it}</Pildora>
+            </div>
+          );
+        })}
+      </div>
+    </Tarjeta>
+  );
+};
+
+// B8 · Tabla que se arma (datos ficticios) y columnas que se iluminan en naranja una por una
+export const Tabla: React.FC<{ columnas: string[]; filas: string[][]; tiempos?: number[] }> = ({ columnas, filas, tiempos }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const anchos = [230, 190, 240, 260];
+  const ts = (k: number) => Math.round((tiempos?.[k] ?? 0.5 + k * 0.7) * fps);
+  const activa = columnas.findIndex((_, k) => frame >= ts(k) && (k === columnas.length - 1 || frame < ts(k + 1)));
+  const celda = (txt: string, k: number, head: boolean, key: string, op = 1) => {
+    const on = k === activa;
+    return (
+      <div
+        key={key}
+        style={{
+          width: anchos[k] ?? 220,
+          boxSizing: "border-box",
+          padding: head ? "18px 14px" : "16px 14px",
+          fontFamily: head ? font.titulo : font.texto,
+          fontWeight: head ? 700 : on ? 600 : 400,
+          fontSize: head ? 30 : 28,
+          color: head ? (on ? color.blanco : color.negro) : on ? color.naranja : color.negro,
+          background: head ? (on ? color.naranja : color.verde) : color.blanco,
+          borderLeft: k ? `2px solid ${color.negro}` : undefined,
+          opacity: op,
+          whiteSpace: "nowrap",
+        }}
+      >
+        {txt}
+      </div>
+    );
+  };
+  return (
+    <div style={{ width: 924, background: color.blanco, border: `3px solid ${color.negro}`, borderRadius: 24, overflow: "hidden", position: "relative" }}>
+      <div style={{ display: "flex", borderBottom: `3px solid ${color.negro}` }}>{columnas.map((c, k) => celda(c, k, true, `h${k}`))}</div>
+      {filas.map((f, j) => {
+        const pj = spring({ frame: frame - 4 - j * 5, fps, config: theme.spring.rapido });
+        return (
+          <div key={j} style={{ display: "flex", borderTop: j ? `2px solid ${color.negro}` : undefined, transform: `translateY(${interpolate(pj, [0, 1], [24, 0])}px)` }}>
+            {f.map((c, k) => celda(c, k, false, `${j}-${k}`, Math.min(1, pj * 1.4)))}
+          </div>
+        );
+      })}
+      {activa >= 0 ? (
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            bottom: 0,
+            left: anchos.slice(0, activa).reduce((a, b) => a + b, 0),
+            width: anchos[activa],
+            border: `5px solid ${color.naranja}`,
+            boxSizing: "border-box",
+            pointerEvents: "none",
+          }}
+        />
+      ) : null}
+    </div>
+  );
+};

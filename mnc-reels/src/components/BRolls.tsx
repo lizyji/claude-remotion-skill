@@ -3,7 +3,7 @@ import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideo
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
-import { Calendario, Flecha, Lupa, PendienteItems, Pila, Reloj, TextoGrande, Verifica } from "./BRollsExtra";
+import { Calendario, Flecha, Lupa, PendienteItems, Pila, Reloj, Subida, Tabla, TextoGrande, Verifica } from "./BRollsExtra";
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -193,6 +193,12 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       break;
     case "flecha":
       body = <Flecha de={b.de} a={b.a} extra={b.extra} aEn={b.aEn} extraEn={b.extraEn} tachar={b.tachar} deSize={b.deSize} aSize={b.aSize} />;
+      break;
+    case "subida":
+      body = <Subida items={b.items} tiempos={b.tiempos} titulo={b.titulo} />;
+      break;
+    case "tabla":
+      body = <Tabla columnas={b.columnas} filas={b.filas} tiempos={b.tiempos} />;
       break;
     case "texto":
       body = <TextoGrande texto={b.texto} resalta={b.resalta} />;
