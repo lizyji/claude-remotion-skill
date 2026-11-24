@@ -168,10 +168,12 @@ export const Flecha: React.FC<{ de: string; a: string; extra?: string; aEn?: num
           <Big size={deSize} c={color.gris} style={{ textAlign: "center" }}>{de}</Big>
           <div style={{ position: "absolute", left: 0, top: "52%", height: 8, width: `${tachado}%`, background: color.negro, borderRadius: 4 }} />
         </div>
-        <svg width={80} height={70} viewBox="0 0 80 70" style={{ opacity: p2 }}>
+        <div style={{ height: interpolate(Math.min(1, p2), [0, 1], [0, 90 + aSize * 1.1]), overflow: "hidden", display: "flex", flexDirection: "column", alignItems: "center" }}>
+        <svg width={80} height={70} viewBox="0 0 80 70" style={{ opacity: p2, flexShrink: 0 }}>
           <path d="M40 4 V58 M16 36 L40 62 L64 36" stroke={color.negro} strokeWidth="9" fill="none" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
-        <Big size={aSize} style={{ textAlign: "center", transform: `scale(${interpolate(p2, [0, 1], [1.5, 1])})`, opacity: Math.min(1, p2 * 1.4) }}>{a}</Big>
+        <Big size={aSize} style={{ textAlign: "center", transform: `scale(${interpolate(p2, [0, 1], [1.5, 1])})`, opacity: Math.min(1, p2 * 1.4), whiteSpace: "nowrap" }}>{a}</Big>
+        </div>
       </Tarjeta>
       {extra ? (
         <div style={{ display: "flex", alignItems: "center", gap: 20, opacity: Math.min(1, p3 * 1.4), transform: `scale(${interpolate(p3, [0, 1], [0.6, 1])})` }}>

@@ -16,7 +16,7 @@ export type BRoll =
   | { tipo: "cita"; start: number; end: number; titular: string; medio?: string; fuente: Fuente } // plan B
   // último recurso; items = píldoras genéricas que entran en "tiempos" (s relativos al inicio del clip)
   | { tipo: "pendiente"; start: number; end: number; id: string; items?: string[]; tiempos?: number[]; ilumina?: boolean; fuente?: Fuente }
-  | { tipo: "imagen"; start: number; end: number; src: string; fit?: "contain" | "cover"; fuente?: Fuente; zoom?: [number, number]; foco?: [number, number] }
+  | { tipo: "imagen"; start: number; end: number; src: string; fit?: "contain" | "cover"; fuente?: Fuente; zoom?: [number, number]; foco?: [number, number]; alto?: number; pildora?: string; texto?: string }
   | { tipo: "video"; start: number; end: number; src: string; desde?: number; fit?: "contain" | "cover"; fuente?: Fuente; recorte?: { x: number; y: number; w: number; h: number } }
   | { tipo: "logo"; start: number; end: number; src: string; etiqueta?: string; fuente?: Fuente }
   | { tipo: "contador"; start: number; end: number; valor: number; prefijo?: string; sufijo?: string; etiqueta: string; decimales?: number; fuente?: Fuente }

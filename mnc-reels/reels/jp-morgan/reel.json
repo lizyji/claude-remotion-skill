@@ -54,8 +54,15 @@
       "fit": "contain",
       "zoom": [
         1.0,
-        1.06
+        1.2
       ],
+      "foco": [
+        50,
+        40
+      ],
+      "alto": 260,
+      "pildora": "Así lo contó la prensa",
+      "texto": "“JPMorgan ahorra 360,000 horas de trabajo de abogados al año”",
       "fuente": "Fuente: Bloomberg, 28 feb 2017 · vía ABA Journal, 2 mar 2017 · abajournal.com",
       "_id": "T3_B5_titular"
     },
@@ -79,7 +86,7 @@
       "a": "Hoy: con Claude",
       "tachar": false,
       "deSize": 64,
-      "aSize": 104,
+      "aSize": 92,
       "aEn": 3.48,
       "_id": "T4_B6b_inspirate"
     },
@@ -139,7 +146,7 @@
         "Luego el resto"
       ],
       "tiempos": [
-        1.32,
+        0.3,
         3.24
       ],
       "_id": "T5_B10_checklist"
@@ -147,7 +154,7 @@
     {
       "tipo": "verifica",
       "start": 45.056,
-      "end": 48.683,
+      "end": 49.033,
       "titulo": "Siempre verifica",
       "texto": "lo que te entrega y a qué lo conectas",
       "_id": "T5_B11_verifica"

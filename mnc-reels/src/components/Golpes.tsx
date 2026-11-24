@@ -67,7 +67,7 @@ const Numero: React.FC<{ dur: number; valor: string; etiqueta?: string; fuente?:
   return (
     <Pantalla dur={dur}>
       <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", padding: 60 }}>
-        <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 280, lineHeight: 1, color: color.naranja, transform: `scale(${interpolate(g, [0, 1], [1.5, 1])})` }}>
+        <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: valor.length > 5 ? Math.min(280, Math.floor(1500 / valor.length)) : 280, lineHeight: 1, whiteSpace: "nowrap", color: color.naranja, transform: `scale(${interpolate(g, [0, 1], [1.5, 1])})` }}>
           {valor}
         </div>
         {etiqueta ? (

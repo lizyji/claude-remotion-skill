@@ -65,11 +65,15 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       const z = interpolate(frame, [0, dur], [z0, z1], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const [fx, fy] = b.foco ?? [50, 50];
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco }}>
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 28 }}>
+        {b.pildora ? <Pildora tono="negro">{b.pildora}</Pildora> : null}
+        <div style={{ width: 960, height: b.alto ?? 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco, boxSizing: "border-box", padding: b.alto ? "20px 24px" : 0 }}>
           <Img
             src={staticFile(b.src)}
             style={{ width: "100%", height: "100%", objectFit: b.fit ?? "cover", transform: `scale(${z})`, transformOrigin: `${fx}% ${fy}%` }}
           />
+        </div>
+        {b.texto ? <Titulo size={50} style={{ textAlign: "center", width: 920 }}><ConIA texto={b.texto} /></Titulo> : null}
         </div>
       );
       break;

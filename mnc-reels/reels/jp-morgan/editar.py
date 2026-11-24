@@ -129,13 +129,14 @@ r["broll"] = [
     {"tipo": "calendario", "start": r2(t_de_abog), "end": r2(t_jp2 - E), "hasta": 41, "etiqueta": "años sin parar",
      "llegaEn": r2(at("41") - t_de_abog + 0.1), "fuente": "Fuente: 360,000 ÷ 8,760 h de un año = 41.1 · Bloomberg, 28 feb 2017", "_id": "T2_B4_41_anos"},
     # T3 · B5–B6 qué hizo JP Morgan
-    {"tipo": "imagen", "start": r2(t_jp2), "end": r2(t_segundos2 - E), "src": "reels/jp-morgan/aba_titular.png", "fit": "contain", "zoom": [1.0, 1.06],
+    {"tipo": "imagen", "start": r2(t_jp2), "end": r2(t_segundos2 - E), "src": "reels/jp-morgan/aba_titular.png", "fit": "contain", "zoom": [1.0, 1.2], "foco": [50, 40], "alto": 260, "pildora": "Así lo contó la prensa",
+     "texto": "“JPMorgan ahorra 360,000 horas de trabajo de abogados al año”",
      "fuente": "Fuente: Bloomberg, 28 feb 2017 · vía ABA Journal, 2 mar 2017 · abajournal.com", "_id": "T3_B5_titular"},
     {"tipo": "flecha", "start": r2(t_segundos2), "end": r2(t_te - E), "de": "360,000 horas", "a": "segundos", "aEn": 0.3,
      "extra": "Menos errores", "extraEn": r2(at("errores") - t_segundos2), "fuente": FUENTE, "_id": "T3_B6_horas_a_segundos"},
     # T4 · B7–B9 cómo lo haces tú
     {"tipo": "flecha", "start": r2(t_te), "end": r2(t_le - E), "de": "JP Morgan: su propio software", "a": "Hoy: con Claude", "tachar": False,
-     "deSize": 64, "aSize": 104, "aEn": r2(at("hoy") - t_te), "_id": "T4_B6b_inspirate"},
+     "deSize": 64, "aSize": 92, "aEn": r2(at("hoy") - t_te), "_id": "T4_B6b_inspirate"},
     {"tipo": "pendiente", "start": r2(t_le), "end": r2(t_una - E), "id": "B7", "items": ["Contrato", "Orden de compra", "Póliza"],
      "tiempos": [r2(at("contratos", 2) - t_le), r2(at("órdenes") - t_le), r2(at("pólizas") - t_le)], "fuente": FICTICIO, "_id": "T4_B7_subir_documentos"},
     {"tipo": "pendiente", "start": r2(t_una), "end": r2(t_yno - E - 0.03), "id": "B8", "ilumina": True,
@@ -145,8 +146,8 @@ r["broll"] = [
     {"tipo": "texto", "start": r2(t_yno - 0.03), "end": r2(t_revisa - E), "texto": "No necesitas ser JP Morgan", "resalta": "JP Morgan", "_id": "T4_B9_no_necesitas"},
     # T5 · B10–B11 lección
     {"tipo": "lista", "start": r2(t_revisa), "end": r2(t_yobvio - E - 0.05), "items": ["Prueba con 2–3 contratos que conozcas", "Luego el resto"],
-     "tiempos": [r2(at("dos") - t_revisa), r2(t_luego - t_revisa)], "_id": "T5_B10_checklist"},
-    {"tipo": "verifica", "start": r2(t_yobvio - 0.05), "end": r2(t_asi - E), "titulo": "Siempre verifica", "texto": "lo que te entrega y a qué lo conectas", "_id": "T5_B11_verifica"},
+     "tiempos": [0.3, r2(t_luego - t_revisa)], "_id": "T5_B10_checklist"},
+    {"tipo": "verifica", "start": r2(t_yobvio - 0.05), "end": r2(t_asi + 0.3), "titulo": "Siempre verifica", "texto": "lo que te entrega y a qué lo conectas", "_id": "T5_B11_verifica"},
 ]
 
 r["golpes"] = [
