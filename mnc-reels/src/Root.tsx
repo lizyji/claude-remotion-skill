@@ -22,6 +22,16 @@ export const Root: React.FC = () => (
       durationInFrames={Math.round(reel.duracion * 30)}
       calculateMetadata={({ props }) => ({ durationInFrames: Math.round(props.reel.duracion * 30) })}
     />
+    <Composition
+      id="Panel"
+      component={Reel}
+      defaultProps={{ reel, soloPanel: true }}
+      fps={30}
+      width={1080}
+      height={1920}
+      durationInFrames={Math.round(reel.duracion * 30)}
+      calculateMetadata={({ props }) => ({ durationInFrames: Math.round(props.reel.duracion * 30) })}
+    />
     <Still id="Portada" component={Portada} defaultProps={{ reel }} width={1080} height={1920} />
   </>
 );

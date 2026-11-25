@@ -30,9 +30,16 @@ def extraer_audio(video, desde=None, hasta=None):
     return tmp
 
 
-def transcribir(modelo, wav, offset=0.0):
-    segs, _ = modelo.transcribe(str(wav), language="es", word_timestamps=True, vad_filter=True,
-                                initial_prompt="Manuel NoCode habla de IA, Claude, Airtable, Make, automatización, Grok Bot.")
+PROMPT = "Manuel NoCode habla de IA, Claude, Airtable, Make, automatización, Grok Bot."
+
+
+def transcribir(modelo, wav, offset=0.0, prompt=PROMPT):
+    # Se pasa el audio como arreglo (evita incompatibilidades de versión de PyAV)
+    import numpy as np, wave
+    with wave.open(str(wav)) as f:
+        audio = np.frombuffer(f.readframes(f.getnframes()), np.int16).astype(np.float32) / 32768.0
+    segs, _ = modelo.transcribe(audio, language="es", word_timestamps=True, vad_filter=True,
+                                initial_prompt=prompt)
     out = []
     for s in segs:
         for w in s.words or []:
@@ -48,6 +55,7 @@ def main():
     ap.add_argument("--desde", type=float)
     ap.add_argument("--hasta", type=float)
     ap.add_argument("--modelo", default="large-v3")
+    ap.add_argument("--prompt", default=PROMPT, help="vocabulario del video (marcas, nombres) para guiar la transcripción")
     a = ap.parse_args()
     try:
         from faster_whisper import WhisperModel
@@ -57,7 +65,7 @@ def main():
 
     for v in a.videos:
         desde, hasta = (0.0, a.primeros) if a.primeros else (a.desde, a.hasta)
-        palabras = corregir(transcribir(modelo, extraer_audio(v, desde, hasta), offset=desde or 0.0))
+        palabras = corregir(transcribir(modelo, extraer_audio(v, desde, hasta), offset=desde or 0.0, prompt=a.prompt))
         texto = " ".join(p["w"] for p in palabras)
         print(f"\n== {Path(v).name} ==\n{texto}")
         dudosas = [p for p in palabras if p.get("prob", 1) < 0.6 or p.get("corregida")]

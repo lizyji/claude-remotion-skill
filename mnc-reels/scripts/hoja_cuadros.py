@@ -17,7 +17,9 @@ v = Path(a.video)
 n = int(duracion(v) / a.cada) + 1
 filas = -(-n // a.columnas)
 out = v.with_name(v.stem + "_hoja.jpg")
-vf = (f"fps=1/{a.cada},scale=270:480,"
+# cuadros exactos cada N s (el filtro fps toma el cuadro a la mitad del intervalo y desfasa las etiquetas)
+paso = max(1, round(a.cada * 30))
+vf = (f"select='not(mod(n\\,{paso}))',setpts=N*{a.cada}/TB,scale=270:480,"
       f"drawtext=text='%{{pts\\:hms}}':x=8:y=8:fontsize=22:fontcolor=white:box=1:boxcolor=black@0.6,"
       f"tile={a.columnas}x{filas}:padding=6:color=white")
 sh(["ffmpeg", "-y", "-v", "error", "-i", str(v), "-vf", vf, "-frames:v", "1", "-q:v", "3", str(out)])

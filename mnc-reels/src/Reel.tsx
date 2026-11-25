@@ -17,23 +17,37 @@ const dB = (x: number) => Math.pow(10, x / 20);
 const sfxAuto = (reel: ReelData) => {
   const out: { t: number; s: string }[] = [];
   for (const b of reel.broll) {
-    out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
+    if (reel.whooshAuto !== false) out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
     if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + 0.35 + i * (b.cada ?? 1.2), s: "pop" }));
     if (b.tipo === "contador") out.push({ t: b.start + 0.2 + 1.0, s: "tick" });
-    if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta") out.push({ t: b.start + 0.1, s: "pop" });
+    if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta" || b.tipo === "imagen") out.push({ t: b.start + 0.1, s: "pop" });
+    if (b.tipo === "logos") {
+      b.logos.forEach((l) => out.push({ t: l.t, s: "pop" }));
+      if (b.ranking) out.push({ t: b.ranking.t, s: "pop" }, { t: b.ranking.cae, s: "click" });
+    }
+    if (b.tipo === "checklist") {
+      b.items.forEach((it) => out.push({ t: it.t, s: "tick" }));
+      if (b.subeA1) out.push({ t: b.subeA1.t + 0.5, s: "pop" });
+    }
+    if (b.tipo === "linea") b.items.forEach((it) => out.push({ t: it.t, s: "pop" }));
+    if (b.tipo === "ecuacion") b.partes.forEach((pt) => out.push({ t: pt.t, s: "pop" }));
+    if (b.tipo === "sello") out.push({ t: b.tSello, s: "bass" });
+    if (b.tipo === "tachado") out.push({ t: b.tTacha, s: "click" }, ...(b.tDespues !== undefined ? [{ t: b.tDespues, s: "pop" }] : []));
+    if (b.tipo === "bandeja") out.push({ t: b.start + 0.25, s: "pop" }, { t: b.tSinRespuesta, s: "tick" });
   }
-  for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" ? "whoosh" : "bass" });
+  for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" && reel.whooshAuto !== false ? "whoosh" : "bass" });
   for (const p of reel.pasos ?? []) out.push({ t: p.start, s: "click" });
   return [...out, ...(reel.sfx ?? [])];
 };
 
-export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
+// soloPanel: render de B-rolls sueltos (sin Manuel, subtítulos ni audio) para la carpeta de entrega
+export const Reel: React.FC<{ reel: ReelData; soloPanel?: boolean }> = ({ reel, soloPanel }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const t = frame / fps;
   const f = (s: number) => Math.round(s * fps);
 
-  const m = mezclaPanel(reel, t);
+  const m = soloPanel ? 1 : mezclaPanel(reel, t);
   const zoom = zoomCorte(reel, t);
   const caraY = reel.caraYFuente ?? 0.38;
   const golpe = activo(reel.golpes, t);
@@ -54,7 +68,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
   return (
     <AbsoluteFill style={{ background: color.verde }}>
       {/* 1 · Manuel (con su audio, ya normalizado a −14 LUFS) */}
-      <Manuel src={reel.manuel} mezcla={m} zoom={zoom} caraYFuente={caraY} />
+      {soloPanel ? null : <Manuel src={reel.manuel} mezcla={m} zoom={zoom} caraYFuente={caraY} />}
 
       {/* 2 · Panel verde claro que se funde hacia Manuel (composición A) */}
       <AbsoluteFill
@@ -89,7 +103,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
       {paso && !golpe ? <Paso n={paso.n} p={spring({ frame: frame - f(paso.start), fps, config: theme.spring.golpe })} /> : null}
 
       {/* 5 · Subtítulos (ocultos en golpes y cierre) */}
-      {bloque && !golpe ? <Subtitulos bloque={bloque} t={t} /> : null}
+      {bloque && !golpe && !soloPanel ? <Subtitulos bloque={bloque} t={t} /> : null}
 
       {/* 6 · Golpes a pantalla completa */}
       {reel.golpes.map((g, i) => (
@@ -99,8 +113,8 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
       ))}
 
       {/* Audio: música + efectos */}
-      {reel.musica ? <Audio src={staticFile(reel.musica)} volume={musicaVol} loop /> : null}
-      {sfxAuto(reel).map((s, i) => (
+      {soloPanel ? null : reel.musica ? <Audio src={staticFile(reel.musica)} volume={musicaVol} loop /> : null}
+      {(soloPanel ? [] : sfxAuto(reel)).map((s, i) => (
         <Sequence key={`sfx${i}`} from={f(s.t)} durationInFrames={f(1)} layout="none">
           <Audio src={staticFile(`sfx/${s.s}.wav`)} volume={s.s === "whoosh" ? 0.35 : 0.5} />
         </Sequence>

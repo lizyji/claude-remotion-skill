@@ -1,0 +1,2392 @@
+{"reel":{
+  "broll": [
+    {
+      "tipo": "logos",
+      "start": 0.0,
+      "end": 6.72,
+      "titulo": "Los de Compras de…",
+      "logos": [
+        {
+          "src": "reels/ciiam/logo_ford_bn.png",
+          "t": 0.98
+        },
+        {
+          "src": "reels/ciiam/logo_kia_bn.png",
+          "t": 1.42
+        },
+        {
+          "src": "reels/ciiam/logo_stellantis_bn.png",
+          "t": 1.78
+        },
+        {
+          "src": "reels/ciiam/logo_paccar_bn.png",
+          "t": 2.44
+        }
+      ],
+      "ranking": {
+        "texto": "Precio",
+        "t": 4.92,
+        "cae": 5.78
+      }
+    },
+    {
+      "tipo": "imagen",
+      "start": 6.8,
+      "end": 8.28,
+      "src": "reels/ciiam/titular_factor.png",
+      "fit": "contain",
+      "alto": 330,
+      "zoom": [
+        1,
+        1.03
+      ],
+      "fuente": "Fuente: CIIAM 2026 · Factor Automotor, 1 oct 2026"
+    },
+    {
+      "tipo": "imagen",
+      "start": 8.3,
+      "end": 9.7,
+      "src": "reels/ciiam/foto_panel_ciiam.jpg",
+      "fit": "cover",
+      "alto": 520,
+      "zoom": [
+        1.0,
+        1.07
+      ],
+      "pie": "Panel de Compras · CIIAM 2026",
+      "fuente": "Fuente: CIIAM 2026 · Factor Automotor, 1 oct 2026"
+    },
+    {
+      "tipo": "sello",
+      "start": 9.72,
+      "end": 11.98,
+      "pildora": "CDMX",
+      "titulo": "T-MEC",
+      "sello": "En revisión",
+      "tSello": 11.4,
+      "fuente": "Fuente: CIIAM 2026 · Factor Automotor, 1 oct 2026"
+    },
+    {
+      "tipo": "tachado",
+      "start": 12.0,
+      "end": 14.5,
+      "antes": "Solo precio",
+      "tTacha": 13.16,
+      "despues": "Ya no alcanza",
+      "tDespues": 13.76,
+      "fuente": "Fuente: CIIAM 2026 · Factor Automotor, 1 oct 2026"
+    },
+    {
+      "tipo": "checklist",
+      "start": 14.56,
+      "end": 27.2,
+      "logo": "reels/ciiam/logo_ford_bn.png",
+      "titulo": "Lo que revisa Ford",
+      "subtitulo": "Bruno Mendoza · Procurement Director, Ford México",
+      "items": [
+        {
+          "texto": "Resiliencia",
+          "nota": "resuelves cuando algo falla",
+          "t": 16.36
+        },
+        {
+          "texto": "Calidad",
+          "t": 18.42
+        },
+        {
+          "texto": "Velocidad de reacción",
+          "t": 19.08
+        },
+        {
+          "texto": "Capacidad logística",
+          "t": 20.28
+        },
+        {
+          "texto": "Estabilidad laboral",
+          "t": 21.68
+        },
+        {
+          "texto": "Madurez técnica",
+          "t": 23.1
+        }
+      ],
+      "subeA1": {
+        "indice": 1,
+        "t": 25.0,
+        "etiqueta": "#1"
+      },
+      "fuente": "Fuente: CIIAM 2026 · Factor Automotor, 1 oct 2026"
+    },
+    {
+      "tipo": "tachado",
+      "start": 29.04,
+      "end": 32.04,
+      "logo": "reels/ciiam/logo_stellantis_bn.png",
+      "pildora": "Ya no pregunta",
+      "antes": "¿Qué pieza sale más barata?",
+      "tTacha": 31.75,
+      "fuente": "Fuente: CIIAM 2026 · Factor Automotor, 1 oct 2026"
+    },
+    {
+      "tipo": "linea",
+      "start": 32.08,
+      "end": 35.0,
+      "logo": "reels/ciiam/logo_stellantis_bn.png",
+      "titulo": "Mide el costo de todo el ciclo de vida",
+      "items": [
+        {
+          "texto": "Mala calidad",
+          "t": 32.82
+        },
+        {
+          "texto": "Paros",
+          "t": 33.46
+        },
+        {
+          "texto": "Cambios de ingeniería",
+          "t": 34.1
+        }
+      ],
+      "fuente": "Fuente: CIIAM 2026 · Factor Automotor, 1 oct 2026"
+    },
+    {
+      "tipo": "tarjeta",
+      "start": 36.65,
+      "end": 40.0,
+      "pildora": "Grupo Toyota",
+      "titulo": "Una empresa del grupo Toyota busca proveedores mexicanos"
+    },
+    {
+      "tipo": "bandeja",
+      "start": 40.02,
+      "end": 42.42,
+      "asunto": "Solicitud de cotización",
+      "de": "Cliente · hace 3 días",
+      "tSinRespuesta": 41.31
+    },
+    {
+      "tipo": "ecuacion",
+      "start": 42.46,
+      "end": 46.34,
+      "partes": [
+        {
+          "texto": "Responder rápido",
+          "t": 42.46
+        },
+        {
+          "texto": "Datos de calidad a la mano",
+          "t": 44.0,
+          "signo": "+"
+        },
+        {
+          "texto": "Ventaja",
+          "t": 45.58,
+          "signo": "=",
+          "naranja": true
+        }
+      ]
+    },
+    {
+      "tipo": "tachado",
+      "start": 46.38,
+      "end": 49.92,
+      "pildora": "No se resuelve con",
+      "antes": "Más gente",
+      "tTacha": 47.2,
+      "despues": "Procesos y sistemas",
+      "tDespues": 48.38
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "numero",
+      "start": 27.24,
+      "end": 28.98,
+      "valor": "#1",
+      "etiqueta": "Calidad"
+    },
+    {
+      "tipo": "cta",
+      "start": 49.96,
+      "end": 55.0,
+      "antes": "Comenta",
+      "palabra": "BRÚJULA",
+      "pie": "Clases gratis",
+      "icono": "brujula"
+    }
+  ],
+  "pasos": [],
+  "sfx": [
+    {
+      "t": 14.48,
+      "s": "whoosh"
+    },
+    {
+      "t": 36.57,
+      "s": "whoosh"
+    },
+    {
+      "t": 49.88,
+      "s": "whoosh"
+    }
+  ],
+  "slug": "ciiam",
+  "duracion": 55.0,
+  "manuel": "reels/ciiam/manuel.mp4",
+  "cortes": [
+    29.02,
+    34.97,
+    42.384
+  ],
+  "palabras": [
+    {
+      "w": "Los",
+      "start": 0.0,
+      "end": 0.44,
+      "prob": 0.99
+    },
+    {
+      "w": "de",
+      "start": 0.44,
+      "end": 0.54,
+      "prob": 1.0
+    },
+    {
+      "w": "compras",
+      "start": 0.54,
+      "end": 0.9,
+      "prob": 0.99
+    },
+    {
+      "w": "de",
+      "start": 0.9,
+      "end": 0.98,
+      "prob": 0.997
+    },
+    {
+      "w": "Ford,",
+      "start": 0.98,
+      "end": 1.24,
+      "prob": 1.0
+    },
+    {
+      "w": "KIA,",
+      "start": 1.42,
+      "end": 1.66,
+      "prob": 0.505
+    },
+    {
+      "w": "Stellantis",
+      "start": 1.78,
+      "end": 2.3,
+      "prob": 0.704
+    },
+    {
+      "w": "y",
+      "start": 2.3,
+      "end": 2.44,
+      "prob": 1.0
+    },
+    {
+      "w": "PACCAR",
+      "start": 2.44,
+      "end": 2.82,
+      "prob": 0.273
+    },
+    {
+      "w": "dijeron",
+      "start": 2.82,
+      "end": 3.24,
+      "prob": 0.998
+    },
+    {
+      "w": "que",
+      "start": 3.24,
+      "end": 3.34,
+      "prob": 1.0
+    },
+    {
+      "w": "revisan",
+      "start": 3.34,
+      "end": 3.7,
+      "prob": 0.998
+    },
+    {
+      "w": "antes",
+      "start": 3.7,
+      "end": 4.08,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 4.08,
+      "end": 4.3,
+      "prob": 1.0
+    },
+    {
+      "w": "comprarte",
+      "start": 4.3,
+      "end": 4.7,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 4.7,
+      "end": 4.92,
+      "prob": 0.899
+    },
+    {
+      "w": "el",
+      "start": 4.92,
+      "end": 5.06,
+      "prob": 1.0
+    },
+    {
+      "w": "precio",
+      "start": 5.06,
+      "end": 5.34,
+      "prob": 1.0
+    },
+    {
+      "w": "ya",
+      "start": 5.34,
+      "end": 5.78,
+      "prob": 0.999
+    },
+    {
+      "w": "no",
+      "start": 5.78,
+      "end": 5.96,
+      "prob": 1.0
+    },
+    {
+      "w": "va",
+      "start": 5.96,
+      "end": 6.06,
+      "prob": 1.0
+    },
+    {
+      "w": "primero.",
+      "start": 6.06,
+      "end": 6.28,
+      "prob": 0.997
+    },
+    {
+      "w": "Lo",
+      "start": 6.8,
+      "end": 7.28,
+      "prob": 0.994
+    },
+    {
+      "w": "dijeron",
+      "start": 7.28,
+      "end": 7.7,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 7.7,
+      "end": 7.82,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 7.82,
+      "end": 7.94,
+      "prob": 1.0
+    },
+    {
+      "w": "Congreso",
+      "start": 7.94,
+      "end": 8.3,
+      "prob": 0.986
+    },
+    {
+      "w": "Internacional",
+      "start": 8.3,
+      "end": 8.84,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 8.84,
+      "end": 8.98,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 8.98,
+      "end": 9.02,
+      "prob": 1.0
+    },
+    {
+      "w": "Industria",
+      "start": 9.02,
+      "end": 9.32,
+      "prob": 0.998
+    },
+    {
+      "w": "Automotriz",
+      "start": 9.32,
+      "end": 9.72,
+      "prob": 0.694
+    },
+    {
+      "w": "en",
+      "start": 9.72,
+      "end": 9.92,
+      "prob": 0.999
+    },
+    {
+      "w": "la",
+      "start": 9.92,
+      "end": 9.98,
+      "prob": 0.999
+    },
+    {
+      "w": "Ciudad",
+      "start": 9.98,
+      "end": 10.22,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 10.22,
+      "end": 10.24,
+      "prob": 1.0
+    },
+    {
+      "w": "México",
+      "start": 10.24,
+      "end": 10.52,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 10.52,
+      "end": 10.84,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 10.84,
+      "end": 10.98,
+      "prob": 1.0
+    },
+    {
+      "w": "T-MEC",
+      "start": 10.98,
+      "end": 11.1,
+      "prob": 0.977
+    },
+    {
+      "w": "en",
+      "start": 11.26,
+      "end": 11.46,
+      "prob": 1.0
+    },
+    {
+      "w": "revisión.",
+      "start": 11.46,
+      "end": 11.9,
+      "prob": 0.999
+    },
+    {
+      "w": "Competir",
+      "start": 12.0,
+      "end": 12.48,
+      "prob": 0.995
+    },
+    {
+      "w": "solo",
+      "start": 12.48,
+      "end": 12.74,
+      "prob": 0.032
+    },
+    {
+      "w": "con",
+      "start": 12.74,
+      "end": 13.0,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 13.0,
+      "end": 13.16,
+      "prob": 1.0
+    },
+    {
+      "w": "precio",
+      "start": 13.16,
+      "end": 13.4,
+      "prob": 1.0
+    },
+    {
+      "w": "ya",
+      "start": 13.4,
+      "end": 13.76,
+      "prob": 1.0
+    },
+    {
+      "w": "no",
+      "start": 13.76,
+      "end": 13.94,
+      "prob": 1.0
+    },
+    {
+      "w": "alcanza.",
+      "start": 13.94,
+      "end": 14.36,
+      "prob": 1.0
+    },
+    {
+      "w": "Y",
+      "start": 14.56,
+      "end": 15.04,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 15.04,
+      "end": 15.16,
+      "prob": 0.999
+    },
+    {
+      "w": "de",
+      "start": 15.16,
+      "end": 15.22,
+      "prob": 1.0
+    },
+    {
+      "w": "Ford",
+      "start": 15.22,
+      "end": 15.4,
+      "prob": 1.0
+    },
+    {
+      "w": "lo",
+      "start": 15.4,
+      "end": 15.5,
+      "prob": 1.0
+    },
+    {
+      "w": "dijo",
+      "start": 15.5,
+      "end": 15.7,
+      "prob": 1.0
+    },
+    {
+      "w": "así,",
+      "start": 15.7,
+      "end": 15.84,
+      "prob": 1.0
+    },
+    {
+      "w": "revisan",
+      "start": 15.96,
+      "end": 16.36,
+      "prob": 0.997
+    },
+    {
+      "w": "resiliencia,",
+      "start": 16.36,
+      "end": 16.94,
+      "prob": 0.999
+    },
+    {
+      "w": "o",
+      "start": 17.0,
+      "end": 17.1,
+      "prob": 0.999
+    },
+    {
+      "w": "sea",
+      "start": 17.1,
+      "end": 17.24,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 17.24,
+      "end": 17.32,
+      "prob": 0.93
+    },
+    {
+      "w": "resuelvas",
+      "start": 17.32,
+      "end": 17.7,
+      "prob": 0.991
+    },
+    {
+      "w": "cuando",
+      "start": 17.7,
+      "end": 17.86,
+      "prob": 1.0
+    },
+    {
+      "w": "algo",
+      "start": 17.86,
+      "end": 18.04,
+      "prob": 0.999
+    },
+    {
+      "w": "falla,",
+      "start": 18.04,
+      "end": 18.42,
+      "prob": 0.999
+    },
+    {
+      "w": "calidad,",
+      "start": 18.42,
+      "end": 18.76,
+      "prob": 1.0
+    },
+    {
+      "w": "velocidad",
+      "start": 19.08,
+      "end": 19.58,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 19.58,
+      "end": 19.74,
+      "prob": 1.0
+    },
+    {
+      "w": "reacción,",
+      "start": 19.74,
+      "end": 20.04,
+      "prob": 1.0
+    },
+    {
+      "w": "capacidad",
+      "start": 20.28,
+      "end": 20.76,
+      "prob": 1.0
+    },
+    {
+      "w": "logística,",
+      "start": 20.76,
+      "end": 21.58,
+      "prob": 1.0
+    },
+    {
+      "w": "estabilidad",
+      "start": 21.68,
+      "end": 22.48,
+      "prob": 1.0
+    },
+    {
+      "w": "laboral",
+      "start": 22.48,
+      "end": 22.96,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 22.96,
+      "end": 23.1,
+      "prob": 1.0
+    },
+    {
+      "w": "madurez",
+      "start": 23.1,
+      "end": 23.5,
+      "prob": 1.0
+    },
+    {
+      "w": "técnica.",
+      "start": 23.5,
+      "end": 23.78,
+      "prob": 1.0
+    },
+    {
+      "w": "Y",
+      "start": 23.94,
+      "end": 24.18,
+      "prob": 0.998
+    },
+    {
+      "w": "agregó,",
+      "start": 24.18,
+      "end": 24.64,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 24.68,
+      "end": 25.0,
+      "prob": 1.0
+    },
+    {
+      "w": "calidad",
+      "start": 25.0,
+      "end": 25.38,
+      "prob": 1.0
+    },
+    {
+      "w": "está",
+      "start": 25.38,
+      "end": 25.64,
+      "prob": 1.0
+    },
+    {
+      "w": "pasando",
+      "start": 25.64,
+      "end": 25.98,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 25.98,
+      "end": 26.2,
+      "prob": 1.0
+    },
+    {
+      "w": "ser",
+      "start": 26.2,
+      "end": 26.34,
+      "prob": 1.0
+    },
+    {
+      "w": "una",
+      "start": 26.34,
+      "end": 26.5,
+      "prob": 1.0
+    },
+    {
+      "w": "característica",
+      "start": 26.5,
+      "end": 27.24,
+      "prob": 1.0
+    },
+    {
+      "w": "más",
+      "start": 27.24,
+      "end": 27.44,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 27.44,
+      "end": 27.84,
+      "prob": 0.989
+    },
+    {
+      "w": "ser",
+      "start": 27.84,
+      "end": 28.08,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 28.08,
+      "end": 28.4,
+      "prob": 1.0
+    },
+    {
+      "w": "primera.",
+      "start": 28.4,
+      "end": 28.7,
+      "prob": 1.0
+    },
+    {
+      "w": "Stellantis",
+      "start": 29.037,
+      "end": 29.476,
+      "prob": 0.522
+    },
+    {
+      "w": "fue",
+      "start": 29.476,
+      "end": 29.697,
+      "prob": 0.951
+    },
+    {
+      "w": "más",
+      "start": 29.697,
+      "end": 29.896,
+      "prob": 0.931
+    },
+    {
+      "w": "allá,",
+      "start": 29.896,
+      "end": 30.076,
+      "prob": 0.998
+    },
+    {
+      "w": "ya",
+      "start": 30.197,
+      "end": 30.396,
+      "prob": 0.969
+    },
+    {
+      "w": "no",
+      "start": 30.396,
+      "end": 30.517,
+      "prob": 0.998
+    },
+    {
+      "w": "pregunta",
+      "start": 30.517,
+      "end": 30.796,
+      "prob": 0.96
+    },
+    {
+      "w": "qué",
+      "start": 30.796,
+      "end": 31.037,
+      "prob": 0.718
+    },
+    {
+      "w": "pieza",
+      "start": 31.037,
+      "end": 31.337,
+      "prob": 0.925
+    },
+    {
+      "w": "sale",
+      "start": 31.337,
+      "end": 31.497,
+      "prob": 0.99
+    },
+    {
+      "w": "más",
+      "start": 31.497,
+      "end": 31.677,
+      "prob": 0.992
+    },
+    {
+      "w": "barata,",
+      "start": 31.677,
+      "end": 31.957,
+      "prob": 0.999
+    },
+    {
+      "w": "mide",
+      "start": 32.076,
+      "end": 32.397,
+      "prob": 0.99
+    },
+    {
+      "w": "lo",
+      "start": 32.397,
+      "end": 32.677,
+      "prob": 0.974
+    },
+    {
+      "w": "que",
+      "start": 32.677,
+      "end": 32.817,
+      "prob": 0.998
+    },
+    {
+      "w": "cuesta",
+      "start": 32.817,
+      "end": 33.097,
+      "prob": 0.997
+    },
+    {
+      "w": "todo",
+      "start": 33.097,
+      "end": 33.457,
+      "prob": 0.97
+    },
+    {
+      "w": "el",
+      "start": 33.457,
+      "end": 33.876,
+      "prob": 0.987
+    },
+    {
+      "w": "ciclo",
+      "start": 33.876,
+      "end": 34.317,
+      "prob": 0.997
+    },
+    {
+      "w": "de",
+      "start": 34.317,
+      "end": 34.457,
+      "prob": 0.993
+    },
+    {
+      "w": "vida.",
+      "start": 34.457,
+      "end": 34.737,
+      "prob": 0.996
+    },
+    {
+      "w": "Y",
+      "start": 35.05,
+      "end": 35.49,
+      "prob": 0.943
+    },
+    {
+      "w": "aquí",
+      "start": 35.49,
+      "end": 35.71,
+      "prob": 0.989
+    },
+    {
+      "w": "está",
+      "start": 35.71,
+      "end": 36.11,
+      "prob": 0.969
+    },
+    {
+      "w": "la",
+      "start": 36.11,
+      "end": 36.27,
+      "prob": 0.994
+    },
+    {
+      "w": "jugada,",
+      "start": 36.27,
+      "end": 36.55,
+      "prob": 0.999
+    },
+    {
+      "w": "el",
+      "start": 36.65,
+      "end": 36.79,
+      "prob": 0.984
+    },
+    {
+      "w": "Ematec",
+      "start": 36.79,
+      "end": 37.19,
+      "prob": 0.744
+    },
+    {
+      "w": "del",
+      "start": 37.19,
+      "end": 37.33,
+      "prob": 0.995
+    },
+    {
+      "w": "grupo",
+      "start": 37.33,
+      "end": 37.53,
+      "prob": 0.925
+    },
+    {
+      "w": "Toyota",
+      "start": 37.53,
+      "end": 37.89,
+      "prob": 0.987
+    },
+    {
+      "w": "busca",
+      "start": 37.89,
+      "end": 38.27,
+      "prob": 0.978
+    },
+    {
+      "w": "proveedores",
+      "start": 38.27,
+      "end": 38.81,
+      "prob": 0.998
+    },
+    {
+      "w": "mexicanos",
+      "start": 38.81,
+      "end": 39.37,
+      "prob": 0.996
+    },
+    {
+      "w": "y",
+      "start": 39.37,
+      "end": 39.51,
+      "prob": 0.97
+    },
+    {
+      "w": "dijo",
+      "start": 39.51,
+      "end": 39.71,
+      "prob": 0.996
+    },
+    {
+      "w": "que",
+      "start": 39.71,
+      "end": 39.85,
+      "prob": 0.999
+    },
+    {
+      "w": "a",
+      "start": 39.85,
+      "end": 39.91,
+      "prob": 0.999
+    },
+    {
+      "w": "veces",
+      "start": 39.91,
+      "end": 40.07,
+      "prob": 1.0
+    },
+    {
+      "w": "les",
+      "start": 40.07,
+      "end": 40.23,
+      "prob": 0.975
+    },
+    {
+      "w": "piden",
+      "start": 40.23,
+      "end": 40.51,
+      "prob": 1.0
+    },
+    {
+      "w": "cotizaciones",
+      "start": 40.51,
+      "end": 41.01,
+      "prob": 0.992
+    },
+    {
+      "w": "y",
+      "start": 41.01,
+      "end": 41.31,
+      "prob": 0.996
+    },
+    {
+      "w": "no",
+      "start": 41.31,
+      "end": 41.53,
+      "prob": 0.999
+    },
+    {
+      "w": "responden.",
+      "start": 41.53,
+      "end": 42.17,
+      "prob": 0.998
+    },
+    {
+      "w": "Contestar",
+      "start": 42.464,
+      "end": 42.904,
+      "prob": 0.961
+    },
+    {
+      "w": "rápido",
+      "start": 42.904,
+      "end": 43.244,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 43.244,
+      "end": 43.604,
+      "prob": 0.998
+    },
+    {
+      "w": "con",
+      "start": 43.604,
+      "end": 43.784,
+      "prob": 0.999
+    },
+    {
+      "w": "tus",
+      "start": 43.784,
+      "end": 44.004,
+      "prob": 0.998
+    },
+    {
+      "w": "datos",
+      "start": 44.004,
+      "end": 44.204,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 44.204,
+      "end": 44.404,
+      "prob": 1.0
+    },
+    {
+      "w": "calidad",
+      "start": 44.404,
+      "end": 44.644,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 44.644,
+      "end": 44.884,
+      "prob": 0.996
+    },
+    {
+      "w": "la",
+      "start": 44.884,
+      "end": 44.904,
+      "prob": 0.998
+    },
+    {
+      "w": "mano",
+      "start": 44.904,
+      "end": 45.164,
+      "prob": 1.0
+    },
+    {
+      "w": "ya",
+      "start": 45.164,
+      "end": 45.424,
+      "prob": 0.993
+    },
+    {
+      "w": "es",
+      "start": 45.424,
+      "end": 45.584,
+      "prob": 1.0
+    },
+    {
+      "w": "ventaja",
+      "start": 45.584,
+      "end": 45.984,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 45.984,
+      "end": 46.164,
+      "prob": 0.973
+    },
+    {
+      "w": "eso",
+      "start": 46.164,
+      "end": 46.384,
+      "prob": 0.998
+    },
+    {
+      "w": "no",
+      "start": 46.384,
+      "end": 46.504,
+      "prob": 1.0
+    },
+    {
+      "w": "se",
+      "start": 46.504,
+      "end": 46.604,
+      "prob": 1.0
+    },
+    {
+      "w": "resuelve",
+      "start": 46.604,
+      "end": 46.944,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 46.944,
+      "end": 47.104,
+      "prob": 1.0
+    },
+    {
+      "w": "más",
+      "start": 47.104,
+      "end": 47.264,
+      "prob": 0.999
+    },
+    {
+      "w": "gente,",
+      "start": 47.264,
+      "end": 47.504,
+      "prob": 1.0
+    },
+    {
+      "w": "se",
+      "start": 47.644,
+      "end": 47.764,
+      "prob": 0.999
+    },
+    {
+      "w": "resuelve",
+      "start": 47.764,
+      "end": 48.204,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 48.204,
+      "end": 48.384,
+      "prob": 1.0
+    },
+    {
+      "w": "procesos",
+      "start": 48.384,
+      "end": 49.044,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 49.044,
+      "end": 49.164,
+      "prob": 1.0
+    },
+    {
+      "w": "sistemas.",
+      "start": 49.164,
+      "end": 49.504,
+      "prob": 1.0
+    },
+    {
+      "w": "Comenta",
+      "start": 49.964,
+      "end": 50.404,
+      "prob": 0.998
+    },
+    {
+      "w": "brújula",
+      "start": 50.404,
+      "end": 50.724,
+      "prob": 0.838
+    },
+    {
+      "w": "y",
+      "start": 50.724,
+      "end": 50.964,
+      "prob": 0.999
+    },
+    {
+      "w": "te",
+      "start": 50.964,
+      "end": 51.064,
+      "prob": 1.0
+    },
+    {
+      "w": "mando",
+      "start": 51.064,
+      "end": 51.364,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 51.364,
+      "end": 51.384,
+      "prob": 0.995
+    },
+    {
+      "w": "link",
+      "start": 51.384,
+      "end": 51.524,
+      "prob": 1.0
+    },
+    {
+      "w": "para",
+      "start": 51.524,
+      "end": 51.684,
+      "prob": 1.0
+    },
+    {
+      "w": "entrar",
+      "start": 51.684,
+      "end": 51.884,
+      "prob": 0.999
+    },
+    {
+      "w": "a",
+      "start": 51.884,
+      "end": 52.004,
+      "prob": 0.999
+    },
+    {
+      "w": "mi",
+      "start": 52.004,
+      "end": 52.084,
+      "prob": 1.0
+    },
+    {
+      "w": "comunidad",
+      "start": 52.084,
+      "end": 52.444,
+      "prob": 1.0
+    },
+    {
+      "w": "donde",
+      "start": 52.444,
+      "end": 52.664,
+      "prob": 0.996
+    },
+    {
+      "w": "vamos",
+      "start": 52.664,
+      "end": 52.824,
+      "prob": 1.0
+    },
+    {
+      "w": "a",
+      "start": 52.824,
+      "end": 52.984,
+      "prob": 1.0
+    },
+    {
+      "w": "dar",
+      "start": 52.984,
+      "end": 53.104,
+      "prob": 1.0
+    },
+    {
+      "w": "clases",
+      "start": 53.104,
+      "end": 53.464,
+      "prob": 1.0
+    },
+    {
+      "w": "gratis",
+      "start": 53.464,
+      "end": 54.184,
+      "prob": 1.0
+    },
+    {
+      "w": "cada",
+      "start": 54.184,
+      "end": 54.384,
+      "prob": 0.999
+    },
+    {
+      "w": "dos",
+      "start": 54.384,
+      "end": 54.584,
+      "prob": 0.975
+    },
+    {
+      "w": "semanas.",
+      "start": 54.584,
+      "end": 54.824,
+      "prob": 1.0
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.0,
+      "end": 1.42,
+      "words": [
+        {
+          "w": "Los",
+          "start": 0.0
+        },
+        {
+          "w": "de",
+          "start": 0.44
+        },
+        {
+          "w": "compras",
+          "start": 0.54,
+          "key": true
+        },
+        {
+          "w": "de",
+          "start": 0.9
+        },
+        {
+          "w": "Ford",
+          "start": 0.98,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 1.42,
+      "end": 2.82,
+      "words": [
+        {
+          "w": "KIA",
+          "start": 1.42
+        },
+        {
+          "w": "Stellantis",
+          "start": 1.78,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 2.3
+        },
+        {
+          "w": "PACCAR",
+          "start": 2.44
+        }
+      ]
+    },
+    {
+      "start": 2.82,
+      "end": 3.7,
+      "words": [
+        {
+          "w": "dijeron",
+          "start": 2.82,
+          "key": true
+        },
+        {
+          "w": "que",
+          "start": 3.24
+        },
+        {
+          "w": "revisan",
+          "start": 3.34
+        }
+      ]
+    },
+    {
+      "start": 3.7,
+      "end": 4.7,
+      "words": [
+        {
+          "w": "antes",
+          "start": 3.7
+        },
+        {
+          "w": "de",
+          "start": 4.08
+        },
+        {
+          "w": "comprarte",
+          "start": 4.3,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 4.7,
+      "end": 5.96,
+      "words": [
+        {
+          "w": "y",
+          "start": 4.7
+        },
+        {
+          "w": "el",
+          "start": 4.92
+        },
+        {
+          "w": "precio",
+          "start": 5.06,
+          "key": true
+        },
+        {
+          "w": "ya",
+          "start": 5.34
+        },
+        {
+          "w": "no",
+          "start": 5.78
+        }
+      ]
+    },
+    {
+      "start": 5.96,
+      "end": 6.8,
+      "words": [
+        {
+          "w": "va",
+          "start": 5.96
+        },
+        {
+          "w": "primero",
+          "start": 6.06,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 6.8,
+      "end": 7.7,
+      "words": [
+        {
+          "w": "Lo",
+          "start": 6.8
+        },
+        {
+          "w": "dijeron",
+          "start": 7.28,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 7.7,
+      "end": 8.3,
+      "words": [
+        {
+          "w": "en",
+          "start": 7.7
+        },
+        {
+          "w": "el",
+          "start": 7.82
+        },
+        {
+          "w": "Congreso",
+          "start": 7.94,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.3,
+      "end": 8.84,
+      "words": [
+        {
+          "w": "Internacional",
+          "start": 8.3,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.84,
+      "end": 9.32,
+      "words": [
+        {
+          "w": "de",
+          "start": 8.84
+        },
+        {
+          "w": "la",
+          "start": 8.98
+        },
+        {
+          "w": "Industria",
+          "start": 9.02,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 9.32,
+      "end": 10.22,
+      "words": [
+        {
+          "w": "Automotriz",
+          "start": 9.32,
+          "key": true
+        },
+        {
+          "w": "en",
+          "start": 9.72
+        },
+        {
+          "w": "la",
+          "start": 9.92
+        },
+        {
+          "w": "Ciudad",
+          "start": 9.98
+        }
+      ]
+    },
+    {
+      "start": 10.22,
+      "end": 11.26,
+      "words": [
+        {
+          "w": "de",
+          "start": 10.22
+        },
+        {
+          "w": "México",
+          "start": 10.24
+        },
+        {
+          "w": "con",
+          "start": 10.52
+        },
+        {
+          "w": "el",
+          "start": 10.84
+        },
+        {
+          "w": "T-MEC",
+          "start": 10.98,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 11.26,
+      "end": 12.0,
+      "words": [
+        {
+          "w": "en",
+          "start": 11.26
+        },
+        {
+          "w": "revisión",
+          "start": 11.46,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 12.0,
+      "end": 12.74,
+      "words": [
+        {
+          "w": "Competir",
+          "start": 12.0,
+          "key": true
+        },
+        {
+          "w": "solo",
+          "start": 12.48
+        }
+      ]
+    },
+    {
+      "start": 12.74,
+      "end": 13.94,
+      "words": [
+        {
+          "w": "con",
+          "start": 12.74
+        },
+        {
+          "w": "el",
+          "start": 13.0
+        },
+        {
+          "w": "precio",
+          "start": 13.16,
+          "key": true
+        },
+        {
+          "w": "ya",
+          "start": 13.4
+        },
+        {
+          "w": "no",
+          "start": 13.76
+        }
+      ]
+    },
+    {
+      "start": 13.94,
+      "end": 14.56,
+      "words": [
+        {
+          "w": "alcanza",
+          "start": 13.94,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 14.56,
+      "end": 15.4,
+      "words": [
+        {
+          "w": "Y",
+          "start": 14.56
+        },
+        {
+          "w": "el",
+          "start": 15.04
+        },
+        {
+          "w": "de",
+          "start": 15.16
+        },
+        {
+          "w": "Ford",
+          "start": 15.22,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 15.4,
+      "end": 15.96,
+      "words": [
+        {
+          "w": "lo",
+          "start": 15.4
+        },
+        {
+          "w": "dijo",
+          "start": 15.5
+        },
+        {
+          "w": "así",
+          "start": 15.7
+        }
+      ]
+    },
+    {
+      "start": 15.96,
+      "end": 17.0,
+      "words": [
+        {
+          "w": "revisan",
+          "start": 15.96
+        },
+        {
+          "w": "resiliencia",
+          "start": 16.36,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 17.0,
+      "end": 17.7,
+      "words": [
+        {
+          "w": "o",
+          "start": 17.0
+        },
+        {
+          "w": "sea",
+          "start": 17.1
+        },
+        {
+          "w": "que",
+          "start": 17.24
+        },
+        {
+          "w": "resuelvas",
+          "start": 17.32,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 17.7,
+      "end": 18.42,
+      "words": [
+        {
+          "w": "cuando",
+          "start": 17.7
+        },
+        {
+          "w": "algo",
+          "start": 17.86
+        },
+        {
+          "w": "falla",
+          "start": 18.04,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 18.42,
+      "end": 19.58,
+      "words": [
+        {
+          "w": "calidad",
+          "start": 18.42,
+          "key": true
+        },
+        {
+          "w": "velocidad",
+          "start": 19.08,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 19.58,
+      "end": 20.76,
+      "words": [
+        {
+          "w": "de",
+          "start": 19.58
+        },
+        {
+          "w": "reacción",
+          "start": 19.74,
+          "key": true
+        },
+        {
+          "w": "capacidad",
+          "start": 20.28
+        }
+      ]
+    },
+    {
+      "start": 20.76,
+      "end": 22.48,
+      "words": [
+        {
+          "w": "logística",
+          "start": 20.76,
+          "key": true
+        },
+        {
+          "w": "estabilidad",
+          "start": 21.68
+        }
+      ]
+    },
+    {
+      "start": 22.48,
+      "end": 23.5,
+      "words": [
+        {
+          "w": "laboral",
+          "start": 22.48,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 22.96
+        },
+        {
+          "w": "madurez",
+          "start": 23.1
+        }
+      ]
+    },
+    {
+      "start": 23.5,
+      "end": 23.94,
+      "words": [
+        {
+          "w": "técnica",
+          "start": 23.5,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 23.94,
+      "end": 24.6,
+      "words": [
+        {
+          "w": "Y",
+          "start": 23.94
+        },
+        {
+          "w": "agregó",
+          "start": 24.18,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 29.037,
+      "end": 30.197,
+      "words": [
+        {
+          "w": "Stellantis",
+          "start": 29.037,
+          "key": true
+        },
+        {
+          "w": "fue",
+          "start": 29.476
+        },
+        {
+          "w": "más",
+          "start": 29.697
+        },
+        {
+          "w": "allá",
+          "start": 29.896
+        }
+      ]
+    },
+    {
+      "start": 30.197,
+      "end": 31.337,
+      "words": [
+        {
+          "w": "ya",
+          "start": 30.197
+        },
+        {
+          "w": "no",
+          "start": 30.396
+        },
+        {
+          "w": "pregunta",
+          "start": 30.517,
+          "key": true
+        },
+        {
+          "w": "qué",
+          "start": 30.796
+        },
+        {
+          "w": "pieza",
+          "start": 31.037
+        }
+      ]
+    },
+    {
+      "start": 31.337,
+      "end": 32.076,
+      "words": [
+        {
+          "w": "sale",
+          "start": 31.337
+        },
+        {
+          "w": "más",
+          "start": 31.497
+        },
+        {
+          "w": "barata",
+          "start": 31.677,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 32.076,
+      "end": 33.457,
+      "words": [
+        {
+          "w": "mide",
+          "start": 32.076
+        },
+        {
+          "w": "lo",
+          "start": 32.397
+        },
+        {
+          "w": "que",
+          "start": 32.677
+        },
+        {
+          "w": "cuesta",
+          "start": 32.817,
+          "key": true
+        },
+        {
+          "w": "todo",
+          "start": 33.097
+        }
+      ]
+    },
+    {
+      "start": 33.457,
+      "end": 34.987,
+      "words": [
+        {
+          "w": "el",
+          "start": 33.457
+        },
+        {
+          "w": "ciclo",
+          "start": 33.876,
+          "key": true
+        },
+        {
+          "w": "de",
+          "start": 34.317
+        },
+        {
+          "w": "vida",
+          "start": 34.457
+        }
+      ]
+    },
+    {
+      "start": 37.19,
+      "end": 38.27,
+      "words": [
+        {
+          "w": "del",
+          "start": 37.19
+        },
+        {
+          "w": "grupo",
+          "start": 37.33
+        },
+        {
+          "w": "Toyota",
+          "start": 37.53,
+          "key": true
+        },
+        {
+          "w": "busca",
+          "start": 37.89
+        }
+      ]
+    },
+    {
+      "start": 38.27,
+      "end": 39.37,
+      "words": [
+        {
+          "w": "proveedores",
+          "start": 38.27,
+          "key": true
+        },
+        {
+          "w": "mexicanos",
+          "start": 38.81
+        }
+      ]
+    },
+    {
+      "start": 39.37,
+      "end": 40.07,
+      "words": [
+        {
+          "w": "y",
+          "start": 39.37
+        },
+        {
+          "w": "dijo",
+          "start": 39.51
+        },
+        {
+          "w": "que",
+          "start": 39.71
+        },
+        {
+          "w": "a",
+          "start": 39.85
+        },
+        {
+          "w": "veces",
+          "start": 39.91
+        }
+      ]
+    },
+    {
+      "start": 40.07,
+      "end": 41.01,
+      "words": [
+        {
+          "w": "les",
+          "start": 40.07
+        },
+        {
+          "w": "piden",
+          "start": 40.23
+        },
+        {
+          "w": "cotizaciones",
+          "start": 40.51,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 41.01,
+      "end": 42.464,
+      "words": [
+        {
+          "w": "y",
+          "start": 41.01
+        },
+        {
+          "w": "no",
+          "start": 41.31
+        },
+        {
+          "w": "responden",
+          "start": 41.53,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 42.464,
+      "end": 43.244,
+      "words": [
+        {
+          "w": "Contestar",
+          "start": 42.464
+        },
+        {
+          "w": "rápido",
+          "start": 42.904,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 43.244,
+      "end": 44.204,
+      "words": [
+        {
+          "w": "y",
+          "start": 43.244
+        },
+        {
+          "w": "con",
+          "start": 43.604
+        },
+        {
+          "w": "tus",
+          "start": 43.784
+        },
+        {
+          "w": "datos",
+          "start": 44.004
+        }
+      ]
+    },
+    {
+      "start": 44.204,
+      "end": 45.164,
+      "words": [
+        {
+          "w": "de",
+          "start": 44.204
+        },
+        {
+          "w": "calidad",
+          "start": 44.404,
+          "key": true
+        },
+        {
+          "w": "a",
+          "start": 44.644
+        },
+        {
+          "w": "la",
+          "start": 44.884
+        },
+        {
+          "w": "mano",
+          "start": 44.904
+        }
+      ]
+    },
+    {
+      "start": 45.164,
+      "end": 46.384,
+      "words": [
+        {
+          "w": "ya",
+          "start": 45.164
+        },
+        {
+          "w": "es",
+          "start": 45.424
+        },
+        {
+          "w": "ventaja",
+          "start": 45.584,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 45.984
+        },
+        {
+          "w": "eso",
+          "start": 46.164
+        }
+      ]
+    },
+    {
+      "start": 46.384,
+      "end": 46.944,
+      "words": [
+        {
+          "w": "no",
+          "start": 46.384
+        },
+        {
+          "w": "se",
+          "start": 46.504
+        },
+        {
+          "w": "resuelve",
+          "start": 46.604,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 46.944,
+      "end": 47.644,
+      "words": [
+        {
+          "w": "con",
+          "start": 46.944
+        },
+        {
+          "w": "más",
+          "start": 47.104
+        },
+        {
+          "w": "gente",
+          "start": 47.264,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 47.644,
+      "end": 49.044,
+      "words": [
+        {
+          "w": "se",
+          "start": 47.644
+        },
+        {
+          "w": "resuelve",
+          "start": 47.764
+        },
+        {
+          "w": "con",
+          "start": 48.204
+        },
+        {
+          "w": "procesos",
+          "start": 48.384,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 49.044,
+      "end": 49.964,
+      "words": [
+        {
+          "w": "y",
+          "start": 49.044
+        },
+        {
+          "w": "sistemas",
+          "start": 49.164,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 49.964,
+      "end": 50.724,
+      "words": [
+        {
+          "w": "Comenta",
+          "start": 49.964,
+          "key": true
+        },
+        {
+          "w": "brújula",
+          "start": 50.404,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 50.724,
+      "end": 51.524,
+      "words": [
+        {
+          "w": "y",
+          "start": 50.724
+        },
+        {
+          "w": "te",
+          "start": 50.964
+        },
+        {
+          "w": "mando",
+          "start": 51.064
+        },
+        {
+          "w": "el",
+          "start": 51.364
+        },
+        {
+          "w": "link",
+          "start": 51.384
+        }
+      ]
+    },
+    {
+      "start": 51.524,
+      "end": 51.884,
+      "words": [
+        {
+          "w": "para",
+          "start": 51.524
+        },
+        {
+          "w": "entrar",
+          "start": 51.684,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 51.884,
+      "end": 52.664,
+      "words": [
+        {
+          "w": "a",
+          "start": 51.884
+        },
+        {
+          "w": "mi",
+          "start": 52.004
+        },
+        {
+          "w": "comunidad",
+          "start": 52.084,
+          "key": true
+        },
+        {
+          "w": "donde",
+          "start": 52.444
+        }
+      ]
+    },
+    {
+      "start": 52.664,
+      "end": 53.464,
+      "words": [
+        {
+          "w": "vamos",
+          "start": 52.664
+        },
+        {
+          "w": "a",
+          "start": 52.824
+        },
+        {
+          "w": "dar",
+          "start": 52.984
+        },
+        {
+          "w": "clases",
+          "start": 53.104,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 53.464,
+      "end": 55.074,
+      "words": [
+        {
+          "w": "gratis",
+          "start": 53.464,
+          "key": true
+        },
+        {
+          "w": "cada",
+          "start": 54.184
+        },
+        {
+          "w": "dos",
+          "start": 54.384
+        },
+        {
+          "w": "semanas",
+          "start": 54.584
+        }
+      ]
+    }
+  ],
+  "caraYFuente": 0.56,
+  "musica": "reels/ciiam/musica.wav",
+  "whooshAuto": false,
+  "portada": {
+    "frase": "Las armadoras ya no compran solo por precio",
+    "destacar": [
+      "precio"
+    ],
+    "cuadro": 5.3,
+    "provisional": true
+  }
+}}

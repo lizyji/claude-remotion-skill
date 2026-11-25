@@ -3,6 +3,7 @@ import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } fr
 import { theme } from "../theme";
 import { FRASE_CIERRE, type Golpe, type Palabra } from "../reel/types";
 import { FuentePie } from "./Base";
+import { Brujula } from "./BRollsExtra";
 
 const { color, font } = theme;
 
@@ -169,10 +170,41 @@ const Cierre: React.FC<{ dur: number; start: number; palabras: Palabra[]; end: n
   );
 };
 
+// CTA a pantalla completa: "Comenta BRÚJULA" (fondo verde claro, texto negro, palabra en naranja)
+const Cta: React.FC<{ dur: number; antes: string; palabra: string; pie?: string; icono?: string }> = ({ dur, antes, palabra, pie, icono }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const a = spring({ frame, fps, config: theme.spring.suave });
+  const b = spring({ frame: frame - 6, fps, config: theme.spring.golpe });
+  const c = spring({ frame: frame - 14, fps, config: theme.spring.suave });
+  const d = spring({ frame: frame - 24, fps, config: theme.spring.suave });
+  const giro = interpolate(c, [0, 1], [-140, 0]) + 8 * Math.sin(frame / 9) * Math.exp(-frame / 60);
+  const respira = 1 + 0.012 * Math.sin(frame / 7);
+  return (
+    <Pantalla dur={dur + 10}>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", gap: 10 }}>
+        {icono ? (
+          <div style={{ opacity: c, transform: `scale(${interpolate(c, [0, 1], [0.4, 1])})`, marginBottom: 30 }}>
+            <Brujula size={300} giro={giro} />
+          </div>
+        ) : null}
+        <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 120, color: color.negro, opacity: a, transform: `translateY(${interpolate(a, [0, 1], [40, 0])}px)` }}>{antes}</div>
+        <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 184, lineHeight: 1, color: color.naranja, opacity: Math.min(1, b * 1.5), transform: `scale(${interpolate(b, [0, 1], [1.25, 1]) * respira})` }}>{palabra}</div>
+        {pie ? (
+          <div style={{ marginTop: 56, opacity: d, transform: `translateY(${interpolate(d, [0, 1], [30, 0])}px)` }}>
+            <span style={{ display: "inline-block", background: color.negro, color: color.blanco, fontFamily: font.texto, fontWeight: 600, fontSize: 56, padding: "18px 52px", borderRadius: 999 }}>{pie}</span>
+          </div>
+        ) : null}
+      </AbsoluteFill>
+    </Pantalla>
+  );
+};
+
 export const GolpeView: React.FC<{ g: Golpe; palabras: Palabra[] }> = ({ g, palabras }) => {
   const { fps } = useVideoConfig();
   const dur = Math.round((g.end - g.start) * fps);
   if (g.tipo === "jugada") return <Jugada dur={dur} />;
   if (g.tipo === "numero") return <Numero dur={dur} valor={g.valor} etiqueta={g.etiqueta} fuente={g.fuente} />;
+  if (g.tipo === "cta") return <Cta dur={dur} antes={g.antes} palabra={g.palabra} pie={g.pie} icono={g.icono} />;
   return <Cierre dur={dur} start={g.start} end={g.end} palabras={palabras} />;
 };

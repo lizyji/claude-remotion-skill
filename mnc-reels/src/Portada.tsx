@@ -1,10 +1,26 @@
 import React from "react";
-import { AbsoluteFill, OffthreadVideo, staticFile } from "remotion";
+import { AbsoluteFill, Img, OffthreadVideo, staticFile } from "remotion";
 import { theme } from "./theme";
 import type { Reel } from "./reel/types";
 import { ConIA } from "./components/Base";
 
 const { color, font, layout } = theme;
+
+// Pinta de naranja las palabras indicadas (la frase NO cambia, solo el color)
+const Destacada: React.FC<{ texto: string; palabras: string[] }> = ({ texto, palabras }) => {
+  const re = new RegExp(`(${palabras.map((w) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`, "g");
+  return (
+    <>
+      {texto.split(re).map((part, i) =>
+        palabras.includes(part) ? (
+          <span key={i} style={{ color: color.naranja }}>{part}</span>
+        ) : (
+          <React.Fragment key={i}>{part}</React.Fragment>
+        ),
+      )}
+    </>
+  );
+};
 
 // Portada provisional (el brief con el estilo completo de Klarna/UPS llegó cortado).
 // Foto: cuadro del video con la cara grande y centrada. Frase EXACTA como la da Manuel.
@@ -14,7 +30,14 @@ export const Portada: React.FC<{ reel: Reel }> = ({ reel }) => {
   const zoom = 1.25;
   return (
     <AbsoluteFill style={{ background: color.verde }}>
-      <OffthreadVideo
+      {reel.portada?.foto ? (
+        // cuadro exacto exportado del video (ffmpeg), más fiable que buscar el cuadro en un still
+        <Img
+          src={staticFile(reel.portada.foto)}
+          style={{ position: "absolute", width: layout.W, height: layout.H, objectFit: "cover", transformOrigin: `50% ${caraY}px`, transform: `translateY(${1250 - caraY}px) scale(${zoom})` }}
+        />
+      ) : (
+        <OffthreadVideo
         src={staticFile(reel.manuel)}
         muted
         startFrom={Math.round((reel.portada?.cuadro ?? 1) * 30)}
@@ -27,6 +50,7 @@ export const Portada: React.FC<{ reel: Reel }> = ({ reel }) => {
           transform: `translateY(${1250 - caraY}px) scale(${zoom})`,
         }}
       />
+      )}
       <AbsoluteFill
         style={{
           height: 1000,
@@ -49,7 +73,7 @@ export const Portada: React.FC<{ reel: Reel }> = ({ reel }) => {
           color: color.negro,
         }}
       >
-        <ConIA texto={frase} />
+        {(reel.portada?.destacar ?? []).length ? <Destacada texto={frase} palabras={reel.portada!.destacar!} /> : <ConIA texto={frase} />}
       </div>
     </AbsoluteFill>
   );
