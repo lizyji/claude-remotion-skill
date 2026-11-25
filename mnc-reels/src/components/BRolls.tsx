@@ -3,6 +3,7 @@ import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideo
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
+import { ANIMACIONES } from "./Animaciones";
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -170,6 +171,12 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
         </Tarjeta>
       );
       break;
+    case "anim": {
+      const A = ANIMACIONES[b.id];
+      const marcas = (b.marcas ?? []).map((t) => Math.round((t - b.start) * fps));
+      body = A ? <A m={marcas} dur={dur} src={b.src} /> : null;
+      break;
+    }
     case "silueta":
       return null; // se dibuja a pantalla completa en Reel.tsx
   }

@@ -49,7 +49,21 @@ export const Portada: React.FC<{ reel: Reel }> = ({ reel }) => {
           color: color.negro,
         }}
       >
-        <ConIA texto={frase} />
+        {(() => {
+          // Palabras a resaltar en naranja (además de "IA")
+          const res = reel.portada?.resaltar ?? [];
+          if (!res.length) return <ConIA texto={frase} />;
+          const re = new RegExp(`(${res.map((r) => r.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")).join("|")})`, "g");
+          return frase.split(re).map((part, i) =>
+            res.includes(part) ? (
+              <span key={i} style={{ color: color.naranja }}>
+                {part}
+              </span>
+            ) : (
+              <ConIA key={i} texto={part} />
+            ),
+          );
+        })()}
       </div>
     </AbsoluteFill>
   );

@@ -22,12 +22,17 @@ export type BRoll =
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
-  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
+  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente }
+  // Animación a la medida de un reel (src/components/Animaciones.tsx). marcas: instantes (s, tiempo
+  // del reel) en que entra cada elemento, sincronizados con las palabras de Manuel.
+  | { tipo: "anim"; start: number; end: number; id: string; marcas?: number[]; fuente?: Fuente; src?: string[] };
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
   | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
-  | { tipo: "cierre"; start: number; end: number };
+  | { tipo: "cierre"; start: number; end: number }
+  // Texto solo a pantalla completa (insight): arriba en gris, abajo grande en naranja con golpe de zoom
+  | { tipo: "texto"; start: number; end: number; arriba?: string; grande: string };
 
 export type Reel = {
   slug: string;
@@ -43,7 +48,9 @@ export type Reel = {
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
-  portada?: { frase?: string; cuadro: number };
+  // Si se define, el whoosh deja de ser automático en cada cambio de clip y solo suena en estos instantes
+  whoosh?: number[];
+  portada?: { frase?: string; cuadro: number; resaltar?: string[] };
 };
 
 export const FRASE_CIERRE =

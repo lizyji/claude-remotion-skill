@@ -25,13 +25,17 @@ def extraer_audio(video, desde=None, hasta=None):
         cmd += ["-ss", str(desde)]
     if hasta is not None:
         cmd += ["-to", str(hasta)] if desde is None else ["-t", str(hasta - desde)]
-    cmd += ["-i", str(video), "-ac", "1", "-ar", "16000", str(tmp)]
+    cmd += ["-i", str(video), "-ac", "1", "-ar", "16000", "-c:a", "pcm_s16le", str(tmp)]
     sh(cmd)
     return tmp
 
 
 def transcribir(modelo, wav, offset=0.0):
-    segs, _ = modelo.transcribe(str(wav), language="es", word_timestamps=True, vad_filter=True,
+    # Se pasa el audio como arreglo (evita incompatibilidades de PyAV con faster-whisper)
+    import wave, numpy as np
+    with wave.open(str(wav)) as f:
+        audio = np.frombuffer(f.readframes(f.getnframes()), np.int16).astype(np.float32) / 32768.0
+    segs, _ = modelo.transcribe(audio, language="es", word_timestamps=True, vad_filter=True,
                                 initial_prompt="Manuel NoCode habla de IA, Claude, Airtable, Make, automatización, Grok Bot.")
     out = []
     for s in segs:
