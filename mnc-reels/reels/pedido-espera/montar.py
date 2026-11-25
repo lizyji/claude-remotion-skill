@@ -38,10 +38,15 @@ R["sfxAuto"] = False
 R["sfx"] = (
     # whoosh solo 3 veces: entrada a "en tu empresa", a "la postura" y al cierre
     [{"t": 12.52, "s": "whoosh"}, {"t": 26.02, "s": "whoosh"}, {"t": 44.12, "s": "whoosh"}]
-    + [{"t": t, "s": "pop", "vol": 0.35} for t in [0.6, 3.4, 4.6, 5.6, 13.0, 14.75, 16.6, 17.6, 18.6, 19.9, 20.6, 21.6, 26.9, 28.9, 32.7, 35.2, 45.7]]
-    + [{"t": t, "s": "tick", "vol": 0.45} for t in [2.7, 8.9, 10.6, 35.7, 36.4, 36.7, 37.2, 37.6, 33.0, 33.4, 33.8, 34.2]]
-    + [{"t": t, "s": "click", "vol": 0.5} for t in [27.85, 29.7]]
-    + [{"t": 41.2, "s": "bass", "vol": 0.4}, {"t": 43.2, "s": "pop", "vol": 0.4}, {"t": 46.8, "s": "pop", "vol": 0.45}]
+    # efectos de elemento: solo 6 en todo el video, en los momentos clave
+    + [
+        {"t": 2.7, "s": "tick", "vol": 0.45},    # rayita "Minutos"
+        {"t": 10.6, "s": "tick", "vol": 0.45},   # "17 minutos"
+        {"t": 27.85, "s": "click", "vol": 0.5},  # X "Trabajar más rápido"
+        {"t": 29.7, "s": "click", "vol": 0.5},   # X "Comprar otro sistema"
+        {"t": 41.2, "s": "bass", "vol": 0.4},    # "Aquí se queda parado"
+        {"t": 46.8, "s": "pop", "vol": 0.45},    # compartir
+    ]
 )
 
 # Subtítulos a mano (≤5 palabras / 24 car., sin terminar en artículo/preposición). (i_inicio, i_fin, palabras clave)
