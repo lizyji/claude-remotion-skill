@@ -86,7 +86,7 @@ reel["pasos"] = [{"start": 16.34, "end": 23.80, "n": 1}, {"start": 23.80, "end":
 # Solo 3 whooshes en todo el video: entrada a la ventaja, paso 2 y CTA
 reel["whooshAuto"] = False
 reel["sfx"] = [{"t": 9.93, "s": "whoosh"}, {"t": 23.72, "s": "whoosh"}, {"t": 46.88, "s": "whoosh"}]
-reel["musica"] = R + "musica.wav"
+reel.pop("musica", None)  # sin música de fondo (pedido de Lizzy)
 reel["caraYFuente"] = 0.54
 # Frase PROPUESTA (no vino en el brief): reemplazar por la frase exacta de Manuel/Lizzy.
 reel["portada"] = {"frase": "Contesta\ncotizaciones\nel mismo día\ncon IA", "cuadro": 40.2}
