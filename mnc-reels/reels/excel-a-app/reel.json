@@ -1,0 +1,3225 @@
+{
+ "broll": [
+  {
+   "tipo": "anim",
+   "id": "B1",
+   "start": 0.0,
+   "end": 3.1
+  },
+  {
+   "tipo": "anim",
+   "id": "B2",
+   "start": 3.1,
+   "end": 7.32
+  },
+  {
+   "tipo": "anim",
+   "id": "B3",
+   "start": 7.32,
+   "end": 11.04
+  },
+  {
+   "tipo": "anim",
+   "id": "B6",
+   "start": 11.04,
+   "end": 12.38
+  },
+  {
+   "tipo": "anim",
+   "id": "B4",
+   "start": 12.38,
+   "end": 15.2,
+   "fuente": "Logos oficiales: airtable.com · glideapps.com · softr.io"
+  },
+  {
+   "tipo": "anim",
+   "id": "B5",
+   "start": 15.2,
+   "end": 17.66
+  },
+  {
+   "tipo": "anim",
+   "id": "B7a",
+   "start": 17.66,
+   "end": 20.95,
+   "fuente": "Fuente: Softr, video oficial «Create application with AI» · softr.io"
+  },
+  {
+   "tipo": "anim",
+   "id": "B7b",
+   "start": 20.95,
+   "end": 24.8,
+   "fuente": "Fuente: Softr, video oficial «Create application with AI» · softr.io"
+  },
+  {
+   "tipo": "anim",
+   "id": "B8a",
+   "start": 24.8,
+   "end": 26.92
+  },
+  {
+   "tipo": "anim",
+   "id": "B8b",
+   "start": 26.92,
+   "end": 29.04
+  },
+  {
+   "tipo": "anim",
+   "id": "B9",
+   "start": 29.04,
+   "end": 32.14
+  },
+  {
+   "tipo": "anim",
+   "id": "B10",
+   "start": 32.14,
+   "end": 35.1
+  },
+  {
+   "tipo": "anim",
+   "id": "B11",
+   "start": 35.1,
+   "end": 38.2
+  },
+  {
+   "tipo": "anim",
+   "id": "B11b",
+   "start": 38.2,
+   "end": 42.98
+  },
+  {
+   "tipo": "anim",
+   "id": "B12",
+   "start": 42.98,
+   "end": 46.36
+  },
+  {
+   "tipo": "anim",
+   "id": "B13",
+   "start": 46.36,
+   "end": 50.12
+  },
+  {
+   "tipo": "anim",
+   "id": "B13b",
+   "start": 50.12,
+   "end": 53.0
+  },
+  {
+   "tipo": "anim",
+   "id": "B14",
+   "start": 53.0,
+   "end": 57.08
+  },
+  {
+   "tipo": "anim",
+   "id": "B15",
+   "start": 57.08,
+   "end": 61.16
+  },
+  {
+   "tipo": "anim",
+   "id": "B16",
+   "start": 61.16,
+   "end": 64.1
+  },
+  {
+   "tipo": "anim",
+   "id": "B17",
+   "start": 64.1,
+   "end": 65.86
+  }
+ ],
+ "golpes": [
+  {
+   "tipo": "cta",
+   "start": 65.86,
+   "end": 68.7,
+   "palabra": "BRÚJULA",
+   "nota": "Guarda este video",
+   "notaDesde": 0.42
+  }
+ ],
+ "pasos": [
+  {
+   "start": 11.04,
+   "end": 17.66,
+   "n": 1
+  },
+  {
+   "start": 17.66,
+   "end": 24.8,
+   "n": 2
+  },
+  {
+   "start": 24.8,
+   "end": 29.04,
+   "n": 3
+  }
+ ],
+ "sfx": [
+  {
+   "t": 10.96,
+   "s": "whoosh"
+  },
+  {
+   "t": 28.96,
+   "s": "whoosh"
+  },
+  {
+   "t": 46.28,
+   "s": "whoosh"
+  },
+  {
+   "t": 1.1,
+   "s": "pop"
+  },
+  {
+   "t": 2.15,
+   "s": "pop"
+  },
+  {
+   "t": 3.32,
+   "s": "pop"
+  },
+  {
+   "t": 3.98,
+   "s": "pop"
+  },
+  {
+   "t": 4.52,
+   "s": "pop"
+  },
+  {
+   "t": 5.1,
+   "s": "pop"
+  },
+  {
+   "t": 8.9,
+   "s": "pop"
+  },
+  {
+   "t": 9.25,
+   "s": "pop"
+  },
+  {
+   "t": 9.6,
+   "s": "pop"
+  },
+  {
+   "t": 10.22,
+   "s": "pop"
+  },
+  {
+   "t": 11.16,
+   "s": "pop"
+  },
+  {
+   "t": 12.38,
+   "s": "pop"
+  },
+  {
+   "t": 13.06,
+   "s": "pop"
+  },
+  {
+   "t": 13.35,
+   "s": "pop"
+  },
+  {
+   "t": 25.05,
+   "s": "pop"
+  },
+  {
+   "t": 25.35,
+   "s": "pop"
+  },
+  {
+   "t": 25.65,
+   "s": "pop"
+  },
+  {
+   "t": 47.0,
+   "s": "pop"
+  },
+  {
+   "t": 51.07,
+   "s": "pop"
+  },
+  {
+   "t": 53.1,
+   "s": "pop"
+  },
+  {
+   "t": 53.5,
+   "s": "pop"
+  },
+  {
+   "t": 55.6,
+   "s": "pop"
+  },
+  {
+   "t": 60.26,
+   "s": "pop"
+  },
+  {
+   "t": 61.76,
+   "s": "pop"
+  },
+  {
+   "t": 64.6,
+   "s": "pop"
+  },
+  {
+   "t": 14.0,
+   "s": "tick"
+  },
+  {
+   "t": 16.0,
+   "s": "tick"
+  },
+  {
+   "t": 27.14,
+   "s": "tick"
+  },
+  {
+   "t": 43.43,
+   "s": "tick"
+  },
+  {
+   "t": 61.16,
+   "s": "bass"
+  }
+ ],
+ "slug": "excel-a-app",
+ "duracion": 67.4,
+ "manuel": "reels/excel-a-app/manuel.mp4",
+ "cortes": [
+  11.04,
+  17.605,
+  23.366,
+  32.112,
+  46.264,
+  56.995
+ ],
+ "palabras": [
+  {
+   "w": "Tu",
+   "start": 0.0,
+   "end": 0.42,
+   "prob": 0.889
+  },
+  {
+   "w": "Excel",
+   "start": 0.42,
+   "end": 0.66,
+   "prob": 0.937
+  },
+  {
+   "w": "se",
+   "start": 0.66,
+   "end": 0.84,
+   "prob": 0.99
+  },
+  {
+   "w": "puede",
+   "start": 0.84,
+   "end": 1.1,
+   "prob": 0.993
+  },
+  {
+   "w": "convertir",
+   "start": 1.1,
+   "end": 1.46,
+   "prob": 0.992
+  },
+  {
+   "w": "en",
+   "start": 1.46,
+   "end": 1.62,
+   "prob": 0.997
+  },
+  {
+   "w": "una",
+   "start": 1.62,
+   "end": 1.76,
+   "prob": 0.974
+  },
+  {
+   "w": "app",
+   "start": 1.76,
+   "end": 1.9,
+   "prob": 0.9
+  },
+  {
+   "w": "sin",
+   "start": 1.9,
+   "end": 2.18,
+   "prob": 0.969
+  },
+  {
+   "w": "programar.",
+   "start": 2.18,
+   "end": 2.94,
+   "prob": 0.992
+  },
+  {
+   "w": "Si",
+   "start": 3.18,
+   "end": 3.18,
+   "prob": 0.744
+  },
+  {
+   "w": "llevas",
+   "start": 3.18,
+   "end": 3.32,
+   "prob": 0.906
+  },
+  {
+   "w": "inventarios,",
+   "start": 3.32,
+   "end": 3.94,
+   "prob": 0.987
+  },
+  {
+   "w": "pedidos,",
+   "start": 3.98,
+   "end": 4.34,
+   "prob": 0.994
+  },
+  {
+   "w": "cobranza,",
+   "start": 4.52,
+   "end": 4.86,
+   "prob": 0.878
+  },
+  {
+   "w": "compras",
+   "start": 5.1,
+   "end": 5.3,
+   "prob": 0.985
+  },
+  {
+   "w": "en",
+   "start": 5.3,
+   "end": 5.46,
+   "prob": 0.965
+  },
+  {
+   "w": "Excel,",
+   "start": 5.46,
+   "end": 5.72,
+   "prob": 0.984
+  },
+  {
+   "w": "esto",
+   "start": 5.92,
+   "end": 6.1,
+   "prob": 0.961
+  },
+  {
+   "w": "te",
+   "start": 6.1,
+   "end": 6.22,
+   "prob": 0.987
+  },
+  {
+   "w": "va",
+   "start": 6.22,
+   "end": 6.34,
+   "prob": 0.882
+  },
+  {
+   "w": "a",
+   "start": 6.34,
+   "end": 6.38,
+   "prob": 0.989
+  },
+  {
+   "w": "interesar.",
+   "start": 6.38,
+   "end": 7.16,
+   "prob": 0.985
+  },
+  {
+   "w": "Todo",
+   "start": 7.4,
+   "end": 7.74,
+   "prob": 0.975
+  },
+  {
+   "w": "proceso",
+   "start": 7.74,
+   "end": 8.2,
+   "prob": 0.997
+  },
+  {
+   "w": "que",
+   "start": 8.2,
+   "end": 8.4,
+   "prob": 0.996
+  },
+  {
+   "w": "no",
+   "start": 8.4,
+   "end": 8.58,
+   "prob": 0.998
+  },
+  {
+   "w": "lo",
+   "start": 8.58,
+   "end": 8.8,
+   "prob": 0.938
+  },
+  {
+   "w": "cubre",
+   "start": 8.8,
+   "end": 8.98,
+   "prob": 0.98
+  },
+  {
+   "w": "tu",
+   "start": 8.98,
+   "end": 9.2,
+   "prob": 0.96
+  },
+  {
+   "w": "sistema",
+   "start": 9.2,
+   "end": 9.48,
+   "prob": 0.991
+  },
+  {
+   "w": "grande",
+   "start": 9.48,
+   "end": 9.84,
+   "prob": 0.932
+  },
+  {
+   "w": "es",
+   "start": 9.84,
+   "end": 10.26,
+   "prob": 0.828
+  },
+  {
+   "w": "candidato.",
+   "start": 10.26,
+   "end": 10.94,
+   "prob": 0.999
+  },
+  {
+   "w": "El",
+   "start": 11.105,
+   "end": 11.185,
+   "prob": 0.614
+  },
+  {
+   "w": "paso",
+   "start": 11.185,
+   "end": 11.385,
+   "prob": 0.942
+  },
+  {
+   "w": "uno",
+   "start": 11.385,
+   "end": 11.525,
+   "prob": 0.9
+  },
+  {
+   "w": "es",
+   "start": 11.525,
+   "end": 11.745,
+   "prob": 0.979
+  },
+  {
+   "w": "que",
+   "start": 11.745,
+   "end": 11.885,
+   "prob": 0.993
+  },
+  {
+   "w": "subas",
+   "start": 11.885,
+   "end": 12.065,
+   "prob": 0.983
+  },
+  {
+   "w": "tu",
+   "start": 12.065,
+   "end": 12.225,
+   "prob": 0.981
+  },
+  {
+   "w": "Excel",
+   "start": 12.225,
+   "end": 12.385,
+   "prob": 0.988
+  },
+  {
+   "w": "a Airtable,",
+   "start": 12.385,
+   "end": 12.925,
+   "prob": 0.9
+  },
+  {
+   "w": "Glide",
+   "start": 13.065,
+   "end": 13.285,
+   "prob": 0.962
+  },
+  {
+   "w": "o",
+   "start": 13.285,
+   "end": 13.345,
+   "prob": 0.922
+  },
+  {
+   "w": "Softr.",
+   "start": 13.345,
+   "end": 13.625,
+   "prob": 0.9
+  },
+  {
+   "w": "Cualquiera",
+   "start": 13.945,
+   "end": 14.165,
+   "prob": 0.944
+  },
+  {
+   "w": "de",
+   "start": 14.165,
+   "end": 14.285,
+   "prob": 0.997
+  },
+  {
+   "w": "esas",
+   "start": 14.285,
+   "end": 14.325,
+   "prob": 0.963
+  },
+  {
+   "w": "herramientas",
+   "start": 14.325,
+   "end": 14.665,
+   "prob": 0.998
+  },
+  {
+   "w": "funciona,",
+   "start": 14.665,
+   "end": 15.065,
+   "prob": 0.898
+  },
+  {
+   "w": "escoge",
+   "start": 15.225,
+   "end": 15.565,
+   "prob": 0.973
+  },
+  {
+   "w": "la",
+   "start": 15.565,
+   "end": 15.865,
+   "prob": 0.983
+  },
+  {
+   "w": "que",
+   "start": 15.865,
+   "end": 16.005,
+   "prob": 0.994
+  },
+  {
+   "w": "mejor",
+   "start": 16.005,
+   "end": 16.325,
+   "prob": 0.996
+  },
+  {
+   "w": "se",
+   "start": 16.325,
+   "end": 16.525,
+   "prob": 0.994
+  },
+  {
+   "w": "adapta",
+   "start": 16.525,
+   "end": 16.685,
+   "prob": 0.936
+  },
+  {
+   "w": "a",
+   "start": 16.685,
+   "end": 16.765,
+   "prob": 0.993
+  },
+  {
+   "w": "tus",
+   "start": 16.765,
+   "end": 16.905,
+   "prob": 0.996
+  },
+  {
+   "w": "necesidades.",
+   "start": 16.905,
+   "end": 17.525,
+   "prob": 1.0
+  },
+  {
+   "w": "Si",
+   "start": 17.701,
+   "end": 17.781,
+   "prob": 0.679
+  },
+  {
+   "w": "le",
+   "start": 17.781,
+   "end": 17.961,
+   "prob": 0.965
+  },
+  {
+   "w": "describes",
+   "start": 17.961,
+   "end": 18.241,
+   "prob": 0.83
+  },
+  {
+   "w": "a",
+   "start": 18.241,
+   "end": 18.361,
+   "prob": 0.959
+  },
+  {
+   "w": "la",
+   "start": 18.361,
+   "end": 18.501,
+   "prob": 0.995
+  },
+  {
+   "w": "IA",
+   "start": 18.501,
+   "end": 18.621,
+   "prob": 0.913
+  },
+  {
+   "w": "de la",
+   "start": 18.621,
+   "end": 18.781,
+   "prob": 0.9
+  },
+  {
+   "w": "app",
+   "start": 18.781,
+   "end": 18.981,
+   "prob": 0.96
+  },
+  {
+   "w": "que",
+   "start": 18.981,
+   "end": 19.121,
+   "prob": 0.994
+  },
+  {
+   "w": "escogiste,",
+   "start": 19.121,
+   "end": 19.581,
+   "prob": 0.993
+  },
+  {
+   "w": "qué",
+   "start": 19.921,
+   "end": 20.041,
+   "prob": 0.9
+  },
+  {
+   "w": "sistema",
+   "start": 20.041,
+   "end": 20.461,
+   "prob": 0.999
+  },
+  {
+   "w": "te",
+   "start": 20.461,
+   "end": 20.741,
+   "prob": 0.944
+  },
+  {
+   "w": "gustaría",
+   "start": 20.741,
+   "end": 21.001,
+   "prob": 0.997
+  },
+  {
+   "w": "que",
+   "start": 21.001,
+   "end": 21.401,
+   "prob": 0.997
+  },
+  {
+   "w": "construyera",
+   "start": 21.401,
+   "end": 21.661,
+   "prob": 0.973
+  },
+  {
+   "w": "y",
+   "start": 21.661,
+   "end": 21.841,
+   "prob": 0.837
+  },
+  {
+   "w": "le",
+   "start": 21.841,
+   "end": 21.921,
+   "prob": 0.975
+  },
+  {
+   "w": "das",
+   "start": 21.921,
+   "end": 22.061,
+   "prob": 0.87
+  },
+  {
+   "w": "contexto",
+   "start": 22.061,
+   "end": 22.461,
+   "prob": 0.983
+  },
+  {
+   "w": "de",
+   "start": 22.461,
+   "end": 22.641,
+   "prob": 0.991
+  },
+  {
+   "w": "lo",
+   "start": 22.641,
+   "end": 22.761,
+   "prob": 0.996
+  },
+  {
+   "w": "que",
+   "start": 22.761,
+   "end": 22.801,
+   "prob": 0.999
+  },
+  {
+   "w": "le",
+   "start": 22.801,
+   "end": 22.961,
+   "prob": 0.983
+  },
+  {
+   "w": "mandaste.",
+   "start": 22.961,
+   "end": 23.301,
+   "prob": 0.997
+  },
+  {
+   "w": "Te",
+   "start": 23.392,
+   "end": 23.572,
+   "prob": 0.859
+  },
+  {
+   "w": "vas",
+   "start": 23.572,
+   "end": 23.712,
+   "prob": 0.992
+  },
+  {
+   "w": "a",
+   "start": 23.712,
+   "end": 23.812,
+   "prob": 0.999
+  },
+  {
+   "w": "sorprender",
+   "start": 23.812,
+   "end": 24.111,
+   "prob": 0.997
+  },
+  {
+   "w": "con",
+   "start": 24.111,
+   "end": 24.291,
+   "prob": 0.993
+  },
+  {
+   "w": "el",
+   "start": 24.291,
+   "end": 24.492,
+   "prob": 0.999
+  },
+  {
+   "w": "resultado.",
+   "start": 24.492,
+   "end": 24.831,
+   "prob": 0.999
+  },
+  {
+   "w": "Después",
+   "start": 24.831,
+   "end": 25.492,
+   "prob": 0.437
+  },
+  {
+   "w": "la",
+   "start": 25.492,
+   "end": 25.892,
+   "prob": 0.791
+  },
+  {
+   "w": "compartes",
+   "start": 25.892,
+   "end": 26.151,
+   "prob": 0.884
+  },
+  {
+   "w": "con",
+   "start": 26.151,
+   "end": 26.312,
+   "prob": 0.991
+  },
+  {
+   "w": "tu",
+   "start": 26.312,
+   "end": 26.452,
+   "prob": 0.956
+  },
+  {
+   "w": "equipo",
+   "start": 26.452,
+   "end": 26.712,
+   "prob": 0.997
+  },
+  {
+   "w": "y",
+   "start": 26.712,
+   "end": 26.971,
+   "prob": 0.912
+  },
+  {
+   "w": "se",
+   "start": 26.971,
+   "end": 27.111,
+   "prob": 0.988
+  },
+  {
+   "w": "acabó",
+   "start": 27.111,
+   "end": 27.431,
+   "prob": 0.952
+  },
+  {
+   "w": "el",
+   "start": 27.431,
+   "end": 27.651,
+   "prob": 0.985
+  },
+  {
+   "w": "archivo",
+   "start": 27.651,
+   "end": 27.931,
+   "prob": 0.995
+  },
+  {
+   "w": "que",
+   "start": 27.931,
+   "end": 28.151,
+   "prob": 0.969
+  },
+  {
+   "w": "nadie",
+   "start": 28.151,
+   "end": 28.372,
+   "prob": 0.995
+  },
+  {
+   "w": "entiende.",
+   "start": 28.372,
+   "end": 28.852,
+   "prob": 0.997
+  },
+  {
+   "w": "¿Y",
+   "start": 29.072,
+   "end": 29.132,
+   "prob": 0.761
+  },
+  {
+   "w": "por",
+   "start": 29.132,
+   "end": 29.291,
+   "prob": 0.96
+  },
+  {
+   "w": "qué",
+   "start": 29.291,
+   "end": 29.352,
+   "prob": 0.936
+  },
+  {
+   "w": "te",
+   "start": 29.352,
+   "end": 29.611,
+   "prob": 0.986
+  },
+  {
+   "w": "recomiendo",
+   "start": 29.611,
+   "end": 29.852,
+   "prob": 0.9
+  },
+  {
+   "w": "hacerlo",
+   "start": 29.852,
+   "end": 30.111,
+   "prob": 0.98
+  },
+  {
+   "w": "en",
+   "start": 30.111,
+   "end": 30.352,
+   "prob": 0.988
+  },
+  {
+   "w": "esto",
+   "start": 30.352,
+   "end": 30.572,
+   "prob": 0.966
+  },
+  {
+   "w": "y",
+   "start": 30.572,
+   "end": 30.752,
+   "prob": 0.902
+  },
+  {
+   "w": "no",
+   "start": 30.752,
+   "end": 30.912,
+   "prob": 0.995
+  },
+  {
+   "w": "en",
+   "start": 30.912,
+   "end": 31.152,
+   "prob": 0.982
+  },
+  {
+   "w": "Claude",
+   "start": 31.152,
+   "end": 31.292,
+   "prob": 0.413
+  },
+  {
+   "w": "directamente?",
+   "start": 31.292,
+   "end": 31.972,
+   "prob": 0.916
+  },
+  {
+   "w": "Porque",
+   "start": 32.177,
+   "end": 32.417,
+   "prob": 0.962
+  },
+  {
+   "w": "creo",
+   "start": 32.417,
+   "end": 32.537,
+   "prob": 0.986
+  },
+  {
+   "w": "que",
+   "start": 32.537,
+   "end": 32.697,
+   "prob": 0.998
+  },
+  {
+   "w": "estas",
+   "start": 32.697,
+   "end": 32.817,
+   "prob": 0.958
+  },
+  {
+   "w": "herramientas",
+   "start": 32.817,
+   "end": 33.137,
+   "prob": 0.999
+  },
+  {
+   "w": "te",
+   "start": 33.137,
+   "end": 33.277,
+   "prob": 0.933
+  },
+  {
+   "w": "van",
+   "start": 33.277,
+   "end": 33.357,
+   "prob": 0.995
+  },
+  {
+   "w": "a",
+   "start": 33.357,
+   "end": 33.437,
+   "prob": 0.999
+  },
+  {
+   "w": "quitar",
+   "start": 33.437,
+   "end": 33.597,
+   "prob": 0.985
+  },
+  {
+   "w": "mucho",
+   "start": 33.597,
+   "end": 33.917,
+   "prob": 0.979
+  },
+  {
+   "w": "más",
+   "start": 33.917,
+   "end": 34.037,
+   "prob": 0.989
+  },
+  {
+   "w": "el",
+   "start": 34.037,
+   "end": 34.197,
+   "prob": 0.973
+  },
+  {
+   "w": "miedo,",
+   "start": 34.197,
+   "end": 34.377,
+   "prob": 0.997
+  },
+  {
+   "w": "ya",
+   "start": 34.517,
+   "end": 34.617,
+   "prob": 0.989
+  },
+  {
+   "w": "que",
+   "start": 34.617,
+   "end": 34.677,
+   "prob": 0.996
+  },
+  {
+   "w": "vas",
+   "start": 34.677,
+   "end": 34.797,
+   "prob": 0.98
+  },
+  {
+   "w": "a",
+   "start": 34.797,
+   "end": 34.837,
+   "prob": 0.996
+  },
+  {
+   "w": "tener",
+   "start": 34.837,
+   "end": 35.137,
+   "prob": 0.998
+  },
+  {
+   "w": "certidumbre",
+   "start": 35.137,
+   "end": 35.897,
+   "prob": 0.977
+  },
+  {
+   "w": "de",
+   "start": 35.897,
+   "end": 36.057,
+   "prob": 0.992
+  },
+  {
+   "w": "dónde",
+   "start": 36.057,
+   "end": 36.277,
+   "prob": 0.918
+  },
+  {
+   "w": "estás",
+   "start": 36.277,
+   "end": 36.577,
+   "prob": 0.988
+  },
+  {
+   "w": "construyendo",
+   "start": 36.577,
+   "end": 37.097,
+   "prob": 0.997
+  },
+  {
+   "w": "y",
+   "start": 37.097,
+   "end": 37.777,
+   "prob": 0.806
+  },
+  {
+   "w": "vas",
+   "start": 37.777,
+   "end": 38.057,
+   "prob": 0.968
+  },
+  {
+   "w": "a",
+   "start": 38.057,
+   "end": 38.157,
+   "prob": 0.999
+  },
+  {
+   "w": "ver",
+   "start": 38.157,
+   "end": 38.237,
+   "prob": 0.974
+  },
+  {
+   "w": "que",
+   "start": 38.237,
+   "end": 38.397,
+   "prob": 0.99
+  },
+  {
+   "w": "estás",
+   "start": 38.397,
+   "end": 38.557,
+   "prob": 0.992
+  },
+  {
+   "w": "protegido",
+   "start": 38.557,
+   "end": 39.297,
+   "prob": 0.997
+  },
+  {
+   "w": "en",
+   "start": 39.297,
+   "end": 39.497,
+   "prob": 0.77
+  },
+  {
+   "w": "términos",
+   "start": 39.497,
+   "end": 39.717,
+   "prob": 0.982
+  },
+  {
+   "w": "de",
+   "start": 39.717,
+   "end": 39.857,
+   "prob": 0.989
+  },
+  {
+   "w": "seguridad",
+   "start": 39.857,
+   "end": 40.077,
+   "prob": 0.999
+  },
+  {
+   "w": "por",
+   "start": 40.077,
+   "end": 40.357,
+   "prob": 0.936
+  },
+  {
+   "w": "algún",
+   "start": 40.357,
+   "end": 40.517,
+   "prob": 0.942
+  },
+  {
+   "w": "lado",
+   "start": 40.517,
+   "end": 40.717,
+   "prob": 0.999
+  },
+  {
+   "w": "porque",
+   "start": 40.717,
+   "end": 40.997,
+   "prob": 0.729
+  },
+  {
+   "w": "estás",
+   "start": 40.997,
+   "end": 41.217,
+   "prob": 0.986
+  },
+  {
+   "w": "pagando",
+   "start": 41.217,
+   "end": 41.557,
+   "prob": 0.998
+  },
+  {
+   "w": "una",
+   "start": 41.557,
+   "end": 41.737,
+   "prob": 0.938
+  },
+  {
+   "w": "suscripción",
+   "start": 41.737,
+   "end": 41.997,
+   "prob": 0.988
+  },
+  {
+   "w": "por",
+   "start": 41.997,
+   "end": 42.157,
+   "prob": 0.961
+  },
+  {
+   "w": "la",
+   "start": 42.157,
+   "end": 42.317,
+   "prob": 0.983
+  },
+  {
+   "w": "herramienta.",
+   "start": 42.317,
+   "end": 42.837,
+   "prob": 0.999
+  },
+  {
+   "w": "Entonces",
+   "start": 43.097,
+   "end": 43.377,
+   "prob": 0.979
+  },
+  {
+   "w": "puedes",
+   "start": 43.377,
+   "end": 43.657,
+   "prob": 0.809
+  },
+  {
+   "w": "avanzar",
+   "start": 43.657,
+   "end": 44.057,
+   "prob": 0.998
+  },
+  {
+   "w": "sin",
+   "start": 44.057,
+   "end": 44.217,
+   "prob": 0.999
+  },
+  {
+   "w": "miedo",
+   "start": 44.217,
+   "end": 44.437,
+   "prob": 1.0
+  },
+  {
+   "w": "y",
+   "start": 44.437,
+   "end": 44.637,
+   "prob": 0.967
+  },
+  {
+   "w": "te",
+   "start": 44.637,
+   "end": 44.817,
+   "prob": 0.996
+  },
+  {
+   "w": "puede",
+   "start": 44.817,
+   "end": 44.957,
+   "prob": 0.972
+  },
+  {
+   "w": "aportar",
+   "start": 44.957,
+   "end": 45.557,
+   "prob": 0.998
+  },
+  {
+   "w": "mucho",
+   "start": 45.557,
+   "end": 45.837,
+   "prob": 0.988
+  },
+  {
+   "w": "valor.",
+   "start": 45.837,
+   "end": 46.197,
+   "prob": 0.998
+  },
+  {
+   "w": "Lo",
+   "start": 46.395,
+   "end": 46.455,
+   "prob": 0.695
+  },
+  {
+   "w": "mejor",
+   "start": 46.455,
+   "end": 46.595,
+   "prob": 0.993
+  },
+  {
+   "w": "de",
+   "start": 46.595,
+   "end": 46.735,
+   "prob": 0.993
+  },
+  {
+   "w": "todo",
+   "start": 46.735,
+   "end": 46.855,
+   "prob": 0.958
+  },
+  {
+   "w": "es",
+   "start": 46.855,
+   "end": 46.955,
+   "prob": 0.973
+  },
+  {
+   "w": "que",
+   "start": 46.955,
+   "end": 47.035,
+   "prob": 0.998
+  },
+  {
+   "w": "empieces",
+   "start": 47.035,
+   "end": 47.235,
+   "prob": 0.787
+  },
+  {
+   "w": "a",
+   "start": 47.235,
+   "end": 47.395,
+   "prob": 0.99
+  },
+  {
+   "w": "aprender",
+   "start": 47.395,
+   "end": 47.615,
+   "prob": 0.997
+  },
+  {
+   "w": "cómo",
+   "start": 47.615,
+   "end": 47.835,
+   "prob": 0.982
+  },
+  {
+   "w": "funciona",
+   "start": 47.835,
+   "end": 48.155,
+   "prob": 0.917
+  },
+  {
+   "w": "una",
+   "start": 48.155,
+   "end": 48.335,
+   "prob": 0.979
+  },
+  {
+   "w": "base",
+   "start": 48.335,
+   "end": 48.535,
+   "prob": 0.985
+  },
+  {
+   "w": "de",
+   "start": 48.535,
+   "end": 48.655,
+   "prob": 0.924
+  },
+  {
+   "w": "datos,",
+   "start": 48.655,
+   "end": 48.815,
+   "prob": 0.999
+  },
+  {
+   "w": "todo",
+   "start": 48.895,
+   "end": 49.095,
+   "prob": 0.9
+  },
+  {
+   "w": "sin",
+   "start": 49.095,
+   "end": 49.275,
+   "prob": 0.992
+  },
+  {
+   "w": "tecnicismos,",
+   "start": 49.275,
+   "end": 50.055,
+   "prob": 0.967
+  },
+  {
+   "w": "y",
+   "start": 50.155,
+   "end": 50.255,
+   "prob": 0.984
+  },
+  {
+   "w": "ya",
+   "start": 50.255,
+   "end": 50.415,
+   "prob": 0.988
+  },
+  {
+   "w": "cuando",
+   "start": 50.415,
+   "end": 50.615,
+   "prob": 0.99
+  },
+  {
+   "w": "tu",
+   "start": 50.615,
+   "end": 50.775,
+   "prob": 0.897
+  },
+  {
+   "w": "idea",
+   "start": 50.775,
+   "end": 50.995,
+   "prob": 0.9
+  },
+  {
+   "w": "esté",
+   "start": 50.995,
+   "end": 51.115,
+   "prob": 0.9
+  },
+  {
+   "w": "validada,",
+   "start": 51.115,
+   "end": 51.395,
+   "prob": 0.9
+  },
+  {
+   "w": "vas",
+   "start": 51.395,
+   "end": 51.555,
+   "prob": 0.842
+  },
+  {
+   "w": "a",
+   "start": 51.555,
+   "end": 51.815,
+   "prob": 0.996
+  },
+  {
+   "w": "tener",
+   "start": 51.815,
+   "end": 51.975,
+   "prob": 0.979
+  },
+  {
+   "w": "mucho",
+   "start": 51.975,
+   "end": 52.215,
+   "prob": 0.991
+  },
+  {
+   "w": "más",
+   "start": 52.215,
+   "end": 52.415,
+   "prob": 0.999
+  },
+  {
+   "w": "conocimiento",
+   "start": 52.415,
+   "end": 52.975,
+   "prob": 0.999
+  },
+  {
+   "w": "y",
+   "start": 52.975,
+   "end": 53.275,
+   "prob": 0.663
+  },
+  {
+   "w": "cuando",
+   "start": 53.275,
+   "end": 53.495,
+   "prob": 0.984
+  },
+  {
+   "w": "las",
+   "start": 53.495,
+   "end": 53.655,
+   "prob": 0.943
+  },
+  {
+   "w": "suscripciones",
+   "start": 53.655,
+   "end": 54.035,
+   "prob": 0.978
+  },
+  {
+   "w": "salgan",
+   "start": 54.035,
+   "end": 54.355,
+   "prob": 0.995
+  },
+  {
+   "w": "caras,",
+   "start": 54.355,
+   "end": 54.855,
+   "prob": 0.997
+  },
+  {
+   "w": "ya",
+   "start": 55.055,
+   "end": 55.135,
+   "prob": 0.965
+  },
+  {
+   "w": "puedes",
+   "start": 55.135,
+   "end": 55.355,
+   "prob": 0.781
+  },
+  {
+   "w": "hacerlo",
+   "start": 55.355,
+   "end": 55.675,
+   "prob": 0.988
+  },
+  {
+   "w": "a",
+   "start": 55.675,
+   "end": 55.975,
+   "prob": 0.982
+  },
+  {
+   "w": "la",
+   "start": 55.975,
+   "end": 56.115,
+   "prob": 0.976
+  },
+  {
+   "w": "medida",
+   "start": 56.115,
+   "end": 56.295,
+   "prob": 0.991
+  },
+  {
+   "w": "con",
+   "start": 56.295,
+   "end": 56.595,
+   "prob": 0.958
+  },
+  {
+   "w": "Claude.",
+   "start": 56.595,
+   "end": 56.895,
+   "prob": 0.9
+  },
+  {
+   "w": "Un",
+   "start": 57.122,
+   "end": 57.262,
+   "prob": 0.972
+  },
+  {
+   "w": "cliente",
+   "start": 57.262,
+   "end": 57.702,
+   "prob": 1.0
+  },
+  {
+   "w": "mío",
+   "start": 57.702,
+   "end": 57.922,
+   "prob": 0.974
+  },
+  {
+   "w": "dueño",
+   "start": 57.922,
+   "end": 58.182,
+   "prob": 0.801
+  },
+  {
+   "w": "de",
+   "start": 58.182,
+   "end": 58.382,
+   "prob": 0.985
+  },
+  {
+   "w": "negocio",
+   "start": 58.382,
+   "end": 58.642,
+   "prob": 0.969
+  },
+  {
+   "w": "y",
+   "start": 58.642,
+   "end": 58.782,
+   "prob": 0.925
+  },
+  {
+   "w": "sin",
+   "start": 58.782,
+   "end": 58.922,
+   "prob": 0.995
+  },
+  {
+   "w": "ser",
+   "start": 58.922,
+   "end": 59.082,
+   "prob": 0.999
+  },
+  {
+   "w": "técnico",
+   "start": 59.082,
+   "end": 59.522,
+   "prob": 0.999
+  },
+  {
+   "w": "hizo",
+   "start": 59.522,
+   "end": 59.742,
+   "prob": 0.746
+  },
+  {
+   "w": "su",
+   "start": 59.742,
+   "end": 60.002,
+   "prob": 0.998
+  },
+  {
+   "w": "propio",
+   "start": 60.002,
+   "end": 60.262,
+   "prob": 0.997
+  },
+  {
+   "w": "ERP.",
+   "start": 60.262,
+   "end": 60.742,
+   "prob": 0.9
+  },
+  {
+   "w": "Así",
+   "start": 61.202,
+   "end": 61.222,
+   "prob": 0.971
+  },
+  {
+   "w": "que",
+   "start": 61.222,
+   "end": 61.602,
+   "prob": 0.995
+  },
+  {
+   "w": "comenta",
+   "start": 61.602,
+   "end": 61.942,
+   "prob": 0.901
+  },
+  {
+   "w": "brújula",
+   "start": 61.942,
+   "end": 62.362,
+   "prob": 0.957
+  },
+  {
+   "w": "y",
+   "start": 62.362,
+   "end": 62.542,
+   "prob": 0.969
+  },
+  {
+   "w": "te",
+   "start": 62.542,
+   "end": 62.662,
+   "prob": 0.998
+  },
+  {
+   "w": "mando",
+   "start": 62.662,
+   "end": 62.862,
+   "prob": 0.996
+  },
+  {
+   "w": "el",
+   "start": 62.862,
+   "end": 62.942,
+   "prob": 0.797
+  },
+  {
+   "w": "link",
+   "start": 62.942,
+   "end": 63.062,
+   "prob": 0.994
+  },
+  {
+   "w": "para",
+   "start": 63.062,
+   "end": 63.242,
+   "prob": 0.997
+  },
+  {
+   "w": "entrar",
+   "start": 63.242,
+   "end": 63.422,
+   "prob": 0.998
+  },
+  {
+   "w": "a",
+   "start": 63.422,
+   "end": 63.522,
+   "prob": 0.905
+  },
+  {
+   "w": "mi",
+   "start": 63.522,
+   "end": 63.662,
+   "prob": 0.988
+  },
+  {
+   "w": "comunidad",
+   "start": 63.662,
+   "end": 63.942,
+   "prob": 0.996
+  },
+  {
+   "w": "donde",
+   "start": 63.942,
+   "end": 64.142,
+   "prob": 0.842
+  },
+  {
+   "w": "vamos",
+   "start": 64.142,
+   "end": 64.382,
+   "prob": 0.997
+  },
+  {
+   "w": "a",
+   "start": 64.382,
+   "end": 64.502,
+   "prob": 0.999
+  },
+  {
+   "w": "ver",
+   "start": 64.502,
+   "end": 64.622,
+   "prob": 0.987
+  },
+  {
+   "w": "clases",
+   "start": 64.622,
+   "end": 64.922,
+   "prob": 0.995
+  },
+  {
+   "w": "gratis",
+   "start": 64.922,
+   "end": 65.402,
+   "prob": 0.996
+  },
+  {
+   "w": "cada",
+   "start": 65.402,
+   "end": 65.522,
+   "prob": 0.991
+  },
+  {
+   "w": "semana",
+   "start": 65.522,
+   "end": 65.902,
+   "prob": 0.999
+  },
+  {
+   "w": "y",
+   "start": 65.902,
+   "end": 66.282,
+   "prob": 0.799
+  },
+  {
+   "w": "guarda",
+   "start": 66.282,
+   "end": 66.822,
+   "prob": 0.989
+  },
+  {
+   "w": "este",
+   "start": 66.822,
+   "end": 66.982,
+   "prob": 0.989
+  },
+  {
+   "w": "video.",
+   "start": 66.982,
+   "end": 67.222,
+   "prob": 0.418
+  }
+ ],
+ "subs": [
+  {
+   "start": 0.0,
+   "end": 1.1,
+   "words": [
+    {
+     "w": "Tu"
+    },
+    {
+     "w": "Excel",
+     "key": true
+    },
+    {
+     "w": "se"
+    },
+    {
+     "w": "puede"
+    }
+   ]
+  },
+  {
+   "start": 1.1,
+   "end": 1.9,
+   "words": [
+    {
+     "w": "convertir"
+    },
+    {
+     "w": "en"
+    },
+    {
+     "w": "una"
+    },
+    {
+     "w": "app",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 1.9,
+   "end": 3.18,
+   "words": [
+    {
+     "w": "sin"
+    },
+    {
+     "w": "programar",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 3.18,
+   "end": 3.98,
+   "words": [
+    {
+     "w": "Si"
+    },
+    {
+     "w": "llevas"
+    },
+    {
+     "w": "inventarios",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 3.98,
+   "end": 5.1,
+   "words": [
+    {
+     "w": "pedidos",
+     "key": true
+    },
+    {
+     "w": "cobranza",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 5.1,
+   "end": 5.92,
+   "words": [
+    {
+     "w": "compras",
+     "key": true
+    },
+    {
+     "w": "en"
+    },
+    {
+     "w": "Excel"
+    }
+   ]
+  },
+  {
+   "start": 5.92,
+   "end": 7.4,
+   "words": [
+    {
+     "w": "esto"
+    },
+    {
+     "w": "te"
+    },
+    {
+     "w": "va"
+    },
+    {
+     "w": "a"
+    },
+    {
+     "w": "interesar",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 7.4,
+   "end": 8.58,
+   "words": [
+    {
+     "w": "Todo"
+    },
+    {
+     "w": "proceso",
+     "key": true
+    },
+    {
+     "w": "que"
+    },
+    {
+     "w": "no"
+    }
+   ]
+  },
+  {
+   "start": 8.58,
+   "end": 9.48,
+   "words": [
+    {
+     "w": "lo"
+    },
+    {
+     "w": "cubre"
+    },
+    {
+     "w": "tu"
+    },
+    {
+     "w": "sistema",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 9.48,
+   "end": 11.105,
+   "words": [
+    {
+     "w": "grande"
+    },
+    {
+     "w": "es"
+    },
+    {
+     "w": "candidato",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 11.105,
+   "end": 11.745,
+   "words": [
+    {
+     "w": "El"
+    },
+    {
+     "w": "paso",
+     "key": true
+    },
+    {
+     "w": "uno",
+     "key": true
+    },
+    {
+     "w": "es"
+    }
+   ]
+  },
+  {
+   "start": 11.745,
+   "end": 12.385,
+   "words": [
+    {
+     "w": "que"
+    },
+    {
+     "w": "subas"
+    },
+    {
+     "w": "tu"
+    },
+    {
+     "w": "Excel",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 12.385,
+   "end": 13.065,
+   "words": [
+    {
+     "w": "a"
+    },
+    {
+     "w": "Airtable",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 13.065,
+   "end": 13.945,
+   "words": [
+    {
+     "w": "Glide",
+     "key": true
+    },
+    {
+     "w": "o"
+    },
+    {
+     "w": "Softr",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 13.945,
+   "end": 14.165,
+   "words": [
+    {
+     "w": "Cualquiera",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 14.165,
+   "end": 14.665,
+   "words": [
+    {
+     "w": "de"
+    },
+    {
+     "w": "esas"
+    },
+    {
+     "w": "herramientas",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 14.665,
+   "end": 15.225,
+   "words": [
+    {
+     "w": "funciona",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 15.225,
+   "end": 16.325,
+   "words": [
+    {
+     "w": "escoge",
+     "key": true
+    },
+    {
+     "w": "la"
+    },
+    {
+     "w": "que"
+    },
+    {
+     "w": "mejor"
+    }
+   ]
+  },
+  {
+   "start": 16.325,
+   "end": 16.685,
+   "words": [
+    {
+     "w": "se"
+    },
+    {
+     "w": "adapta",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 16.685,
+   "end": 17.701,
+   "words": [
+    {
+     "w": "a"
+    },
+    {
+     "w": "tus"
+    },
+    {
+     "w": "necesidades",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 17.701,
+   "end": 18.241,
+   "words": [
+    {
+     "w": "Si"
+    },
+    {
+     "w": "le"
+    },
+    {
+     "w": "describes",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 18.241,
+   "end": 18.621,
+   "words": [
+    {
+     "w": "a"
+    },
+    {
+     "w": "la"
+    },
+    {
+     "w": "IA",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 18.621,
+   "end": 19.921,
+   "words": [
+    {
+     "w": "de"
+    },
+    {
+     "w": "la"
+    },
+    {
+     "w": "app"
+    },
+    {
+     "w": "que"
+    },
+    {
+     "w": "escogiste",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 19.921,
+   "end": 21.001,
+   "words": [
+    {
+     "w": "qué"
+    },
+    {
+     "w": "sistema",
+     "key": true
+    },
+    {
+     "w": "te"
+    },
+    {
+     "w": "gustaría"
+    }
+   ]
+  },
+  {
+   "start": 21.001,
+   "end": 21.661,
+   "words": [
+    {
+     "w": "que"
+    },
+    {
+     "w": "construyera",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 21.661,
+   "end": 22.461,
+   "words": [
+    {
+     "w": "y"
+    },
+    {
+     "w": "le"
+    },
+    {
+     "w": "das"
+    },
+    {
+     "w": "contexto",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 22.461,
+   "end": 23.392,
+   "words": [
+    {
+     "w": "de"
+    },
+    {
+     "w": "lo"
+    },
+    {
+     "w": "que"
+    },
+    {
+     "w": "le"
+    },
+    {
+     "w": "mandaste",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 23.392,
+   "end": 24.111,
+   "words": [
+    {
+     "w": "Te"
+    },
+    {
+     "w": "vas"
+    },
+    {
+     "w": "a"
+    },
+    {
+     "w": "sorprender",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 24.111,
+   "end": 24.831,
+   "words": [
+    {
+     "w": "con"
+    },
+    {
+     "w": "el"
+    },
+    {
+     "w": "resultado",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 24.831,
+   "end": 26.151,
+   "words": [
+    {
+     "w": "Después"
+    },
+    {
+     "w": "la"
+    },
+    {
+     "w": "compartes",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 26.151,
+   "end": 26.712,
+   "words": [
+    {
+     "w": "con"
+    },
+    {
+     "w": "tu"
+    },
+    {
+     "w": "equipo",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 26.712,
+   "end": 27.931,
+   "words": [
+    {
+     "w": "y"
+    },
+    {
+     "w": "se"
+    },
+    {
+     "w": "acabó",
+     "key": true
+    },
+    {
+     "w": "el"
+    },
+    {
+     "w": "archivo"
+    }
+   ]
+  },
+  {
+   "start": 27.931,
+   "end": 29.072,
+   "words": [
+    {
+     "w": "que"
+    },
+    {
+     "w": "nadie",
+     "key": true
+    },
+    {
+     "w": "entiende"
+    }
+   ]
+  },
+  {
+   "start": 29.072,
+   "end": 29.852,
+   "words": [
+    {
+     "w": "¿Y"
+    },
+    {
+     "w": "por"
+    },
+    {
+     "w": "qué"
+    },
+    {
+     "w": "te"
+    },
+    {
+     "w": "recomiendo",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 29.852,
+   "end": 30.912,
+   "words": [
+    {
+     "w": "hacerlo"
+    },
+    {
+     "w": "en"
+    },
+    {
+     "w": "esto",
+     "key": true
+    },
+    {
+     "w": "y"
+    },
+    {
+     "w": "no"
+    }
+   ]
+  },
+  {
+   "start": 30.912,
+   "end": 32.177,
+   "words": [
+    {
+     "w": "en"
+    },
+    {
+     "w": "Claude",
+     "key": true
+    },
+    {
+     "w": "directamente?"
+    }
+   ]
+  },
+  {
+   "start": 32.177,
+   "end": 32.537,
+   "words": [
+    {
+     "w": "Porque",
+     "key": true
+    },
+    {
+     "w": "creo"
+    }
+   ]
+  },
+  {
+   "start": 32.537,
+   "end": 33.137,
+   "words": [
+    {
+     "w": "que"
+    },
+    {
+     "w": "estas"
+    },
+    {
+     "w": "herramientas",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 33.137,
+   "end": 33.917,
+   "words": [
+    {
+     "w": "te"
+    },
+    {
+     "w": "van"
+    },
+    {
+     "w": "a"
+    },
+    {
+     "w": "quitar",
+     "key": true
+    },
+    {
+     "w": "mucho"
+    }
+   ]
+  },
+  {
+   "start": 33.917,
+   "end": 34.517,
+   "words": [
+    {
+     "w": "más"
+    },
+    {
+     "w": "el"
+    },
+    {
+     "w": "miedo",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 34.517,
+   "end": 35.137,
+   "words": [
+    {
+     "w": "ya"
+    },
+    {
+     "w": "que"
+    },
+    {
+     "w": "vas"
+    },
+    {
+     "w": "a"
+    },
+    {
+     "w": "tener",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 35.137,
+   "end": 36.277,
+   "words": [
+    {
+     "w": "certidumbre",
+     "key": true
+    },
+    {
+     "w": "de"
+    },
+    {
+     "w": "dónde"
+    }
+   ]
+  },
+  {
+   "start": 36.277,
+   "end": 37.097,
+   "words": [
+    {
+     "w": "estás"
+    },
+    {
+     "w": "construyendo",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 37.097,
+   "end": 38.237,
+   "words": [
+    {
+     "w": "y"
+    },
+    {
+     "w": "vas"
+    },
+    {
+     "w": "a"
+    },
+    {
+     "w": "ver"
+    }
+   ]
+  },
+  {
+   "start": 38.237,
+   "end": 39.297,
+   "words": [
+    {
+     "w": "que"
+    },
+    {
+     "w": "estás"
+    },
+    {
+     "w": "protegido"
+    }
+   ]
+  },
+  {
+   "start": 39.297,
+   "end": 40.077,
+   "words": [
+    {
+     "w": "en"
+    },
+    {
+     "w": "términos"
+    },
+    {
+     "w": "de"
+    },
+    {
+     "w": "seguridad"
+    }
+   ]
+  },
+  {
+   "start": 40.077,
+   "end": 40.717,
+   "words": [
+    {
+     "w": "por"
+    },
+    {
+     "w": "algún"
+    },
+    {
+     "w": "lado"
+    }
+   ]
+  },
+  {
+   "start": 40.717,
+   "end": 41.557,
+   "words": [
+    {
+     "w": "porque"
+    },
+    {
+     "w": "estás"
+    },
+    {
+     "w": "pagando",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 41.557,
+   "end": 41.997,
+   "words": [
+    {
+     "w": "una"
+    },
+    {
+     "w": "suscripción",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 41.997,
+   "end": 43.097,
+   "words": [
+    {
+     "w": "por"
+    },
+    {
+     "w": "la"
+    },
+    {
+     "w": "herramienta",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 43.097,
+   "end": 44.057,
+   "words": [
+    {
+     "w": "Entonces"
+    },
+    {
+     "w": "puedes"
+    },
+    {
+     "w": "avanzar",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 44.057,
+   "end": 44.437,
+   "words": [
+    {
+     "w": "sin"
+    },
+    {
+     "w": "miedo",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 44.437,
+   "end": 45.557,
+   "words": [
+    {
+     "w": "y"
+    },
+    {
+     "w": "te"
+    },
+    {
+     "w": "puede"
+    },
+    {
+     "w": "aportar",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 45.557,
+   "end": 46.395,
+   "words": [
+    {
+     "w": "mucho"
+    },
+    {
+     "w": "valor",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 46.395,
+   "end": 46.955,
+   "words": [
+    {
+     "w": "Lo"
+    },
+    {
+     "w": "mejor",
+     "key": true
+    },
+    {
+     "w": "de"
+    },
+    {
+     "w": "todo"
+    },
+    {
+     "w": "es"
+    }
+   ]
+  },
+  {
+   "start": 46.955,
+   "end": 47.615,
+   "words": [
+    {
+     "w": "que"
+    },
+    {
+     "w": "empieces"
+    },
+    {
+     "w": "a"
+    },
+    {
+     "w": "aprender",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 47.615,
+   "end": 48.155,
+   "words": [
+    {
+     "w": "cómo"
+    },
+    {
+     "w": "funciona",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 48.155,
+   "end": 48.895,
+   "words": [
+    {
+     "w": "una"
+    },
+    {
+     "w": "base",
+     "key": true
+    },
+    {
+     "w": "de"
+    },
+    {
+     "w": "datos",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 48.895,
+   "end": 50.155,
+   "words": [
+    {
+     "w": "todo"
+    },
+    {
+     "w": "sin"
+    },
+    {
+     "w": "tecnicismos",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 50.155,
+   "end": 50.995,
+   "words": [
+    {
+     "w": "y"
+    },
+    {
+     "w": "ya"
+    },
+    {
+     "w": "cuando"
+    },
+    {
+     "w": "tu"
+    },
+    {
+     "w": "idea",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 50.995,
+   "end": 51.395,
+   "words": [
+    {
+     "w": "esté"
+    },
+    {
+     "w": "validada",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 51.395,
+   "end": 52.415,
+   "words": [
+    {
+     "w": "vas"
+    },
+    {
+     "w": "a"
+    },
+    {
+     "w": "tener"
+    },
+    {
+     "w": "mucho"
+    },
+    {
+     "w": "más"
+    }
+   ]
+  },
+  {
+   "start": 52.415,
+   "end": 52.975,
+   "words": [
+    {
+     "w": "conocimiento",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 52.975,
+   "end": 53.495,
+   "words": [
+    {
+     "w": "y"
+    },
+    {
+     "w": "cuando"
+    }
+   ]
+  },
+  {
+   "start": 53.495,
+   "end": 54.035,
+   "words": [
+    {
+     "w": "las"
+    },
+    {
+     "w": "suscripciones",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 54.035,
+   "end": 55.055,
+   "words": [
+    {
+     "w": "salgan"
+    },
+    {
+     "w": "caras",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 55.055,
+   "end": 55.675,
+   "words": [
+    {
+     "w": "ya"
+    },
+    {
+     "w": "puedes"
+    },
+    {
+     "w": "hacerlo",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 55.675,
+   "end": 57.122,
+   "words": [
+    {
+     "w": "a"
+    },
+    {
+     "w": "la"
+    },
+    {
+     "w": "medida",
+     "key": true
+    },
+    {
+     "w": "con"
+    },
+    {
+     "w": "Claude",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 57.122,
+   "end": 57.922,
+   "words": [
+    {
+     "w": "Un"
+    },
+    {
+     "w": "cliente",
+     "key": true
+    },
+    {
+     "w": "mío"
+    }
+   ]
+  },
+  {
+   "start": 57.922,
+   "end": 58.642,
+   "words": [
+    {
+     "w": "dueño",
+     "key": true
+    },
+    {
+     "w": "de"
+    },
+    {
+     "w": "negocio"
+    }
+   ]
+  },
+  {
+   "start": 58.642,
+   "end": 59.522,
+   "words": [
+    {
+     "w": "y"
+    },
+    {
+     "w": "sin"
+    },
+    {
+     "w": "ser"
+    },
+    {
+     "w": "técnico",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 59.522,
+   "end": 61.202,
+   "words": [
+    {
+     "w": "hizo"
+    },
+    {
+     "w": "su"
+    },
+    {
+     "w": "propio"
+    },
+    {
+     "w": "ERP",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 61.202,
+   "end": 62.362,
+   "words": [
+    {
+     "w": "Así"
+    },
+    {
+     "w": "que"
+    },
+    {
+     "w": "comenta"
+    },
+    {
+     "w": "brújula",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 62.362,
+   "end": 63.062,
+   "words": [
+    {
+     "w": "y"
+    },
+    {
+     "w": "te"
+    },
+    {
+     "w": "mando"
+    },
+    {
+     "w": "el"
+    },
+    {
+     "w": "link",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 63.062,
+   "end": 63.422,
+   "words": [
+    {
+     "w": "para"
+    },
+    {
+     "w": "entrar",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 63.422,
+   "end": 63.942,
+   "words": [
+    {
+     "w": "a"
+    },
+    {
+     "w": "mi"
+    },
+    {
+     "w": "comunidad",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 63.942,
+   "end": 64.622,
+   "words": [
+    {
+     "w": "donde"
+    },
+    {
+     "w": "vamos"
+    },
+    {
+     "w": "a"
+    },
+    {
+     "w": "ver"
+    }
+   ]
+  },
+  {
+   "start": 64.622,
+   "end": 65.402,
+   "words": [
+    {
+     "w": "clases"
+    },
+    {
+     "w": "gratis",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 65.402,
+   "end": 65.902,
+   "words": [
+    {
+     "w": "cada"
+    },
+    {
+     "w": "semana",
+     "key": true
+    }
+   ]
+  },
+  {
+   "start": 65.902,
+   "end": 67.4,
+   "words": [
+    {
+     "w": "y"
+    },
+    {
+     "w": "guarda",
+     "key": true
+    },
+    {
+     "w": "este"
+    },
+    {
+     "w": "video"
+    }
+   ]
+  }
+ ],
+ "cola": 1.3,
+ "whooshAuto": false,
+ "musica": null,
+ "caraYFuente": 0.53,
+ "portada": {
+  "frase": "Tu Excel se puede convertir en una app sin programar",
+  "cuadro": 6.9,
+  "naranja": [
+   "Excel",
+   "app"
+  ]
+ }
+}

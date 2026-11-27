@@ -49,7 +49,13 @@ export const Portada: React.FC<{ reel: Reel }> = ({ reel }) => {
           color: color.negro,
         }}
       >
-        <ConIA texto={frase} />
+        {reel.portada?.naranja?.length
+          ? frase.split(" ").map((w, i) => (
+              <span key={i} style={{ color: reel.portada!.naranja!.includes(w.replace(/[.,!?¿¡]/g, "")) ? color.naranja : undefined }}>
+                {w}{" "}
+              </span>
+            ))
+          : <ConIA texto={frase} />}
       </div>
     </AbsoluteFill>
   );

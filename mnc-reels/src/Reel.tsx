@@ -16,24 +16,28 @@ const dB = (x: number) => Math.pow(10, x / 20);
 // tick al terminar un contador, bass en cada golpe a pantalla completa.
 const sfxAuto = (reel: ReelData) => {
   const out: { t: number; s: string }[] = [];
+  const whoosh = reel.whooshAuto !== false;
   for (const b of reel.broll) {
-    out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
+    if (whoosh) out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
     if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + 0.35 + i * (b.cada ?? 1.2), s: "pop" }));
     if (b.tipo === "contador") out.push({ t: b.start + 0.2 + 1.0, s: "tick" });
     if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta") out.push({ t: b.start + 0.1, s: "pop" });
   }
-  for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" ? "whoosh" : "bass" });
+  for (const g of reel.golpes) {
+    if (g.tipo !== "cierre") out.push({ t: g.start, s: "bass" });
+    else if (whoosh) out.push({ t: g.start, s: "whoosh" });
+  }
   for (const p of reel.pasos ?? []) out.push({ t: p.start, s: "click" });
   return [...out, ...(reel.sfx ?? [])];
 };
 
-export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
+export const Reel: React.FC<{ reel: ReelData; soloBroll?: boolean }> = ({ reel, soloBroll }) => {
   const frame = useCurrentFrame();
   const { fps, durationInFrames } = useVideoConfig();
   const t = frame / fps;
   const f = (s: number) => Math.round(s * fps);
 
-  const m = mezclaPanel(reel, t);
+  const m = soloBroll ? 1 : mezclaPanel(reel, t);
   const zoom = zoomCorte(reel, t);
   const caraY = reel.caraYFuente ?? 0.38;
   const golpe = activo(reel.golpes, t);
@@ -54,7 +58,9 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
   return (
     <AbsoluteFill style={{ background: color.verde }}>
       {/* 1 · Manuel (con su audio, ya normalizado a −14 LUFS) */}
-      <Manuel src={reel.manuel} mezcla={m} zoom={zoom} caraYFuente={caraY} />
+      <Sequence durationInFrames={soloBroll ? 1 : f(reel.duracion)} from={soloBroll ? -10 : 0} layout="none">
+        <Manuel src={reel.manuel} mezcla={m} zoom={zoom} caraYFuente={caraY} />
+      </Sequence>
 
       {/* 2 · Panel verde claro que se funde hacia Manuel (composición A) */}
       <AbsoluteFill
@@ -86,6 +92,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
       ) : null}
 
       {/* 4 · Número de paso */}
+      {soloBroll ? null : <>
       {paso && !golpe ? <Paso n={paso.n} p={spring({ frame: frame - f(paso.start), fps, config: theme.spring.golpe })} /> : null}
 
       {/* 5 · Subtítulos (ocultos en golpes y cierre) */}
@@ -93,14 +100,15 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
 
       {/* 6 · Golpes a pantalla completa */}
       {reel.golpes.map((g, i) => (
-        <Sequence key={i} from={f(g.start)} durationInFrames={Math.max(1, (g.tipo === "cierre" ? durationInFrames : f(g.end)) - f(g.start))}>
+        <Sequence key={i} from={f(g.start)} durationInFrames={Math.max(1, (g.tipo === "cierre" || g.tipo === "cta" ? durationInFrames : f(g.end)) - f(g.start))}>
           <GolpeView g={g} palabras={reel.palabras} />
         </Sequence>
       ))}
 
+      </>}
       {/* Audio: música + efectos */}
       {reel.musica ? <Audio src={staticFile(reel.musica)} volume={musicaVol} loop /> : null}
-      {sfxAuto(reel).map((s, i) => (
+      {(soloBroll ? [] : sfxAuto(reel)).map((s, i) => (
         <Sequence key={`sfx${i}`} from={f(s.t)} durationInFrames={f(1)} layout="none">
           <Audio src={staticFile(`sfx/${s.s}.wav`)} volume={s.s === "whoosh" ? 0.35 : 0.5} />
         </Sequence>

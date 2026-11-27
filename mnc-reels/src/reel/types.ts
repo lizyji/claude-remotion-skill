@@ -22,16 +22,21 @@ export type BRoll =
   | { tipo: "lista"; start: number; end: number; titulo?: string; items: string[]; cada?: number; check?: boolean; fuente?: Fuente }
   | { tipo: "tarjeta"; start: number; end: number; pildora?: string; titulo: string; texto?: string; fuente?: Fuente }
   // Composición B/C: stock de PERSONAS a pantalla completa + Manuel recortado (matte con alfa).
-  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente };
+  | { tipo: "silueta"; start: number; end: number; src: string; desde?: number; fuente?: Fuente }
+  // Animación a la medida del reel (src/components/Anims.tsx), por id del guion (B1, B2…)
+  | { tipo: "anim"; start: number; end: number; id: string; fuente?: Fuente };
 
 export type Golpe =
   | { tipo: "jugada"; start: number; end: number }
   | { tipo: "numero"; start: number; end: number; valor: string; etiqueta?: string; fuente?: Fuente }
-  | { tipo: "cierre"; start: number; end: number };
+  | { tipo: "cierre"; start: number; end: number }
+  // Cierre con CTA cuando el video no lleva la frase de firma: "Comenta PALABRA" + nota abajo
+  | { tipo: "cta"; start: number; end: number; palabra: string; nota?: string; notaDesde?: number };
 
 export type Reel = {
   slug: string;
-  duracion: number; // segundos
+  duracion: number; // segundos (video de Manuel ya recortado)
+  cola?: number; // segundos extra al final (el golpe de cierre/CTA se sostiene en pantalla)
   manuel: string; // ruta en public/, video recortado y normalizado (-14 LUFS)
   manuelMatte?: string; // ruta en public/, Manuel recortado con alfa (.webm VP9 alfa) para "silueta"
   caraYFuente?: number; // 0–1: altura de la cara dentro del video fuente (default 0.38)
@@ -43,7 +48,9 @@ export type Reel = {
   golpes: Golpe[];
   pasos?: { start: number; end: number; n: number }[];
   sfx?: { t: number; s: "whoosh" | "pop" | "click" | "tick" | "bass" }[];
-  portada?: { frase?: string; cuadro: number };
+  // false: no se pone whoosh automático en cada cambio de clip; solo los de `sfx`
+  whooshAuto?: boolean;
+  portada?: { frase?: string; cuadro: number; naranja?: string[] }; // naranja: palabras de la frase que van en naranja
 };
 
 export const FRASE_CIERRE =

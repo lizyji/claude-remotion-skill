@@ -2,7 +2,8 @@ import React from "react";
 import { AbsoluteFill, interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { theme } from "../theme";
 import { FRASE_CIERRE, type Golpe, type Palabra } from "../reel/types";
-import { FuentePie } from "./Base";
+import { FuentePie, Pildora } from "./Base";
+import { Brujula } from "./Anims";
 
 const { color, font } = theme;
 
@@ -169,10 +170,40 @@ const Cierre: React.FC<{ dur: number; start: number; palabras: Palabra[]; end: n
   );
 };
 
+// Cierre CTA a pantalla completa: fondo verde claro, texto negro, la palabra en naranja.
+const Cta: React.FC<{ dur: number; palabra: string; nota?: string; notaDesde?: number }> = ({ dur, palabra, nota, notaDesde = 0.4 }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = frame / fps;
+  const a = spring({ frame, fps, config: theme.spring.suave });
+  const g = spring({ frame: frame - 4, fps, config: theme.spring.golpe });
+  const n = spring({ frame: frame - Math.round(notaDesde * fps), fps, config: theme.spring.golpe });
+  const giro = interpolate(t, [0, 1], [-160, 0], { extrapolateRight: "clamp", easing: theme.ease.out }) + Math.sin(t * 3) * 4;
+  return (
+    <Pantalla dur={dur + 10}>
+      <AbsoluteFill style={{ alignItems: "center", justifyContent: "center", flexDirection: "column", paddingBottom: 60 }}>
+        <div style={{ opacity: a, transform: `scale(${0.7 + 0.3 * a})` }}>
+          <Brujula size={300} giro={giro} />
+        </div>
+        <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 110, color: color.negro, marginTop: 30, opacity: a }}>Comenta</div>
+        <div style={{ fontFamily: font.titulo, fontWeight: 700, fontSize: 190, lineHeight: 1, color: color.naranja, opacity: Math.min(1, g * 2), transform: `scale(${interpolate(Math.min(g, 1.1), [0, 1], [1.6, 1])})` }}>
+          {palabra}
+        </div>
+        {nota ? (
+          <div style={{ marginTop: 60, opacity: Math.min(1, n * 2), transform: `scale(${1 + 0.1 * Math.sin(Math.min(1, n) * Math.PI)})` }}>
+            <Pildora tono="negro" style={{ fontSize: 52, padding: "18px 44px" }}>{nota}</Pildora>
+          </div>
+        ) : null}
+      </AbsoluteFill>
+    </Pantalla>
+  );
+};
+
 export const GolpeView: React.FC<{ g: Golpe; palabras: Palabra[] }> = ({ g, palabras }) => {
   const { fps } = useVideoConfig();
   const dur = Math.round((g.end - g.start) * fps);
   if (g.tipo === "jugada") return <Jugada dur={dur} />;
+  if (g.tipo === "cta") return <Cta dur={dur} palabra={g.palabra} nota={g.nota} notaDesde={g.notaDesde} />;
   if (g.tipo === "numero") return <Numero dur={dur} valor={g.valor} etiqueta={g.etiqueta} fuente={g.fuente} />;
   return <Cierre dur={dur} start={g.start} end={g.end} palabras={palabras} />;
 };

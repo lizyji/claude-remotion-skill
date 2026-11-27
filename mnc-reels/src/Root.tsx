@@ -19,8 +19,8 @@ export const Root: React.FC = () => (
       fps={30}
       width={1080}
       height={1920}
-      durationInFrames={Math.round(reel.duracion * 30)}
-      calculateMetadata={({ props }) => ({ durationInFrames: Math.round(props.reel.duracion * 30) })}
+      durationInFrames={Math.round((reel.duracion + (reel.cola ?? 0)) * 30)}
+      calculateMetadata={({ props }) => ({ durationInFrames: Math.round((props.reel.duracion + (props.reel.cola ?? 0)) * 30) })}
     />
     <Still id="Portada" component={Portada} defaultProps={{ reel }} width={1080} height={1920} />
   </>
