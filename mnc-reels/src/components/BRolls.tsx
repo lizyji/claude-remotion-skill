@@ -3,6 +3,7 @@ import { Img, OffthreadVideo, interpolate, staticFile, useCurrentFrame, useVideo
 import { theme } from "../theme";
 import type { BRoll } from "../reel/types";
 import { Check, ConIA, Entra, FuentePie, Pildora, Tarjeta, useEntradaSalida } from "./Base";
+import { BRollExtra } from "./BRollsExtra";
 
 const { color, font, layout } = theme;
 const AREA = { left: 60, top: layout.panelTop, width: 960, height: layout.panelBottom - layout.panelTop };
@@ -60,11 +61,12 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       const z = interpolate(frame, [0, dur], [z0, z1], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const [fx, fy] = b.foco ?? [50, 50];
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco }}>
+        <div style={{ width: 960, height: conPaso ? 480 : 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.blanco, position: "relative" }}>
           <Img
             src={staticFile(b.src)}
             style={{ width: "100%", height: "100%", objectFit: b.fit ?? "cover", transform: `scale(${z})`, transformOrigin: `${fx}% ${fy}%` }}
           />
+          <Esquinas logo={b.logo} pildora={b.pildora} />
         </div>
       );
       break;
@@ -73,7 +75,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       const z = interpolate(frame, [0, dur], [1, 1.05], { extrapolateRight: "clamp", easing: theme.ease.inOut });
       const r = b.recorte ?? { x: 0, y: 0, w: 1, h: 1 };
       body = (
-        <div style={{ width: 960, height: 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.negro, position: "relative" }}>
+        <div style={{ width: 960, height: conPaso ? 480 : 600, borderRadius: theme.card.radius, border: theme.card.border, overflow: "hidden", background: color.negro, position: "relative" }}>
           <div style={{ position: "absolute", inset: 0, transform: `scale(${z})` }}>
             <OffthreadVideo
               src={staticFile(b.src)}
@@ -89,6 +91,7 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
               }}
             />
           </div>
+          <Esquinas pildora={b.pildora} />
         </div>
       );
       break;
@@ -131,7 +134,8 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
         <Tarjeta style={{ width: 920 }}>
           {b.titulo ? <Titulo size={56} style={{ marginBottom: 30 }}>{b.titulo}</Titulo> : null}
           {b.items.map((it, i) => {
-            const pi = spring({ frame: frame - Math.round((0.35 + i * cada) * fps), fps, config: theme.spring.suave });
+            const ti = b.tiempos ? b.tiempos[i] - b.start : 0.35 + i * cada;
+            const pi = spring({ frame: frame - Math.round(ti * fps), fps, config: theme.spring.suave });
             return (
               <div
                 key={i}
@@ -144,13 +148,14 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
                   transform: `translateX(${interpolate(pi, [0, 1], [40, 0])}px) scale(${interpolate(pi, [0, 1], [0.94, 1])})`,
                 }}
               >
-                {b.check !== false ? <Check p={pi} size={64} /> : <Pildora style={{ padding: "6px 18px" }}>{i + 1}</Pildora>}
+                {b.check === "pendiente" ? <Pendiente p={pi} /> : b.check !== false ? <Check p={pi} size={64} /> : <Pildora style={{ padding: "6px 18px" }}>{i + 1}</Pildora>}
                 <span style={{ fontFamily: font.texto, fontWeight: 600, fontSize: 48, color: color.negro }}>
                   <ConIA texto={it} />
                 </span>
               </div>
             );
           })}
+          {b.pildora ? <Pildora tono="negro" style={{ fontSize: 26, marginTop: 10 }}>{b.pildora}</Pildora> : null}
         </Tarjeta>
       );
       break;
@@ -172,6 +177,8 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
       break;
     case "silueta":
       return null; // se dibuja a pantalla completa en Reel.tsx
+    default:
+      body = <BRollExtra b={b} />;
   }
 
   return (
@@ -183,3 +190,27 @@ export const BRollView: React.FC<{ b: BRoll; conPaso?: boolean }> = ({ b, conPas
     </>
   );
 };
+
+// Logo oficial (arriba a la izquierda) y píldora (abajo a la derecha) sobre una captura o video
+const Esquinas: React.FC<{ logo?: string; pildora?: string }> = ({ logo, pildora }) => (
+  <>
+    {logo ? (
+      <div style={{ position: "absolute", left: 22, bottom: 22, background: color.blanco, border: theme.card.border, borderRadius: 18, padding: "12px 20px" }}>
+        <Img src={staticFile(logo)} style={{ height: 44, display: "block" }} />
+      </div>
+    ) : null}
+    {pildora ? (
+      <div style={{ position: "absolute", right: 22, bottom: 22 }}>
+        <Pildora tono="negro" style={{ fontSize: 28 }}>{pildora}</Pildora>
+      </div>
+    ) : null}
+  </>
+);
+
+// Ícono de pendiente: círculo blanco con borde negro y signo de interrogación naranja
+const Pendiente: React.FC<{ p: number }> = ({ p }) => (
+  <svg width={64} height={64} viewBox="0 0 52 52" style={{ flexShrink: 0, transform: `scale(${p})` }}>
+    <circle cx="26" cy="26" r="24" fill={color.blanco} stroke={color.negro} strokeWidth="3" />
+    <text x="26" y="36" textAnchor="middle" fontFamily="Poppins, sans-serif" fontWeight={800} fontSize="30" fill={color.naranja}>?</text>
+  </svg>
+);

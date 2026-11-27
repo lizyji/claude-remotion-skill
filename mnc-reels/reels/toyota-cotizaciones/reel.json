@@ -1,0 +1,2480 @@
+{
+  "broll": [
+    {
+      "tipo": "bandeja",
+      "start": 0.0,
+      "end": 2.85,
+      "asunto": "Solicitud de cotización",
+      "remitente": "Una empresa del grupo Toyota"
+    },
+    {
+      "tipo": "video",
+      "start": 2.85,
+      "end": 4.4,
+      "src": "reels/toyota-cotizaciones/stock_fabrica.mp4",
+      "desde": 2,
+      "pildora": "Proveedores mexicanos"
+    },
+    {
+      "tipo": "contador",
+      "start": 4.4,
+      "end": 6.41,
+      "valor": 6,
+      "sufijo": " días",
+      "etiqueta": "sin respuesta"
+    },
+    {
+      "tipo": "imagen",
+      "start": 6.41,
+      "end": 10.01,
+      "src": "reels/toyota-cotizaciones/ciiam_salon.jpg",
+      "zoom": [
+        1.0,
+        1.14
+      ],
+      "foco": [
+        62,
+        55
+      ],
+      "pildora": "CIIAM 2026 · CDMX",
+      "fuente": "Fuente: Cluster Industrial (foto), 29 sep 2026 · clusterindustrial.com.mx"
+    },
+    {
+      "tipo": "carrera",
+      "start": 10.01,
+      "end": 12.99,
+      "a": "Proveedor A",
+      "b": "Proveedor B",
+      "ganador": "Respondió el mismo día",
+      "perdedor": "Sin respuesta",
+      "t": 0.9
+    },
+    {
+      "tipo": "video",
+      "start": 12.99,
+      "end": 14.63,
+      "src": "reels/toyota-cotizaciones/stock_laptop.mp4",
+      "desde": 3
+    },
+    {
+      "tipo": "texto",
+      "start": 14.63,
+      "end": 16.34,
+      "linea1": "Mismo día",
+      "linea2": "sin programar",
+      "t2": 15.35
+    },
+    {
+      "tipo": "imagen",
+      "start": 16.34,
+      "end": 18.26,
+      "src": "reels/toyota-cotizaciones/claude_proyecto.png",
+      "zoom": [
+        1.0,
+        1.1
+      ],
+      "foco": [
+        80,
+        30
+      ],
+      "logo": "reels/toyota-cotizaciones/claude_logo.svg",
+      "pildora": "Proyecto en Claude",
+      "fuente": "Fuente: Anthropic, 25 jun 2024 · anthropic.com"
+    },
+    {
+      "tipo": "subida",
+      "start": 18.26,
+      "end": 21.78,
+      "titulo": "Súbele a tu proyecto:",
+      "pildora": "Ejemplo con datos ficticios",
+      "archivos": [
+        {
+          "nombre": "Lista de precios",
+          "tipo": "XLS",
+          "t": 18.36
+        },
+        {
+          "nombre": "Tiempos de entrega",
+          "tipo": "PDF",
+          "t": 19.26
+        },
+        {
+          "nombre": "Cotización modelo",
+          "tipo": "PDF",
+          "t": 20.28
+        }
+      ]
+    },
+    {
+      "tipo": "texto",
+      "start": 21.78,
+      "end": 23.8,
+      "linea1": "Se hace",
+      "linea2": "una sola vez",
+      "t2": 22.62
+    },
+    {
+      "tipo": "subida",
+      "start": 23.8,
+      "end": 27.89,
+      "titulo": "Llega una solicitud:",
+      "pildora": "Ejemplo con datos ficticios",
+      "archivos": [
+        {
+          "nombre": "Solicitud de cotización",
+          "tipo": "PDF",
+          "t": 25.16
+        },
+        {
+          "nombre": "Plano de la pieza",
+          "tipo": "PLANO",
+          "t": 27.36
+        }
+      ]
+    },
+    {
+      "tipo": "tabla",
+      "start": 27.89,
+      "end": 32.26,
+      "pildora": "Ejemplo con datos ficticios",
+      "columnas": [
+        {
+          "titulo": "Pieza",
+          "t": 28.64
+        },
+        {
+          "titulo": "Cantidad",
+          "t": 29.2
+        },
+        {
+          "titulo": "Especificación",
+          "t": 30.05
+        },
+        {
+          "titulo": "Fecha",
+          "t": 31.3
+        }
+      ],
+      "filas": [
+        [
+          "Soporte A-12",
+          "500",
+          "Acero 1018 zincado",
+          "15 ene"
+        ],
+        [
+          "Buje B-07",
+          "1,200",
+          "Nylon 6/6",
+          "22 ene"
+        ],
+        [
+          "Placa C-30",
+          "300",
+          "Aluminio 6061",
+          "29 ene"
+        ]
+      ]
+    },
+    {
+      "tipo": "documento",
+      "start": 32.26,
+      "end": 34.31,
+      "titulo": "Cotización",
+      "sello": "Borrador",
+      "pildora": "Con tu formato",
+      "lineas": [
+        "Cliente",
+        "Piezas y cantidades",
+        "Precio de tu lista",
+        "Tiempo de entrega",
+        "Condiciones"
+      ]
+    },
+    {
+      "tipo": "lista",
+      "start": 34.31,
+      "end": 38.29,
+      "titulo": "Pendientes para ti",
+      "check": "pendiente",
+      "pildora": "Ejemplo con datos ficticios",
+      "items": [
+        "Precio de la placa C-30",
+        "Tratamiento del buje B-07",
+        "Fecha de entrega en planta"
+      ],
+      "tiempos": [
+        35.83,
+        36.83,
+        37.6
+      ]
+    },
+    {
+      "tipo": "sello",
+      "start": 38.29,
+      "end": 40.3,
+      "texto": "Nunca inventa precios"
+    },
+    {
+      "tipo": "texto",
+      "start": 40.3,
+      "end": 42.98,
+      "linea1": "La IA no cotiza",
+      "linea2": "por ti",
+      "t2": 42.56
+    },
+    {
+      "tipo": "video",
+      "start": 42.98,
+      "end": 44.4,
+      "src": "reels/toyota-cotizaciones/stock_teclado.mp4",
+      "desde": 2,
+      "pildora": "La hora de capturar"
+    },
+    {
+      "tipo": "texto",
+      "start": 44.4,
+      "end": 46.96,
+      "linea1": "La IA captura",
+      "linea2": "Tú revisas y contestas",
+      "t2": 44.92
+    }
+  ],
+  "golpes": [
+    {
+      "tipo": "cta",
+      "start": 46.96,
+      "end": 53.2,
+      "antes": "Comenta",
+      "palabra": "BRÚJULA",
+      "tPalabra": 47.4,
+      "lineas": [
+        {
+          "texto": "Clases gratis cada semana",
+          "t": 50.08
+        },
+        {
+          "texto": "Guarda este video",
+          "t": 51.78
+        }
+      ]
+    }
+  ],
+  "pasos": [
+    {
+      "start": 16.34,
+      "end": 23.8,
+      "n": 1
+    },
+    {
+      "start": 23.8,
+      "end": 34.31,
+      "n": 2
+    },
+    {
+      "start": 34.31,
+      "end": 40.3,
+      "n": 3
+    }
+  ],
+  "sfx": [
+    {
+      "t": 9.93,
+      "s": "whoosh"
+    },
+    {
+      "t": 23.72,
+      "s": "whoosh"
+    },
+    {
+      "t": 46.88,
+      "s": "whoosh"
+    }
+  ],
+  "slug": "toyota-cotizaciones",
+  "duracion": 53.2,
+  "manuel": "reels/toyota-cotizaciones/manuel.mp4",
+  "cortes": [
+    16.264,
+    23.715,
+    34.231,
+    40.221
+  ],
+  "palabras": [
+    {
+      "w": "Una",
+      "start": 0.05,
+      "end": 0.51,
+      "prob": 0.985
+    },
+    {
+      "w": "empresa",
+      "start": 0.51,
+      "end": 0.97,
+      "prob": 1.0
+    },
+    {
+      "w": "del",
+      "start": 0.97,
+      "end": 1.33,
+      "prob": 0.999
+    },
+    {
+      "w": "grupo",
+      "start": 1.33,
+      "end": 1.55,
+      "prob": 0.975
+    },
+    {
+      "w": "Toyota",
+      "start": 1.55,
+      "end": 1.91,
+      "prob": 0.996
+    },
+    {
+      "w": "pide",
+      "start": 1.91,
+      "end": 2.41,
+      "prob": 0.998
+    },
+    {
+      "w": "cotizaciones",
+      "start": 2.41,
+      "end": 2.85,
+      "prob": 0.602
+    },
+    {
+      "w": "a",
+      "start": 2.85,
+      "end": 3.01,
+      "prob": 0.999
+    },
+    {
+      "w": "proveedores",
+      "start": 3.01,
+      "end": 3.43,
+      "prob": 1.0
+    },
+    {
+      "w": "mexicanos",
+      "start": 3.43,
+      "end": 3.91,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 3.91,
+      "end": 4.13,
+      "prob": 0.986
+    },
+    {
+      "w": "a",
+      "start": 4.13,
+      "end": 4.27,
+      "prob": 0.999
+    },
+    {
+      "w": "veces",
+      "start": 4.27,
+      "end": 4.49,
+      "prob": 1.0
+    },
+    {
+      "w": "nadie",
+      "start": 4.49,
+      "end": 5.03,
+      "prob": 0.999
+    },
+    {
+      "w": "les",
+      "start": 5.03,
+      "end": 5.47,
+      "prob": 1.0
+    },
+    {
+      "w": "contesta.",
+      "start": 5.47,
+      "end": 6.01,
+      "prob": 1.0
+    },
+    {
+      "w": "Lo",
+      "start": 6.41,
+      "end": 6.93,
+      "prob": 1.0
+    },
+    {
+      "w": "dijo",
+      "start": 6.93,
+      "end": 7.25,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 7.25,
+      "end": 7.71,
+      "prob": 0.984
+    },
+    {
+      "w": "Ematec",
+      "start": 7.71,
+      "end": 8.19,
+      "prob": 0.769
+    },
+    {
+      "w": "en",
+      "start": 8.19,
+      "end": 8.41,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 8.41,
+      "end": 8.53,
+      "prob": 1.0
+    },
+    {
+      "w": "Congreso",
+      "start": 8.53,
+      "end": 8.89,
+      "prob": 0.819
+    },
+    {
+      "w": "de",
+      "start": 8.89,
+      "end": 9.01,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 9.01,
+      "end": 9.07,
+      "prob": 1.0
+    },
+    {
+      "w": "Industria",
+      "start": 9.07,
+      "end": 9.43,
+      "prob": 0.998
+    },
+    {
+      "w": "Automotriz.",
+      "start": 9.43,
+      "end": 9.89,
+      "prob": 0.998
+    },
+    {
+      "w": "El",
+      "start": 10.01,
+      "end": 10.21,
+      "prob": 0.999
+    },
+    {
+      "w": "que",
+      "start": 10.21,
+      "end": 10.39,
+      "prob": 1.0
+    },
+    {
+      "w": "contesta",
+      "start": 10.39,
+      "end": 10.91,
+      "prob": 0.998
+    },
+    {
+      "w": "primero",
+      "start": 10.91,
+      "end": 11.17,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 11.17,
+      "end": 11.45,
+      "prob": 1.0
+    },
+    {
+      "w": "bien",
+      "start": 11.45,
+      "end": 11.71,
+      "prob": 1.0
+    },
+    {
+      "w": "ya",
+      "start": 11.71,
+      "end": 12.11,
+      "prob": 0.907
+    },
+    {
+      "w": "lleva",
+      "start": 12.11,
+      "end": 12.41,
+      "prob": 1.0
+    },
+    {
+      "w": "ventaja.",
+      "start": 12.41,
+      "end": 12.91,
+      "prob": 1.0
+    },
+    {
+      "w": "Así",
+      "start": 12.99,
+      "end": 13.41,
+      "prob": 1.0
+    },
+    {
+      "w": "preparas",
+      "start": 13.41,
+      "end": 14.03,
+      "prob": 1.0
+    },
+    {
+      "w": "tu",
+      "start": 14.03,
+      "end": 14.13,
+      "prob": 1.0
+    },
+    {
+      "w": "respuesta",
+      "start": 14.13,
+      "end": 14.49,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 14.49,
+      "end": 14.63,
+      "prob": 0.974
+    },
+    {
+      "w": "mismo",
+      "start": 14.63,
+      "end": 14.81,
+      "prob": 1.0
+    },
+    {
+      "w": "día",
+      "start": 14.81,
+      "end": 15.01,
+      "prob": 1.0
+    },
+    {
+      "w": "sin",
+      "start": 15.01,
+      "end": 15.35,
+      "prob": 0.999
+    },
+    {
+      "w": "saber",
+      "start": 15.35,
+      "end": 15.61,
+      "prob": 1.0
+    },
+    {
+      "w": "programar.",
+      "start": 15.61,
+      "end": 16.13,
+      "prob": 1.0
+    },
+    {
+      "w": "Primero",
+      "start": 16.344,
+      "end": 16.864,
+      "prob": 1.0
+    },
+    {
+      "w": "abre",
+      "start": 16.864,
+      "end": 17.124,
+      "prob": 0.578
+    },
+    {
+      "w": "un",
+      "start": 17.124,
+      "end": 17.244,
+      "prob": 1.0
+    },
+    {
+      "w": "proyecto",
+      "start": 17.244,
+      "end": 17.524,
+      "prob": 1.0
+    },
+    {
+      "w": "en",
+      "start": 17.524,
+      "end": 17.664,
+      "prob": 0.999
+    },
+    {
+      "w": "Claude",
+      "start": 17.664,
+      "end": 17.844,
+      "prob": 0.5
+    },
+    {
+      "w": "y",
+      "start": 17.844,
+      "end": 17.984,
+      "prob": 1.0
+    },
+    {
+      "w": "súbele",
+      "start": 17.984,
+      "end": 18.264,
+      "prob": 0.989
+    },
+    {
+      "w": "tu",
+      "start": 18.264,
+      "end": 18.364,
+      "prob": 1.0
+    },
+    {
+      "w": "lista",
+      "start": 18.364,
+      "end": 18.564,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 18.564,
+      "end": 18.704,
+      "prob": 1.0
+    },
+    {
+      "w": "precios,",
+      "start": 18.704,
+      "end": 19.084,
+      "prob": 1.0
+    },
+    {
+      "w": "tus",
+      "start": 19.104,
+      "end": 19.264,
+      "prob": 0.999
+    },
+    {
+      "w": "tiempos",
+      "start": 19.264,
+      "end": 19.584,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 19.584,
+      "end": 19.644,
+      "prob": 1.0
+    },
+    {
+      "w": "entrega",
+      "start": 19.644,
+      "end": 20.024,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 20.024,
+      "end": 20.124,
+      "prob": 1.0
+    },
+    {
+      "w": "una",
+      "start": 20.124,
+      "end": 20.284,
+      "prob": 1.0
+    },
+    {
+      "w": "cotización",
+      "start": 20.284,
+      "end": 20.584,
+      "prob": 0.874
+    },
+    {
+      "w": "tuya",
+      "start": 20.584,
+      "end": 20.904,
+      "prob": 0.999
+    },
+    {
+      "w": "que",
+      "start": 20.904,
+      "end": 21.064,
+      "prob": 1.0
+    },
+    {
+      "w": "haya",
+      "start": 21.064,
+      "end": 21.184,
+      "prob": 1.0
+    },
+    {
+      "w": "quedado",
+      "start": 21.184,
+      "end": 21.504,
+      "prob": 1.0
+    },
+    {
+      "w": "bien.",
+      "start": 21.504,
+      "end": 21.684,
+      "prob": 1.0
+    },
+    {
+      "w": "Eso",
+      "start": 21.784,
+      "end": 22.104,
+      "prob": 0.999
+    },
+    {
+      "w": "se",
+      "start": 22.104,
+      "end": 22.404,
+      "prob": 1.0
+    },
+    {
+      "w": "hace",
+      "start": 22.404,
+      "end": 22.624,
+      "prob": 1.0
+    },
+    {
+      "w": "una",
+      "start": 22.624,
+      "end": 22.964,
+      "prob": 1.0
+    },
+    {
+      "w": "sola",
+      "start": 22.964,
+      "end": 23.224,
+      "prob": 1.0
+    },
+    {
+      "w": "vez.",
+      "start": 23.224,
+      "end": 23.424,
+      "prob": 1.0
+    },
+    {
+      "w": "Después,",
+      "start": 23.795,
+      "end": 24.235,
+      "prob": 0.473
+    },
+    {
+      "w": "cuando",
+      "start": 24.535,
+      "end": 24.775,
+      "prob": 0.994
+    },
+    {
+      "w": "llegue",
+      "start": 24.775,
+      "end": 25.075,
+      "prob": 0.998
+    },
+    {
+      "w": "una",
+      "start": 25.075,
+      "end": 25.155,
+      "prob": 0.914
+    },
+    {
+      "w": "solicitud,",
+      "start": 25.155,
+      "end": 25.635,
+      "prob": 1.0
+    },
+    {
+      "w": "súbela",
+      "start": 25.795,
+      "end": 26.115,
+      "prob": 0.931
+    },
+    {
+      "w": "completa",
+      "start": 26.115,
+      "end": 26.415,
+      "prob": 0.999
+    },
+    {
+      "w": "con",
+      "start": 26.415,
+      "end": 26.675,
+      "prob": 0.996
+    },
+    {
+      "w": "el",
+      "start": 26.675,
+      "end": 26.815,
+      "prob": 0.973
+    },
+    {
+      "w": "PDF",
+      "start": 26.815,
+      "end": 27.035,
+      "prob": 0.765
+    },
+    {
+      "w": "o",
+      "start": 27.035,
+      "end": 27.355,
+      "prob": 0.987
+    },
+    {
+      "w": "el",
+      "start": 27.355,
+      "end": 27.475,
+      "prob": 0.968
+    },
+    {
+      "w": "plano",
+      "start": 27.475,
+      "end": 27.635,
+      "prob": 0.979
+    },
+    {
+      "w": "y",
+      "start": 27.635,
+      "end": 27.895,
+      "prob": 0.94
+    },
+    {
+      "w": "pídele",
+      "start": 27.895,
+      "end": 28.215,
+      "prob": 0.996
+    },
+    {
+      "w": "que",
+      "start": 28.215,
+      "end": 28.355,
+      "prob": 0.998
+    },
+    {
+      "w": "saque",
+      "start": 28.355,
+      "end": 28.635,
+      "prob": 0.999
+    },
+    {
+      "w": "piezas,",
+      "start": 28.635,
+      "end": 29.175,
+      "prob": 0.994
+    },
+    {
+      "w": "cantidades,",
+      "start": 29.195,
+      "end": 29.875,
+      "prob": 0.998
+    },
+    {
+      "w": "especificaciones",
+      "start": 30.055,
+      "end": 30.875,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 30.875,
+      "end": 31.295,
+      "prob": 0.988
+    },
+    {
+      "w": "fecha",
+      "start": 31.295,
+      "end": 31.575,
+      "prob": 0.994
+    },
+    {
+      "w": "requerida",
+      "start": 31.575,
+      "end": 32.035,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 32.035,
+      "end": 32.255,
+      "prob": 0.963
+    },
+    {
+      "w": "que",
+      "start": 32.255,
+      "end": 32.375,
+      "prob": 0.996
+    },
+    {
+      "w": "arme",
+      "start": 32.375,
+      "end": 32.695,
+      "prob": 0.995
+    },
+    {
+      "w": "el",
+      "start": 32.695,
+      "end": 32.755,
+      "prob": 0.999
+    },
+    {
+      "w": "borrador",
+      "start": 32.755,
+      "end": 33.055,
+      "prob": 1.0
+    },
+    {
+      "w": "con",
+      "start": 33.055,
+      "end": 33.275,
+      "prob": 0.999
+    },
+    {
+      "w": "tu",
+      "start": 33.275,
+      "end": 33.395,
+      "prob": 0.999
+    },
+    {
+      "w": "formato.",
+      "start": 33.395,
+      "end": 33.895,
+      "prob": 1.0
+    },
+    {
+      "w": "Y",
+      "start": 34.311,
+      "end": 34.751,
+      "prob": 0.994
+    },
+    {
+      "w": "por",
+      "start": 34.751,
+      "end": 34.891,
+      "prob": 0.989
+    },
+    {
+      "w": "último,",
+      "start": 34.891,
+      "end": 35.171,
+      "prob": 0.998
+    },
+    {
+      "w": "pídele",
+      "start": 35.311,
+      "end": 35.691,
+      "prob": 0.999
+    },
+    {
+      "w": "la",
+      "start": 35.691,
+      "end": 35.831,
+      "prob": 0.968
+    },
+    {
+      "w": "lista",
+      "start": 35.831,
+      "end": 36.051,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 36.051,
+      "end": 36.171,
+      "prob": 1.0
+    },
+    {
+      "w": "lo",
+      "start": 36.171,
+      "end": 36.271,
+      "prob": 0.998
+    },
+    {
+      "w": "que",
+      "start": 36.271,
+      "end": 36.411,
+      "prob": 1.0
+    },
+    {
+      "w": "no",
+      "start": 36.411,
+      "end": 36.591,
+      "prob": 0.999
+    },
+    {
+      "w": "pudo",
+      "start": 36.591,
+      "end": 36.831,
+      "prob": 0.964
+    },
+    {
+      "w": "resolver",
+      "start": 36.831,
+      "end": 37.091,
+      "prob": 0.999
+    },
+    {
+      "w": "para",
+      "start": 37.091,
+      "end": 37.351,
+      "prob": 0.999
+    },
+    {
+      "w": "que",
+      "start": 37.351,
+      "end": 37.511,
+      "prob": 1.0
+    },
+    {
+      "w": "tú",
+      "start": 37.511,
+      "end": 37.671,
+      "prob": 0.978
+    },
+    {
+      "w": "lo",
+      "start": 37.671,
+      "end": 37.791,
+      "prob": 1.0
+    },
+    {
+      "w": "completes.",
+      "start": 37.791,
+      "end": 38.131,
+      "prob": 0.992
+    },
+    {
+      "w": "Nunca",
+      "start": 38.291,
+      "end": 38.691,
+      "prob": 0.997
+    },
+    {
+      "w": "le",
+      "start": 38.691,
+      "end": 38.771,
+      "prob": 1.0
+    },
+    {
+      "w": "dejes",
+      "start": 38.771,
+      "end": 38.991,
+      "prob": 1.0
+    },
+    {
+      "w": "inventar",
+      "start": 38.991,
+      "end": 39.411,
+      "prob": 0.999
+    },
+    {
+      "w": "un",
+      "start": 39.411,
+      "end": 39.631,
+      "prob": 1.0
+    },
+    {
+      "w": "precio.",
+      "start": 39.631,
+      "end": 39.911,
+      "prob": 1.0
+    },
+    {
+      "w": "Y",
+      "start": 40.301,
+      "end": 40.741,
+      "prob": 0.999
+    },
+    {
+      "w": "la",
+      "start": 40.741,
+      "end": 40.861,
+      "prob": 1.0
+    },
+    {
+      "w": "realidad",
+      "start": 40.861,
+      "end": 41.081,
+      "prob": 0.999
+    },
+    {
+      "w": "es",
+      "start": 41.081,
+      "end": 41.201,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 41.201,
+      "end": 41.301,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 41.301,
+      "end": 41.441,
+      "prob": 0.989
+    },
+    {
+      "w": "IA",
+      "start": 41.441,
+      "end": 41.621,
+      "prob": 0.949
+    },
+    {
+      "w": "no",
+      "start": 41.621,
+      "end": 41.681,
+      "prob": 0.999
+    },
+    {
+      "w": "va",
+      "start": 41.681,
+      "end": 41.801,
+      "prob": 0.999
+    },
+    {
+      "w": "a",
+      "start": 41.801,
+      "end": 41.881,
+      "prob": 1.0
+    },
+    {
+      "w": "terminar",
+      "start": 41.881,
+      "end": 42.081,
+      "prob": 1.0
+    },
+    {
+      "w": "cotizando",
+      "start": 42.081,
+      "end": 42.561,
+      "prob": 0.87
+    },
+    {
+      "w": "por",
+      "start": 42.561,
+      "end": 42.741,
+      "prob": 1.0
+    },
+    {
+      "w": "ti.",
+      "start": 42.741,
+      "end": 42.941,
+      "prob": 1.0
+    },
+    {
+      "w": "Te",
+      "start": 42.981,
+      "end": 43.121,
+      "prob": 0.999
+    },
+    {
+      "w": "quita",
+      "start": 43.121,
+      "end": 43.461,
+      "prob": 1.0
+    },
+    {
+      "w": "la",
+      "start": 43.461,
+      "end": 43.601,
+      "prob": 1.0
+    },
+    {
+      "w": "hora",
+      "start": 43.601,
+      "end": 43.841,
+      "prob": 1.0
+    },
+    {
+      "w": "de",
+      "start": 43.841,
+      "end": 44.021,
+      "prob": 1.0
+    },
+    {
+      "w": "capturar",
+      "start": 44.021,
+      "end": 44.401,
+      "prob": 1.0
+    },
+    {
+      "w": "para",
+      "start": 44.401,
+      "end": 44.621,
+      "prob": 1.0
+    },
+    {
+      "w": "que",
+      "start": 44.621,
+      "end": 44.781,
+      "prob": 1.0
+    },
+    {
+      "w": "tú",
+      "start": 44.781,
+      "end": 44.921,
+      "prob": 0.998
+    },
+    {
+      "w": "revises",
+      "start": 44.921,
+      "end": 45.281,
+      "prob": 0.999
+    },
+    {
+      "w": "y",
+      "start": 45.281,
+      "end": 45.521,
+      "prob": 1.0
+    },
+    {
+      "w": "contestes",
+      "start": 45.521,
+      "end": 46.061,
+      "prob": 0.997
+    },
+    {
+      "w": "el",
+      "start": 46.061,
+      "end": 46.181,
+      "prob": 0.999
+    },
+    {
+      "w": "mismo",
+      "start": 46.181,
+      "end": 46.361,
+      "prob": 1.0
+    },
+    {
+      "w": "día.",
+      "start": 46.361,
+      "end": 46.601,
+      "prob": 1.0
+    },
+    {
+      "w": "Comenta",
+      "start": 46.961,
+      "end": 47.401,
+      "prob": 0.998
+    },
+    {
+      "w": "brújula",
+      "start": 47.401,
+      "end": 47.781,
+      "prob": 0.985
+    },
+    {
+      "w": "y",
+      "start": 47.781,
+      "end": 47.981,
+      "prob": 1.0
+    },
+    {
+      "w": "te",
+      "start": 47.981,
+      "end": 48.081,
+      "prob": 1.0
+    },
+    {
+      "w": "mando",
+      "start": 48.081,
+      "end": 48.421,
+      "prob": 1.0
+    },
+    {
+      "w": "el",
+      "start": 48.421,
+      "end": 48.461,
+      "prob": 0.999
+    },
+    {
+      "w": "link",
+      "start": 48.461,
+      "end": 48.601,
+      "prob": 1.0
+    },
+    {
+      "w": "para",
+      "start": 48.601,
+      "end": 48.761,
+      "prob": 1.0
+    },
+    {
+      "w": "entrar",
+      "start": 48.761,
+      "end": 49.001,
+      "prob": 0.999
+    },
+    {
+      "w": "a",
+      "start": 49.001,
+      "end": 49.141,
+      "prob": 0.999
+    },
+    {
+      "w": "mi",
+      "start": 49.141,
+      "end": 49.241,
+      "prob": 1.0
+    },
+    {
+      "w": "comunidad",
+      "start": 49.241,
+      "end": 49.601,
+      "prob": 1.0
+    },
+    {
+      "w": "donde",
+      "start": 49.601,
+      "end": 49.821,
+      "prob": 0.967
+    },
+    {
+      "w": "damos",
+      "start": 49.821,
+      "end": 50.081,
+      "prob": 1.0
+    },
+    {
+      "w": "clases",
+      "start": 50.081,
+      "end": 50.481,
+      "prob": 1.0
+    },
+    {
+      "w": "gratis",
+      "start": 50.481,
+      "end": 50.901,
+      "prob": 1.0
+    },
+    {
+      "w": "cada",
+      "start": 50.901,
+      "end": 51.081,
+      "prob": 0.999
+    },
+    {
+      "w": "semana",
+      "start": 51.081,
+      "end": 51.461,
+      "prob": 1.0
+    },
+    {
+      "w": "y",
+      "start": 51.461,
+      "end": 51.781,
+      "prob": 0.964
+    },
+    {
+      "w": "guarda",
+      "start": 51.781,
+      "end": 52.161,
+      "prob": 0.998
+    },
+    {
+      "w": "este",
+      "start": 52.161,
+      "end": 52.501,
+      "prob": 0.995
+    },
+    {
+      "w": "video.",
+      "start": 52.501,
+      "end": 52.941,
+      "prob": 0.754
+    }
+  ],
+  "subs": [
+    {
+      "start": 0.05,
+      "end": 1.55,
+      "words": [
+        {
+          "w": "Una",
+          "start": 0.05
+        },
+        {
+          "w": "empresa",
+          "start": 0.51
+        },
+        {
+          "w": "del",
+          "start": 0.97
+        },
+        {
+          "w": "grupo",
+          "start": 1.33
+        }
+      ]
+    },
+    {
+      "start": 1.55,
+      "end": 2.85,
+      "words": [
+        {
+          "w": "Toyota",
+          "start": 1.55
+        },
+        {
+          "w": "pide",
+          "start": 1.91
+        },
+        {
+          "w": "cotizaciones",
+          "start": 2.41,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 2.85,
+      "end": 3.91,
+      "words": [
+        {
+          "w": "a",
+          "start": 2.85
+        },
+        {
+          "w": "proveedores",
+          "start": 3.01,
+          "key": true
+        },
+        {
+          "w": "mexicanos",
+          "start": 3.43
+        }
+      ]
+    },
+    {
+      "start": 3.91,
+      "end": 5.03,
+      "words": [
+        {
+          "w": "y",
+          "start": 3.91
+        },
+        {
+          "w": "a",
+          "start": 4.13
+        },
+        {
+          "w": "veces",
+          "start": 4.27
+        },
+        {
+          "w": "nadie",
+          "start": 4.49,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 5.03,
+      "end": 6.41,
+      "words": [
+        {
+          "w": "les",
+          "start": 5.03
+        },
+        {
+          "w": "contesta.",
+          "start": 5.47,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 6.41,
+      "end": 8.89,
+      "words": [
+        {
+          "w": "Lo",
+          "start": 6.41
+        },
+        {
+          "w": "dijo",
+          "start": 6.93
+        },
+        {
+          "w": "en",
+          "start": 8.19
+        },
+        {
+          "w": "el",
+          "start": 8.41
+        },
+        {
+          "w": "Congreso",
+          "start": 8.53,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 8.89,
+      "end": 10.01,
+      "words": [
+        {
+          "w": "de",
+          "start": 8.89
+        },
+        {
+          "w": "la",
+          "start": 9.01
+        },
+        {
+          "w": "Industria",
+          "start": 9.07
+        },
+        {
+          "w": "Automotriz.",
+          "start": 9.43,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 10.01,
+      "end": 11.17,
+      "words": [
+        {
+          "w": "El",
+          "start": 10.01
+        },
+        {
+          "w": "que",
+          "start": 10.21
+        },
+        {
+          "w": "contesta",
+          "start": 10.39,
+          "key": true
+        },
+        {
+          "w": "primero",
+          "start": 10.91
+        }
+      ]
+    },
+    {
+      "start": 11.17,
+      "end": 12.99,
+      "words": [
+        {
+          "w": "y",
+          "start": 11.17
+        },
+        {
+          "w": "bien",
+          "start": 11.45
+        },
+        {
+          "w": "ya",
+          "start": 11.71
+        },
+        {
+          "w": "lleva",
+          "start": 12.11
+        },
+        {
+          "w": "ventaja.",
+          "start": 12.41,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 12.99,
+      "end": 14.03,
+      "words": [
+        {
+          "w": "Así",
+          "start": 12.99
+        },
+        {
+          "w": "preparas",
+          "start": 13.41,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 14.03,
+      "end": 14.49,
+      "words": [
+        {
+          "w": "tu",
+          "start": 14.03
+        },
+        {
+          "w": "respuesta",
+          "start": 14.13
+        }
+      ]
+    },
+    {
+      "start": 14.49,
+      "end": 15.01,
+      "words": [
+        {
+          "w": "el",
+          "start": 14.49
+        },
+        {
+          "w": "mismo",
+          "start": 14.63,
+          "key": true
+        },
+        {
+          "w": "día",
+          "start": 14.81
+        }
+      ]
+    },
+    {
+      "start": 15.01,
+      "end": 16.344,
+      "words": [
+        {
+          "w": "sin",
+          "start": 15.01
+        },
+        {
+          "w": "saber",
+          "start": 15.35
+        },
+        {
+          "w": "programar.",
+          "start": 15.61,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 16.344,
+      "end": 17.524,
+      "words": [
+        {
+          "w": "Primero",
+          "start": 16.344,
+          "key": true
+        },
+        {
+          "w": "abre",
+          "start": 16.864
+        },
+        {
+          "w": "un",
+          "start": 17.124
+        },
+        {
+          "w": "proyecto",
+          "start": 17.244
+        }
+      ]
+    },
+    {
+      "start": 17.524,
+      "end": 18.264,
+      "words": [
+        {
+          "w": "en",
+          "start": 17.524
+        },
+        {
+          "w": "Claude",
+          "start": 17.664,
+          "key": true
+        },
+        {
+          "w": "y",
+          "start": 17.844
+        },
+        {
+          "w": "súbele",
+          "start": 17.984
+        }
+      ]
+    },
+    {
+      "start": 18.264,
+      "end": 19.104,
+      "words": [
+        {
+          "w": "tu",
+          "start": 18.264
+        },
+        {
+          "w": "lista",
+          "start": 18.364
+        },
+        {
+          "w": "de",
+          "start": 18.564
+        },
+        {
+          "w": "precios,",
+          "start": 18.704,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 19.104,
+      "end": 20.024,
+      "words": [
+        {
+          "w": "tus",
+          "start": 19.104
+        },
+        {
+          "w": "tiempos",
+          "start": 19.264,
+          "key": true
+        },
+        {
+          "w": "de",
+          "start": 19.584
+        },
+        {
+          "w": "entrega",
+          "start": 19.644
+        }
+      ]
+    },
+    {
+      "start": 20.024,
+      "end": 20.904,
+      "words": [
+        {
+          "w": "y",
+          "start": 20.024
+        },
+        {
+          "w": "una",
+          "start": 20.124
+        },
+        {
+          "w": "cotización",
+          "start": 20.284,
+          "key": true
+        },
+        {
+          "w": "tuya",
+          "start": 20.584
+        }
+      ]
+    },
+    {
+      "start": 20.904,
+      "end": 21.784,
+      "words": [
+        {
+          "w": "que",
+          "start": 20.904
+        },
+        {
+          "w": "haya",
+          "start": 21.064
+        },
+        {
+          "w": "quedado",
+          "start": 21.184
+        },
+        {
+          "w": "bien.",
+          "start": 21.504
+        }
+      ]
+    },
+    {
+      "start": 21.784,
+      "end": 22.624,
+      "words": [
+        {
+          "w": "Eso",
+          "start": 21.784
+        },
+        {
+          "w": "se",
+          "start": 22.104
+        },
+        {
+          "w": "hace",
+          "start": 22.404
+        }
+      ]
+    },
+    {
+      "start": 22.624,
+      "end": 23.795,
+      "words": [
+        {
+          "w": "una",
+          "start": 22.624
+        },
+        {
+          "w": "sola",
+          "start": 22.964,
+          "key": true
+        },
+        {
+          "w": "vez.",
+          "start": 23.224
+        }
+      ]
+    },
+    {
+      "start": 23.795,
+      "end": 25.075,
+      "words": [
+        {
+          "w": "Después,",
+          "start": 23.795,
+          "key": true
+        },
+        {
+          "w": "cuando",
+          "start": 24.535
+        },
+        {
+          "w": "llegue",
+          "start": 24.775
+        }
+      ]
+    },
+    {
+      "start": 25.075,
+      "end": 25.795,
+      "words": [
+        {
+          "w": "una",
+          "start": 25.075
+        },
+        {
+          "w": "solicitud,",
+          "start": 25.155,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 25.795,
+      "end": 26.415,
+      "words": [
+        {
+          "w": "súbela",
+          "start": 25.795
+        },
+        {
+          "w": "completa",
+          "start": 26.115
+        }
+      ]
+    },
+    {
+      "start": 26.415,
+      "end": 27.635,
+      "words": [
+        {
+          "w": "con",
+          "start": 26.415
+        },
+        {
+          "w": "el",
+          "start": 26.675
+        },
+        {
+          "w": "PDF",
+          "start": 26.815,
+          "key": true
+        },
+        {
+          "w": "o",
+          "start": 27.035
+        },
+        {
+          "w": "el",
+          "start": 27.355
+        },
+        {
+          "w": "plano",
+          "start": 27.475
+        }
+      ]
+    },
+    {
+      "start": 27.635,
+      "end": 28.635,
+      "words": [
+        {
+          "w": "y",
+          "start": 27.635
+        },
+        {
+          "w": "pídele",
+          "start": 27.895
+        },
+        {
+          "w": "que",
+          "start": 28.215
+        },
+        {
+          "w": "saque",
+          "start": 28.355
+        }
+      ]
+    },
+    {
+      "start": 28.635,
+      "end": 29.195,
+      "words": [
+        {
+          "w": "piezas,",
+          "start": 28.635,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 29.195,
+      "end": 30.055,
+      "words": [
+        {
+          "w": "cantidades,",
+          "start": 29.195,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 30.055,
+      "end": 30.875,
+      "words": [
+        {
+          "w": "especificaciones",
+          "start": 30.055,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 30.875,
+      "end": 32.035,
+      "words": [
+        {
+          "w": "y",
+          "start": 30.875
+        },
+        {
+          "w": "fecha",
+          "start": 31.295,
+          "key": true
+        },
+        {
+          "w": "requerida",
+          "start": 31.575
+        }
+      ]
+    },
+    {
+      "start": 32.035,
+      "end": 33.055,
+      "words": [
+        {
+          "w": "y",
+          "start": 32.035
+        },
+        {
+          "w": "que",
+          "start": 32.255
+        },
+        {
+          "w": "arme",
+          "start": 32.375
+        },
+        {
+          "w": "el",
+          "start": 32.695
+        },
+        {
+          "w": "borrador",
+          "start": 32.755,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 33.055,
+      "end": 34.311,
+      "words": [
+        {
+          "w": "con",
+          "start": 33.055
+        },
+        {
+          "w": "tu",
+          "start": 33.275
+        },
+        {
+          "w": "formato.",
+          "start": 33.395,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 34.311,
+      "end": 35.311,
+      "words": [
+        {
+          "w": "Y",
+          "start": 34.311
+        },
+        {
+          "w": "por",
+          "start": 34.751
+        },
+        {
+          "w": "último,",
+          "start": 34.891,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 35.311,
+      "end": 36.051,
+      "words": [
+        {
+          "w": "pídele",
+          "start": 35.311
+        },
+        {
+          "w": "la",
+          "start": 35.691
+        },
+        {
+          "w": "lista",
+          "start": 35.831,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 36.051,
+      "end": 36.831,
+      "words": [
+        {
+          "w": "de",
+          "start": 36.051
+        },
+        {
+          "w": "lo",
+          "start": 36.171
+        },
+        {
+          "w": "que",
+          "start": 36.271
+        },
+        {
+          "w": "no",
+          "start": 36.411
+        },
+        {
+          "w": "pudo",
+          "start": 36.591
+        }
+      ]
+    },
+    {
+      "start": 36.831,
+      "end": 37.091,
+      "words": [
+        {
+          "w": "resolver",
+          "start": 36.831,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 37.091,
+      "end": 38.291,
+      "words": [
+        {
+          "w": "para",
+          "start": 37.091
+        },
+        {
+          "w": "que",
+          "start": 37.351
+        },
+        {
+          "w": "tú",
+          "start": 37.511
+        },
+        {
+          "w": "lo",
+          "start": 37.671
+        },
+        {
+          "w": "completes.",
+          "start": 37.791,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 38.291,
+      "end": 38.991,
+      "words": [
+        {
+          "w": "Nunca",
+          "start": 38.291,
+          "key": true
+        },
+        {
+          "w": "le",
+          "start": 38.691
+        },
+        {
+          "w": "dejes",
+          "start": 38.771
+        }
+      ]
+    },
+    {
+      "start": 38.991,
+      "end": 40.301,
+      "words": [
+        {
+          "w": "inventar",
+          "start": 38.991
+        },
+        {
+          "w": "un",
+          "start": 39.411
+        },
+        {
+          "w": "precio.",
+          "start": 39.631,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 40.301,
+      "end": 41.201,
+      "words": [
+        {
+          "w": "Y",
+          "start": 40.301
+        },
+        {
+          "w": "la",
+          "start": 40.741
+        },
+        {
+          "w": "realidad",
+          "start": 40.861,
+          "key": true
+        },
+        {
+          "w": "es",
+          "start": 41.081
+        }
+      ]
+    },
+    {
+      "start": 41.201,
+      "end": 41.801,
+      "words": [
+        {
+          "w": "que",
+          "start": 41.201
+        },
+        {
+          "w": "la",
+          "start": 41.301
+        },
+        {
+          "w": "IA",
+          "start": 41.441,
+          "key": true
+        },
+        {
+          "w": "no",
+          "start": 41.621
+        },
+        {
+          "w": "va",
+          "start": 41.681
+        }
+      ]
+    },
+    {
+      "start": 41.801,
+      "end": 42.561,
+      "words": [
+        {
+          "w": "a",
+          "start": 41.801
+        },
+        {
+          "w": "terminar",
+          "start": 41.881
+        },
+        {
+          "w": "cotizando",
+          "start": 42.081,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 42.561,
+      "end": 42.981,
+      "words": [
+        {
+          "w": "por",
+          "start": 42.561
+        },
+        {
+          "w": "ti.",
+          "start": 42.741
+        }
+      ]
+    },
+    {
+      "start": 42.981,
+      "end": 43.841,
+      "words": [
+        {
+          "w": "Te",
+          "start": 42.981
+        },
+        {
+          "w": "quita",
+          "start": 43.121
+        },
+        {
+          "w": "la",
+          "start": 43.461
+        },
+        {
+          "w": "hora",
+          "start": 43.601
+        }
+      ]
+    },
+    {
+      "start": 43.841,
+      "end": 44.401,
+      "words": [
+        {
+          "w": "de",
+          "start": 43.841
+        },
+        {
+          "w": "capturar",
+          "start": 44.021,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 44.401,
+      "end": 45.281,
+      "words": [
+        {
+          "w": "para",
+          "start": 44.401
+        },
+        {
+          "w": "que",
+          "start": 44.621
+        },
+        {
+          "w": "tú",
+          "start": 44.781
+        },
+        {
+          "w": "revises",
+          "start": 44.921,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 45.281,
+      "end": 46.061,
+      "words": [
+        {
+          "w": "y",
+          "start": 45.281
+        },
+        {
+          "w": "contestes",
+          "start": 45.521,
+          "key": true
+        }
+      ]
+    },
+    {
+      "start": 46.061,
+      "end": 46.961,
+      "words": [
+        {
+          "w": "el",
+          "start": 46.061
+        },
+        {
+          "w": "mismo",
+          "start": 46.181,
+          "key": true
+        },
+        {
+          "w": "día.",
+          "start": 46.361
+        }
+      ]
+    },
+    {
+      "start": 46.961,
+      "end": 47.781,
+      "words": [
+        {
+          "w": "Comenta",
+          "start": 46.961,
+          "key": true
+        },
+        {
+          "w": "brújula",
+          "start": 47.401
+        }
+      ]
+    },
+    {
+      "start": 47.781,
+      "end": 48.601,
+      "words": [
+        {
+          "w": "y",
+          "start": 47.781
+        },
+        {
+          "w": "te",
+          "start": 47.981
+        },
+        {
+          "w": "mando",
+          "start": 48.081
+        },
+        {
+          "w": "el",
+          "start": 48.421
+        },
+        {
+          "w": "link",
+          "start": 48.461
+        }
+      ]
+    },
+    {
+      "start": 48.601,
+      "end": 49.601,
+      "words": [
+        {
+          "w": "para",
+          "start": 48.601
+        },
+        {
+          "w": "entrar",
+          "start": 48.761
+        },
+        {
+          "w": "a",
+          "start": 49.001
+        },
+        {
+          "w": "mi",
+          "start": 49.141
+        },
+        {
+          "w": "comunidad",
+          "start": 49.241
+        }
+      ]
+    },
+    {
+      "start": 49.601,
+      "end": 50.901,
+      "words": [
+        {
+          "w": "donde",
+          "start": 49.601
+        },
+        {
+          "w": "damos",
+          "start": 49.821
+        },
+        {
+          "w": "clases",
+          "start": 50.081
+        },
+        {
+          "w": "gratis",
+          "start": 50.481
+        }
+      ]
+    },
+    {
+      "start": 50.901,
+      "end": 51.461,
+      "words": [
+        {
+          "w": "cada",
+          "start": 50.901
+        },
+        {
+          "w": "semana",
+          "start": 51.081
+        }
+      ]
+    },
+    {
+      "start": 51.461,
+      "end": 53.2,
+      "words": [
+        {
+          "w": "y",
+          "start": 51.461
+        },
+        {
+          "w": "guarda",
+          "start": 51.781
+        },
+        {
+          "w": "este",
+          "start": 52.161
+        },
+        {
+          "w": "video.",
+          "start": 52.501
+        }
+      ]
+    }
+  ],
+  "whooshAuto": false,
+  "musica": "reels/toyota-cotizaciones/musica.wav",
+  "caraYFuente": 0.54,
+  "portada": {
+    "frase": "Contesta\ncotizaciones\nel mismo día\ncon IA",
+    "cuadro": 40.2
+  }
+}

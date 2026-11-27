@@ -16,13 +16,31 @@ const dB = (x: number) => Math.pow(10, x / 20);
 // tick al terminar un contador, bass en cada golpe a pantalla completa.
 const sfxAuto = (reel: ReelData) => {
   const out: { t: number; s: string }[] = [];
+  const whoosh = reel.whooshAuto !== false;
   for (const b of reel.broll) {
-    out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
+    if (whoosh) out.push({ t: Math.max(0, b.start - 0.08), s: "whoosh" });
+    const tiempos = "tiempos" in b && b.tiempos ? b.tiempos : null;
+    if (b.tipo === "lista" && tiempos) {
+      tiempos.forEach((t) => out.push({ t, s: "pop" }));
+      continue;
+    }
     if (b.tipo === "lista") b.items.forEach((_, i) => out.push({ t: b.start + 0.35 + i * (b.cada ?? 1.2), s: "pop" }));
     if (b.tipo === "contador") out.push({ t: b.start + 0.2 + 1.0, s: "tick" });
-    if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta") out.push({ t: b.start + 0.1, s: "pop" });
+    if (b.tipo === "logo" || b.tipo === "cita" || b.tipo === "tarjeta" || b.tipo === "bandeja" || b.tipo === "texto") out.push({ t: b.start + 0.1, s: "pop" });
+    if (b.tipo === "subida") b.archivos.forEach((a) => out.push({ t: a.t, s: "pop" }));
+    if (b.tipo === "tabla") b.columnas.forEach((c) => out.push({ t: c.t, s: "tick" }));
+    if (b.tipo === "carrera") out.push({ t: b.start + (b.t ?? 0.9), s: "pop" });
+    if (b.tipo === "sello") out.push({ t: b.start + 0.25, s: "bass" });
+    if (b.tipo === "documento" && b.sello) out.push({ t: b.start + 1.0, s: "click" });
   }
-  for (const g of reel.golpes) out.push({ t: g.start, s: g.tipo === "cierre" ? "whoosh" : "bass" });
+  for (const g of reel.golpes) {
+    if (g.tipo === "cierre") {
+      if (whoosh) out.push({ t: g.start, s: "whoosh" });
+    } else if (g.tipo === "cta") {
+      out.push({ t: g.tPalabra ?? g.start, s: "bass" });
+      (g.lineas ?? []).forEach((l) => out.push({ t: l.t, s: "pop" }));
+    } else out.push({ t: g.start, s: "bass" });
+  }
   for (const p of reel.pasos ?? []) out.push({ t: p.start, s: "click" });
   return [...out, ...(reel.sfx ?? [])];
 };
@@ -45,7 +63,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
   const musicaVol = (fr: number) => {
     const ts = fr / fps;
     const enGolpe = activo(reel.golpes, ts);
-    const base = enGolpe && enGolpe.tipo !== "cierre" ? dB(-18) : dB(-23);
+    const base = enGolpe && enGolpe.tipo !== "cierre" && enGolpe.tipo !== "cta" ? dB(-18) : dB(-23);
     const salida = interpolate(fr, [durationInFrames - f(2), durationInFrames], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
     const entrada = interpolate(fr, [0, f(0.5)], [0, 1], { extrapolateRight: "clamp" });
     return base * salida * entrada;
@@ -93,7 +111,7 @@ export const Reel: React.FC<{ reel: ReelData }> = ({ reel }) => {
 
       {/* 6 · Golpes a pantalla completa */}
       {reel.golpes.map((g, i) => (
-        <Sequence key={i} from={f(g.start)} durationInFrames={Math.max(1, (g.tipo === "cierre" ? durationInFrames : f(g.end)) - f(g.start))}>
+        <Sequence key={i} from={f(g.start)} durationInFrames={Math.max(1, (g.tipo === "cierre" || g.tipo === "cta" ? durationInFrames : f(g.end)) - f(g.start))}>
           <GolpeView g={g} palabras={reel.palabras} />
         </Sequence>
       ))}

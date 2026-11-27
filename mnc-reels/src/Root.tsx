@@ -2,6 +2,7 @@ import React from "react";
 import { Composition, Still, getInputProps } from "remotion";
 import { Reel } from "./Reel";
 import { Portada } from "./Portada";
+import { Panel } from "./Panel";
 import type { Reel as ReelData } from "./reel/types";
 import demo from "../reels/demo/reel.json";
 
@@ -19,6 +20,16 @@ export const Root: React.FC = () => (
       fps={30}
       width={1080}
       height={1920}
+      durationInFrames={Math.round(reel.duracion * 30)}
+      calculateMetadata={({ props }) => ({ durationInFrames: Math.round(props.reel.duracion * 30) })}
+    />
+    <Composition
+      id="Panel"
+      component={Panel}
+      defaultProps={{ reel }}
+      fps={30}
+      width={1080}
+      height={960}
       durationInFrames={Math.round(reel.duracion * 30)}
       calculateMetadata={({ props }) => ({ durationInFrames: Math.round(props.reel.duracion * 30) })}
     />

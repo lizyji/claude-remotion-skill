@@ -47,6 +47,7 @@ export const Portada: React.FC<{ reel: Reel }> = ({ reel }) => {
           fontSize: 104,
           lineHeight: 1.08,
           color: color.negro,
+          whiteSpace: "pre-line", // "\n" en la frase = salto de línea manual
         }}
       >
         <ConIA texto={frase} />
